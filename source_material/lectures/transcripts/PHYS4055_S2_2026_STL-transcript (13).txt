@@ -1,0 +1,677 @@
+SPEAKER 0
+Along. Um, So that means that next week we'll start looking into external fields and we can get that underway then before, before the break. I'll just wait another 30 seconds or so. This class is usually a bit more full than the other one, right? I didn't see you with the other one. OK, you'd better have been sadly. How did that, how did that go? It was, it was at the plant just no plans,
+
+SPEAKER 1
+no plants, the plants. Oh wow.
+
+SPEAKER 2
+empty room they were downstairs.
+
+SPEAKER 1
+Sorry, did you go off campus or this is on
+
+SPEAKER 0
+campus? It was on campus, not that one, is it the gla is it with the um greenhouses? Yes. OK, so, Let's just get started then cause we've only got the 50 minutes um and then you've got your tutorial. So this is what I put up last time which was previously an assignment question which people sort of struggled over and then in the end it anything that came back looking half reasonable had been pretty much colluded on with everybody so I just it's actually yeah this expression appears just about everywhere in the textbooks and it's used but it's just finding an actual derivation of that is a bit tough, and it's not even so much of a difficult thing, there's just a little trick or two that, You just need to stay on top of in order to get the right um weighting of I think one of the terms overall. Um, so, I've made this exercise, I'm not there, I've put it on another sheet. I've put the whole question out for you because I'd like this to be something, That you can play around with in getting to understand how all of this works um in your own time if you want to feel that you're, you know, get in order to get more involved in it and be extended, this would be great if you could do it, but it's not going to be assessed but um but I really would strongly encourage you to, to attempt this problem which, when I'm saying yeah it's challenging, it's not, you can make a lot of headway and get pretty much to the end without, Doing too much. It's just the Thinking how you balance everything so you get that right factor at the end, but you should definitely yeah get started. So the whole description is here, that's now in a little file that's underneath the lecture notes um in the the folder for that for this week. So please go and take a look at that. So, uh, any questions from last time before we get started today? So we looked at building up the atom, we went from hydrogen-like and then we started bringing in all the electrons, we saw how we um, how we order the levels, how we can describe them in terms of terms, the um, The energies like how how the energies, uh, how we expect the energies to lie essentially, and then in your tute today as I mentioned before, Jane's gonna take you through how to do terms when you have equivalent electrons so lying in the same shell, and that will help you very much in one of your assignment questions, yeah. You'll be doing something rather similar. OK, so, before when we were discussing this uh many electron stuff, It wasn't very much of the mini part of the electron thing to it. We pretty much discussed what would happen if we had a central potential which is created by the other electrons in your atom, and that is then included on top of your nuclear potential. So it just screens the nucleus. Excuse me. But now we wanna do something a little bit more sophisticated and so we're gonna uh discuss the Hartree-Fock method. And this is used really as a first approximation that's a very good approximation. Uh, to many electron problems, so it's often the starting point. So if you need to, if you want to go and do a many electron calculation or something, the first place you usually start is with this equation. And so we're just gonna describe here how this equation comes about and also then a few words on um, On really how, how you would implement it. But I'm not putting all details of this in there. The reading for this is in Johnson. Um, so I'd like you to go through there, but you You can if you like, go and get started on this, I'd suggest that you do, like this is part of your readings, but if I remember correctly, this is not in this week's assignment, is it? This one, cos it's gonna be in your next one actually. As long as I keep things as they were, there are some more kind of specific questions about how you get certain aspects of the Hartree-Fock equations and deriving those. So if you like, whatever work you put into that now, that'll, Um, help you later on in, in, in dealing with that question, but anyway. So, Hartree Fog, let me know if you can't read anything here. What we want to solve when we've got a many electron problem, we've got a Hamiltonian, um, and this is made up of electrons that are coordinates R1 R2 blah blah blah up to RN, so we've got N electrons. And when we're talking about a many electron, Uh, operator, we often use um capital letters, so it's a capital H to mean that it's for many electrons, and then we can describe that in terms of essentially a single electron operator which is the little H subscript zero, so and that operates over each one of these electrons, so each one of these electrons separately. Uh, so we sum from i equals 1 tonne. And then this is a simple part of the problem which doesn't involve any of the electron electron correlation, so this is just where it's just acting on one electron, so that contains essentially, we've got H0 down here, it's just the momentum, Um, related part of it, so we've got the kinetic energy part, so minus P we've got P2 over 2M essentially we've got the nuclear potential, so each of them has this kinetic energy term and that's moving in the central potential of the nucleus. But then the tricky part, which is the electron-electron correlations which we put that separately. So we described that instead of being this um potential terms so we call that something like yeah capital V, which is now the electron-electron interaction between all the electrons in the system. And in order to not double count them, we say that we we sum it over electrons I less than J or you can say it's half, somewhere over half of all I and J all the way up, yeah. And again, just we're using atomic units here, so we've got um E set to 1, blah blah blah, 4 pipesilon 01. So this is our full problem and here I've just written it out in the non-relativistic space cos that's what we're mostly dealing with in this course, but we'll do a little bit of touching on relativistic stuff as well. So as usual we seek a solution, we want to find the wave function of that many electron, um, Atom And We want to find its energy, yeah, so we have H axon or whatever psi which is the many electron wave function, gives us the uh electron energy for all of the electrons and psi, yeah. So there's a few things that we have to, I was reading over this thinking hang on, where does this etc. goes. Oh, OK, so when we're thinking about what we would um constrain when we're solving this, uh, What do we need to take into account when considering this? The total wave function needs to be antisymmetric, and that's, I think, where the etc. comes in there. Um, And We're looking right now about how we derive Hartree Fox, this is the consideration they give, it needs to be anti-Semmetric. And so They suggest a simple solution for this, which is just a single Slater determinant. So if you remember what a Slater determinant is that forces that asymmetry of the product wave functions. So we can't just say, we're gonna have a set of product wave functions, let's say it's just gonna be the product of all the electron orbitals in your atom, that's not gonna be OK cos it's not, Anti-Semmetric, but we're gonna do the closest thing to that that we can that is anti-Semmetric. So then we say that OK, we're gonna seek a solution for our total wave function, our many electron wave function, um, and this is going to be, uh, In terms of the orbitals or A, B, and so on
+
+SPEAKER 3
+up to N, and they're gonna be at these positions
+
+SPEAKER 0
+um R1, R2 up to RN. And we can describe that then. As this matrix, which is constructed of those elements, yeah. And that means that yeah, by default immediately um this becomes the anti anti-symmetrized many electron wave function and you would have definitely seen this for a 2x 2 I suppose in earlier quantum mechanics and maybe also for the, a more, For more electrons than 2 or states. 2 by 2. So by extension, so it does work that you can just do it for any number of orbitals. You, you um take the determinant of this and this forms your many electron anti-symmetrized um wave function. And this is the simplest thing we can come up with that, with that kind of a solution, um, because for example we could think about constructing a solution that could be a sum of such Slater determinants, but that's not what this is and, and that is, would be the origin of what's called multi-configuration Hartree-Fock and so on, but this is just for a single determinant. So in terms of what these little sizes are, we, they have to come from someone, somewhere, yeah. The, the wave functions for the single electrons. Now there should just be, there's something that I could have better distinguished here. These, the wave functions here can probably better be distinguished by, let me just do it here just to make it clear you don't need to put this in here but this is like a mini electron wave function. Let's call it yeah the capital Psi and each one of these psig here is not the capital Psi. It's for uh the orbital of a single electron. So what we're having on the left is not the same as the obviously the product of things that is on the right. So to proceed we, we really need to, so we'll talk about what those, where those solutions come from in a moment. But to proceed we really need to break up our problem. And the reason is that we can't just go about solving that Hamiltonian in the first case. It turns out that that if you get beyond even something like 20 electrons, supposedly you need Something ridiculous, you know, all the information, blah blah blah in the universe. You need some ridiculous amount of information in order to solve, um, that problem. So we have to make approximations, yeah. And so this is the approximation, this is how we divide it up, we've got the single particle Hamiltonian that we had before. So 80 and then we are gonna say that we can describe that in terms of oh just one second, let's just note this. Something to note. So before we have our total Hamiltonian, which is H, we now have our first part that we're gonna solve, which is. Um, this little H, OK. This is not capital H, it's H0. We're dividing it up, we say that this can now be broken up into single particle Hamiltonians of some form. Before we couldn't do it, it was a two part a single particle with two particles. Now we've got this is equal to H0, the sum of 80s like before, but now we have a central potential which acts only on each electron, not the two of them. And we call that U. Now, keeping in mind what we just had, we've now got a second part of our problem which is this now potential term which can be treated as a perturbation in some sense if we ever want to go beyond that. So this term is then the many electron interaction that includes everything minus our starting approximation for that um many that electron-electron interaction which we're just taking to be as a single particle operator. So if we were to add, let me just go from the previous one of course, um H0 here plus the V we have, then it means that, We've got this term, plus you. Minus you plus this, we arrive back at our original, so it's just, Our big H is H+ V, yeah? Is that clear? So Hachi Fock comes about from first of all, doing this decomposition, and then we need to solve this problem. This first part with this second um consideration. So Oh, here, I think I've just got a quick summary and most of the description is elsewhere. So in order to, to uh come up with the Hartree-Fockett equations, what they do is they take the expectation value of that, of the Hamiltonian. And they take the expectation value with the slater determinant, so they take it of the full Hamiltonian H, but then with the wave functions, that is just the approximate, uh uh this approximate wave function here, made up of the psi, A's, the little sigh A's, the product of those, that are the solution of this. Now is that kind of clear, it's a little bit confusing. It's all in the Johnson notes. So we take that expectation value. And then once you do this expectation value, you wanna find what the minimum energy is. You're gonna do the expectation value, we can use those variational techniques, which means that you vary the values of the orbitals in order to minimise the energy.
+
+SPEAKER 3
+And introducing these Lagrange multipliers, so part of the exercise you're gonna be doing later on is to be filling
+
+SPEAKER 0
+in all the gaps in this derivation.
+
+SPEAKER 3
+But I want you to just have a general idea about how to do that right now.
+
+SPEAKER 0
+So Something, a few little uh, notational things that pop up and ways that you can manipulate many electronic, Matrix
+
+SPEAKER 1
+elements. So if you were to have a matrix element of a many electron wave function size, say on the left and on the right, another many electron wave function. With a single particle operator F, so it acts only
+
+SPEAKER 3
+on one electron.
+
+SPEAKER 1
+So a single particle operator, if, if you say single particle, it means that it's the sum of all of the electrons in your system and it acts just on one electron at a time, not between, yeah. If you were to then sandwich that between those wave functions. Then it means that if you had any of the orbitals that make up that wave function, that are different
+
+SPEAKER 3
+by more than one, Then when you act with this
+
+SPEAKER 1
+operator on there, you can only ever change the orbital of one state at a time, but if they're different
+
+SPEAKER 3
+by more than one, Once you act on it, you're
+
+SPEAKER 1
+gonna have wave functions that are still that are orthogonal, you're never gonna return the same on both sides, which means that they're gonna be zero. So this matrix element is zero if the wave functions differ by more than 1 orbital. Um, if they differ by just one orbital, then that means that when you act on this, say this K, this, uh, orbital corresponding to this, this cave, then everything else ends up, Being normalised essentially, and you're left just with the single, Particle matrix element of, Uh, the orbital between K and K.
+
+SPEAKER 3
+So this is actually very neat, so just to be totally clear.
+
+SPEAKER 1
+This is the situation that happens when these wave function psi are slated determinants, yeah. So it means all that difficult kind of stuff all comes out of the wash, but if you wanted to
+
+SPEAKER 3
+do a derivation to see how it works, you can
+
+SPEAKER 1
+of course do that. Um, so it turns out pretty neat. Everything else is all sorted out and you end up
+
+SPEAKER 3
+with just a single particle operator, a single particle matrix
+
+SPEAKER 0
+element between the two.
+
+SPEAKER 3
+If the wave functions on both sides, the slated slater
+
+SPEAKER 1
+determinant wave functions on both sides of a single particle operator are the same, then you sum over all of the um electrons in your system with that matrix element, yeah. Mm So these can be for any sorts of operators,
+
+SPEAKER 0
+so I haven't specified what they are.
+
+SPEAKER 3
+OK, so similarly for uh for a two-particle operator, which
+
+SPEAKER 1
+we generally call G, so we often call the single
+
+SPEAKER 3
+particle ones F, particularly when we're discussing, Any interactions related to being within the atom and G is often, the
+
+SPEAKER 1
+one that you refer to as being the coolum um interaction between two electrons. Then this two-particle operator, OK, so it acts between electrons I and J, where you use RIJ as a shorthand, which is the difference between the coordinates. Um, and again, you don't want to double count them, so you sum of I, Leslie J. Uh If you operate on that, so you've got your wave function here, wave function there, then if, if for one thing, they differ by, you can guess again, more
+
+SPEAKER 3
+than 2 indices, it's gonna be zero, yeah.
+
+SPEAKER 1
+If they differ by 2 indices, then everything else comes out in the wash and you end up with, um, 2 contributions to the matrix elements where this, I can, do I actually show what they are? I think I've decided to just put the expressions in,
+
+SPEAKER 3
+uh, I've shown you here essentially what they are on
+
+SPEAKER 1
+the next page. Um, Here you have two contributions, and one is essentially a, A direct contribution and the second one is an exchange contribution, And if they differ by one digit, you end up doing an extra sum over one of the terms and again you have a direct and exchange contribution.
+
+SPEAKER 3
+But essentially, all the other orbitals and stuff don't contribute, so you reduce a many-body matrix element that sounds like
+
+SPEAKER 0
+something really difficult cause you could have 100 electrons or something into just a problem that's a matrix element between either single orbitals or just two electron orbitals, and that's
+
+SPEAKER 3
+it. There's no other operators that there's no such thing as
+
+SPEAKER 1
+a three-body operator really or anything, there's, you always reduce it just into one or two body operators, so there's no more ones that we haven't simplified anything, yeah. If you then have identical wave functions for the two-body operator case, then you have another sum, and you're summing over all I and J for each one of these. So this is just showing you what these expressions would look like then. So before when you had your capital F, that that was a single particle operator that acts on every one
+
+SPEAKER 3
+of all of the electrons. Now we've reduced that to be that F is now
+
+SPEAKER 1
+acts only on one electron, it's a single particle. It just acts on the orbital B, um, so this is then F inside the, the integral of course acting on side B, and then we've got that kind of um sandwich there with, uh, the emission conjugate of side A and you do the integration of that, that's of course just the definition of your single, Uh, particle matrix element with that operator, and for the two body operator it's just a little bit more complicated because we have of course, um, just this, ah, R1 minus R2. Between them that this acts on and then this is what the what the matrix element looks like, so it
+
+SPEAKER 3
+reduces to something manageable. OK. Any questions so far about any of those notations?
+
+SPEAKER 0
+OK, so that was just, I already kind of mentioned
+
+SPEAKER 1
+some of this, so the remainder of the procedure for finding the Hartree fog, you introduce the Lagrange operators, so you remember how to do this kind of stuff. It gets a bit more unwieldy when you're dealing with something like Hartree Fog, um, anyway, but still simple enough for what it is, uh, you require the energy stationary on variation of the radio wave functions, as we're saying, and then eventually you get, This equation here, minus 1 D 2 PA 5 R plus VHF which is your Hartree fault potential, minus Z over R which is your nuclear potential, and then you have this orbital part, so these usually pop out, of course in, in your um, Shredder equation as it is, so the thing that's different here is that this VHF instead of having a V
+
+SPEAKER 3
+electron whatever screened thing that is just, um, spherically symmetric,
+
+SPEAKER 1
+whatever, we have this a little bit more sophisticated operator, which is our Hytrifoc operator. Um, and this looks, it looks, Like something that's relatively um sophisticated, what we have is that this Hartree pop operator, it's made up of, as I mentioned before, this, we end up with direct terms and exchange terms thanks to the two body part of it. And this, this just looks slightly nasty and all the notations are in your notes, but essentially this direct one, acts on this function um PA, Of Um, this, I should actually just put this. For each orbital PA so it's acting on that one. This one is our exchange interaction, exchange always looks nicer than everything else, um, and when it acts on PA it actually sucks in PA into some integral and kind of spits out, I shouldn't say spits out but it switches the the orbitals around, so the PB is the thing that sort of looks like it's acting on overall and the PA was sort of brought into something and switched around for the, for the other um wave function. Uh, and then I'm pretty much just suggesting that you
+
+SPEAKER 3
+go and do this reading, which is, I think part
+
+SPEAKER 1
+of next week's reading. So if that's not due to you, yeah, that's fine. Um, and the origin of the exchange is from the
+
+SPEAKER 3
+antisymmetry of the wave functions, otherwise you don't get such a thing.
+
+SPEAKER 0
+So if you were to do simplified, kind of, um,
+
+SPEAKER 3
+consideration of your, Wave function, your many electron wave function,
+
+SPEAKER 1
+as is often done in say quantum chemistry, they will
+
+SPEAKER 3
+not use a proper exchange, ah interaction because that's rather
+
+SPEAKER 1
+complicated, so they'll they'll introduce perhaps an approximate form for that exchange, um which can be treated in a similar
+
+SPEAKER 3
+way to the direct one, but that's where a lot of the the complicating sort of things come from.
+
+SPEAKER 1
+But essentially, it comes back to, OK, eventually obtaining a Shredder equation just with a potential that has two parts,
+
+SPEAKER 3
+direct exchange, and doing those integrals and that particular aspect
+
+SPEAKER 1
+of it. It's a little bit complicated, but it's straightforward enough, yeah. And I should just remind you again. What exactly it is, so it comes about from the
+
+SPEAKER 3
+true Hamiltonian operator inside.
+
+SPEAKER 1
+With the approximate many electron wave functions on the outer parts, which is a single electron, sorry, a single, single
+
+SPEAKER 3
+slated determinant, made of single particle orbitals.
+
+SPEAKER 1
+That are solutions of the simplified problem that's H00 plus U R instead of the extra interaction, yeah, I hope that's clear. OK, so Maybe I'll just say a couple of words about this. How do you do Hartree-Fo generally? OK, so Hartree-Fock, Hartree-Fock really is a mean field approach. Um, people will do, for example, in a mini electron atom, let's just deal with one of the favourite cases in our group, and probably many groups. You, let's consider a valency, uh, sorry, alkaline metal atom, which are those atoms on the leftmost column of the periodic table, where you have one electron above like a tightly closed shell of other electrons. So, you remove your valence electron first from from the consideration and then you solve for all of those core
+
+SPEAKER 3
+electrons um together, self-consistently, so you're gonna be solving um
+
+SPEAKER 1
+an equation like this. Far equation, so this is just relatively simple. You just solve for PA and for every orbital in there. So this P, this orbital PA is just like a 1s orbital, maybe a 25 or whatever, you solve for every possible state. Everything looks the same, and your Hartree-Fock potential has the
+
+SPEAKER 3
+contribution of every other electron inside it in this potential
+
+SPEAKER 1
+one.
+
+SPEAKER 3
+And in fact, it also has its own.
+
+SPEAKER 1
+Orbital in there, but it cancels its contribution cancels and the direct and exchange contributions so you don't have, you don't notice it's self-interaction, so you, you have that, you solve it so consistently, you keep solving it until, um, until you find no difference in the energies that you get when you get to the next iteration within some, Requested uncertainty here, you say oh let's let's say that this doesn't change by, we want it to change by less than, 10-9 in something or other and it'll exit out of that self-consistent procedure. And then, so once you've got that, you've got the self-consistent thing, then you've got the VHF cos this has to be solved here, self-consistently, because it itself is created from the solution of all the other electrons, yeah, so you can't just run it once. You run it until everything agrees with itself. Then you have wave functions and energies epsilon for all of the orbitals, all of the electrons in your atoms, separately, all of these, these systems, and then you can come up with, you know, your many electron, I guess, energy and blah blah blah, you can then start doing all the manipulations you need to do. To find, to solve whatever problem you're addressing with matrix elements or attitudes, whatever it is. Anyway, now you have your Hare-hock potential, so it means you've got your nucleus, nuclear potential, your many electron potential, you now so-called freeze it. You freeze that and then you bring the valence electron into that space. And now this valence electron sees the nucleus and the many electron potential formed from all of those core electrons, and then you solve for that valence electron in that space, and then you can get all of the, the um, The states of that balance, the electron, the ground
+
+SPEAKER 3
+state, the excited state, and that essentially takes into account
+
+SPEAKER 1
+all of the sort of many, many body aspects of
+
+SPEAKER 3
+your problem, at least at the hardship level.
+
+SPEAKER 1
+OK. Questions? Yeah, uh, how does the function you evolve?
+
+SPEAKER 3
+OK, good question.
+
+SPEAKER 0
+So Oh, OK.
+
+SPEAKER 3
+That is a very good question because, you know, we just said there is some U of R and didn't really do very much about it.
+
+SPEAKER 0
+So that's essentially what this whole thing in some sense finds.
+
+SPEAKER 3
+Yeah, so we sort of say, OK we're gonna break
+
+SPEAKER 1
+it up into a sort of simplified problem where there's an extra central potential that can be found, and then we take the um, We go and do all these
+
+SPEAKER 3
+manipulations and this Uo virus essentially, What gives us in
+
+SPEAKER 0
+the end our Hartree Fock potential, so our Hareo comes
+
+SPEAKER 3
+about from assuming there is such a central potential, so
+
+SPEAKER 0
+we don't define it from the beginning, it in fact
+
+SPEAKER 3
+comes out at the end, as as the Hartree-Fock equations, yeah. OK, yeah, that was a good question. So Yeah, is that a um.
+
+SPEAKER 2
+An analytical um process or is it uh like a numerical process then to do that?
+
+SPEAKER 1
+OK, so the derivation of the Hartree-Fock stuff at least
+
+SPEAKER 0
+is done analytically and so you can follow through that,
+
+SPEAKER 3
+but there is, yeah, the, um, actual solution of Hartree-Fock when you would go and implement it is numerical, just
+
+SPEAKER 0
+purely numerical.
+
+SPEAKER 3
+Sorry, it's iterative, yeah, and usually because you're dealing with
+
+SPEAKER 0
+so many electrons that essentially, Beyond hydrogen, you can't deal with anything analytically, so it becomes just too much of a difficult problem to address, so yeah, so it's a
+
+SPEAKER 1
+new miracle.
+
+SPEAKER 3
+Problem.
+
+SPEAKER 0
+Let me just see, just, I'll give you a moment just to think if you have anything else that you wanted to ask. We were wanting to see if we could introduce into
+
+SPEAKER 3
+some of the techniques you could have have access to such a we're seeing if we could do a sort of heartre fox and I'm trying to. Remember how far we got last time. We're seeing if we could do that in the notebook
+
+SPEAKER 0
+because that would be something that'd be really super helpful to be able to implement and to see how all that works.
+
+SPEAKER 3
+So, Yeah, let me just have another, have a little
+
+SPEAKER 0
+think about if that's something we can do this time
+
+SPEAKER 3
+or maybe the next time, but it's definitely useful.
+
+SPEAKER 1
+OK.
+
+SPEAKER 3
+It's hard to suddenly jump from non-relativistic to relativistic.
+
+SPEAKER 1
+What time are we up to?
+
+SPEAKER 0
+8:32, OK, so we're going fine.
+
+SPEAKER 1
+I think the best way to understand what's going on, for one thing it's, I understand it's probably hard to just take in what I said about Harry Fox because we haven't got any exercises to work through right now. And you haven't got your hands in in it yet, but I think when you go through the nation more carefully in your assignment. Easier for this direct equation, we've added the um, Solutions, I'm trying to remember exactly what we have there, I think we have the solutions to the Dirac equation, but we also have, I think a solver, Dirac solver in there, I've gotta just remember, who's looked into the Mathematica 2 notebook? The 2nd notebook, no. OK, anyway, there will be either solutions, I think that's
+
+SPEAKER 3
+one thing, but also a solver.
+
+SPEAKER 1
+Let me just, just. But definitely there's, there's solutions for the Dirac equation, but the solutions if they're written in there would be for
+
+SPEAKER 3
+a point nucleus and so on and so forth.
+
+SPEAKER 1
+If you have a finite nucleus, it becomes more problematic and you really need a Dirac so to, to look into this. But as soon as you go to heavier systems beyond, well, once you're going to the mid part of the
+
+SPEAKER 3
+periodic table, and depending on the sort of problem that
+
+SPEAKER 1
+you're looking at, Considering relativistic effects is really important, because when you get to a heavier and heavier nucleus, your electrons become, You know, more pulled into the nucleus and the relativistic effects go as essentially Z2 alpha 2. And the speed of the electrons in very heavy systems becomes really a fraction of, of the speed of light,
+
+SPEAKER 3
+so they're really, really relative, they're very much relativistic in
+
+SPEAKER 0
+heavy systems. That means that solving your problems, your many electron stuff
+
+SPEAKER 3
+in the Schrodinger equation and then adding, relativistic effects perturbatively doesn't work very well and it becomes a problem that
+
+SPEAKER 0
+is, What, just unwieldy, it's much more simple for many
+
+SPEAKER 3
+cases to just start from the beginning with the Dirac equation. So that's what we're gonna have a look at now.
+
+SPEAKER 1
+Hands up who's looked at Dirac equation related things already, Sam fields, 32 + 2, which is 30. Hands up who hasn't seen the Dirac equation. OK, that's a little bit more tough then, so I'll just do a sort of crash course of Dirac equation.
+
+SPEAKER 3
+OK, so essentially we're wanting to solve the same problem, right? You have some Hamiltonian it acts on some wave function.
+
+SPEAKER 1
+You want to find out what the energies are that are connected to that system and you want the way
+
+SPEAKER 3
+it functions. So The really nice thing about the Dirac equation, or
+
+SPEAKER 1
+amongst other other things, is that it automatically incorporates the
+
+SPEAKER 3
+spin-orbit interaction that you, we looked at earlier in the
+
+SPEAKER 1
+course of just last week. Um, the spin-orbit interaction is when you have, of course, the intrinsic spin of the electrons interacting with its orbital motion. And this is already in there from the beginning of July, um. So Our Hamiltonians And the Dirac, um, the Dirac equation looks rather different. To the Schroder equation. Shredder equation, um, is essentially you have one equation, that
+
+SPEAKER 3
+is a 2nd order differential equation, you've got P2 that
+
+SPEAKER 1
+turns into your, essentially derivative del2. Here the case is different. You have. One equation, but your operators are now matrices. And, and then we'll see what happens when we get to the end, so we're not gonna have just a
+
+SPEAKER 3
+single 2nd order equation.
+
+SPEAKER 1
+We'll end up with two equations that are 1st order and they're coupled. So the, we have kind of similar forms in some sense, our Dirac Hamiltonian, OK, we have C, which is the speed of light, alpha. P. OK, P is your momentum operator, so we know momentum operator of course from showing them. Alpha is a new thing that is introduced this, and so is beta, they are Dirac matrices. Um, so the Dirac matrices, uh, alpha. Contains within it the Pali spin matrices, alpha, it it looks in this case as being this off-diagonal uh matrix, And beta is another matrix which is now diagonal, but it's got 1 minus 1 going down, and what essentially are these things, OK, so essentially, This is kind of like your kinetic energy terms, if you think physically about them. You've got your potential VFR at the end, so when we're looking at Schroeder equation, it's P2 over 2M + VFR essentially, yeah. Now we've got C alpha. P + beta C2. So this is kind of like taking over our kinetic energy part of the expression. But there's something else that ends up embedded in there
+
+SPEAKER 3
+as well.
+
+SPEAKER 1
+And that's the That we have the rest mass of the particles that is wrapped up in there which we
+
+SPEAKER 3
+didn't have, in the non-relativistic formalism, so that's also within that. That means that when we solve this equation the way
+
+SPEAKER 1
+that it is now, the energy that we solve for
+
+SPEAKER 3
+is not just gonna be our binding energies, which is
+
+SPEAKER 1
+what we had before for the Shchredder equation, it's gonna
+
+SPEAKER 3
+be our binding energies and our rest masses of our
+
+SPEAKER 1
+energies, so MC squared for each of these terms, each one of them. OK, so that is not probably. For those who haven't done Dirac equation before or seen it, it might be worthwhile just having a little look
+
+SPEAKER 3
+into its origin and where it came about historically, um.
+
+SPEAKER 1
+But it was as well, of course, where the positron. Fell out of all the antimatter and uh predictions and so on came out of solution of the Dirac equation and trying to understand why there were negative energy solutions, and so this is, you know, where where this appeared from. Anyway, so obviously it's a very significant thing. And even though it's a little bit of a nuisance, I guess coming to terms with a quite a different form for this, when you solve for these things, it has embedded in it, a lot of things that are
+
+SPEAKER 3
+that you don't otherwise need to consider explicitly, so like
+
+SPEAKER 1
+the spin orbit stuff. OK, so as I mentioned, yeah, our solution is gonna be binding energy and the rest mass. When we do our do do this kind of calculations in our, in our group because we're doing relativistic atomic calculations, we will remove um the rest mass from our Hamiltonians, so we'll have a similar Hamiltonian C alpha plus B to -1 C2, and there is here a factor at the front of the mass which has been set to 1, so you don't see that explicitly, but we remove the rest mass when we do this. Um, consideration of the solution of this Hamiltonian and that means that since we've removed the rest mass, the solutions
+
+SPEAKER 3
+are just the binding energy, so we know then this is the binding energy of this system and you don't
+
+SPEAKER 1
+have to think about this rest mass terminus. But in Johnson's consideration, which we're gonna be working through in this course, um, and your notebooks as well are
+
+SPEAKER 3
+gonna be are written in terms of that, he does not remove that breast mass so it's just for something,
+
+SPEAKER 0
+you know, you should be mindful of this.
+
+SPEAKER 3
+OK, so what is the solution of the Dirac equation look like? You already must guess that it's not going to look like you're Schrodinger solution, because your matrix now, your Hamiltonian
+
+SPEAKER 1
+is now, A 2 by 2. Um, matrix, but actually the terms in this matrix also, Just numbers, you know you've got um vectors in there as well. Or spin matrices I should say actually, then matrices within them, so, Your solution to these.
+
+SPEAKER 0
+Contains not just one radial part like shredding, it contains
+
+SPEAKER 3
+two radial parts, you've got an upper and a lower
+
+SPEAKER 1
+radial component, and they're called different things according to different people. Johnson calls them P and Q respectively, so we're going with that. Um, and as well as that, you have a new angular. Wave function, so we don't have what we had had before which was the spherical harmonics, and say maybe product of the spin or whatever, we now have something called a spherical spinner, Which combines the spin with the spherical harmonics in combinations. OK, so That probably there's one more thing we need
+
+SPEAKER 3
+to introduce there, and that's a new quantum number as well, so we now have, because we have spherical, Uh,
+
+SPEAKER 1
+spinners, we now have a new quantum number that is called kappa, and that is the relativistic angular momentum quantum number. OK, so what makes it a relativistic one, um, I think that's probably on the next page, but what I'll just tell you is that now that we've got the spin and the orbital parts that are brought together, This Kappa essentially brings in the spin-orbit interaction, so that Kappa includes the scalar product of Sigma and L, our orbital part. And we'll look on the next page of how that's exactly defined. But In short, this is what the solution of our Dirac equation looks like, we, we give it a form, we say OK, it's gonna have this kind of a
+
+SPEAKER 3
+form, this is a, A column vector, so it's a
+
+SPEAKER 1
+um 1 by 1 row obviously and 2, sorry, 2 rows of one column. This, this omega is a bi-spinner, so it itself can
+
+SPEAKER 3
+be expanded and you can think of this instead of as a column vector with four components.
+
+SPEAKER 1
+So that has things wrapped up in it, just to be mindful of. So the form of this thing, we pull out a 11 over R. That's very convenient because whenever you're doing your um normalisation of your wave functions, when you're doing your radial normalisation, you have R2DR. If you pull out that 1 over R, then obviously the one over R 2 cancels with your R2. Anyway, so it's nice to pull that out. Here you've got the imaginary. Factor, whatever, this is a, an imaginary value at the, at the top, that's I. You've got your upper and lower radial components, nice to remember, one's up, one's one's upper, one's lower. And then we've got our spherical spinner omega kappa M and M is the is the projection of J, um total electronic annularum. And and of course, is just our angular. Um Vector, and here, just to simplify things, the terminologies to make it shorter, this is omega minus kappa M. And I'll show you what that minus kappa means.
+
+SPEAKER 3
+OK, so.
+
+SPEAKER 1
+Things to be mindful of. The lower component Q is smaller than P. So often it's common to pull out a factor of alpha, cos it's about a a factor of alpha times small point structure constant.
+
+SPEAKER 3
+OK, that's one thing to be mindful of. Second thing, now, the shorthand omega minus kappa M.
+
+SPEAKER 1
+Is this product minus sigma.n out the front of this omega kappa N? And it can also be sometimes called omega tilda on the top pattern. This is a good time to ask, who in the audience is an experimentalist? Hands up. OK, here. Both neither, I think somehow didn't go off. OK, um, so I'm not sure that you're all gonna like this, but we have to just go through it all, maybe experimentalists don't like it so much, but even you have to understand what's going on in all of this relativistic stuff. But this definitely this atomic physics part of the course, the theory part is a bit theory heavy, so I appreciate that. I mean, I understand that it is, and if you
+
+SPEAKER 3
+guys want me to explain something. More or if anyone does from the theory side as
+
+SPEAKER 1
+well, please feel free to ask, um, yeah, but it should be accessible, I hope to everyone. I don't know if I said that as well as I could have said it. I know what you mean. You know what I mean, this is not this is not very experimentally focused, this part of the course, um.
+
+SPEAKER 2
+I understand the motivation for it.
+
+SPEAKER 1
+Yeah But we'll get to the point where you can
+
+SPEAKER 3
+then start using it.
+
+SPEAKER 0
+I think the main point here is introducing a few
+
+SPEAKER 1
+symbols, and then if you can just go and start using it in the Mathematica notebook, then that's super for the theorists too, I mean for everybody across the board. Um, OK, so, Alright, so this operator I just introduced, sorry, the um, yeah, angular momentum quantum number, this new one, the relativistic one, kappa is equal to -1, OK,
+
+SPEAKER 3
+which doesn't do very much, but just tidies things up
+
+SPEAKER 1
+a little bit. Hey, minus sigma. L, so sigma. L is essentially like your, that's your spin-orbit coupling. So if you act with your operator K on omega, it it gives you back this kappa, and actually that thing up there is K, not kappa, so that's your
+
+SPEAKER 3
+operator. Let's just put that there, cause that was starting to look a bit not operatory to me. So you operate on your wave function, you get that kappa, which is your eigenvalue.
+
+SPEAKER 1
+Now you don't need to remember any of that, but this is what it's easy to remember, so if you read one of these papers, um, Kappa goes in the following way, counting from -1, -1, 1, -2, 2, -3, 3, -4, 4, and so on, yeah? And what that corresponds to is this S1, P1, P3/22, D3/22, D 51/2, and so on. And if you just wanna convince yourself of that, you can use these expressions here.
+
+SPEAKER 0
+So this is really just moving up how you would
+
+SPEAKER 1
+order the energies in, in a system as you're going up from the beginning. And what's different about the non-relativistic stuff is that if you were to do it non-relativistically, you wouldn't have the J's built in there. You would instead just have SPDF, but now we've got it distinguished by its total angular angular momentum J as well, so it's half the half P3 half, but this is the J of course down the bottom.
+
+SPEAKER 0
+We're probably getting, let me just see how far towards
+
+SPEAKER 3
+the end cos this is getting a bit. Intense.
+
+SPEAKER 1
+All right. So, some cool stuff about, OK, the lower angular momentum component, this omega minus kappa M, so it's the same,
+
+SPEAKER 3
+it has, you can check the same angular momentum, J,
+
+SPEAKER 0
+though different parity compared to the one with the kappa.
+
+SPEAKER 3
+So if you go back here, number 1, the, the
+
+SPEAKER 1
+top angular component, the bottom, bottom ones, they're differ by minus, a minus sign in the kappa. So that means that the top one, for example, if the top one was S-like, the bottom one minus -1 would be P half-like. So they're actually, the angular parts, Have the same J, you can check that for all of them. These have the same magnitude of kappa. So that means they've got the same J, but they've got different parity, so you go from one orbital to the neighbouring one. So that's interesting that the lower and upper angular parts
+
+SPEAKER 3
+have different sort of parities essentially.
+
+SPEAKER 1
+And then, this is what eventually we get to.
+
+SPEAKER 0
+Instead of, for example, the Schroder equation, remember that you've
+
+SPEAKER 1
+looked at before, we end up with this, which is two equations. You've got V, that's C2 speed of light, see, we've got things with P in them, things with Q in them. P and Q are upper and lower radial components. These things are coupled together because we can't just separate them. It's not an equation for P and a separate equation for Q. The P's wrapped up in the Q expression and the Q's wrapped up in the other way around. So you have to solve them together. Um, and a few just points to note, of course, but then when you do your normalisation of the wave functions, we spoke about the one over R's coming out, and you'll see that your normalisation looks like this if you take the, Um, Integral of the wave function of one of them, you see that this one plus 3 square is one that integral. And then for your angular part as well, this is gonna be 1 if they're the same, or 0 if they're not the same for the angular parts.
+
+SPEAKER 3
+So usual sort of stuff, but now the solution of
+
+SPEAKER 0
+this is rather different to what we have for shredding up. And There's something I would like you to do, and
+
+SPEAKER 3
+perhaps even if, Uh, Jayden has time, he could take you through the details of this, cause this is always a fun exercise.
+
+SPEAKER 0
+So the main exercise is, and this is to add
+
+SPEAKER 3
+to your homework or to think about, is to start from this Dirac equation.
+
+SPEAKER 1
+Yeah You've got HD bottom, you can write that out, you can insert in your, um, matrices, so instead of alpha, you've got now matrix, the first term is then gonna be, And bless you, you'll have like 0 C sigma.P in that right column, you know, C sigma. P in the left hand, bottom 10, blah blah, on. This form of the wave function. Here, so you just expand the thing out, you want to derive the radial equations, a couple of radial equations, that's what I, it would be super if you could
+
+SPEAKER 3
+do that, and there's some really, really cool little tricks that pop up in that derivation, and I've already put
+
+SPEAKER 0
+them here explicitly, but I'd suggest that you, as an
+
+SPEAKER 3
+exercise, don't look at this, yet and try to derive
+
+SPEAKER 0
+them yourself, yourselves, but just keeping in mind a couple
+
+SPEAKER 1
+of things. One thing is, of course, you can't just move the orders of any, Um, anything on your right-hand side of your operator, if you've got a 1 over R in your wave function, which you do, you can't just suddenly pull the 1 over R, out to the left-hand side and operate on the rest of the wave function, because there can be a derivative with R or something, yeah? Another thing, so I'll just tell you this first clue at the top, cos you're gonna be needing to address that, and this is one of my favourite things, the
+
+SPEAKER 3
+favourite things as a theoretician, at least for me, as
+
+SPEAKER 1
+a theoretician, is multiplying by one and doing really cool
+
+SPEAKER 3
+things with it, figuring out how to solve the problem
+
+SPEAKER 1
+by multiplying by by one. And this is one of those, sigma. P equals and the sigma. N times sigma.N is 1, actually sigma. N squad, I don't know if you recall this from your previous studies, that's 1. You multiply One on the left by the sigma. P and then, you then, group together the sigma. N and sigma.P on the right, and you do the manipulations with that and then everything comes out and it's
+
+SPEAKER 3
+just very, very neat and really, really, really nice. So, that's for deriving the um Dirac equation. And this is your exercise here that I put completed
+
+SPEAKER 1
+and all the hints are above, so just don't look at the hints yet, I know what I told you. And once you've done that, you can then go and use the Mathematica notebook and go and evaluate matrix elements of things like whatever R2, R and whatever else it is that compared to what you get, um, for the non-relativistic case. OK. So we've covered a lot of stuff I think already this week. Yeah, there's a bit of reading to do, but mostly things should become clear when you just start using the, the Mathematica notebook and when you're doing your um assignments. It's pretty much everything's just towards supporting you to do, to do the work on those assignments. There isn't much else that you need to do and
+
+SPEAKER 3
+it's just sort of the reading and the support and
+
+SPEAKER 1
+understanding you get towards doing that. OK, cool. So I guess we should wrap up now and give you guys about at least a 6 minute break before we start doing a tutorial, but it shouldn't be too
+
+SPEAKER 3
+much of an intensive tub this week, should it?
+
+SPEAKER 1
+OK, so thank you everybody, and I'll see you next week, and um yeah, we'll line up your talks then, OK, thanks, bye. Intense No. Make sure you all get up and walk around. You going to have volunteers go to the front or you'll do it yourself. Yeah. It's always more fun for you guys. Volunteering and stuff. What do they call that student interaction force interaction. forced.
+
+SPEAKER 3
+And if you have any questions with the um notebook,
+
+SPEAKER 1
+Jamie should be able to help as well. We're gonna look. Both of them that have been so far? I think so, yeah, most of the best ones.
+
+SPEAKER 3
+And if you have any feedback on the notebooks also
+
+SPEAKER 0
+let me know because we can always make some sort of updates or if there's any mistakes, corrections or whatever
+
+SPEAKER 3
+or.
+
+SPEAKER 2
+I did have a question about the first one, more of like a. I think. One of Pieces of code requires a C compiler. I did install one to my laptop, but, It's still giving me errors even though it runs. You should be able to so it runs and I have like a, I can see the orbital and I can like drag it around and like rotate it. That's but it still has an error telling me that there's something wrong with on my computer, so I don't know if it's just a my laptop thing or I had the same thing, but I thought that was just
+
+SPEAKER 1
+me. Oh no, really? Yeah, but you can still like interact with the old
+
+SPEAKER 2
+girl. Yeah, maybe it's like missing something.
+
+SPEAKER 0
+Oh, so you mean you didn't resolve it then it
+
+SPEAKER 3
+just stays, yeah, OK, so that's something we should look
+
+SPEAKER 0
+into. Has someone else had that problem as well?
+
+SPEAKER 1
+Yeah.
+
+SPEAKER 2
+On notebook 2, I don't know if there's anything about the track equation.
+
+SPEAKER 1
+Oh, there isn't.
+
+SPEAKER 3
+Is it on the first one?
+
+SPEAKER 0
+Was it in the first? I can't because it might have gone into the first in the NDA. So the second one is the one with the finite nuclear potential I think.
+
+SPEAKER 3
+I'm just trying to remember my memory and the 3rd 1 that I haven't released yet, maybe I should release that I can just, I'll just spend 5 seconds just looking into what it is during this break. But That's I think on external fields.
+
+SPEAKER 1
+Maybe it's worthwhile just opening that one up anyway, but no, I mean just for them to have.
+
+SPEAKER 2
+I was just sort of worried that. The the window that you get is like missing something, but. It seems to be functional. You can like change all of the, the quantum numbers and you get different orbitals and stuff so. I think it's just working. But throwing some sort of strange arrow on.
+
+SPEAKER 1
+Did you guys get a chance to do your homework problems as well, just those little expansion of the expressions to get the scale of product. Spherical vectors in the spherical space. No. You don't sound like he's homework, but no one really does when it does.
+
+SPEAKER 2
+Scheduled for good. But I didn't do the uh.
+
+SPEAKER 1
+Um, The spherical harmony type thing, OK, because I was thinking I could. Right out the But then that means you're not gonna do them on your own, so. Yeah, we'll just give them to Jayden to do in the next tutor. we I only watched it yesterday.
+
+SPEAKER 2
+point. It Nice. I know that's really good. Oh, there you go.
+
+SPEAKER 1
+Uh, I usually project up on the camera, so then
+
+SPEAKER 2
+I just scan the notes. Up on back. That Let's show you, let's. And I See by actually 3. I thought about I
