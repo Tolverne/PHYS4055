@@ -1,0 +1,40 @@
+
+\section{Worked example: evaluate a \(3j\) coefficient}
+Evaluate \(\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}\).
+In the Condon--Shortley convention,
+\[
+\begin{pmatrix}j_1&j_2&J\\m_1&m_2&-M\end{pmatrix}
+=\frac{(-1)^{j_1-j_2+M}}{\sqrt{2J+1}}
+\langle j_1m_1,j_2m_2|JM\rangle.
+\]
+Because coupling a zero-angular-momentum state to \(\ket{1,0}\)
+leaves that state unchanged,
+\(\langle0,0;1,0|1,0\rangle=1\).
+Therefore
+\[
+\boxed{\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}
+=\frac{(-1)^{-1}}{\sqrt3}=-\frac1{\sqrt3}.}
+\]
+\textbf{Physical interpretation:} this is an angular coefficient
+for the rank-1 coupling of \(l=0\) and \(l'=1\);
+the transition amplitude also contains radial/reduced factors.
+
+\section{Worked example: E1 vs E2 transitions from \(s\)}
+Consider a single electron in \(l=0\) (even parity).
+
+\textbf{E1.} The operator is rank 1 and odd under inversion.
+Parity must change; the triangle rule
+\(|l'-0|\le1\le l'+0\) selects \(l'=1\): an \(s\to p\)
+electric-dipole transition can be allowed.
+
+\textbf{E2.} The operator is rank 2 and even under inversion.
+Parity must remain unchanged; the triangle rule
+\(|l'-0|\le2\le l'+0\) selects \(l'=2\): an \(s\to d\)
+electric-quadrupole transition can be allowed.
+An E2 \(s\to p\) transition is forbidden by parity.
+
+\begin{methodbox}
+First eliminate impossible transitions using operator parity and the
+triangle rule. Then, for fine-structure or multielectron states,
+also check \(J,m_J,S\) and the relevant reduced matrix element.
+\end{methodbox}

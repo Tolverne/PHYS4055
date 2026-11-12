@@ -1,0 +1,45 @@
+
+\section{Worked example: hyperfine splitting}
+\textbf{Question type.} Given \(I=\frac52\), \(J=\frac12\) and magnetic-dipole
+hyperfine constant \(A\), determine the allowed \(F\), energies,
+degeneracies and separation.
+
+\textbf{Step 1: allowed total angular momenta.}
+\[
+F=|I-J|,|I-J|+1,\ldots,I+J
+\quad\Longrightarrow\quad F=2,\ 3.
+\]
+\textbf{Step 2: derive rather than blindly apply the formula.}
+\[
+\hat{\mathbf F}^2=\hat{\mathbf I}^2+\hat{\mathbf J}^2+
+2\hat{\mathbf I}\cdot\hat{\mathbf J},
+\quad
+\hat H=\frac A{\hbar^2}\hat{\mathbf I}\cdot\hat{\mathbf J},
+\]
+so
+\[
+E_F=\frac A2[F(F+1)-I(I+1)-J(J+1)].
+\]
+\textbf{Step 3: substitute.} Here \(I(I+1)=35/4\),
+\(J(J+1)=3/4\).
+\begin{align*}
+E_{F=2}&=\frac A2\left(6-\frac{35}{4}-\frac34\right)
+=-\frac{7A}{4},\\
+E_{F=3}&=\frac A2\left(12-\frac{35}{4}-\frac34\right)
+=\frac{5A}{4},\\
+E_3-E_2&=3A.
+\end{align*}
+\textbf{Step 4: degeneracies and check.}
+\(2F+1=5\) or \(7\) magnetic substates.
+Their sum \(12=(2I+1)(2J+1)\) verifies completeness.
+
+\begin{methodbox}
+\textbf{Reusable exam method.} Couple \(I,J\) to list \(F\);
+use \(F(F+1)\); compute each energy; count \(2F+1\);
+check the dimension and sign of \(A\).
+\end{methodbox}
+\begin{cautionbox}
+Do not replace the eigenvalue \(F(F+1)\hbar^2\) with \(F^2\).
+If \(A<0\), the ordering reverses. The degeneracy \(2F+1\)
+is \emph{not} the number of distinct hyperfine energies.
+\end{cautionbox}
