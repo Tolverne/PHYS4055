@@ -1,0 +1,43 @@
+
+{\Large\bfseries\color{accent}3. 3-j symbols and Wigner--Eckart}
+\hrule\smallskip
+\begin{multicols}{2}
+\subsection*{Wigner--Eckart theorem}
+\[
+\boxed{
+\langle j'm'|T_q^{(k)}|jm\rangle
+=(-1)^{j'-m'}
+\begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+\langle j'\Vert T^{(k)}\Vert j\rangle
+}
+\]
+Conventions vary: preserve the convention specified
+in the question or the supplied tables.
+\subsection*{Immediate zero checks}
+\(\begin{pmatrix}j_1&j_2&j_3\\m_1&m_2&m_3\end{pmatrix}=0\) unless:
+\[
+m_1+m_2+m_3=0,\quad |m_i|\le j_i,
+\]
+\[
+|j_1-j_2|\le j_3\le j_1+j_2,
+\quad j_1+j_2+j_3\in\mathbb Z.
+\]
+For \(T_q^{(k)}\): \(m'=m+q\) and
+\(|j'-j|\le k\le j'+j\).
+\subsection*{CG to 3-j}
+\[
+\begin{pmatrix}j_1&j_2&J\\m_1&m_2&-M\end{pmatrix}
+=\frac{(-1)^{j_1-j_2+M}}{\sqrt{2J+1}}
+\langle j_1m_1,j_2m_2|JM\rangle.
+\]
+\subsection*{Known illustrative value}
+\[
+\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}=-1/\sqrt3.
+\]
+\begin{methodbox}
+\textbf{Method:} test selection/triangle rules first;
+convert to CG if helpful; apply a table or known
+special case; multiply by reduced element;
+check sign and normalisation.
+\end{methodbox}
+\end{multicols}
