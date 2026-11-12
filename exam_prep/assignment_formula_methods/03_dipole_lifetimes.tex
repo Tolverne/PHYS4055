@@ -1,0 +1,31 @@
+
+\section{Model potentials, E1 rates and atomic lifetimes}
+\textbf{Recognise:} a central model potential gives bound states
+whose radial overlap and angular coefficients determine allowed decay.
+
+For \(\psi=R_{nl}(r)Y_{lm}\), first obtain orthonormal
+radial eigenfunctions; decide whether software outputs \(R\) or \(u=rR\).
+
+\textbf{Check selection rules} before integrating:
+E1 requires opposite parity and the rank-1 triangle/projection rules.
+For an allowed transition,
+\[
+\langle f|\hat{\mathbf d}|i\rangle=-e\langle f|\mathbf r|i\rangle,
+\qquad
+\int_0^\infty R_f^*(r)\,r^3R_i(r)\,\diff r
+\]
+is the radial factor; include the angular integral.
+Compute
+\[
+A_{if}=\frac{\omega_{if}^{3}}{3\pi\epsilon_0\hbar c^3}
+\big|\langle f|\hat{\mathbf d}|i\rangle\big|^2,
+\qquad
+\tau_i=\left(\sum_{f:E_f<E_i}A_{if}\right)^{-1}.
+\]
+With data in atomic units, state the unit conversions.
+\(t_{\mathrm{au}}\simeq2.418884\times10^{-17}\,\mathrm{s}\).
+\begin{methodbox}
+\textbf{Method:} eigenstates \(\to\) allowed E1 channels
+\(\to\) angular/radial factors \(\to\) frequencies and rates
+\(\to\) sum rates \(\to\) lifetime and measurement comparison.
+\end{methodbox}

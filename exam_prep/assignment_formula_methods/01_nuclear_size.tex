@@ -1,0 +1,24 @@
+
+\section{Nuclear size: first-order energy shifts}
+\textbf{Recognise:} a finite nucleus changes the electrostatic
+potential only near \(r=0\), relative to the point-charge Coulomb model.
+
+\textbf{Define unperturbed problem:}
+\[
+H_0\ket{nlm}=E_{nl}^{(0)}\ket{nlm},\qquad
+\Delta V(r)=V_{\mathrm{finite}}(r)-V_{\mathrm{point}}(r).
+\]
+\textbf{First-order correction:}
+\[
+\Delta E_{nl}^{(1)}=\langle nlm|\Delta V|nlm\rangle
+=\int_0^\infty |R_{nl}(r)|^2\Delta V(r)\,r^2\,\diff r.
+\]
+State the adopted nuclear charge model and radial normalisation.
+If \(\Delta V\) is confined to a small nuclear radius,
+inspect the small-\(r\) wavefunction: states with large density
+at the nucleus feel the greatest correction.
+\begin{methodbox}
+\textbf{Method:} construct both potentials, subtract, set physical
+integration limits, insert correctly normalised radial state,
+integrate and sanity-check sign/units.
+\end{methodbox}

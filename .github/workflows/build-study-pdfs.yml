@@ -1,0 +1,45 @@
+name: Build PHYS4055 printable revision PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/**/*.tex'
+      - 'tex/**/*.tex'
+      - '.github/workflows/build-study-pdfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: course-overview
+            directory: exam_prep/reference_booklet
+          - name: worked-examples
+            directory: exam_prep/worked_examples
+          - name: formula-methods
+            directory: exam_prep/formula_sheets
+          - name: assignment-methods
+            directory: exam_prep/assignment_formula_methods
+          - name: past-exam-solutions
+            directory: exam_prep/past_exam_solutions
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: ${{ matrix.directory }}
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Upload printable PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: PHYS4055-${{ matrix.name }}
+          path: ${{ matrix.directory }}/main.pdf
+          if-no-files-found: error
