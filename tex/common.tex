@@ -1,0 +1,34 @@
+
+\usepackage[a4paper,top=18mm,bottom=18mm,left=18mm,right=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{xcolor,booktabs,tabularx,array,enumitem,multicol,graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr,hyperref}
+\definecolor{ink}{HTML}{24354B}
+\definecolor{accent}{HTML}{135E77}
+\definecolor{pale}{HTML}{F1F7F8}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdfauthor={PHYS4055 revision notes}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\setlist{leftmargin=*,topsep=2pt,itemsep=1pt}
+\AtBeginDocument{\color{ink}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize PHYS4055 \textbar\ Exam Revision}
+\fancyhead[R]{\footnotesize 2026 \textbar\ Open-book notes}
+\fancyfoot[C]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\ket}[1]{\left\lvert #1\right\rangle}
+\newcommand{\bra}[1]{\left\langle #1\right\rvert}
+\newcommand{\braket}[2]{\left\langle #1\middle\vert #2\right\rangle}
+\newcommand{\mel}[3]{\left\langle #1\middle\vert #2\middle\vert #3\right\rangle}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\e}{\mathrm{e}}
+\newtcolorbox{methodbox}{colback=pale,colframe=accent!50!white,boxrule=0.4pt,arc=1mm,before skip=5pt,after skip=5pt}
+\newtcolorbox{cautionbox}{colback=white,colframe=black!20,boxrule=0.4pt,arc=1mm,before skip=5pt,after skip=5pt}
