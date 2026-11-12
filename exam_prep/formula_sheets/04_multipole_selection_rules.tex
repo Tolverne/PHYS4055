@@ -1,0 +1,38 @@
+
+{\Large\bfseries\color{accent}4. Multipoles, parity and selection rules}
+\hrule\smallskip
+\begin{multicols}{2}
+\subsection*{Operators}
+Electric multipole \(E k\): rank \(k\), parity \((-1)^k\).
+Magnetic multipole \(M k\): rank \(k\), parity \((-1)^{k+1}\).
+Orbital state parity is \((-1)^l\); multi-electron
+configuration parity is \((-1)^{\sum_i l_i}\).
+\subsection*{E1 / M1 / E2 at a glance}
+\begin{tabular}{@{}lll@{}}\toprule
+Type & Rank & Parity condition\\\midrule
+E1 & 1 & Changes\\
+M1 & 1 & Unchanged\\
+E2 & 2 & Unchanged\\\bottomrule
+\end{tabular}
+\[
+|J-J'|\le k\le J+J',\qquad m'=m+q,\quad |q|\le k.
+\]
+E1/M1: \(\Delta J=0,\pm1\), excluding \(0\leftrightarrow0\).
+E2: \(\Delta J=0,\pm1,\pm2\) \emph{subject to the triangle inequality};
+in particular \(0\leftrightarrow0\) and \(0\leftrightarrow1\) fail.
+\subsection*{Orbital screening (one electron)}
+E1: \(\Delta l=\pm1\). E2:
+\(\Delta l=0,\pm2\), but still apply rank-2
+triangle: \(0\leftrightarrow0\) fails.
+M1: commonly \(\Delta l=0\) in the leading approximation.
+\subsection*{Immediate \(s\)-state examples}
+\(s\to p\): possible E1, not E2.
+
+\(s\to d\): possible E2, not E1.
+\begin{methodbox}
+\textbf{Method:} write operator rank and parity;
+check initial/final parity; triangle on \(J\)
+(or orbital \(l\) if applicable); projection \(q\);
+then evaluate matrix elements.
+\end{methodbox}
+\end{multicols}
