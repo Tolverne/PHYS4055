@@ -1,0 +1,50 @@
+
+\section{Spherical tensors and Wigner--Eckart}
+A rank-\(k\) irreducible spherical tensor \(T_q^{(k)}\) has
+\(2k+1\) components \(q=-k,\dots,k\). Rank 1 behaves as a vector;
+rank 2 has five quadrupole-like components. The Wigner--Eckart theorem
+separates angular geometry from dynamics:
+\[
+\boxed{\langle j'm'|T_q^{(k)}|jm\rangle
+=(-1)^{j'-m'}
+\begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+\langle j'\Vert T^{(k)}\Vert j\rangle.}
+\]
+The \(3j\) symbol enforces \(m'=m+q\), the triangle rule
+\(|j-j'|\le k\le j+j'\), and allowed integer/half-integer sums.
+A nonzero \(3j\) does \emph{not} guarantee that the reduced matrix
+element, and hence the transition, is nonzero.
+
+\subsection{A simple \(3j\) symbol}
+Adding angular momentum zero changes nothing:
+\(\langle0,0;1,0|1,0\rangle=1\). Hence
+\[
+\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}
+=\frac{(-1)^{0-1+0}}{\sqrt{2(1)+1}}
+\langle0,0;1,0|1,0\rangle=-\frac1{\sqrt3}.
+\]
+
+\section{Electromagnetic multipoles and parity}
+Electric multipole \(Ek\) has rank \(k\), parity \((-1)^k\).
+Magnetic multipole \(Mk\) has rank \(k\), parity \((-1)^{k+1}\).
+Both require the angular-momentum triangle rule and projection rule.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}lclX@{}}
+\toprule
+Type & Rank & Operator parity & Common orbital screening (single electron)\\
+\midrule
+E1 & 1 & odd & Opposite-parity orbitals; \(\Delta l=\pm1\)\\
+M1 & 1 & even & Same parity; commonly \(\Delta l=0\)\\
+E2 & 2 & even & Same parity; \(\Delta l=0,\pm2\), plus triangle rule\\
+\bottomrule
+\end{tabularx}
+\end{center}
+For E1, \(\Delta J=0,\pm1\) but \(J=0\leftrightarrow J'=0\)
+is forbidden. For E2, \(|J'-J|\le2\le J'+J\); listing
+\(\Delta J=0,\pm1,\pm2\) without this triangle condition is incomplete.
+\begin{methodbox}
+\textbf{Exam method:} identify \(Ek/Mk\); check parity, triangle and
+projection rules; apply the specified spin/orbital assumptions;
+then calculate the \(3j\) and reduced/radial elements.
+\end{methodbox}

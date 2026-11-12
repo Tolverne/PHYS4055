@@ -1,0 +1,58 @@
+
+\section{Equivalent electrons and Hund's rules}
+For two equivalent \(d\) electrons (\(d^2\)), antisymmetry permits
+\[
+{}^3F_{2,3,4},\quad {}^3P_{0,1,2},\quad
+{}^1G_4,\quad {}^1D_2,\quad {}^1S_0.
+\]
+The microstate count is
+\[
+(3\times7)+(3\times3)+(1\times9)+(1\times5)+(1\times1)
+=45=\binom{10}{2}.
+\]
+Hund's first rule favours maximum \(S\); second favours maximum \(L\)
+within a multiplicity; third favours the smallest \(J\) for a less-than-half-full
+shell. Thus the simple LS-coupled ground-state prediction for \(d^2\)
+is \({}^3F_2\). Do not assume Hund's rules uniquely order every
+other term: compare to experimental level data.
+
+\section{Radial structure and nuclear-size effects}
+For a central potential,
+\(\psi_{nlm}(r,\theta,\phi)=R_{nl}(r)Y_{lm}(\theta,\phi)\)
+and \(\int_0^\infty|R_{nl}|^2r^2\,\diff r=1\).
+The alternative radial function \(u_{nl}(r)=rR_{nl}(r)\) satisfies
+\(\int_0^\infty|u_{nl}|^2\,\diff r=1\).
+A small change in a central potential can be estimated by first-order
+perturbation theory:
+\[
+\Delta E_{nlm}^{(1)}
+=\int\psi_{nlm}^*(\mathbf r)\,\Delta V(r)\,
+\psi_{nlm}(\mathbf r)\,\diff^3r.
+\]
+For a spherically symmetric perturbation the angular integral is unity.
+Small-\(r\) contributions matter particularly for orbitals with density
+at the nucleus.
+
+\section{E1 dipole matrix elements and radiative lifetimes}
+The dipole matrix element factors into angular and radial pieces;
+the radial part for \(R\)-normalisation is
+\[
+\int_0^\infty R_{n_fl_f}^*(r)\,r\,R_{n_il_i}(r)\,r^2\,\diff r.
+\]
+For specific non-degenerate initial and final states in vacuum,
+the spontaneous E1 rate in SI units is
+\[
+A_{i\to f}=\frac{\omega_{if}^3}{3\pi\epsilon_0\hbar c^3}
+\left|\langle f|\hat{\mathbf d}|i\rangle\right|^2,
+\quad \hat{\mathbf d}=-e\hat{\mathbf r}.
+\]
+Treat sums/averages over magnetic substates consistently.
+The lifetime includes \emph{all} allowed downward decay channels:
+\[
+\boxed{\tau_i=\left(\sum_{f:E_f<E_i} A_{i\to f}\right)^{-1}.}
+\]
+Atomic unit of time: \(t_{\mathrm{au}}\simeq2.418884\times10^{-17}\,\mathrm s\).
+\begin{cautionbox}
+Using \(u(r)\) in an integral derived for \(R(r)\) introduces incorrect
+factors of \(r\). Check radial normalisation and unit conversion.
+\end{cautionbox}

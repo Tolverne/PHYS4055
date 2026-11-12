@@ -1,0 +1,41 @@
+
+\section{Hyperfine structure and magnetic fields}
+The magnetic-dipole hyperfine Hamiltonian is
+\[
+\hat H_{\mathrm{hfs}}=\frac{A}{\hbar^2}\hat{\mathbf I}\cdot\hat{\mathbf J}.
+\]
+With \(\mathbf F=\mathbf I+\mathbf J\), squaring gives
+\(\mathbf F^2=\mathbf I^2+\mathbf J^2+2\mathbf I\cdot\mathbf J\).
+Hence the hyperfine energy is
+\[
+\boxed{E_F=\frac A2[F(F+1)-I(I+1)-J(J+1)].}
+\]
+This expression treats the magnetic-dipole interaction. An electric-quadrupole
+hyperfine correction can be present where angular momenta permit it.
+\subsection{Worked level pattern: \(I=\frac52,\ J=\frac12\)}
+Possible totals are \(F=2,3\), with \(2F+1=5,7\) states:
+\[
+E_2=\frac A2\left(6-\frac{35}{4}-\frac34\right)=-\frac{7A}{4},
+\qquad
+E_3=\frac A2\left(12-\frac{35}{4}-\frac34\right)=\frac{5A}{4}.
+\]
+Thus \(\Delta E=E_3-E_2=3A\). The total count
+\(5+7=(2I+1)(2J+1)=12\) checks completeness. For \(A>0\):
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.75cm]
+\draw[thick,accent] (0,2.5)--(3,2.5) node[right,black] {$F=3,\ E_3=5A/4$};
+\draw[thick,accent] (0,.3)--(3,.3) node[right,black] {$F=2,\ E_2=-7A/4$};
+\draw[<->,thick] (1.5,.48)--node[right] {$3A$}(1.5,2.32);
+\end{tikzpicture}
+\end{center}
+For \(A<0\), the energy ordering reverses.
+\subsection{Magnetic field regimes}
+At weak magnetic fields, \(F,m_F\) are useful quantum numbers:
+the linear Zeeman shift is approximately \(\Delta E=g_F\mu_Bm_FB\)
+(neglecting small nuclear corrections when appropriate).
+At sufficiently strong fields the hyperfine coupling is perturbed,
+and \(m_I,m_J\) are more natural labels (hyperfine Paschen--Back regime).
+\begin{cautionbox}
+Always decide whether the field is weak or strong relative to the hyperfine
+splitting \emph{before} selecting the basis.
+\end{cautionbox}
