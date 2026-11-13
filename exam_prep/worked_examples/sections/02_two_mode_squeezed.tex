@@ -1,0 +1,59 @@
+
+\section{QO-02: Two-mode squeezed vacuum, correlations and heralding}
+\source{2026 Optics Assignment 1, Question 1; released Assignment 1 solutions.}
+\subsection*{Given state and first checks}
+Let \(\lambda=\tanh r\), \(0\le\lambda<1\), and
+\[
+\ket\Psi=\sqrt{1-\lambda^2}
+\sum_{n=0}^\infty\lambda^n\ket n_s\ket n_i .
+\]
+Normalisation follows from
+\((1-\lambda^2)\sum_{n=0}^\infty(\lambda^2)^n=1\).
+Every pair has identical signal and idler photon number.
+
+\subsection*{Step 1: trace out the idler}
+Expand \(\rho_{si}=\ket\Psi\bra\Psi\):
+\[
+\rho_{si}=(1-\lambda^2)\sum_{m,n}
+\lambda^{m+n}\ket m_s\bra n_s\otimes\ket m_i\bra n_i.
+\]
+The idler trace gives
+\(\operatorname{Tr}_i(\ket m\bra n)=\delta_{mn}\):
+\[
+\boxed{\rho_s=(1-\lambda^2)\sum_{n=0}^\infty
+\lambda^{2n}\ket n\bra n}.
+\]
+This is thermal photon statistics: set \(q=\lambda^2\) so
+\(p_n=(1-q)q^n\). Differentiating the geometric series,
+\[
+\bar n=(1-q)\sum_n nq^n=\frac{q}{1-q}
+=\boxed{\frac{\lambda^2}{1-\lambda^2}=\sinh^2r}.
+\]
+The \emph{joint} state is pure, but either subsystem is mixed.
+
+\subsection*{Step 2: calculate the signal--idler correlation}
+Because \(n_s=n_i=n\) in every term,
+\[
+\langle\hat n_s\hat n_i\rangle=\langle n^2\rangle,\qquad
+\langle n^2\rangle=(\Delta n)^2+\bar n^2
+=(\bar n+\bar n^2)+\bar n^2.
+\]
+Hence
+\[
+\boxed{g_{si}^{(2)}(0)=
+\frac{\langle\hat n_s\hat n_i\rangle}{\bar n^2}
+=2+\frac{1}{\bar n}}.
+\]
+For example \(\lambda=0.2\) gives
+\(\bar n=1/24\simeq0.0417\) and \(g_{si}^{(2)}=26\).
+
+\subsection*{Step 3: explain heralding}
+At low gain \(\lambda\ll1\),
+\(\ket\Psi\simeq\ket{0,0}+\lambda\ket{1,1}+O(\lambda^2)\).
+Conditioning on detecting exactly one idler photon projects
+the signal onto \(\ket1\). A threshold detector with nonzero
+multi-pair probability does not guarantee a perfect \(\ket1\)
+at higher gain.
+\checkmethod{A reduced thermal state does \emph{not} contradict
+strong pairwise correlations: the traced-out idler held the
+information about the signal photon number.}

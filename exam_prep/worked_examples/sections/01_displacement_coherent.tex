@@ -1,0 +1,55 @@
+
+\section{QO-01: Displacement operators and coherent-state fields}
+\source{Week 1 Tutorial, Questions 1--3; \texttt{Week1Solutions (1).pdf}.}
+\subsection*{Recognise the problem}
+A coherent state is a displaced vacuum. The key identity
+\(\hat D^\dagger(\alpha)\hat a\hat D(\alpha)=\hat a+\alpha\)
+lets us calculate its observables without expanding infinitely many
+number states.
+
+\subsection*{Step 1: evaluate the commutator}
+Write \(\hat A=\alpha\hat a^\dagger-\alpha^*\hat a\), so
+\(\hat D=e^{\hat A}\) and \(\hat A^\dagger=-\hat A\).
+Using the Baker--Campbell--Hausdorff identity,
+\[
+e^{-\hat A}\hat a e^{\hat A}
+=\hat a+[-\hat A,\hat a]
++\frac1{2!}[-\hat A,[-\hat A,\hat a]]+\cdots .
+\]
+Since \([\hat a^\dagger,\hat a]=-1\),
+\[
+[-\hat A,\hat a]=-\alpha[\hat a^\dagger,\hat a]
++\alpha^*[\hat a,\hat a]=\alpha .
+\]
+This is a scalar, so every further nested commutator vanishes:
+\[
+\boxed{\hat D^\dagger(\alpha)\hat a\hat D(\alpha)=\hat a+\alpha.}
+\]
+
+\subsection*{Step 2: show that a coherent state is an eigenstate}
+Defining \(\ket\alpha=\hat D(\alpha)\ket0\),
+\[
+\hat a\ket\alpha
+=\hat D(\alpha)(\hat D^\dagger\hat a\hat D)\ket0
+=\hat D(\alpha)(\hat a+\alpha)\ket0
+=\boxed{\alpha\ket\alpha}.
+\]
+Therefore \(\langle\hat a\rangle_\alpha=\alpha\) and
+\(\langle\hat n\rangle=|\alpha|^2\).
+
+\subsection*{Step 3: recover a classical oscillating field}
+For the Week 1 travelling-wave operator,
+\[
+\hat{\mathbf E}(z,t)=\mathbf e E_0
+[\hat a e^{i\varphi}+\hat a^\dagger e^{-i\varphi}],
+\quad \varphi=kz-\omega t,
+\]
+write \(\alpha=|\alpha|e^{i\theta}\). Then
+\[
+\langle\hat{\mathbf E}\rangle_\alpha
+=\mathbf eE_0(\alpha e^{i\varphi}+\alpha^*e^{-i\varphi})
+=\boxed{2\mathbf e E_0|\alpha|\cos(kz-\omega t+\theta)}.
+\]
+\checkmethod{The result must be real and oscillate at the mode
+frequency. A number state instead has \(\langle \hat a\rangle=0\);
+nonzero average energy alone does not yield a classical mean field.}

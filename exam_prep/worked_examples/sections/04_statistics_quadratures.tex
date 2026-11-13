@@ -1,0 +1,56 @@
+
+\section{QO-04: Photon statistics, quadrature noise and squeezing}
+\source{Week 3 Tutorial, 2024 Exam Question 3; Weeks 1--3 lecture slides.}
+\subsection*{Step 1: a two-number-state superposition}
+For \(\ket\psi=\alpha\ket n+\beta\ket{n+1}\),
+\(|\alpha|^2+|\beta|^2=1\), put \(p=|\beta|^2\). Then
+\[
+\langle \hat n\rangle=n+p,\quad
+\langle\hat n^2\rangle=n^2+(2n+1)p,
+\]
+\[
+\boxed{\operatorname{Var}(\hat n)=p(1-p)}.
+\]
+For any non-vacuum mean, this is less than \(\bar n=n+p\)
+except the trivial vacuum limit: the statistics are
+sub-Poissonian. Contrast coherent light
+\(\operatorname{Var}(n)=\bar n\) and single-mode thermal light
+\(\operatorname{Var}(n)=\bar n+\bar n^2\).
+
+\subsection*{Step 2: set the quadrature convention}
+The lectures use
+\[
+\hat x=\hat a+\hat a^\dagger,\qquad
+\hat p=i(\hat a^\dagger-\hat a).
+\]
+Since \([\hat x,\hat p]=2i\), Heisenberg's inequality gives
+\((\Delta x)^2(\Delta p)^2\ge1\). A coherent state has
+\(\langle x\rangle=2\operatorname{Re}\alpha\),
+\(\langle p\rangle=2\operatorname{Im}\alpha\),
+and both variances equal 1.
+
+\subsection*{Step 3: use the squeezing transformation}
+For real squeezing \(r>0\), let
+\[
+\hat S(r)=\exp\!\left[\frac r2
+(\hat a^2-\hat a^{\dagger2})\right],\quad
+\hat S^\dagger\hat a\hat S=
+\hat a\cosh r-\hat a^\dagger\sinh r.
+\]
+Consequently
+\[
+\hat S^\dagger\hat x\hat S=e^{-r}\hat x,\qquad
+\hat S^\dagger\hat p\hat S=e^{r}\hat p.
+\]
+Evaluating in the vacuum gives the squeezed-vacuum result
+\[
+\boxed{(\Delta x)^2=e^{-2r},\
+(\Delta p)^2=e^{2r},\
+(\Delta x)^2(\Delta p)^2=1.}
+\]
+For \(r=\tfrac12\ln2\), the amplitude-quadrature variance is
+\(1/2\), the phase-quadrature variance is 2, and the product
+still saturates the uncertainty bound.
+\checkmethod{Squeezing redistributes quantum noise; it never
+violates the uncertainty relation. Some textbooks use
+\(x=(a+a^\dagger)/\sqrt2\); first check the vacuum variance.}

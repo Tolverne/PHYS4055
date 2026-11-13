@@ -1,0 +1,63 @@
+
+\section{QO-03: Beam splitters, HOM interference and NOON states}
+\source{Week 2 Tutorial, Questions 1--2; Optics Assignment 1 Question 2;
+2025 Exam Question 3; Week 3 Tutorial worked sheet.}
+\subsection*{Step 1: select one convention and keep it}
+Use the balanced transformation from the past exams,
+written in terms of input creation operators,
+\[
+\boxed{\hat a^\dagger\longrightarrow
+\frac{\hat c^\dagger+\hat d^\dagger}{\sqrt2},\qquad
+\hat b^\dagger\longrightarrow
+\frac{\hat c^\dagger-\hat d^\dagger}{\sqrt2}.}
+\]
+The four-port device conserves photon number because the
+mode matrix is unitary. For a general real splitter with
+\(t^2+r^2=1\), \(a^\dagger\to t c^\dagger+r d^\dagger\),
+\[
+\ket{n,0}\longrightarrow\sum_{k=0}^n
+\sqrt{\binom nk}\,t^k r^{n-k}\ket{k,n-k}.
+\]
+Thus \(P(k,n-k)=\binom nk t^{2k}r^{2(n-k)}\),
+the familiar binomial distribution.
+
+\subsection*{Step 2: expand each two-photon input}
+Use \(\ket{2,0}=(a^\dagger)^2\ket0/\sqrt2\).
+The normalised output states are
+\begin{align*}
+\ket{2,0}_{ab}&\longrightarrow
+\tfrac12\ket{2,0}_{cd}
++\tfrac1{\sqrt2}\ket{1,1}_{cd}
++\tfrac12\ket{0,2}_{cd},\\
+\ket{0,2}_{ab}&\longrightarrow
+\tfrac12\ket{2,0}_{cd}
+-\tfrac1{\sqrt2}\ket{1,1}_{cd}
++\tfrac12\ket{0,2}_{cd},\\
+\ket{1,1}_{ab}&\longrightarrow
+\frac{\ket{2,0}_{cd}-\ket{0,2}_{cd}}{\sqrt2}.
+\end{align*}
+The last line is the Hong--Ou--Mandel result: indistinguishable
+photons entering opposite ports never produce a coincidence.
+
+\subsection*{Step 3: solve the 2025 NOON input}
+For \(\ket{\Psi_{\rm in}}=(\ket{2,0}+\ket{0,2})/\sqrt2\),
+the opposite-sign \(\ket{1,1}\) amplitudes cancel:
+\[
+\boxed{\ket{\Psi_{\rm out}}=
+\frac{\ket{2,0}+\ket{0,2}}{\sqrt2},\quad
+P_{20}=P_{02}=\tfrac12,\quad P_{11}=0.}
+\]
+The plus NOON state is invariant under this particular balanced
+beam splitter. The \emph{minus} NOON input would instead
+become \(\ket{1,1}\).
+
+For the alternative 2025 input
+\(\ket{\Phi_{\rm in}}=(\ket{1,1}+\ket{2,0})/\sqrt2\),
+only the second component creates \(\ket{1,1}_{cd}\):
+its amplitude is \((1/\sqrt2)(1/\sqrt2)=1/2\), so
+\[
+\boxed{P_{11}=\left|\tfrac12\right|^2=\tfrac14.}
+\]
+\checkmethod{Always convert powers of creation operators back
+into \emph{normalised} Fock states; the \(\sqrt{2!}\) factors
+change probabilities. Compare amplitudes before squaring them.}
