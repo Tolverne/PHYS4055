@@ -1,0 +1,103 @@
+Semester Two Examinations, 2023
+
+PHYS4055
+
+Question 4.
+
+(10 marks)
+
+A two-photon Raman transition couples two atomic states |g) and |e) via an off-resonant
+
+transition with an auxiliary state, |a), as shown below.
+
+a
+
+Ed) ;
+
+at
+
+oO. =
+
+eg
+
+- @,
+
+g—___v_¥
+
+The field €,(t) is a time dependent classical control field at carrier frequency w, and a,at
+
+are the annihilation and creation operators of a quantised cavity field with resonant
+
+frequency w,. The diagram above shows the resonant case, but in general there can be a
+
+detuning 6 = Weg — (Wa — w,) where we, is the transition frequency between the ground and
+
+excited state. In the dipole and rotating wave approximation the Hamiltonian is
+
+w
+
+H=ha,atath
+
+2
+
+2a, + hg(Ec(tatlgnele‘e' + Ec(t)ale(gle'*).
+
+We will ignore spontaneous emission in this question as the coupled states are dipole
+
+forbidden transitions.
+
+a) (2 marks) Show that the interaction picture Hamiltonian is
+
+A,
+
+=
+
+=
+
+—hédata + AgE,(t)(at|g)(el + ale)(gl).
+
+b) (3 marks) If the cavity field is strongly driven we may replace a, a‘ by the
+
+semiclassical coherent amplitudes a, a*. Show that the equations of motion for the
+
+atomic system are
+
+dz(t)
+
+d
+
+= 2igE,(t)(a*w* — aw)
+
+dw(t)
+
+=
+
+=
+
+dt
+
+—igE,(t)a*z
+
+where z = (o,),w = (0,),w* = (o_).
+
+¢)
+
+(3 marks) Define a pulse amplitude as
+
+—
+
+0
+
+A=J°E(tdt =
+
+Y
+
+given the Lorentzian control pulse €,(t) = Ege77!"1.
+
+Starting with the equations in b), find the conditions on €y,y, 6 such that an atom
+
+prepared in the ground state in the far past of the pulse will evolve to the excited
+
+state after the passage of the control pulse.
+
+Page 5 of 6

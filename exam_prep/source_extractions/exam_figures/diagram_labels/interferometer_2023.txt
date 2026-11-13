@@ -1,0 +1,89 @@
+Semester Two Examinations, 2023
+
+PHYS4055
+
+Question 3.
+
+(10 marks)
+
+See the image below for an example interferometer.
+
+a itt
+
+ay
+
+la,¢)
+
+1b
+
+A,
+
+rl
+
+a)
+
+1/v2
+
+i/v2
+
+(2 mark) The matrix M = (
+
+i/V2 1/v2
+
+) is used to represent the first beam splitter.
+
+Show that the output of the first beam splitter conserves energy when sending two
+
+input fields Ej, and E, into the input ports.
+
+b)
+
+(1 mark) We now send a squeezed coherent state into this interferometer |in) =
+
+|@,@)in|0), with squeezing parameter r and gg (€ = re?'?s). Do you expect a
+
+sensitivity enhancement due to the squeezing? Explain.
+
+=
+
+1
+
+¢)
+
+(2 marks) Knowing that a,
+
+~2
+
+[ain(e'* + 1) + a,(e” - 1)| and ag =
+
+5 [ain(e'* -1)+a,(e'? + 1)| show that,
+
+Ng — Ng = cos(P) (Nin — Ny) + isin(?)(a}a, - abdin).
+
+qd)
+
+(2 marks) Calculate the expression of the signal (n, — ng) for the squeezed coherent
+
+input state. Use the expressions = cosh(r) and v = e?!”s sinh(r), and their
+
+associated identities, to get the solution in terms of @ and v.
+
+e)
+
+(2 marks) Calculate the expression of the noise Var[n, — ng] for a phase shift @ =
+
+1/2. Use the expressions = cosh(r) and v = e”!”s sinh(r), and their associated
+
+identities, to get the solution in terms of a and v.
+
+f)
+
+(7 marks) Using the expression of the SNR = (ny — ng)/,/Var[n, — ng
+
+calculate
+
+the smallest resolvable change in phase shift with this squeezed state for @ around
+
+1/2.
+
+Page 4 of 6

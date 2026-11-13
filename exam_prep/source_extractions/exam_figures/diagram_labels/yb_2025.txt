@@ -1,0 +1,69 @@
+Semester 2 Examinations, 2025
+
+PHYS4055
+
+Question 2
+
+(10 marks)
+
+(a) (2 marks) The figure below shows a partial level diagram of Yb ([Xe]4f146s?). Identify all the
+
+E1-allowed transitions in this system and mark them on the diagram below.
+
+5d6s 1D,
+
+6s6p 'P,
+
+——
+
+5d6s °D,
+
+5d6s °D,
+
+5d6s °D,
+
+6s6p °P,
+
+63215, —
+
+(b) (1 mark) A transition between one of the excited states and the ground state can be used as
+
+a clock transition. Propose which one (there is more than one suitable transition, but one is
+
+sufficient). Explain your answer.
+
+(c)
+
+(1 mark) In order to construct an atomic clock the atoms must be decelerated and trapped.
+
+Propose a suitable transition for this. Explain your answer.
+
+(d)
+
+(4 marks) An atomic beam of Yb (M=1.73x10~?° kg) is produced in a source at 300K and
+
+slowed by counter-propagating laser radiation, using the transition that you deemed suitable
+
+for laser-cooling. Assume that the wavelength of this transition is 399 nm and the lifetime of
+
+the excited level is 5.5 ns.
+
+(i) (1 mark) What is the role of the magnet in the Zeeman slower?
+
+(ii) (2 marks) What is the stopping distance at half the maximum deceleration?
+
+(iii) (1 mark) How many photons are scattered to stop the atom?
+
+h = 6.62607 x 10-84Js ; kg = 1.38065 x 10-3 J/K
+
+(e) (2 marks) After the Zeeman slowing, the atoms are cooled in optical molasses.
+
+(i) (1 mark) Why are the lasers in optical molasses red detuned?
+
+(ii) (1 mark) What is the Doppler-limit temperature for this atom, assuming the cooling is
+
+done on the transition discussed above?
+
+Neat question over...
+
+Page 3 of 5
