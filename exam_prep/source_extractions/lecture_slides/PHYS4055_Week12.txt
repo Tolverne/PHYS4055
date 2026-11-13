@@ -1,0 +1,2175 @@
+Source: source_material/lectures/slides_and_handouts/PHYS4055_Week12.pdf
+Pages: 129
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+      PHYS4055
+
+Atomic physics and quantum optics
+
+          Week 12
+
+        Jacinda Ginges
+
+         j.ginges@uq.edu.au, room 330 Physics Annexe
+
+====== PAGE 2 ======
+In these lectures, we will look into:
+
+  fundamental symmetries violations in atoms:•
+
+    atomic parity violation -
+
+     electric dipole moments (CP violation) -
+
+and tests of the Standard Model and searches for New
+Physics in atoms and molecules
+
+====== PAGE 3 ======
+Standard Model particle content
+
+    All SM particles have been discovered! •
+
+====== PAGE 4 ======
+Standard Model particle content    Searching for new physics
+
+                             SM cannot explain
+
+                                                   Matter-antimatter                                                   •
+                                           asymmetry of
+                                                  universe
+
+    All SM particles have been discovered! •
+
+====== PAGE 5 ======
+Standard Model particle content    Searching for new physics
+
+                             SM cannot explain
+
+                                                   Matter-antimatter                                                   •
+                                           asymmetry of
+                                                  universe
+
+                                                                       Dark matter                                                                                    •
+    All SM particles have been discovered! •
+                                                                       Dark energy                                                                                    •
+
+====== PAGE 6 ======
+High energy
+
+Large Hadron Collider, energies to 13 TeV
+
+Produce particles directly
+
+
+   E = mc2
+
+====== PAGE 7 ======
+High energy                 Low energy, high precision
+
+                                         Probe virtual processes, may reach >> TeVLarge Hadron Collider, energies to 13 TeV
+
+Produce particles directly                              ∆E ∆t                                                  E                                  ⇠~
+
+                                                               Z   E = mc2
+                                                                            Z0                    f
+                                                               Z
+
+====== PAGE 8 ======
+How can atoms be used to test the SM and search for new physics?
+
+====== PAGE 9 ======
+The atom as a laboratory for new physics searches
+
+                        Electromagnetic interaction                         •
+                   Weak interaction                         •
+                        Strong interaction                         •
+                     are present in atoms and may be probed and tested
+
+====== PAGE 10 ======
+The atom as a laboratory for new physics searches
+
+                        Electromagnetic interaction                         •
+                   Weak interaction                         •
+                        Strong interaction                         •
+                     are present in atoms and may be probed and tested
+
+ The weak interaction does
+ not conserve parity, r    -r          →
+
+ The weak interaction may
+ be isolated by studying
+ parity-violating effects
+
+====== PAGE 11 ======
+The atom as a laboratory for new physics searches
+
+                        Electromagnetic interaction                         •
+                   Weak interaction                         •
+                        Strong interaction                         •
+                     are present in atoms and may be probed and tested
+
+                                                   The complexity/simplicity of the system
+ The weak interaction does                                             may be varied by changing nuclear charge
+ not conserve parity, r    -r          →                                                                                 (Z), isotope, ionisation degree, state
+
+                                                                       •                                                                         Possibilities for enhancement The weak interaction may
+ be isolated by studying                                                                       •                                              May choose more theoretically tractable
+ parity-violating effects                                                       system
+
+====== PAGE 12 ======
+Searches for new physics in atomic experiments
+
+Variation of fundamental constants                                                                         Tests of Lorentz symmetry,                                            Violation of fundamental
+E.g., fine structure constant, proton-to-electron                                                                        general relativity, gravitation,…                                    symmetries P, CP, CPTmass ratio, nuclear g-factors in clock experiments
+
+                                                                                          For a review, see Safronova et al., Rev. Mod. Phys. (2018)
+
+====== PAGE 13 ======
+Searches for new physics in atomic experiments
+
+Variation of fundamental constants                                                                         Tests of Lorentz symmetry,                                            Violation of fundamental
+E.g., fine structure constant, proton-to-electron                                                                        general relativity, gravitation,…                                    symmetries P, CP, CPTmass ratio, nuclear g-factors in clock experiments
+
+                                                                                          For a review, see Safronova et al., Rev. Mod. Phys. (2018)
+
+====== PAGE 14 ======
+Neutral weak currents
+
+•  Neutral weak currents were discovered at CERN (1973) in
+  neutrino-nucleon and antineutrino-electron scattering
+  experiments
+
+                                                                                      Hadronic neutral current event: neutrino-nucleon scattering
+
+                                                                                         Leptonic neutral current event: antineutrino-electron scattering
+
+                                                                                                                  https://cerncourier.com/a/neutral-currents-a-perfect-experimental-discovery/
+
+====== PAGE 15 ======
+Neutral weak currents
+
+•  Neutral weak currents were discovered at CERN (1973) in
+  neutrino-nucleon and antineutrino-electron scattering
+  experiments
+
+•   First observation of neutral weak electron-nucleon
+  interactions seen in atomic parity violation experiment
+                                                                                      Hadronic neutral current event: neutrino-nucleon scattering
+  with bismuth at Novosibirsk, Russia (1978)
+
+                                                                                         Leptonic neutral current event: antineutrino-electron scattering
+
+                                                                                                                  https://cerncourier.com/a/neutral-currents-a-perfect-experimental-discovery/
+
+====== PAGE 16 ======
+Neutral weak currents
+
+•  Neutral weak currents were discovered at CERN (1973) in
+  neutrino-nucleon and antineutrino-electron scattering
+  experiments
+
+•   First observation of neutral weak electron-nucleon
+  interactions seen in atomic parity violation experiment
+                                                                                      Hadronic neutral current event: neutrino-nucleon scattering
+  with bismuth at Novosibirsk, Russia (1978)
+
+•  Neutral weak e-N interactions seen shortly after in
+  scattering experiments of electrons off deuterons and
+  protons at the Stanford linear collider (1978)
+
+                                                                                         Leptonic neutral current event: antineutrino-electron scattering
+
+                                                                                                                  https://cerncourier.com/a/neutral-currents-a-perfect-experimental-discovery/
+
+====== PAGE 17 ======
+Neutral weak currents
+
+•  Neutral weak currents were discovered at CERN (1973) in
+  neutrino-nucleon and antineutrino-electron scattering
+  experiments
+
+•   First observation of neutral weak electron-nucleon
+  interactions seen in atomic parity violation experiment
+                                                                                      Hadronic neutral current event: neutrino-nucleon scattering
+  with bismuth at Novosibirsk, Russia (1978)
+
+•  Neutral weak e-N interactions seen shortly after in
+  scattering experiments of electrons off deuterons and
+  protons at the Stanford linear collider (1978)
+
+                                           •                                            In 1983, weak
+                                 bosons Z, W+, W-
+                                  produced directly
+                                          at CERN
+
+                                                          https://cerncourier.com/
+                                                          a/finding-the-w-and-z/              Leptonic neutral current event: antineutrino-electron scattering
+
+                                                                                                                  https://cerncourier.com/a/neutral-currents-a-perfect-experimental-discovery/
+
+====== PAGE 18 ======
+Bismuth experiment
+
+  e-N weak interaction produces optical activity•
+
+•  Plane of polarisation of light is rotated on passing
+  through bismuth vapour
+
+•  Coherent, macroscopic parity-violating effect
+
+                                      optical rotation animation
+
+                                                https://ja01.chem.buffalo.edu/
+                                                     tutorials/opticalactivity.html
+
+====== PAGE 19 ======
+Bismuth experiment
+
+  e-N weak interaction produces optical activity•
+
+•  Plane of polarisation of light is rotated on passing     The discovery of a new kind of a parity nonconserving weak
+  through bismuth vapour                                                                           interaction of electrons with nucleons is an example of a
+•  Coherent, macroscopic parity-violating effect                                                                            situation when a branch of physics (in this case, atomic
+                                                                    spectroscopy) long since believed to be classical, again proves
+                                                                           to be at the forefront of our understanding of nature…
+                                                              Table-top apparatus has proved to be an important addition
+                                                                           to the experimental methods traditional for elementary particle
+                                                                         physics. I am convinced that this case is not the last and that
+                                                                         the time of table-top experiments in studying fundamental
+                                                                           properties of matter is far from over.
+                        — I. B. Khriplovich                                      optical rotation animation
+
+                                                https://ja01.chem.buffalo.edu/
+                                                     tutorials/opticalactivity.html
+
+====== PAGE 20 ======
+Fermi’s four-fermion interaction
+
+
+•  Fermi (1934) constructed the first theory of the weak interaction
+
+•  Considered interaction to happen at a single point
+
+
+        beta decay           p
+
+         n                        e−
+
+                   —
+                             ⌫e
+
+====== PAGE 21 ======
+Fermi’s four-fermion interaction
+
+
+•  Fermi (1934) constructed the first theory of the weak interaction
+
+•  Considered interaction to happen at a single point
+
+
+        beta decay           p                                                              γ
+                                                                     e.m. interaction with proton
+         n                                          c.f.                        e−
+                   —                 p         p
+                             ⌫e
+                      ¯pγμn ¯eγμνe                                                       jμAμ = ¯pγμp Aμ
+         product of charged nucleon and lepton currents
+
+====== PAGE 22 ======
+Fermi’s four-fermion interaction
+
+
+•  Fermi (1934) constructed the first theory of the weak interaction
+
+•  Considered interaction to happen at a single point
+
+
+        beta decay           p                                                              γ
+                                                                     e.m. interaction with proton
+         n                                          c.f.                        e−
+                   —                 p         p
+                             ⌫e
+                      ¯pγμn ¯eγμνe                                                       jμAμ = ¯pγμp Aμ
+         product of charged nucleon and lepton currents
+
+
+• In the general case, can also construct (scalar) interaction from products of scalar (e.g.,      ), pseudoscalar                                                                                                    ¯pn
+    (        ), axial-vector (           ), and antisymmetric tensor (          ) currents   ¯pγ5n               ¯pγμγ5n                             ¯pσμνn
+
+====== PAGE 23 ======
+Consider exchange of W boson:
+                                gW
+                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                               gW
+
+====== PAGE 24 ======
+Consider exchange of W boson:
+                                gW
+                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                               gW
+
+                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W
+     appears as a point-like interaction →
+
+
+                    Fermi weak interaction constant        :          GF                                           GF
+                           GF     g2W                         =
+                                      8M2W                                2
+
+====== PAGE 25 ======
+Consider exchange of W boson:
+                                gW
+                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                               gW
+
+                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W
+     appears as a point-like interaction →
+
+
+                    Fermi weak interaction constant        :          GF                                           GF
+                           GF     g2W                         =
+                                      8M2W                                2
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+
+====== PAGE 26 ======
+Consider exchange of W boson:
+                                gW
+                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                               gW
+
+                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W
+     appears as a point-like interaction →
+
+
+                    Fermi weak interaction constant        :          GF                                           GF
+                           GF     g2W                         =
+                                      8M2W                                2
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+
+•  Corresponds to an effective theory of the weak interaction
+
+====== PAGE 27 ======
+Consider exchange of W boson:                                          We can now write down all possible
+                                                                 contributions to a neutral-weak electron-                                gW
+                                                          nucleon interaction. Write explicitly for e-p:                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                               gW
+
+                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W
+     appears as a point-like interaction →
+
+
+                    Fermi weak interaction constant        :          GF                                           GF
+                           GF     g2W                         =
+                                      8M2W                                2
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+
+•  Corresponds to an effective theory of the weak interaction
+
+====== PAGE 28 ======
+Consider exchange of W boson:                                          We can now write down all possible
+                                                                 contributions to a neutral-weak electron-                                gW
+                                                          nucleon interaction. Write explicitly for e-p:                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                                                                                                        ¯ee + GP¯pγ5p ¯eγ5e + GV¯pγμp ¯eγμe                               gW                     GS¯pp
+                                                                 +GA¯pγμγ5p ¯eγμγ5e + GT¯pσμνp ¯eσμνe + G′￼V¯pγμp ¯eγμγ5e                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W                                                                            +G′￼A¯pγμγ5p ¯eγμe + iG′￼S¯pp ¯eγ5e + iG′￼S¯pp¯eγ5e     appears as a point-like interaction →
+                                                                            +G′￼Tϵμνρτ¯pσμνp ¯eσρτe
+                    Fermi weak interaction constant        :          GF                                           GF
+                                                     S - scalar; P - pseudo scalar; V - vector                           GF     g2W                         =
+                                      8M2W                A - axial vector; T - tensor                                2
+                                                                                  Parity-violating (“P-odd”) terms are primed
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+
+•  Corresponds to an effective theory of the weak interaction
+
+====== PAGE 29 ======
+Consider exchange of W boson:                                          We can now write down all possible
+                                                                 contributions to a neutral-weak electron-                                gW
+                                                          nucleon interaction. Write explicitly for e-p:                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                                                                                                        ¯ee + GP¯pγ5p ¯eγ5e + GV¯pγμp ¯eγμe                               gW                     GS¯pp
+                                                                 +GA¯pγμγ5p ¯eγμγ5e + GT¯pσμνp ¯eσμνe + G′￼V¯pγμp ¯eγμγ5e                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W                                                                            +G′￼A¯pγμγ5p ¯eγμe + iG′￼S¯pp ¯eγ5e + iG′￼S¯pp¯eγ5e     appears as a point-like interaction →
+                                                                            +G′￼Tϵμνρτ¯pσμνp ¯eσρτe
+                    Fermi weak interaction constant        :          GF                                           GF
+                                                     S - scalar; P - pseudo scalar; V - vector                           GF     g2W                         =
+                                      8M2W                A - axial vector; T - tensor                                2
+                                                                                  Parity-violating (“P-odd”) terms are primed
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2                                                         P-odd, T-even      Atomic parity violation
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+                                                         P-odd, T-odd
+•  Corresponds to an effective theory of the weak interaction
+
+====== PAGE 30 ======
+Consider exchange of W boson:                                          We can now write down all possible
+                                                                 contributions to a neutral-weak electron-                                gW
+                                                          nucleon interaction. Write explicitly for e-p:                   g2                     1                W      Amplitude          ∝
+                 q2 −M2W                 q2 −M2W
+                                                                                                        ¯ee + GP¯pγ5p ¯eγ5e + GV¯pγμp ¯eγμe                               gW                     GS¯pp
+                                                                 +GA¯pγμγ5p ¯eγμγ5e + GT¯pσμνp ¯eσμνe + G′￼V¯pγμp ¯eγμγ5e                                           1                                                     , propagator• At low energies,                       →−1                  q2 ≪M2                   W                                             q2 −M2W      M2W                                                                            +G′￼A¯pγμγ5p ¯eγμe + iG′￼S¯pp ¯eγ5e + iG′￼S¯pp¯eγ5e     appears as a point-like interaction →
+                                                                            +G′￼Tϵμνρτ¯pσμνp ¯eσρτe
+                    Fermi weak interaction constant        :          GF                                           GF
+                                                     S - scalar; P - pseudo scalar; V - vector                           GF     g2W                         =
+                                      8M2W                A - axial vector; T - tensor                                2
+                                                                                  Parity-violating (“P-odd”) terms are primed
+
+• Weak bosons are very heavy,                                         , so                         W±, Z0 ≈80 −90 GeV/c2                                                         P-odd, T-even      Atomic parity violation
+  interaction range is very short,                         ℏ/Mc ∼10−3 fm
+                                                         P-odd, T-odd        Electric dipole moments
+•  Corresponds to an effective theory of the weak interaction
+
+====== PAGE 31 ======
+Fundamental symmetries
+
+The weak interaction violates fundamental
+symmetries parity P and the combined symmetry
+charge conjugation and parity (CP).
+
+====== PAGE 32 ======
+Fundamental symmetries
+
+The weak interaction violates fundamental
+symmetries parity P and the combined symmetry
+charge conjugation and parity (CP).
+
+Parity violation
+
+First observed in 1957 in the beta decay of 60Co.
+          6027Co →6028 Ni + e−+ ¯νe + 2γ
+
+Foundational to SM.
+
+====== PAGE 33 ======
+                                   CP violation
+Fundamental symmetries                                                                        First observed in 1964 in decays of neutral K mesons.
+The weak interaction violates fundamental
+symmetries parity P and the combined symmetry
+charge conjugation and parity (CP).
+
+Parity violation
+
+First observed in 1957 in the beta decay of 60Co.
+          6027Co →6028 Ni + e−+ ¯νe + 2γ
+
+Foundational to SM.
+
+====== PAGE 34 ======
+                                   CP violation
+Fundamental symmetries                                                                        First observed in 1964 in decays of neutral K mesons.
+The weak interaction violates fundamental                                                              CP-violation necessary to produce matter-antimatter
+symmetries parity P and the combined symmetry                                                   asymmetry of the universe! (Sakharov conditions)
+charge conjugation and parity (CP).
+
+Parity violation
+
+First observed in 1957 in the beta decay of 60Co.
+          6027Co →6028 Ni + e−+ ¯νe + 2γ
+
+Foundational to SM.
+
+====== PAGE 35 ======
+                                   CP violation
+Fundamental symmetries                                                                        First observed in 1964 in decays of neutral K mesons.
+The weak interaction violates fundamental                                                              CP-violation necessary to produce matter-antimatter
+symmetries parity P and the combined symmetry                                                   asymmetry of the universe! (Sakharov conditions)
+charge conjugation and parity (CP).
+
+Parity violation
+
+First observed in 1957 in the beta decay of 60Co.
+          6027Co →6028 Ni + e−+ ¯νe + 2γ
+
+                                                    Not enough CP violation in the SM!
+
+Foundational to SM.
+
+====== PAGE 36 ======
+                                   CP violation
+Fundamental symmetries                                                                        First observed in 1964 in decays of neutral K mesons.
+The weak interaction violates fundamental                                                              CP-violation necessary to produce matter-antimatter
+symmetries parity P and the combined symmetry                                                   asymmetry of the universe! (Sakharov conditions)
+charge conjugation and parity (CP).
+
+Parity violation
+
+First observed in 1957 in the beta decay of 60Co.
+          6027Co →6028 Ni + e−+ ¯νe + 2γ
+
+                                                    Not enough CP violation in the SM!
+
+Foundational to SM.                         CPT symmetry is an exact symmetry in SM.
+
+====== PAGE 37 ======
+Violations of fundamental symmetries in atoms
+
+
+Precision atomic theory needed to extract fundamental parameters from atomic experiments for comparison with SM
+
+
+     Atomic parity violation (APV)                    Electric dipole moments (EDMs)
+
+                                                                                            Parity- and time-reversal-violating
+
+                                                                                                                                                  B                   APV amplitude:                                            Atomic EDM:
+
+                                                                                                                                                          E
+
+                   EPV = ξ QW                                                                          datom = ζS + Kde +…
+                                                                                                                                            +
+
+                                                                                                                                                                    –
+
+                                                                                                                                                 electron EDM                                                    nuclear weak                                from atomic
+                                                  charge                                   structure theory                                                              from atomic
+                                                                                                                        structure theory     nuclear Schiff
+                                                                                                        moment
+
+====== PAGE 38 ======
+Violations of fundamental symmetries in atoms
+
+
+Precision atomic theory needed to extract fundamental parameters from atomic experiments for comparison with SM
+
+
+     Atomic parity violation (APV)                    Electric dipole moments (EDMs)
+
+                                                                                            Parity- and time-reversal-violating
+
+                                                                                                                                                  B                   APV amplitude:                                            Atomic EDM:
+
+                                                                                                                                                          E
+
+                   EPV = ξ QW                                                                          datom = ζS + Kde +…
+                                                                                                                                            +
+
+                                                                                                                                                                    –
+
+                                                                                                                                                 electron EDM                                                    nuclear weak                                from atomic
+                                                  charge                                   structure theory                                                              from atomic
+                                                                                                                        structure theory     nuclear Schiff
+                                                                                                        moment
+
+====== PAGE 39 ======
+Atomic parity violation
+
+====== PAGE 40 ======
+Atomic parity violation and the nuclear weak charge
+
+
+                                  e                e
+                                 A
+Axial vector coupling to electrons,
+vector coupling to quarks
+                                                  Z0
+    G
+               ¯eγµγ5e  ¯qγµq
+                                    V   p 2C1q                                            u,d                                       u,d            !      "!     "
+
+====== PAGE 41 ======
+Atomic parity violation and the nuclear weak charge
+
+
+                                   e                e
+                                 A
+Axial vector coupling to electrons,
+vector coupling to quarks
+                                                  Z0
+    G
+               ¯eγµγ5e  ¯qγµq
+                                    V   p 2C1q                                            u,d                                        u,d             !      "!     "
+Standard model tree-level couplings
+
+                 C1n = C1u + 2C1d =                          −12
+                                 1
+              C1p = 2C1u + C1d =   1     sin2 ✓W                                 2  −4                                      !            "
+
+====== PAGE 42 ======
+Atomic parity violation and the nuclear weak charge
+
+
+                                   e                e
+                                 A
+ Axial vector coupling to electrons,
+vector coupling to quarks
+                                                   Z0
+    G
+               ¯eγµγ5e  ¯qγµq
+                                    V   p 2C1q                                            u,d                                        u,d             !      "!     "
+Standard model tree-level couplings
+
+                 C1n = C1u + 2C1d =                          −12
+                                 1
+               C1p = 2C1u + C1d =   1     sin2 ✓W                                 2  −4                                      !            "Leads to parity-violating interaction Hamiltonian for electrons
+
+                                       ⇢(r)γ5                 hPV =            −Gp                            2 2QW
+
+where      is nuclear weak charge.    QW
+
+SM value known well,                QSM = −73.23(1)                  W
+
+====== PAGE 43 ======
+Atomic parity violation and the nuclear weak charge
+
+                                                                          Parity-violating nature                                   e                e
+                                 A
+ Axial vector coupling to electrons,
+                                                                                         Non-relativistic limit:vector coupling to quarks
+                                                   Z0
+                                                       hPV  σ p    G                                           /    ·               ¯eγµγ5e  ¯qγµq
+                                    V   p 2C1q                                            u,d                Parity operation:                                        u,d             !      "!     "                                               σ  σ
+Standard model tree-level couplings                                 !
+                                                  p ! −p                 C1n = C1u + 2C1d =                          −12
+                                 1
+               C1p = 2C1u + C1d =   1     sin2 ✓W                                 2  −4                                      !            "Leads to parity-violating interaction Hamiltonian for electrons
+
+                                       ⇢(r)γ5                 hPV =            −Gp                            2 2QW
+
+where      is nuclear weak charge.    QW
+
+SM value known well,                QSM = −73.23(1)                  W
+
+====== PAGE 44 ======
+Atomic parity violation and the nuclear weak charge
+
+                                                                          Parity-violating nature                                   e                e
+                                 A
+ Axial vector coupling to electrons,
+                                                                                         Non-relativistic limit:vector coupling to quarks
+                                                   Z0
+                                                       hPV  σ p    G                                           /    ·               ¯eγµγ5e  ¯qγµq
+                                    V   p 2C1q                                            u,d                Parity operation:                                        u,d             !      "!     "                                               σ  σ
+Standard model tree-level couplings                                 !
+                                                  p ! −p                 C1n = C1u + 2C1d =                          −12
+                                 1                           Enhancement with Z
+               C1p = 2C1u + C1d =   1     sin2 ✓W                                 2  −4
+                                                                                         Parity-violating amplitude:                                      !            "Leads to parity-violating interaction Hamiltonian for electrons
+                                                         EPV  R(Z)Z3                                                /                                       ⇢(r)γ5                 hPV =            −Gp                            2 2QW
+                                                                                                    relativisticwhere      is nuclear weak charge.                                                                nuclear charge    QW                                                                  enhancement
+                                                                                       factorSM value known well,                QSM = −73.23(1)                  W
+                                                                                                                              Bouchiat, Bouchiat (1974)
+
+====== PAGE 45 ======
+Atomic parity violation in cesium
+
+                                                                            e                                                                                     e                        Weak interaction mixes opposite-parity states,  ^         7S1/2
+                                                              ⟨nP1/2|HPV|S1/2⟩                 E1       |˜                                       Z0                                        S1/2⟩= |S1/2⟩+ ∑                  |nP1/2⟩                                                                                      E6S1/2 −EnP1/2                                                                        n
+  ^            6S - 7S electric dipole (E1) transition amplitude EPV       q       q         6S1/2
+
+====== PAGE 46 ======
+Atomic parity violation in cesium
+
+                                                                            e                                                                                     e                        Weak interaction mixes opposite-parity states,  ^         7S1/2
+                                                              ⟨nP1/2|HPV|S1/2⟩                 E1       |˜                                       Z0                                        S1/2⟩= |S1/2⟩+ ∑                  |nP1/2⟩                                                                                      E6S1/2 −EnP1/2                                                                        n
+  ^            6S - 7S electric dipole (E1) transition amplitude EPV       q       q         6S1/2
+
+    Experiment,    0.35% uncertainty
+
+     −Im(EPV)/β = 1.5935(1 ± 0.35%) mV/cm
+        — transition polarisability            β
+     Carl Wieman group,  Wood et al., Science (1997)
+
+====== PAGE 47 ======
+Atomic parity violation in cesium
+
+                                                                            e                                                                                     e                        Weak interaction mixes opposite-parity states,  ^         7S1/2
+                                                              ⟨nP1/2|HPV|S1/2⟩                 E1       |˜                                       Z0                                        S1/2⟩= |S1/2⟩+ ∑                  |nP1/2⟩                                                                                      E6S1/2 −EnP1/2                                                                        n
+  ^            6S - 7S electric dipole (E1) transition amplitude EPV       q       q         6S1/2
+
+    Experiment,    0.35% uncertainty         Atomic theory,    0.5% uncertainty
+
+
+                                              EPV =                       h^7S1/2|Dz|^6S1/2i
+                                        =    h7S1/2|Dz|nP1/2ihnP1/2|HPV|6S1/2i
+                                                                                      E6S1/2                                                                  n                                                                             −EnP1/2                      X
+                                      = ⇠QW
+
+
+                                                                   Dipole operator                                                                    Weak operator       Energies
+                                                                                                                                                                         ,   E                                     D =     eri    ,   HPV =    (hPV)i
+                                                                                                                              i                                i           = 1.5935(1  0.35%) mV/cm                        X     X     −Im(EPV)/β       ±
+        — transition polarisability            β                                                                      Dzuba, Flambaum, Ginges, PRD (2002); Flambaum, Ginges, PRA (2005)
+                                                                              Porsev, Beloy, Derevianko, PRL (2009); Dzuba, Berengut, Flambaum, Roberts, PRL (2012)     Carl Wieman group,  Wood et al., Science (1997)
+
+====== PAGE 48 ======
+A note on theory and benchmarking
+
+
+                 Upper radial component, Cs 6s:
+
+                                                                                                    radius (a.u.)
+                                                                            10   50                10−6             10−4            10−2              1
+
+               EPV =                              h7S1/2|D|nP1/2ihnP1/2|HPV|6S1/2i +    h7S1/2|HPV|nP1/2ihnP1/2|D|6S1/2i = ⇠QW
+                                         E6S1/2                                   E7S1/2                          n                                    n                                       −EnP1/2                           −EnP1/2         X            X
+
+====== PAGE 49 ======
+A note on theory and benchmarking
+
+
+                 Upper radial component, Cs 6s:
+
+
+                               hyperfine structure                                                            E1 amplitudes
+
+
+                                                                                                    radius (a.u.)
+                                                                            10   50                10−6             10−4            10−2              1
+
+                                                            energies                weak matrix elements
+
+                                         •                         hyperfine structure,                                              few 0.1%
+
+                                         •                         energies,                               0.1%
+                                         •                   E1 amplitudes,                                        few 0.1%
+
+               EPV =                              h7S1/2|D|nP1/2ihnP1/2|HPV|6S1/2i +    h7S1/2|HPV|nP1/2ihnP1/2|D|6S1/2i = ⇠QW
+                                         E6S1/2                                   E7S1/2                          n                                    n                                       −EnP1/2                           −EnP1/2         X            X
+
+====== PAGE 50 ======
+Tests of the standard model
+
+
+• Experiment and theory: nuclear weak charge:                               QW = −73.07(28)(33) ⇒QW −QSMW = 0.16(43)
+
+         Running of the Weinberg angle
+
+                                                                Weinberg angle — aka “weak mixing angle”
+
+                                                                     fundamental parameter of SM                                                                  •
+                                                                 Mixes W and B fields to produce the                                                                  •
+                                                                   massive Z0 and massless photon
+
+                                                                        At tree level:                                                                  •
+
+                                                                                                sin2 ✓W = 1   W                                                       −m2m2                                                                                     Z
+
+                                                                                                     Figure from:  Gwinner and Orozco, Quantum Sci. Technol (2022)
+
+                                                         New result for vector polarizability shifts APV result (red):     G. Toh et al., PRL (2019)
+
+====== PAGE 51 ======
+Tests of the standard model
+
+
+• Experiment and theory: nuclear weak charge:                               QW = −73.07(28)(33) ⇒QW −QSMW = 0.16(43)
+
+         Running of the Weinberg angle
+
+
+                                             QWEAK  - electron-proton scattering  Ross Young
+
+                                                          E158      - electron-electron scattering @ SLAC
+
+                                                        PVDIS    - parity-violation in deep inelastic scattering
+
+                                                                    -DIS      - neutrino deep inelastic scattering                                                           ν
+                                                                      Tevatron  - proton-antiproton collider
+
+                                                     LEP       - Large Electron Positron collider
+
+                                                    SLAC      - Stanford Linear Collider, electron-positron collider
+
+                                                  LHC        - Large Hadron Collider, proton-proton collider
+
+                                                                                                     Figure from:  Gwinner and Orozco, Quantum Sci. Technol (2022)
+
+                                                         New result for vector polarizability shifts APV result (red):     G. Toh et al., PRL (2019)
+
+====== PAGE 52 ======
+Tests of the standard model
+
+
+• Experiment and theory: nuclear weak charge:                               QW = −73.07(28)(33) ⇒QW −QSMW = 0.16(43)
+
+         Running of the Weinberg angle
+
+
+                                             QWEAK  - electron-proton scattering  Ross Young
+
+                                                          E158      - electron-electron scattering @ SLAC
+
+                                                        PVDIS    - parity-violation in deep inelastic scattering
+
+                                                                    -DIS      - neutrino deep inelastic scattering                                                           ν
+                                                                      Tevatron  - proton-antiproton collider
+
+                                                     LEP       - Large Electron Positron collider
+
+                                                    SLAC      - Stanford Linear Collider, electron-positron collider
+
+                                                  LHC        - Large Hadron Collider, proton-proton collider
+
+                                                                Dark Z boson:
+                                                                                                (a) 50 MeV; (b) 15 MeV; (c) 15 MeV, in tension with expt.
+
+                                                                                                     Figure from:  Gwinner and Orozco, Quantum Sci. Technol (2022)
+
+                                                         New result for vector polarizability shifts APV result (red):     G. Toh et al., PRL (2019)
+
+====== PAGE 53 ======
+Searches for new physics
+
+New tree-level physics
+
+QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PVLPV  LSM  Lnew
+
+====== PAGE 54 ======
+Searches for new physics
+
+New tree-level physics
+
+ QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PV LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+
+====== PAGE 55 ======
+Searches for new physics
+
+New tree-level physics
+
+ QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PV LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+Probing mass scale:
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF            W     !1/2
+
+====== PAGE 56 ======
+Searches for new physics
+
+New tree-level physics
+
+ QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PV LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+Probing mass scale:
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF   ⇡30TeV            W     !1/2
+
+   for 0.5%
+
+====== PAGE 57 ======
+Searches for new physics
+
+New tree-level physics
+
+ QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PV LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+Probing mass scale:
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF   ⇡30TeV            W     !1/2
+
+   for 0.5%
+
+ strongly interacting 2          ,  weakly interacting 2           ⇠1           ⇠↵
+
+====== PAGE 58 ======
+Searches for new physics
+
+New tree-level physics
+
+ QW = QSM + ∆QW         e.g.      W                                    Z0
+   =   +       PV    PV LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+Probing mass scale:
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF   ⇡30TeV            W     !1/2
+
+   for 0.5%
+
+ strongly interacting 2          ,  weakly interacting 2           ⇠1           ⇠↵
+                         1 TeV           Z’ boson:  mZ0 &
+
+                                    Ramsey-Musolf, PRC (1999)
+
+====== PAGE 59 ======
+Searches for new physics                              New radiative corrections
+
+New tree-level physics
+                                           Z           Defined in terms of Peskin-
+ QW = QSM + ∆QW         e.g.                                                   f                Takeuchi parameters S, T      W                                    Z0
+                                           Z
+   =   +                                              QW   W =      S      T       PV    PV                                                            −QSM   −0.800  −0.007 LPV  LSM  Lnew
+      GF
+  PV             A¯eγµγ5e     V     pLSM =                   gq ¯qγµq       2          2ge                            q       X
+       4⇡2
+   =      ¯eγµγ5e    hq ¯qγµq PV                    VLnew    ⇤2
+                          q      X
+Probing mass scale:
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF   ⇡30TeV            W     !1/2
+
+   for 0.5%
+
+ strongly interacting 2          ,  weakly interacting 2           ⇠1           ⇠↵
+                         1 TeV           Z’ boson:  mZ0 &
+
+                                    Ramsey-Musolf, PRC (1999)
+
+====== PAGE 60 ======
+Searches for new physics                              New radiative corrections
+
+New tree-level physics
+                                           Z           Defined in terms of Peskin-
+ QW = QSM + ∆QW         e.g.                                                   f                Takeuchi parameters S, T      W                                    Z0
+                                           Z
+   =   +                                              QW   W =      S      T       PV    PV                                                            −QSM   −0.800  −0.007 LPV  LSM  Lnew
+      GF                                                                T vs S  PV             A¯eγµγ5e     V     p                                                                                                                            1.0LSM =                   gq ¯qγµq       2          2ge                            q                                                                                                                                   all (90% CL)
+                                                                                                                                                         ΓΖ, σhad, Rl, Rq       X
+                                                                                                                               asymmetries       4⇡2
+                                                                                                               MW, ΓW   =      ¯eγµγ5e    hq ¯qγµq PV                    V
+                                                                                                                            0.5            e & ν scatteringLnew    ⇤2
+                          q                                                                    APV      X
+Probing mass scale:
+
+                                                        T  0
+         p              8  2⇡2
+  ⇤≥  (∆QW /QSM ) GF   ⇡30TeV            W     !1/2                                                                 -0.5
+
+   for 0.5%
+
+
+                                                                                                                                    -1.0
+ strongly interacting 2          ,  weakly interacting 2                                            -1.5          -1.0          -0.5         0           0.5          1.0          1.5           ⇠1           ⇠↵                                                                                                                   S
+                         1 TeV           Z’ boson:  mZ0 &
+                                                                                                                             Erler and Freitas, Particle Data Group review (2016)
+                                    Ramsey-Musolf, PRC (1999)                                            (new APV results now centred around SM value)
+
+====== PAGE 61 ======
+Experiments in preparation/progress
+
+      Neutral atoms: Cs (Purdue) ; Fr (TRIUMF; Tokyo)
+    Singly-ionized atoms: Ba+ (Seattle) ; Ra+ (Groningen)
+
+====== PAGE 62 ======
+Experiments in preparation/progress
+                                                                        • Our precision atomic theory group at UQ is
+                                                                 aiming towards 0.1% uncertainty in APV
+                                                                         calculations
+
+                                                               Related studies:
+
+                                                                        • Atomic parity violation along an isotope chain
+
+                               — remove the dependence on atomic theory
+
+                               — brings in dependence on neutron skin
+
+
+                                                        Measurements in Yb (Mainz)
+
+                                                                                                    Antypas et al., Nat. Phys. (2019)
+
+
+                                                                                                             Neutron distribution
+                                                                                                               extends further out
+                                                                                                                  than the charge
+                                                                                                                                          distribution
+
+      Neutral atoms: Cs (Purdue) ; Fr (TRIUMF; Tokyo)
+    Singly-ionized atoms: Ba+ (Seattle) ; Ra+ (Groningen)
+
+====== PAGE 63 ======
+Anapole
+
+                e                e                  AVWhat about:
+
+
+                             Z0
+
+                                     VA                                     u,d                  u,d
+
+
+- Leads to nuclear-spin-dependent effects in atoms
+
+- Another effect dominates:
+  nuclear anapole moment,
+  from parity violation within
+  nucleus
+
+
+- Measured with 14% uncertainty in Cs!
+
+
+                   Haxton and Wieman, Ann. Rev. Nuc. Part. Sci. (2001)
+
+====== PAGE 64 ======
+Anapole
+                                                 To consider
+                e                e                  AVWhat about:                                                                       Homochirality of biological molecules:
+                                                 DNA is right-handed;
+                             Z0
+                                                           Amino acids are left-handed;
+                                                                Sugars are right-handed.
+                                     VA                                     u,d                  u,d
+
+                                                                                          Could the- Leads to nuclear-spin-dependent effects in atoms
+                                                                                  weak
+                                                                                                                 interaction
+                                                                                                        play a role
+                                                                                                                            in the
+- Another effect dominates:                                                                                                           preferred
+  nuclear anapole moment,                                                                                                    production
+  from parity violation within                                                                                                               of
+  nucleus                                                                                                molecules
+                                                                                                               of one
+                                                                                        handedness
+- Measured with 14% uncertainty in Cs!                                                              over
+                                                                                                 another?
+
+                   Haxton and Wieman, Ann. Rev. Nuc. Part. Sci. (2001)
+
+====== PAGE 65 ======
+Resources:
+
+Ginges and Flambaum, Violations of fundamental symmetries
+and tests of unification theories of elementary particles, Phys.
+Rep. 397, 63 (2004)
+
+Safronova et al., Search for new physics with atoms and
+molecules, Rev. Mod. Phys. 90, 025008 (2018)
+
+Ramsey-Musolf, Low-energy parity violation and new physics,
+Phys. Rev. C. 60, 015501 (1999)
+
+Khriplovich, Parity nonconservation in atomic phenomena, Phys.
+Rev. C. 60, 015501 (Gordon and Breach, Philadelphia, 1991)
+
+====== PAGE 66 ======
+Time-reversal violating electric dipole moments
+
+====== PAGE 67 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+
+====== PAGE 68 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+ •  P,T-odd nature seen from        or from form of interaction      . Note the parity operation                     d ∝F                         hd                       P(E) = −E
+
+====== PAGE 69 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+ •  P,T-odd nature seen from        or from form of interaction      . Note the parity operation                     d ∝F                         hd                       P(E) = −E
+    T-violation   CP-violation  (CPT theorem) •        ≡
+
+====== PAGE 70 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+ •  P,T-odd nature seen from        or from form of interaction      . Note the parity operation                     d ∝F                         hd                       P(E) = −E
+    T-violation   CP-violation  (CPT theorem) •        ≡
+   Standard model CP-violation: •
+
+           single phase in Cabibbo-Kabayashi-Maskawa matrix,        •                                                    δ ∼1
+
+                           Vud  Vus  Vub
+             VCKM =    Vcd   Vcs   Vcb         ,  3 angles, 1 phase              0         1
+                               Vtd   Vts   Vtb              @         A
+
+====== PAGE 71 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+ •  P,T-odd nature seen from        or from form of interaction      . Note the parity operation                     d ∝F                         hd                       P(E) = −E
+    T-violation   CP-violation  (CPT theorem) •        ≡
+   Standard model CP-violation: •
+
+           single phase in Cabibbo-Kabayashi-Maskawa matrix,        •                                                    δ ∼1
+
+                           Vud  Vus  Vub
+             VCKM =    Vcd   Vcs   Vcb         ,  3 angles, 1 phase              0         1
+                               Vtd   Vts   Vtb              @         A
+                                                                                                           ,                                                                                                                                . Led to proposal for axions.        • theta term in strong interaction, −¯θ(g2 /16π2)Gμν                                                                                                          ¯θ ≲10−10                                                                   s            ˜Gμν
+          Interaction analogous to                           , which in EM has no observable effects                              Fμν  ∝E ⋅B                                              ˜Fμν
+
+====== PAGE 72 ======
+Electric dipole moments (EDMs)
+
+ Intrinsic EDMs of quantum systems (e.g., elementary particle, neutron, atom) violate parity P and time-reversal T
+
+  EDM                     , where F is the total angular momentum of the system (e.g., atom) •       d = d(F/F)                                                                      F
+                                                                                              -   Probed through interaction with electric field E,                       . Leads to Stark shift that is first-order •                                                  hd = −d ⋅E
+    in the electric field                                                                  +
+ •  P,T-odd nature seen from        or from form of interaction      . Note the parity operation                     d ∝F                         hd                       P(E) = −E
+    T-violation   CP-violation  (CPT theorem) •        ≡
+   Standard model CP-violation: •
+
+           single phase in Cabibbo-Kabayashi-Maskawa matrix,        •                                                    δ ∼1
+
+                           Vud  Vus  Vub
+             VCKM =    Vcd   Vcs   Vcb         ,  3 angles, 1 phase              0         1
+                               Vtd   Vts   Vtb              @         A
+                                                                                                           ,                                                                                                                                . Led to proposal for axions.        • theta term in strong interaction, −¯θ(g2 /16π2)Gμν                                                                                                          ¯θ ≲10−10                                                                   s            ˜Gμν
+          Interaction analogous to                           , which in EM has no observable effects                              Fμν  ∝E ⋅B                                              ˜Fμν
+
+   Not enough CP-violation in SM to explain matter-antimatter asymmetry of universe! •
+
+====== PAGE 73 ======
+EDMs — SM and BSM
+
+Standard model EDMs appear in high-order loops
+
+====== PAGE 74 ======
+EDMs — SM and BSM
+
+Standard model EDMs appear in high-order loops
+
+  Quark EDMs appear at 3-loop level•
+
+   !        !
+
+                          t     b      c
+        d                       d
+
+                  gluon
+
+  Electron EDM appears at 4-loop level•
+
+====== PAGE 75 ======
+EDMs — SM and BSM
+
+Standard model EDMs appear in high-order loops
+
+  Quark EDMs appear at 3-loop level•
+
+   !        !
+
+                          t     b      c
+        d                       d
+
+                  gluon
+
+  Electron EDM appears at 4-loop level•
+  Introduction of new CP-violation phases induces•
+  EDMs orders of magnitude larger
+
+====== PAGE 76 ======
+EDMs — SM and BSM            Phenomenology
+
+Standard model EDMs appear in high-order loops           Phenomenological description, effective operators
+                                                       Fermion EDMs     =      σµ⌫γ5 Fµ⌫•                                                                                  ¯  Quark EDMs appear at 3-loop level                          •                                                       LEDM  −id2
+                                                       E                                                                          - non-relativistic limit ) −dhσi ·
+
+
+   !        !
+
+                          t     b      c
+        d                       d
+
+                  gluon
+
+  Electron EDM appears at 4-loop level•
+  Introduction of new CP-violation phases induces•
+  EDMs orders of magnitude larger
+
+====== PAGE 77 ======
+EDMs — SM and BSM            Phenomenology
+
+Standard model EDMs appear in high-order loops           Phenomenological description, effective operators
+                                                       Fermion EDMs     =      σµ⌫γ5 Fµ⌫•                                                                                  ¯  Quark EDMs appear at 3-loop level                          •                                                       LEDM  −id2
+                                                       E                                                                          - non-relativistic limit ) −dhσi ·
+                                                                • Chromo EDMs    , interaction with gluon field                                                                                                                   ˜dq                        Gμν
+   !        !
+
+                          t     b      c
+        d                       d
+
+                  gluon
+
+  Electron EDM appears at 4-loop level•
+  Introduction of new CP-violation phases induces•
+  EDMs orders of magnitude larger
+
+====== PAGE 78 ======
+EDMs — SM and BSM            Phenomenology
+
+Standard model EDMs appear in high-order loops           Phenomenological description, effective operators
+                                                       Fermion EDMs     =      σµ⌫γ5 Fµ⌫•                                                                                  ¯  Quark EDMs appear at 3-loop level                          •                                                       LEDM  −id2
+                                                       E                                                                          - non-relativistic limit ) −dhσi ·
+                                                                • Chromo EDMs    , interaction with gluon field                                                                                                                   ˜dq                        Gμν
+
+                                                           Three-gluon term   !        !                         •                                             GG˜G
+
+                          t     b      c
+        d                       d
+
+                  gluon
+
+  Electron EDM appears at 4-loop level•
+  Introduction of new CP-violation phases induces•
+  EDMs orders of magnitude larger
+
+====== PAGE 79 ======
+EDMs — SM and BSM            Phenomenology
+
+Standard model EDMs appear in high-order loops           Phenomenological description, effective operators
+                                                       Fermion EDMs     =      σµ⌫γ5 Fµ⌫•                                                                                  ¯  Quark EDMs appear at 3-loop level                          •                                                       LEDM  −id2
+                                                       E                                                                          - non-relativistic limit ) −dhσi ·
+                                                                • Chromo EDMs    , interaction with gluon field                                                                                                                   ˜dq                        Gμν
+
+                                                           Three-gluon term   !        !                         •                                             GG˜G
+                                                            Four-fermion interactions:                                                                •                          t     b      c
+        d                       d                                                   ¯   ¯           ¯      ¯                                                                 1  1  2iγ5  2       1iγ5  1  2  2                                                                                                                                     ,                               ,
+
+                                                                                                pseudoscalar                  gluon                                                  scalar                                                        |    {z    }     |     {z     }                                                          ¯       ¯  Electron EDM appears at 4-loop level•                                                        ✏µ⌫↵β  1σµ⌫  1  2σ↵β  2
+  Introduction of new CP-violation phases induces                            tensor•
+  EDMs orders of magnitude larger                                                           |          {z          }
+
+====== PAGE 80 ======
+Predictions and bounds — electron EDM
+
+                                                                                            Standard
+                                                                                     Model
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 81 ======
+Predictions and bounds — electron EDM
+
+                                            Multi-                                                                  generic models
+                                     Higgs
+                                      Left-Right     Extended
+                               Symmetric    Technicolor
+                               Lepton Flavour
+                                Changing
+                                                                                            Standard
+                                                                                     Model
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 82 ======
+Predictions and bounds — electron EDM
+
+                                            Multi-                                                                  generic models
+                                     Higgs
+                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor
+                               Lepton Flavour
+                                Changing
+                                                                                            Standard                                                     Split
+                                                                                     Model                               SUSY
+                                       SO(10)                                                        Alignment
+                             GUT
+
+                                          Seesaw Neutrino Yukawa Coupling
+
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 83 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor
+                               Lepton Flavour
+                                Changing
+                                                                                            Standard                                                     Split
+                                                                                     Model                               SUSY
+                                       SO(10)                                                        Alignment
+                         Tl          GUT
+
+                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 84 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor
+                               Lepton Flavour
+                                Changing
+                 YbF                                                                                            Standard                                                     Split
+                                                                                     Model                               SUSY
+                    Imperial (2011)
+                                       SO(10)                                                        Alignment
+                         Tl          GUT
+
+                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 85 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor
+                               Lepton Flavour
+                                Changing
+                 YbF                                                                                            Standard                                                     Split
+                                                                                     Model                               SUSY
+                    Imperial (2011)
+                     ThO  SO(10)                                                        Alignment
+                         Tl          GUT
+                  ACME (2014)                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 86 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor                         HfF+
+                               Lepton Flavour
+                                Changing                         JILA (2017)
+                 YbF                                                                                            Standard                                                     Split
+                                                                                     Model                               SUSY
+                    Imperial (2011)
+                     ThO  SO(10)                                                        Alignment
+                         Tl          GUT
+                  ACME (2014)                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 87 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor                         HfF+
+                               Lepton Flavour
+                                Changing                         JILA (2017)
+                 YbF                                                                                            Standard                                                     Split
+                                                                                     Model                      ThO  SUSY                    Imperial (2011)
+                     ThO  SO(10)                                                        Alignment
+                         Tl  ACME (2018)GUT
+                  ACME (2014)                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+
+====== PAGE 88 ======
+Predictions and bounds — electron EDM
+
+                                                                                                                        generic models                      experimentally      Multi-                            projections
+                       excluded        Higgs                                                                                     SUSY variants
+                                      Left-Right     Extended
+                               Symmetric    Technicolor                         HfF+                                                                                 JILA                               Lepton Flavour                                                            Imperial
+                                Changing                         JILA (2017)                                                                                                     HfF+,                 YbF                                                           YbF,                                                                                            Standard                                                     Split
+                                                                                     Model                      ThO  SUSY                    Imperial (2011)
+                     ThO  SO(10)                                                        Alignment
+                         Tl  ACME (2018)GUT
+                  ACME (2014)                                          Seesaw Neutrino Yukawa Coupling
+                  Berkeley (2002)
+                                Accidental    Approx    Approx
+                                Cancellation                                  CP     Universality
+                         Naive                                     Heavy
+                   SUSY                                       sFermions
+
+              10−25  10−26   10−27                                   10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                        de (e cm)
+
+                                                                                                                 B. E. Sauer et al., New J. Phys. (2017)
+                                                            ACME collaboration — Harvard, Yale, Northwestern, Caltech
+
+====== PAGE 89 ======
+ Predictions and bounds — electron EDM
+
+                                                                                                                          generic models                       experimentally      Multi-                            projections
+                         excluded        Higgs                                                                                       SUSY variants
+                                        Left-Right     Extended
+                                 Symmetric    Technicolor                           HfF+                                                                                    JILA                                Lepton Flavour                                                            Imperial
+                                  Changing                           JILA (2017)                                                                                                        HfF+,                  YbF                                                           YbF,                                                                                             Standard                                                      Split
+                                                                                      Model                       ThO  SUSY                      Imperial (2011)
+                      ThO  SO(10)                                                          Alignment
+                           Tl  ACME (2018)GUT
+                   ACME (2014)                                           Seesaw Neutrino Yukawa Coupling
+                   Berkeley (2002)
+                                  Accidental    Approx    Approx
+                                 Cancellation                                   CP     Universality
+                          Naive                                       Heavy
+                    SUSY                                        sFermions
+
+               10−25  10−26   10−27                                     10−28  10−29   10−30  10−31   10−32  10−33   10−40   10−41
+                                         de (e cm)Best limit on electron EDM, from HfF+:
+                                                                                                                   B. E. Sauer et al., New J. Phys. (2017)
+                                 [Roussy et al., Science (2023)]                                                             ACME collaboration — Harvard, Yale, Northwestern, Caltech   |de| < 4.1 × 10−30 e cm
+
+====== PAGE 90 ======
+Scale of precision
+
+Q.  If the electron were
+the size of the solar
+system, it has been
+measured to be perfectly                                      electron
+“round” with uncertainty:
+
+                       solar system
+
+ A.  The size of the sun.
+ B.  The size of Earth.
+ C.  The size of a football field.
+ D. A fraction of the width of a human hair.
+
+                                              [Ed Hinds]
+
+====== PAGE 91 ======
+Scale of precision
+
+Q.  If the electron were
+the size of the solar
+system, it has been
+measured to be perfectly                                      electron
+“round” with uncertainty:
+
+                       solar system
+
+ A.  The size of the sun.
+ B.  The size of Earth.
+ C.  The size of a football field.
+ D. A fraction of the width of a human hair.
+
+                                              [Ed Hinds]
+
+====== PAGE 92 ======
+Scale of precision                 Energy reach
+
+Q.  If the electron were
+the size of the solar
+system, it has been
+                                        EDM of fermion of mass m arising due to new heavy                                                                 •measured to be perfectly                                      electron                                                                       particle of mass  and phase      in diagram with n                                              Λ          ϕCP“round” with uncertainty:
+                                                                loops:
+
+                                                 d      sin    (g2/2⇡)n (m/⇤)2                                ⇠µ   φCP
+                       solar system
+
+ A.  The size of the sun.
+ B.  The size of Earth.
+ C.  The size of a football field.
+ D. A fraction of the width of a human hair.
+
+                                              [Ed Hinds]
+
+====== PAGE 93 ======
+Scale of precision                 Energy reach
+
+Q.  If the electron were
+the size of the solar
+system, it has been
+                                        EDM of fermion of mass m arising due to new heavy                                                                 •measured to be perfectly                                      electron                                                                       particle of mass  and phase      in diagram with n                                              Λ          ϕCP“round” with uncertainty:
+                                                                loops:
+
+                                                 d      sin    (g2/2⇡)n (m/⇤)2                                ⇠µ   φCP
+                       solar system                                                             Current bounds from atomic and molecular                                                                 •
+                                                          experiments give
+
+                                                                    (1      TeV)  sin φCP                                ⇤&                                                    −1000
+ A.  The size of the sun.                                     p B.  The size of Earth.
+ C.  The size of a football field.
+ D. A fraction of the width of a human hair.
+
+
+                                                                                                             [Ramsey-Musolf]
+                                              [Ed Hinds]
+
+====== PAGE 94 ======
+Basics of an EDM measurement
+
+  Measure difference in precession frequencies in•
+  parallel and antiparallel electric and magnetic fields
+
+                          B
+
+                               E
+
+                            +
+
+                            –
+
+       H = −µ · B −d · E
+            = 4dHgE          ~∆!     )
+
+====== PAGE 95 ======
+Basics of an EDM measurement    Atomic EDMs
+
+  Measure difference in precession frequencies in•
+                                                                        P,T-violating interactions induce EDMs in atoms  parallel and antiparallel electric and magnetic fields          •
+
+
+                                                                                                          T                          B                                       datom =      = 2   hN|D|MihM|HP |Ni = datom F/F                                                                                          h ˜N|D| ˜Ni         EN
+                                                      M                                                        −EM                               E                   X
+
+                            +
+
+                            –
+
+       H = −µ · B −d · E
+            = 4dHgE          ~∆!     )
+
+====== PAGE 96 ======
+Basics of an EDM measurement    Atomic EDMs
+
+  Measure difference in precession frequencies in•
+                                                                        P,T-violating interactions induce EDMs in atoms  parallel and antiparallel electric and magnetic fields          •
+
+
+                                                                                                          T                          B                                       datom =      = 2   hN|D|MihM|HP |Ni = datom F/F                                                                                          h ˜N|D| ˜Ni         EN
+                                                      M                                                        −EM                               E                   X
+                                                                  Effects increase with nuclear charge Z,                                                                  •
+
+                                                                    datom   Z2, Z3                                           /
+                            +
+
+                            –
+
+       H = −µ · B −d · E
+            = 4dHgE          ~∆!     )
+
+====== PAGE 97 ======
+Basics of an EDM measurement    Atomic EDMs
+
+  Measure difference in precession frequencies in•
+                                                                        P,T-violating interactions induce EDMs in atoms  parallel and antiparallel electric and magnetic fields          •
+
+
+                                                                                                          T                          B                                       datom =      = 2   hN|D|MihM|HP |Ni = datom F/F                                                                                          h ˜N|D| ˜Ni         EN
+                                                      M                                                        −EM                               E                   X
+                                                                  Effects increase with nuclear charge Z,                                                                  •
+
+                                                                    datom   Z2, Z3                                           /
+                            +
+                                                          Molecules — projection of spin on internuclear axis                                                                  •
+                            –
+
+       H = −µ · B −d · E
+            = 4dHgE          ~∆!     )
+
+====== PAGE 98 ======
+Basics of an EDM measurement    Atomic EDMs
+
+  Measure difference in precession frequencies in•
+                                                                        P,T-violating interactions induce EDMs in atoms  parallel and antiparallel electric and magnetic fields          •
+
+
+                                                                                                          T                          B                                       datom =      = 2   hN|D|MihM|HP |Ni = datom F/F                                                                                          h ˜N|D| ˜Ni         EN
+                                                      M                                                        −EM                               E                   X
+                                                                  Effects increase with nuclear charge Z,                                                                  •
+
+                                                                    datom   Z2, Z3                                           /
+                            +
+                                                          Molecules — projection of spin on internuclear axis                                                                  •
+                            –
+
+
+                                                       Diamagnetic systems:
+                                                          hadronic and semi-leptonic mechanisms
+
+                                                       Paramagnetic systems:
+                                                               leptonic and semi-leptonic mechanisms
+       H = −µ · B −d · E
+            = 4dHgE          ~∆!     )
+
+====== PAGE 99 ======
+Schiff screening
+
+
+            Schiff theorem                                                        Neutral system comprised of
+                                                                non-relativistic point-particles
+                                                                     interacting via
+                                                  Coulomb force
+
+====== PAGE 100 ======
+Schiff screening
+
+
+            Schiff theorem                                                        Neutral system comprised of
+                                                                non-relativistic point-particles
+                                                                     interacting via
+                                                  Coulomb force            E
+
+
+                                                             Internal electric field produced
+                                                                                   s.t. at each particle
+                                         d · hEi = 0
+
+====== PAGE 101 ======
+Schiff screening derivation
+
+
+Consider atom made of point charges with electric
+dipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.
+
+The total EDM of the atom consists of:
+
+     bare EDM contribution   •
+     induced EDM contribution   •
+
+====== PAGE 102 ======
+Schiff screening derivation
+
+
+Consider atom made of point charges with electric
+dipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.
+
+The total EDM of the atom consists of:
+
+     bare EDM contribution   •
+     induced EDM contribution   •
+
+
+Bare EDM:    ∑ di
+                             i
+Induced EDM:                                                         ,               ⟨˜N|D| ˜N⟩=              ˜N⟩                                              eiri|                     ⟨˜N|∑
+                                                                         i
+where      is state of the atom perturbed by the P,T-         | ˜N⟩
+odd EDM interaction,
+                   ⟨M|Hd|N⟩                                                                             .          | ˜N⟩= |N⟩+            |M⟩       ∑                     EN −EM               M
+
+====== PAGE 103 ======
+Schiff screening derivation                                                   The P,T-odd interaction Hamiltonian,
+                                                                                 1                                                                                                                                                                                                        ,Consider atom made of point charges with electric                Hd = −∑ di ⋅E(ri) = ∑   di ⋅∇iU(r)                                                                                                                                     ei                                                                                                                                                                         i                              idipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.                                                    where U(r) is the potential energy.
+
+The total EDM of the atom consists of:
+
+     bare EDM contribution   •
+     induced EDM contribution   •
+
+
+Bare EDM:    ∑ di
+                             i
+Induced EDM:                                                         ,               ⟨˜N|D| ˜N⟩=              ˜N⟩                                              eiri|                     ⟨˜N|∑
+                                                                         i
+where      is state of the atom perturbed by the P,T-         | ˜N⟩
+odd EDM interaction,
+                   ⟨M|Hd|N⟩                                                                             .          | ˜N⟩= |N⟩+            |M⟩       ∑                     EN −EM               M
+
+====== PAGE 104 ======
+Schiff screening derivation                                                   The P,T-odd interaction Hamiltonian,
+                                                                                 1                                                                                                                                                                                                        ,Consider atom made of point charges with electric                Hd = −∑ di ⋅E(ri) = ∑   di ⋅∇iU(r)                                                                                                                                     ei                                                                                                                                                                         i                              idipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.                                                    where U(r) is the potential energy.
+
+                                                             This may be expressed in terms of the unperturbedThe total EDM of the atom consists of:
+                                                            Hamiltonian,
+     bare EDM contribution   •                                                                           1                                                                                                                                                                                          .                                                                Hd =        [di ⋅pi, H0]     induced EDM contribution                          i∑   •                                                                                                                          ei                                                                                                                                                                                        i
+
+Bare EDM:    ∑ di
+                             i
+Induced EDM:                                                         ,               ⟨˜N|D| ˜N⟩=              ˜N⟩                                              eiri|                     ⟨˜N|∑
+                                                                         i
+where      is state of the atom perturbed by the P,T-         | ˜N⟩
+odd EDM interaction,
+                   ⟨M|Hd|N⟩                                                                             .          | ˜N⟩= |N⟩+            |M⟩       ∑                     EN −EM               M
+
+====== PAGE 105 ======
+Schiff screening derivation                                                   The P,T-odd interaction Hamiltonian,
+                                                                                 1                                                                                                                                                                                                        ,Consider atom made of point charges with electric                Hd = −∑ di ⋅E(ri) = ∑   di ⋅∇iU(r)                                                                                                                                     ei                                                                                                                                                                         i                              idipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.                                                    where U(r) is the potential energy.
+
+                                                             This may be expressed in terms of the unperturbedThe total EDM of the atom consists of:
+                                                            Hamiltonian,
+     bare EDM contribution   •                                                                           1                                                                                                                                                                                          .                                                                Hd =        [di ⋅pi, H0]     induced EDM contribution                          i∑   •                                                                                                                          ei                                                                                                                                                                                        i
+                                                              Therefore, the perturbed atomic wave function:
+Bare EDM:    ∑ di
+                             i                                                                 ⟨M|∑i (1/ei)[di ⋅pi, H0]|N⟩                                                                                              | ˜N⟩= |N⟩+                        |M⟩                                          i∑Induced EDM:                                                         ,                                        EN −EM               ⟨˜N|D| ˜N⟩=              ˜N⟩                             M                                              eiri|                     ⟨˜N|∑
+                                                                         i
+where      is state of the atom perturbed by the P,T-         | ˜N⟩
+odd EDM interaction,
+                   ⟨M|Hd|N⟩                                                                             .          | ˜N⟩= |N⟩+            |M⟩       ∑                     EN −EM               M
+
+====== PAGE 106 ======
+Schiff screening derivation                                                   The P,T-odd interaction Hamiltonian,
+                                                                                 1                                                                                                                                                                                                        ,Consider atom made of point charges with electric                Hd = −∑ di ⋅E(ri) = ∑   di ⋅∇iU(r)                                                                                                                                     ei                                                                                                                                                                         i                              idipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.                                                    where U(r) is the potential energy.
+
+                                                             This may be expressed in terms of the unperturbedThe total EDM of the atom consists of:
+                                                            Hamiltonian,
+     bare EDM contribution   •                                                                           1                                                                                                                                                                                          .                                                                Hd =        [di ⋅pi, H0]     induced EDM contribution                          i∑   •                                                                                                                          ei                                                                                                                                                                                        i
+                                                              Therefore, the perturbed atomic wave function:
+Bare EDM:    ∑ di
+                             i                                                                 ⟨M|∑i (1/ei)[di ⋅pi, H0]|N⟩                                                                                              | ˜N⟩= |N⟩+                        |M⟩                                          i∑Induced EDM:                                                         ,                                        EN −EM               ⟨˜N|D| ˜N⟩=              ˜N⟩                             M                                              eiri|                     ⟨˜N|∑
+                                                                         i
+                                                                 ⟨M|∑i (1/ei)di ⋅pi(EN −EM)|N⟩where      is state of the atom perturbed by the P,T-       ⇒| ˜N⟩= |N⟩+                            |M⟩         | ˜N⟩                                    i∑                                                                                EN −EM                                                             Modd EDM interaction,
+                   ⟨M|Hd|N⟩                                                                             .          | ˜N⟩= |N⟩+            |M⟩       ∑                     EN −EM               M
+
+====== PAGE 107 ======
+Schiff screening derivation                                                   The P,T-odd interaction Hamiltonian,
+                                                                                 1                                                                                                                                                                                                        ,Consider atom made of point charges with electric                Hd = −∑ di ⋅E(ri) = ∑   di ⋅∇iU(r)                                                                                                                                     ei                                                                                                                                                                         i                              idipole moments and experiencing Coulomb interaction
+only. Treat non-relativistically.                                                    where U(r) is the potential energy.
+
+                                                             This may be expressed in terms of the unperturbedThe total EDM of the atom consists of:
+                                                            Hamiltonian,
+     bare EDM contribution   •                                                                           1                                                                                                                                                                                          .                                                                Hd =        [di ⋅pi, H0]     induced EDM contribution                          i∑   •                                                                                                                          ei                                                                                                                                                                                        i
+                                                              Therefore, the perturbed atomic wave function:
+Bare EDM:    ∑ di
+                             i                                                                 ⟨M|∑i (1/ei)[di ⋅pi, H0]|N⟩                                                                                              | ˜N⟩= |N⟩+                        |M⟩                                          i∑Induced EDM:                                                         ,                                        EN −EM               ⟨˜N|D| ˜N⟩=              ˜N⟩                             M                                              eiri|                     ⟨˜N|∑
+                                                                         i
+                                                                 ⟨M|∑i (1/ei)di ⋅pi(EN −EM)|N⟩where      is state of the atom perturbed by the P,T-       ⇒| ˜N⟩= |N⟩+                            |M⟩         | ˜N⟩                                    i∑                                                                                EN −EM                                                             Modd EDM interaction,
+                   ⟨M|Hd|N⟩                  ⇒| ˜N⟩=  +                                                                  (1        (1/ei)di ⋅pi)|N⟩                                                                             .                                         i∑          | ˜N⟩= |N⟩+            |M⟩       ∑                                                                                                                               i                     EN −EM               M
+
+====== PAGE 108 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+
+====== PAGE 109 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+                 =             eiri ,    (1/ej)dj                    ⟨N|i[∑  ∑       ⋅pj]|N⟩
+                                                                               i                j
+
+====== PAGE 110 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+                 =             eiri ,    (1/ej)dj                    ⟨N|i[∑  ∑       ⋅pj]|N⟩
+                                                                               i                j
+                 = −⟨N|∑ di|N⟩= −∑ di
+                                                                               i                             i
+
+====== PAGE 111 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+                 =             eiri ,    (1/ej)dj                    ⟨N|i[∑  ∑       ⋅pj]|N⟩
+                                                                               i                j
+                 = −⟨N|∑ di|N⟩= −∑ di
+                                                                               i                             i
+This exactly cancels the bare EDM, so total atomic EDM is zero!
+
+====== PAGE 112 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+                 =             eiri ,    (1/ej)dj                    ⟨N|i[∑  ∑       ⋅pj]|N⟩
+                                                                               i                j
+                 = −⟨N|∑ di|N⟩= −∑ di
+                                                                               i                             i
+This exactly cancels the bare EDM, so total atomic EDM is zero!
+
+Violation of Schiff theorem?
+
+====== PAGE 113 ======
+Therefore, induced atomic EDM:
+
+                   ˜N⟩=                      +                         eiri|                      (1/ei)di                       (1/ek)dk                       ⟨N|(1                         ejrj(1            ⋅pk)|N⟩         ⟨˜N|∑        −i∑     ⋅pi)∑    i∑
+                                     i                                                 i                                j                k
+                 =             eiri ,    (1/ej)dj                    ⟨N|i[∑  ∑       ⋅pj]|N⟩
+                                                                               i                j
+                 = −⟨N|∑ di|N⟩= −∑ di
+                                                                               i                             i
+                                                                                                                          IThis exactly cancels the bare EDM, so total atomic EDM is zero!                                                                                                             Flambaum,
+                                                                                                                Ginges (2002)
+Violation of Schiff theorem?
+                                                                                                                                                     electric field
+Yes!
+
+                                                                             e
+Finite nuclear size            nuclear Schiff moment!  datom = ⌘S  , S = SI/I =         ⇒                                                                       10 hr2ri −53Z hr2ihri                                                                             h                 i
+Relativistic effects            electron EDM, with enhancement!                                                                                                                                          ,                                                 datom = K de         ⇒                                                                       |K(Tl)| ⇡600
+
+====== PAGE 114 ======
+Leading mechanisms
+
+                                                          neutron EDM
+
+
+              diamagnetic
+             (Hg, Ra,TlF,…)
+                                                                                         fundamental
+                                                                                 CP-
+                                                                                                                violating
+                                                                                     phases            Measurements
+
+               paramagnetic
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+              Groningen
+                       Caltech
+
+====== PAGE 115 ======
+Leading mechanisms
+
+                                                          neutron EDM
+
+
+              diamagnetic
+             (Hg, Ra,TlF,…)
+                                                                                         fundamental
+                                                                                 CP-
+                                                                                                                violating
+                                                                                     phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 116 ======
+Leading mechanisms
+
+                                                          neutron EDM
+
+
+              diamagnetic
+             (Hg, Ra,TlF,…)
+                                                                                         fundamental
+                                                                                 CP-
+                                                                                                                violating
+                           Atomic/molecular theory                                     phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 117 ======
+Leading mechanisms
+
+                                                          neutron EDM
+
+
+              diamagnetic
+             (Hg, Ra,TlF,…)
+                                                                                         fundamental
+                                                                                 CP-
+                                                                                                                violating
+                                                                                     phases
+                                         QCD
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 118 ======
+Leading mechanisms
+
+                                                          neutron EDM
+
+
+              diamagnetic
+             (Hg, Ra,TlF,…)
+                                                                                         fundamental
+                                                                                       particle
+                                                                                 CP-
+                                                                             theory                                                                                                                violating
+                                                                                     phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 119 ======
+Leading mechanisms
+
+                                                          neutron EDM
+                                     G˜G,                                                                dq, ˜dq,
+
+              diamagnetic         Schiff moment                                GG ˜G, ¯qq¯qq
+             (Hg, Ra,TlF,…)                    ¯NN ¯NN                                                                                         fundamental
+                                                                                 CP-
+                                                                                                                violating
+                                                                                     phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 120 ======
+Leading mechanisms
+
+                                                        nucleon EDM
+                                     G˜G,                                                                dq, ˜dq,
+
+              diamagnetic         Schiff moment                                GG ˜G, ¯qq¯qq
+             (Hg, Ra,TlF,…)                    ¯NN ¯NN                                                                                         fundamental
+                        MQM                                           CP-                   )
+                                                                                                                violating
+                                                                                     phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+====== PAGE 121 ======
+Leading mechanisms
+
+                                                        nucleon EDM
+                                     G˜G,                                                                dq, ˜dq,
+
+              diamagnetic         Schiff moment                                GG ˜G, ¯qq¯qq
+             (Hg, Ra,TlF,…)                    ¯NN ¯NN                                                                                         fundamental
+                        MQM                                           CP-                   )
+                                                                                                                violating
+                                                  bottleneck*      bottleneck**                  phases
+
+                                                                      ¯ee ¯NN                                                                                      ¯ee¯qq
+
+
+               paramagnetic                                                    de
+               (Tl, ThO, BaF, YbOH,…)
+
+                 Atomic/molecular              Nuclear           Nucleon           Lepton/quark              Particle
+
+
+                                                 * uncertainties up to 500%     ** uncertainties ~100%
+
+====== PAGE 122 ======
+Enhancement mechanisms
+
+
+P,T-violating effects are tiny. It’s important to consider systems where effects are enhanced
+
+====== PAGE 123 ======
+Enhancement mechanisms
+
+
+P,T-violating effects are tiny. It’s important to consider systems where effects are enhanced
+
+
+    Nuclear mechanism — octuple deformed nuclei, e.g., radium, radon  •
+
+====== PAGE 124 ======
+Enhancement mechanisms
+
+
+P,T-violating effects are tiny. It’s important to consider systems where effects are enhanced
+
+
+    Nuclear mechanism — octuple deformed nuclei, e.g., radium, radon  •
+
+                                         Electronic mechanism — close atomic levels of opposite                                        •
+                                               parity, e.g., rare earth atoms, metastable state of radium,…
+
+      Argonne National Lab
+
+====== PAGE 125 ======
+Enhancement mechanisms
+
+
+P,T-violating effects are tiny. It’s important to consider systems where effects are enhanced
+
+
+    Nuclear mechanism — octuple deformed nuclei, e.g., radium, radon  •
+
+                                         Electronic mechanism — close atomic levels of opposite                                        •
+                                               parity, e.g., rare earth atoms, metastable state of radium,…
+
+                                    Molecules — huge intramolecular electric field                                        •
+
+                                                              Eric Cornell group      Argonne National Lab
+
+====== PAGE 126 ======
+Enhancement mechanisms
+
+
+P,T-violating effects are tiny. It’s important to consider systems where effects are enhanced
+
+
+    Nuclear mechanism — octuple deformed nuclei, e.g., radium, radon  •
+
+                                         Electronic mechanism — close atomic levels of opposite                                        •
+                                               parity, e.g., rare earth atoms, metastable state of radium,…
+
+                                    Molecules — huge intramolecular electric field                                        •
+
+                                                                                    Other — solids,                                                                                               •
+                                                                                                       oscillating electric field, …
+
+                                                              Eric Cornell group      Argonne National Lab
+
+====== PAGE 127 ======
+Best limits and recent measurements
+
+
+                                                                |datom|, 95% c.l.         Constraints, 95% c.l.       Group
+
+                        Paramagnetic
+                                 205Tl             1.1 x 10-24 e cm          |de| < 1.9 x 10-27 e cm     Berkeley, 2002
+                     ThO                                               |de| < 1.2 x 10-29 e cm    ACME, 2018
+                         HfF+                                       |de| < 4.1 x 10-30 e cm (90% c.l)   JILA, 2023
+                        Diamagnetic
+
+                            199Hg            7.4 x 10-30 e cm         |dn| < 1.6 x 10-26 e cm       Seattle, 2016
+
+                                                                    x                                                                           |𝜽QCD| < 1.5   10-10
+                             225Ra            1.4 x 10-23 e cm                             Argonne, 2015
+                            129Xe             1.5 x 10-27 e cm                                    Juelich, 2019
+                            129Xe                                        HeXeEDM, 2019                                               4.8 x 10-27 e cm
+                          n                                                |dn| < 3.6 x 10-26 e cm     Grenoble, 2015
+
+             Other ongoing experiments
+
+                   Paramagnetic: YbF (Imperial), ThF (JILA), Cs (Penn State), Fr (Tokyo), BaF (Groningen) , YbOH (Caltech)
+
+                                                                   + many more, particularly for polyatomic molecules!                    Diamagnetic: 223Rn (TRIUMF), 129Xe (Tokyo), TlF (CeNTREX)
+
+====== PAGE 128 ======
+Resources:
+
+Ginges and Flambaum, Violations of fundamental symmetries
+and tests of unification theories of elementary particles, Phys.
+Rep. 397, 63 (2004)
+
+Safronova et al., Search for new physics with atoms and
+molecules, Rev. Mod. Phys. 90, 025008 (2018)
+
+Khriplovich, Parity nonconservation in atomic phenomena, Phys.
+Rev. C. 60, 015501 (Gordon and Breach, Philadelphia, 1991)
+
+Chupp, Fierlinger, Ramsey-Musolf, Singh, Rev. Mod. Phys. 91,
+015001 (2019).
+
+====== PAGE 129 ======
+After these lectures, you should:
+
+  understand the basics of how weak interaction effects•
+   manifest in atoms, including in
+
+    atomic parity violation -
+
+     time-reversal-violating electric dipole moments -
+
+  have an idea of the status and challenges of theory and•
+  experiment in this field

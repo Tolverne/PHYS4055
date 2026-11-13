@@ -1,0 +1,292 @@
+Source: source_material/lectures/slides_and_handouts/Week13.pdf
+Pages: 35
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+  Atomic clocks
+
+
+PHYS4055 Atomic Physics and Quantum Optics
+
+             Week 13
+
+====== PAGE 2 ======
+                            50000 vibrations per
+                              second
+
+                                    (loses 1 second a month)        9192631770 periods per second
+                                                                   (NIST Cs clock)
+                                     Clocks based on higher frequencies are more accurate because   (loses 1 second in 300 mln years)
+1/2 swing per second     each oscillation (or "tick") represents a smaller unit of time,                                                                                               -all atoms are identical                                     allowing for a finer-grained measurement of time and a reduced
+(loses 1 minute a day)                                 impact from counting errors.                         -atoms do not “wear out”
+
+====== PAGE 3 ======
+Cs atomic clock
+
+====== PAGE 4 ======
+Cs atomic clock
+
+    133Cs: [Xe]6s  2S1/2
+
+    L=0, J=1/2
+    I=7/2
+
+====== PAGE 5 ======
+Cs atomic clock
+
+    133Cs: [Xe]6s  2S1/2
+
+    L=0, J=1/2
+    I=7/2
+
+                                                                        Clock transition.
+
+     I>J, hence will split into 2J+1=2
+    hyperfine levels:
+
+    F=|I+J|…|I-J|=3,4
+
+Goal: measure the frequency (9192631770 Hz, 3.26 cm, 0.307 cm-1) of the F=3, mf=0→ F=3, mf=0 transition
+
+====== PAGE 6 ======
+Zeeman effect on HFS
+
+• Weak field:
+
+                                                       J=1/2, I=1/2
+                                                    F=0,1
+• Strong field:
+
+====== PAGE 7 ======
+                                                                           133Cs: [Xe]6s  2S1/2
+Cs atomic clock                             L=0, J=1/2
+                                                                I=7/2
+
+Applying the magnetic field, we see Zeeman effect.
+
+====== PAGE 8 ======
+Cs atomic clock
+
+Goal: measure the frequency of the F=3, mf=0→ F=3, mf=0 transition
+
+====== PAGE 9 ======
+Atomic beam technique
+
+                                    Weak field
+
+                                    Strong field regime
+
+====== PAGE 10 ======
+Atomic beam technique
+
+====== PAGE 11 ======
+Atomic beam technique
+
+                    MJ=1/2 → MJ=-1/2
+
+====== PAGE 12 ======
+Atomic beam technique
+
+                      MJ=1/2 → MJ=-1/2
+
+====== PAGE 13 ======
+Atomic beam technique
+
+                           MJ=1/2 → MJ=-1/2
+
+====== PAGE 14 ======
+Atomic beam technique
+
+                        MJ=1/2 → MJ=-1/2
+
+====== PAGE 15 ======
+Atomic beam technique
+
+====== PAGE 16 ======
+Atomic beam technique
+
+====== PAGE 17 ======
+Cs atomic clock
+
+                        https://www.youtube.com/watch?v=MGoVXLzUDsQ&ab_chan
+                           nel=NationalPhysicalLaboratory
+
+====== PAGE 18 ======
+The second is defined based on the Cs clock
+
+• Original definition: 1⁄86,400 of a mean solar day
+• 1956: The second was redefined in terms of a year. The second was thus defined
+  as "the fraction ​1⁄31,556,925.9747 of the tropical year for 1900 January 0 at 12
+  hours ephemeris time"
+• 1967: The second is the duration of 9192631770 periods of the radiation
+  corresponding to the transition between the two hyperfine levels of the ground
+  state of the caesium-133 atom.
+• 2019 definition: The second, symbol s, is the SI unit of time. It is defined by taking
+  the fixed numerical value of the caesium frequency ΔνCs, the unperturbed
+  ground-state hyperfine transition frequency of the caesium-133 atom, to
+ be 9192631770 when expressed in the unit Hz, which is equal to s−1.
+• https://www.youtube.com/watch?v=9ikbD7UGzoI&ab_channel=NationalInstitute
+  ofStandardsandTechnology
+
+====== PAGE 19 ======
+
+
+====== PAGE 20 ======
+Optical clocks
+
+====== PAGE 21 ======
+Sr atomic clock
+
+ Sr [Kr]5s2, 1S0 ground state.
+ Spin-forbidden clock transition, long lifetime,
+ allows for precise frequency measurement
+
+ Double cooling: first “blue MOT”, 461 nm
+ cooling from 800 K to mK
+ Next the “red MOT”, 689 nm (forbidden transition),
+ down to μK.
+
+====== PAGE 22 ======
+• Higher frequency compared to caesium time
+ standard (429228 GHz vs 9.2 GHz)
+
+     σ- Allan variance (measure of frequency stability)
+       f0 – transition frequency
+   N – number of atoms
+    Tm – measurement time
+      τ – lifetime of the level
+
+====== PAGE 23 ======
+• Higher frequency compared to cesium time standard
+ (429228 GHz vs p.2 GHz)
+
+• Sr clock:
+     • 10^4 atoms (large N)
+     • Trapped in a lattice (large                               Tm)
+     • Optical transition (large                                       f0)
+     • Forbidden transition (long τ)
+
+====== PAGE 24 ======
+              • Higher frequency compared to cesium time standard
+            (429228 GHz vs p.2 GHz)
+
+              • Sr clock:
+                     • 10^4 atoms (large N)
+                     • Trapped in a lattice (large                                            Tm)
+                     • Optical transition (large                                                          f0)
+                     • Forbidden transition (large τ)
+
+
+• https://www.youtube.com/watch?v=1JBHG6fipr4&ab_channel=Seeker
+
+====== PAGE 25 ======
+     Strontium atomic clocks are considered to be one of the most precise and have
+     been experimentally demonstrated to have a fractional frequency uncertainty in
+      the order of ~ 10-19 . To put this in perspective, the clock must run longer than th
+       of the universe for there to be an error of ~1 second in timekeeping!
+
+• https://www.youtube.com/watch?v=1JBHG6fipr4&ab_channel=Seeker
+
+====== PAGE 26 ======
+Strontium atomic clocks are considered to be one of the most precise and have
+been experimentally demonstrated to have a fractional frequency uncertainty in
+ the order of ~ 10-19 . To put this in perspective, the clock must run longer than th
+ of the universe for there to be an error of ~1 second in timekeeping!
+
+                                                  Al+, quantum logic
+
+====== PAGE 27 ======
+
+
+====== PAGE 28 ======
+• Applications:
+    • GPS
+    • Geodesy
+    • Quantum simulations
+    • Time standards
+    • Earthquake detection
+
+====== PAGE 29 ======
+• Fundamental research:
+    • Investigating relativity (gravitational redshift, time
+      dilation)
+    • Variation of fundamental constants
+    • Search for dark matter
+
+====== PAGE 30 ======
+• Fundamental research:
+    • Investigating relativity (gravitational redshift, time
+      dilation)
+    • Variation of fundamental constants
+    • Search for dark matter
+
+====== PAGE 31 ======
+Variation of fundamental constants
+
+====== PAGE 32 ======
+• Fundamental constant: any parameter that cannot be
+  calculated with our present knowledge of physics, i.e.,
+ a free parameter of a current theory*
+
+• Examples: electron charge (e), electron mass     proton                                                (me),
+ mass (mp), Plank constant (ħ), velocity of light in vacuum
+  (c), Newton constant (G), Avogadro constant (NA),
+ Boltzmann constant (kB), and the permeability and
+  permittivity of space (ε0 and µ0)
+
+• The number of free parameters depends on the physical
+ model at hand (for example, the minimal standard model of
+  particle physics plus gravitation depends on 20 free
+  parameters)
+
+* J-P.Uzan, Reviews of Modern Physics 75, 403 (2003)
+
+====== PAGE 33 ======
+• Fundamental constant: any parameter that cannot be
+  calculated with our present knowledge of physics, i.e.,
+ a free parameter of a current theory*
+
+• Examples: electron charge (e), electron mass     proton                                                (me),
+ mass (mp), Plank constant (ħ), velocity of light in vacuum
+  (c), Newton constant (G), Avogadro constant (NA),
+ Boltzmann constant (kB), and the permeability and
+  permittivity of space (ε0 and µ0)
+
+• The number of free parameters depends on the physical
+ model at hand (for example, the minimal standard model of
+  particle physics plus gravitation depends on 20 free
+  parameters)
+
+* J-P.Uzan, Reviews of Modern Physics 75, 403 (2003)
+
+====== PAGE 34 ======
+Are fundamental constants constant?
+
+
+ Various theories and extensions of the Standard Model
+predict varying fundamental constants.
+    •  Extra space dimensions are a common feature of theories unifying
+      gravity with other interactions (Kaluza-Klein, Superstring and M-
+      theories). Any change in size of these dimensions would manifest
+       itself in the 3D world as variation of fundamental constants
+
+     • Fundamental constants depend on scalar fields, which vary in
+     space and time. May be related to “dark energy” and accelerated
+     expansion of the Universe.
+
+====== PAGE 35 ======
+• Anthropic principle (Goldilock principle):
+“...conditions that are observed in the universe must allow the observer to
+  exist.”*
+ Such “fine tuning” of physical laws, necessary for humans to exist, places constraints on
+  the values of fundamental constants.
+
+
+Example:  low-energy  resonance  in  production  of  carbon  from  helium  in  stars
+  (He+He+He=>C). Slightly different (a few percent) fine structure constant α≡e2/ħc:
+  unstable carbon nuclei→ no life
+
+
+      Variation of coupling constants in space provides a natural explanation of the “fine
+  tuning”: we appeared in area of the Universe where values of fundamental constants
+  are suitable for our existence (Goldilocks principle).

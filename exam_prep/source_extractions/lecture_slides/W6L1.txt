@@ -1,0 +1,596 @@
+Source: source_material/lectures/slides_and_handouts/W6L1.pdf
+Pages: 29
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 6, Lecture 1
+Jaynes–Cummings model
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: This Week Thursday 1-2 pm
+
+====== PAGE 2 ======
+Announcements
+
+This is the last week of consultation for the quantum optics part of the course.
+
+Office hours will be held from 1.00 to 2.00 pm this Thursday (note change from previous weeks)
+
+Assessment reminder
+
+Reminder that assignment 2 is due 04/09/26 at 4pm
+
+Common FAQs about assessment submission process:
+
+•  After submission: Click on the Download Digital Receipt icon to download a copy of the
+    digital receipt as proof that you have submitted your assignment.
+
+•  Per the ECP: Feedback, grades and solutions will be posted two weeks after the due date
+   to allow for extensions.
+
+•   If there are any issues with the submission process for this assignment, please email me.
+
+                                                                                                                                                                                               2
+
+====== PAGE 3 ======
+Review
+
+What you learned last time…
+
+
+                                                                 photon subtraction
+  environment
+                                                                                               “click”       state
+                     system state
+
+                    system operator                                    environment                                               𝜂                                         operators
+
+                                                                                                                         output mode
+
+
+      What does the environment do?
+
+  How does this evolution develop in time?
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+The Jaynes–Cummings model
+
+
+                                                               cavity We have studied how to describe a
+ quantised electromagnetic field.
+
+                                                     two level system Now we ask:
+
+ How does a quantised field interact
+ with an atom?
+
+                                                          cavity
+ We will build the simplest useful model from
+                                       mode two ingredients:
+ •  an atom represented by two energy
+     levels;
+ •  a single quantised mode of the
+    electromagnetic field.
+
+ Together, these form the Jaynes–Cummings model.
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+The Jaynes–Cummings model
+
+
+                                         cavity
+
+
+                                  two level system
+
+                                  cavity
+                       mode
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+The Jaynes–Cummings model
+
+
+                                         cavity
+
+
+                                  two level system
+
+                                  cavity
+                       mode
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+What you will
+  learn today
+
+
+                            How the atom–field interaction Hamiltonian is
+                                                        constructed
+
+                             Why particular atom–photon states become
+                                                      coupled
+
+                              How an excitation oscillates coherently
+                                           between matter and light
+
+                                                                                                                                                                                7
+
+====== PAGE 8 ======
+Modelling an atom as a two-level system
+
+
+ A real atom has many energy levels, but light close to one transition may interact
+ predominantly with two of them:
+
+                           |g⟩  ground state,      |e⟩  excited state.
+
+                                                                        two level system
+ Their energy separation defines the atomic transition frequency:
+
+                             Ee −Eg = ℏωa.
+
+ Choosing 𝐸𝑔= 0, the atomic Hamiltonian is
+                          Ha = ℏωa|e⟩⟨e|.
+
+
+ The two-level approximation is appropriate when other atomic transitions are sufficiently far
+ from resonance.
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Atomic raising and lowering operators
+
+
+  Define the atomic raising and lowering operators:
+                 =                    σ+    |e⟩⟨g|,   σ−= |g⟩⟨e|.
+
+
+                                                                        two level system  Their actions are
+                    σ+|g⟩= |e⟩,    σ−|e⟩= |g⟩.
+
+  while
+                     σ+|e⟩= 0,    σ−|g⟩= 0.
+
+
+ The atomic excitation operator is
+                    σ+σ−= |e⟩⟨e|.
+
+
+ so the atomic Hamiltonian can be written as
+                          Ha = ℏωaσ+σ−.
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+The other ingredient: a single field mode
+
+
+ Consider one quantised cavity mode with angular frequency 𝜔𝑐.
+
+
+  Its annihilation and creation operators act as
+     √n           √ n a|n⟩=    |n −1⟩,    a†|n⟩=  + 1 |n + 1⟩.
+
+ Ignoring the constant vacuum energy, the field Hamiltonian is
+
+               Hf = ℏωca†a.
+
+ The photon-number operator is
+
+                         ˆn = a†a,    ˆn|n⟩= n|n⟩.
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Joint atom–field states
+
+
+The combined system is described using tensor-
+product states:
+      |g, n⟩≡|g⟩⊗|n⟩,      |e, n⟩≡|e⟩⊗|n⟩.
+
+Without an interaction, the total Hamiltonian is
+                   ⊗        H0 = ℏωaσ+σ−+ ℏωca†a.
+
+Therefore,            H0|g, n⟩= nℏωc|g, n⟩.
+             H0|e, n⟩= ℏ(ωa + nωc)|e, n⟩.
+
+When 𝜔𝑎≈𝜔𝑐, the states
+                 |e, n⟩  and   |g, n + 1⟩
+
+have approximately the same energy.
+
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+The electric-dipole interaction
+
+  In the electric-dipole approximation, the atom–field interaction is
+                                                                · ˆE.                             Hint = −ˆd
+
+ For a two-level atom,
+                                           ˆd                   ∝σ+ + σ−.
+
+ and for a single field mode,
+                                 ˆE ∝a + a†.
+
+ Absorbing the dipole matrix element and field amplitude into a coupling strength 𝑔,
+
+                      Hint = ℏg(σ+ + σ−)(a + a†).
+
+ Expanding gives four possible terms:
+
+                 Hint = ℏg ! aσ+ + a†σ−+ a†σ+ + aσ− " .
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+The rotating-wave approximation
+
+                         Hint = ℏg ! aσ+ + a†σ−+ a†σ+ + aσ− " .
+
+ Each interaction term describes a different process:
+           Term     Process
+            𝑎𝜎+     A photon is absorbed and the atom is excited
+            𝑎†𝜎−     The atom de-excites and creates a photon
+            𝑎†𝜎+     A photon and an atomic excitation are created together
+            𝑎𝜎−     A photon and an atomic excitation are removed together
+ In the interaction picture,
+                   aσ+ ∝ei(ωa−ωc)t,    a†σ−∝e−i(ωa−ωc)t.
+ whereas
+                    a†σ+ ∝ei(ωa+ωc)t,    aσ−∝e−i(ωa+ωc)t.
+ Near resonance, the latter terms oscillate rapidly and average to approximately zero:
+
+                    HRWAint  = ℏg ! aσ+ + a†σ− " .
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+The Jaynes–Cummings Hamiltonian
+
+ Combining the free atom, free field and interaction terms gives
+
+               HJC = ℏωca†a + ℏωaσ+σ−+ ℏg ! aσ+ + a†σ− " .
+
+
+The three contributions describe:
+                      ℏωca†a + ℏωaσ+σ− + ℏg % aσ+                                 + a†σ− & .
+                               cavity! "#ﬁeld$    two-level!   "# atom$    !excitation"#exchange$
+
+ 𝑔: the single-photon coupling strength between the atom and cavity mode.
+
+ Define the atom–cavity detuning as
+
+                ∆= ωa −ωc.
+
+The atom and cavity are on resonance when
+             ∆= 0  ⇐⇒    ωa = ωc.
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+The total excitation number is conserved
+
+
+ Define the total excitation-number operator
+                                 ˆNexc =                                 a†a + σ+σ−.
+
+   It counts photons plus atomic excitations:
+                                 ˆNexc|e, n⟩= (n + 1)|e, n⟩.
+
+                            ˆNexc|g, n + 1⟩= (n + 1)|g, n + 1⟩.
+
+
+  For the Jaynes–Cummings Hamiltonian,
+
+                                [HJC, ˆNexc] = 0.
+
+ Therefore, the interaction can couple only states with the same total number of excitations:
+                                        |e, n→←→|g, n + 1→.
+
+ The state ∣𝑔, 0 ⟩ is uncoupled.
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Excitation manifolds
+
+
+The Hilbert space separates into independent subspaces:
+
+                       H0 = span{|g, 0⟩}.
+
+and, for 𝑛= 0,1,2, …,
+                     Hn+1 = span {|e, n⟩, |g, n + 1⟩} .
+
+
+Within each subspace, the interaction acts as
+                       √ + 1   +                                 n     n                             a†σ−|e, n⟩=          |g,     1⟩.
+                      +   √ + 1                             aσ+|g, n  1⟩=                                    n      |e, n⟩.
+
+
+The effective coupling is therefore
+
+                     = √ +                               gn   g n   1.
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Hamiltonian within an excitation manifold
+
+Use the ordered basis
+
+                                          {|e, n⟩, |g, n + 1⟩} .
+
+
+Within this subspace, the Hamiltonian becomes
+                                 nωc + ωa  g√n + 1
+                              ℏ                     Hn+1 =                                           .
+                           g√n + 1  (n + 1)ωc                     !           "
+
+Using Δ = 𝜔𝑎−𝜔𝑐, this can be written as
+                                 ℏ   ∆    2g√n + 1
+                  Hn+1 = EavI +                                            .
+                                   2  2g√n + 1                       !            "where                                −∆
+
+                                         1      ωa
+                           Eav = ℏ  n +    ωc +        .
+                                         2       2                           !"   #       $
+
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Finding the dressed states
+On resonance, Δ = 0, after removing the common energy 𝐸av𝐼, the Hamiltonian is
+                                               1
+                    = ℏg √ n + 1              .                       H′n+1                                            1  0                                  !0  "
+
+Write an eigenstate as                |ψ→= ce|e, n→+ cg|g, n + 1→ ←→              .                                                 !cecg "
+
+The eigenvalue equation reduces to
+                                1
+                          =                                   µ          .                             1  0                      !0  " !cecg "    !cecg "
+which gives
+                  =                          =                              =⇒   µ2 = 1.                               cg                                  µce,     ce                                            µcg
+
+Therefore
+
+                   =       =                        µ   ±1,     cg   ±ce.
+
+                                                                                                                                                                                             18
+
+====== PAGE 19 ======
+Finding the dressed states
+
+                   =       =                       µ   ±1,     cg   ±ce.
+
+ After normalisation, 𝑐𝑒= 1/  2, giving the dressed states
+
+
+                                    n                                                  |e, n⟩± |g, +                                                     1⟩ .                                  |n, ±⟩=    √ 2
+
+
+ Their energies are
+                           √ n + 1.                       En,± = ℏ(n + 1)ωc   ℏg                          ±
+
+ Hence, the dressed-state splitting is
+
+                         En,+         2ℏg √ n                      −En,−=    + 1.
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Why are they called dressed states?
+
+
+ Without the interaction, the atom and field have separate bare states:
+
+                                         |e, n⟩,      |g, n + 1⟩.
+
+
+ When the interaction is included, these bare states combine to form the eigenstates of the complete
+  atom–field system:
+
+                                   n                                                |e, n⟩± |g, +                                                   1⟩ .                                |n, ±⟩=    √ 2
+
+
+  •  The atom is said to be dressed by the electromagnetic field.
+
+  •  The dressed states describe the atom and field together, rather than separately.
+
+  •  The interaction changes both the states and their energies.
+
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+Time evolution from an excited atom
+
+ Suppose the atom begins excited with 𝑛 photons in the cavity:
+                                                      |n, +⟩+ |n, −⟩ .                         |ψ(0)⟩= |e, n⟩=   √ 2
+
+
+ Each dressed state evolves with its own phase:
+                       1
+                                                                                                         .                     !                         "              |ψ(t)⟩= √ 2  e−iEn,+t/ℏ|n, +⟩+ e−iEn,−t/ℏ|n, −⟩
+
+ Substituting the dressed states and their energies gives
+                    e−i(n+1)ωct ! cos " g                    √ n + 1 t #          sin " g √ n + 1 t #  n +   $ .         |ψ(t)⟩=                                    |e, n⟩−i                   |g,    1⟩
+
+ Ignoring the physically irrelevant overall phase,
+
+                     cos ! g              √ n + 1 t "          sin ! g √ n + 1 t "  n +           |ψ(t)⟩=                    |e, n⟩−i                   |g,     1⟩.
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+Jaynes–Cummings Rabi oscillations
+
+The probability of finding the atom excited is
+                           √ n + 1 t " .                     Pe,n(t) =        = cos2! g                                     |⟨e, n|ψ(t)⟩|2
+
+The probability of finding the atom in its ground state with one additional photon is
+                             √ n + 1 t " .                 Pg,n+1(t) =   n +     = sin2! g                                   |⟨g,     1|ψ(t)⟩|2
+Writing these probabilities in the conventional form
+
+                Pe,n(t) = cos2             ,     Pg,n+1(t) = sin2             .                    !Ωnt2 "               !Ωnt2 "
+the Rabi angular frequency is
+                        Ωn = 2g √ n + 1.
+
+Complete transfer of the excitation occurs at
+                                   π       π
+                                   tswap =      =      .
+                              2g√n + 1   Ωn
+
+Rabi oscillations: coherent, periodic transfers of population between two coupled quantum states.
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Vacuum Rabi oscillations
+
+ Suppose the cavity initially contains no photons and the atom is excited:
+
+                                 |ψ(0)⟩= |e, 0⟩.
+
+ The interaction remains nonzero because
+                               a†σ−|e, 0⟩= |g, 1⟩.
+ The resulting evolution is
+
+                         |ψ(t)⟩= cos(gt)|e, 0⟩−i sin(gt)|g, 1⟩.
+
+ The corresponding probabilities are
+                       Pe,0(t) = cos2(gt),     Pg,1(t) = sin2(gt).
+  with vacuum Rabi angular frequency
+                             Ω0 = 2g.
+
+
+  •  The atom emits one photon into the initially empty cavity.
+  •  The photon can subsequently be reabsorbed by the atom.
+  •  The energy comes from the initially excited atom—not from the vacuum.
+                                                                                                                                                                                            23
+
+====== PAGE 24 ======
+Coherent exchange versus spontaneous emission
+
+ An ideal single-mode cavity produces reversible excitation exchange:
+                                         Pe(t) = cos2(gt).
+
+ For an atom emitting into many free-space modes, the excited-state population
+ instead decays approximately as
+                                     Pe(t) = e−Γt, where Γ is the spontaneous-emission rate.
+
+           Ideal cavity                      Free space
+        One selected field mode         A continuum of field modes
+         The photon remains available       The photon propagates away
+          Coherent reabsorption is possible    Reabsorption is unlikely
+           Reversible oscillations              Approximately irreversible decay
+
+
+  In a real cavity, vacuum Rabi oscillations are visible when the coherent coupling is stronger than
+ the relevant losses:
+                                g ≫κ, γ,
+
+
+                                                                                                                                                                                            24 where 𝜅 is the cavity loss rate and 𝛾 is the atomic decay rate.
+
+====== PAGE 25 ======
+Vacuum Rabi splitting
+
+ In the one-excitation manifold, the resonant dressed states are
+                                                    |e, 0⟩± |g, 1⟩ .                                       |0, ±⟩=   √ 2
+ Their energies are
+                              E0,±                      = ℏωc ± ℏg.
+
+ A weak probe can therefore excite the system at two frequencies:
+                      =  ±                         ω±   ωc   g.
+
+ The separation between these two resonances is
+                         ω+ −ω−= 2g.
+
+ This appearance of two spectral peaks is called vacuum Rabi splitting.
+
+ Without coupling: one resonance at 𝜔𝑐.
+
+ With strong coupling: two dressed-state resonances.
+
+ The splitting is resolvable when it exceeds the spectral linewidths.                                                                     25
+
+====== PAGE 26 ======
+Vacuum Rabi splitting in the mean-one-atom
+regime
+                                                    Experimental atom–cavity spectrum showing
+                                           vacuum Rabi splitting for an average of one atom.
+
+                                         Cs atom in an optical cavity
+
+                                                                             R. J. Thompson, G. Rempe and
+                                                                             H. J. Kimble, Phys. Rev. Lett. 68,
+                                                                        1132 (1992).
+
+                                                                                                                                                                                            26
+
+====== PAGE 27 ======
+Measuring the cavity transmission spectrum
+
+                                                             Scan the probe frequency
+                                                                𝜔𝑝 across the atom–cavity
+                                                                      resonance.
+
+
+                                                                          At each frequency, measure
+                                                                           the transmitted photon rate.
+
+                   C. Monroe, “Quantum information processing with atoms
+                 and photons”, Nature 416, 238–246 (2002), Fig. 7.
+                                                                                                                                                                                            27
+
+====== PAGE 28 ======
+Jaynes–Cummings physics in a superconducting
+qubit
+
+ This experiment implements the same Jaynes–Cummings
+ model in circuit QED
+
+ It uses a superconducting qubit, often described as an
+ artificial atom, and an on-chip superconducting microwave
+ resonator
+
+ Far off resonance, ∣Δ ∣≫𝑔, the spectrum is
+ dominated by one cavity-like peak.
+
+ On resonance, Δ = 0, resolvable strong coupling
+ produces two dressed-state peaks separated by
+ approximately 2g
+
+
+  Wallraff, A., Schuster, D., Blais, A. et al. Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics.
+  Nature 431, 162–167 (2004).
+
+                                                                                                                                                                                            28
+
+====== PAGE 29 ======
+Summary
+
+ One atom and one mode exchange excitations coherently
+
+ The Jaynes–Cummings Hamiltonian describes a two-level atom coupled to one quantised cavity mode:
+             HJC = ℏωca†a + ℏωaσ+σ−+ ℏg ! aσ+ + a†σ− " .
+
+
+ Conservation of total excitation number divides the system into coupled pairs:
+                               √                            n                       +      Ωn = 2g                                            n                                 |e, n→←→|g,     1→,          + 1.
+
+
+ The interaction creates dressed atom–field states, producing Rabi oscillations
+ and a measurable energy splitting. For the vacuum field,
+
+                               |e, 0→←→|g, 1→,    ω+ −ω−= 2g.
+
+                                                                                                                                                                                            29

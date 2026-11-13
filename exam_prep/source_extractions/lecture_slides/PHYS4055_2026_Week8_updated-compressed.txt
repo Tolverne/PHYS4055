@@ -1,0 +1,579 @@
+Source: source_material/lectures/slides_and_handouts/PHYS4055_2026_Week8_updated-compressed.pdf
+Pages: 36
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+      PHYS4055
+
+Atomic physics and quantum optics
+
+          Week 8
+
+
+        Jacinda Ginges
+
+        j.ginges@uq.edu.au, room 330 Physics Annexe
+
+====== PAGE 2 ======
+In these lectures, we will look into:
+
+   Filling of electron shells•
+
+  Coupling of electrons, term nomenclature•
+
+  Wigner-Eckart theorem, 3-j and 6-j symbols,•
+  spherical tensor operators
+
+  Hartree-Fock approximation•
+
+  Dirac equation•
+
+====== PAGE 3 ======
+         Spectra of multi-electron atoms
+
+
+   Consider central ﬁeld V(r).
+
+
+                                    =                  -E.                                   VHr)              For    A-like                                               ,
+                                                the                                               screen       Coulomb                                     electron
+                                                                                                                     ,     ->         many-election  system
+                                               Vee()             field   of nucleus                               =   -E/r +                                                          ,      V(r)
+
+                                                    e-e                                                     (neglecting   Ordering/ﬁlling of shells.                                                                            interaction)
+
+             =>                         principle,        Fernious       Paul  exclusion
+
+                                     shel                                 in  each             ?       Her         es             many
+                                          each  shall                                               x      +       in                     have  2  (2e                can                                   1)
+                              ↑
+                                          me                                  ~projections                                spin
+                                                    for eachI                                       lup ,
+                                     down)   .+25      -     =   0                           1      2                              2 pt.   l                        ,                                                    ---                                                                                                                       I                     &          3                                                                                         &                                       14               =         2      6             10        ---2(2)+ 1)                                                                              &                                  1        ,         T
+
+====== PAGE 4 ======
+   Spectra of multi-electron atoms
+
+
+                          P E R  I O D  I C  T A B L E
+
+     Group          Atomic Properties of the Elements        1                                                                                                                            18
+         IA                            FREQUENTLY USED FUNDAMENTAL PHYSICAL CONSTANTS§                                                                                      VIIIA
+     1     2S1/2                                     1 second = 9 192 631 770 periods of radiation corresponding to the                                        Physical Measurement Laboratory www.nist.gov/pml    2      1S0
+                                                                                                                                                                                                              www.nist.gov/srd                                                                         He    H                                                       transition between the two hyperfine levels of the ground state of 133Cs                           §                    Standard Reference Data                                                                                                                                                        For the                                                                                                                                                  most                                                                                                                                                                           accurate                                                                                                                                 (exact)                                           speed                                                                            c                                                                              299                                                           m                                      speed                                                         of                                                                    lightof                                                                           lightin vacuumin vacuum      c                                                                         299                                                                            792792                                                                                458458                                                        m                                                                                                                      s−1s−1                                                                                                                           (exact)   1   Hydrogen                                                                                                                                                                                                                                           Helium
+                                                                                                                                                            values                                                                                                                                                                                            of                                                                                                                                                                   these                                                                                                                                                    and                                                                                                                                 (exact)                                               Planck                                                         constant                                                                                      6.626                                                                    h            1.008                                                                                                                                                                                                                                     4.0026                                                                                                     x                                         Planck                                                   constant                                                                                 6.626                                                                              070070                                                                                 1515 x                                                                                                              10−3410−34                                                                                                         JJ HzHz−1−1                                                               h                                                                                                                                                                     other                                                                                                                                                                           constants, visit                                                                                                               15                                                                                                                      16                                                                                                                              17                                                                                                13                                                                                                       14               2                                                                                                            x                                                                    e                                                                                                                                 (exact)                                               elementary                                                        charge                                                                                      1.602                                                                                   176                                                                                      634                                                                         C                                                                                                                                                                                                                                                                               1s2               1s                                                                                                      x                                          elementary                                                   charge                                                                                 1.602                                                                              176                                                                                 634                                                               e                                                                                                               10−1910−1923                                                                      C−1                                                                                                                                                                          pml.nist.gov/constants.           13.5984                                                                                                                                                                                                                                  24.5874                                                                                                                                 (exact)                                                                                                 mol                                                                                      6.022                                                                                      76                                                           constant                                                                                                  VA                                                                                                                          VIA                                                                                                                                                   VIIA                                                                                                                                              IIIA                                                                                                                IVA                    IIA                                                                                 0.510                                                                              998140                                                                                 950x                                                                                          10MeV                                               electron                                            Avogadroenergy                                                                 mec2NA
+     3     2S1/2 4      1S0            protonBoltzmannmass constant        mpk        1.6721.380 622649 xx 10−2310−27JkgK−1       (exact)                       5     2P1/2°  6      3P0 7     4S3/2°  8      3P2 9     2P3/2°  10    1S0
+                                                  fine-structureelectron voltconstant         eV       1/137.0351.602 176 634999 x 10-19 J      (exact)            Solids
+                                                                                                  x 10−31      Li        Be                                               B                                                  C                                                      N                                                      O                                                                         F   Ne                                                 R                                      Rydbergelectron                                                     constantmass                                                            me      109.109                                                                           973383                                                                                     731.56970                                                                                         m−1kg                    Liquids   2     Lithium                           Beryllium                                                                                                                                                                     Boron                                                                                                                                                                             Carbon                                                                                                                                                                                                                      Nitrogen                                                                                                                                                                                            Oxygen                                                                                                                                                                                                                                                              Fluorine                                                                                                                                                                                                             Neon                                                                         MeV                                                                                      0.510                                                                                   998                                                                                      950                                                energy                                                            equivalent                                                                       mec2
+                                                                                                                                                                         10.81       12.011       14.007       15.999       18.998       20.180             6.94        9.0122                  proton mass           Rmpc      3.2891.672 841621 924960 xx 10−271015 Hzkg                Gases
+                                                                           eV                                                                               13.605                                                                                                                                                                                         1s22s22p                                                                                                                                                                                                                                                      1s22s22p5                                                                                                                                                                                                                                                                     1s22s22p6                                                                                                                                                                                                          1s22s22p2                                                                                                                                                                                                                         1s22s22p3                                                                                                                                                                                                                                        1s22s22p4                             1s22s2              1s22s                                                energy                                                            equivalent                                                                                   938.272                                                                               693088                                                                       MeV                                                 Rmpc2hc
+                                                               volt                                                                                 1.602                                                                              177                                                                                                             10-19                                                                                                 J                            Artificially            5.3917                        9.3227                                                                                                                                                                     8.2980                                                                                                                                                                                   11.2603                                                                                                                                                                                            14.5341                                                                                                                                                                                                        13.6181                                                                                                                                                                                                                     17.4228                                                                                                                                                                                                                                  21.5645                                               electronfine-structure                                                               constant      eV                                                                                       1/137.035                                                                                      999x
+     11   2S1/2 12    1S0           BoltzmannRydberg constantenergy             k R hc    1.38013.60565693x 10−231230 JeVK−1                   Prepared       13   2P1/2°  14    3P0 15   4S3/2°  16    3P2 17   2P3/2°  18    1S0                                          molar gas constant        R         8.314 5 J mol−1 K−1                                             Newtonian    Na  Mg                                                            constant of      G         6.674 x 10−11 m3 kg−1 s−2                       Al   Si   P   S   Cl   Ar                                                        gravitation
+   3    Sodium    Magnesium                                                                                                                              Aluminum       Silicon     Phosphorus       Sulfur        Chlorine       Argon
+            22.990       24.305     3      4      5      6      7       8      9      10      11     12        26.982       28.085       30.974        32.06        35.45       39.948
+              [Ne]3s         [Ne]3s2                                                                                                                                                             [Ne]3s23p      [Ne]3s23p2     [Ne]3s23p3     [Ne]3s23p4     [Ne]3s23p5     [Ne]3s23p6
+            5.1391       7.6462      IIIB     IVB    VB     VIB     VIIB                 VIII               IB       IIB        5.9858       8.1517      10.4867      10.3600      12.9676      15.7596
+     19   2S1/2 20    1S0 21   2D3/2 22    3F2 23    4F3/2 24    7S3 25   6S5/2 26    5D4 27    4F9/2 28    3F4 29   2S1/2 30    1S0 31   2P1/2°  32    3P0 33   4S3/2°  34    3P2 35   2P3/2°  36    1S0Period   K   Ca  Sc   Ti   V   Cr  Mn  Fe  Co   Ni  Cu  Zn  Ga  Ge  As  Se   Br   Kr
+   4   Potassium     Calcium     Scandium      Titanium     Vanadium    Chromium   Manganese        Iron         Cobalt         Nickel       Copper         Zinc         Gallium    Germanium     Arsenic      Selenium     Bromine       Krypton
+           39.098       40.078      44.956       47.867       50.942      51.996       54.938       55.845       58.933       58.693       63.546        65.38       69.723       72.630       74.922       78.971       79.904       83.798
+                [Ar]4s          [Ar]4s2        [Ar]3d4s2      [Ar]3d24s2      [Ar]3d34s2      [Ar]3d54s      [Ar]3d54s2      [Ar]3d64s2      [Ar]3d74s2      [Ar]3d84s2      [Ar]3d104s      [Ar]3d104s2    [Ar]3d104s24p  [Ar]3d104s24p2  [Ar]3d104s24p3  [Ar]3d104s24p4  [Ar]3d104s24p5  [Ar]3d104s24p6
+            4.3407       6.1132       6.5615       6.8281       6.7462       6.7665       7.4340       7.9025       7.8810       7.6399       7.7264       9.3942       5.9993       7.8994       9.7886       9.7524      11.8138      13.9996
+     37   2S1/2 38    1S0 39   2D3/2 40    3F2 41   6D1/2 42    7S3 43   6S5/2 44    5F5 45    4F9/2 46    1S0 47   2S1/2 48    1S0 49   2P1/2°  50    3P0 51   4S3/2°  52    3P2 53   2P3/2°  54    1S0
+   Rb   Sr   Y   Zr  Nb  Mo  Tc  Ru  Rh  Pd  Ag  Cd   In  Sn  Sb   Te       I   Xe
+   5    Rubidium     Strontium       Yttrium      Zirconium     Niobium    Molybdenum   Technetium   Ruthenium    Rhodium     Palladium        Silver      Cadmium      Indium          Tin        Antimony      Tellurium        Iodine       Xenon
+            85.468       87.62       88.906       91.224       92.906        95.95          (97)        101.07      102.91       106.42       107.87       112.41       114.82       118.71       121.76       127.60       126.90       131.29
+                [Kr]5s          [Kr]5s2        [Kr]4d5s2      [Kr]4d25s2      [Kr]4d45s       [Kr]4d55s      [Kr]4d55s2      [Kr]4d75s       [Kr]4d85s        [Kr]4d10       [Kr]4d105s     [Kr]4d105s2    [Kr]4d105s25p  [Kr]4d105s25p2  [Kr]4d105s25p3  [Kr]4d105s25p4 [Kr]4d105s25p5 [Kr]4d105s25p6
+            4.1771       5.6949       6.2173      6.6341       6.7589       7.0924       7.1194       7.3605       7.4589       8.3369       7.5762       8.9938       5.7864       7.3439       8.6084       9.0097      10.4513      12.1298
+     55   2S1/2 56    1S0        72    3F2 73    4F3/2 74    5D0 75   6S5/2 76    5D4 77    4F9/2 78    3D3 79   2S1/2 80    1S0 81   2P1/2°  82    3P0 83   4S3/2°  84    3P2 85   2P3/2°  86    1S0
+    Cs  Ba        Hf   Ta  W  Re  Os     Ir    Pt  Au  Hg   Tl  Pb   Bi  Po   At  Rn
+   6    Cesium       Barium                   Hafnium      Tantalum     Tungsten     Rhenium     Osmium        Iridium       Platinum       Gold        Mercury       Thallium       Lead        Bismuth      Polonium      Astatine      Radon
+            132.91      137.33                    178.49       180.95       183.84       186.21       190.23       192.22       195.08       196.97      200.59       204.38       207.2       208.98        (209)         (210)         (222)
+              [Xe]6s         [Xe]6s2                     [Xe]4f145d26s2  [Xe]4f145d36s2  [Xe]4f145d46s2  [Xe]4f145d56s2  [Xe]4f145d66s2  [Xe]4f145d76s2  [Xe]4f145d96s  [Xe]4f145d106s [Xe]4f145d106s2     [Hg]6p         [Hg]6p2         [Hg]6p3        [Hg]6p4         [Hg]6p5        [Hg]6p6
+            3.8939       5.2117                    6.8251       7.5496       7.8640       7.8335       8.4382       8.9670       8.9588       9.2256      10.4375      6.1083       7.4167       7.2855       8.414       9.3175      10.7485
+     87   2S1/2 88    1S0        104  3F2 105  4F3/2 106      0 107      5/2 108      4 109    110    111    112    113    114    115    116    117    118
+     Fr  Ra        Rf  Db  Sg  Bh  Hs  Mt  Ds  Rg  Cn  Nh   Fl  Mc  Lv   Ts  Og   7    Francium     Radium                  Rutherfordium   Dubnium    Seaborgium    Bohrium     Hassium     Meitnerium   Darmstadtium Roentgenium  Copernicium    Nihonium     Flerovium    Moscovium   Livermorium  Tennessine    Oganesson
+             (223)         (226)                       (267)         (268)         (269)         (270)         (269)         (278)         (281)         (282)         (285)         (286)         (289)         (289)         (293)         (294)         (294)
+              [Rn]7s         [Rn]7s2                     [Rn]5f146d27s2 [Rn]5f146d37s2  [Rn]5f146d47s2 [Rn]5f146d57s2 [Rn]5f146d67s2
+            4.0727       5.2784                      6.02          6.8           7.8           7.7           7.6
+
+        Atomic     Ground         57   2D3/2 58   1G4° 59     4I9/2°  60      5I4 61   6H5/2°  62    7F0 63   8S7/2°  64    9D2° 65  6H15/2°  66      5I8 67    4I15/2°  68    3H6 69   2F7/2°  70    1S0 71   2D3/2
+       Number       State       La  Ce   Pr  Nd  Pm Sm  Eu  Gd  Tb  Dy  Ho   Er  Tm  Yb  Lu
+                                              Lanthanum     Cerium   Praseodymium Neodymium   Promethium   Samarium    Europium    Gadolinium     Terbium     Dysprosium    Holmium      Erbium       Thulium      Ytterbium      Lutetium     Symbol 58    1G4°                                                  138.91      140.12       140.91      144.24         (145)        150.36       151.96       157.25       158.93      162.50       164.93       167.26       168.93       173.05       174.97                                                                                                                                                                                         Lanthanides    [Xe]5d6s2     [Xe]4f5d6s2     [Xe]4f36s2      [Xe]4f46s2      [Xe]4f56s2      [Xe]4f66s2      [Xe]4f76s2     [Xe]4f75d6s2     [Xe]4f96s2      [Xe]4f106s2     [Xe]4f116s2     [Xe]4f126s2     [Xe]4f136s2     [Xe]4f146s2    [Xe]4f145d6s2   Name   Ce                        5.5769       5.5386       5.4702       5.5250       5.577       5.6437       5.6704       6.1498       5.8638       5.9391      6.0215       6.1077       6.1843       6.2542       5.4259
+               Cerium
+  Standard      140.12           89   2D3/2 90    3F2 91   4K11/2 92    5L6° 93   6L11/2 94    7F0 95   8S7/2°  96    9D2° 97  6H15/2°  98      5I8 99    4I15/2°  100  3H6 101  2F7/2° 102   1S0 103   2P1/2°
+   Atomic                [Xe]4f5d6s2      Ac  Th  Pa  U  Np  Pu  Am Cm  Bk   Cf   Es  Fm Md  No   Lr            †(u) Weight
+               5.5386                        Actinium      Thorium     Protactinium    Uranium     Neptunium    Plutonium    Americium     Curium      Berkelium    Californium    Einsteinium    Fermium   Mendelevium   Nobelium    Lawrencium                                                                                                                                                        Actinides     (227)        232.04       231.04       238.03        (237)         (244)         (243)         (247)         (247)         (251)         (252)         (257)         (258)         (259)         (266)
+     Ground-state     Ionization                 [Rn]6d7s2     [Rn]6d27s2    [Rn]5f26d7s2   [Rn]5f36d7s2   [Rn]5f46d7s2    [Rn]5f67s2      [Rn]5f77s2    [Rn]5f76d7s2    [Rn]5f97s2     [Rn]5f107s2     [Rn]5f117s2     [Rn]5f127s2     [Rn]5f137s2     [Rn]5f147s2   [Rn]5f147s27p
+     Configuration   Energy (eV)               5.3802       6.3067        5.89        6.1941       6.2655       6.0258       5.9738       5.9914       6.1978       6.2817        6.3676       6.50         6.58         6.66         4.96
+
+  †Based upon 12C. () indicates the mass number of the longest-lived isotope.                                                       For the most precise values and uncertainties visit ciaaw.org and pml.nist.gov/data.
+                                                                                                                                                                  NIST SP 966 (July 2019)
+
+====== PAGE 5 ======
+Spectra of multi-electron atoms
+
+                                                                               Wikipedia
+
+====== PAGE 6 ======
+        Spectra of multi-electron atoms
+
+
+Ordering/ﬁlling of shells.
+
+
+Atoms
+
+States are ﬁlled in direction of red
+arrows. States crossed by same red
+line have the same value of n+l.
+
+                                              Levels may cross when atoms are stripped of
+                                                  electrons, making them more Coulomb-like — this  Wikipedia
+                                     makes optical highly-charged ion clocks possible.
+
+====== PAGE 7 ======
+         Spectra of multi-electron atoms
+
+
+    Coupling of angular momenta and nomenclature.
+
+      : + E      , -                             Spin
+
+                                                             +            =Si  S2
+                                                                                                                                                                 .                      his                   Is  -Sul  xene
+         us us                                 +
+                                              =                    =0                         S   ,  12                l =  1   l                  S
+
+
+                        =                    s =                 z               =      s                                 =      1                                          0.
+                                                                                 ,                 -    S
+
+            terms   *                                                  +                        h                                   orbital        :      = 1  npns                             v
+        S =  1 =1        . 7 J= 2, 1, 0
+                  ,
+
+                               =                                                                        1                th          =      =      1 = 5  0       +     142,        S                   I             (1-2)                                             LS coupling of states
+                                         1   .
+ ↑                   -   L =   3 P   up,,  3 Pr
+                &                                                                                                                                                                                                                           -
+                                               on                                                multipurit
+                                                                  int 25th↳-"Pr                             us                                                                                splits                                   If   L >  S ,1                                                                               :   up             Configuration                        -                                -multiplicity                                        states ,
+                                                 22+     ·                                        If   L    2,  splits     ⑮                >             into      mode                L            Term      :                                                                  +
+                                                                    =                                                    1 1      a -  total        momentum                                               angular   I              /
+                                               -(2 +5)             .-         orbital  angular  momentum.      j-j-coupling:                                    (2-s)5                                      2                                  0                                                                                      ,    1                         =                                                              ,                       L                                                     ,                  ,,e            SpD
+
+                                                                      energy                              with  mas spin  has  lowed          Hund's rule        :   state                 : Notes
+                                             men I                                                                           has                               for sets    state  with                       Then     ,                  ,                                                lowest
+                                                                                                                                                                                                                                                 ,                                                      energy
+
+====== PAGE 8 ======
+                        S   or  Russell-     we used Here
+
+ -underscoupling.
+
+                        are   first  coupled       the  Here          spire
+          ,
+                          a   total spirs,               to   obtain together
+
+
+           -       3     +    +    + -..  3   , 2  1y
+                   theorbital  angular
+  And                            ,           separately
+
+
+                 are       added,  moments
+
+            -        2
+        +                 +..              + 2     2   h
+                         the  residual                is  valid  when   This
+
+                       between                interaction   Coulomb
+                exceeds   the   spin-orbit   electrone
+                                 for
+                most                           appropriate    information   ,
+
+     light  atoms.
+              are then    ↓  & I                         coupled  together=   -
+       to  obtain  J
+             -
+
+====== PAGE 9 ======
+                             l &                the   -     SThiscoupling  ,
+                            are   first  combined           election of each
+
+
+ to  a                                j's  of      J   ,  &  then   the
+
+                       are  combined  to         election                       a each
+
+                           =                          +         +..   I  total               j1   ju +js                                               .       I,
+
+
+                                for                                is This   scheme        appropriate
+                                              effects                              relativistic              where        atoms
+                           ,  heavy
+                                  interaction
+         the    spin-orbit  and
+
+   are          significant.
+
+            tens          usually   Despite   this,           are
+                          LS                  the        coupling   defined  through
+
+   scheme    .
+
+====== PAGE 10 ======
+       Units and database — energies
+
+
+NIST database, https://physics.nist.gov/PhysRefData/ASD/levels_form.html .
+
+Also useful reference, for energy conversion: https://physics.nist.gov/cuu/
+Constants/energy.html .
+
+====== PAGE 11 ======
+         Coupling of angular momentum
+
+
+   Clebsch-Gordan coeﬃcients and 3-j symbols
+
+                                                      coefficients  that                                          the                       wefficients   are   Clebsch-Gordan
+              T                                                                                                                                                 &             set  of >↑                          one >                           defined -                                    by     relate   eigenfunctions
+                                          another   set of    operators.                        defined                                                        by                  to  those
+      operators
+
+
+   E .        .                      m     =                                                ,         g   /jim]                                                                                           , 52, 5  ;    mu,milj,millj,ma]                   ((5
+                          m, my ~                 T
+                                                   coefficienti  ↑/                             9        L-a   /
+                                                                               are                                                         These State  that  is                      are   the  expansion                 I
+ an                                                            eigenfunctions     eigenfunction    sum  over all    crefficients
+                                                            of
+    j"  and          andof              m                                                2                                                                                                                      ,       M2,               5z,                                                 J                                                                   Jiz                                                                                                                                                                                                                                                                                                                                                          ,     ,
+                            no                                  dependence
+J       =                                these                       , m)   j(tilljm) ./j                                            explicitly                     und J                     on                                                                         ,Juz ,
+         = m/j .m)         the  new  state.Jz/jim]                  in                                         respectively
+                                      E                                                                                                           .g. J,j ,m= jiltiy/j, mid
+                                                    = m                                              J:/Jim                                  ,  15,                                                            ,)       m)
+
+====== PAGE 12 ======
+                                in   angular More   explicit   symmeting
+                   when  a new
+ momentum   coupling
+               introduced   :
+ construct  is
+
+                                                                                       .       symbol-
+&in=
+
+                           m                        , m          C                                                                                      , j2 , is i                                     ,ma).                    (Ji
+
+                                                                                                                 :                      of        symbolssome                    3-j           properties
+                add  to  yero  :             must
+·  projections
+                            +    = 0.                      Ry        m    , + mz
+
+                                                                                 :
+                  even              on          permutations
+·   symmetric
+
+e -          .   g (ii)=
+
+====== PAGE 13 ======
+                              or   odd  ·         introduced    Phase
+
+                                :    permutations
+
+                     a
+e  .                  =    g.          in i             M     Ma         Litjis, My    (i     (                              (
+
+                    when ·          introduced         changing    Phase
+
+
+                  m        :                of all
+    the   sign
+
+         j   ,  j
+         - m     =tizis                                                               , -m                      I                           (   (       (
+
+
+                       us   to the
+       this    bringsAnd
+                     and  the                  theorem Wigner-Eckart
+                   formalism.
+ spherical  tensor
+
+====== PAGE 14 ======
+Wigner-Eckart theorem
+
+====== PAGE 15 ======
+                           irreducible
+           a               is       sphericalTh
+                    if tensor   operator
+
+     =                       The       [Jz  , Th]
+
+                 =
+                                    ,                       = g + 1)(k =g)" T                 ((      Th    (5
+
+====== PAGE 16 ======
+Exercise     !    Determine
+-
+                Je,  11 Ch111n] ,
+
+ where                               (0,                                          4)                        Ykg =
+              4                  ↑
+           irreducible            spherica
+       tensor  operator            harmonic
+
+====== PAGE 17 ======
+Spherical tensor operators
+
+====== PAGE 18 ======
+
+
+====== PAGE 19 ======
+          X
+
+       =
+*. Eq  Sagi
+
+  -
+ exercise
+   for  you
+
+====== PAGE 20 ======
+
+
+====== PAGE 21 ======
+                  Exercise:
+
+
+   show  that:
+
+                           =                /U                 'I'dF'm][UE5FM//TRUS)
+
+            +      =
+
+ =    -    5+ [CITPU"I/U       (   1)                       "MulIrTYx
+                    81
+                                        E
+       En3
+
+====== PAGE 22 ======
+
+
+====== PAGE 23 ======
+
+
+====== PAGE 24 ======
+
+
+====== PAGE 25 ======
+
+
+====== PAGE 26 ======
+
+
+====== PAGE 27 ======
+
+
+====== PAGE 28 ======
+
+
+====== PAGE 29 ======
+
+
+====== PAGE 30 ======
+                                                                                   :   reduction   to angular  form.inacequation
+
+                                                                         .               51]  .                           ,  p [Johnson
+                 and  fine structure  included  Relativistic  effects
+
+        the   start. from
+                        field  ofa   central   potential VI:                   in   the   1 election
+
+                  =           Lp0  Ey ,
+
+                         +
+
+
+                                                          -               =         24 p B +V(r)      hp
+
+                                                =                                (b)                    since natures  , c             are                                                              ,                                                                                                                                                                ,  p =  & p              (2)
+                       Pauli   spin  matrix.    with  IfThe
+
+                   =   + mch         E  E   Here
+              ,
+                  ↑                         ↑mest
+                             mass                binding                                                            &
+                  energy
+
+                           to  solveTIt    is  quite  common              directly
+                       with
+    for  the  birding  energies,
+
+                                                                 -
+                                                                          .                     =  < 2- p +18                                                          1) c +Val                hi
+
+              we  follow   though  here                     Jounson
+
+====== PAGE 31 ======
+             of the  Direc  equation   contain  two  Solutions              -
+                                         and  "lower"
+                 -  the   rupper"  radial   components
+                                 e                             madial  wave functions,               "small -   on       and       "big"
+                        in  Johnson    , called and
+
+                      new                             a                                  angular  mave function           also   contain -  they
+
+                                                                         is
+ -            or   Ful   jea-which
+                          combination    of   spherical            from   a
+  made  up
+                           and     is   called  a
+              and    spirors   harmonics
+
+  Sphericalspiror.
+
+                of  the   Direc  equation  Solution
+              form           the
+  takes
+
+
+       In n    (f)=PM(
+
+                                                             :  things   to  note
+             thanP   and   it  is          smaller                   ,·   Q   is
+                                    a factor                          out                           to    pull
+    quite common
+    t              from  Q   to make them          = of     137
+
+====== PAGE 32 ======
+more        comparablee.
+
+           =
+ · -& m   find m
+                  denoted   land often       &km)
+                     relativistic  angular  ·   K     is  the
+    momentum   quartur  number.
+                              of the
+                   is the   eigenvalue    It
+
+                               -            k =  -1  2 -2
+      operator
+
+    So                            ,am (*)·      Kim (w) = 1 N
+   It  includes  the spin-orbitcoupling
+
+        takes   the  values   R
+
+                                 = l 1/2                     +                            t)   for   j        k = F (j
+
+
+                                                                      :  This  corresponds  to
+I!
+
+====== PAGE 33 ======
+                                    -kM·          lower   angular  componentI    the
+                          mometer             same   angular    has   the
+                                  /determined                       opposite   perity    ↓  though
+                           angular                   C. f .  The   upper     by  1)
+     component of , am
+
+                         be                      may        readily         Direc  equation The
+                     coupled  equations               to  two reduced
+                           functions   :
+            radial  wave for  the
+
+                           =                         EPc
+   +       - )Qn (  cyP, +c(
+
+
+                        =              ER
+                 +                                                                          .          +      (           -c)Q -(  1)px
+
+                                      Heads  to                      of                        CCL)  The   normalisation
+
+                       =                 +          1.
+      Sedr/PicC  R,)
+
+                           =&    [2milm)   Sak Srim.
+
+====== PAGE 34 ======
+                                  to  be  mindful
+        are   some There                 things
+                                      in                         nice  tricks,            a           of o   &      couple                     ,
+
+             this
+
+                                                                     -  deriving
+
+                                      in                  of  the   ordering  ·      mindful    be
+                                functions.
+                 and war
+    the    operators
+
+           trick   :    ·   nice
+
+                          manipulate this
+
+  · ↳=
+
+                   =                 .                                          :
+                                                -                     :              b+i  (Axy)                    2)   A   ver     ( 1)(e
+
+                                                                                                                                                                                                                                                                                      .                         (kX          =             + =2-> p   8.      p              B))                (n-
+
+    =-i      Simp-s
+
+                                                                                                                                                                                                            .
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                             .                        2    =-ion[-*    1)
+
+          =              + + (k     -in[          +1)]
+
+====== PAGE 35 ======
+                             .     e=>    fl              am   q p
+  ==i. (
+
+
+                 +       =   :            km    .        (t  ()r -
+
+-          &
+                                derivation                    the
+ Exercise    *   complete
+-
+                            radial  Direc
+           the   coupled      of
+
+                                                      .
+        equations
+
+                    the  solutions  P & Q                                                      :   use  Exercise
+
+-
+                                notebook                Mathematica         in   the
+
+              calculate   matrix  elements           to
+
+               and  Six   and    [t]
+                  to  the   non-relativistiz
+        compare
+         results
+
+====== PAGE 36 ======
+After these lectures, you should understand
+
+   the general structure of atomic levels•
+
+  how electron angular momenta couple, and the•
+  meaning of the term designation
+
+   the meaning of Wigner-Eckart theorem, and how to•
+  use 3-j and 6-j symbols, and spherical tensor
+  operators
+
+  what the Hartree-Fock approximation is•
+
+  how the coupled radial Dirac equation appears, and•
+  how to go about evaluating simple matrix elements

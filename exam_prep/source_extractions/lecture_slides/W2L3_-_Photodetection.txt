@@ -1,0 +1,392 @@
+Source: source_material/lectures/slides_and_handouts/W2L3 - Photodetection.pdf
+Pages: 17
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 2, Lecture 3
+Photodetection
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4pm
+
+ See Chapter 7.2 of Bachor, Hans-A. / Ralph, Timothy C. A guide to
+ experiments in quantum optics (2019)
+ See Chapter 5.2 of Leonhardt, U. Essential Quantum Optics From Quantum
+ Measurements to Black Holes (2010)
+ Silberhorn, C. (2007). Detecting quantum light. Contemporary Physics
+
+====== PAGE 2 ======
+Review
+What you learned last lecture…
+
+
+           Density operators
+                                                                                              Super-poissonian                                                                             •  Super-poissonianTo describe mixed ensembles of quantum                                                                                                               statistics: can be explained
+states, we use density operators:                                  >               by a semi-classical model                                                   var (n)    ¯n
+    !                                                                              (quantized atom and
+                                                                                                         classical light wave)                                              –  e.g. thermal state  ˆρth            ˆρ =     pi |ψi⟩⟨ψi|
+                     i                                                                             •  Poissonian                                      probability of being in
+                                    state |𝜓!⟩                                                                                                                                                                                              statistics             var (n) = ¯n
+
+                                              –  e.g. coherent state |α⟩                                                                                                                  Photon       Thermal states of light                              •  Sub-poissonian
+                                                                                        Sub-poissonian statistics: no
+                                                    var (n) < ¯n              semiclassical explanation,         1               ¯n
+     ˆρ =                     |n⟩⟨n|                                                           provides a clear            + 1 #n                                                                                         demonstration that it is light          " ¯n                                              –  e.g. photon number state |n⟩            ¯n + 1  n    !
+                                                                                                                              itself that is quantized
+
+                                                                                                                                                                                               2
+
+====== PAGE 3 ======
+Review
+What you learned last lecture…
+
+       Beam splitters transform the mode operators as:
+            =          1                     𝜂                               ˆa′1  √η ˆa1 !        ˆa2                 −   −η
+                               ˆa′2            = !1      ˆa1 + √η ˆa2                −η
+
+            Splitting n photons:
+
+                     n
+                      n
+            |n→1 |0→2 →          tkrn−k |k→1 |n −k→2                          k
+                     k=0             "# $       !
+
+
+       Beam splitters can be used to model optical loss
+
+                                                                                                                                                                                               3
+
+====== PAGE 4 ======
+Review – Measurements in quantum
+mechanics
+
+        •  Measurements are represented by Hermitian operators
+
+
+        •  These operators are called observables
+
+        •   Hermitian ⟹ Eigenvalues are real
+
+
+        •  Measurement outcome: eigenvalues of the observable
+
+
+        •  When an observable is measured, the state of the system is projected onto the
+
+          eigenstate corresponding to the measured eigenvalue
+
+        •   For the observable "𝑂, we have the eigenvalue equation:
+                           ˆO |ψλ⟩= λ |ψλ⟩
+
+                                                        |ψλ⟩:state that gives outcome 𝜆 with certainty
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Measurement in quantum optics
+
+        •   For a single simple harmonic oscillator, the operator %𝑛 is an observable
+
+                                                           ˆn = ˆa†ˆa
+
+                                                                                      Useful resources
+
+        •   Eigenvalues are non-negative integers 𝑛                                                             •  See Chapter 7.2 of Bachor, Hans-A. /
+        •   Eigenvectors are Fock states  |n⟩                                                    Ralph, Timothy C. A guide to                                                                                            experiments in quantum optics (2019)
+                                   ˆn |n⟩= n |n⟩        •   Eigenvalue equation:                                                                                                                             •  See Chapter 5.2 of Leonhardt, U.
+                                                                                                     Essential Quantum Optics From
+     How do we measure !𝒏?                                                Quantum Measurements to Black
+                                                                                         Holes (2010)
+        •  Techniques are different for bright light eg. |𝛼 ⟩ vs. low intensity eg. single
+                                                                                                                             •   Silberhorn, C. (2007). Detecting         photons |1⟩
+                                                                                  quantum light. Contemporary Physics
+        •  Through measuring %𝑛, we can also make measurements on the quadrature
+          operators %𝑥 and ̂𝑝
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Photodetection
+
+•  Most photodetectors apply a version of the photoelectric effect to
+   operate
+
+•   Radiation ionizes a piece of photosensitive material and produces
+    freely moving electrons
+
+•   This produces an electric current (photocurrent) that can be amplified
+
+   and handled by electronic means
+
+•   Conventional photodiodes: A photon creates an electron-hole pair in
+   the region between the p-doped and n-doped layers such that a
+    current can flow. This photocurrent is proportional to the photon flux.                               Silberhorn, C. (2007). Detecting quantum light.
+                                                                                               Contemporary Physics, 48(3), 143–156
+•  Because of noise from thermal excitations, conventional
+   photodiodes cannot be used for the detection of single photons
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+Avalanche photodiodes
+
+     •   Single photons can be detected through avalanche
+
+      photodiodes (APD)
+
+
+     •  A single electron is typically liberated by a single photon
+
+
+     •  High voltage is applied across a so-called ‘multiplication
+
+        region’ of the diode
+
+
+     •  Charge carriers are amplified to macroscopic current pulses.                                                                                                                       p. 242 Bachor, Hans-A. / Ralph, Timothy C.
+                                                                          A guide to experiments in quantum optics (2019)
+     •  A single photon triggers an avalanche of charge carriers
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Avalanche photodiodes
+
+     •  Avalanche photodiodes are sensitive enough to detect single
+
+       photons
+
+
+     •   But they are oversensitive for more than one photon – binary
+
+        detector, on-off detector
+
+         Π0 = |0⟩⟨0|    Π1 = 1 −|0⟩⟨0|
+
+                                                                                               “click”
+                    binary detector
+                                                                          “no click”                                        incoming pulse
+
+     •  APDs are not photon number resolving detectors (PNR)
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Avalanche photodiodes
+
+ How do we measure .𝒏 using APDs?                                                                                                                       Spatial
+                                                                                                                  multiplexing
+   •   Multiplexing with Avalanche photo diodes (APD): beam
+
+       splitters distribute the light on many APDs
+
+
+   •     If the light is sufficiently diluted such that each photodiode will
+
+      hardly encounter more than one photon, the multiplexed
+
+      detector measures the accurate photon number
+                                                                                                                                              fiber delay
+
+   •  Time multiplexing: light is split and delayed through fibre
+
+     loops
+
+                                                                                               Time   •  Only need two APDs to resolve photon number
+                                                                                                                 multiplexing
+
+                                                                                                    p. 108 Leonhardt, U. Essential Quantum Optics From Quantum
+                                                                                                                                                                                              9
+                                                                            Measurements to Black Holes (2010)
+
+====== PAGE 10 ======
+Photon number resolving detectors
+
+•   Ideal photon number resolving detectors implement projection on individual
+   Fock states
+                Πn = |n⟩⟨n|
+
+•  Need physical processes that have a measurable response to extremely low
+   changes in intensity of incident light
+
+•   Superconducting-nanowire single-photon detectors (SNSPD) are used as photon
+   number resolving detectors
+
+•  A photon is absorbed in a superconducting nanowire, the photon energy is
+    transferred to electrons and phonons
+
+•   This energy produces a small non-superconducting region known as a “hot spot”
+   and the wire transitions to a resistive state
+                                                                                                                                          J. W. Niels Los, et. al. High-performance photon number
+•   This blocks the superconducting current resulting in a voltage spike, with                         resolving detectors for 850–950 nm wavelength range. APL
+    appropriate signal processing: photon number resolution can be achieved.                     Photonics 1 June 2024; 9 (6): 066101.
+
+                                                                           Can resolve up to 7 photons
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Realistic detectors
+
+
+  Detection inefficiency
+
+
+   •  Not all incident photons create charge carriers
+
+                                                                                                          environment
+   •   Realistic photodiodes work with a detector efficiency 𝜂
+
+   •  𝜂 is defined as the ratio between detected photons and incident photons                   𝜂
+
+   •  Can be modelled by a beam splitter of transmissivity 𝜂 immediately
+
+      before the detector
+
+
+  Dark counts                                                                                                                                                                                       If only modelling detector                                                                                                          environment
+                                                                                                                               inefficiency:
+   •   False detection events corresponding to the noise of the detector                                 vacuum
+
+
+   •  Dark count rate is defined by the number of detection events in the                                                                                                      For dark counts:
+     absence of an optical signal                                                                           thermal state
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Homodyne detection
+
+ Homodyne detection is used to measure the
+
+ quadrature variables %𝑥 and ̂𝑝
+
+                 ˆx = ! ˆa† + ˆa "                                                                                             photodetectors
+                 ˆp = i ! ˆa† −ˆa "                                       50:50 beam
+                                                                                         splitter
+
+  Can be used on states with low photon number 𝛼!
+
+                                                                      input signal
+  Need to use the interference between input signal and an
+
+  intense laser (local oscillator)
+                                                                              phase shift
+
+  Local oscillator must be phase locked to the input
+
+                                                                                           local oscillator
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Phase shift
+
+ Unitary operator describing phase shift:
+
+                 ˆU (θ) = exp (−iθˆn)
+
+                                                                                  𝑥
+                           ˆn = ˆa†ˆa
+
+
+ The phase shift operator performs rotations in phase                           𝜃
+ space                                                                                       𝑝
+
+                  ˆU (θ) |α⟩= |αe−iθ⟩
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Homodyne detection
+
+  Combine input signal and local oscillator at 50:50 beam splitter
+
+                                                                                             photodetectors
+                                                               50:50 beam
+                                                                                         splitter
+
+           Beamsplitter
+           transformation
+                                                                      input signal
+
+
+                                                                              phase shift
+
+
+                                                                                           local oscillator
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Homodyne detection
+
+    Measure the
+     photocurrents
+
+
+                                                                                             photodetectors
+    Subtract the                                                   50:50 beam
+    photocurrents                                                                                         splitter
+
+
+                      1                            α∗                                                 (ˆaS + αLO)                           LO                          S +                   ˆn1 −ˆn2 =  ! ˆa†                            "                      2                                        input signal
+                −1   −α∗                                                          (ˆaS −αLO)                                S   LO                         ! ˆa†                                 "                            2
+local oscillator is a                                                                 phase shift                   1
+high     intenstiy           beam,   =                             SˆaS + |αLO|2                      + ˆaSα∗LO + ˆa†SαLO                   2 ! ˆa†we can         treat it
+classically %𝑎"# →𝛼"#.                                                                       local oscillator
+               −                     " ˆa†                                  SˆaS + |αLO|2 −ˆaSα∗LO −ˆa†SαLO #$
+            = ˆaSα∗LO + ˆa†SαLO
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Homodyne detection
+
+                               1
+                                                    ˆa =    (ˆx + iˆp)      ˆx = ! ˆa† + ˆa "                               2
+      ˆp = i ! ˆa† −ˆa "                1                                             ˆa† =    (ˆx −iˆp)
+                               2
+
+                                                                                             photodetectors
+                                                               50:50 beam
+                                                                                         splitter
+  I21 ∝ˆn2 −ˆn1 = ˆaSα∗LO + ˆa†SαLO
+                1                   1
+         =    (ˆx + iˆp) |αLO| e−iφ +    (ˆx −iˆp) |αLO| eiφ
+                2                   2
+                1                                                  input signal
+         =    (ˆx + iˆp) |αLO| (cos φ −i sin φ)
+                2
+                    1
+           +    (ˆx −iˆp) |αLO| (cos φ + i sin φ)
+                    2                                                           phase shift
+         = |αLO| (cos φ ˆx + sin φ ˆp)
+
+     •  Depending on our choice of the phase of the local oscillator 𝜙, we can                                                                                           local oscillator
+      measure either %𝑥 or ̂𝑝.
+
+     •  The phase of the local oscillator can be changed with a phase shift.
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Summary
+ What we covered this week…
+
+
+          States                            Operations                       Measurement
+
+                                         Beam splitters
+                                                                                                                               •  Avalanche photodiodes are sensitive
+                        =          1   Fock photon number states                           ˆa′1  √η ˆa1 !        ˆa2                             −   −η                    enough to detect single photons
+    =  {|n⟩}   {|0⟩, |1⟩, |2⟩, · · · }                    ˆa′2                        = !1      ˆa1 + √η ˆa2                       •  Homodyne detection is used to                             −η
+      Coherent states                                                                 measure quadratures %𝑥 and ̂𝑝
+     ! αn
+       e−|α|2/2                    𝜂 |α⟩=       √ n! |n⟩
+              n
+      Thermal states
+      1               ¯n
+ˆρ =                     |n⟩⟨n|          + 1 #n        " ¯n       ¯n + 1  n   !                                    Phase shift
+                                                  ˆU (θ) = exp (−iθˆn)

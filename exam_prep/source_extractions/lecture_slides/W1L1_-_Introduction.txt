@@ -1,0 +1,720 @@
+Source: source_material/lectures/slides_and_handouts/W1L1 - Introduction.pdf
+Pages: 41
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+PHYS4055
+Atomic Physics & Quantum Optics
+Week 1, Lecture 1
+
+====== PAGE 2 ======
+Acknowledgement
+of Country
+
+
+I would like to begin by acknowledging the
+Traditional Owners and their custodianship of
+the lands on which we meet.
+
+We pay our respects to their Ancestors and
+their descendants, who continue cultural and
+spiritual connections to Country.
+
+We recognise their valuable contributions to
+Australian and global society.
+
+                                                                                                                                                                                                  2
+
+====== PAGE 3 ======
+PHYS4055
+Course overview
+
+====== PAGE 4 ======
+Who am I?
+
+                        Dr Josephine Dias          Research interests: quantum information,
+                        Research Fellow           quantum communication (theory)
+
+                                   Email: j.dias@uq.edu.au
+                                        Office: Parnell Room 320
+                                      Office hours: Thursdays 3-4 pm
+
+                                                                  Okinawa       Fun fact about me:                 Tokyo
+     I used to live and work in Japan
+
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+This is a space for everyone
+
+The School of Mathematics and Physics values inclusivity
+
+It is the responsibility of everyone in SMP to ensure that classrooms and workspaces
+are caring, inclusive, and empowering environments for all students and staff.
+
+
+Scan the QR code to help you:
+
+  – Recognise unacceptable behaviour.
+  – Be an ethical bystander.
+
+  – Act if you experience or witness bullying,
+    harassment or discrimination.
+
+  – Contact an SMP Inclusivity Champion for support.
+
+ Email: smp.edi@uq.edu.au                                           Web: https://smp.uq.edu.au/inclusivity
+
+====== PAGE 6 ======
+School of Mathematics and Physics
+
+
+                                                                                                     To email: Click on the hyperlink,SMP Inclusivity Champions (updated 22/07/2026)                 or add uq.edu.au to the address
+
+Every cohort has a nominated contact – however, you are welcome to contact whomever you choose.
+
+Our champions are committed to listening to your inclusivity concerns and ensuring they are suitably addressed.
+
+                                                                            UQ Respect Network                  UQ Respect Network                  UQ Respect Network
+
+MATH1040/50   MATH1051/71   MATH1052/72   MATH1061/81  MATH 2nd year MATH 3rd year MATH > 3rd year     Anyone        Anyone        Anyone    Head of Physics  Head of Maths
+Tamara Davis    Jacq Romero    Tim McIntyre    Jacinda Ginges   Sally Shrapnel   Matthew Davis Halina Rubinsztein-    Sabrina      Marina Lanz Maarten Christenhusz Joel Corney  Barbara Maenhaut
+tamarad@physics      m.romero         t.mcintyre           j.ginges           s.shrapnel           mdavis          Dunlop       Monaghan        m.lanz        m.christenhusz   corney@physics   bmm@maths
+                                                                                                             halina@physics    s.monaghan
+
+                                                                                          UQ Respect Network                  UQ Respect Network                 UQ Respect Network
+
+ PHYS 1st year PHYS > 1st year  SCIE/COSC   STAT1201/1301 STAT > 1st year    Maths HDR    Physics HDR      Anyone        Anyone         Anyone     School Manager Head of School
+     Mel     Jorgen Rasmussen Michael Bulmer Margaret Wegener  Ben Powell       Benjamin    Matthew Holden  Andrew White    Katie Clinch          Erinn        Lara Atzeni  Joseph Grotowski
+                                                                                                                            andrew.white         k.clinchRobertson-Dean   j.rasmussen        m.bulmer        m.wegener    powell@physics      Roberts        m.holden1                                Osmond       smp.sm        j.grotowski
+m.robertsondean                                                                                    b.roberts                                                  e.osmond
+
+====== PAGE 7 ======
+Structure of this course
+
+
+                                                              Optics lecturers:
+
+ Four modules, roughly 3 weeks each:
+
+
+  1.  Quantum optics theory
+
+
+  2.  Quantum optics applications                                                      Dr Josephine Dias     Dr Laura Serino
+
+  3.  Atomic physics theory                                                       Atomic physics lecturer:
+
+
+  4.  Atomic physics applications
+
+                                                             Associate Professor Jacinda Ginges
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Assessment
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Problem Set
+
+
+      Each problem set covers one module of the course
+
+
+                                                                                     1.   Quantum optics theory
+
+                                                                                     2.   Quantum optics applications
+
+                                                                                     3.   Atomic physics theory
+
+                                                                                     4.   Atomic physics applications
+
+          First problem set on quantum optics theory will be on blackboard 31/07
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Seminar
+
+     •  Each student will deliver a 10-minute seminar on a topic related to the course: an 8-
+      minute presentation followed by 2 minutes of questions.
+
+     •  Seminars will follow a conference-style format, with presentations delivered back-to-
+       back.
+
+     • A list of suggested topics will be provided, but students may also propose their own
+        topic.
+
+     •  All presentations will be delivered in person.
+
+    Dates: Week 10 Thursday 8/10
+
+         Week 11 Tuesday 13/10 and Thursday 15/10
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+What we will cover – Quantum Optics Theory
+
+                                            2. Free             1. Quantizing the                                    propagating           3. Quadratures           E/M field and                                              fields and        and phase space           number states                                  coherent states
+
+                                          5. Photon                 4. Photon                                      6. Homodyne                                    counting and                   statistics                                      detection                                   Photodetection
+
+                                           8. Quasi-                   7. The                                        9. Squeezed                                          probability               beamsplitter                                      states                                          distributions
+
+                                                                                                                                                                                                                         11
+
+====== PAGE 12 ======
+Quantum optics applications
+
+Topics we will cover later in the semester
+
+                            Optical     Quantum                         Quantum                      quantum                           Entanglement     metrology                          communication                          information
+
+                                                                And more…
+
+                                                                                                                                                                                                                         12
+
+====== PAGE 13 ======
+Quantum optics resources
+Textbooks
+
+A guide to experiments in          Quantum Optics / by D.                                           Essential Quantum                                                                 Elements of Quantum
+quantum optics / Hans-A.                 F. Walls, Gerard J.                                                Optics: From Quantum                                                                      Optics
+Bachor and Timothy C.               Milburn                                                 Measurements to Black                                                                           Meystre, Pierre
+Ralph                                   Walls, D. F                                                  Holes                                                                              4th ed. 2007. 2007
+Bachor, H.-A. (Hans-Albert),             3rd ed. 2025                                                        Leonhardt, Ulf
+author                                                                                      1 2010
+Third edition 2019
+                                                 All available online                                                                                  13
+
+====== PAGE 14 ======
+Quantum optics resources
+Lecture notes
+
+These lecture notes cover the
+introductory quantum optics
+material taught in Weeks 1–3.
+
+Available via Blackboard
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Staying on top of content
+
+Readings:
+
+specified in lecture slides/quantum optics notes
+
+Consultation hour:
+
+Thursday 3-4pm in my office 07-320,
+
+available during Weeks 1-6, otherwise by appointment.
+
+Ed discussion board:
+
+a good place for students to discuss and clarify
+
+Academic integrity:
+
+acknowledge all sources; some discussion among peers
+is fine, though no collusion. Your work needs to be your
+own
+
+                                                                                                                                                                                                                         15
+
+====== PAGE 16 ======
+Week 1, Lecture 1
+Quantizing the electromagnetic field
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4 pm
+
+
+ Notes 1.1, 1.2; Bachor & Ralph Ch 4.1, 4.2; Walls and Milburn Ch 2.1, 2.2
+
+====== PAGE 17 ======
+Where are we going?
+
+
+        Classical light
+
+        Experimental problems
+
+        Electromagnetic modes
+
+       Harmonic oscillator
+
+       Photons
+
+                                                                                                                                                                                                                         17
+
+====== PAGE 18 ======
+Classical Light
+
+   light
+ source
+
+                        two slit
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Classical Light
+
+     Maxwell’s equations
+                                                                                     Electric field
+
+                                   Magnetic field
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Why do we need to quantize light?
+
+Black-body radiation: the first step towards quantized light
+
+In 1900 Planck (motivated by this
+experiment by Lummer and Pringsheim)
+found that black-body radiation could only
+be correctly modelled by assuming that
+atomic light emission was quantized
+
+Planck reproduced the observations by
+assuming that electromagnetic
+oscillators exchange energy in discrete
+amounts:
+
+              𝐸! = 𝑛ℏ𝜔.
+
+This assumption marked the beginning
+of quantum theory.
+
+                                                                                                                                                                                                                         20
+
+====== PAGE 21 ======
+Why do we need to quantize light?
+
+The photoelectric effect: light exchanges energy in packets
+
+ •   Electrons are emitted only above a threshold frequency.
+
+
+ •   Electron energy increases with the frequency of the light.
+
+
+ •   Increasing intensity increases the number of emitted
+
+
+     electrons, not their maximum energy.
+
+   Phet Simulation
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+Double slit experiment with photons
+
+   Each dot
+   represents
+   one photon
+
+                                                                                                                                                                                                                    T. L. Dimitrova, A. Weis; The wave-particle duality of light: A demonstration
+                                                                                                                                            experiment. Am. J. Phys. 1 February 2008; 76 (2): 137–142.        22
+                                                                                                                                                        https://doi.org/10.1119/1.2815364
+
+====== PAGE 23 ======
+Development of the laser
+
+                                                                                                                                                                                            23
+
+====== PAGE 24 ======
+What does it mean to quantize something?
+Canonical quantization
+
+
+Classical description
+
+                        𝑥𝑡, 𝑝𝑡 are numbers
+                                         𝑝2
+                    𝐻= 2𝑚+ 𝑉𝑥
+
+Quantum mechanics
+
+                                                𝑥, 𝑝⟶-𝑥,̂ 𝑝
+   Classical Poisson bracket becomes quantum                -𝑥̂ 𝑝= 𝑖ℏ
+  commutator
+
+   Classical Hamiltonian becomes a
+  quantum operator
+
+  Time indep. Schrodinger equation
+
+                                                                                                                                                                                            24
+
+====== PAGE 25 ======
+Quantizing light means quantizing its modes
+
+An electromagnetic field has an electric field 𝐄𝐫𝑡and a magnetic field 𝐁𝐫𝑡  at every position 𝐫.
+
+            !
+                             E(r, t) =    qj(t)uj(r)
+                                                        j
+
+                  uj(r) = spatial proﬁle of mode j
+
+                    qj(t) = time-dependent amplitude of mode j
+                 ωj = mode frequency
+
+
+               One electromagnetic mode ⟷ One harmonic oscillator
+
+                                                                                                                                                                                            25
+
+====== PAGE 26 ======
+Maxwell’s equations in free space
+
+                                     ρ
+                       ∇· E =     ,                  Gauss’s law
+                                            ε0
+                                                                          Gauss’s law for magnetism                       ∇· B = 0,
+
+
+                                                                               Faraday’s law                ∇× E = −∂B ,
+                                          ∂t
+                                   ∂E
+                ∇× B = µ0J + µ0ε0      .    Ampère-Maxwell law
+                                                  ∂t
+   In free space (containing no charges or currents),
+                    =     J = 0                            ρ   0,
+
+                        ∇· E(r, t) = 0
+                     ∇· B(r, t) = 0
+                                                               t)               ∇×        −∂B(r,                                 E(r, t) =
+                                              ∂t
+                                            εE(r, t)
+               ∇× B(r, t) = µ0ε0
+                                                                                                                                                                                            26                                                 εt
+
+====== PAGE 27 ======
+Introducing electromagnetic potentials
+
+                            ∇· E(r, t) = 0
+                        ∇· B(r, t) = 0
+                                                                    t)                 ∇×        −∂B(r,                                      E(r, t) =
+                                                   ∂t
+                                                 εE(r, t)
+                 ∇× B(r, t) = µ0ε0
+                                                      εt
+Introduce the scalar and vector potentials:
+             B = ∇× A     E =   −∂A                              −∇φ
+                                                       ∂t
+
+
+Vector identities
+           ∇· (∇× A) = 0
+        ∇× (∇φ) = 0
+
+                                                                                                                                                                                            27
+
+====== PAGE 28 ======
+Coulomb gauge
+
+ The electromagnetic potentials are not unique. We choose the Coulomb gauge:
+                           ∇· A = 0
+
+                    −∂A  Using ∇· E = 0    and  E = −∇φ
+                                        ∂t
+          −∂ We obtain   −∇2φ    (∇· A) = 0
+                       ∂t
+
+                     = 0  In the Coulomb gauge,       ∇2φ
+
+
+ For a source-free radiation field, we may choose  = 0                                   φ
+
+ and therefore
+                        E = −∂A
+                                             ∂t
+
+                                                                                                                                                                                            28
+
+====== PAGE 29 ======
+Wave equation for the vector potential
+
+                                         1 ∂E
+                 ∇× B = Start from the Ampère–Maxwell law:                                                c2 ∂t
+
+        B = ∇×     E = −∂A Substitute           A,
+                                    ∂t
+
+                                ∂2A                       −1 This gives       ∇× (∇× A) =                                              c2 ∂t2
+
+              ∇×            −∇2A Use the vector identity      (∇× A) = ∇(∇· A)
+
+              ∇×       −∇2A In the Coulomb gauge,        (∇× A) =
+                                                             ∂2A(r, t)                                −1                                             = 0 Therefore, the vector potential obeys the wave equation   ∇2A(r, t)
+                                                                        c2    ∂t2
+        B = ∇× A         E =   −∂AAnd because                  and      −∇φ
+                                                   ∂t
+The E and B fields also obey the wave equation                                                                                                       29
+
+====== PAGE 30 ======
+Electromagnetic field in a cavity
+
+
+                           Seek separable solutions of the form
+                                             A(r, t) = qj(t)uj(r)
+
+                               For a field polarised along the 𝑥-direction and propagating along 𝑧,
+                                                uj(r) = ˆx Cj sin(kjz)
+
+                           The boundary condition at 𝑧= 𝐿 requires
+   Consider a cavity with;                                                    sin(kjL) = 0
+     • Mode volume V.                                 Therefore,
+     • Single mode.
+                                            jπ     • Monochromatic.                 =      =                                                kj          ,     j    1, 2, 3, . . .
+                                  L     • Single polarization.
+
+                           The corresponding angular frequencies are
+                                                        jπc                               =  =                                                 ωj   ckj
+                                          L
+
+                                                                                                                                                                                            30
+
+====== PAGE 31 ======
+Select a single cavity mode
+
+Choose one mode of angular frequency 𝜔and omit the mode index:
+
+                                    A(r, t) = q(t)u(r)
+
+For a cavity of volume 𝑉, choose
+                                       2
+                              u(r) = ˆx       sin(kz)                  ! ε0V
+This mode is normalized according to!
+                                     ε0 |u(r)|2 d3r = 1
+                                V
+
+Substitute the single-mode form into the wave equation:
+                   −1                          q(t)∇2u(r)      ¨q(t)u(r) = 0
+                                            c2
+Using  ∇2u(r) = −k2u(r)
+
+ we obtain
+                                            ¨q(t) + ω2q(t) = 0,   ω = ck
+
+
+                                                                                                                                                                                            31
+
+====== PAGE 32 ======
+Energy of the single mode
+
+ The fields are     E(r, t) = −˙q(t)u(r)            B(r, t) = q(t)∇× u(r)
+
+
+ The classical electromagnetic-field energy is
+                        1             1
+           H =       ε0|E|2 +   |B|2  d3r
+                        2                       ! V "        µ0    #
+
+ Using the mode normalization gives
+
+                              1     1                                         2
+               H =    ˙q +                              2     2ω2q2
+
+                     = Define the conjugate momentum    p      ˙q
+
+ The Hamiltonian becomes
+
+                                  1     1
+                  H =   +                                 2p2   2ω2q2
+                                                                                                                                                                                            32
+
+====== PAGE 33 ======
+Canonical quantization of the mode
+
+  Promote the classical variables to operators:
+                                 q −→ˆq,    p −→ˆp
+
+  Impose the canonical commutation relation:
+
+                                                          [ˆq, ˆp] = i¯h
+
+  The Hamiltonian becomes
+                              1     1
+                               ˆH =   ˆp 2 +       2                              2      2ω2ˆq
+
+                                                                                                                                                                                            33
+
+====== PAGE 34 ======
+Creation and annihilation operators
+
+ Define the annihilation operator:                              ω          i
+                                                          ˆa =          ˆq +           ˆp                 ! 2¯h   √ 2¯hω
+
+                              ω          i Define the creation operator:                                                   ˆa† =          ˆq              ˆp                  ! 2¯h − √ 2¯hω
+
+
+ They satisfy
+                                                                   [ˆa, ˆa†] = 1
+
+
+ The inverse relations are:
+
+                                              ¯h                                   ¯hω
+                                   ˆq =             ˆa +                          ˆp = −i            ˆa            ! 2ω             ! 2                                "     ˆa†#                         "  −ˆa†#
+                                                                                                                                                                                            34
+
+====== PAGE 35 ======
+The electric-field operator
+
+ For a single standing-wave cavity mode polarised in the 𝑥-direction,
+                           ℏω
+                           ˆE(z, t) =           ˆa(t) + ˆa†(t) sin(Kz) ˆx               ! ε0V                                           "            #
+ The operators evolve according to
+                                       ˆa(t) = ˆae−iωt,      ˆa†(t) = ˆa†eiωt
+                                                                                                 Classically,
+                                ¯hω Therefore,      ˆE(z, t) =          ˆae−iωt +       sin(Kz) ˆx           ! ε0V                               "           ˆa†eiωt#
+
+ Separate the field into positive- and negative-frequency components:
+                                 ˆE(z, t) = ˆE(+)(z, t) + ˆE(−)(z, t)
+
+ The components satisfy
+
+                                                           t)                                ˆE(−)(z, t) = ! ˆE(+)(z,                                                       "†                                                                                                                                                                                            35
+
+====== PAGE 36 ======
+Photons as cavity-mode excitations
+
+
+  Define the number operator:
+                                                  ˆn = ˆa†ˆa
+
+ The Hamiltonian is
+                                       1
+                               ˆH = ¯hω   ˆn +
+                                       2                       !   "
+
+
+ The number states satisfy
+
+                     ˆn|n⟩= n|n⟩,    n = 0, 1, 2, . . .
+
+ The allowed energies are                 1
+                     En = ¯hω  n +
+                                       2                       !   "
+
+
+                                                                                                                                                                                            36
+
+====== PAGE 37 ======
+Field moments in a photon-number state
+
+ Expectation value                                     ⟨n| ˆE(z, t)|n⟩= 0
+
+                      ⟨ˆE2(z, t)⟩= ⟨n| ˆE2(z, t)|n⟩
+                         ℏω                 =     ⟨n| ! ˆa(t) + ˆa†(t) "2 |n⟩sin2(Kz)
+                             ε0V
+                              ℏω
+                             ⟨ˆE2(z, t)⟩=     (2n + 1) sin2(Kz)
+                                   ε0V
+
+ Electric-field variance          (∆E)2 = ⟨ˆE2⟩−⟨ˆE⟩2
+                             ℏω
+                      (∆E)2 =     (2n + 1) sin2(Kz)
+                                 ε0V
+
+
+                                ℏω                                              1
+ Averaged over volume        (∆E)2 =     n +                                     ε0V !    2 "
+                                                                                                                                                                                            37
+
+====== PAGE 38 ======
+Photon-number states and the number
+operator
+                                                                             ˆn = ˆa†ˆa Number operator is Hermitian ⇒ Eigenvalues are real
+ Photon-number states are eigenstates of -𝑛:
+                      ˆn|n⟩= n|n⟩,    n = 0, 1, 2, . . .
+
+ The ladder operators act according to
+                          √n                                ˆa|n⟩=    |n −1⟩
+                     √ n + 1  +                               ˆa†|n⟩=        |n   1⟩
+
+                                                                 0 The state ∣0 ⟩ is the vacuum state and contains no photons in the        ˆa|0⟩=
+ selected mode.
+
+                                                                                    (ˆa†)n The state ∣1 ⟩ contains exactly one photon, while ∣𝑛 ⟩ contains
+ exactly 𝑛 photons.                                   |n⟩= √ n! |0⟩
+                                                                                                                                                                                            38
+
+====== PAGE 39 ======
+Constructing the first photon-number states
+
+ The vacuum state is  |0⟩   It satisfies    ˆa|0⟩= 0
+ One-photon state      √ 1                    ˆa†|0⟩=   |1⟩= |1⟩
+                                     |1⟩= ˆa†|0⟩
+
+
+ Two-photon state
+ Apply the creation operator again:
+         √ 2                           1         ˆa†|1⟩=     |2⟩                                  |2⟩= √ 2 (ˆa†)2|0⟩         √                 2       (ˆa†)2|0⟩=     |2⟩                                                   General result
+
+ Three-photon state
+ Apply the creation operator once more:
+          √ 3                        1           ˆa†|2⟩=     |3⟩ Starting from the vacuum,               |3⟩= √ 6 (ˆa†)3|0⟩
+       √ √ √    √              1  2  3       6
+                                                                                                                                                                                            39   (ˆa†)3|0⟩=        |3⟩=     |3⟩
+
+====== PAGE 40 ======
+Photon-number basis
+
+ The number states are orthonormal:
+                            ⟨m|n⟩= δmn
+
+
+                     ∞
+ They form a complete basis:   !
+                          = ˆI            {|n⟩} = {|0⟩, |1⟩, |2⟩, · · · }                                          |n⟩⟨n|
+                                n=0
+
+ Any state of a single optical mode can be expanded as
+                 ∞            ∞         !      !
+                 |ψ⟩=    cn|n⟩                      |cn|2 = 1
+                          n=0                  n=0
+
+ A number state has no photon-number uncertainty:
+                       (∆n)2 = ⟨n|ˆn2|n⟩−⟨n|ˆn|n⟩2 = 0
+
+
+                                                                                                                                                                                            40
+
+====== PAGE 41 ======
+Summary
+
+
+   Experiments showed that classical physics cannot fully explain light.
+
+    Classically, light is described using electric and magnetic fields that obey Maxwell’s equations.
+
+
+   Boundary conditions in an optical cavity select a discrete set of electromagnetic modes.
+
+
+   Each mode behaves like a harmonic oscillator.
+
+
+   The excitations of a quantized electromagnetic mode are photons:
+                                    1
+                            ˆH = ¯hω   ˆn +       ,       ˆn = ˆa†ˆa
+                                    2                     !   "
+
+                                                                                                                                                                                            41

@@ -1,0 +1,514 @@
+Source: source_material/lectures/slides_and_handouts/W3L3 - Coherence(1).pdf
+Pages: 28
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 3, Lecture 3
+Coherence
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4pm
+
+ Notes 4
+
+====== PAGE 2 ======
+Review
+What we talked about last lecture…
+
+
+                                                                              Squeezed
+                                                                                           quadrature
+         The squeezing operator is defined as:                                                                     e−2r
+              S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+
+                                                         𝑝
+          Squeezed vacuum state:
+                    |ζ⟩= ˆS(ζ) |0⟩
+
+           General squeezed state:
+                         |α, ζ⟩= ˆD(α) ˆS(ζ) |0⟩                                  𝑥
+
+         Squeezed states are minimum uncertainty states
+                  ⟨∆ˆx2⟩⟨∆ˆp2⟩= e−2re2r = 1
+
+====== PAGE 3 ======
+Wave interference
+
+                 constructive interference                                     destructive interference
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Double slit experiment
+
+                                                                                                                                         Visibility of the double
+                                                                                                                                                                 slit interference requires
+                                                                                                                       that both slits be
+                                                                                                                  illuminated by a
+                                                                                                      coherent wave
+                         light
+                 source
+
+                                           two slit
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Coherence
+Classical
+
+  Coherence describes the statistical similarity of a field at two points in space or time.
+
+   Just like the moments of number statistics, there are different orders of coherence that give different information.
+
+   First order correlation function:
+
+   First order coherence tells us about the visibility of interference fringes. Max visibility occurs for the condition of perfect
+    first order coherence:
+
+  The mth order coherence function:
+
+   Light has mth order coherence if this function factorises into the product of amplitudes:
+
+                                                                               See Lecture notes
+                                                                                            Chapter 4
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Second order correlation function
+Classical
+
+   A useful measure for quantifying fluctuations in intensity of light is the second order correlation function
+
+    Light has second order coherence for the condition:
+
+  We can use the normalised second order coherence function:
+
+                                           G(2)(τ)     ⟨I(t)I(t + τ)⟩
+                                    g(2)(τ) ≡       =
+                                                                ⟨I⟩2                                              ! G(1)(0) "2
+
+    Mathematically, we can relate 𝑔! (0) to the variance of the intensity fluctuations:
+
+                                                                              classical result
+                                                         𝒈𝟐(𝟎) cannot be less than 1
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+Second order correlation function
+Quantum
+
+   To obtain the quantum result, consider 𝑔! (0) for a single-mode state:
+
+   Thermal state
+                                = 2      var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n2 + ¯n                   g(2)
+
+  Coherent state
+                                 = 1      Coherent states have        var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n                       g(2)                                                                                coherence in all orders
+
+  Number state
+                                     𝒈𝟐𝟎< 𝟏 has no                               = 1 −1   1                                                          g(2)     <      var (n) = ⟨∆ˆn2⟩= ⟨ˆn2⟩−⟨ˆn⟩2 = 0                                      classical explanation                                             n
+
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Photon arrival statistics
+
+Photon bunching
+                                       g(2)(0) > 1
+
+ Photons are more likely to arrive close together than for independent arrivals.
+ Example: thermal light  g(2)(0) = 2
+
+ Independent arrivals
+                                       g(2)(0) = 1
+ Detecting one photon does not affect the likelihood of detecting another.
+ Example: coherent light.
+
+
+Photon antibunching
+                                       g(2)(0) < 1
+
+Photons are less likely to arrive close together than for independent arrivals.
+Example: an ideal single-photon state g(2)(0) = 0
+
+
+                       Antibunching is a signature of nonclassical light.
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Fano factor
+
+
+  The ratio of the variance to the mean is called the Fano factor:
+
+                               var(n)                   F                 =
+                                 ⟨n⟩
+
+   Thermal state
+                                          F > 1                                                                                        Super-poissonian      var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n2 + ¯n
+
+  Coherent state
+                                          F = 1        var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n                                                   Poissonian
+
+  Number state
+                                          F < 1      var (n) = ⟨∆ˆn2⟩= ⟨ˆn2⟩−⟨ˆn⟩2 = 0                                          Sub-poissonian
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Summary of classification by photon
+statistics
+
+                                 !𝒏𝟐         Photon number      𝒈𝟐(𝟎)       Fano factor
+                                             statistics
+     Thermal           '𝑛(1 + 2'𝑛)      Super poissonian         2             >1
+
+     Coherent           '𝑛(1 + '𝑛)          Poissonian            1              1
+                                                                                     1 −1            <1       | 𝑛 ⟩                𝑛"           Sub-poissonian                                                                          n
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Gaussian states
+
+ Note: material on the following slides, up to and including Slide 22 will not be examined.
+
+ Gaussian states are defined as states with a Gaussian Wigner function
+
+ Gaussian operations preserve this form
+
+                                                                  Squeezed states     Thermal states                     Coherent states
+
+                    !∞  αn
+         1               ¯n                                       e−|α|2/2      ˆρ =                     |n⟩⟨n|              |α⟩=       √ n! |n⟩            + 1 #n                                    n           " ¯n             ¯n + 1  n    !
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Gaussian states
+
+ Gaussian states are completely characterised by their mean vector d and covariance
+ matrix Σ (first and second moments)
+
+
+                                                                                        𝑝
+
+     Covariance matrix is defined as
+
+                                                                                                          𝑥
+
+                   diagonal elements of the covariance
+                    matrix provide the variances of the
+                  quadrature operators
+
+                                                                            Coherent state
+      Mean vector
+
+                                                               Covariance
+                                                                      matrix
+
+
+                                                   Mean
+                                                   d = (2Re(α), 2Im(α))                                                                      vector
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Gaussian states
+
+ Gaussian states are completely characterised by their mean vector d and covariance
+ matrix Σ (first and second moments)
+                                                                                                           𝑝                         𝑝                                     𝑝
+
+                                                                                                                              𝑥
+                                       𝑥                                       𝑥
+
+                 Coherent state                      Squeezed state                        Vacuum state
+
+                                                   0
+   Covariance                     Σ =
+   matrix                                        0    e2r                                             !e−2r     "
+
+
+  Mean
+   vector            d = (2Re(α), 2Im(α))                                 d = (0, 0)
+
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Transformation of Gaussian states
+
+ •  Gaussian operations are defined as operations that map Gaussian states to Gaussian states.
+
+ •  For Gaussian inputs, the outputs are also Gaussian This means the outputs are completely
+
+    characterised by their mean vector d and covariance matrix Σ
+
+ •  A beam-splitter is an example of a Gaussian operation
+
+
+  Gaussian unitaries transform the mean vector as
+                                                                       𝑆 is symplectic if                         ∈R2n                               y
+
+  And the covariance matrix as                                                Where 𝑆 is a
+                                                            symplectic matrix                      Σout = SΣinST
+
+    For more information, see:
+    C. Weedbrook, S. Pirandola, R. Garcı́a-Patrón, N. J. Cerf, T. C. Ralph, J. H. Shapiro, and S. Lloyd, Gaussian Quantum Information, Rev.
+    Mod. Phys. 84, 621 (2012).
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Gaussian operations
+
+
+ Examples of Gaussian operations:
+
+
+                                                                    Phase shift
+   Beam splitters                  Single mode squeezing
+                                                                                        ˆU (θ) = exp (−iθˆn)
+ ˆa′1 = √η ˆa1 !1      ˆa2    S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"       −   −η
+ ˆa′2  = !1      ˆa1 + √η ˆa2             𝑝      −η
+                                                                          Displacement
+
+                                                                                                      𝑝                                                                              𝑝  ˆD(α) = eαˆa†−α∗ˆa        𝜂
+
+                                             𝑥
+                                                                                                                   𝑥                                                                                          𝑥
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Displacement
+                    !∞  αn
+                                                              e−|α|2/2Example: Displacement operator on a coherent state                                       |α⟩=       √ n! |n⟩
+                                                            n
+                                                                           Using transformation of mean vector
+                                                                     and covariance matrix
+                 𝑝                                            𝑝
+
+
+                                                                      Σout = SΣinST
+                                𝑥                                               𝑥
+
+
+                                                                         0
+                                                     S =                                                                                 y = (x, p)                                                                      0  1                                                                   !1   "          Coherent state
+
+                                             Displacement operatorCovariance                                                                          dout = din + y
+matrix
+                                             ˆD(β) = eβˆa†−β∗ˆa                                          = (2Re(α) + x, 2Im(α) + y)
+
+Mean                                                                           1  0
+vector                                                =        d = (2Re(α), 2Im(α))                                       Σout = Σin                                                                              0  1       16                                                                         !    "
+
+====== PAGE 17 ======
+Gaussian measurement
+
+
+                        Homodyne detection
+
+                                                photodetectors
+                     50:50 beam
+                               splitter
+
+                     input signal
+
+
+                                       phase shift
+
+
+                                        local oscillator
+
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Beam splitter in symplectic form
+
+ •  The matrix 𝑆#$ is a 4×4 matrix as it                                      Σout = SΣinST
+    operates on two Gaussian modes.
+                                                     𝜂
+                                      √ηI2   √1                       = •   Here, 𝜂 is the transmission of the beam     SBS   !            √ηI2−ηI2 "     splitter.                       −√1 −ηI2
+
+
+                                                           4×4 matrix
+
+                                           where 𝜂 is the transmission of the beamsplitter,
+                                                                𝐼! is the 2×2 identity matrix
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Squeezed states
+
+ •  Using the symplectic form of the beam splitter operation 𝑆$%, we can easily find the state of the two output
+   modes of a beam splitter
+
+ Example: what is the effect of optical loss on a squeezed vacuum state?
+
+ •  Model this via a beam splitter mixing a squeezed vacuum state with a vacuum state
+
+      Squeezed vacuum state
+                   e−2r   0
+            Σsq =                   0    e2r                !        "
+
+     CM of two modes before beam splitter
+                               e−2r   0   0  0
+                               0    e2r  0  0                Σsq    0                                            Σ =        =
+                               0    0   1  0             !                0   Σvac "
+                               0    0   0  1                                                                                                
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Squeezed states
+
+
+CM of two modes after beam splitter
+
+•   With the 4×4 covariance matrix of the two output modes of the
+
+   beam splitter, take the partial trace over the environment mode
+                                     + (1 −η)        0    to get the reduced state of the squeezed state after it has       Σ =                                                     !ηe−2r 0         ηe2r + (1 −η) "   passed through loss
+
+•  To take partial trace of covariance matrices, simply remove
+
+   rows and columns of excluded modes
+
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+Squeezed states
+
+                                                        Compare this to covariance
+         CM after loss                                                                        matrix before loss
+
+                                                                0           + (1 −η)        0                                    Σ =    Σ =                                                          0    e2r           !ηe−2r 0         ηe2r + (1 −η) "                 !e−2r     "
+
+                                                                 Variance of anti-squeezed quadrature          Variance of squeezed quadrature
+                                                                    e2r →ηe2r + (1 −η)          e−2r →ηe−2r + (1 −η)
+                         Greater than 𝑒&'( for 𝜂∈[0,1]                               Less than 𝑒'( for
+                                                                                 𝜂∈[0,1]
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+Squeezed states
+
+
+      𝑥                                                                          After a squeezed state passes through                                        𝑥
+                                                                                       loss, the variance of the squeezed
+                   𝜂                                                                          quadrature increases while the variance
+             𝑝                                              𝑝       of the anti-squeezed quadrature
+                                                                         decreases.
+
+
+ Squeezed
+ state                   𝑥                                     •  Increase in variance of squeezed
+                                                                quadrature
+                                                                                                            less like an
+                                                                                    •  Decrease in variance of                   ellipse
+                             𝑝                                                              antisqueezed quadrature           more like a
+                                                                                                sphere
+                                                                                    •  Displacement still at (0,0)
+                    vacuum state
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Review
+
+====== PAGE 24 ======
+  Quantum states
+
+
+                                     Fock photon number states              Coherent states
+                                         {|n⟩}                           = {|0⟩, |1⟩, |2⟩, · · · }       ! αn                                                                                   e−|α|2/2                                                     |α⟩=       √ n! |n⟩
+                                                                             n
+
+                                                        Squeezed statesThermal states
+      1               ¯n
+ˆρ =                     |n⟩⟨n|          + 1 #n        " ¯n       ¯n + 1  n   !                                    S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+                                                  |r⟩= ˆS(r) |0⟩
+
+                                                                                                                                                                                                     24
+
+====== PAGE 25 ======
+Operations
+
+
+    Beam splitters                                                               Single mode squeezing
+                                       Phase shift
+                                                        S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+ˆa′1 = √η ˆa1 !1      ˆa2                                               ˆU (θ) = exp (−iθˆn)      −   −η                                                 𝑝
+ˆa′2  = !1      ˆa1 + √η ˆa2     −η
+
+                                        Displacement
+                                         𝑝  ˆD(α) = eαˆa†−α∗ˆa                                                                 𝑝                                𝑥
+         𝜂
+
+                                                                            𝑥                                                  𝑥
+
+                                                                                                                                                                                             25
+
+====== PAGE 26 ======
+Measurement
+
+
+        Detecting single photons                              Measuring quadratures
+
+         Avalanche Photodiodes                              Homodyne detection
+  Π0 = |0⟩⟨0|   Π1 = 1 −|0⟩⟨0|
+
+
+                                                          “click”
+ binary
+ detector
+                incoming pulse               “no click”                                        photodetectors
+                                                          50:50 beam
+                                                                                  splitter
+
+       Resolving photon number
+
+
+                                                                input signal
+
+
+                                                                         phase shift
+
+
+                                                                                     local oscillator                                        26
+
+====== PAGE 27 ======
+Visualising quantum states
+
+       P function                       Wigner function              Q function
+
+   For coherent states:
+                                         2                             1    P(α) = δ2 (α −β)          W(α) =   e−2|α−β|2            Q(α) =   e−|α−β|2                                    π                                                              π
+          Delta function                                  Gaussian                               Broader Gaussian
+              i.e. a single point in phase space
+                                     𝑝
+
+                                                 𝑥
+
+                                                                                                                                                                                            27
+
+====== PAGE 28 ======
+Summary of classification by photon
+statistics
+
+                                 !𝒏𝟐         Photon number      𝒈𝟐(𝟎)       Fano factor
+                                             statistics
+     Thermal           '𝑛(1 + 2'𝑛)      Super poissonian         2             >1
+
+     Coherent           '𝑛(1 + '𝑛)          Poissonian            1              1
+                                                                                     1 −1            <1       | 𝑛 ⟩                𝑛"           Sub-poissonian                                                                          n
+
+                                                                                                                                                                                            28

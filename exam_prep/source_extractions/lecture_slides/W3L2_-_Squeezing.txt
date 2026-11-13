@@ -1,0 +1,402 @@
+Source: source_material/lectures/slides_and_handouts/W3L2 - Squeezing.pdf
+Pages: 21
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 3, Lecture 2
+Squeezed states of light
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4pm
+
+ Notes 5
+ Bachor & Ralph, 9.1, 9.2
+ Walls & Milburn, 1.4, 1.5
+
+====== PAGE 2 ======
+Review
+What we covered last lecture…
+
+   We covered three different quasi-probability distributions used in quantum
+      optics:
+
+                           Husimi Q function            Q function can be thought of as a
+                                                                               probability density
+                                                                  (P and W functions cannot)
+
+                      Glauber Sudarshan P function                                                 P function can be negative and singular
+
+                           Wigner function          W function can be negative
+
+                         Wigner function negativity is a sign of
+                               non-classicality e.g. |1⟩
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+Coherent states - review
+
+
+                                                                  Uncertainty principle:
+
+                       area of circle                                                    ⟨∆ˆx2⟩⟨∆ˆp2⟩≥¯h2                                                                 4                        represents
+                  ⟨ˆp⟩        uncertainty
+                 ⟨∆ˆx2⟩= ⟨∆ˆp2⟩= 1                          Generalised quadrature
+                                                                            operators
+                                                                                                                                     ˆx = ˆa + ˆa†                                                                     ˆxθ = ˆae−iθ + ˆa†eiθ
+                  ⟨∆ˆx2⟩                                                     ˆxθ+π/2 = i(ˆa†eiθ −ˆae−iθ)                 ˆp = i(ˆa† −ˆa)
+
+                           ⟨∆ˆp2⟩
+
+                                                  ⟨ˆx⟩
+                                                ⟨∆ˆx2⟩⟨∆ˆp2⟩≥1
+
+                                                       Coherent states are minimum uncertainty states
+        Coherent state
+                                                   ⟨∆ˆx2⟩⟨∆ˆp2⟩= 1
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Squeezed states
+
+                                                Squeezed                              Coherent states and
+                                                        quadrature                            squeezed states are
+                                                                                 minimum uncertainty states
+                                                                   ⟨∆ˆx2⟩⟨∆ˆp2⟩= 1
+                       ⟨∆ˆx2⟩
+       𝑝                           𝑝
+                                                                           Anti-squeezed
+                                                                                    Asymmetry in noise distribution:                                                                            quadrature                                ⟨∆ˆp2⟩                Circle                                                                      can have either  𝛥%𝑥! < 1 or
+                                                         Ellipse                                                  𝛥̂𝑝! < 1 but not both
+               ⟨∆ˆx2⟩= ⟨∆ˆp2⟩= 1
+                  𝑥                            𝑥
+                                                                              See chapter 5 of the lecture
+                                                                                               notes for squeezing
+
+                                                                                               Also chapter 9 of Bachor, Hans-
+                                                                                                  A. / Ralph, Timothy C.
+                                                                     A guide to experiments in
+    Coherent state                            Squeezed state                           quantum optics (2019)
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Squeezing operator
+
+
+   The squeezing operator is defined as:                               𝑝
+          S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+
+                                                          𝜙
+  Complex squeezing parameter          r controls the strength of squeezing
+                                                                       𝑥      =                𝜙 controls the angle of squeezing        ζ   re2iφ
+
+            𝜙= 0 corresponds to x squeezing
+
+                                                                                   Mean value
+                                                                          ⟨ˆx⟩= ⟨ˆp⟩= 0    Apply the squeezing operator to the vacuum state:
+                                                                                                                            Ellipse lies at origin
+                   |ζ⟩= ˆS(ζ) |0⟩
+
+                          Squeezed vacuum state
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Squeezing operator properties
+ Useful identities
+
+                  S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+
+
+Squeezing operator is unitary
+
+                                                                                                                                                                                               6
+
+====== PAGE 7 ======
+Squeezed vacuum state
+Variance
+
+                                                         𝑝    S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"                                       𝜙= 0 corresponds to
+                                                                    x squeezing
+                  =                               ζ   r      ζ    = re2iφ  𝜙= 0 ⟹
+    S (r) = exp !! rˆa2 −rˆa†2" /2 "
+                                                                       𝑥
+       |r⟩= ˆS(r) |0⟩
+
+  Example: calculate the variance of x for the squeezed vacuum
+   state where 𝜙= 0
+
+                                                                            ˆx = ˆa + ˆa†         var (x) = ⟨∆ˆx2⟩= ⟨ˆx2⟩−⟨ˆx⟩2
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Squeezed vacuum state
+Variance
+
+        ⟨ˆx⟩= ⟨0| ˆS†(r) ! ˆa + ˆa†" ˆS(r) |0⟩
+
+
+                                                   |0⟩        ⟨ˆx⟩= ⟨0|                 + ˆS†(r)ˆa† ˆS(r) "                ! ˆS†(r)ˆa ˆS(r)
+
+                       µˆa −νˆa†        µˆa† −νˆa                                          = cosh                                                     µ        r
+       ⟨ˆx⟩= ⟨0| ! µˆa −νˆa† + µˆa† −νˆa " |0⟩                                                                 ν = sinh r
+
+       ⟨ˆx⟩= 0
+
+
+        For the vacuum state, !𝑥= 0
+
+       Squeezing doesn’t change the mean value of x
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Squeezed vacuum state
+Variance
+      ⟨ˆx2⟩= ⟨0| ˆS†(r) ! ˆa + ˆa†"2 ˆS(r) |0⟩
+
+      ⟨ˆx2⟩= ⟨0| ˆS†(r) ! ˆaˆa + ˆa†ˆa† + ˆa†ˆa + ˆaˆa†" ˆS(r) |0⟩
+                                              = cosh                                                          µ        r                                                               ˆaˆa† = 1 + ˆa†ˆa                                         [ˆa, ˆa†] = 1
+                                                                        ν = sinh r
+      ⟨ˆx2⟩= ⟨0| ˆS†(r) ! ˆaˆa + ˆa†ˆa† + 2ˆa†ˆa + 1 " ˆS(r) |0⟩
+
+
+                                                                                        |0⟩                 + ˆS†(r)ˆa†ˆa† ˆS(r) + 2 ˆS†(r)ˆa†ˆa ˆS(r) + ˆS†(r) ˆS(r) "      ⟨ˆx2⟩= ⟨0| ! ˆS†(r)ˆaˆa ˆS(r)
+                                         insert identity -𝑆-𝑆"
+
+                                          squeezing operator is unitary
+
+                                                                                                              |0⟩     ⟨ˆx2⟩= ⟨0| ! ˆS†(r)ˆa ˆS(r) ˆS†(r)ˆa ˆS(r)                      + ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa† ˆS(r) + 2 ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa ˆS(r) + 1 "
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Squeezed vacuum state
+Variance
+
+                                                                                                         |0⟩ ⟨ˆx2⟩= ⟨0| ! ˆS†(r)ˆa ˆS(r) ˆS†(r)ˆa ˆS(r)                    + ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa† ˆS(r) + 2 ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa ˆS(r) + 1 "
+
+                µˆa −νˆa†                     µˆa† −νˆa
+
+  ⟨ˆx2⟩= ⟨0| ! (µˆa −νˆa†)(µˆa −νˆa†) + (µˆa† −νˆa)(µˆa† −νˆa) + 2(µˆa† −νˆa)(µˆa −νˆa†) + 1 " |0⟩
+
+                only keep %𝑎%𝑎" (antinormally ordered) terms
+
+                 +                                       2ν2ˆaˆa†  ⟨ˆx2⟩= ⟨0| ! −µνˆaˆa† −νµˆaˆa†                      + 1 " |0⟩
+
+                                                             hyperbolic trig identities
+
+
+           +   +  ⟨ˆx2⟩= −µν −νµ   2ν2   µ2 −ν2
+
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Squeezed vacuum state
+Variance
+
+            +   +   ⟨ˆx2⟩= −µν −νµ   2ν2   µ2 −ν2
+
+            +  +   ⟨ˆx2⟩= −µν −νµ  µ2   ν2
+
+   ⟨ˆx2⟩= (µ −ν)2
+
+   ⟨ˆx2⟩= (cosh r −sinh r)2
+
+
+   ⟨ˆx2⟩= e−2r
+                      var (x) = ⟨∆ˆx2⟩= ⟨ˆx2⟩−⟨ˆx⟩2
+
+                                                  <       For the vacuum state: var (x) = 1             After applying squeezing operator to vacuum: var (x) = e−2r                                                                                1
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Squeezed vacuum state
+Variance
+
+
+ Next: calculate the variance of p for the squeezed vacuum state
+         var (p) = ⟨∆ˆp2⟩= ⟨ˆp2⟩−⟨ˆp⟩2                  ˆp = i(ˆa† −ˆa)
+
+       ⟨ˆp⟩= ⟨0| ˆS†(r)i ! ˆa† −ˆa " ˆS(r) |0⟩
+
+       ⟨ˆp⟩= i ⟨0|                                                    |0⟩             ! ˆS†(r)ˆa† ˆS(r) −ˆS†(r)ˆa ˆS(r) "
+
+                          µˆa† −νˆa      µˆa −νˆa†
+       ⟨ˆp⟩= i ⟨0| ! µˆa† −νˆa + µˆa −νˆa†" |0⟩
+       ⟨ˆp⟩= 0
+
+        For the vacuum state, 𝑝= 0
+
+        Squeezing doesn’t change the mean value of p
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Squeezed vacuum state
+Variance
+                                                                                                            ˆp = i(ˆa† −ˆa)     ⟨ˆp2⟩= −⟨0| ˆS†(r) ! ˆa† −ˆa "2 ˆS(r) |0⟩
+
+     ⟨ˆp2⟩= −⟨0| ˆS†(r) ! ˆa†ˆa† + ˆaˆa −ˆaˆa† −ˆa†ˆa " ˆS(r) |0⟩
+
+                                                               ˆaˆa† = 1 + ˆa†ˆa                                        [ˆa, ˆa†] = 1
+     ⟨ˆp2⟩= −⟨0| ˆS†(r) ! ˆa†ˆa† + ˆaˆa −1 −2ˆa†ˆa " ˆS(r) |0⟩
+
+
+                                                                                        |0⟩                   + ˆS†(r)ˆaˆa ˆS(r) −2ˆS†(r)ˆa†ˆa ˆS(r) −ˆS†(r) ˆS(r) "     ⟨ˆp2⟩= −⟨0| ! ˆS†(r)ˆa†ˆa† ˆS(r)
+
+
+                                                                                                            |0⟩                      + ˆS†(r)ˆa ˆS(r) ˆS†(r)ˆa ˆS(r) −2ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa ˆS(r) −1 "  ⟨ˆp2⟩= −⟨0| ! ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa† ˆS(r)
+
+                    µˆa† −νˆa                    µˆa −νˆa†
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+ Squeezed vacuum state
+  Variance
+
+                                                                                                          |0⟩                     + ˆS†(r)ˆa ˆS(r) ˆS†(r)ˆa ˆS(r) −2ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa ˆS(r) −1 "⟨ˆp2⟩= −⟨0| ! ˆS†(r)ˆa† ˆS(r) ˆS†(r)ˆa† ˆS(r)
+
+                  µˆa† −νˆa                    µˆa −νˆa†
+  ⟨ˆp2⟩= −⟨0| ! (µˆa† −νˆa)(µˆa† −νˆa) + (µˆa −νˆa†)(µˆa −νˆa†) −2(µˆa† −νˆa)(µˆa −νˆa†) −1" |0⟩
+
+                 only keep %𝑎%𝑎" (antinormally ordered) terms
+
+ ⟨ˆp2⟩= −⟨0| ! −νµˆaˆa† −µνˆaˆa† −2ν2ˆaˆa† −1" |0⟩
+
+       +  +   + 1 ⟨ˆp2⟩= νµ  µν   2ν2
+
+       +      + ⟨ˆp2⟩= νµ  µν −2ν2   µ2 −ν2
+
+                                                                                                                                                                                               14
+
+====== PAGE 15 ======
+Squeezed vacuum state
+Variance
+
+  ⟨ˆp2⟩= (µ + ν)2                                           𝑝
+
+  ⟨ˆp2⟩= (cosh r + sinh r)2
+
+  ⟨ˆp2⟩= e2r                                                                       𝑥
+
+    var (p) = ⟨∆ˆp2⟩= ⟨ˆp2⟩−⟨ˆp⟩2 = e2r
+
+      For the vacuum state: var (p) = 1          After applying squeezing operator to vacuum:   var (p) = e2r > 1
+
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Squeezed vacuum state
+Variance
+
+
+  Uncertainty principle:
+                 ⟨∆ˆx2⟩⟨∆ˆp2⟩≥1
+
+               e−2r      var (x) =                            var (p) = e2r
+
+           ⟨∆ˆx2⟩⟨∆ˆp2⟩= e−2re2r = 1
+
+
+      Squeezed states are minimum uncertainty states
+
+                                                                                                         p. 310 Bachor, Hans-A. / Ralph, Timothy C.
+                                                                  A guide to experiments in quantum optics (2019)
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Generalised squeezed states
+
+
+             |α, ζ⟩= ˆD(α) ˆS(ζ) |0⟩
+
+
+     displacement operator            squeezing operator
+   ˆD(α) = eαˆa†−α∗ˆa     S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"          𝑝
+                                                                𝜙
+                      =                                     ζ   re2iφ
+
+          ⟨ˆx⟩= α + α∗= 2Re(α)
+          ⟨ˆp⟩= −i(α∗−α) = 2Im(α)
+                                                                      𝑥
+    From the notes:
+     ⟨ˆx2⟩= |µ −ν|2 + (α + α∗)2
+
+====== PAGE 18 ======
+Photon number distribution
+
+
+  In the photon number basis:
+
+                                                                                Photon number distribution of a squeezed
+                                                                                            vacuum.
+
+      squeezed vacuum only contains photon pairs
+
+     Probability of detecting a pair of photons
+
+    Photons are created in pairs: each pump photon is converted into two
+     signal photons of half the pump frequency
+                                                                                                                              p. 59 Leonhardt, U. Essential Quantum Optics From
+                                                                                          Quantum Measurements to Black Holes (2010)
+   Due to detection inefficiencies sometimes only one photon of a pair is                                                                                                                    (Data: Akira Furusawa and Hidehiro Yonezawa.)
+    observed. This can be modelled with a beam splitter before the detector.
+
+   Odd photon numbers occur with non-zero probability
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+How to generate squeezing
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Two-mode squeezed vacuum states
+
+                                            𝑝
+•     If we combine two squeezed vacuum
+    states, with opposite squeezing
+   parameters, on a 50:50 beam splitter, the
+   output will be the entangled two-mode                                                      𝑥
+   squeezed vacuum state (TMSV)
+                                                   oppositely
+•   This state has quadrature correlations as      squeezed
+    well as photon number correlations          vacuum                                              50:50 beam                                                                                              entangled                                                    states        𝑝                                              splitter
+
+
+                                                      𝑥
+
+    •   This state is maximally entangled only in the limit as 𝜆→∞ (but this
+        limit is not physically achievable as it requires infinite energy)
+
+====== PAGE 21 ======
+Summary
+What we talked about today…
+
+
+                                                                              Squeezed
+                                                                                           quadrature
+         The squeezing operator is defined as:
+              S (ζ) = exp !! ζ∗ˆa2 −ζˆa†2" /2"
+
+                                                         𝑝
+          Squeezed vacuum state:
+                    |ζ⟩= ˆS(ζ) |0⟩
+
+           General squeezed state:
+                         |α, ζ⟩= ˆD(α) ˆS(ζ) |0⟩                                  𝑥
+
+         Squeezed states are minimum uncertainty states
+                  ⟨∆ˆx2⟩⟨∆ˆp2⟩= e−2re2r = 1

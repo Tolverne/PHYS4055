@@ -1,0 +1,664 @@
+Source: source_material/lectures/slides_and_handouts/PHYS4055_Week9_annotated.pdf
+Pages: 27
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+      PHYS4055
+
+Atomic physics and quantum optics
+
+          Week 9
+
+
+        Jacinda Ginges
+
+        j.ginges@uq.edu.au, room 330 Physics Annexe
+
+====== PAGE 2 ======
+In these lectures, we will look into:
+
+  Hyperﬁne structure, in more detail•
+  Isotope shift•
+  E1 matrix elements, Einstein A coeﬃcients, lifetimes•
+  Allowed and forbidden transitions•
+  Stark shift and electric polarisability•
+  Zeeman shift — weak and strong ﬁelds•
+
+====== PAGE 3 ======
+        Hyperﬁne structure (hfs)
+                                                on electron  space
+                                                 acts           nuclear  space.
+                                                                   acts  on                               ↓                                 N
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .                 - a  scale                                                      productHyperﬁne structure:                                                             −q                                Hhfs = ∑ hhfs(ri) = ∑ (−1)qTkqUk                                                                               i               kq                         R-rach of
+                                                                                       Hen son
+                                                                                  −q + . . .                              = ∑ (−1)qT1qU1                                                                −q + ∑ (−1)qT2qU2
+                                                              q                    q
+
+         - nuclear magnetic dipole moment with magnetic ﬁeld of electrons; k = 1
+         - nuclear electric quadrupole moment with gradient of electron electric ﬁeld; k = 2
+         - nuclear magnetic octupole moment with magnetic ﬁeld of electrons; ….. k = 3
+
+
+ Due to coupling of I and J, the atomic state is deﬁned in terms of the total
+                                     ia                                                                                               . angular moment F and its projection M,   |(IJ), FM⟩
+                                                          Let                             -       orderperturbe
+ Energy shift due to hfs:  ΔEhfs = ⟨(IJ, FM)|Hhfs|(IJ), FM⟩
+
+                                                     (this will be an exercise for you in the next assignment!)                    = . . .
+  ->                                                         buj  symbol                                                          I  J F                    = (−1)I+J+F                                                               moment                    {J   I  k}⟨J∥Tk∥J⟩⟨I∥Uk∥I⟩--nuclear
+                                                                     n =    1
+                                                                                                                                                                                                        &                                     M                             1      1 3K(K + 1) −4J(J + 1)I(I + 1)                                                                                                                           = 2                                                                                          R                                                         +...                    =  KA +                      B           Q      ,
+                             2      2      2I(2I −1)2J(2J −1)                   = k =3      -                  1
+                   mag                   ↑electric                                                 quadrup
+                                        dipole
+
+====== PAGE 4 ======
+                                                 F
+                                                    -                  (2)~
+                                                               + -                                                       ~                                                                   operation
+
+
+                                                                                                  -                                                Partyine-read  A - t        Hyperﬁne structure (hfs)
+                                                         no      ?                             why      E1
+       a  b  c                                         = 0Here:              denotes a 6-j symbol,            [NEIT
+       d  e   {    f}                                                            to                                                 due                                                                         parity
+                                                                    conservation
+                                   timeswit                                                                 ,               &     K = F(F + 1) −J(J + 1) −I(I + 1)
+                                                                             invariance.
+          μ                                                                  through                                           -                                      is magnetic dipole hyperﬁne constant,     A =   ⟨JJ|T1 |JJ⟩                        0                                                          searching             IJ
+                                                                    for these!
+                                       is the electric quadrupole hyperﬁne constant.     B = 2Q⟨JJ|T2 |JJ⟩                        0
+
+ For       there are         levels.     I ≥J        2J + 1   E
+ For       there are         levels.     I < J         2I + 1
+
+ The energy splittings are found from the diﬀerences between the neighbouring energy
+                      there is just one splitting, with shifts. For J = 1/2
+                     δEhfs = ΔEhfs(I + 1/2) −ΔEhfs(I −1/2) = (I + 1/2)A
+
+====== PAGE 5 ======
+        Hyperﬁne structure (hfs)
+
+
+Remember:
+
+      vector in electron space must point along total electron angular momentum J ;   •
+
+      vector in nuclear space must point along total nuclear angular momentum I .   •
+
+For magnetic dipole:
+                                         (IllulF]          hhfs ∝I ⋅J = AI ⋅J
+                                     251145)
+                                                                                   .    ⇒  ΔEhfs = ⟨hhfs⟩= A⟨I ⋅J⟩= KA/2
+                                          1 52                                                         8,
+Much simpler way to ﬁgure it out!                                        -                                                                                     . My                                                 (                                                           m, g                                                 (
+                                 _>h Ji +JuDiﬀerent hyperﬁne structure for isotopes with diﬀerent nuclear spin I.        15, -5)
+
+Exercise: What are the angular momentum requirements for I and J in order to observe
+the eﬀects of the nuclear moments through the hyperﬁne structure?
+                                           to  contribute      I 5,                                                                                                                ,    I                                     dipole           (1) :          For                        magi
+
+                                                                      = 2 :  I                                              R              ,-                            electric  quadruple
+
+
+                                                                    ·                                                                                                                                                                           .        etupule                        =                    Wag                       R  3    :  =     , 53
+
+====== PAGE 6 ======
+                 Isotope shift
+
+Consider an atom with a nucleus with protons Z and neutron N. There is often more than 1
+possible isotope that may be experimentally studied. The isotope shift is the diﬀerence in the
+energies of the states between an isotope with neutrons N' and that with neutrons N.
+
+
+There are two sources of this difference: the difference in the masses of the nuclei; and the difference
+in the volume of the nuclei.
+
+
+Here, we will consider the most signiﬁcant of these effects for heavy atoms — the "volume" or "ﬁeld"
+shift. This change in the volume may be parametrized by the differential mean square nuclear charge
+radius,           ,        δ⟨r2⟩
+                                                                                               .                             δE = −Fδ⟨r2⟩
+
+                                                                                                                                                   ,Let's model the nuclear charge distribution as uniform. Then within the nuclear radius, r ≤R
+                                            3       r
+                                                                                                                          .                                        V(r) = −Z [ −1      2]                                  R      R)                                            2  2(
+Varying the potential with respect to the nuclear radius leads to
+                                      3Z        r
+                                                                                                                           .                                       δV(r) =                                             [1 −( )2]δR                                        2R2     R
+The nuclear radius and the mean square nuclear charge radius are related by                            , so                                                        ⟨r2⟩= (3/5)R2
+                                 , and thereforeδ⟨r2⟩= (6/5)R δR
+
+                                                     =                                   5Z        r                                            <SV]                                           SE                                  δV(r) =                      −F(r)δ⟨r2⟩                                         [1 −( )2]δ⟨r2⟩=                                    4R3     R
+                             .                              =-with F = ⟨F(r)⟩                                               =   [Fry
+                      -                                                             FS[r7]
+
+====== PAGE 7 ======
+      Absorption and emission of radiation
+
+So far we have considered stationary atomic states. Now we will consider transitions between
+diﬀerent atomic states due to the absorption or emission of electromagnetic radiation. We will
+touch on absorption and stimulated emission, and focus on spontaneous emission of radiation.
+
+In these processes, we need to consider not only conservation of energy — with the photon
+adding or removing                  of energy — though also conservation of angular            ℏω = |Ei −Ef|
+momentum. Therefore, the polarisation of the radiation will need to be taken into account.
+
+We would like to understand: which are                          Rat
+the transitions that are allowed?
+
+That is, what are the quantum numbers
+that allow a transition to proceed or
+not, and what else is needed to
+determine the probability of the
+transition?
+
+How do we determine the lifetime of
+the state?
+
+ E.g., lifetimes of the P states of the
+ radium ion (right ﬁgure) are on the
+ order of ns, while for the D states it is
+                                                              PRL 135 073001 (2025)
+ 107 times longer!
+
+====== PAGE 8 ======
+     Absorption and emission of radiation
+
+
+Absorption
+
+Consider a collection of atoms in equilibrium with the electromagnetic radiation ﬁeld having
+spectral density function         .                    ρ(ω)
+
+   — photon energy per unit volume in interval ρ(ω)                            dω
+
+ Probability per second of absorbing a photon and leading to a transition of the atom
+ from state i to state k is
+
+         wabs                 ik = Bikρ(ω)
+                                                Ek
+                       hu
+ where B is the Einstein coeﬃcient                                             hω = Ek −Ei                  my
+ for absorption,
+                                                        Ei
+
+====== PAGE 9 ======
+     Absorption and emission of radiation
+
+
+Induced or stimulated emission
+
+The radiation ﬁeld may also induce atoms in an excited atomic state k to emit a photon with
+energy            and to drop to a lower state i.     ℏω = Ek −Ei
+
+ Here, the photons have the same
+ propagation directions.
+                                                 Ek
+
+                          tw                                            mus   my
+ The induced emission probability may             m
+ be given by
+                                                        Ei
+        wind               ki = Bkiρ(ω)
+
+ where B is the Einstein coeﬃcient
+ for induced emission.
+
+====== PAGE 10 ======
+     Absorption and emission of radiation
+
+
+Spontaneous emission
+
+Even without the radiation ﬁeld, an atom in an excited state k may drop to a lower state i,
+emitting a photon of energy                       .                  ℏω = Ek −Ei
+
+ In this case, the photon may be
+ emitted in any direction.
+                                                 Ek
+
+ The probability for spontaneous
+ emission is given br
+                                                        Ei
+       wsp       = Aki               ki
+
+ where A is the Einstein coeﬃcient
+ for spontaneous emission.
+
+ This process depends only on the wave functions of the states i and k of the atom
+
+ The lifetimes of atomic states are determined by this process
+
+====== PAGE 11 ======
+     Absorption and emission of radiation
+
+Relationship between Einstein coeﬃcients:
+                                                      Ek
+                           gkBki = giBik
+
+                       −μ3                                                              Ei                             Aki =      Bik                              δ2c3
+
+  and   give the degeneracy of the states. E.g.,                      , for the state i with total gi     gk                                               gi = 2Ji + 1
+angular momentum   with magnetic substates with the same energy                         Ji
+
+For              , probability of absorption and induced emission is the same     gi = gk
+
+Population inversion is required to make a laser. This corresponds to there being more
+atoms in the upper than the lower state                                         state                                                   short-lived              umping                                  Es &
+
+                                                            state                                                         metastable
+           Exm0-e                                                                laser                              uns                                          I-                                   Es
+
+====== PAGE 12 ======
+          EM transitions
+
+
+To determine atomic transition probabilities, time-dependence needs to be considered.
+
+The transition amplitude from the initial to ﬁnal states may be given by
+
+                                                                 for absorption of radiation                                   Tfi = ⟨Ψf|HI|Ψi⟩
+
+                                                                for emission of radiation                                   Tfi = ⟨Ψf|H† |Ψi⟩                                                                   I
+
+where                               is the time-dependent interaction Hamiltonian .       HI(t) = eiHt/ℏHIe−iHt/ℏ
+
+The probability     for a transition involves the square of the amplitude           .                wfi                                                      |Tfi|2
+
+                                                                                           -
+
+                                                                                                                     L
+
+                                                                                                       "
+
+                       John                         need  through
+                                                                                                                                                                                             L    derivation                                      interestedI                                                  if
+
+====== PAGE 13 ======
+          &
+
+              E1 transitions
+
+   Electric dipole (E1)
+
+  The dominant transition is the electric dipole transition. It corresponds to the electric dipole
+  operator              , having matrix element        d = er
+  Bdfi = ⟨πf|dz|πi⟩= e⟨πf|z|πi⟩
+
+  Allowed between states:                                           contesice    to    spherical  tenso                       from
+    Reminder               :     going                            = 0
+                                                                                                                                ,                  Pq(g      +1)
+
+
+                                    +                                       (Da   iDy)               operators
+
+                         =                         Do      Dz
+
+                                   D.          1    =  (Du-iDy)
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ·
+                                       &            to  1.                                ca-     =   rach !   tensor                                                   by                     -                                                        up                                           change
+
+missTransition probability·   IT
+                                                                                                                                                                                                                                                                           !                                           must   have                                                                        Opposite  vanity                                            ?    -crity
+
+====== PAGE 14 ======
+  Opposite   parity. ?
+
+            &       non-rel .       single-relation If
+                                                                is   dear ,
+
+                                                                                                                                                                                                        .         then         parity  states     ,             opp
+
+                                                                                               1                                       3                     =               is  odd  ifl                                                                  , 5,                                                            ,
+   Parity
+              -0  2  ,                        if 1               ,    4...
+               even
+                                                                                                                                                                                                                                                                                                             .   parity.                  have   opp  So     s  &                 p
+
+                      =               P    1-ye  =>       panity
+                          old                     = -1     -        p
+                            =  +  1    even                     p
+
+            =                        Yea ↑alm (r , 0, 4)                                   (0,c)         Ref
+                Pr
+
+                     x - -x                                                                 :  Pacity   operator                      -
+                                y +   y
+                    - = z                        -
+
+                      N - v=   in   spheried   coordinates :
+                             N- O                        0 -
+             - 0                  E                            +π           =f                      ,                              & -> 0            p+i)Yem (n                   1)"Yea (0,4)
+
+====== PAGE 15 ======
+                   the  1                             electron           for  were   Parity
+
+    =                                       ... ser       P        ( 1) (19- (e)
+
+
+      =                  N  electroni      fili               ,
+
+                              total   orbital Note    :
+
+                                                                                                                                                                                                                                 -    Eli
+                              angeben  no me
+
+                                         of                                is  the                                                         :  what            posity  Question
+                                = 1                                                                  1
+                       X
+                     =                                        (1)   15252pss
+⑧                                          even                                                      ,   [Nesp         ,   [Nejsd
+ -
+        [Ne]         (-1                                  of  Na ?                                  states
+
+        -                       =                     -                 7          =   (        (               1)         1))
+
+       even
+
+  ·    [Nej3s2                        ,   [Nej3sip                  ,   (Nej3s3d
+
+
+        +                                    of Mg ?
+                                    ,        12                     states
+   (   -b)
+
+            -
+                               = -                                           =     1                 =   1       (             1)0 + 0               (                                                                                                                                       1       ( -1)0 + 2                                1)0 +   !
+
+====== PAGE 16 ======
+                                                                                                                                                                                                                              .  -transitionprobability
+
+
+                                             ->  b      &              emission   state  a
+                                                                                 &
+
+                                                                                                                                                                                                          .Spontaneous            SE1-line  strength
+
+                                                     unitsAal=  atomic
+          L
+                 o
+
+ =_        zousisxos "
+                   ↑
+
+                                                                                                                                                                                                                                                                                                                    .         X  in  1   (10-m)
+
+====== PAGE 17 ======
+        M1 and E2 transitions
+
+
+Magnetic dipole (M1)
+                                                       radial                                                        no
+                                  SMI                dependence
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ↑
+
+                                                        +  1                                      2jaoperat
+                                       P                        JP =                     d        XSMT                        69735
+                                          Mala                                                    :                                   same                                            Anbla"                                                            parity         ,   Selection   ruses                                                                                                                                     -            /jb jatl             Ija                           ;                                     in                                                    forbidden
+
+                                                                                                                                                                                                                                                                                                                                               .                                                                   non-rel  treatment.Electric quadrupole (E2)                           Y(n)      &
+                                    SEl
+              =    2)  Operator Q                                            Approx value   for
+
+                                           X   in                                                                            optical
+                                                     transition?  probability
+                                                                         -         = 5000                                             500mm
+
+                                    aff  . :A                                              ·jojs                                                             to sto
+
+
+                                                                   : Selection  rules                                               same                             =               jb jath ;                                                           parity.                   /ja-2/
+
+====== PAGE 18 ======
+               Lifetime of states
+
+
+                             from    state  a:                               of                         decy     Total   probability
+
+                                             +                              +                + -                         Aan  Aas                   Aar
+
+            & Aab
+                                 b
+
+                                   a   is   -     lifetime   of    state
+
+             Ta =And
+                                                              b
+
+
+  =thay                  tant  z·T3                                                                                state-4                           from                                     El  transitions         a                                                 are                      If there
+                                           don't  need    to  consider smaller M1 , E2.                      then
+
+====== PAGE 19 ======
+    Atom in external electric ﬁeld: Stark shift
+
+                     = -       =                   H               interaction   E  Perturbing         Si
+                                           ↑                              T externat                                                   ↑                                                                       homogeneous                                     electric                                                      over  in         electric                                                                           field.
+                                        dipole                                                           electrons
+                                           operator                                         atom                                               in
+
+
+                                                           direction   :                                           field           axis   to   be            electric  Choosea                 along
+
+                                               =  -                   H    DzE             I
+
+                      AE"   [U5m/HIW5M)                correction            =  First-order
+
+                                               E
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   .               ==                                 (rJmIDz/tim)
+       ~-
+                                                               to                                                     due                                                      = o
+                                                                           rules                                                               selection
+
+
+            shift  in the  2nd order
+=> Energy
+
+====== PAGE 20 ======
+  =>           UTMIDEVMTO AErm=
+
+
+                                elements   it                   the   matrix
+        evaluating  By
+
+     found that   is
+
+        j
+                                                                                                                          ,
+                 a                 j' = 5
+                                                                                                                                                                                                              ,    (rzulDz8'sm)               St-my                                (52 - M22    , j =5+
+
+
+                                *
+               shift  and   Split -   the   levels - >
+         two-fold degeneracy    (states   with
+                                  -    have               m  &  M
+   with             projections
+
+                                                         :        same   energy)   the
+
+                            +           &"   -          =            M2)   >        AEosm    (ag5  by
+          & T
+                             constants
+
+*                               = 0  & 5 = z     .           ↓  for   levels with  5 I   Excep
+
+                                 = 0
+                                                                                                                       · ↑Except   for   level  M             -
+
+====== PAGE 21 ======
+Atom in external magnetic ﬁeld: Zeeman shift
+
+
+                                                              removes                  of                  anagnetic  field   completelyThe      application
+                    wrt .  M    unlike   an   electric                    of   levels                          ,
+ the   degeneracy
+
+ field         .
+
+                                a              field                                 with                      an  atome            magnetic                       of the   interaction
+                            magnetic moment                              atom                                          of           external
+   is            by              &  -            field.      given                                                                                                                                                                                                                   .       magnetic                         =                         Her         B                       -M
+
+                                                      <            Ls            and  AEzE  )AEso-  Consider                                                                           ,                     coupling
+
+                                                                                                                                                                                                                   ·                 value   in  the   basis  =>  Expectation                    18LS5M)
+                                                               electron    is                              moment  of   an                        the The              of                                magnetic          operation                                                 Orbital
+                               Y          spin                           Y
+
+                    =  -                                    +             with                                                                                        95                                                                                                         ,       ge       ,          M     Mp(geh   g(s)              = 1    : 2  .
+
+                                                                               is    : The           moment  of  the   atom                                                          in  state  J5      magnetic
+
+                            =             M  -Mig-
+
+====== PAGE 22 ======
+                                    contribution  from       we  have   omitted  the  Here
+                                                      smaller
+                  as   it is  orders of magnitude   the   nucleus,
+                   electronic  part  (Ma Ma)   than   the
+
+                                 +        Si            =      gs      ->           geFli      go
+
+
+                            =    +
+              =    + 25    I   3                 .              1
+
+                     -       =                  3    .  ->      (g +   1) I
+
+              =                          (5                           :5)         (55) -   195-1)
+
+                          +                                   ·
+                                                                                                                                                                                                                                                                                                    .            -       =                  (5 2)   12 2) -    +       (57      (9      1)
+
+                          +  +                   2X                -       =  S(s   1)     ->
+         +        (9                     1) (52)
+
+                                                               -                               +  - S(s+ 1)                                                                             1)                        [J(5            2(i)
+
+                                               -
+                 =         + 1 + s(s                 [ f(5           +1)  2(2+1)
+
+-    =      1 +5    go          +)SCST-CT
+
+====== PAGE 23 ======
+      =
+=> 9 3+
+
+
+   =>  He =              =      Ms B                     Mig-    Mig
+
+                       where  nucha          the   situation
+this   is
+                                        internation
+                    the                 on        hyperfine
+   Spin E =O   ,
+   is   neglected.
+
+           effect  and                          hyperfineman
+                stimature  :
+  -
+
+         consider  two  cases   :  We
+
+          field    :  AEZEAEAFS Weak
+
+            state      is  defined   Here  ,                        by
+
+           #5              1 V   FMF)     -
+
+
+            are                  numbers ,  F ME                 ,               quantum                good
+
+               or
+                                                                                                                            .  not  Ms             Mc
+
+====== PAGE 24 ======
+  And       reator  in  the   system    is        any
+                                                                                         ,      before).                   E    /not I  directed   along                   as
+
+ -        =             = >         -MBSFE   -M1955     M
+
+                 =
+
+                                                                                                                                                                                     .  =>      (FE]   g (E)     "go
+
+   -        =   >    gr 95
+
+
+=  He = -M   =                                                 -                B   MsgFE B
+
+                     FzB                              .                  =        =                Mag
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ·                     defines z-axis)                 (B
+         +-IF YOUgr=
+
+                                                                                                             :   Zeema  shift=>              AEze"MageBMa
+                      + 1  levels.  Splits  into 2F
+
+====== PAGE 25 ======
+         field       :           AEzEAEHFS Strong
+
+               a F  no                    good  quartium        longer
+ number    .   Define    state   by
+
+                       include
+     = M 5 (v     =  Mj) ,   and
+                                                                                   :
+                interaction   perturbatively  hyperfine                             hypertime                                 magnetic
+                                      constant
+                             ↓
+
+                    A           (E] AEzE = MagzMiB +
+                                 ↑
+                        averaged  over
+                           state   10 IM+5 M5]
+
+        =                    + A Mems       Mig+ MFB
+
+
+                                 ofNote :n & y   components
+
+
+                                 +                          Ez5z                                                  .    =  In 5x +  Eg5g        E F
+                  around zexis     37  .        tozor                             ,  average
+
+====== PAGE 26 ======
+                                                                                           (M-, ME
+
+                    55  I=
+                                                 ,       #R3
+
+                    (F, MF)
+
+
+                                                             *States   :                          12)Y
+F =z
+                                         =       = S                                                               (2)(4)
+
+F =  1
+
+                                :  25 +  1                          .      #states
+
+                                state  F  : Li38
+
+                                                                         credit: Wikipedia
+
+====== PAGE 27 ======
+After these lectures, you should understand
+
+   the mechanisms leading to the hyperﬁne structure and•
+   the isotope shift
+
+  E1 transitions, Einstein A coeﬃcients, lifetimes•
+
+   allowed and forbidden transitions•
+
+   Stark and Zeeman shifts•
+
+and be able to do theory manipulations related to these

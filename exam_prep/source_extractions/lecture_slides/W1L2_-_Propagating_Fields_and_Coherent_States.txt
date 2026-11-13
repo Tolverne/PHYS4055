@@ -1,0 +1,546 @@
+Source: source_material/lectures/slides_and_handouts/W1L2 - Propagating Fields and Coherent States.pdf
+Pages: 29
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 1, Lecture 2
+Propagating Fields and Coherent
+States
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4 pm
+
+
+ Notes 1.2, 1.3, 2.2 and 2.3
+ Bachor & Ralph, Chapters 2.1, 4.2.2 and 4.4.1
+ Walls & Milburn, Chapter 2.3
+
+====== PAGE 2 ======
+In this lecture…
+
+   Multimode         Propagating                                      Coherent states   quantization               fields
+
+                                                                                                                                                                                                                          2
+
+====== PAGE 3 ======
+Multimode
+quantization
+
+====== PAGE 4 ======
+From one mode to many modes
+
+ A general electromagnetic field contains many modes:
+
+           !
+                         A(r, t) =    qj(t)uj(r)
+                                                    j
+
+
+ Each mode 𝑗 has its own:
+  •  Spatial profile 𝐮𝑗𝐫
+  •  Angular frequency 𝜔𝑗
+  •  Polarisation
+  •  Time-dependent amplitude 𝑞𝑗𝑡
+ The modes are orthonormal:!
+                             ε0uj(r) · uk(r) d3r = εjk
+                          V
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Each mode is an independent oscillator
+
+
+The classical field Hamiltonian becomes
+
+                                        1
+                HEM =      +     q2                                                       j        j  j                                  2p2  2ω2                        "1       #          !j
+
+ Canonical quantization gives
+
+                           qj −→ˆqj,     pj −→ˆpj
+
+ The operators satisfy
+
+                                                 [ˆqj, ˆpk] = i¯hδjk
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Creation and annihilation operators for each
+mode
+
+ Each mode has its own creation and annihilation operators:
+
+                                                             i
+                                            ˆaj =           ˆqj +             ˆpj                     !ωj2¯h
+                   " 2¯hωj
+                                                            i
+                                          ˆa†                  =           ˆqj −             ˆpj                                       j                     !ωj2¯h
+                   " 2¯hωj
+ They satisfy
+                                                   [ˆaj, ˆa† = δjk                                              k]
+
+ and
+
+                            = 0                                      [ˆaj, ˆak] = 0,       [ˆa†j, ˆa†k]
+
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+The multimode Hamiltonian
+
+
+  Define the number operator for mode 𝑗:
+
+                                                       ˆnj = ˆa†jˆaj
+
+ The multimode Hamiltonian is
+
+                                              1
+                         ˆHEM =       +                                                ¯hωj   ˆnj                                              2                           "    #            !j
+
+
+ The quantized vector potential is
+
+                                                               ¯h
+                           ˆA(r) =                   ˆaj + ˆa†j  uj(r)                                    2ωj                                               j "                                 #     $          !
+
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Multimode number states
+
+
+A multimode number state is written as
+                        |n1, n2, n3, . . .⟩= |n1⟩⊗|n2⟩⊗|n3⟩⊗· · ·
+
+
+Each number operator acts on its corresponding mode:
+
+                         ˆnj|n1, . . . , nj, . . .⟩= nj|n1, . . . , nj, . . .⟩
+
+
+The multimode vacuum is
+
+                                             |0, 0, 0, . . .⟩
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Examples of multimode states
+
+ For two modes:
+                                   |0, 0⟩= vacuum
+                                   |1, 0⟩= one photon in mode 1
+                                   |0, 1⟩= one photon in mode 2
+                                   |2, 0⟩= two photons in mode 1
+                                   |1, 1⟩= one photon in each mode
+
+ The total photon-number operator is    !
+                                                 ˆN =                                                                            ˆnj
+                                                                    j
+
+ For a multimode number state,
+                                                 ˆN|n1, n2, . . .⟩=      nj       n2, . . .⟩
+                                                           j               #  |n1,
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Some points on the multimode field
+
+ For a multimode electromagnetic field,
+
+                                            1
+                                ˆH =       +                                   ℏωj   ˆnj                                            2                          "    #           !j
+
+ The multimode vacuum is      |vac⟩= |0, 0, 0, . . .⟩
+
+ Its energy is                           1 !
+                                Evac =      ℏωj                                     2
+                                                            j
+
+
+ Because there are infinitely many modes,
+                                   Evac →∞
+                   !
+                                                                                          : ˆH :=                                                                       ℏωjˆa†jˆaj In quantum optics, we often normal order the Hamiltonian:
+                                                                                      j
+                                                                  : ˆH :       0                           so that ⟨vac|    |vac⟩=                                                                                    10
+
+====== PAGE 11 ======
+Propagating fields
+
+====== PAGE 12 ======
+Plane-wave basis
+
+
+ For a standing-wave mode,
+                             ¯hωm                   ˆE(r, t) =         em ˆam(0)e−iωmt + ˆa†          sin(kmz)             " ϵ0V                m        !            #               m(0)eiωmt$
+
+ For freely propagating light, use travelling-wave modes:
+
+                           ¯hωm
+                ˆE(r, t) =            um(r)ˆam(0)e−iωmt + u∗m(r)ˆa†            " 2ϵ0               m       !        #                          m(0)eiωmt$
+                            em
+                         with   um(r) =     eikm·r
+                    √ V
+
+                                        2π
+ For a periodic quantization volume 𝑉= 𝐿3, km =    (mxˆx + myˆy + mzˆz) ,    mx, my, mz ∈Z
+                                L
+ Standing and travelling waves are different mode bases for describing the
+ same electromagnetic field.
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+A single travelling mode
+
+ Consider one mode with:
+ •  Angular frequency 𝜔
+ •  Wavevector 𝐤= 𝑘-𝐳
+ • A single transverse polarization 𝐞
+ •  Phase 𝜙= 𝑘𝑧−𝜔𝑡
+ For propagation in vacuum,
+                          ω = ck
+
+
+ The electric-field operator is
+
+                            ˆE(z, t) = eE0 ! ˆaeiφ + ˆa†e−iφ"
+
+             ℏω
+ where E0 =      ! 2ϵ0V
+
+ The mode operators satisfy            [ˆa, ˆa†] = 1
+
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Electric field and vector potential
+
+
+ In the Coulomb gauge, for a source-free transverse field,
+
+                                                          t)                               −∂A(r,                             E(r, t) =
+                                           ∂t
+
+ Therefore, for our single mode,
+                           −iE0 e                             ˆA(z, t) =        ! ˆaeiφ −ˆa†e−iφ"
+                            ω
+
+
+ And we can see that                2iE20     iℏ
+                                             [ ˆE, ˆA] =    =   = 0
+                            ω      ϵ0V̸
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Gaussian mode
+
+
+ A plane wave extends infinitely in the transverse direction and is therefore an idealization.
+
+ Real laser beams have a finite transverse width.
+
+ The simplest model of a finite-width laser beam is a Gaussian mode.
+
+ The beam is narrowest at the beam waist.
+
+ The wavefront is approximately flat near the waist.
+
+                                                                                                                 spherical
+                                                                                     wave fronts
+                                                                                                                                 in far field
+
+                                                          Flat wave fronts              Curved wave fronts
+                                                              at waist                 away from waist
+
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Localized Pulse
+
+ Consider a single frequency and single polarization mode plane wave
+ propagating in the z-direction
+
+ But single frequency implies that the pulse length is infinite
+
+ Consider instead a Localized pulse
+
+
+                                                                                               spherical
+                                                                       wave fronts
+                                                                                                            in far field
+
+                                       Flat wave fronts              Curved wave fronts
+                                           at waist                 away from waist
+
+ To construct a pulse we need multiple frequencies – how do we model this?                                                   16
+
+====== PAGE 17 ======
+Continuum of frequency modes
+
+  In free space, frequency modes form a continuum.
+ A pulse travelling in the 𝑧-direction can be written as
+
+              ˆE(z, t) = E0em  dω  F(ω)ˆaωei[k(ω)z−ωt] + F ∗(ω)ˆa†                      !                               "                             ωe−i[k(ω)z−ωt]#
+
+  𝐹(𝜔) is the spectral mode function.
+  -𝑎𝜔annihilates a photon at frequency 𝜔.
+
+  Normalization and commutation relation
+                                      !
+                                       dω |F(ω)|2 = 1  The spectral mode function is normalized:
+
+  The continuum operators obey                              The Dirac delta is the continuum                                    ! ˆaω, ˆa†ω′ " = ω(ω −ω′)    equivalent of the Kronecker delta.
+
+  Different frequency modes are independent.
+
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Pulse-mode operator
+
+Define an annihilation operator for the complete pulse:
+
+                             !
+                                 ˆaF (z, t) =   dω F(ω)ˆaωei[k(ω)z−ωt]
+
+
+It obeys the usual single-mode commutation relation:
+
+                                 ˆaF , ˆa†F =   dω |F(ω)|2 = 1                             #                       !      "
+
+The field can therefore be written compactly as
+                                     ˆE(z, t) = E0em !                                                               ˆaF + ˆa†F "
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Coherent states
+
+====== PAGE 20 ======
+Why introduce coherent states?
+
+
+ Number states describe states with an exact photon number:
+
+                                   ˆn|n⟩= n|n⟩
+
+
+ However, a number state has no definite optical phase and its average electric field is zero:
+                                       ⟨n| ˆE(t)|n⟩= 0
+
+
+ Coherent states provide the closest quantum description of a classical electromagnetic wave.
+
+ An ideal, stable laser field is approximately described by a coherent state.
+
+ In a coherent state,
+
+                          ⟨α| ˆE(t)|α⟩= E0 ! αe−iωt + α∗eiωt"
+
+ Equivalently,
+                          ⟨ˆE(t)⟩= 2E0|α| cos(ωt −arg α)                                                                          20
+
+====== PAGE 21 ======
+Definition of a coherent state
+
+
+ A coherent state is an eigenstate of the annihilation operator:
+
+                                      ˆa|α⟩= α|α⟩
+
+ where  α ∈C
+
+
+ We can write   α = |α|eiθ
+
+  •  ∣α∣ determines the field amplitude and mean photon number.
+  • 𝜃= arg 𝛼 determines the optical phase.
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+Is it also an eigenstate of !𝑎†?
+
+
+A coherent state is not an eigenstate of the creation operator:
+
+                                                 ˆa†|α⟩̸ = α∗|α⟩
+
+
+However, taking the adjoint of
+
+                                 ˆa|α⟩= α|α⟩
+
+
+gives
+                                           ⟨α|ˆa† = α∗⟨α|
+
+Therefore:
+•  ∣𝛼is⟩  a right eigenstate of -𝑎.
+•  ⟨𝛼∣is a left eigenstate of -𝑎†.
+•  ∣𝛼is⟩  not a right eigenstate of -𝑎†.
+
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Coherent states in the number basis
+
+ Expand the coherent state in the number-state basis:
+                        ∞             !
+                           |α⟩=    cn|n⟩
+                                      n=0
+
+  Apply the annihilation operator:
+                      ∞            !
+                                        cn √n                            ˆa|α⟩=          |n −1⟩                                 n=1
+
+  Relabelling 𝑚= 𝑛−1,
+                    ∞           !
+                                 cm+1 √                          ˆa|α⟩=      m + 1 |m⟩                           m=0
+
+  Using -𝑎∣𝛼=⟩  𝛼∣𝛼,B
+                          cm+1 √ m + 1 = αcm
+  Therefore,
+                                  αn
+                                    cn =     c0
+                       √ n!                                                                                               23
+
+====== PAGE 24 ======
+Normalised coherent state
+
+Normalisation requires                            ⟨α|α⟩= 1
+
+
+Therefore,              ∞           ! |α|2n                       1 = |c0|2      = |c0|2e|α|2                                        n!
+                              n=0
+
+Choosing 𝑐%to be real and positive gives
+                                   c0 = e−|α|2/2
+The normalised coherent state is
+              !∞  αn
+                                       e−|α|2/2                       |α⟩=       √ n! |n⟩                                       n=0
+
+For example,                                         α2      α3
+                            e−|α|2/2               |α⟩=     ! |0⟩+ α|1⟩+ √ 2! |2⟩+ √ 3! |3⟩+ · · · "
+                                                                                                                                                                                            24
+
+====== PAGE 25 ======
+The displacement operator
+
+
+ The displacement operator is defined by
+                            ˆD(α) = exp ! αˆa† −α∗ˆa "
+
+
+ The exponent is anti-Hermitian:
+
+                               αˆa† −α∗ˆa = −  αˆa† −α∗ˆa                         !           "†     !          "
+
+ Therefore, D𝐷𝛼  is unitary:
+
+                           ˆD†(α) = ˆD−1(α) = ˆD(−α)
+
+
+ A coherent state is obtained by applying the displacement operator to the vacuum:
+
+                         |α⟩= ˆD(α)|0⟩
+
+                                                                                                                                                                                            25
+
+====== PAGE 26 ======
+Recovering the coherent-state expansion
+
+ Using the Baker–Campbell–Hausdorff relation,
+                                         e−|α|2/2eαˆa†e−α∗ˆa                            ˆD(α) =
+
+ Acting on the vacuum gives
+                          ˆD(α)|0⟩= e−|α|2/2eαˆa†|0⟩
+
+ because
+                                 e−α∗ˆa|0⟩= |0⟩
+
+ Expanding the remaining exponential,
+             !∞ αn
+                                    e−|α|2/2                     |α⟩=                  (ˆa†)n|0⟩
+                                              n!                                     n=0
+                       √ Using                                 (ˆa†)n|0⟩=   n!|n⟩
+             !∞  αn recovers                                      e−|α|2/2                      |α⟩=       √ n! |n⟩                                      n=0
+                                                                                                                                                                                            26
+
+====== PAGE 27 ======
+Properties of displacement operators
+
+The displacement operator transforms the annihilation and creation operators as
+
+                                      ˆD†(α)ˆa ˆD(α) = ˆa + α
+
+and
+
+                                    ˆD†(α)ˆa† ˆD(α) = ˆa† + α∗
+
+
+Two displacements combine according to
+
+                          ˆD(α) ˆD(β) = e(αβ∗−α∗β)/2 ˆD(α + β)
+
+
+Therefore,
+                         ˆD(α)|β⟩= e(αβ∗−α∗β)/2|α + β⟩
+
+                                                                                                                                                                                            27
+
+====== PAGE 28 ======
+Coherent states are not orthogonal
+
+
+ The overlap between two coherent states is
+
+                  ⟨α|β⟩= exp −|α|2 −|β|2 + α∗β                              !   2     2       "
+
+  Therefore,
+                                  |⟨α|β⟩|2 = e−|α−β|2
+
+
+ Consequences:
+  •  Different coherent states are not perfectly distinguishable.
+  •  Their overlap decreases as their phase-space separation increases.
+  •  Coherent states form an overcomplete basis:
+
+                          !                            1
+                                   d2α = ˆI                                    |α⟩⟨α|                        π                              C
+
+
+                                                                                                                                                                                            28
+
+====== PAGE 29 ======
+Summary
+
+The electromagnetic field can be described as a collection of independent modes.
+
+Each mode is quantized as a harmonic oscillator:
+
+                                            1
+                                ˆH =       +                                   ℏωj   ˆnj                                            2                          "    #           !j
+
+
+ Coherent states are eigenstates of the annihilation operator:
+
+                                  ˆa|α⟩= α|α⟩
+
+ Coherent states have a nonzero mean electric field and most closely resemble classical light.
+
+                                                                                                                                                                                            29

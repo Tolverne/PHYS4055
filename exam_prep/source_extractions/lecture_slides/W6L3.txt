@@ -1,0 +1,687 @@
+Source: source_material/lectures/slides_and_handouts/W6L3.pdf
+Pages: 37
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 6, Lecture 3
+Quantum Optical Metrology
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: This Week Thursday 1-2 pm
+
+ Bachor & Ralph, Chapters 10.3 and 10.4
+
+====== PAGE 2 ======
+Reminder
+
+Office hours will be held from 1.00 to 2.00 pm this Thursday (note change from previous weeks)
+
+Assessment
+
+Reminder that assignment 2 is due 04/09/26 at 4pm
+
+Seminar: coming up in Week 10 and 11
+
+Exam: The best way to prepare for the quantum optics part of the exam is with the tutorial
+questions, assignments and past exams.
+
+Thanks for exploring quantum optics with me!
+
+This lecture concludes both the quantum optics section and my part of the course. If you have
+any questions about anything we have covered, please don’t hesitate to email me.
+
+                                                                                                                                                                                               2
+
+====== PAGE 3 ======
+Recap: The Jaynes–Cummings model
+
+
+                                                                          cavity
+One two-level atom interacts with one
+ quantised cavity mode:
+
+                                                               two level system
+
+
+The interaction exchanges an excitation
+between the atom and cavity:
+                                                                      cavity
+                                                mode
+
+
+The total number of excitations is conserved:
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Recap: The Tavis–Cummings model and
+superradiance
+
+           What happens when 𝑵 atoms all couple to the same cavity mode?
+
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Quantum Optical Metrology
+
+Quantum limits, interferometry and squeezed-light sensing
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+What you will
+  learn today
+
+
+                            How to describe parameter estimation using
+                                      quantum states and measurements
+
+                             How to derive the quantum limit for optical
+                                              phase estimation
+
+                            Why squeezed light improves the sensitivity of
+                                                              real sensors
+
+                                                                                                                                                                                6
+
+====== PAGE 7 ======
+What is quantum metrology?
+
+Quantum metrology uses quantum systems as probes to estimate physical
+parameters as precisely as possible.
+
+                        1. Prepare the probe
+                  Choose a quantum state of light
+
+
+                             2. Encode the parameter
+                     The parameter changes the probe
+
+
+                                 3. Measure the probe
+                         Record a measurement outcome
+
+
+                                     4. Estimate the parameter
+                                      Infer its value and uncertainty
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Describing an estimate
+
+ An estimate has both a value and an uncertainty
+
+ θ: the unknown parameter
+  "𝜃: an estimate obtained from the measurement data
+
+ 𝑀: the number of independent measurements
+
+
+ An unbiased estimator satisfies
+                         = θ                            ! ˜θ"
+
+ Its precision is described by the variance
+                         ! ∆˜θ"2 = #! ˜θ −θ "2$
+
+
+                     Smaller variance means a more precise estimate.
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Encoding the parameter
+
+ The parameter is encoded in the probe state
+
+ Begin with a known probe state 𝜌0.
+ The unknown parameter 𝜃 produces the unitary transformation
+                         = e−iθ G                                                  ˆUθ        ˆ
+ The resulting state is
+
+                        =         †                                       ρθ   ˆUθρ0 ˆU θ
+
+ &𝐺 is the generator of the change.
+
+ Different values of 𝜃 produce different output states.
+
+                            ˆρ0                     ˆUθ
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+From measurement outcomes to an
+estimate
+
+                                                        Outcomes 𝑥1, … , 𝑥𝑀
+                       ˆρ0                     ˆUθ                         drawn from 𝑝𝑥∣𝜃
+
+  The Cramér–Rao inequality gives
+
+                                        1
+                       ≥                        ! ∆˜θ"2                              MF(θ)
+
+                      variance of
+                      estimated           number of
+                     parameter         measurements
+
+
+   𝐹(𝜃): Fisher information contained in the measurement outcomes
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Classical Fisher information
+
+ For a chosen measurement with outcomes distributed according to 𝑝𝑥∣𝜃,
+                                      ∂
+                    FC(θ) =   dx p(x|θ)     ln p(x|θ)                         !         " ∂θ         #2
+
+ •  Measures how strongly the outcome probabilities depend on 𝜃
+
+ •  Depends on the chosen measurement
+
+ •  Larger Fisher information allows a more precise estimate
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Quantum Fisher information
+
+
+The quantum Fisher information is the largest Fisher information available from the encoded state:
+
+A chosen quantum measurement 0Π𝑥produces the outcome probabilities
+
+                                         p(x|θ) = Tr                                       !                                                     ρθ ˆΠx "
+
+Different measurements generally produce different Fisher information.
+
+
+The quantum Fisher information is the maximum over all possible measurements:
+                               FQ(θ) = max F(θ)
+                                                      {ˆΠx}Therefore,
+
+                                 F(θ) ≤FQ(θ)
+
+  Large 𝑭𝑸 means that nearby parameter values produce more distinguishable quantum states.
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+The quantum Cramér–Rao bound
+
+
+  For any chosen measurement,
+                                         1         1
+                       ≥      ≥                        ! ∆˜θ"2                               MFC(θ)   MFQ(θ)
+
+
+  Therefore, the quantum Cramér–Rao bound is
+                                          1
+                        ≥                         ! ∆˜θ"2                                MFQ(θ)
+
+  For a pure probe undergoing unitary encoding generated by &𝐺
+                  FQ = 4 (∆G)2 = 4     −  ˆG                             !" ˆG2#  " #2$
+
+
+  Hence,
+                                          1
+                       ≥                         ! ∆˜θ"2                          4M (∆G)2
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Quantum limit to phase estimation
+
+
+ Photon number generates an optical phase shift
+
+ An unknown optical phase 𝜙 is encoded through
+                       = e−iφˆn,       ˆn = ˆa†ˆa                                         ˆUφ
+
+ For a pure probe state,
+                             FQ = 4 (∆n)2
+
+ The quantum Cramér–Rao bound becomes
+                                               1
+                          ≥                            ! ∆˜φ"2                             4M (∆n)2
+
+
+         Phase sensitivity is determined by the photon-number variance of the probe.
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Homodyne detection
+
+                                    Homodyne detector
+       ˆρ0                     ˆUθ
+                                                                                             photodetectors
+                                                               50:50 beam
+                                                                                         splitter
+   •  The local oscillator provides a phase reference.
+
+   • A small phase shift becomes a change in the
+    measured photocurrent.                                    input signal
+
+   •  Ideal homodyne detection can saturate this bound
+                                                                              phase shift
+                          1
+             ≥           ! ∆˜φ"2               4M (∆n)2                                            local oscillator
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Coherent-state phase estimation
+Coherent light – photon number variance
+•  Photon number variance            var (n) = ⟨∆ˆn2⟩= ⟨ˆn2⟩−⟨ˆn⟩2
+
+                                                                ˆa    α                  var (n) = ⟨ˆn2⟩−⟨ˆn⟩2                              |α⟩=  |α⟩     ⟨ˆn2⟩= ⟨α|ˆa†ˆaˆa†ˆa|α⟩
+                                      ⟨α| ˆa† = α∗⟨α|                                                                var (n) = |α|4 + |α|2 −(|α|2)2    ⟨ˆn2⟩= |α|2 ⟨α|ˆaˆa†|α⟩
+                                                               var (n) = |α|2 = ¯n                                                     ˆaˆa† = 1 + ˆa†ˆa                              [ˆa, ˆa†] = 1
+
+     ⟨ˆn2⟩= |α|2 ⟨α|(1 + ˆa†ˆa)|α⟩
+
+     ⟨ˆn2⟩= |α|2(1 + |α|2)
+     ⟨ˆn2⟩= |α|4 + |α|2
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Coherent-state phase estimation
+
+
+ A coherent state gives shot-noise-limited sensitivity
+
+
+ For a coherent state ∣𝛼⟩                                                                           ⟨ˆp⟩
+                                 ¯n = ⟨ˆn⟩= |α|2,    (∆n)2 = ¯n
+
+ Therefore,
+                       FQ = 4¯n
+
+ The phase-estimation bound becomes
+                             1               1
+                                     ∆˜φ               ! ∆˜φ"2                                                                                                                                             ⟨ˆx⟩                ≥ 4M ¯n,     ≥ 2 √ M ¯n
+
+ Shot-noise scaling:                         1                                                       Coherent state                                  Standard                  ∆˜φ
+              ∝ √¯n    Quantum limit
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Displaced squeezed state
+
+Assume
+
+|ψ⟩= ˆD(α) ˆS(r)|0⟩,      ˆS†(r)ˆa ˆS(r) = ˆa cosh r + ˆa† sinh r               ˆn = ˆa†ˆa      ˆn2 = ˆa†ˆa ˆa†ˆa
+
+
+The variance is
+                         (∆n)2 = ⟨ψ|ˆn2|ψ⟩−⟨ψ|ˆn|ψ⟩2
+
+
+Move the displacement and squeezing onto the operators:
+                            ˆS† ˆD†ˆa ˆD ˆS = α + cosh r ˆa + sinh r ˆa†
+                                                                                           r                                                                    ⟨ˆn⟩= |α|2 + sinh2                          ˆS† ˆD†ˆa† ˆD ˆS = α∗+ cosh r ˆa† + sinh r ˆa
+
+
+Taking 𝛼 to be real, write the variance as
+
+                     + cosh                                           r ˆa† + sinh r ˆa)(α + cosh r ˆa + sinh r ˆa†)                    (∆n)2 = ! (α
+
+                                               r          r            r         r                    × (α + cosh   ˆa† + sinh  ˆa)(α + cosh   ˆa + sinh  ˆa†) " 0
+
+                                                  r    .                                                                                                                18                    −  |α|2 + sinh2                                     #             $2
+
+====== PAGE 19 ======
+Displaced squeezed state
+
+
+                           + cosh                                                      r ˆa† + sinh r ˆa)(α + cosh r ˆa + sinh r ˆa†)                              (∆n)2 = ! (α
+
+                                                          r          r            r         r                           × (α + cosh   ˆa† + sinh  ˆa)(α + cosh   ˆa + sinh  ˆa†) " 0
+
+                                                             r    .                           −  |α|2 + sinh2                                               #             $2
+
+  Expanding the vacuum expectation value gives
+                                       r + 3 sinh2 r + 2 sinh r cosh r                                                                         sinh4 r + 2 sinh2 r              ⟨ˆn2⟩= |α|4 + |α|2 ! cosh2                                                                 " + 3
+
+  Therefore,
+                                                                  r                                                                         r                        (∆n)2 = |α|2(cosh r + sinh r)2 + 2 sinh2                                                                   cosh2
+
+
+   For                                  sinh2                                  |r| ≫1,             |r| ≃|α|2,       ¯n ≃2|α|2
+
+
+  We have
+                                    (∆n)2 ≃2|α|4 ≃¯n2
+                                                                                                                                                                                            19                                                     2
+
+====== PAGE 20 ======
+Displaced squeezed state
+
+              (∆n)2 ≃2|α|4 ≃¯n2
+                              2
+                                                             Coherent state
+ Displaced squeezed state                                                                                                        ⟨ˆp⟩
+ Consequently, for one probe,
+
+                     1       1            (∆˜φ)2 ≥     ≃
+                  4(∆n)2    2¯n2
+             ∝1      Heisenberg             ∆φ
+                                        ¯n                                              limit
+                                                                              Displaced
+ Coherent states
+                                                                                                                                  ⟨ˆx⟩   squeezed state
+  Shot-noise scaling:                         1
+                                  Standard                   ∆˜φ
+              ∝ √¯n    Quantum limit
+
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+Mach–Zehnder interferometer
+
+ •  The first beam splitter divides the optical
+    field between two paths.
+
+ •  The paths acquire a relative phase shift.
+
+ •  The second beam splitter converts this
+   phase difference into a change in the
+   output intensities.
+
+ •  The intensity difference between the
+   detectors provides the measurement
+    signal.
+
+                                                                      fluctuating phase shift
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+ Mach–Zehnder interferometer
+                  1
+             ˆbupper =      (ˆain          √ 2     −ˆavac)
+                  1
+              ˆblower =      (ˆain + ˆavac)
+          √ 2
+  The phase shift then acts on the lower arm:
+
+     =          =      ˆb′     upper    ˆbupper,         ˆb′lower    ei∆φˆblower
+
+    At the second 50:50 beam splitter,
+      1                       1         + ˆb′                          + ˆb′ˆa1 =             upper                        lower                                        ˆa2 =                                             upper                                                            lower       !ˆb′                  "                                        "   √ 2                  √ 2                           ! −ˆb′
+
+
+           1
+             +         ˆa1 =            !ˆbupper                              ei∆φˆblower "      √ 2                                                                          fluctuating phase shift
+            1
+         ˆa2 =        +            !            ei∆φˆblower "      √ 2  −ˆbupper
+
+                                                                                                                                                                                                  22
+
+====== PAGE 23 ======
+ Mach–Zehnder interferometer
+
+      1    1                   1ˆa1 =              (ˆain     + ei∆φ      (ˆain + ˆavac)   √ 2 ! √ 2     −ˆavac)    √ 2          "
+
+      1                         1ˆa2 =                (ˆain     + ei∆φ      (ˆain + ˆavac)   √ 2 ! −1√ 2     −ˆavac)    √ 2          "
+
+
+     1
+ˆa1 =    1 +         ˆain + −1 +        ˆavac       !"    ei∆φ#      "     ei∆φ#     $     2
+     1
+ˆa2 =   −1 +         ˆain + 1 +        ˆavac       !"     ei∆φ#      "    ei∆φ#     $     2
+
+
+     ei∆φ/2
+                            +             +                                                 ˆain +                                                                                ˆavacˆa1 =                                                ei∆φ/2#                       ei∆φ/2#                             " −e−i∆φ/2                                                            $       2   !" e−i∆φ/2
+                                                                        fluctuating phase shift     ei∆φ/2
+                            +              +                                                    ˆain +                                                                                ˆavacˆa2 =                                                ei∆φ/2#                         ei∆φ/2#                              " e−i∆φ/2                                                            $       2   !" −e−i∆φ/2
+
+                                                                                                                                                                                               23
+
+====== PAGE 24 ======
+  Mach–Zehnder interferometer
+     ei∆φ/2
+                            +             +                                                                                ˆavac                                                 ˆain +ˆa1 =                                                ei∆φ/2#                       ei∆φ/2#                             " −e−i∆φ/2                                                            $       2   !" e−i∆φ/2
+     ei∆φ/2
+                            +              +                                                                                ˆavac                                                    ˆain +ˆa2 =                                                ei∆φ/2#                         ei∆φ/2#                              " e−i∆φ/2                                                            $       2   !" −e−i∆φ/2
+
+          e−i∆φ/2 + ei∆φ/2 = 2 cos
+                                  2                    !∆φ "
+
+        −e−i∆φ/2 + ei∆φ/2 = 2i sin
+                                   2                     !∆φ "
+
+
+    ˆa1 = ei∆φ/2  cos            ˆain + i sin          ˆavac
+                    2              2            !  "∆φ #      "∆φ #    $
+
+    ˆa2 = ei∆φ/2  cos          ˆavac + i sin            ˆain                    fluctuating phase shift
+                    2               2            !  "∆φ #       "∆φ #   $
+
+                                                                                                                                                                                                      24
+
+====== PAGE 25 ======
+  Mach–Zehnder interferometer
+
+ˆa1 = ei∆φ/2  cos            ˆain + i sin          ˆavac
+                 2              2          !  "∆φ #      "∆φ #    $
+
+ˆa2 = ei∆φ/2  cos          ˆavac + i sin            ˆain
+                 2               2          !  "∆φ #       "∆φ #   $
+
+
+ Now if 𝜙= 0:
+      ˆa1 = e0 [cos(0)ˆain + i sin(0)ˆavac] = ˆain
+                                                                                                  dark port
+      ˆa2 = e0 [i sin(0)ˆain + cos(0)ˆavac] = ˆavac
+
+  Thus, output 1 is the bright port and output 2 is the dark port.       fluctuating phase shift
+                                                                                                         bright port
+
+                                                                                                                                                                                                    25
+
+====== PAGE 26 ======
+ Mach–Zehnder interferometer
+
+Start from the dark-port output:
+  ˆa2 = ei∆φ/2  cos          ˆavac + i sin            ˆain
+                  2               2           !  "∆φ #       "∆φ #   $
+
+Work in the differential-phase frame:
+
+     ≡e−i∆φ/2ˆa2 = i sin            ˆain + cos          ˆavac               "∆φ2 #     "∆φ2 #∣Δ𝜙∣≪1:!ˆa2
+      sin    ≃∆φ      cos     ≃1                                     ,           2      2            2     !∆φ "         !∆φ "
+
+Therefore,
+                            !ˆa2 ≃i∆φ ˆain + ˆavac
+                    2
+Take a strong coherent input
+                                                                        fluctuating phase shift    ˆain = α + δˆain,   α = √ ¯n       α                     ∈R,   ≫1
+Substituting gives
+                                  !ˆa2 ≃ˆavac + iα∆φ + i∆φ δˆain                                                                                                  26
+                             2      2
+
+====== PAGE 27 ======
+Mach–Zehnder interferometer
+            !ˆa2 ≃ˆavac + iα∆φ + i∆φ δˆain
+                   2      2
+  Keep the leading terms
+                            √¯n ∆φ                                 !ˆa2    + i
+                              2                    ≃ˆavac
+  Form the phase quadrature:
+               −                                   †
+               ≡i                       2        2                    "     #                              !ˆX                                                                   !ˆa  −!ˆa2
+                       †          √¯n ∆φ  Since                                           !ˆa2     vac                              2                   ≃ˆa†  −i
+
+
+            −                        √¯n∆φ        √¯n∆φ  we obtain                  2 ≃i " ˆa†vac −i   2   −ˆavac −i   2  #                       !ˆX
+                    √ ¯n ∆φ                             fluctuating phase shift           = i  ˆa†vac     +                            −ˆavac                     $          %
+                   + √ ¯n ∆φ           =    ˆX−vac
+
+                      quantum noise   phase signal                                                                                                                      27                      &'()       & '( )
+
+====== PAGE 28 ======
+Mach–Zehnder interferometer
+                !ˆX −                   + √ ¯n ∆φ              2        ≃ =    ˆX−vac
+
+                     quantum noise   phase signal                     &'()       & '( )
+
+                                  2
+            ≡                  = ¯n(∆φ)2 Signal power:   S                              2
+                                                     #!!!                                                                                           !!! " ˆX−
+          N           V − Noise power:    ≡!∆X−2 "2 =  vac = 1
+
+
+   Therefore
+
+   S            S                     1
+    = ¯n(∆φ)2,     = 1     ∆φSQL =  N         N   =⇒           √¯n
+
+                                                                      fluctuating phase shift Squeezing reduces the noise without reducing the signal.
+
+                                                                                                                                                                                            28
+
+====== PAGE 29 ======
+Gravitational waves
+
+                                          Miller, M.C., Yunes, N. The new frontier of gravitational waves. Nature 568, 469–476 (2019).
+
+                                                                                                                                                                                            29
+
+====== PAGE 30 ======
+Effect on test particles of gravitational waves
+
+              Bond, C., Brown, D., Freise, A. et al. Interferometer techniques for gravitational-wave detection. Living Rev Relativ 19, 3 (2016).
+                                                                                                                                                                                            30
+
+====== PAGE 31 ======
+Gravitational wave interferometer
+
+                                                        test mass/mirror 1
+
+                                                                       test mass/mirror 2
+
+                                              dark port – no light exits
+                                                                                         if lengths are balanced
+                                 detector
+
+                                                                                                                                                                                            31
+
+====== PAGE 32 ======
+Gravitational-wave interferometer: scale of
+the effect
+
+     Dark port intensity
+
+          For LIGO|α|2 = 200W, λ=1064nm, L*= 4 km (X 75) leading to a sensitivity of 1: 1021
+
+                                                               test mass/mirror 1
+
+                                                   Ly=L*(1-δL(t))
+
+
+                                                                              test mass/mirror 2
+
+
+                                                   Lx=L*(1+δL(t))
+                                                   dark port – no light exits
+                                                                                                    if lengths are balanced
+
+
+                                                                                                                                                                                            32                                        detector
+
+====== PAGE 33 ======
+Initial LIGO
+
+                                                                                                                                                                                            33
+
+====== PAGE 34 ======
+Advanced LIGO
+
+                                                                            1064 nm main laser
+                                                                                     Frequency-independent
+                                                                              squeezed vacuum beam
+                                                 Y-arm cavity
+                                                                                   Frequency-dependent
+                                                                              squeezed vacuum beam
+
+                                                                             532 nm pump laser
+
+                                              Power
+                                                           recycling                                                                            X-arm cavity
+                        LIGO
+                          main
+                                 laser
+
+                                                                               Signal
+                                                                                   recycling
+
+                                    Filter cavity
+                                                                                                            Gravitational                                                                   Faraday                                                                                wave readout                                                                                       isolator
+
+                             Squeezer                                 Output mode cleaner                                                                       34
+
+====== PAGE 35 ======
+2025 Gravitational wave detection by
+LIGO
+                                                      Much higher SNR (thanks in
+                                                                             part to squeezing) enables
+                                                                           precision tests of the remnant black
+                                                                             hole’s ringdown
+
+          Black-hole masses, 33.6 & 32.2 solar masses;
+
+          1.3 Billion light years away;
+
+        Mass–energy equivalent of approximately 3.1 Suns radiated as
+           gravitational waves.
+
+                                                                                                                                                                                            35         Duration 230 ms
+
+====== PAGE 36 ======
+LIGO with Squeezing: measured noise
+
+                                                                       Measured reference total noise
+                                                                         Model of reference quantum noise
+                                                                                            Inferred classical noise
+                        Hz]   2×10−23                                          Measured squeezed total noise
+                                                                                            Inferred squeezed quantum noise
+                        [1/                                                                         Model of squeezed quantum noise
+                                                                              Standard Quantum Limit hSQL(  )
+                                                                       3 dB below hSQL(   )                                                       density      10−23
+                                                               spectral
+                       5×10−24
+                                                                       amplitude
+                                               Strain                       2×10−24
+
+
+                          10−24
+                              20                      50                100               200                     500               1000
+                                                                     Frequency [Hz]
+
+                                                                                                                                                                                            36
+
+====== PAGE 37 ======
+Summary
+
+        •  Fisher information determines precision: classical Fisher information
+       depends on the measurement, while quantum Fisher information gives the
+       maximum information permitted by the quantum state.
+
+        • Quantum states can improve phase sensitivity: coherent light gives the
+                                           1
+        standard quantum limit Δ𝜙∝   &𝑛, while optimised nonclassical probes can
+                                                  1
+        approach Heisenberg scaling Δ𝜙∝ &𝑛.
+
+        • Quantum metrology is used in gravitational-wave detection: LIGO
+         converts differential arm-length changes into a dark-port signal and uses
+        squeezed vacuum to reduce quantum noise.
+
+                                                                                                                                                                                            37

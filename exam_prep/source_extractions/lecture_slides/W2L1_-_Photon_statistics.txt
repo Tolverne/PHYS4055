@@ -1,0 +1,428 @@
+Source: source_material/lectures/slides_and_handouts/W2L1 - Photon statistics.pdf
+Pages: 20
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 2, Lecture 1
+Photon statistics
+
+
+   Lecturer: Josephine
+   Email: j.dias@uq.edu.au
+   Office: Parnell Room 320
+   Office hours: Thursdays 3-4pm
+
+
+•   (Photon statistics) Sec. 4.3.3, page 108 of Bachor, Hans-A. / Ralph, Timothy C. A guide to
+   experiments in quantum optics (2019)
+•   (Photon statistics) Sec 5.1-5.6 of Fox, M. Quantum optics – an introduction (2006)
+•   (Thermal states) Sec. 3.2.3 page 45 of Leonhardt, U. Essential Quantum Optics (2010)
+
+====== PAGE 2 ======
+Review
+What you learned last week…
+
+      Quantized single          Simple harmonic
+     mode EM field               oscillator
+
+
+                                 1
+                      ˆH = ¯hΩ   ˆa†ˆa +      Hamiltonian:                  !      2 "
+
+      Eigenstates: {|n⟩}             = {|0⟩, |1⟩, |2⟩, · · · }
+
+                                     ˆa                  √n       Annihilation and                  |n⟩=    |n −1⟩         [ˆa, ˆa†] = 1                                                                                                     ⟨ˆp⟩                                                ⟨ˆp⟩       creation operators                                 ˆa†   √ n + 1  +                   |n⟩=        |n   1⟩
+
+     Phase space representation:
+                     ˆx = ˆa + ˆa†                                                                                                                     ⟨ˆx⟩                                                                                                             ⟨ˆx⟩
+                     ˆp = i(ˆa† −ˆa)
+
+
+                                                               Coherent state                Number state
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+Ensembles of quantum states
+
+
+                                             measure in basis
+                                                         {|0⟩, |1⟩}
+                                                                         Either |0⟩
+                                                                       or |1⟩
+
+                                             50% |0⟩
+                                             50% |1⟩
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Pure vs. mixed ensembles
+
+
+      Pure                                           Mixed
+
+                                                               How can we
+                                                                                         describe this
+measure in basis                                                                              ensemble?
+   {|0⟩, |1⟩}
+
+measurement results  50% |0⟩ and 50% |1⟩       50% |0⟩ and 50% |1⟩
+
+                                   all |+⟩           50% |0⟩ and 50% |1⟩ensemble
+
+                                                                                                                                                                                                4
+
+====== PAGE 5 ======
+Density operator
+
+
+To describe mixed ensembles of quantum states, we use density operators defined
+as:
+        !
+                               ˆρ =     pi |ψi⟩⟨ψi|                                                   •   𝑝! are classical probabilities, and they
+                                                                                 must sum to one
+                                         i
+                                              probability of being in state |𝜓!⟩
+
+For a pure state:                 ˆρ = |ψ⟩⟨ψ|      only one state ket
+                                                                                                                         •   𝜓! ’s don’t need to be orthogonal
+
+                                                                                                                         •  A qubit is a two-level quantum system
+
+Dimension of 𝝆 (for a single qubit):                                                                         •  A pure state of a single qubit can be
+          !                                                         represented by a 2×1 column vector
+                            ˆρ =     i pi |ψi⟩⟨ψi|
+                                                                                                                         •  A mixed state of a single qubit can be
+                                                                                           represented by a 2×2 square matrix
+                  column vector:        row vector:
+                    2×1              1×2
+
+                                                                                                                                                                                              5            ⟹𝜌 is a 2×2 matrix
+
+====== PAGE 6 ======
+Density operator
+
+
+ 1.   𝜌 is Hermitian
+                                                                                                            •   All eigenvalues of a Hermitian square
+ 2.    Tr 𝜌= 1                                                                       matrix are real
+
+ 3.   𝜌is positive semidefinite                                                                 •   Positive semidefinite: all eigenvalues are
+                                                                                  non-negative
+ 4.    Tr 𝜌" ≤1 (if 𝜌 is pure then Tr 𝜌" = 1 )
+                                                                                                            •  The purity of a quantum state is 𝑇𝑟)𝜌"
+
+                                                                                   For pure states: 𝑇𝑟)𝜌" =1   Evolution of the density operator
+                |ψout⟩= ˆU |ψin⟩      pure
+                                                                                                                          completely              =                                                      completely pure                         ˆρout    ˆU ˆρin ˆU †     mixed                                                             mixed
+                                                                    z                          z
+                                                                                              surface of
+   Expectation values                                                                                            bloch sphere
+                                                                                                                                                        origin
+                                                 pure
+                                             mixed                             y                        y
+                                                       x                         x                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+Entropy of a quantum system
+
+•   Classical entropy
+           !
+           =            ln             S  −kB     i pi   pi
+
+•  Quantum
+
+          S = −kBTr [ˆρ ln ˆρ]
+
+ •   Spectral decomposition
+      !                        !
+                ˆρ =     i λi |φi⟩⟨φi|              S = −kBTr [ˆρ ln ˆρ] = −kB     i λi ln λi
+
+          eigenvalues       eigenvectors
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Thermal states
+
+
+•  EM radiation emitted by a hot body is called thermal light or black-body radiation
+
+•  Eg.
+
+    –  Sunlight
+
+    –  Resistive filaments
+
+•   Here, we again focus on a single mode (monochromatic light)
+
+•  Thermal states maximise entropy 𝑺 for a given energy 𝑬
+               !
+                                               ˆρ =   n pn |n⟩⟨n|
+
+•  Maximise entropy 𝑺 in the presence of constraints using Lagrange multipliers
+          !          S = −kB   n pn ln pn −a (! n pn −1) −b (! n pnEn −E)
+
+
+                                    entropy            normalisation             energy
+
+                                                                See page 45 of Leonhardt, U. Essential Quantum Optics (2010) for derivation
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Thermal states
+
+
+         ∞                   ∞
+            1 !          !                1
+        ρ      =       e−¯hΩn/kT |n⟩⟨n|       Z =    e−¯hΩn/kT =                                                            1 −e−¯hΩ/kT         Z              n=0                            n=0
+                      ∞
+            =                                                    |n⟩⟨n|                 ρ                  !                       1 −e−¯hΩ/kT "    e−¯hΩn/kT            #
+                                   n=0
+
+                              Boltzmann distribution                Statistical mixture of Fock states
+
+               =  1•   Probability of n photons  pn                     ! −e−¯hΩ/kT " e−¯hΩn/kT
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Thermal states
+
+                          ∞
+•  Expectation value of 4𝒏                =                                                           |n⟩⟨n|                       ρ                       !                             1 −e−¯hΩ/kT "    e−¯hΩn/kT              #
+                                         n=0
+
+                            pn                    = ! 1 −e−¯hΩ/kT " e−¯hΩn/kT
+
+         ∞      ∞
+     !   !             x
+       =     =                              x = e−¯hΩ/kT               ¯n     pnn       nxn(1 −x) =                          −x                                        1             n=0        n=0
+                                    1
+                                                ¯n =
+                               x−1 −1
+                                     1
+                                               ¯n =
+                                        e¯hΩ/kT −1
+
+
+                              1               ¯n
+                                         ˆρ =                     |n⟩⟨n|                                               ¯n + 1   " ¯n + 1 #n                                  n           !
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Photon statistics
+
+ We will talk more about photodetection in lecture 3
+  this week...
+
+  For now, the observable we are measuring is
+                   ˆn = ˆa†ˆa
+
+      •   Probability of detecting 𝒏 photons
+              =                   pn   |⟨n|ψ⟩|2
+
+       •  Average number of photons
+                               ¯n = ⟨ˆn⟩= ⟨ψ|ˆa†ˆa|ψ⟩
+
+        •  Variance
+                  var (n) = ⟨ˆn2⟩−⟨ˆn⟩2
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Photon statistics
+Coherent light – photon number distribution
+
+                                                                                                                 •  Expectation value of 4𝒏•  Coherent state expansion in number basis
+       ! αn
+                e−|α|2/2
+                                                                                                        ¯n = ⟨α|ˆn|α⟩       |α⟩=       √ n! |n⟩
+                     n
+
+                                                                                                      ˆn = ˆa†ˆa•   Probability of detecting 𝒏 photons
+      =     =       pn   |⟨n|α⟩|2   ⟨α|n⟩⟨n|α⟩                                                    ¯n =                                                                                        ⟨α|ˆa†ˆa|α⟩
+                                          αn
+                                                 e−|α|2/2                                              ˆa    α                             ⟨n|α⟩=    √ n!                   |α⟩=  |α⟩
+                                                                                 ⟨α| ˆa† = α∗⟨α|
+                               |α|2n      =     =       pn   |⟨n|α⟩|2   e−|α|2                                                                                                      ¯n = |α|2                               n!
+                                 ¯nn            =                pn   e−¯n
+                            n!
+
+                                   Poissonian distribution                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Photon statistics
+Coherent light – photon number variance
+•  Photon number variance            var (n) = ⟨∆ˆn2⟩= ⟨ˆn2⟩−⟨ˆn⟩2
+
+                                                                ˆa    α                  var (n) = ⟨ˆn2⟩−⟨ˆn⟩2                              |α⟩=  |α⟩     ⟨ˆn2⟩= ⟨α|ˆa†ˆaˆa†ˆa|α⟩
+                                      ⟨α| ˆa† = α∗⟨α|                                                                var (n) = |α|4 + |α|2 −(|α|2)2    ⟨ˆn2⟩= |α|2 ⟨α|ˆaˆa†|α⟩
+                                                               var (n) = |α|2 = ¯n                                                     ˆaˆa† = 1 + ˆa†ˆa                              [ˆa, ˆa†] = 1
+     ⟨ˆn2⟩= |α|2 ⟨α|(1 + ˆa†ˆa)|α⟩                                                               •  Variance is equal to mean
+
+                                                                                         Poissonian distribution     ⟨ˆn2⟩= |α|2(1 + |α|2)
+     ⟨ˆn2⟩= |α|4 + |α|2
+
+====== PAGE 14 ======
+Photon statistics
+Coherent light - summary
+                                                                     Photon number distribution
+
+•  Coherent state expansion in number basis
+       ! αn
+                e−|α|2/2       |α⟩=       √ n! |n⟩
+                     n
+
+•   Probability of detecting 𝒏 photons
+                                |α|2n      =     =       pn   |⟨n|α⟩|2   e−|α|2
+                                n!
+•  Average number of photons in coherent state
+             ¯n = ⟨α|ˆa†ˆa|α⟩= |α|2
+
+•  Photon number distribution
+                               ¯n2          =             pn   e−¯n
+                        n!
+                        Poissonian distribution                                                 p. 81 Fox, M. Quantum optics – an introduction (2006)
+
+•  Variance is equal to mean
+                         var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n
+
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Photon statistics
+Coherent light
+                                Photon number distribution
+
+                                                                                                                                    p. 109 Bachor, Hans-A. / Ralph, Timothy C.
+                                                                                   A guide to experiments in quantum optics (2019)
+
+
+•  Coherent states in phase space                                                                    ⟨∆ˆx2⟩
+                          ⟨ˆp⟩                                                                                ⟨ˆp⟩
+                                            ⟨∆ˆx2⟩= ⟨∆ˆp2⟩= 1                                                                                                               ⟨∆ˆp2⟩
+
+                                                                                                    Large variance in                        ⟨∆ˆx2⟩                                                                                                photon number
+                                     Small variance in
+                                   photon number
+                                 ⟨∆ˆp2⟩
+
+                                                         ⟨ˆx⟩                                                                                                                                       ⟨ˆx⟩
+
+====== PAGE 16 ======
+Photon statistics
+                                   ∞
+Thermal states
+                         =                                                                          |n⟩⟨n|                                    ρ                                   !                                          1 −e−¯hΩ/kT "•  Variance                   # e−¯hΩn/kT
+                                                      n=0
+         var (n) = ⟨ˆn2⟩−⟨ˆn⟩2
+
+
+         ∞     !
+                           =  1 −e−¯hΩ/kT  e−¯hΩn/kT        x = e−¯hΩ/kT                                       pn       ⟨ˆn2⟩=    pnn2                    !         "
+             n=0
+         ∞                                                   x    !               x2  x                     +                                                                                                       ¯n = ⟨ˆn⟩=       =    n2xn(1 −x) =                                          1                                              −x                               (x −1)2             n=0
+
+
+                                         x2  x      x                           +                   var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 =     −                                        (x −1)2  ! 1 −x "2
+                   var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n2 + ¯n
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Photon statistics
+                                                                             Photon number distribution
+Thermal states
+
+•   Probability of n photons
+              pn           = ! 1 −e−¯hΩ/kT " e−¯hΩn/kT
+
+•  Average photon number
+        ∞                   1    !
+                                         ¯n =        ⟨ˆn⟩=    pnn                                   e¯hω/kBT −1
+             n=0
+
+              ∞       !•  Variance
+               ⟨ˆn2⟩=    pnn2
+                     n=0
+          var (n) = ⟨ˆn2⟩−⟨ˆn⟩2 = ¯n2 + ¯n
+                                                                                                                                    p. 85 Fox, M. Quantum optics – an introduction (2006)
+•  Variance is larger than mean
+
+                      Super-poissonian statistics
+
+                                                                                                      is the most probable state for
+          Super-poissonian statistics: can be explained by                                                                                   thermal light
+                    a semi-classical model
+
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Photon statistics
+Photon number states
+
+                                                                             Photon number distribution
+•  Average photon number
+
+             ¯n = ⟨n|ˆn|n⟩= n
+
+
+•  Variance
+      var (n) = ⟨∆ˆn2⟩= ⟨ˆn2⟩−⟨ˆn⟩2 = 0
+
+•  Variance is less than mean
+
+                                                                                                                                  p. 88 Fox, M. Quantum optics – an introduction (2006)
+                   Sub-poissonian statistics
+
+                  Sub-poissonian statistics: no semiclassical explanation, provides a clear
+                            demonstration that it is light itself that is quantized
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Photon statistics
+Summary
+
+                                                               Photon number distribution
+•  Super-poissonian
+           >            var (n)    ¯n
+    –  e.g. thermal state  ˆρth
+
+•  Poissonian
+            var (n) = ¯n
+
+    –  e.g. coherent state |α⟩
+
+•  Sub-poissonian
+          <           var (n)    ¯n
+    –  e.g. photon number state |n⟩
+                                                                                                                              p. 82 Fox, M. Quantum optics – an introduction (2006)
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Summary
+
+               Density operators                                                       •  Super-poissonian
+                                             >                                                                      var (n)    ¯n    To describe mixed ensembles of quantum states, we
+    use density operators:
+     !                                            –  e.g. thermal state  ˆρth
+                  ˆρ =     pi |ψi⟩⟨ψi|                                                                                                            •  Poissonian
+                            i                                                                                                                                                                                                                                                                statistics                                                                      var (n) = ¯n                                              probability of being in state |𝜓!⟩
+
+                                                               –  e.g. coherent state |α⟩                                                                                                                                                          Photon
+            Thermal states of light                                                                                                            •  Sub-poissonian
+                                             <               1                                                     var (n)    ¯n                                          ¯n
+                ˆρ =                     |n⟩⟨n|                + 1 #n                      ¯n + 1               " ¯n                    n                                                               –  e.g. photon number state |n⟩      !
+
+  •   (Photon statistics) Sec. 4.3.3, page 108 of Bachor, Hans-A. / Ralph, Timothy C. A guide to experiments in quantum
+     optics (2019)
+  •   (Photon statistics) Sec 5.1-5.6 of Fox, M. Quantum optics – an introduction (2006)
+  •   (Thermal states) Sec. 3.2.3 page 45 of Leonhardt, U. Essential Quantum Optics (2010)
+
+
+                                                                                                                                                                                            20

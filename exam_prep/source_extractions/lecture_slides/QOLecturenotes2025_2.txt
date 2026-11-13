@@ -1,0 +1,1503 @@
+Source: source_material/lectures/slides_and_handouts/QOLecturenotes2025 (2).pdf
+Pages: 39
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+       Quantum Optics Lecture Notes
+
+
+                          Joel Corney
+
+                 (updated by Tim Ralph and Josephine Dias 2025)
+
+
+       Contents
+
+
+  Quantized Light                                  3
+
+Quantum States of Light                                     3
+
+1 EM ﬁeld as a set of quantum harmonic oscillators               3
+    1.1  Quantizing a single optical mode    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   3
+    1.2  Quantizing a multimode ﬁeld    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   6
+    1.3  Plane-wave basis   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   7
+
+2  Coherent states                                            10
+    2.1  Quadratures and phase space   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  10
+    2.2  Coherent displacements .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  11
+    2.3  Coherent state properties .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  12
+
+3  Photon statistics and photodetection                         15
+    3.1  Thermal states   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  15
+    3.2  Poissonian statistics .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  16
+    3.3  Semiclassical Theory of photodetection  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  17
+         3.3.1  Constant Intensity   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  18
+         3.3.2  Fluctuating Intensity  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  18
+    3.4  Photocurrent ﬂuctuations (optional) .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  19
+
+4 Quantum coherence and correlations                         21
+    4.1  The key idea: measurement by absorption   .  .  .  .  .  .  .  .  .  .  .  .  .  .  21
+    4.2  Quantum coherence .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  22
+         4.2.1   First order coherence: monochromaticity  .  .  .  .  .  .  .  .  .  .  .  23
+
+
+                                   1
+
+====== PAGE 2 ======
+                                                                      2
+
+
+         4.2.2  Second-order coherence: Bunching and Antibunching   .  .  .  .  24
+         4.2.3  Coherence state: coherence to all orders    .  .  .  .  .  .  .  .  .  .  .  25
+    4.3  Photon counting: Subpoissonian statistics   .  .  .  .  .  .  .  .  .  .  .  .  .  .  25
+
+5  Quadratures and squeezed states                             27
+    5.1  Squeezing   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  27
+    5.2  The Squeezing Operator   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  28
+         5.2.1  A di↵erent view of the same squeezed state .  .  .  .  .  .  .  .  .  .  30
+         5.2.2  A deﬁnition of a di↵erent squeezed state   .  .  .  .  .  .  .  .  .  .  .  30
+    5.3  How to generate squeezing  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  31
+         5.3.1   χ(2) nonlinear process .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  31
+         5.3.2   χ(3) nonlinear process .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  31
+
+6  Quasiprobability distributions                               32
+    6.1  Husimi Q function   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  32
+    6.2  Glauber-Sudarshan P function .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  35
+    6.3  Wigner function .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  36
+    6.4  Characteristic functions    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  38
+
+Main Sources
+
+In preparing these notes, we have relied on the following texts, which you are
+encouraged to consult for more information:
+
+   • P. Meystre and M. Sargent, “Elements of Quantum Optics”, 4th ed, Springer,
+     2007. (M&S)
+
+   • M. Orszag, “Quantum Optics”, 2nd ed, Springer, 2008.
+
+   • M. Fox, “Quantum Optics: an introduction”, Oxford University Press, 2006.
+
+   • D. F. Walls and G. J. Milburn, “Quantum Optics”, 2nd Ed, Springer, 2008.
+
+   • G. R. Fowles,“Introduction to Modern Optics”, 2nd ed, Dover, 1975.
+
+====== PAGE 3 ======
+Quantized Light
+
+Quantum States of Light
+
+1 EM ﬁeld as a set of quantum harmonic oscil-
+    lators
+
+Further reading: M&S13.1-2
+
+To go beyond the semiclassical approach, we need to quantize the electromagnetic
+ﬁeld itself. As we shall see, the concept of photons appears naturally (and un-
+avoidably). We will also ﬁnd that, as for the quantum mechanics of particles, so
+for quantum ﬁelds there are canonically conjugate variables whose simultaneous
+values cannot be predicted with absolute certainty. In other words, the quantized
+light has an irreducible uncertainty, or quantum noise.
+   For example, in quantum mechanics, the position and momentum of a particle
+are incompatible observables, represented by noncommuting operators. In electro-
+magnetism, the electric ﬁeld is determined through the placement of a test charge,
+whereas to determine the magnetic ﬁeld, we also need to know the velocity of the
+test charge: F = q(E + v ⇥B). So it is no surprise to ﬁnd out that we cannot de-termine both the electric and magnetic ﬁeld amplitudes exactly, and that there are
+some situations where E and B behave like conjugate variables, with an associated
+uncertainty relation.
+   Given that light is an oscillatory (wave) solution of Maxwell’s equations, it is
+not surprising that the route to quantising an optical ﬁeld is to treat is as a set
+of harmonic oscillators. The general approach will be to determine the oscillating
+modes in the classical problem, express each mode in the form of a harmonic
+oscillator, and then quantise it accordingly.
+  We begin by quantise a single standing wave in a cavity before treating the
+more general, multimode problem
+
+1.1  Quantizing a single optical mode
+
+Consider a standing wave in a cavity whose electric ﬁeld, polarised in the x direc-
+tion, has the form
+                                    2⌦2
+                        E(z, t) = ˆxq(t)       sin Kz,                        (1)                  s ✏0V
+
+
+                                   3
+
+====== PAGE 4 ======
+ Quantized Light                                                      4
+
+
+where K is the wave number and V  is the mode volume. For this ﬁeld to obey the
+wave equation
+                                      @2
+                    r2E −1c2 @t2E = 0,                             (2)
+the frequency must be ⌦= cK and the time-dependent amplitude must obey the
+SHO equation ¨q + ⌦2q = 0. The corresponding magnetic ﬁeld is
+
+                                                  ˙q(t)  2⌦2
+                       B(z, t) = ˆy           cos Kz,                        (3)                             c⌦ s ✏0V
+
+giving the total energy
+
+                                       ✏0
+             H =  2   dV E2 +                            Z                              1       #     c2B2$
+                 =    ⌦2q2 +      ,                               (4)
+                              2                                 #       p2$where the momentum is deﬁned as p = ˙q. We recognise this as the hamiltonian for
+a harmonic oscillator, with the energy oscillating back and forth between q (the
+electric ﬁeld) and p (the magnetic ﬁeld). That p is the conjugate variable to q can
+be conﬁrmed by checking that the Hamilton-Jacobi equations of motion:
+
+                               @
+                                                        ˙q = @pH = p
+
+                                                    ˙p =                         = −⌦2q                            (5)                   −@@qH
+
+satisfy the Maxwell-equation requirement ¨q + ⌦2q = 0.
+   Quantization now proceeds by imposing canonical commutation relations on
+the position and momentum variables:
+
+                                                            [ˆq, ˆp] = i~,                                  (6)
+
+so that the Heisenberg equations of motion:
+
+                               1
+                                                                 ˙ˆq =                                                                    ˆq, ˆH = ˆp                                   i~                               1 h    i
+                                                                ˙ˆp =                                                                  ˆp, ˆH = −⌦2ˆq                          (7)                                   i~                                   h    i
+have the same form as the Hamilton-Jacobi equations.
+    It is very handy to introduce creation a† and annihilation a operators:
+
+                      1                     1
+                  a† = p    (⌦ˆq −iˆp);   a = p    (⌦ˆq + iˆp),               (8)                  2~⌦               2~⌦
+
+====== PAGE 5 ======
+ Quantized Light                                                      5
+
+
+or inversely
+
+                     ~               ~⌦                             ˆq =      a +      ;      ˆp =       −a†                   (9)
+                  2⌦                   2        i          r         r  ✓a   ◆                           #    a†$
+which put the hamiltonian in the form:
+
+                                1
+                             ˆH =  2~⌦ a†a +                                      #     1aa†$
+                  = ~⌦  a†a +       .                         (10)
+                                          2                       ✓    ◆
+The commutation relations
+                                        a,  = 1                               (11)
+show that the energy eigenstates are⇥ numbera†⇤    states    with energies given by                                                      |ni
+                                 1
+               Hn = ~⌦  n + 2    , n = 0, 1, 2, . . . .                  (12)                  ✓   ◆
+We can interpret n as the number of photons, or quanta of excitation, in the ﬁeld.
+Note that in this interpretation, a photon belongs to the whole standing wave,
+rather than being a particle localised in space.
+   In terms of annihilation and creation operators, the electric ﬁeld operator, in
+the Heisenberg picture, is:
+
+                       ~⌦                     ˆE(z, t) =          a(t) + a†(t) sin(Kz)ˆx
+                               ✏0V             r                                   #           $                       ~⌦               =          ae−i⌦t +       sin(Kz)ˆx
+                               ✏0V             r               =  ˆE+(z, t)# + ˆE−(z, a†ei⌦t$t),                           (13)
+
+i.e.  the positive frequency part of the ﬁeld is an annihilation operator and the
+negative frequency part is a creation operator. The ﬁeld amplitude can be deﬁned
+as:
+                             ~⌦
+                                            ˆE =   ✏0V a,                              (14)                 r
+and loosely speaking, we can describe   ~⌦/✏0V as the electric ﬁeld per photon.
+Note, however, that the expectation value of electric ﬁeld in a number state is zero,                 p
+essentially because the energy depends on the magnitude of the electric ﬁeld, not
+
+====== PAGE 6 ======
+ Quantized Light                                                      6
+
+
+the phase. The square of the ﬁeld, on the other hand, has the expectation value
+                      ~⌦
+                 hn| ˆE2|ni =  ✏0V hn|  a(t) + a†(t)  |ni sin2(Kz)                      ~⌦    #            $2
+               =                             ✏0V hn| a†a +     |ni sin2(Kz)                      ~⌦    #      aa†$               =      (2n + 1) sin2(Kz).                        (15)
+                             ✏0V
+Averaging over the mode volume, we obtain:
+
+                                1
+                     E2 =      dV                            V      hn|E2|ni                              Z
+                         ~⌦      1
+                  =      n +       ,                          (16)
+                                   ✏0V      2                        ✓   ◆
+i.e. each photon contributes ~⌦/✏0V to the mean squared ﬁeld.
+   The vacuum state |0i for the mode is deﬁned as the state with no photons, such
+that a|0i = 0. Even though it is the ground state, it has some energy ~⌦/2 andhence also a nonzero square of the electric ﬁeld E2 = ~⌦/2✏0V . One can think of
+the vacuum as a randomly ﬂuctuating electric ﬁeld with zero mean but with energy
+of half a virtual photon per mode.  Since this vacuum ﬁeld cannot be detected
+by an absorption measurement (there are no real photons to absorb), it is often
+convenient to subtract the vacuum contribution o↵the energy, which is equivalent
+to writing the original Hamiltonian in normal order, i.e. with annihilation operators
+to the right
+
+                                1
+                                         : ˆH : =  2~⌦:  a†a +         :                                1     #      aa†$
+                  =  2~⌦ a†a + a†a                  =  ~⌦a†a#         $                         (17)
+
+1.2  Quantizing a multimode ﬁeld
+
+A multimode ﬁeld in a cavity can be quantized along similar lines, with each mode
+m acting as a harmonic oscillator with its own annihilation and creation operators
+am, a†m, with commutation relations
+                           am, a†m0 = δm,m0.                             (18)                           h      iThe total hamiltonian is then
+                                             1
+                          ˆH =    ~⌦m  a†mam + 2    .                     (19)                       m    ✓      ◆          X
+
+====== PAGE 7 ======
+ Quantized Light                                                      7
+
+
+Notice that, since there is no limit to the number of modes, the energy of the
+vacuum is inﬁnite!
+   The energy eigenstates are now multimode number states,
+
+                    |{n}i ⌘  |n1, n2, . . . , nm, . . . i
+               ⌘  |n1i ⌦|n2i ⌦· · · ⌦|nmi ⌦. . .                (20)
+   The modal decomposition need not be performed using standing waves, and
+for example, in free space, an expansion in terms of running waves is appropriate.
+In terms of general normalised mode functions um(r), the electric ﬁeld is
+
+                   ~⌦m           ˆE(r, t) =             um(r)am(0)e−i⌦mt + u⇤m(r)a†
+                            2✏               m r      X        ⇥                           m(0)ei⌦mt⇤
+          =  ˆE+(r, t) + ˆE−(r, t),                                    (21)
+
+where the positive-frequency part of the ﬁeld is seen to be a multimode annihilation
+operator.
+    It is sometimes useful to work with the vector potential operator, which in the
+radiation gauge is related to the electric ﬁeld by E = −@A/@t:
+                        ~
+        ˆA(r, t) =    −i  2✏⌦m  um(r)am(0)e−i⌦mt −u⇤m(r)a†                .   (22)              m  r      X            ⇥                           m(0)ei⌦mt⇤
+The magnetic ﬁeld operator can now be obtained:
+ˆB(r, t) = r ⇥ˆA
+                  ~
+     =    −i  2✏⌦m {r ⇥um(r)} am(0)e−i⌦mt −{r ⇥u⇤m(r)} a†                ,         m  r    X            ⇥                                         m(0)ei⌦mt⇤                                                                             (23)
+
+1.3  Plane-wave basis
+
+For a quantizing a ﬁeld in free space, we work in a basis of running plane-wave
+modes:
+                                  1
+                     um = p V eikm·rˆem,                           (24)
+where V = L3  is the quantisation volume, ˆem  is a unit vector describing the
+polarisation, and km are the allowed wavevectors:
+
+                           2⇡
+                  km =    (mxˆi + myˆj + mzˆk),                      (25)
+                     L
+
+====== PAGE 8 ======
+ Quantized Light                                                      8
+
+for integers mx, my, mz. Gauss’s law r·E = 0 leads to the transversality condition:
+                                       ˆem · km = 0,                              (26)
+which means that for every spatial mode there are two possible polarisation modes,
+perpendicular to the wavevector.
+   In this basis, the electric ﬁeld, vector potential and magnetic ﬁeld are:
+
+                 ~⌦m        ˆE(r, t) =               amei(km·r−⌦mt) + a†
+                      2✏V              m r      X        ⇥                  me−i(km·r−⌦mt)⇤ˆem
+                        ~
+       ˆA(r, t) =    −i  2✏⌦mV  amei(km·r−⌦mt) −a†              m  r      X              ⇥                  me−i(km·r−⌦mt)⇤ˆem
+                  ~⌦m       ˆB(r, t) =                amei(km·r−⌦mt) + a†                          (27)                        2✏c2V                                  ⇥ˆem.              m r      X          ⇥                  me−i(km·r−⌦mt)⇤ˆkm
+   Using the commutation relations for the annihilation and creation operators
+and the orthonormality of the mode functions, we ﬁnd the commutator between
+the electric ﬁeld and vector potential to be:
+            ˆAi(r), ˆEj(r0) = −i~       (ˆel,σ)i (ˆel,σ)j  eikl·(r−r0) +                   ,     (28)                      2V ✏0
+                                                    l,σ        h           i   X           h              e−ikl·(r−r0)i
+where i, j label the cartesian components, l labels the spatial mode and σ labels
+the polarisation mode. The spatial part of this expression behaves like a Dirac
+delta function:
+                     1              1
+                  lim         e−ikl·r =          e−ik·rd3k = δ(r).              (29)                   V !1 V     l           (2⇡)3 Z        X
+The polarisation part behaves something like a Kronecker delta function:
+                                (ˆel,σ)i (ˆel,σ)j = ˆe1iˆe1j + ˆe2iˆe2j = δij −ˆkiˆkj,              (30)
+                     σ     X
+which follows from the fact that ˆe1 and ˆe2 are orthogonal to ˆk. If we only ever deal
+with transverse ﬁelds, then this reduces to the normal Kronecker delta function.
+Combining the two results together, we can write the commutator in terms of the
+‘transverse delta function’1 δTij(r):
+                               ˆAi(r), ˆEj(r0) = −i~ δTij(r                          (31)                                                  ✏0      −r0),                      h           i
+  1A vector ﬁeld can be written as the sum X = XT + XL of a curl-free part r ⇥XL = 0 and
+a divergence-free part r · XT = 0. The transverse delta function extracts the transverse part of
+the ﬁeld:   δT (r −r0) · X(r0)d3r0 = XT (r).         R
+
+====== PAGE 9 ======
+ Quantized Light                                                      9
+
+which shows that, in general, ˆA and ✏0 ˆE are conjugate ﬁelds that cannot be si-
+multaneously speciﬁed.
+
+====== PAGE 10 ======
+ Quantized Light                                                     10
+
+
+2  Coherent states
+
+Further reading: M&S13.4
+
+   Having formally introduced the photon, we now look at its role in two very
+useful kinds of quantum states: thermal (or chaotic) states and coherent states.
+These states have a classical interpretation, but quantum formulation give us a
+‘photon’ description that combines the wave and particle pictures.
+   In the following we will just consider the state of a single-mode ﬁeld (which
+could be e.g. a standing wave in a cavity, or a propagating plane wave in free
+space), but the results are easily generalised to the multimode situation.
+
+2.1  Quadratures and phase space
+
+Coherent states have both a physical signiﬁcance (as fully coherent light, or an
+idealisation of laser output) and a mathematical utility (as a basis set for rep-
+resenting a general quantum state). They were ﬁrst constructed by Schr¨odinger
+in 1926, and ever since Glauber utilized them in 1963 in his quantum theory of
+coherence, they have played a central role in quantum optics.
+    Classically, a coherent state is characterised by a well deﬁned amplitude E.
+In quantum mechanics, the uncertainty principle prohibits us from specifying E
+exactly, because the real and imaginary parts of E correspond to noncommutingoperators, but we can deﬁne a state that has an amplitude with the smallest
+variance possible. This smallest variance is the uncertainty of the vacuum state.
+   To quantify these statements, we introduce the quadrature operators:
+
+                       X1 =  (a† + a)
+                       X2 =  i(a† −a),                           (32)
+which, up to a constant factor, are just the ‘position’ and ‘momentum’ operators
+introduced earlier in the Hamiltonian formulation2 (see Eq. (9)). Classically, X1
+and X2 constitute a phase space, in which the system dynamics can be mapped
+out with deterministic trajectories. Quantumly, the state at a particular time can-
+not be speciﬁed by a single point in phase-space, due to quantum indeterminacy.
+Instead, a quantum state can be thought of as a distribution of points in phase
+space, centred at (hX1i, hX2i) and characterised by the variances var(X1), var(X2).
+   2For a standing wave in a cavity and with the appropriate choice of phase, hX1i is proportional
+to the instantaneous electric ﬁeld and hX2i is proportional to the instantaneous magnetic ﬁeld,which oscillates out of phase. For a running wave in free space, this doesn’t hold, as the electric
+and magnetic ﬁelds oscillate in phase. In this case, hX1i gives the cos Kz contribution to the
+electric ﬁeld and hX2i gives the sin Kz contribution
+
+====== PAGE 11 ======
+ Quantized Light                                                     11
+
+
+   For example, the vacuum state, for which
+
+                   hX1i =  h0|a + a†|0i
+                =  0 = hX2i                                  (33)
+                 hX21i =  h0|aa + aa† + a†a + a†a†|0i
+                =  1 = hX22i,
+corresponds to a circular distribution centred at the origin with standard deviation
+in any direction of 1.
+
+2.2  Coherent displacements
+
+To generate the coherent state, we want to add energy to system in a coherent
+fashion without increasing the noise. Mathematically we can describe this with
+the displacement operator ˆD(↵):
+
+                                                                            (34)                          |↵i ⌘ˆD(↵)|0i ⌘e↵a†−↵⇤a|0i,
+where the complex number ↵is called the coherent amplitude. Some handy prop-
+erties of the displacement operator include
+
+                           ˆD†(↵)aˆD(↵) =  a + ↵
+                           ˆD†(↵)a† ˆD(↵) =  a† + ↵⇤
+                                  ˆD†(↵) =  ˆD−1(↵)
+                        =  D(−↵).                       (35)
+from which it follows that:
+
+                               1
+                  h↵|X1|↵i =  2h0|ˆD†(↵)(a + a†)ˆD(↵)|0i
+                               1
+                  =  2h0|(a + ↵+ a† + ↵⇤)|0i
+                  =  <(↵)
+                  h↵|X2|↵i =  =(↵)
+                 h↵|X21|↵i =  <(↵)2 + 1
+                 h↵|X22|↵i =  =(↵)2 + 1.                               (36)
+Thus the state is now centred at the point (hX1i, hX2i) = (<(↵), =(↵)), but withthe same noise properties as the vacuum. Or equivalently we can say the coherent
+state deﬁned in this way is just the vacuum state ‘displaced’ in the complex plane
+
+====== PAGE 12 ======
+ Quantized Light                                                     12
+
+
+by the amplitude ↵. Furthermore, the energy of the coherent state is:
+
+                               1
+                    hHi =  2~⌦ha†a + aa†i
+                               1
+                  =  4~⌦ hX21i + hX22i                               1   #      1    $
+                  =  4~⌦  |↵|2 + 2    ,                        (37)                        ✓     ◆
+i.e. we have added an average of hni = |↵|2 photons to the vacuum without addingany additional noise.
+
+2.3  Coherent state properties
+
+Coherent states:
+
+   • are eigenstates of the annihilation operator, with eigenvalue ↵:
+                           a|↵i =  aˆD(↵)|0i
+                   =  D(↵)D†(↵)aˆD(↵)|0i
+                   =  D(↵)(a + ↵)|0i
+                   =  D(↵)↵|0i
+                   =  ↵|↵i.                                 (38)
+   • are not eigenstates of the creation operator a†|↵i 6= ↵⇤|↵i, and are therefore
+     not energy eigenstates ˆn|↵i 6= n|↵i.
+   • have an indeﬁnite number of photons, with variance
+                    var(n) =  hn2i −hni2
+                =  h↵|a†a†aa + a†a|↵i −  h↵|a†a|↵i                =  |↵|4 + |↵|2 −|↵|4 = n,#          $2           (39)
+     where n ⌘|↵|2, the average number of photons.
+   • have an phase uncertainty that decreases with n:
+
+                                        1
+                       ∆φ =                                       2 pn.                           (40)
+
+   • are minimum-uncertainty states with
+
+                                    1
+                  ∆X1∆X2 =        = 1,                  (41)                                    2 |h[X1, X2]i|
+
+====== PAGE 13 ======
+ Quantized Light                                                     13
+
+
+     and
+                                          1
+                       ∆n∆φ = 2.                           (42)
+   • can be expressed in terms of creation operators as:
+                            |↵i =  e↵a†−↵⇤a|0i
+                   =                                       e↵a†e−↵⇤ae−|↵|2/2|0i
+                   =                                         e−|↵|2/2e↵a†|0i
+                                              ↵n(a†)n
+                   =  e−|↵|2/2                                 (43)                                                   n!    |0i,
+                                             n             X
+     where we have used the Campbell-Baker-Hausdor↵formula:
+
+                               e A+ˆ  ˆB = e Aeˆ ˆBe−12 [A,ˆ ˆB],                       (44)
+
+     which holds when both ˆA and ˆB commute with [ˆA, ˆB].
+
+   • are superpositions of number states:
+
+                                         ↵n
+                             |↵i =  e−|↵|2/2                          p n! |ni,                    (45)                                               n              X
+      since     = p            (a†)n|0i     n!|ni.
+   • are not orthogonal:
+                              |h↵|βi|2 = e−|↵−β|2 6= δ(↵−β),                  (46)
+     but  if ↵and β are suﬃciently di↵erent, the states will be approximately
+      orthogonal.
+
+   • form a complete basis3, with the resolution of the identity given by4:
+
+                                  1
+                                                           ˆ1 =                                       (48)                              ⇡   d2↵|↵ih↵|,                               Z
+     which means any other state can be represented as a superposition of coher-
+      ent states.
+
+   3actually, since they are not orthogonal, they are overcomplete, which leads to nonuniqueness
+when it comes to expressing other states as distributions over coherent states
+   4we can prove this by expanding in terms of number states and using the complex gaussian
+integral:
+                                         d2↵e−|↵|2 = ⇡                                   (47)                               Z
+
+====== PAGE 14 ======
+Quantized Light                                                     14
+
+
+  • are very useful for evaluating expectation values of normally ordered operator
+    products, since
+                            h↵| : f(a†, a) : |↵i = f(↵⇤, ↵).                   (49)
+
+====== PAGE 15 ======
+ Quantized Light                                                     15
+
+
+3  Photon statistics and photodetection
+
+Further reading: M&S13.3
+
+3.1  Thermal states
+
+We now turn to a quantum description of the other main paradigm of classical light,
+namely the light from a thermal source, such as blackbody radiation or the output
+from an discharge lamp. Again we will focus on a single mode, which describes
+thermal light that has been spectrally ﬁltered to produced (quasi)monochromatic
+light.
+   In quantum mechanics, a thermal ensemble is described by a density operator:
+
+               ⇢=  exp(−H/kT)                              (50)
+                           Tr                              [exp(−H/kT)],
+an expression which can be derived by maximizing the entropy S = −kTr [⇢ln ⇢],
+subject to the constraint of ﬁxed energy hHi = Tr[H⇢] and normalisation Tr[⇢] = 1.
+   For the speciﬁc case of a single optical mode, with H = ~⌦a†a, the thermalstate is
+              ⇢=  exp(−~⌦a†a/kT)                            (51)
+                         Tr                             [exp(−~⌦a†a/kT)].
+Using the completeness of thermal states ˆ1 =   n |nihn|, we can rewrite this as                   P
+                  ⇢ =     n e−~⌦a†a/kT|nihn|           P nhn|e−~⌦a†a/kT|ni
+                               n              = P                                e−~⌦n/kT|nihn|
+                                 n e−~⌦n/kT           P
+              =   1                                               (52)             P                                              e−~⌦n/kT|nihn|,
+                                           n                             ⇥ −e−~⌦/kT⇤X
+i.e. a mixture of number states with no coherences (o↵-diagonal elements) between
+them. The diagonal elements of a density operator give the probabilities of being
+in each state, which in this case just corresponds to the Boltzmann result:
+
+                        pn =   1            e−~⌦n/kT
+                               1     n                 =  ⇥ −e−~⌦/kT⇤      ,                          (53)
+                              1 + n  1 + n                       ✓    ◆n
+
+====== PAGE 16 ======
+ Quantized Light                                                     16
+
+
+where n is the average number of photons:
+
+                                     1
+                        n =                                        (54)
+                                       e~⌦/kT                              −1.
+The variance of the thermal photon number distribution is
+
+                               var(n) = n + n2.                            (55)
+
+3.2  Poissonian statistics
+
+For a coherent state, the distribution of photon number is
+                             pn =  |hn|↵i|2
+                    =  e−|↵|2 |↵|2n
+                                              n!
+                    =  e−nnn ,                              (56)
+                                           n!
+which is the Poisson distribution, characterised by a variance equal to the mean
+var(n) = n. A thermal distribution with the same mean will always have a larger
+variance than the coherent case: var(n) = n + n2. Furthermore, the exponential
+form of the thermal distribution is always highly skewed, with n = 0 the most likely
+value, whereas the Poisson distribution is peaked around its mean, approaching a
+symmetrical gaussian for large n.
+   The photon statistics can be directly measured experimentally  if we have a
+photodetector that can respond to individual photons, creating a pulse of current
+for each absorption event.  In practice this can be achieved for low photon ﬂux
+rates (less than 106 photons per second) by use of a photomultiplier tube or an
+avalanche photodiode (APD). An analysis of the mean and the variance of the
+number of detection events in a given period will then tell us about the type of
+statistics of the light5. To classify the results, we use following terminology:
+
+superpoissonian var(n) > n, e.g. a thermal state.  Observation of poissonian
+      statistics can be explained (as we shall see in the next section) with a semi-
+      classical model that includes intensity ﬂuctuations.
+
+poissonian var(n) = n, e.g. a coherent state.  In a semiclassical model this is
+     explained by a light of constant intensity.
+
+subpoissonian var(n) < n, i.e. smaller number ﬂuctuations than a coherent state,
+       e.g. a number state. Observation of subpoissonian statistics has no semiclas-
+       sical explanation and thus provides a clear demonstration that it is light
+       itself that is quantized rather than just the detection process.
+
+   5assuming that every photon leads to an electrical pulse, i.e. perfect quantum eﬃciency
+
+====== PAGE 17 ======
+ Quantized Light                                                     17
+
+
+Here we have gone from a picture of photons as quanta of excitations in a delo-
+calised mode to a picture of photons as localised entities that hit the photoactive
+region of the detector at particular points in time. We can go from one picture to
+the other by thinking of the photons that are absorbed in the time interval t as
+belonging to a mode of quantisation length L = ct.
+
+3.3  Semiclassical Theory of photodetection
+
+We can develop a semiclassical model to explain the statistics of photodetection
+based on a few simple assumptions:
+
+   1. The rate at which elections in the photoactive region are excited depends
+     only on the intensity of the incident light I(t). In a suﬃciently small amount
+      of time ∆t, probability of one electron being excited is therefore
+
+                                 P1(t, t + ∆t) = ⇠I(t)∆t,                      (57)
+
+     where ⇠is some constant.
+
+   2. We can choose ∆t to be small enough such that the probability of two de-
+      tection events in the time ∆t is negligible. The probability of no detection
+      events is thus
+                               P0(t, t + ∆t) = 1 −⇠I(t)∆t.                    (58)
+   3. A detection event does not a↵ect the probability of subsequent detections
+      (this gives a practical limit to the photon ﬂux, since a detector often has
+     a ‘deadtime’ after each detection event during which the detector cannot
+     respond to further absorptions)
+
+   To determine the probability for n detection events over a longer time period,
+we develop a recursion relation as follows. The probability Pn(0, t + ∆t) can be
+written as the probability of n events in the interval 0 ! t and 0 in the interval
+t ! t + ∆t plus the probability of n −1 events in the interval 0 ! t and 1 in the
+interval t ! t + ∆t. Using the independence assumption above, we can write thisas:
+
+         Pn(0, t + ∆t) =  Pn(0, t)P0(t, t + ∆t) + Pn−1(0, t)P1(t, t + ∆t)
+              =  Pn(0, t) [1 −⇠I(t)∆t] + Pn−1(0, t)⇠I(t)∆t.        (59)
+In the limit that ∆t ! 0, the rate at which the probability grows with detectiontime is:
+
+                    dPn      Pn(t + ∆t)                 =           −Pn(t)
+                         dt           ∆t
+                 =  ⇠I(t) [Pn−1(t) −Pn(t)] .                    (60)
+
+====== PAGE 18 ======
+ Quantized Light                                                     18
+
+
+The solution to this set of coupled ODE’s is (check by substitution):
+
+
+                                                   t
+                                                                                       t
+                                    0
+                   Pn(t) =             exp        ⇠I(t0)dt0                (61)                         hR  ⇠I(t0)dt0inn!      −  0                                       Z        ,
+
+3.3.1  Constant Intensity
+
+For a constant intensity, the integral is just:
+
+                                                         t
+                                      ⇠I(t0)dt = ⇠It,                           (62)
+                                        0                         Z
+which is the same for every measurement interval of length t. The probability of
+detecting n photons in the interval is then given by a Poisson distribution:
+
+                                         [⇠It]n
+                           Pn(t) =      exp                               (63)                                      n!      [−⇠It],
+
+with mean n = ⇠It.
+  A photocount with poissonian statistics can thus be explained by a semiclassical
+model with light of constant intensity. In this model, the randomness does not lie
+with the light (random arrival times of photons) but with the detection process
+itself.
+
+
+3.3.2  Fluctuating Intensity
+
+For a ﬂuctuating intensity, the photocount in a particular interval depends on the
+average current in that interval:
+
+                                                        t
+                                       ⇠I(t0)dt0 = ⇠Itt,                           (64)
+                                       0                        Z
+where It denotes a time-average of the current over the interval of length t. This is
+to be distinguished from an ensemble average, or an average of a set of independent
+measurements, which we will denote in this section by h. . . i.
+   The time-averaged current It will vary from measurement to measurement.
+We can treat it as a random variable governed by some distribution p(It). The
+photocount formula now needs to be averaged over all possible realisations:
+
+                                   ⇠Itt
+                     Pn(t) =          exp        p(It)dIt                 (65)                                   n!       −⇠Itt                       Z  ⇥    ⇤n                                              ⇥      ⇤
+
+====== PAGE 19 ======
+ Quantized Light                                                     19
+
+
+The mean count is now:
+                  hni =     nPn(t)
+                             n        X
+                                      ⇠Itt
+             =      n       exp        p(It)dIt                                      n!       −⇠Itt                               n   ⇥    ⇤n                     Z         X              ⇥      ⇤
+             =     ⇠Ittp(It)dIt                     Z
+             =  ⇠hItit                                           (66)
+Similarly, the mean square is
+                      hn2i =     n2Pn(t)
+                                  n          X
+                =      ⇠2I 2tt2 + ⇠Itt  p(It)dIt                         Z h 2          i
+                =  ⇠2hI tit2 + ⇠hItit,                           (67)
+which leads to the variance:
+                          var(n) = ⇠2var(It)t2 + hni.                       (68)
+Thus the photocount statistics have a Poissonian contribution from the random
+nature of the detection process, plus an additional contribution from the intensity
+ﬂuctuations. A classical ﬁeld with intensity ﬂuctuations is therefore suﬃcient to
+explain superpoissonian statistics.
+
+3.4  Photocurrent ﬂuctuations (optional)
+
+It is not always practical, or possible, to determine the photon statistics with
+single-photon detection. Besides the requirement of low ﬂux rates, another issue
+is the low quantum eﬃciency ⌘⇠0.5,  i.e. only about half of the photons (orabsorption events) lead to detectable pulses of current. If we are willing to forego
+the requirement of being able to resolve every photon, we can use photodiodes
+to analyse the statistics of the light.  In these devices, each photon creates an
+electron-hole pair that contributes to the current across a reverse-bias diode. The
+advantages are:
+   • photodiodes can cope with high ﬂux e.g. Φ = 3 ⇥1015 photons/sec
+   • They have high quantum eﬃciency ⌘' 0.95, meaning that nearly every     photon absorbed liberates an electron that contributes to the current. The
+      statistics of the current can then be used to determine the statistics of the
+       light.
+
+====== PAGE 20 ======
+ Quantized Light                                                     20
+
+
+The observed photocurrent will be
+
+                               P
+                                         i = ⌘eΦ = ⌘e ~⌫,                            (69)
+
+where P is the incident optical power. If the ∆t is the time period over which we
+can resolve current ﬂuctuations, then the mean and the variance of the current
+are:
+                     =  eh⌘ni                              (70)                                      hii      ∆t
+                               var(i) =  e2var(⌘n) ,                         (71)
+                                      ∆t2
+
+where n is the number of electrons in time interval ∆t.
+     If the absorption statistics are poissonian, then
+
+                                 var(i) =  e2h⌘ni
+                                      ∆t2
+                      =  ehii ,                             (72)
+                                ∆t
+which means that as ∆t ! 0, the current ﬂuctuations get very large. The solutionto this is just to look at ﬂuctuations over a narrow band of frequencies. One can
+then show that the resultant variance is
+
+                                var(i) =  2e∆fhii,                          (73)
+where ∆f is the frequency range.
+   This variance deﬁnes the shot noise limit, since it arises from the fact that the
+current is made up of discrete electrons, excited by (in the classical explanation)
+light of constant intensity. Light with intensity ﬂuctuations will create a current
+with ﬂuctuations above this level (superpoissonian), whereas current ﬂuctuations
+below shot noise are possible only with nonclassical subpoissonian light.
+
+====== PAGE 21 ======
+ Quantized Light                                                     21
+
+
+4  Quantum coherence and correlations
+
+Further reading: M&S13.5
+
+4.1  The key idea: measurement by absorption
+
+We now wish to place the discussion of photodetection and our earlier discussion
+of correlation functions on a quantum-mechanical footing. In either case we are
+concerned with measuring the intensity of the light, and correlations in that inten-
+sity. If the atoms in our detectors are in the ground state (a very safe assumption
+for optical transitions at room temperature), then the only way for the detector
+to respond to the intensity of the light is for the atom to absorb a photon6. The
+signal we get will be proportional to the rate of transition, which, according to per-
+turbation theory, depends on the matrix element between initial and ﬁnal states
+of the system:
+                                                             2
+                         wi!f /     ˆE+(x)|ii   ,                         (74)
+where E+(x) = E+(r, t), the positive-frequency component of the ﬁeld, is the part                                                            ---hf|                                 ---of the ﬁeld operator that contains only annihilation operators:
+
+                           ~⌦m
+                    ˆE+(r, t) =        2✏um(r)am(0)e−i⌦mt,               (75)                       m r          X
+where we have ignored polarisation.
+   Since we don’t care about the ﬁnal state of the system after the photon has
+been absorbed, we sum over all possible ﬁnal states:
+
+                                                        2
+             w /          ˆE+(x)|ii
+                                      f         X ---hf|                                 ---
+              =       hi| ˆE+(x)  |fihf|ˆE+(x)|ii
+                                      f         X  h       i†
+              =       hi|ˆE−(x)|fihf|ˆE+(x)|ii
+                                      f         X
+              =   hi|ˆE−(x) ˆE+(x)|ii,                              (76)
+where we have used the completeness relation 1 =    f |fihf|. Thus the rate of ab-
+sorbing a photon is a measure of the intensity of light as deﬁned by ˆE−(x)                    P               h      ˆE+(x)i.
+    6i.e. only the part of the ﬁeld with annihilation operators is resonant
+
+====== PAGE 22 ======
+ Quantized Light                                                     22
+
+
+   In the case that the light is in a mixed state, we calculate this expectation
+value by use of the density operator ⇢for the light:
+
+                 w /  Tr ⇢ˆE−(x) ˆE+(x)  .                       (77)                                  h            i
+   To appreciate the di↵erence between hˆE−(x) ˆE+(x)i and  12hˆE(x) ˆE(x)i, as ameasure of intensity, consider the ‘intensity’ of the vacuum:
+
+                          ~⌦m
+           h0|ˆE−(x) ˆE+(x)|0i =       2✏|um(r)|2h0|a†mam|0i
+                        m          X
+                 =  0                                          (78)
+                              1   ~⌦m
+              h0|ˆE(x) ˆE(x)|0i =  2     2✏|um(r)|2h0|a†mam + ama†m|0i
+                         m           X
+                              1   ~⌦m
+                 =                           0,                    (79)                              2     2✏|um(r)|2 6=
+                         m           X
+i.e. unless a normally ordered correlation function is used, then the vacuum would
+have a nonzero (inﬁnite) intensity.
+     If we wish to use two detectors (or one detector at two di↵erent times) to mea-
+sure photon coincidences, then the relevant matrix element is hf|ˆE+(x) ˆE+(x0)|ii.The same reasoning as above shows the transition rate is:
+              w /  h ˆE−(x0)ˆE−(x) ˆE+(x) ˆE+(x0)i,                  (80)
+which is a measure of intensity correlation.
+    Similarly, the n-fold coincidence rate is
+           w /  h ˆE−(x1) . . . ˆE−(xn)ˆE+(xn) . . . ˆE+(x1)i.             (81)
+
+4.2  Quantum coherence
+
+The two key conceptual advances in Glauber’s theory of coherence are that
+
+   • true coherence is not encapsulated merely by what is called ‘ﬁrst-order’ co-
+      herence. To fully characterise coherence, we need to introduce correlation
+      functions to all orders (as we have done already for classical ﬁelds)
+
+   • since coherence is manifest in intensity measurements, the correlation func-
+      tions of a quantum ﬁeld must written with the operators in normal order.
+
+====== PAGE 23 ======
+ Quantized Light                                                     23
+
+
+   The nth order correlation function is thus deﬁned as
+        G(n)(x1 . . . xn, yn . . . y1) ⌘h ˆE−(x1) . . . ˆE−(xn)ˆE+(yn) . . . ˆE+(y1)i,    (82)
+with nth order coherence deﬁned by the condition that all correlation functions
+up to nth order factorise into products of amplitudes:
+      G(j)(x1 . . . xj, yj . . . y1) = E⇤(x1) . . . E⇤(xj)E⇤(yj) . . . E⇤(y1) 8j n      (83)
+.
+    It is often convenient to work with normalised correlation functions:
+
+                                        G(n)(x1 . . . xn, yn . . . y1)
+                              .                                                                                                             ,                                                                            (84)             g(n)(x1                                . . xn, yn . . . y1)
+                                             G(1)(xk,                                                 xk)                                                            G(1)(yk,                                                                 yk)                                              k                  pi.e. we divide               the                  unnormalised                                   correlation                                             function                                              byp                                                       the square                                                                    root of                                                                          the                   ⌘ Qn
+product of the intensities at each point. The condition for n-order coherence then
+reduces to |g(j)| = 1 for all j n.   For higher-order coherence, we are often just interested in intensity correlations,
+for which x1 = y1, etc. The simpliﬁed correlation function is then
+                    g(n)(x1 . . . xn) ⌘g(n)(x1 . . . xn, xn . . . x1),                  (85)
+which is always real.
+
+
+4.2.1  First order coherence: monochromaticity
+
+A monochromatic (single-mode) ﬁeld is always coherent to ﬁrst order, since7
+                    g(1)(t1, t2) =            ha†ei⌦t1ae−i⌦t2i
+                                     ha†ei⌦t1ae−i⌦t1iha†ei⌦t2ae−i⌦t2i
+                =  e−i⌦(t2−t1),                                   (86)              p
+
+whose magnitude is one. This is true regardless of the photon statistics, i.e. ﬁrst
+order coherence does not distinguish between coherent, thermal, number state,
+etc.
+   For stationary ﬁelds, whose correlation functions depend only on the relative
+coordinate e.g. g(1)(t, t+⌧) = g(1)(⌧), coherence requires the ﬁeld to be monochro-
+matic.  Fields with a small range of frequencies may be partially coherent, with
+the coherence function g(1)(⌧) approaching zero for ⌧> ⌧c, the coherent time.
+The Fourier transform of g(1)(⌧) is the line-shape function g(⌦), which gives the
+spectral proﬁle of the light.
+
+   7for simplicity we will just look at coherence in time, but similar consideration apply to
+coherence in space
+
+====== PAGE 24 ======
+ Quantized Light                                                     24
+
+
+4.2.2  Second-order coherence: Bunching and Antibunching
+
+To distinguish between thermal and coherent light, we need to consider the second-
+order correlation function:
+                           g(2)(⌧) ⌘  g(2)(t, t + ⌧; t + ⌧, t)
+                                                     ˆI(t)ˆI(t + ⌧)                   =   h:                 :i ,                       (87)
+                                                hˆI(t)ihˆI(t + ⌧)i
+where the intensity operator is here deﬁned as ˆI = ˆE−ˆE+. This gives the intensity
+correlations as measured by Twiss and Hanbury Brown in their stellar intensity
+interferometry experiments. For suﬃciently large ⌧, then g(2) ! 1 for any kind of
+light. What is interesting is what happens as ⌧! 0. In the classical explanation,g(2)(0) = 1 only for light of constant intensity; otherwise the intensity ﬂuctuations
+will lead to g(2)(0) > 1.
+   To obtain the quantum result, consider g(2)(0) for a single-mode state:
+                             g(2)(0) =   ha†a†aai
+                                      ha†aiha†ai
+                   =  ha†aa†ai −ha†ai
+                                         ha†aiha†ai
+                                         var(n)                   =  1 +    −n                        (88)
+                                           n2
+
+   For a thermal state, we have already seen that var(n) = n2 +n. Thus g(2)(0) =
+2. In the photon interpretation, this means that detecting one photon makes it
+more likely that another photon will also be detected, i.e.  the photons appear
+to arrive in bunches, a phenomenon known as bunching. More generally, one can
+show that, for multimode thermal light,
+
+                                 g(2)(⌧) = 1 + g(1)(⌧).                          (89)
+
+   For a coherent state, var(n) = n. Thus g(2)(0) = 1. This means that the arrival
+time of each photon is completely random, uninﬂuenced by whether other photons
+have also been detected.
+   For a number state, var(n) = 0. Thus
+
+                                  g(2)(0) = 1   < 1                          (90)                      −1n
+which means that probability of detecting simultaneous photons is lowered, which
+will make the arrival times more regular - or spaced out- than that of the coherent
+case. This phenomenon, known as antibunching, has no classical explanation, and
+provides direct conﬁrmation of the quantum nature of light.
+
+====== PAGE 25 ======
+ Quantized Light                                                     25
+
+
+4.2.3  Coherence state: coherence to all orders
+
+Since all the correlation functions are normally ordered, it follows that for single-
+mode coherent state they will always factorise into products of amplitudes:
+                      =  ha†nani
+                                           ha†ain
+                                    ↵⇤n↵n                                                 --g(n)-- =
+                                               |↵|2n
+                      =  1.                                 (91)
+
+i.e. a coherent state is coherent to all orders and thus very deserving of its name.
+
+4.3  Photon counting: Subpoissonian statistics
+
+The quantum theory of photodetection proceeds along the same lines as the semi-
+classical derivation in Sec. 3.3, except that now the coincidence rate for N detection
+events involves an Nth-order correlation function.
+
+                        h ˆE−(t)    ˆE+(t)   i = h:  ˆI(t)     :i.                  (92)                     h     iN h     iN      h   iN
+The quantum expression for the probability for N detection events in the interval
+0 ! t turns out to be:
+
+                                                  t
+                                                                                       t
+                                    0
+             PN(t) =    :              exp         ⇠ˆI(t0)dt0   :    ,           (93)                        N!      −  0      +             * hR  ⇠ˆI(t0)dt0iN                                       Z        ,
+
+and for a single-mode ﬁeld:
+
+                                ⌘(t)a†a
+                 PN(t) =    :          exp                   :    ,               (94)                          N!        −⌘(t)a†a               *  ⇥      ⇤N         +                                                ⇥         ⇤
+where ⌘(t) is the probability of detecting one photon in a time t from a one-photon
+ﬁeld.
+   For a coherent state, the expectation value is easy to evaluate:
+                    PN(t) = [⌘(t)|↵|2]N exp                  ,                  (95)
+                          N!                                                ⇥ −⌘(t)|↵|2⇤
+which is just a Poisson distribution with mean
+
+                  N = ⌘|↵|2 = ⌘n,                            (96)
+
+====== PAGE 26 ======
+ Quantized Light                                                     26
+
+
+where n is the average number photons in the ﬁeld. The quantity ⌘is thus the
+quantum eﬃciency that tells us the fraction of photons that are detected.
+   For a more general state, one can expand over number states to ﬁnd the pho-
+tocount probability PN in terms of the photon number distribution pn of the ﬁeld.
+The end result is:
+                      1
+                     PN =    pnB(n; N, ⌘),                         (97)
+
+                             n=N          X
+where
+                                        n!
+                  B(n; N, ⌘) =                                           (98)
+                            N!(n                             −N)!⌘N(1 −⌘)n−N
+is the Binomial distribution that describes the probability that N of the n photons
+in the ﬁeld are detected. Using the properties of the Binomial distribution, one
+can show that the variance in the photon count is
+
+                     var(N) =  n⌘(1 −⌘) + ⌘2var(n)
+                  = N(1 −⌘) + ⌘2var(n),                    (99)
+which contains a Poissonian contribution from the random detection process in
+addition to a contribution from the underlying photon statistics.  If the quantum
+eﬃciency is very high ⌘' 1, then the statistics of the photocount will faithfullyreﬂect the photon statistics of the ﬁeld, which can be subpoissonian. But if the
+quantum eﬃciency is low, then the photocount will approach the Poisson result,
+regardless of the photon statistics of the ﬁeld.
+
+====== PAGE 27 ======
+ Quantized Light                                                     27
+
+
+5  Quadratures and squeezed states
+
+Further reading: M&S17.1
+
+5.1  Squeezing
+
+Up until now, the only truly nonclassical states we have described have been the
+number states, and although there has been much progress in recent years with
+single-photon sources, number states are very challenging to produce reliably. A
+common alternative to achieving nonclassical behaviour in light has been through
+squeezing, in which the uncertainty in one variable is ‘squeezed’ below the coherent-
+state level. For quadratures (deﬁned in Eq. (32)), this means
+                   h∆X21i < 1,  or h∆X22i < 1,                     (100)
+but not both simultaneously, which would violate Heisenberg’s uncertainty princi-
+ple. Besides revealing nonclassical behaviour, such as antibunching and subpois-
+sonian statistics, squeezed states are of interest as a route to generating entangled
+states and for practical application in reducing noise in interferometric and other
+kinds of precision measurements.
+   The ideal squeezed state is, like the coherent state, a minimum-uncertainty
+state. But its ‘noise distribution’ in phase space is not symmetric - it is an ellipse
+rather than a circle. A squeezed state is characterised by both a complex amplitude
+↵= pnei✓and a complex squeezing parameter ⇣= re2iφ. The parameter r gives
+the degree of squeezing (i.e. the eccentricity of the ellipse) while φ speciﬁes which
+quadrature is being squeezed (i.e. the angle of the minor axis of the ellipse).  If
+φ = 0, then
+                       h∆X21i =  e−2r
+                       h∆X22i =  e2r,                           (101)
+i.e. the X1 quadrature is squeezed and the X2 quadrature is antisqueezed. Squeez-
+ing can be generated by parametrically amplifying one quadrature and deamplify-
+ing the other.
+
+   Some special cases:
+amplitude squeezing: where the squeezed axis lines up with the coherent dis-
+     placement, i.e. ✓= φ. Reduced amplitude ﬂuctuations lead to subpoissonian
+     number statistics, which can be directly detected through intensity measure-
+     ments.
+
+phase squeezing: The squeezed axis perpendicular to the coherent displacement
+   ✓= φ ± 90◦will lead to reduced phase ﬂuctuations, can can reduce the noise      in interferometric measurements.
+
+====== PAGE 28 ======
+ Quantized Light                                                     28
+
+
+vacuum squeezing: squeezing without a coherent displacement. A squeezed vac-
+    uum corresponds to a randomly ﬂuctuating electric ﬁeld, but with the ﬂuc-
+      tuations modulated in a phase-sensitive way.
+
+5.2  The Squeezing Operator
+
+To describe the squeezed state mathematically, we adopt the same approach as
+for a coherent state: create a ‘vacuum’ with the desired noise properties and then
+coherently displace it to the right location in phase space.
+   The squeezing operator is deﬁned as:
+
+                                                                         (102)                                  ˆS(⇣) ⌘e(⇣⇤a2−⇣a†2)/2
+and some of its useful properties include:
+                                  ˆS†(⇣) =  ˆS−1(⇣) = ˆS(−⇣)
+                          ˆS(⇣)a ˆS†(⇣) =  µa + ⌫a†
+                          ˆS(⇣)a† ˆS†(⇣) =  µa† + ⌫⇤a
+                           ˆS†(⇣)a ˆS(⇣) =  µa −⌫a†
+                          ˆS†(⇣)a† ˆS(⇣) =  µa† −⌫⇤a                        (103)
+where µ = cosh r, ⌫= e2iφ sinh r, such that µ2 −|⌫|2 = 1.  An ideal squeezed state is deﬁned as:
+                                 |↵, ⇣i ⌘ˆD(↵) ˆS(⇣)|0i,                        (104)
+where ˆD(↵) is the displacement operator as deﬁned for coherent states, Eq. (34).
+According to this deﬁnition, we ﬁrst squeeze the vacuum and then displace it. We
+now check to see that it has the properties we want:
+                          hai =  h0| ˆS† ˆD†aˆD ˆS|0i
+                  =  h0| ˆS†(a + ↵) ˆS|0i
+                  =  h0|(µa −⌫a† + ↵)|0i
+                  =  ↵,                                      (105)
+
+which means that the expectation value of the quadratures is the same as for a
+coherent state:
+                                 h ˆX1i = (↵+ ↵⇤)
+                                 h ˆX2i = −i(↵−↵⇤).                       (106)
+
+====== PAGE 29 ======
+ Quantized Light                                                     29
+
+
+To calculate the variance, we need
+          hX2i =  h0| ˆS†D†(a + a†)2 ˆD ˆS|0i
+          =  h0| ˆS†(a + a† + ↵+ ↵⇤)2 ˆS|0i
+          =  h0|(µa −⌫a† + µa† −⌫⇤a + ↵+ ↵⇤)2|0i
+          =  h0| (−µ⌫+ µ2 −µ⌫⇤+ |⌫|2)aa† + (↵+       |0i          =  |µ −⌫|2⇥  + (↵+ ↵⇤)2,                  ↵⇤)2⇤         (107)
+where in going from the 3rd to the 4th line we kept only antinormally ordered
+products. Using some trigonometric and hyperbolic identities, we ﬁnd
+              ∆X1 =  |µ −⌫|
+                =  [µ −|⌫| cos(2φ)]
+                =     (er sin φ)2 + (e−r cos φ)2.                (108)Similarly,          p
+              ∆X2 =  |µ + ⌫|
+                =  [µ + |⌫| cos(2φ)]
+                =     (er cos φ)2 + (e−r sin φ)2.                (109)For a squeezing angle of φ = 0, ˆX1p will thus be squeezed and ˆX2 antisqueezed, as
+required.
+    It is interesting to note the average number of photons in a squeezed state:
+                 ha†ai =  h0| ˆS†D†a†aˆD ˆS|0i
+             =  h0| ˆS†(a† + ↵⇤)(a + ↵) ˆS|0i
+             =  h0|(µa† −⌫⇤a + ↵⇤)(µa −⌫a† + ↵)|0i
+             =  h0|(−⌫⇤a + ↵⇤)(⌫a† + ↵)|0i
+             =  |⌫|2 + |↵|2,                                    (110)
+which means there are more photons in a squeezed state than in a coherent state
+with the same coherent amplitude. In particular, the photon number of a ‘squeezed
+vacuum’ is nonzero, which arises from the fact that it requires input of energy (a
+’pump’) to squeeze a state.
+
+
+5.2.1 A di↵erent view of the same squeezed state
+
+We can use the squeezing operator to deﬁne new annihilation and creation opera-
+tors:
+                             b ⌘  ˆSaˆS† = µa + ⌫a†
+                                 b† ⌘  ˆSa† ˆS† = µa† + ⌫a,                      (111)
+
+====== PAGE 30 ======
+ Quantized Light                                                     30
+
+
+which obey the standard canonical commutation relations:8
+
+                                             b,  = 1.                             (112)
+                                    ⇥  b†⇤   One can show that the squeezed state is an eigenstate of the b operator:
+
+                                   b|↵, ⇣i = β|↵, ⇣i,                          (113)
+with eigenvalue β ⌘µ↵+ ⌫↵⇤. The squeezed state is thus a coherent state forthe transformed operator b, which creates ‘squeezed photons’ from the squeezed
+vacuum:
+                                  |↵, ⇣i = ˆDb(β)|0is,                         (114)
+where |0is ⌘ˆS|0i is the squeezed vacuum. Deﬁned in this way, squeezed statesare known as ‘two-photon coherent states’.
+
+
+5.2.2 A deﬁnition of a di↵erent squeezed state
+
+An alternative way to achieve a squeezed state is to take a coherent state and then
+squeeze it9, i.e. swap the order of the squeezing and displacement operations:
+                                     |⇣, ↵i ⌘ˆS(⇣) ˆD(↵)|0i,                        (115)
+which is not equivalent to our original deﬁnition. Although the noise properties are
+the same, the mean values of the quadratures are di↵erent, because the squeezing
+operator parametrically ampliﬁes the the mean of the quadratures as well as the
+noise. Thus, for example, the coherent amplitude with this new deﬁnition is:
+                            hai =  h↵| ˆS†aˆS|↵i
+                   =  h↵|(µa −⌫a†)|↵i
+                   = µ↵−⌫↵⇤                             (116)
+  We can get back to the original deﬁnition of the squeezed state  if we ﬁrst
+displace by β = µ↵+ ⌫↵⇤rather than ↵, i.e.
+                    |↵, ⇣i ⌘ˆD(↵) ˆS(⇣)|0i = ˆS(⇣)ˆD(β)|0i ⌘|⇣, βi,            (117)
+which follows from the fact that
+
+                                ˆS†(⇣)ˆD(↵) ˆS(⇣) = ˆD(β).                       (118)
+   8To show this, use the fact that µ2 −|⌫|2 = 1.   9which is the deﬁnition used in Meystre and Sargent
+
+====== PAGE 31 ======
+ Quantized Light                                                     31
+
+
+5.3  How to generate squeezing
+
+5.3.1   χ(2) nonlinear process
+
+Squeezing is typically generated through the use of some nonlinear medium. A
+medium with a χ(2) nonlinear polarisation response can be used to parametrically
+amplify one quadrature and ‘de-amplify’ another to create squeezing. In particular,
+a pump of frequency 2⌦can be used to create a squeezed vacuum of frequency ⌦.
+The e↵ective hamiltonian is
+
+                               +          ,             (119)                       ˆHχ(2) = ~⌦a†a + 2~⌦c†c + ~χ  ca†2                                   ⇣      c†a2⌘
+which describes the process of one c photon (from the pump) begin converted into
+2 a photons (and vice versa)10. If the pump ﬁeld has a large intensity, it is often a
+good approximation to represented it as a constant classical ﬁeld (the ‘undepleted
+pump approximation’), in which case the unitary operator describing the evolution
+in the interaction picture has the same form as the squeezing operator, Eq. (102).
+One insight that this gives us is that squeezing is linked to the creation of photons
+in pairs.
+
+5.3.2   χ(3) nonlinear process
+
+Squeezing can also be generated with a χ(3) medium, either through a pair pro-
+duction process similar to the χ(2) method, but now with 2 pump photons being
+annihilated in order to create the squeezed pair, or through what is known as
+the optical Kerr e↵ect (an intensity dependent refractive index). The e↵ective
+hamiltonian for the latter is
+                              ˆHχ(3) =  ~⌦a†a + ~χa†2a2
+                 =  ~ ⌦+ χ(a†a −1) a†a,                  (120)                                     ⇥               ⇤which will cause states with higher photon number to oscillate at a higher fre-
+quency. In phase-space this means that the initially symmetric distribution of a
+coherent state will shear into the elliptic distribution of a squeezed state11. The
+advantage with the Kerr approach is that is does not require any phase-matching
+between di↵erent frequency components.
+
+  10This process is called degenerate parametric ampliﬁcation, as the pair of photons produced
+are at the same frequency
+  11For suﬃciently high intensity or long interaction times, excessive shearing will turn the ellipse
+into a crescent and the squeezing e↵ect will vanish. But usually this behaviour is usually beyond
+experimental reach
+
+====== PAGE 32 ======
+ Quantized Light                                                     32
+
+
+6  Quasiprobability distributions
+
+Further reading: M&S13.6
+
+It is fairly common to represent coherent, squeezed and other quantum states
+pictorially using ‘ball and stick’ diagrams, with the ‘stick’ describing the mean of
+the quadratures and the uncertainty ‘ball’ (a circle or ellipse) giving us the standard
+deviations. Such representations can be given rigour by deﬁning distributions using
+coherent states. As we shall see, although any quantum state can be represented
+by some sort of distribution in phase space, there are some subtleties over how
+such a distribution is to be interpreted.
+  Many of the subtleties arise from the overcomplete or nonorthogonal nature of
+coherent states. For later comparison, ﬁrst recall that we can expand any state
+over number states as
+                                                  |  i =    Cn|ni,                          (121)
+                                        n           X
+where Cn ⌘hn|  i, or more generally, the density operator can be expanded as:
+                          ˆ⇢=     Cn,n0|nihn0|,                         (122)
+                                                 n,n0          X
+where Cn,n0 ⌘hn|ˆ⇢|n0i. Note that the diagonal elements of the representation are
+positive, with Cn,n giving the probability of ﬁnding the system in the state |ni.   Representing a quantum state as a quasiprobability distribution has other uses
+than merely visualisation. Such distributions can give important insight into the
+nonclassical nature of some states of light; as an expansion over coherent states,
+they can simplify some analytic calculation; and when they can be treated as true
+probabilities they provide a means of numerically sampling the quantum evolution
+through stochastic methods.
+   In our discussion below, we always consider the quantum state of a single optical
+mode, but the deﬁnitions and properties are fairly straightforward to generalise to
+the multimode case.
+
+6.1  Husimi Q function
+
+The Q function of a state is simply deﬁned as its overlap with a coherent state:
+
+                              1
+                   Q(↵) ⌘  ⇡|h  |↵i|2  (pure state)
+                              1
+                 ⌘  ⇡h↵|ˆ⇢|↵i (general).                     (123)
+
+====== PAGE 33 ======
+ Quantized Light                                                     33
+
+
+The Q function exists for any quantum state and is always positive. In particular:
+
+
+                                                                         (124)                             0 Q(↵) 1⇡.
+
+Like all the phase-space distributions that we consider, the Q function is normalised
+to one:
+
+                                 1
+                 d2↵Q(↵) =                             ⇡   d2↵h↵|ˆ⇢|↵i               Z              Z
+                                 1
+                   =      d2↵                             ⇡           h↵|ˆ⇢|nihn|↵i
+                                               n                              Z              X
+                                 1
+                   =      d2↵                             ⇡           hn|↵ih↵|ˆ⇢|ni
+                                               n                              Z              X
+                   =      hn|ˆ⇢|ni
+                                      n           X
+                   =     pn = 1                            (125)
+                                      n           X
+                                                                         (126)
+
+    It is tempting, but incorrect, to say the Q(↵) function gives the probability
+density of the system being in the state |↵i. What we can say, however, is thatQ(↵) gives the correct average value of the amplitude ↵, since:
+
+                                 1
+                d2↵↵Q(↵) =                             ⇡   d2↵h↵|ˆ⇢↵|↵i              Z               Z
+                                 1
+                   =      d2↵                             ⇡           h↵|ˆ⇢a|nihn|↵i
+                                               n                              Z              X
+                                 1
+                   =      d2↵                             ⇡           hn|↵ih↵|ˆ⇢a|ni
+                                               n                              Z              X
+                   =      hn|ˆ⇢a|ni
+                                      n           X
+                   =  Tr [ˆ⇢a]
+                   =  hai .                                  (127)
+   More generally, we can show that moments of the Q function give the expec-
+
+====== PAGE 34 ======
+ Quantized Light                                                     34
+
+
+tation values of antinormally ordered functions:
+
+                                     1
+                 d2↵↵⇤s↵rQ(↵) =                                ⇡   d2↵h↵|↵⇤sˆ⇢↵r|↵i              Z                   Z
+                                     1
+                     =                                ⇡   d2↵h↵|a†sˆ⇢ar|↵i                                  Z
+                     =  Tr
+
+                     =               .                         (128)                                              ⇥ ˆ⇢ara†s⇤                                      ⌦ara†s↵   The positivity of the Q function makes it useful for plotting visualisations
+of quantum states. One disadvantage is that not every conceivable Q function
+corresponds to a valid quantum state. For example, it is easy to imagine a narrow
+Q function that would not obey the uncertainty principle. It is therefore diﬃcult
+to draw qualitative conclusions about the quantum state from just the Q function
+alone.
+   Some examples12:
+
+coherent state |↵0i                   1
+                           Q(↵) = ⇡e−|↵−↵0|2,                      (129)
+        i.e. a circularly symmetric gaussian with standard deviation σQ = 1/ p2.
+
+number state |ni
+                           Q(↵) = |↵|2ne−|↵|2 ,                      (130)
+                                        ⇡n!
+        i.e. a ring centred at the origin with a maximum at radius   = pn. The                                                                        |↵|
+    mean amplitude is zero, but the mean-square is  d2↵|↵|2Q(↵) = n + 1.thermal state                                   R
+
+                              1  1
+                     Q(↵) =       exp                 ,                  (131)                           ⇡ n + 1    −|↵|2n + 1                                           ,
+
+squeezed state |↵0, ⇣i, with ⇣= r (real) and ↵0 = X0 + iY0:
+                         1          Q(X1, X2) =       exp       −X0)2       −Y0)2        (132)                       ⇡coshr    −2(X11 + e−2r  −2(X21 + e+2r                                                      ,
+        i.e. a two-dimensional gaussian whose width, in this case, in the X1 direction
+       is narrower than in the X2 direction.
+
+  12derive these as exercises
+
+====== PAGE 35 ======
+ Quantized Light                                                     35
+
+
+6.2  Glauber-Sudarshan P function
+
+The density operator for a mixture of coherent states has the form:
+
+                        ˆ⇢=   d2↵P(↵)|↵ih↵|,                       (133)                          Z
+where P(↵) is the probability density of being in the state |↵i.  If we are willingto allow P to be negative, then we can represent a wide variety of states in this
+form, due to the overcompleteness of coherent states. In fact, if we admit singular
+P functions (e.g. a derivative of a delta-function), then any quantum state can be
+written in this form. Note that because P can take negative values and could be
+singular, it cannot be regarded in general as a probability distribution.
+   Just as for the Q function, the P function gives the correct ‘average’ of the
+amplitude ↵:
+                          d2↵↵P(↵) = hai,                         (134)                        Z
+but in contrast to the Q function, the moments of the P function give normally
+ordered correlation functions:
+
+                =  Tr                     ha†rasi
+                =  Tr                                     ⇥ ˆ⇢a†ras⇤                =    d2↵P(↵)Tr⇥ asˆ⇢a†r⇤                         Z                                                 ⇥ as|↵ih↵|a†r⇤
+                =    d2↵↵s↵⇤rP(↵)Tr [|↵ih↵|]                         Z
+                =    d2↵↵s↵⇤rP(↵).                        (135)                         Z
+This means that if the P function for a state is everywhere positive, then the state
+is classical in the sense that all the coherence functions (and hence intensity mea-
+surements and photocount statistics) can be described by a ﬂuctuating amplitude.
+But if P is negative or singular, then this classical explanation fails.
+   Some examples:
+coherent state |↵0i
+                           P(↵) = δ(↵−↵0),                       (136)
+        i.e. a single point in phase space. The P function is thus a very ‘eﬃcient’
+      representation.
+
+number state |ni                                                 e|↵|2     @2
+                       P(↵) =                 δ(↵),                 (137)
+                                      n!   @↵@↵⇤                        ✓     ◆n
+
+====== PAGE 36 ======
+ Quantized Light                                                     36
+
+
+     which, apart from the vacuum n = 0, is a highly singular function.
+
+thermal state
+                                 1
+                       P(↵) =    exp               ,                     (138)                           ⇡n     −|↵|2n                                         ,
+squeezed state For a squeezed state, the P function is negative in places, which
+    we can demonstrate as follows:
+                  d2↵(X1 −h ˆX1i)2P(↵) =   h: ˆX1 :i2 −h ˆX1i2               Z
+                          =  var(X1) −1.             (139)
+        If the X1 quadrature is squeezed then var(X1) < 1, i.e. the RHS is less than
+      zero. Since (X1 −h ˆX1i)2 > 0, the only way for the integral on the LHS to     be less than zero is if P(↵) is not everywhere positive.
+
+     If the P function for a state is known, then the Q function can be obtained
+via:
+                              1
+                    Q(↵) =     d2β P(β)e−|↵−β|2,                    (140)
+                          ⇡                            Z
+i.e. by a convolution of the P function with a gaussian.
+
+6.3  Wigner function
+
+Wigner deﬁned his phase-space distribution function for a particle as the quan-
+tum equivalent of a joint probability function for position and momentum. He
+found that one can construct a function W(x, p) that gives the correct marginal
+distributions, i.e.
+
+              Px(x) =   dp W(x, p);  Pp(p) =   dx W(x, p),              (141)                   Z                 Z
+such that
+                      hˆxsi =   dx xsPx(x);  hˆpsi =   dp psPp(p),               (142)                   Z                Z
+but that the function W(x, p) itself could be negative, which he regarded as a
+signature of nonclassical behaviour.
+  We can similarly deﬁne a Wigner function for the quadratures W(X1, X2) =
+W(↵) such that:
+
+                         h ˆXs1i =   dX1dX2Xs1W(X1, X2)                          Z
+                         h ˆXs2i =   dX1dX2Xs2W(X1, X2),                 (143)                          Z
+
+====== PAGE 37 ======
+ Quantized Light                                                     37
+
+
+which is essentially what we are plotting in phase space when we draw an ‘uncer-
+tainty ellipse’ determined by the standard deviations in X1 and X2. In general, the
+moments of the Wigner function are symmetrically ordered correlation functions:
+
+                         a†ras    =    d2↵↵s↵⇤rW(↵).                (144)                         h        symi                               Z                 /
+A symmetrically ordered product contains all possible orderings of the operators.
+For example:
+
+                   1
+       a†a    =     + aa†)             sym                   2(a†a     /            1          =      + a†aa†a + a†aaa† + aa†a†a + aa†aa† + aaa†a†)             sym     6(a†a†aa   n a†2a2o                                                                         (145)
+
+   Given that symmetric ordering is in some sense half way between normal and
+antinormal ordering, it is perhaps not surprising the Wigner function is ‘half way’
+between the P and the Q functions. An instance of this is that the Wigner function,
+like the Q function, can also be written as a convolution of the P function and a
+gaussian:
+                              2
+                 W(↵) =     d2β P(β)e−2|↵−β|2,                   (146)
+                          ⇡                            Z
+except that now the gaussian has half the variance. This makes the Wigner func-
+tion wider than the P function (and thus better behaved) but narrower than the
+corresponding Q function. Like the Q function, a nonsingular Wigner exists for
+any quantum state. But unlike the Q function, and like the P function, the Wigner
+function can be negative. The negativity is usually associated with interference
+fringes arising from superpositions of coherent states.
+   Some examples:
+
+coherent state |↵0i                   2
+                       W(↵) = ⇡e−2|↵−↵0|2,                     (147)
+        i.e. a circularly symmetric gaussian with standard deviation σW = 1/2.
+
+number state |ni has a Wigner function that oscillates from positive to negative
+      as a function of |↵| which conﬁrms its highly nonclassical status:
+                   W(↵) = 2(−1)n                                (148)                              ⇡   e−2|↵|2Ln(4|↵|2),
+
+     where Ln is the n Laguerre polynomial.
+
+====== PAGE 38 ======
+ Quantized Light                                                     38
+
+
+thermal state
+
+                                  2
+                     W(↵) = ⇡e−2|↵|2/(2¯n+1)                      (149)
+
+squeezed state |↵0, ⇣i, with ⇣= r (real) and ↵0 = X0 + iY0:
+                      2
+        W(X1, X2) = ⇡exp −2(X1 −X0)2e−2r −2(X2                    ,     (150)                                ⇥                       −Y0)2e+2r⇤
+     which, like the Q function, is a two-dimensional gaussian and thus everywhere
+      positive.
+
+   Squeezed states show up the di↵erence between using the P and the Wigner
+functions as signatures of nonclassicality. The coherence properties of a squeezed
+state cannot be replicated by classical light with ﬂuctuating intensity (hence its
+P functions is not positive deﬁnite). But its Wigner function is positive deﬁnite
+and thus constitutes a joint probability distribution for the quadratures, i.e. the
+quadrature statistics could in principle be replicated by classical random variables.
+This is an example of how some of the predictions of quantum mechanics can be
+obtained by hidden variable theories. To look for di↵erences between quantum
+mechanics and local hidden variable theories, one has to generate entangled states
+that violate a Bell’s inequality.
+
+6.4  Characteristic functions
+
+We can give a general expression for the Wigner function of an arbitrary density
+operator by ﬁrst deﬁning the symmetric characteristic function:
+
+                         χS(λ) ⌘Tr                   ,                       (151)                                     h⇢eλa†−λ⇤ai
+where λ is a complex number. The Wigner function is then deﬁned as the Fourier
+transform13 of the symmetric characteristic function:
+
+                              1
+                 W(↵) =      d2λ e↵λ⇤−↵⇤λχS(λ).                  (152)
+                              ⇡2                            Z
+   Even though we were able to deﬁne the Q and P functions without the use
+of characteristic functions, it can be useful for some analytic calculations to do
+
+  13to see that e↵λ⇤−↵⇤λ does indeed give the kernel of the Fourier transform, you may like to
+express all the complex variables in terms of their real and imaginary parts
+
+====== PAGE 39 ======
+ Quantized Light                                                     39
+
+
+so. For that purpose, we deﬁne the normally ordered and antinormally ordered
+characteristic functions to be:
+
+                      χN(λ) ⌘  Tr                                     h⇢eλa†e−λ⇤ai
+                       χA(λ) ⌘  Tr                     ,                     (153)                                     h⇢e−λ⇤aeλa†i
+whose Fourier transforms are, respectively, the P and Q functions:
+
+                              1
+                  P(↵) =       d2λ e↵λ⇤−↵⇤λχN(λ)
+                               ⇡2                             Z
+                              1
+                  Q(↵) =       d2λ e↵λ⇤−↵⇤λχA(λ).
+                               ⇡2                             Z

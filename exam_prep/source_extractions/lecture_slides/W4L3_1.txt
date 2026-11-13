@@ -1,0 +1,655 @@
+Source: source_material/lectures/slides_and_handouts/W4L3(1).pdf
+Pages: 35
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 4, Lecture 3
+Quantum communication
+
+            References:
+             Nielsen & Chuang ch. 1.3, 12.6
+           Bachor & Ralph ch. 13
+
+====== PAGE 2 ======
+What we will cover today…
+
+
+  Quantum teleportation
+
+  Quantum dense coding
+
+  Quantum key distribution
+
+                                                                                                                                                                                 2
+
+====== PAGE 3 ======
+Entanglement as a resource for quantum
+communication
+
+                                                                                         •   In both quantum teleportation and dense
+                                                                       coding, an entangled resource is required to                                     entangled
+                                                           be distributed between two spatially
+                                                                  separated parties
+
+                                                                                         •   In fact, there are many quantum information
+              Alice                                                      protocols that also make use of distributed                                  Bob
+                                                                 entanglement
+
+                   can be separated                                                                                         •  For a quantum channel between two parties
+                   by a long distance                                                                              to be useful for quantum communication, it
+  If Alice and Bob share an entangled pair, they can perfom            must be able to preserve entanglement
+
+ •  Quantum teleportation
+                                                                                    the ability to distribute •  Quantum key distribution
+                                                                           entanglement is necessary
+ •  Dense coding                                                                             for quantum communication              …and other quantum information protocols
+                                                                                                                                                                                 3
+
+====== PAGE 4 ======
+Bell states and Bell state measurements
+- review
+
+ Bell states
+
+                                            maximally entangled
+                                            two qubit states
+
+
+                                                                              The computational basis                                                                           Input the four bell
+                                                                                measurement results at                                                                            states into this
+                                                                                                     the end will be:                                                                                                circuit
+ Bell state measurement
+
+
+                                           measure in the
+                                                  computational
+                                                        basis
+
+                                                                                                                                                                                 4
+
+====== PAGE 5 ======
+Quantum
+teleportation
+
+                                                                                                                                                                  5
+
+====== PAGE 6 ======
+ Quantum teleportation
+
+                                          entangled
+
+                                                               Quantum teleportation: by sharing an
+                                                                            entangled resource state |Φ!⟩ and a classical
+                                                                       communication channel, Alice can transfer
+           Alice                                                                                the state of a qubit to Bob.                                             Bob
+
+                                    classical
+                          communication
+
+Quantum state
+Alice wants to
+teleport to Bob
+
+                                                                                                                                                                                       6
+
+====== PAGE 7 ======
+                                                                                           Alice and Bob share an entangledQuantum teleportation
+                                                                                               pair |Φ!⟩.
+
+                                                                                           Alice combines the state that she
+                                                                            wants to teleport with her qubit of
+                                                                                     the entangled pair and performs a
+                                                                                                            joint Bell-state measurement.
+
+                                                                     The results of the Bell-state
+     Alice                                                             measurement are sent to Bob, who
+                                                                                performs a correction to his qubit
+                                                                                              to obtain the teleported state.
+
+                                                                 Bob
+
+
+                                                                                                                                                                                 7
+
+====== PAGE 8 ======
+Quantum teleportation circuit
+
+CNOT between first two qubits:
+
+Hadamard on first qubit:
+
+This state can be rewritten:
+
+                                                                                                                                                                                   8
+
+====== PAGE 9 ======
+Quantum teleportation circuit
+
+  After the Hadamard gate:
+
+measurement
+                            state of third qubit            correction        The first two qubits are measured in the  outcome
+                                                                       computational basis.
+                                                           𝐼
+                                                           From the measurement results, we know the
+                                   𝑋                                                                               state of the third qubit and can perform the
+                                      𝑍             required correction {𝐼, 𝑋, 𝑍, 𝑍𝑋} to recover the
+                                   𝑍𝑋             correct qubit state.
+
+                                                                                                                                                                                  9
+
+====== PAGE 10 ======
+ Quantum teleportation - observations
+
+                                          entangled               Is the no-cloning theorem violated?
+                                                                       No, because Alice’s qubit is destroyed in the
+                                                                  measurement process. Her qubit’s state is
+                                                                                    transferred to Bob, not copied.
+
+                                                                                              Is Alice’s qubit teleported instantly to Bob?
+                                                                       No: Alice needs to send Bob the (classical)
+           Alice                                                                                  information on her measurement results                                             Bob
+                                                                              before he can use them.
+                                    classical
+                                                                                              Is this protocol useful at all?
+                          communication                                                                             Yes, because Alice can “send” Bob a qubit by
+                                                                                               just transmitting 2 bits of classical information.Quantum state
+Alice wants to
+teleport to Bob
+
+                                                                                                                                                                                           10
+
+====== PAGE 11 ======
+Quantum dense
+coding
+
+                                                                                                                                                                      11
+
+====== PAGE 12 ======
+Quantum dense coding
+
+                                                              Quantum dense coding can be thought of
+                                                 entangled
+                                                                     as the reverse protocol of quantum
+                                                                                        teleportation.
+
+                                                                                       In quantum teleportation, one qubit is
+                                                                             sent from Alice to Bob by making use of
+                                                                  an entangled pair, and sending 2         Alice
+                                                 Bob              classical bits of information. 2 bits of classical
+     information
+                            Qubit sent back to Bob                              In quantum dense coding, 2 classical bits
+                                                                                        of information are sent from Alice to Bob
+                                                                            using an entangled pair, where Alice   Classical
+information that                                                            performs some operation to her qubit of
+ Alice wants to                                                                 the entangled pair and sends the qubit
+ send to Bob                                                                     back to Bob.
+
+                                                                                                                                                                                      12
+
+====== PAGE 13 ======
+ Quantum dense coding
+
+                    Alice                                                                  Bob
+
+Two classical bits correspond to four possible sequences 00,01,10,11.
+
+The two bits of classical information Alice wants to send to Bob, determines which of the operations
+{𝐼, 𝑋, 𝑍, 𝑍𝑋} she performs on her qubit of the entangled pair.
+
+Her qubit is then sent to Bob who performs a joint Bell state measurement to work out the two bits of
+classical information Alice has sent.                                                                                                                                    13
+
+====== PAGE 14 ======
+  Quantum dense coding
+
+classical bit               Alice’s                            state of bob’s
+                                                            Shown on the left are the four possible bit   strings              operation                       entangled pair
+                                                                                       strings of the two bits of classical
+                                                                                 information that Alice wants to send to Bob.
+  00
+                                                              She then performs a Pauli operation to her
+                                                                                    qubit of the entangled pair and sends that  01
+                                                                                    qubit to Bob.
+
+  10                                                           The possible states of Bob’s two entangled
+                                                                                  qubits are shown here.
+
+  11                                                                                                                                                                                    14
+
+====== PAGE 15 ======
+  Quantum dense coding
+
+state of bob’s
+                                                                 Bob now peforms a Bell state measuremententangled pair          CNOT            Hadamard       classical bit                                                                     on both the qubits to discover the classical                                                                            strings
+                                                                                           two-bit string that Alice sent.
+                                               00
+                                                                   The measurement outcome of both qubits
+                                                                                                   in the computational basis corresponds to                                               01
+                                                                                  the two bits of classical information.
+
+                                               10       How can Alice send 2 bits of information
+                                                                                      with only one qubit?
+                                                                                         Alice and Bob were sharing an entangled
+                                               11          state in the beginning; the 2 bits are
+                                                                      encoded in the bipartite state.
+                                                                                                                                                                                             15
+
+====== PAGE 16 ======
+Quantum key
+distribution
+
+                                                                                                                                                                      16
+
+====== PAGE 17 ======
+Using quantum mechanics for secure
+communication
+
+                                                                         Alice wants to send a secret message to Bob.
+
+                                                    An eavesdropper (Eve) wants to intercept that
+                                                          message.
+
+  Alice
+                                  Bob       Quantum mechanics can be used for
+                                                                  cryptography to enable Alice and Bob to
+                                                          communicate securely.
+
+
+                     Eve
+
+                                                                                                                                                                                      17
+
+====== PAGE 18 ======
+One time pad (Vernam cypher)
+
+                                 original message  h  e  l  l  o                       A one time pad is a type of
+                                                                                                      private key cryptography
+                     message converted                                           0    1    1    0    1    0    0    0    …    scheme in which a
+                                 to ASCII binary                                                                           message is encrypted using                          ⊕  ⊕  ⊕  ⊕  ⊕  ⊕  ⊕  ⊕
+                Alice                                                               a secret key.
+                                     private key  1    0    1    1    0    1    0    1    …
+                                            ⊕ is the bitwise XOR
+                                 encrypted                                                    (exclusive or):                                           1    1    0    1    1    1    0    1    …
+                             message
+MESSAGE
+                                                          send to Bob
+
+                                 encrypted
+                                           1    1    0    1    1    1    0    1    …
+                             message
+                          ⊕  ⊕  ⊕  ⊕  ⊕  ⊕  ⊕  ⊕
+                                                                                                                                                            If Eve intercepts the                                     private key   1    0    1    1    0    1    0    1    …
+                                                                                 message, she will not be             Bob
+                                                                                             able to understand it without
+                       decoded message   0    1    1    0    1    0    0    0    …    the key.
+
+                     message converted                                           h  e  l  l  o
+                                         to string                                                                                                                 18
+
+====== PAGE 19 ======
+One time pad (Vernam cypher)
+
+   The one-time pad is secure as longs as:
+
+          1. The secret key is at least as long as the plain text
+
+          2. Key must be random
+
+          3. Key can never be reused
+
+          4. Key must be completely secret
+
+   So how can we use quantum mechanics to distribute a completely secure secret key?
+
+                                                                                                                                                                                      19
+
+====== PAGE 20 ======
+Quantum key distribution
+
+                                                         Quantum key distribution is a protocol that
+                                                                                      lets Alice and Bob share a secret key that
+                                                               can be used for cryptography.
+             secret key for encryption
+
+                                                                                In this process, the key is encoded in
+                                                            quantum states (photonic qubits).
+
+                                                           The security of this protocol is based on
+  Alice
+                                  Bob             the laws of quantum mechanics: any
+                                                            measurement an eavesdropper (Eve)
+                                                         makes on the quantum system changes
+                                                                        the state of the system, therefore, Alice
+                                                            and Bob notice Eve’s presence.                     Eve
+
+                                                                                                                                                                                      20
+
+====== PAGE 21 ======
+ BB84 protocol
+
+               quantum channel                      BB84 (by Charles H. Bennett and Gilles Brassard
+                                                                                       in 1984) is a “prepare-and-measure” QKD protocol.
+
+                    classical channel                        The protocol uses two mutually unbiased bases
+                                                            (MUBs) which contain two states each, so four
+                                                                          possible states in total.
+     Alice
+                                    Bob                                                                              Alice prepares a random quantum state among
+                                                                     these four and sends it to Bob, who measures it in
+                                                             one of the two bases, chosen randomly.
+
+                       Eve                           Then they communicate through a classical
+                                                                   channel to extract the key from the measurement
+                                                                  outcomes.
+Two bases 𝐴= {|𝑎"⟩, …, |𝑎#$%⟩} and 𝐵= {|𝑏"⟩, …, |𝑏#$%⟩}
+                                 (   %
+are mutually unbiased if  𝑎& 𝑏'  =   ∀𝑖, 𝑗∈0, …, 𝑑−1 .          Eve could eavesdrop both on the quantum channel                                 #
+                                                             and on the classical channel.
+Example: in 𝑑= 2, {|0⟩, |1⟩} and {|+⟩, |−⟩} are MUBs.
+
+                                                                                                                                                                                          21
+
+====== PAGE 22 ======
+Photon polarisation - states
+
+                                        { 0  , |1⟩} basis
+ Horizontally polarised                           Vertically polarized
+                         z         𝑉= | ⟩= |0⟩           z 𝐻= | ⟩= |0⟩
+
+                               y                                         y
+               x                                           x
+
+
+                                        { +  , |−⟩} basis
+  Diagonally polarised (45∘)             Anti-diagonally polarised (135∘)                               z                                         z
+                                              1            1                   −=   =    ( 0 −|1⟩)  + =   =    ( 0 + |1⟩)                                               2             2
+
+                                    y                                     y
+
+                     x                                      x
+
+                                                                                                                                                                                      22
+
+====== PAGE 23 ======
+Photon polarisation – generation and
+measurement
+
+                                |𝜓⟩
+                                                           Arbitrary linearly polarised states can be generated using a                     |𝐻⟩
+                                                       polarised photon source and a HWP at an arbitrary angle.
+
+
+              polarised
+           photon source         generation
+
+                                               To measure polarisation qubits, a polarising beam-splitter splits      measurement
+                                    photon          light into two different modes each containing orthogonal
+                                       detectors       polarisation states.
+
+                         |𝑉⟩                                               Photon detectors at the end of each output of the polarising
+                                        beam splitter are needed to perform measurement of the qubit
+                                                                 in the computational basis.
+                               |𝐻⟩
+        HWP                       A HWP can rotate the measurement basis to the diagonal one.              PBS                                                                                                                                          23
+
+====== PAGE 24 ======
+BB84 – 1. Raw key exchange          This is the only step that uses the
+                                                            quantum channel!
+
+                encoding↑,basis→, ↗ +or ↘×   +   +   ×   ×   +   ×   ×                                                                                In each round:
+                encoding state  0    1    1    0    1    0    0    1    0     1.  Alice randomly chooses a basis.
+                                                                                2.  Alice randomly chooses a state.
+            photon polarisation                                                                                3.  Alice encodes the chosen qubit
+Alice
+                                                               and sends it to Bob.
+                                                send to Bob              4. Bob randomly chooses a basis.
+                                                                                5. Bob measures the incoming
+            photon polarisation                                                                                 qubit in the selected basis.
+
+          measurement basis  +   +   +   ×   ×   ×   +   +   +
+                                                                                After this step, Alice’s encoding
+              meas. outcome  0    0    1    0    1    0    0    1    1     states and Bob’s measurement
+Bob
+                                                              outcomes form the raw key.
+
+                                                                                                                                                                                      24
+
+====== PAGE 25 ======
+                                                                                 Alice’s and Bob’s raw keys do notBB84 – 2. Sifting
+                                                                   match: when Bob chose a different
+                                                                       basis than Alice, he obtained a
+                encoding basis  +   ×   +   +   ×   ×   +   ×   ×   random measurement outcome,
+                                                                 which generated an error in 50% of
+                encoding state  0    1    1    0    1    0    0    1    0
+                                                                     cases.
+
+            photon polarisation
+Alice                                                                          In the sifting step, Alice and Bob
+                  Alice’s sifted key  0        1        1    0    0
+                                                              communicate using the classical
+                                                                   channel and compare their basis
+            photon polarisation                                             choices.
+
+          measurement basis  +   +   +   ×   ×   ×   +   +   +                                                            They eliminate all measurements in
+                                                                 which they chose different bases,              meas. outcome  0    0    1    0    1    0    0    1    1
+Bob                                                         and obtain the sifted key. Ideally,
+               Bob’s sifted key  0        1        1    0    0                                                                       the sifted key should match
+                                                              between Alice and Bob.
+
+                                                                                                                                                                                      25
+
+====== PAGE 26 ======
+BB84 – Intercept and resend attack
+
+                                                                          But what if Eve tries to intercept the key?                encoding basis +   ×   +   +   ×   ×   +   ×   ×
+                                                                                Let us consider a type of attack called                encoding state  0    1    1    0    1    0    0    1    0
+                                                                                         “intercept and resend”: Eve measures the
+            photon polarisation
+                                                                         photons in a random basis and then
+                                                                           prepares other photons in the state she
+ Alice                                                                   measured and sends them to Bob.
+               photon polaris.
+                                                                                                                                     If she measures in the same basis that     Eve
+                meas. basis  +   ×   ×   ×   ×   +   +   +   ×                                                                                      Alice prepares, then the state remains the
+              meas. outcome  0    1    1    1    1    1    0    0    0    same.
+                photon polaris.                                                                                                                                     If she measures in a different basis, her
+                                                                    outcome is random and she will send a
+                                                                                             different state to Bob. This can lead to
+                                                                                     errors in the sifted key.                photon polaris.
+           measurement basis +   ×   +   +   ×   ×   +   ×   ×     (in the example, we only look at cases
+                                                                    where Alice’s and Bob’s bases match for               meas. outcome 0    1    0    0    1    1    0    1    0
+                                                                                             simplicity)
+                                                                                                                                                                                       26
+Bob
+
+====== PAGE 27 ======
+BB84 – 3. Key distillation
+
+
+                                                                                   In the key distillation step (also known as
+     Alice’s sifted key  0    1    1    0    1    0    0    1    0
+                                                                                  error correction) Alice and Bob compare a
+     Bob’s sifted key 0    1    0    0    1    1    0    1    0         subset of their bits from the sifted key to
+                                                                         estimate the fraction of errors, called
+                                                               quantum bit error rate (QBER).
+
+
+If they see errors, this signals the presence of an eavesdropper.
+
+An intercept-resend attack would introduce a QBER of 25%. However, Eve could have better technology and perform
+different attacks that introduce less error. Alice and Bob never know the causes of errors; therefore, they must attribute
+all errors to Eve (even if they are caused by environmental noise).
+
+A secure key can be extracted even in the presence of error! If Alice and Bob estimate that they share more information
+with each other than Eve could have obtained, they proceed with the rest of the protocol. First, they correct their keys to
+remove errors using classical statistics methods.
+
+                                                                                                                                                                                      27
+
+====== PAGE 28 ======
+                                                                                Hashing is an example of method QKD – Hashing
+                                                                                                    to correct for errors between Alice’s
+                                                                           and Bob’s keys without disclosing
+                                                                                          too much information about the
+                                                                                            secret key.
+ Alice   1     0     0     1     0     1     1     0     1     1
+            1          1          1          1          0                                                                                   For example, by announcing the
+                                                                                                      parity of pairs of bits, Alice and Bob Bob   1     0     0     0     0     1     1     0     1     1
+                                                                              can find and correct possible            1          0          1          1          0
+                                                                                         mistakes.
+  Eve    1     1     0     1     0     1     0     0     1     1
+                                                                                                                              Different: Odd parity = 1
+                                                                                        Same: Even parity = 0
+Remove Error
+                                                                                                    In the end there will be no
+ Alice   1     0                0     1     1     0     1     1                                                                                                errors between Alice and
+                                                                                    Bob’s bit strings.
+
+ Bob   1     0                0     1     1     0     1     1                                                                                  Every bit of information
+                                                                                  shared here must eventuallyGuess
+                                                                           be removed from the key,
+  Eve    1     1                0     1     0     0     1     1                                                                                  which gets shorter!               28
+          ?                              ?
+
+====== PAGE 29 ======
+BB84 – 4. Privacy amplification
+
+ After the key distillation step, Alice’s and Bob’s keys are identical.
+
+ Eve still has some information on the key.
+
+ At this point, Alice and Bob perform privacy amplification: they use classical algorithms to decrease Eve’s information on
+ the key, at the cost of discarding key bits. Hashing could be used for privacy amplification as well. They do this until they
+ are reasonably sure that Eve does not have any information on the key at all.
+
+ The key they share after privacy amplification is the secret key.
+
+                                                                                                                                                                                      29
+
+====== PAGE 30 ======
+Quantum key distribution – entanglement based
+
+Alice                                                                            Bob
+
+
+         •  Alice and Bob can also share a secret key using an ‘entanglement based’ QKD scheme.
+         •  Many pairs of entangled qubits are distributed between Alice and Bob.
+         •  They agree to measure a subset of the qubits in prearranged bases, either { 0  , |1⟩} or { +  , |−⟩}, chosen
+           at random and compare results.
+         •    If the measurement outcomes are perfectly correlated, then they know the channel is secure and there
+             is no eavesdropper.
+         •  This is equivalent to the ideal prepare-and-measure BB84 scheme.
+
+                                                                                                                                                                                      30
+
+====== PAGE 31 ======
+QKD – Absolute security
+
+
+     For the protocol to produce secret key, we require
+
+              K = βI(a : b) −I(E : A) > 0
+
+     K   Average number of distillable secret bits per use of the channel (in the asymptotic limit)
+
+       β    is the efficiency with which they implement privacy amplification
+        I(a : b)     is the classical mutual information between Alice and Bob’s bit strings
+
+                          I(a : b) = σc(a) + σc(b) −σc(a, b)
+       I(E : A)   is the quantum mutual information between Alice’s measurement outcomes and
+                    Eve’s state
+                       I(E : A) = σq(E) −σq(E|a)
+
+                 What does       mean and how do we determine it?
+
+                                                                                                                                                                                      31
+
+====== PAGE 32 ======
+Interpretation of quantum mutual
+information
+                           Alice        ρAE            Eve
+
+                                              Reduced state of Eve’s mode is ρE = TrA(ρAE)
+
+
+         Alice gets measurement result |a⟩              Eve’s state conditioned on Alice’s measurement result is ρE|a
+
+
+                                         Max information that Eve can extract about a’s by doing optimal
+                                               measurement on ρE|a is                      !
+                                        −                                          I(E : A) = σq(ρE)      Paσq(ρE|a)
+                                                                            a
+                                   = σq(ρE) −σq(ρE|a)
+
+
+                                     If Eve was not correlated with Alice at all, there would be no
+                        difference between ρE = TrA(ρAE) and ρE|a  :            !
+                    −                         σq(ρE)      Paσq(ρE|a) = 0
+                                                                                                                                                                                      32
+                                        a
+
+====== PAGE 33 ======
+Determining Eve’s information
+
+
+     Assume  ρABE    is pure
+
+                  σq(E) = σq(A, B)
+
+                   σq(E|a) = σq(B|a)
+
+       therefore
+             I(E : A) = σq(E) −σq(E|a)
+
+              = σq(A, B) −σq(B|a)
+
+               K = βI(a : b) −I(E : A) > 0
+
+                                                                                                                                                                                      33
+
+====== PAGE 34 ======
+Continuous variable quantum key distribution
+Prepare and measure scheme
+
+
+                      𝑥
+
+
+                                               channel
+
+                              𝑝
+
+
+    Alice                                                                            Bob
+
+
+           In a prepare and measure scheme for CVQKD, Alice prepares squeezed states modulated in randomly
+          selected quadarature (>𝑥 or ̂𝑝) and sends them to Bob.
+
+        Bob then performs homodyne detection measuring a randomly selected quadrature, either >𝑥 or ̂𝑝.
+
+        They compare quadratures over a classical communication channel and keep instances where the
+          preparation and measurement quadratures are the same.
+                                                                                                                                                                                      34
+
+====== PAGE 35 ======
+Continuous variable quantum key distribution
+Entanglement based
+
+                                               channel
+
+                         TMSV
+
+
+  Alice                                                                            Bob
+
+
+      In an entanglement-based scheme for CVQKD, Alice prepares a TMSV entangled state and sends one of
+     the entangled modes through the channel to Bob.
+
+    They both perform homodyne detection on their entangled modes.
+
+     This scheme is equivalent to the previous prepare and measure scheme where Alice prepares and sends
+    squeezed states.
+                                                                                                                                                                                   35

@@ -1,0 +1,545 @@
+Source: source_material/lectures/slides_and_handouts/W5L1.pdf
+Pages: 31
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 5, Lecture 1
+Quantum optical channels
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4 pm
+
+
+ Bachor & Ralph, A Guide to Experiments in Quantum Optics, 3rd Edition
+ Walls & Milburn, Quantum Optics, 2nd Edition
+ Nielsen & Chuang, Quantum Computation and Quantum Information
+
+====== PAGE 2 ======
+Announcement
+
+Assignment 2 is on black board in
+assessment folder
+
+Assignment 2 covers quantum
+communication, all relevant content was
+covered in Week 4
+
+
+Due 04/09/26 4pm per course profile
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+Review
+What you learned last week…
+
+                                                                                                                                                                                              33
+
+====== PAGE 4 ======
+Photons as qubits
+
+         How can we encode a                      |ψ⟩= α |0L⟩+ β |1L⟩              qubit using photons?
+
+
+          Single-Rail Encoding                                      Dual-Rail Encoding
+                                          single photon
+  |0L⟩= |0⟩      |1L⟩= |1⟩                       |0L⟩= |1⟩a |0⟩b     |1L⟩= |0⟩a |1⟩b
+
+  vacuum                                      a                 a
+
+                                                          b                       b
+  no photon                           photon
+
+•  Information encoded in the presence or                                                                              •  Information encoded in which mode
+  absence of a photon                                                             contains the photon
+
+•  Challenges:                                                                              •  Challenges:
+      •  Photon loss: maps |1→→|0→                                                                                   •  Requires two optical modes per qubit
+
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+ Quantum teleportation
+
+                                                                                                               •  By sharing an entangled resource
+                                                                                            state |Φ!⟩ and a classical
+                                          entangled                  communication channel, Alice can
+                                                                                               transfer the state of a qubit to Bob
+
+                                                                                                               •  This is called quantum teleportation.
+
+                                                                                                               •    It is important to note, that Alice’s
+                                                                                             qubit is destroyed in the process of
+           Alice                                                                        quantum teleportation because it is
+                                              Bob                                                                             measured.
+                                   classical
+                                                                                                               •  The state of the qubit is transferred
+                          communication                                                                                from one place to another, not copied
+                                                                          because that would violate the no-Quantum state
+                                                                                         cloning principle.
+Alice wants to
+teleport to Bob
+
+                                                                                                                                                                                                    5
+
+====== PAGE 6 ======
+Using quantum mechanics for secure
+communication                                                                                          •  Quantum mechanics can be used to enable
+                                                                two parties to share a secret key that can
+                                                           be used for cryptography
+
+             secret key for encryption                              •  This is achieved using a protocol called
+                                                           quantum key distribution
+
+                                                                                          •  The context we consider is: Alice and Bob
+                                                               want to communicate securely, so they
+  Alice                                                               want to share a secret key that can be used
+                                  Bob
+                                                                                     for encryption and decryption of messages
+
+                                                                                          •    If they take advantage of quantum
+                                                              mechanics to send this key, then any
+                     Eve                                                           measurement an eavesdropper (Eve)
+                                                        makes on the quantum system changes the
+                                                                            state of the system
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+What you will
+
+                        Why interactions with an environmentlearn today…
+                                 produce mixed states and open-
+                                      system dynamics.
+
+
+                        How the Schrödinger and Heisenberg
+                                      pictures describe optical quantum
+                                              channels.
+
+
+                         How amplitude damping and phase
+                              damping affect photon number and
+                                   quantum coherence.
+
+                                                                                                                                                                                 7
+
+====== PAGE 8 ======
+Open quantum optical systems
+From unitary evolution to loss, noise and measurement
+
+
+• An isolated quantum system undergoes
+
+   unitary evolution.                                                    environment
+•  Real optical systems interact with an external
+
+   environment.
+•  The combined system and environment                system
+   evolve unitarily, but the reduced system
+
+   generally does not:
+
+                                                                                                                                                                                               8
+
+====== PAGE 9 ======
+Review: unitary evolution
+
+ For an isolated quantum system with a time-independent Hamiltonian !𝐻, the evolution operator is
+
+ The evolution is unitary:
+
+ Schrödinger picture — states evolve
+
+ Heisenberg picture — operators evolve
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Same physics, different pictures
+Where does the time dependence live?
+
+
+Schrödinger picture                                          Heisenberg picture
+
+The state evolves; observables remain fixed.                   The state remains fixed; observables evolve.
+
+ The density operator obeys                                         For an observable with no explicit time dependence,
+
+              Identical predictions:
+
+
+                                                                                                                                                                                             10
+
+====== PAGE 11 ======
+Unitary interactions in quantum optics
+
+
+An optical mode !𝑎 can interact with another quantum system through an operator ̂𝑐:
+
+ where 𝜅 is the interaction strength.
+
+ Different choices of ̂𝑐 describe different interactions:
+
+                   beam-splitter interaction between two optical modes
+
+                   atom–field excitation exchange, equivalent to the Jaynes–
+               Cummings interaction up to a phase convention
+
+                  coupling between a field quadrature and an atomic population, producing dephasing
+
+ For the beam-splitter interaction, the dimensionless mixing angle
+ used previously is                                                                                                                                                          11
+
+====== PAGE 12 ======
+What does the operator ̂𝑐 represent?
+
+The choice of ̂𝑐 determines the physical interaction described by
+
+
+ 1. Another optical mode: beam-splitter interaction
+                                                                     exchanges photons between modes !𝑎 and $𝑏
+                                                                                  while conserving the total photon number.
+
+ 2. An atomic transition: Jaynes-Cummings interaction
+
+                                                                   exchanges one excitation between the atom and
+                                                                                                           optical field:
+
+ 3. An atomic population: dephasing interaction
+
+
+                                                                              produces an atom-dependent
+                                                                                    displacement of the field
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Rotating wave approximation
+ Suppose !𝑎 and ̂𝑐 are lowering operators for systems with frequencies 𝜔! and 𝜔". In the
+ interaction picture,
+
+
+ Consider the full quadrature-coupling Hamiltonian
+
+
+ Expanding gives four interaction terms:
+
+
+ In the interaction picture,
+
+ Near resonance, the rapidly oscillating terms are                                                                                                Define the detuning as
+ neglected:
+
+                                                                                           Exact resonance means
+
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+ From unitary to non-unitary evolution
+
+
+Assume that the system and environment are
+                                                  timeinitially uncorrelated:
+
+The reduced system state is
+
+The combined system and environment evolve unitarily.
+
+The environment is then traced out.
+
+The resulting map ℰ! is a quantum channel acting on the system.
+
+                                                                                                                                                                                                14
+
+====== PAGE 15 ======
+Why do we have to talk about the
+joint state of the system and
+environment?                       time
+
+An interaction can entangle the system and
+environment. For example,
+
+The joint state is pure, but the reduced states are mixed:
+
+The combined state may be pure, while the system and
+environment separately have mixed states.
+
+                                                                                                                                                                                           15
+
+====== PAGE 16 ======
+Modelling optical loss
+
+  How do we set up the problem?
+
+   Input state on mode 𝐴                                                                 environment
+          |ψ⟩A
+
+  Combine mode 𝐴 with environment mode 𝐸 using beam splitter interaction                                              𝜂
+         |ψ→A ⊗|φ→E →ˆUB [|ψ→A ⊗|φ→E]                     input mode                             output mode
+
+                         for pure loss, absorption reservoir is the vacuum
+
+   To get the reduced density matrix of our system A,
+  we need to trace over the evironment mode E.
+
+                                                                                        environment
+   Partial trace over environment mode:
+         ρA = TrE [ρAE]
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Modelling optical loss
+Single photon input
+
+      √η            |1⟩A |0⟩E + ! 1 −η |0⟩A |1⟩E                                     environment
+  •  To get the reduced density matrix of our system A, we need to trace
+     over the evironment mode E.
+                                              𝜂
+   Trace over environment mode:                                               input mode                             output mode
+
+       ρA = TrE [ρAE]
+       = η |1⟩A ⟨1|A + (1 −η) |0⟩A ⟨0|A
+
+
+                                                    single photon in environment                 environment     single photon 1 transmitted
+                                                              probability 1 −𝜂              probability 𝜂
+                                                                                                             absorption reservoir is
+                                                                                                              the vacuum     •  The pure state becomes a mixture of the zero photon term and the one
+      photon term.
+
+
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Quantum channels: Schrödinger picture
+
+
+ The channel maps the input state to the
+                                             time output state:
+
+A physical quantum channel is:
+ •  Linear
+ •  Completely positive
+ •  Trace preserving
+
+
+ Trace preservation requires
+
+    In the Schrödinger picture, a quantum channel evolves the state while observables remain fixed.
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Quantum channels: Heisenberg picture
+
+
+ The operators evolve according to
+                                            time
+
+
+ and
+
+ In the Heisenberg picture, the input state
+ remains fixed while the operators evolve
+ through the system-environment
+ interaction.
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+Optical quantum channels as open systems
+
+Aim: use optical quantum channels as our first physical
+example of an open quantum system.
+
+We want to identify:
+•  the unitary interaction between the optical system and its environment;
+•  the initial state of the environment;
+•  the effective channel produced when the environment is discarded.
+
+Two descriptions
+Heisenberg picture: determine how the optical operators transform.
+Schrödinger picture: determine how the optical state transforms.
+
+Two physical processes
+    Physical interaction                           Resulting channel
+    Energy exchange with the environment       Amplitude damping
+    Environment-induced phase fluctuations      Phase damping
+
+
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+ Many weak system-environment interactions
+
+
+                                          An approximately single-frequency optical
+                                         mode !𝑎 interacts sequentially with many
+                                                     environmental modes
+time
+                     environment
+                                             Each environmental mode is prepared
+                                                      independently in the same state:
+
+                                             The jth weak interaction is described by
+
+
+                                                    For an interaction lasting Δ𝑡#, the corresponding
+                                                          beam-splitter angle is small:
+
+
+                                                                                                                                                                                                 21
+
+====== PAGE 22 ======
+ One effective environmental mode
+
+                                       A sequence of weak beam-splitter interactions
+                                                 can be replaced by one effective beam splitter.
+
+                                                                                              If the jth interaction has transmissivity 𝜂#, the totaltime
+                                                             transmissivity is
+                      environment
+
+                                              The complete sequence can be written as
+
+     Many weak interactions with identical thermal
+     modes are equivalent to one stronger             For independent environmental modes prepared in
+       interaction with an effective thermal mode.          the same thermal state,
+
+                                                                                                                                                                                                   22
+
+====== PAGE 23 ======
+Amplitude-damping channel
+
+
+                                                                                             •   𝜌$: state of the effective
+                                                                    environment mode
+                                                                                             •   𝜂: total intensity transmissivity, with
+                                                             0 ≤𝜂≤1
+
+  The environmental contribution is required to preserve the bosonic commutation relation:
+
+        Channel type:
+
+                                                                                                                                                                                            23
+
+====== PAGE 24 ======
+Pure loss in the Schrödinger picture
+
+ Consider a single-rail qubit and a vacuum environment:
+
+  After the environment is traced out, the output state is
+
+   Effect of the channel
+    One-photon population:                       Lost-photon probability:
+
+
+                                                                                                                                                                                            24
+
+====== PAGE 25 ======
+Optical quantum noise
+
+ The output moments are
+
+ Therefore, the photon-number variance is
+
+                                                                                                                                                                                            25
+
+====== PAGE 26 ======
+Phase damping: coupling to the environment
+
+                   time
+
+                                        environment
+
+ An approximately single-frequency optical mode interacts weakly with many environmental modes.
+ Define the system photon-number operator as  ˆn = ˆa†ˆa
+
+ The interaction with the jth environmental mode is
+                           ˆH(j)                        + ˆb†                                  + ˆb†                = ℏχjˆa†ˆa                           = ℏχjˆn                                                             j                                        i                                                                                    j                            !ˆbj                                  "                                         !ˆbj                                               "
+
+
+ This interaction does not change                         = 0                                          ˆH(j) , ˆn                                                           i                                                                                                                                                                                            26                                        " the system photon number         !
+
+====== PAGE 27 ======
+One effective phase-noise mode
+                   time
+                                        environment
+
+ Each weak interaction produces the unitary transformation
+
+                                                                                ˆn                                  + ˆb†                                                                                     j                                              ˆUj = exp ! −iχj∆tj                                          "ˆbj                                                     #$
+
+                               N            N                                                       The complete interaction is                                            + ˆb†j &               ! ˆUj                             = exp  $ χj∆tj %ˆbj                                          j=1         −iˆn j=1           
+
+ The full effective interaction can be written as
+                           ˆUeﬀ= exp ! −iχˆn "ˆb + ˆb†#$                                                                                    27
+
+====== PAGE 28 ======
+Phase-damping channel
+
+ Heisenberg picture
+                                                          completely characterizes
+                                                         channel with phase
+                                                                     fluctuation power
+                                                       from uniform environment
+
+                                                                                                                                                                                            28
+
+====== PAGE 29 ======
+Optical quantum decoherence
+
+ Schrödinger picture
+
+ Consider the input qubit and a vacuum environment:
+                 |ψ⟩= µ |0⟩+ ν |1⟩,      ˆρE = |0⟩⟨0|
+
+ After tracing out the environment, the system state becomes                        ρ′00 = ρ00,
+                                     ˆρ′ = |µ|2 |0⟩⟨0| + |ν|2 |1⟩⟨1|                                  ρ′11 = ρ11,
+                                             =               + e−χ2/2 (µν∗|0⟩⟨1| + µ∗ν |1⟩⟨0|) .                   ρ′01   e−χ2/2ρ01.
+
+
+          Phase damping leaves the photon-number probabilities unchanged
+                   but suppresses the coherence between ∣0⟩ and ∣1⟩.
+                                                                                                                                                                                            29
+
+====== PAGE 30 ======
+Phase damping suppresses the field
+quadrature
+
+ Photon number is unchanged by phase damping, so we instead
+ measure the phase-sensitive field quadrature:
+                                                         ˆa + ˆa†
+ For the input state                        |ψ⟩= µ|0⟩+ ν|1⟩
+
+ the quadrature mean before the channel is
+                        ! ˆa + ˆa†" in = µ∗ν + ν∗µ
+
+ For a vacuum environment, phase damping gives
+                 = TrS,E #$ ˆa′ + ˆa′†% ˆρ ⊗ˆρE &                 ! ˆa + ˆa†" out
+
+                 = e−χ2/2 (µ∗ν + ν∗µ)
+ Therefore,
+                                       ˆa +    = e−χ2/2   ˆa +                     !     ˆa†" out         !     ˆa†" in
+                                                                                                                                                                                            30
+
+====== PAGE 31 ======
+Summary
+
+
+ • An open-system evolution results from a unitary system-environment
+    interaction followed by tracing over the unobserved environment.
+
+ • Many weak environmental interactions can often be represented by a single
+    effective interaction, simplifying the description of an optical channel.
+
+ •  Amplitude damping exchanges energy and changes photon-number
+    populations, while phase damping preserves photon number but suppresses
+   coherence and phase-sensitive observables.
+
+                                                                                                                                                                                            31

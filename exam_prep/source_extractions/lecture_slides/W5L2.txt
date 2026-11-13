@@ -1,0 +1,522 @@
+Source: source_material/lectures/slides_and_handouts/W5L2.pdf
+Pages: 25
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 5, Lecture 2
+Open quantum systems
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4 pm
+
+
+ Walls & Milburn, Quantum Optics, 2nd Edition, Chapter 6
+
+====== PAGE 2 ======
+What you will
+
+                            How coupling to an opticallearn today…
+                                environment produces both damping
+                                    and quantum noise.
+
+
+                                   Derive and interpret the quantum
+                                  Langevin equation for a damped
+                                                  cavity mode.
+
+
+                                Connect the Heisenberg-picture
+                                 Langevin equation to the Lindblad
+                                  master equation for the reduced
+                                        system state.
+
+                                                                                                                                                                                 2
+
+====== PAGE 3 ======
+From Quantum Channels to Equations of
+Motion
+
+ Last lecture: What does the environment do?                              environment
+ A quantum channel describes the reduced input–output
+ evolution of the system:
+                       ˆρ′ = TrE               ! ˆU                                   (ˆρ ⊗ˆρE) ˆU †"                                                      system
+•   Loss channels exchange excitations with the environment.
+•  Phase damping suppresses coherence without exchanging
+    energy.
+•  The interaction and the environment state determine the resulting
+    channel.
+ This lecture: How does this evolution develop in time?
+We model the environment as a continuum of bosonic modes and begin with
+
+                          +                              +                                      ˆH = ˆHsys                                             ˆHB                                                                 ˆHi
+ Central goal: Derive the continuous-time dynamics of a quantum
+ channel from a microscopic system–environment interaction.
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Two descriptions of open-system dynamics
+
+  A localized quantum system interacts with a bath consisting of many
+  simple harmonic oscillators, such as free optical modes.
+
+          •  System operator: !𝒄
+          •  Bath-mode operators :#𝒃𝝎
+
+
+  Two equivalent descriptions
+
+     Picture            What evolves?                       Equation of motion
+    Heisenberg picture   System operators, such as ̂𝑐(𝑡)       Quantum Langevin equation
+     Schrödinger picture   System density operator, !𝜌(𝑡)         Master equation
+
+Both descriptions arise from the same system-bath Hamiltonian and give the same physical predictions.
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Gardiner–Collett input–output theory
+
+
+ C. W. Gardiner and M. J. Collett
+ Input and output in damped quantum systems:
+Quantum stochastic differential equations and
+ the master equation
+ Physical Review A 31, 3761–3774 (1985)
+
+The derivation will:
+•  Model the environment as a continuum of
+   bosonic field modes.
+•  Derive damping and environmental noise from
+   the system–bath Hamiltonian.
+•   Identify the incoming field as the Langevin noise
+   operator.
+•  Produce a quantum Langevin equation for
+   system observables.
+•  Apply the result to a leaking optical cavity.
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+ Single-sided cavity
+
+
+                                                                               perfect mirror
+
+                                                                optical mode                              coupling
+                                                     trapped in cavity                                  rate
+
+A quantum Langevin equation describes this
+continuous evolution in the Heisenberg picture by
+combining:
+•  Coherent system evolution
+•  Damping caused by coupling to the                               cavity
+   environment
+•  Quantum fluctuations entering from the
+   environment
+
+For the damped-cavity example, we will derive      ˙ˆa =        ˆHsys]        ˆa + √γ ˆbin(t)                                                    ℏ[ˆa,                          −i     −γ2                                                                                    6
+
+====== PAGE 7 ======
+Model the System and Its Environment
+
+                                                     The environment is modelled as a
+   environment                                               continuum of independent bosonic modes
+       state                                                           labelled by their angular frequency ω.
+                         system state
+                                                      The total Hamiltonian is
+                                            + ˆHB + ˆHi                                                                        ˆH = ˆHsys                       system operator                                               environment
+                                                     operators
+
+                                                       The free Hamiltonian of the
+                                                                bosonic bath is                                                            !                                           ∞
+                                                              ˆHB                                         = ℏ    dω ω ˆb†ωˆbω
+                                                                                     0
+ The system-bath interaction is       ∞
+                                    ˆHi = iℏ    dω κ(ω)   ˆb†ωˆc −ˆc†ˆbω                              ! 0                                     "               #̂
+   𝑐: system coupling operator
+   #𝑏!: annihilation operator for the bath mode at frequency 𝜔                                                                                     ˆbω,ˆb†ω′ = ω(ω −ω′)  𝜅(𝜔): frequency-dependent coupling strength                       !      "
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Approximations for an Optical Heat Bath
+
+
+ Only environmental modes close to the cavity resonance contribute significantly to real photon
+ emission, absorption and cavity damping.   ω ≈ωc
+
+ 1. Extend the frequency range
+ To simplify the derivation, formally extend the bath integral:
+                   ! ∞       ! ∞
+                      dω −→     dω
+                            0        −∞
+ The operators +𝑏" for ω<0 represent fictitious modes introduced by this mathematical extension. They
+ do not change the physical near-resonant dynamics.
+ 2. Make the rotating-wave approximation
+ Expanding the full interaction gives energy-exchange and counter-rotating terms:
+
+                                ˆb†                   ω −ˆbω     ˆc +  =   ˆb†ωˆc −ˆc†ˆbω +   ˆb†ωˆc† −ˆbωˆc              !     "                            #     ˆc†$
+                                               energy exchange   counter-rotating                                         %   &'   (     %   &'   (
+         Only the slowly varying, excitation-
+                                    ≈ˆb†                                                 ωˆc −ˆc†ˆbω                                                                                           8        exchange terms are retained.
+
+====== PAGE 9 ======
+From the Hamiltonian to the Coupled Equations
+
+ Step 1: Start with the Heisenberg equation
+ For an operator with no explicit time dependence,
+                        −i                                                        ˙ˆO =      ˆO, ˆH]                                     ℏ[
+ Step 2: Apply it to one bath mode
+                −i                     −i Set +𝑂= +𝑏":              ˙ˆbω =                               ˆHB]                                                       ˆHi]                     ˆbω,                                ℏ[ˆbω,         ℏ[ˆbω,                 !    ˆHsys " = 0
+             =     −iωˆbω   +      κ(ω)ˆc
+                            ! "# $            ! "# $
+                                  free bath evolution   driven by the system
+
+ Step 3: Apply it to an arbitrary system operator
+ Because system operators commute with the bath Hamiltonian, [ˆa, ˆHB] = 0
+ Therefore,        −i                                                ˙ˆa =         ˆHsys]                                  ℏ[ˆa,
+
+                ∞
+              +    dω κ(ω)   ˆb†                                                   −[ˆa, ˆc†]ˆbω                                                       ω[ˆa, ˆc]                     !                                                                                                                                        9                 −∞      "             #
+
+====== PAGE 10 ======
+From the Hamiltonian to the Coupled Equations
+
+  Step 4: Assume a flat bath coupling
+
+                                  γ                    ≈                          κ(ω)                ! 2π
+
+  Coupling constant is independent of frequency
+
+  Next step: Solve the bath equation and substitute it into the system equation.
+
+                                     ˙ˆbω(t) + iωˆbω(t) = κ(ω)ˆc(t)
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Solving a Driven First-Order Equation
+
+Consider the general equation
+
+                                          ˙x(t) = λx(t) + f(t)
+
+where 𝑥(𝑡) is the unknown quantity, 𝜆 is a constant, and 𝑓(𝑡) is a driving term.
+Define a new quantity using an integrating factor:
+
+                                     z(t) = e−λtx(t)
+
+
+Its derivative is
+                                ˙z(t) = e−λt [ ˙x(t) −λx(t)] = e−λtf(t)
+
+Integrating from 𝑡# to 𝑡 gives
+                                                                   t
+                       x(t) = eλ(t−t0)x(t0) +     dt′ eλ(t−t′)f(t′)                                   %                                                              t0
+                                         free evolution
+                                                  accumulated driving                                                                    11                             !    "#    $                                           !       "#       $
+
+====== PAGE 12 ======
+Apply the General Solution to the Bath Mode
+
+
+  Begin with the bath equation:
+                                          ˙ˆbω(t) + iωˆbω(t) = κ(ω)ˆc(t)
+
+
+  Applying the general solution gives
+
+               x(t) →ˆbω(t),    ω →−iω,     f(t) →κ(ω)ˆc(t)
+
+                                                                         t
+                     ˆbω(t) = e−iω(t−t0)ˆbω(t0) + κ(ω)     dt′ e−iω(t−t′)ˆc(t′)                                      %                                                                    t0
+                                   free bath evolution
+                                                  bath driven by the system                         !      "#      $                                          !          "#          $
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Substituting the Bath Solution: Input and
+Damping
+
+ Start with the system equation and the bath solution:
+
+                        ∞
+                 −i                             ˙ˆa(t) =           ˆHsys] +    dω κ(ω)   ˆb†ω(t)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]ˆbω(t)                                 ℏ[ˆa(t),      !                           −∞      "                      #
+                                       ! t
+                      ˆbω(t) = e−iω(t−t0)ˆbω(t0) + κ(ω)     dt′ e−iω(t−t′)ˆc(t′),
+                                                                      t0
+                                      ! t
+                              ˆb†ω(t) = eiω(t−t0)ˆb†ω(t0) + κ(ω)     dt′ eiω(t−t′)ˆc†(t′)
+                                                                    t0
+ Substitute both bath solutions into the system equation:
+                  −i                                       ˙ˆa(t) =             ˆHsys]                                          ℏ[ˆa(t),
+
+                    ∞
+                  +    dω κ(ω)  eiω(t−t0)ˆb†ω(t0)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]e−iω(t−t0)ˆbω(t0)                           ! −∞      "                                   #
+
+                                                                                             initial bath ﬁeld                                  $ ∞                  t                %&                               '
+                  +    dω κ2(ω)     dt′   eiω(t−t′)ˆc†(t′)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]e−iω(t−t′)ˆc(t′)                           ! −∞        ! t0  "                                 #                                                13
+
+                                                                       system-driven bath response                                  $                                  %&                                  '
+
+====== PAGE 14 ======
+The Bath Initial Condition Becomes the Input
+Field
+
+                                                                                                                                                                                                                      t The first term in the solution for +𝑏"(𝑡) is                                                                                                                                          ˆbω(t) = e−iω(t−t0)ˆbω(t0) + κ(ω)     dt′ e−iω(t−t′)ˆc(t′)                                                                                                                   % t0                                       e−iω(t−t0)ˆbω(t0)                                                      free bath evolution
+                                                                                                                                                             bath driven by the system                                                                                                                       !      "#      $                                                                                                                                         !          "#          $Combining this term over all bath frequencies defines the input field:
+
+                                 ! ∞
+                                 1
+                                     ˆbin(t) =        dω e−iω(t−t0)ˆbω(t0)
+                   √ 2π −∞
+
+                                   γ                    ≈                          κ(ω)                ! 2π
+we obtain
+              ! ∞
+                  dω κ(ω)e−iω(t−t0)ˆbω(t0) = √γ ˆbin(t)
+            −∞
+
+The corresponding contribution to the system equation is
+
+                                                                                                                                                                                            14                    √γ                         !ˆb†                                                in(t)[ˆa, ˆc]        ˆc†]ˆbin(t) "                                                −[ˆa,
+
+====== PAGE 15 ======
+Substituting the Bath Solution: Input and
+Damping
+                    −i                                             ˙ˆa(t) =             ˆHsys]                                              ℏ[ˆa(t),
+
+                      ∞
+                    +    dω κ(ω)  eiω(t−t0)ˆb†ω(t0)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]e−iω(t−t0)ˆbω(t0)                              ! −∞      "                                   #
+
+                                                                                                  initial bath ﬁeld                                     $ ∞                  t                %&                               '
+                    +    dω κ2(ω)     dt′   eiω(t−t′)ˆc†(t′)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]e−iω(t−t′)ˆc(t′)                              ! −∞        ! t0  "                                 #
+
+                                                                           system-driven bath response                                     $                                  %&                                  '
+
+  For the system-driven term, use
+                       ! ∞                         ! t
+                  γ                                                        1          ω2(ω) =      ,        dω e±iω(t−t′) = 2πδ(t−t′),          dt′ δ(t−t′)F(t′) =                 2π    −∞                                            t0                2F(t)
+
+   Therefore, the system-driven bath response becomes
+
+                        γ
+                       ! ˆc†(t)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]ˆc(t) "
+                         2
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Combining the Terms Gives the Quantum
+Langevin Equation
+
+ The input-field contribution is
+
+            √γ               !ˆb†                                in(t)[ˆa(t), ˆc(t)]           ˆc†(t)]ˆbin(t) "                                           −[ˆa(t),
+
+ The damping contribution is
+
+                     γ
+                    ! ˆc†(t)[ˆa(t), ˆc(t)] −[ˆa(t), ˆc†(t)]ˆc(t) "
+                      2
+
+ Combining these with the system Hamiltonian gives
+
+                                    ˙ˆa(t) =             ˆHsys]                                        ℏ[ˆa(t),                 −i
+
+                 +                                                                         [ˆa(t), ˆc(t)]             The input field satisfies                                               ˆc†(t) + √γ ˆb†in(t) "                          !γ                              2
+                                                     = δ(t −t′)                                                                                                           in(t′)                                                                         !ˆbin(t),ˆb†                                                                                     "                                                    ˆc†(t)]                                                                 ˆc(t) + √γ ˆbin(t) "                                   !γ                                 −[ˆa(t),      2
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+The Bath Appears as Damping and Input
+Noise
+
+ We solved the equations for the individual bath modes +𝑏"(𝑡) and substituted their
+ solutions into the system equation.
+
+  The result is the quantum Langevin equation:
+                               ˙ˆa(t) =               ˆHsys]                                       ℏ[ˆa(t),                    −i
+
+                                    isolated system evolution                             !     "#     $
+                         γ
+               +      ˆc†(t)[ˆa(t), ˆc(t)]           ˆc†(t)]ˆc(t)                          2 %                −[ˆa(t),       &
+
+                                 damping from emission into the bath                             !                "#                $
+                                                                ˆc(t)]           ˆc†(t)]ˆbin(t)               + √γ   ˆb†in(t)[ˆa(t),                      '                      (                                                      −[ˆa(t),
+
+                                        incoming ﬁeld and quantum noise                             !                  "#                  $
+
+)𝑎: the system operator whose evolution we want to calculatê
+𝑐: system coupling operator
+#𝑏"#(𝑡): the field arriving from the environment                                                                                                                               17
+
+====== PAGE 18 ======
+Example — A Damped Cavity Mode
+
+For a cavity mode coupled to the bath,
+                   = ℏωcˆc†ˆc                                  ˆHsys
+
+                                                                                       ˆa = ˆc To calculate the evolution of the cavity amplitude, choose
+
+The required commutators are  [ˆc, ˆc] = 0,         [ˆc, ˆc†] = 1,         [ˆc, ˆHsys] = ℏωcˆc
+
+ Substituting these into the quantum Langevin equation gives
+                                        ˙ˆc(t) =            ˆHsys]                                          ℏ[ˆc(t),                  −i
+
+                                                                             [ˆc(t), ˆc(t)]                  +     ˆc†(t) + √γˆb†in(t)                          !γ               "                               2
+                                                                0                                                    #   $%   &
+                                                    ˆc†(t)]     ˆc(t) + √γˆbin(t)                                   !γ              "                                   −[ˆc(t),      2
+                                          1                                 #   $%   &  Therefore,
+                                  γ
+                                 iωc +                                                            ˆc(t)        ˆbin(t)                              "                                       ˙ˆc(t) =  !                 −       2   −√γ                                                                                     18
+
+====== PAGE 19 ======
+Remove the Fast Cavity Oscillation
+
+ The cavity Langevin equation is
+                                    γ
+                                     iωc +                                                                 ˆc(t)        ˆbin(t)                                 "                                             ˙ˆc(t) =  !                   −       2   −√γ
+
+ Define slowly varying operators in a frame rotating at 𝜔$:
+                                 ˆc(t) = ˆc′(t)e−iωct,      ˆbin(t) = ˆb′in(t)e−iωct
+
+
+ Differentiating the cavity operator gives
+                                           ˙ˆc(t) = e−iωct ! ˙ˆc′(t) −iωcˆc′(t) "
+
+ Substitution cancels the free oscillation:
+
+                                            ˙ˆc′(t) =      ˆc′(t)            ˆb′in(t)                     −γ2   −√γ
+
+                                                                                                                                                                                            19                         [ˆc′(t), ˆc′†(t)] = 1,         [ˆb′in(t),ˆb′†in(t′)] = δ(t −t′)
+
+====== PAGE 20 ======
+If the environment modes are white noise
+
+ Return to the arbitrary system operator !𝑎. Define the noise
+                                                               See Gardiner and part of the short-time interaction:
+                                                                                            Collett for details
+                      =                           d ˆGnoise  √γ !                                                                               ˆc d ˆB†       ˆB "                                                 −ˆc†d
+  Expanding the Heisenberg evolution to second order gives
+                      −i                                           dˆa =          ˆHsys] dt + [ˆa, d ˆGnoise]                                                      ℏ[ˆa,
+                                     1
+                       +  ! [ˆa, d ˆGnoise], d ˆGnoise " .
+                                     2
+  For thermal white noise,
+           √             d ˆB      dt,    d ˆB†d ˆB = ¯N dt,    d ˆB d ˆB† = ( ¯N + 1)dt
+           ∼
+                                     1                    γ
+  Therefore, the second-order term survives:   ! [ˆa, d ˆGnoise], d ˆGnoise " =   ( ¯N + 1) # ˆc†[ˆa, ˆc] −[ˆa, ˆc†]ˆc$ dt
+                                     2                     2
+                                                            γ
+                                      +   ¯N # ˆc[ˆa, ˆc†] −[ˆa, ˆc]ˆc†$ dt.
+                                                              2
+  The first-order term gives explicit input noise; the second-order noise products
+  generate emission and absorption drift.                                                                                                                     20
+
+====== PAGE 21 ======
+Quantum Langevin Equation for a White-
+Noise Bath
+
+For a broadband thermal bath with no temporal memory, the Langevin equation can be
+written in differential form:
+                                         dˆa =          ˆHsys] dt                                                   ℏ[ˆa,                     −i
+                                   γ
+                      +   ( ¯N + 1)  ˆc†[ˆa, ˆc]         ˆc†]ˆc dt                                    2        !       −[ˆa,    "
+                                   γ
+                      +   ¯N   ˆc[ˆa, ˆc†]           dt                                    2   !       −[ˆa, ˆc]ˆc†"
+
+                      + √γ                                #                                                                          [ˆa, ˆc] d ˆB†(t)         ˆc†] d ˆB(t) $                                                            −[ˆa,                 .
+The noise increment represents the input field accumulated over dt:
+
+                                 d ˆB(t) = ˆbin(t) dt
+The thermal white-noise correlations are    !ˆb†in(t)ˆbin(t′) " = ¯N δ(t −t′),                White noise with
+                                                                                                                  spectral density .𝑁
+                                  = ( ¯N + 1)δ(t −t′).                                                                  in(t′)                                 !ˆbin(t)ˆb†                                          "
+                                                                                                                                                                                             21
+
+====== PAGE 22 ======
+The Master Equation Tracks the Reduced
+System State
+
+
+We have derived an equation for an arbitrary system operator:
+                                      dˆa(t)
+       Heisenberg picture:      = system evolution + damping + input noise                                 dt
+
+We now want an equation for the state of the system alone:
+
+                                    ˆρS(t) = TrB[ˆρSB(t)]
+
+
+                                                     dˆρS(t)
+                        Schr¨odinger picture:        =?
+                                                  dt
+
+
+The two descriptions must predict the same expectation values:
+
+                                      ⟨ˆa⟩(t) = TrS[ˆa ˆρS(t)]
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Cyclicity of the Trace Transfers the Evolution
+to !𝜌
+
+ For a thermal bath with no coherent amplitude,
+
+                         d          d                              = 0                      =                              ! ˆB†(t) " B                    ! ˆB(t) " B
+ After averaging over the bath,
+                                  d
+                   ⟨ˆa⟩= Tr(ˆaˆρ),               Tr(ˆa ˙ˆρ)                                    dt⟨ˆa⟩=
+Using cyclicity of the trace,
+
+                                ˆX ˆY           ˆZ ˆX ˆY                         Tr(    ˆZ) = Tr(      )
+The Hamiltonian contribution becomes
+              −i                        i                                              [ˆa, ˆHsys]ˆρ =           ˆa[ˆρ, ˆHsys]                ℏTr !       "  ℏTr !       "
+The emission contribution becomes                                 1
+                                 Tr    ˆc†[ˆa, ˆc] −[ˆa, ˆc†]ˆc  ˆρ
+                                 2                                          !"               #  $
+                               −1   −1                        = Tr                                                                                 ˆa                                                                                                                         .                                      23                                        %                              &                                                                                           ˆcˆρˆc†    2ˆc†ˆcˆρ   2 ˆρˆc†ˆc'(
+
+====== PAGE 24 ======
+The Density Operator Obeys a Lindblad
+Master Equation
+  The corresponding Schrödinger-picture equation is
+
+                                  i
+                                                 ˙ˆρ =      ˆHsys]                                  ℏ[ˆρ,
+                         γ
+               +   ( ¯N + 1) ! 2ˆcˆρˆc† −ˆc†ˆcˆρ −ˆρˆc†ˆc"
+                          2
+                         γ
+               +   ¯N ! 2ˆc†ˆρˆc −ˆcˆc†ˆρ −ˆρˆcˆc†" .̂
+                          2
+
+                                 𝑐, with rate 𝛾( 6𝑁+ 1): emission into the bath
+  𝑐%,with rate 𝛾6𝑁: absorption from the bath
+
+  This is the Lindblad form for a system exchanging excitations with a thermal bath.
+
+                                                                                                                                                                                            24
+
+====== PAGE 25 ======
+Summary
+
+ •  The quantum Langevin equation is used to calculate how system operators evolve
+   when both damping and environmental fluctuations matter—for example, the field
+    inside a lossy optical cavity.
+
+ •  For a thermal white-noise bath, second-order noise products generate the emission
+   and absorption terms in the system dynamics.
+
+
+ •  The quantum Langevin and Lindblad master equations describe the same open-
+   system physics from the Heisenberg and Schrödinger pictures, respectively.
+
+                                                                                                                                                                                            25

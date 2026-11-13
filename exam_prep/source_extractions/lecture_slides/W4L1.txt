@@ -1,0 +1,607 @@
+Source: source_material/lectures/slides_and_handouts/W4L1.pdf
+Pages: 37
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 4, Lecture 1
+Quantum optical information
+
+          Reference: Nielsen & Chuang ch. 1.2, 1.3
+
+====== PAGE 2 ======
+Who am I?
+
+
+                   Dr Laura Serino                                 Research: experimental
+                      Postdoctoral Research Fellow                     quantum optics
+
+
+                        Email: l.serino@uq.edu.au
+                           Office: Parnell Room 308A
+
+          Originally from Bari (Italy)      PhD in Paderborn (Germany)
+
+                                                                                                                                                                                 2
+
+====== PAGE 3 ======
+What we will cover today…
+
+
+  Quantum information
+
+  Photons as qubits
+
+
+  Entanglement
+
+   Slides by Dr Josephine Dias
+                                                                                                                                                                                 3
+
+====== PAGE 4 ======
+Quantum
+information
+
+====== PAGE 5 ======
+Qubits
+
+ A qubit is a two-level quantum system.
+
+                                                                           'computational basis’
+
+       A pure qubit state has the general form:
+
+                                                                    global phase
+           𝛼, 𝛽 are complex numbers called amplitudes     is irrelevant
+                               |α|2 = α × α∗
+
+ If the qubit is measured in the computational basis:
+                                                                    “braket notation”
+ • We find result | 0 ⟩ with probability 𝛼!
+
+ • We find result | 1 ⟩ with probability 𝛽!
+
+====== PAGE 6 ======
+Qubits as vectors
+
+ •  Kets are represented by a 2×1 column vector
+
+ •  Bras are represented by a 1×2 row vector
+
+                 ⟨ψ|ψ⟩=        = |α|2 + |β|2 = 1                               #αβ $                            !α∗  β∗"
+
+
+                                                                                                                                                                                 6
+
+====== PAGE 7 ======
+The Bloch sphere
+
+•  Because the global phase is irrelevant, we can choose one coefficient to be real, eg. 𝛼.
+•  With the normalisation condition                           , this allows us to parametrise our
+   qubit with two angles: 𝜃 and 𝜙.
+
+
+                     can be rewritten as
+
+                                    z
+
+                                                       𝜃, 𝜙 define a point on
+                                              the surface of a three-dimensional                             𝜃
+                                                         unit sphere known as the
+                                              Bloch sphere
+                                           y
+                      𝜙
+                      x                                                                                                                                      7
+
+====== PAGE 8 ======
+The Bloch sphere – Computational basis
+states
+                                                                                            global
+                                                                          phase is
+                                                                                                 irrelevant
+
+
+                                                    z                                  z
+                                                                     |0⟩
+                       z
+
+
+                  𝜃
+                                                       y                               y
+
+                              y
+             𝜙                        x                                x
+          x                                                                                                                 |1⟩
+
+
+                           orthogonal states are antiparallel                                                                8
+
+====== PAGE 9 ======
+The Bloch sphere – + and −
+
+                                                    z                                  z
+
+                       z
+                                                                                                                                    |−⟩
+                  𝜃
+                                                       y                               y                                                           |+⟩                              y
+             𝜙
+                                       x                                x          x
+
+
+                                                 | + ⟩ and | − ⟩ are orthogonal
+                                 ⟹antiparallel on the Bloch sphere                                                  9
+
+====== PAGE 10 ======
+Qubit operations – Pauli matrices
+
+
+    The Pauli matrices represent an important group of qubit operations to remember
+
+                       0  1            0  −i               0
+                             Y =           X =                                     Z =                                                                                 also called 𝜎#, 𝜎$, 𝜎%                                                         i   0                       1  0                                                       0  −1                     !    "         !     "         !1    "
+
+    Each Pauli matrix is its own inverse                         Cyclic commutation
+          X2 = Y 2 = Z2 = I                             [X, Y ] = 2iZ
+                                                                       [Y, Z] = 2iX
+                                                                   [Z, X] = 2iY
+
+                                                                                                                                                                                      10
+
+====== PAGE 11 ======
+Qubit operations – eigenvectors of Pauli
+matrices
+
+Each pauli matrix has eigenvalues +1 and -1                                z                z
+                                                                                                            |0⟩
+                       Eigenvectors of 𝑍
+           0
+ Z =                                        along z axis                        y              y       0  −1      !1    "
+                                                                   x               x
+                                                                                                                                            |1⟩
+                                                                               z                z
+                       Eigenvectors of 𝑋
+                          1                                                                                                |−⟩
+                                    |+⟩ =   (|0⟩+ |1⟩)
+        0  1               2 X =                                  along x axis                          1        1  0                                                                                                    |+⟩             y              y      !           "                                    |−=⟩     (|0⟩−|1⟩)
+                           2                                    x               x
+
+                                                                                                                                                                                      11
+
+====== PAGE 12 ======
+Qubit operations – eigenvectors of Pauli
+matrices
+
+                                                                             z                z
+                                                                                                                  |+𝑖 ⟩                     Eigenvectors of 𝑌
+                        1
+     0  −i              |+𝑖=⟩     (|0⟩+ 𝑖|1⟩)
+Y =                     2        i   0                            along y axis                         y              y    !     "             1
+                                |−𝑖=⟩      (|0⟩−𝑖|1⟩)                                                                 x               x                         2                                                                                  |−𝑖 ⟩
+
+                                                                                                                                                                                       12
+
+====== PAGE 13 ======
+Qubit operations – on the Bloch sphere
+
+                                            Apply
+                z                                                                        z
+                                             0
+                 |0⟩                  Z =                                                     |0⟩                                          0  −1                                        !1    "
+
+
+                       y                                                                y
+     x                  𝑍0 = 0                    x
+                     𝑍1 = −1
+
+                                                                                                                                                                                      13
+
+====== PAGE 14 ======
+Qubit operations – on the Bloch sphere
+
+                                                           |ψ⟩= |1⟩
+                                            Apply
+                z                                                                        z
+                 |0⟩
+
+                       y                                                                 y
+     x                 𝑋0 = 1                     x
+                                                                                                                               |1⟩                    𝑋1 = 0
+
+                                                                                                                                                                                      14
+
+====== PAGE 15 ======
+Qubit operations – on the Bloch sphere
+
+                                                           |ψ⟩= |1⟩
+                                            Apply
+                z                                                                        z                                             0  −i
+                                  Y =                 |0⟩                                              i   0                                         !     "
+
+
+                       y                                                                 y
+     x                 𝑌0 = 𝑖1                     x
+                                                                                                                               |1⟩                    𝑌1 = −𝑖0
+
+
+The Pauli X, Y and Z matrices apply a 𝜋 rotation about the corresponding axis to a qubit on the Bloch sphere.
+
+
+                                                                                                                                                                                      15
+
+====== PAGE 16 ======
+Qubit operations - Rotations
+
+                                     𝑋= 𝜎#                              Rx (θ) = e−iθX/2
+                                                                                 𝑅%(𝜃)
+                           = cos (θ/2) I −i sin (θ/2) σx Matrix expontentials of the                                                                                           z
+                                                     cos (θ/2)   −i sin (θ/2) Pauli matrices give us the                           =                                          ! −i sin (θ/2)    cos (θ/2) " rotation operators
+
+
+                               Ry (θ) = e−iθY/2 Each operator is a rotation
+                                                                                            y about the x,y or z axis of the         = cos (θ/2) I −i sin (θ/2) σy
+                                                                                          𝑅$(𝜃) Bloch sphere                                    cos (θ/2)  −sin (θ/2)                           =                                 x                                          ! sin (θ/2)   cos (θ/2) "
+                                                                   𝑅#(𝜃)
+
+
+                                Rz (θ) = e−iθZ/2
+                           = cos (θ/2) I −i sin (θ/2) σz
+
+                                                      0
+                           =                                                  !e−iθ/20     eiθ/2 "
+                                                                                                                                                                                      16
+
+====== PAGE 17 ======
+Qubit operations - Rotations
+             Example 1: 𝜋/2 rotation around y axis
+                             z                                          z
+                                         Apply 𝑅$(𝜋/2)
+
+        1
+|+⟩=        (|0⟩+ |1⟩)    √ 2
+                              |+⟩            y                                      y
+                    x                                       x
+                                                                                                        |1⟩
+            Example 2: 𝜋 rotation around x axis
+                              z                                          z
+                                           Apply 𝑅#(𝜋)                       |0⟩
+
+
+                                  y                                     y
+                     x                                       x
+                                            |1⟩
+
+                                                                            𝑅# 𝜋𝑅$ 𝜋/2 = −𝑖𝐻                 𝑅!(𝜋/2) followed by 𝑅"(𝜋) gives us the
+                        Hadamard gate                                                                                           17
+
+====== PAGE 18 ======
+Circuit notation
+
+Examples of single qubit operations and their quantum circuit notation
+
+        Pauli-x
+
+        Pauli-y
+
+        Pauli-z
+
+     Hadamard
+
+                                                                                                                                                                                      18
+
+====== PAGE 19 ======
+Unitary operations
+
+                  z                                              z
+
+                          y                                          y
+
+      x                                            x
+
+                                                                                                                    •  Valid single qubit operations
+                                                                                       are represented by 2×2
+                                                                                                  unitary matrices
+                                    2×2 unitary matrix
+                                                                                                                    •   Unitarity means 𝑈" = 𝑈#$
+
+                                                                                                                    •  Unitary transformations
+                                                                                      preserves the norm of the
+                                                                                                 qubit
+                                                                                                                                                                                      19
+
+====== PAGE 20 ======
+Decomposing single qubit unitaries
+
+                                                                    z                      z            Any arbitrary
+                                         single qubit
+                                            unitary
+
+
+                                                                       y                             y
+                                 𝑅% 𝜁𝑅$ 𝜂𝑅%(𝜉)
+                                                     x          x
+
+          Any arbitrary single qubit unitary operation can be decomposed into rotations
+
+                                                                                                                                                                                      20
+
+====== PAGE 21 ======
+Qubit measurement
+
+                                                                                classical bits
+
+
+                                               unitary                                              measurement
+                          qubits           operations
+
+                                      measurement       𝜓= 𝛼0 + 𝛽|1⟩                                                |0⟩ or |1⟩
+                                                 in computational basis
+
+                                                                                                                                                                                      21
+
+====== PAGE 22 ======
+Qubit measurement – Computational basis
+
+                 measure in the
+           |0⟩      computational basis
+                                        0
+                                            with certainty
+                                                                      Only qubits that are already in an
+                                                                              eigenstate of the observable being
+                                                                 measured will have measurement
+                                                                  outcomes predictible with certainty, with                                                     |1⟩
+                                                                               other qubits we can only calculate the
+                                            with certainty
+                                                                                       probability of each measurement outcome
+           |1⟩
+
+                             50% chance for 0
+                             50% chance for |1⟩
+       1
+ + =    ( 0 + |1⟩)
+                                                                                                                                                                                      22       2
+
+====== PAGE 23 ======
+Can we copy a quantum
+         state?
+
+Given a quantum state     can we write down a quantum
+circuit that creates two copies of     ?
+
+                                                                                                                                                     23
+
+====== PAGE 24 ======
+Can we copy a quantum state?
+
+                  =       ⟨e|B ⟨φ|A U †U |ψ⟩A |e⟩B   ⟨φ|A ⟨φ|B |ψ⟩A |ψ⟩B
+
+                      𝐼
+assume |𝑒⟩ is
+normalised
+                     1
+
+
+ which is an equation of the form 𝑥= 𝑥#                                                                    no cloning for
+     only solutions are:                                                                                               arbitrary
+                                                                      quantum
+             |𝜙⟩ and 𝜓 are orthogonal       |𝜙⟩ and 𝜓 are the same                states
+                                                                                                                                                                                      24
+
+====== PAGE 25 ======
+No-cloning theorem
+
+                                                       Some notes on the No-cloning theorem…
+    The No-cloning theorem states that there is no unitary                                                                                                       •  A known operation that generates
+     operator 𝑈 on 𝐻⊗𝐻 such that for arbitrary normalised                                                             some state |𝜓⟩ can just be repeated to
+               𝜓& and 𝑒'                                      get more copies of |𝜓⟩
+                𝑈( 𝜓& 𝑒') = 𝜓& 𝜓'                                       •  But if you were given an unknown
+                            up to some global phase             quantum state, there is no unitary
+                                                                                operator that can copy or clone that
+                                                                   quantum state
+                                                                                                       •  The no cloning theorem has many
+                              it is impossible to create an identical copy of an                                                                                important consequences in quantum
+                      unknown quantum state                                                                                   information
+                                                                                                       •  Classical error correction techniques
+                                                                                won’t work – need quantum error
+                                                                                     correction
+                                                                                                       •  Classical information can be copied
+                                                                                 but quantum information can’t be
+                           impossible                                                                            copied                                                                                                                                                                                      25
+
+====== PAGE 26 ======
+Photons as qubits
+
+====== PAGE 27 ======
+Light has many degrees of freedom
+ Week 1:
+
+                                                                                     All these different degrees of
+                                                            freedom of photons can contain
+                                                         quantum information
+
+====== PAGE 28 ======
+Photons as qubits
+
+         How can we encode a                      |ψ⟩= α |0L⟩+ β |1L⟩              qubit using photons?
+
+          Single-Rail Encoding                                      Dual-Rail Encoding
+                                          single photon
+  |0L⟩= |0⟩      |1L⟩= |1⟩                       |0L⟩= |1⟩a |0⟩b     |1L⟩= |0⟩a |1⟩b
+
+  vacuum                                      a                 a
+
+                                                          b                       b
+  no photon                           photon
+
+Use one single mode: information is encoded                                              Use two orthogonal modes: information
+in the presence or absence of a photon                                                  encoded in which mode contains the photon
+
+Challenge:                                                         Challenge:
+    Photon loss: maps |1→→|0→                                                          Requires two optical modes per qubit
+
+                                                                                                                                                                                      28
+
+====== PAGE 29 ======
+ Examples of dual rail photonic qubit encodings
+
+             Path qubit                     Photon polarisation           Frequency bins
+                                   |0L⟩= |H⟩      |1L⟩= |V ⟩   |0L⟩= |ω1⟩   |1L⟩= |ω2⟩   |0L⟩= |1⟩a |0⟩b   |1L⟩= |0⟩a |1⟩b
+
+a               a
+                                                                 𝜔b                    b                                                     𝜔.     𝜔/                                                                  Horizontally            Vertically polarized
+                                                           polarised photon: |𝐻⟩         photon: |𝑉⟩
+
+             Orbital angular
+         momentum (OAM)                  Time bins                   Pulse modes
+                                                                                          & 0 '                                 |0L⟩= |1early⟩  |1L⟩= |1late⟩             0, = 1              0, = 1 -- 0 .-                                                                                    1, = 0 & 1 '
+              1, = 0 -- 1 .-                                  delay
+                                                          𝜔      𝜔
+
+                                                                                           A          B
+                  Spatial modes  Time-frequency modes
+
+                                                                                                                                                                                        29
+
+====== PAGE 30 ======
+Dual rail encoding
+Spatial mode (path) qubit
+
+    |0L⟩= |1⟩a |0⟩b      |1L⟩= |0⟩a |1⟩b
+
+              a
+                               𝜂    phase                                                                               shift
+                  b                    beam
+                                                          splitter                            phase
+                                           shift
+
+     For a spatial mode qubit, any arbitrary single-qubit unitary can be realized as:
+
+                        U = PS(φ1) BS(η) PS(φ2)
+
+                                                                                                                                                                                      30
+
+====== PAGE 31 ======
+Photon polarisation qubit
+Computational basis states
+
+                                                                     Qubits can be encoded in photon polarisation.
+   Horizontally polarised          Vertically polarized      The computational basis states { 0  , |1⟩} may be
+        photon: |𝐻⟩                 photon: |𝑉⟩           encoded in horizontal and vertical polarised
+                                                                 photons respectively.
+    𝐻= |0⟩           𝑉= |1⟩              Even though the polarisation angle between
+                                                                            horizontal and vertical is 90°, |𝐻⟩ and |𝑉⟩ are             z                              z
+                                                                      orthogonal and antiparallel on the Bloch sphere.
+
+
+                   y                           y
+     x                            x
+
+====== PAGE 32 ======
+Photon polarisation qubit
+
+                     z                                                   z
+
+                          y                                              y
+            x                                                x
+                  1                                          1
+      + = ↗=    ( 0 + |1⟩)               +𝑖= | ↺⟩=    ( 0 + 𝑖|1⟩)
+                  2                                          2
+            Diagonally polarised                                     Circularly polarised
+
+====== PAGE 33 ======
+ Photon polarisation – qubit operations
+
+         In order to implement single qubit unitary operations on polarisation encoded qubits, we
+       need to manipulate the polarisation of light.
+
+     We can do this using wave plates. Waveplates are made from birefringent materials
+        which have slightly different indices of refraction for light polarized in different orientations.
+       They delay orthogonal polarization differently, so they recombine with a different phase.
+              z                                                                           z
+
+                   y                                                                   y
+     x                                                                      x
+
+                                                                          1
+    𝐻= |0⟩                                     + = ↗=    ( 0 + |1⟩)
+                                                          half wave plate                            2
+     Horizontally polarised                                                       Diagonally polarised
+
+A half-waveplate applies a rotation of 𝜋 about an axis in the xz plane (determined by the orientation of the HWP).
+                                                                                                                                                                                         33
+
+====== PAGE 34 ======
+Photon polarisation – qubit operations
+ Quarter wave plate                        z                                           z
+
+A quarter-waveplate applies a
+rotation of 𝜋/2 about an axis in
+the xz plane (determined by                    y                                       y
+the orientation of the QWP).
+                               x                                         x
+
+The quarter wave plate takes
+                                  1                                    1linearly polarised light to                  + = ↗=    ( 0 + |1⟩)           −𝑖= | ↻⟩=    ( 0 −𝑖|1⟩)
+circularly polarised light.                2                                    2
+                                                                                      Circularly polarised                                Diagonally polarised
+
+                                                                    quarter wave
+                                                                       plate
+
+                                                                                                                                                                                        34
+
+====== PAGE 35 ======
+Photon polarisation qubit
+Arbitrary single qubit unitary
+
+
+                             quarter
+                                                     half wave          quarter                     wave plate
+                                                    plate        wave plate
+
+           For a polarisation qubit, any arbitrary single-qubit unitary can be realized as:
+
+                    U = QWP(φ1) HWP(φ2) QWP(φ3)
+
+                                                                                                                                                                                      35
+
+====== PAGE 36 ======
+ Polarising beam splitter (PBS)
+
+
+            𝐻
+         𝐻        𝐻               𝐻        𝐻       • A polarising beam-splitter
+                                                                                                   splits light into two different                                                 𝑉
+                                                                                            spatial modes each
+polarising            𝐻                           𝑉                 containing orthogonal
+ beam                                                                                polarisation states.
+  splitter
+                                                                                                      •  For example, vertical
+               𝑉                           𝑉 𝐻              polarised photons are
+                                                                                         reflected and horizontal
+           𝑉         𝑉                𝑉                         polarised photons are
+                                                                                    transmitted
+
+                                     𝐻
+               𝑉
+
+                                                                                                                                                                                          36
+
+====== PAGE 37 ======
+Photon polarisation - qubit
+measurement
+
+                                                                                               •  Photon detectors at the end of each
+                                     photon                output of the polarising beam splitter are
+                                        detectors            needed to perform measurement of the
+                                                                                qubit in the computational basis
+
+
+                        |𝑉⟩
+                                                                                               •  polarising beam splitter converts
+                                                                                 polarisation qubits to spatial mode
+                                                                              qubits
+                                 |𝐻⟩
+
+                     polarising
+                beam
+                           splitter

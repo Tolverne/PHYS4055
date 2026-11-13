@@ -1,0 +1,1058 @@
+Source: source_material/lectures/slides_and_handouts/PHYS4055_Week10.pdf
+Pages: 131
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week    10.
+
+ ATOMIC PHYSICS: (SOME)
+     APPLICATIONS
+
+    A N A S T A S I A B O R S C H E V S K Y
+
+====== PAGE 2 ======
+EM SPECTRUM
+
+====== PAGE 3 ======
+      EM SPECTRUM
+
+By Inductiveload, NASA - self-made, information by NASABased off of File:EM Spectrum3-new.jpg by NASAThe butterfly
+icon is from the P icon set, File:P biology.svgThe humans are from the Pioneer plaque, File:Human.svgThe buildings are
+the Petronas towers and the Empire State Buildings, both from File:Skyscrapercompare.svg, CC BY-SA 3.0,
+https://commons.wikimedia.org/w/index.php?curid=2974242
+
+====== PAGE 4 ======
+            UNITS
+
+Units:
+•  λ: usually [nm]
+• f=υ=c/λ [Hz] (ω=2π υ)
+• Wavenumber: ν=1/λ, m-1/cm-1 (also used as energy unit (E=hc ν); 1 cm -1=1/219474
+  a.u= 1/8066 eV)
+
+• For example, 1s→2p transition in H
+
+====== PAGE 5 ======
+        EM SPECTRUM
+
+                               Excitations   λ                            f [Hz]     E [eV]
+               γ-rays         Nuclear     < 1pm        > 1018    > 1 MeV
+               X-rays        Atomic      <10 nm       > 1016    > KeV
+                          core
+           UV (EUV,       Electronic    10-400 nm       1015-1016  3-100 eV
+            VUV)
+                Visible         Electronic    400-750 nm      1014       1.5-3 eV
+                 IR              Vibrational   750 nm-25μm    1012-1014  0.001-1.5 eV
+            microwave    Rotational   25 μm – 1 mm   1010-1012  1 μeV-1
+                                             meV
+              radio          Hyperfine   > 1mm        KHz-MHz  < μeV
+
+
+Units:
+•  λ: usually [nm]
+• f=υ=c/λ [Hz] (ω=2π υ)
+• Wavenumber: ν=1/λ, m-1/cm-1 (also used as energy unit (E=hc ν); 1 cm -1=1/219474
+  a.u= 1/8066 eV)
+
+====== PAGE 6 ======
+       EM SPECTRUM
+
+                           Excitations   λ [nm]                   f [Hz]     E [eV]
+           γ-rays         Nuclear     < 1pm        > 1018    > 1 MeV
+          X-rays        Atomic     <1 nm        > 1016    > KeV
+                      core
+       UV (EUV,       Electronic    10-400 nm       1015-1016  3-100 eV
+        VUV)
+           Visible         Electronic    400-750 nm      1014       1.5-3 eV
+            IR              Vibrational   750 nm-25μm    1012-1014  0.001-1.5 eV
+        microwave    Rotational   25 μm – 1 mm   1010-1012  1 μeV-1
+                                          meV
+          radio          Hyperfine   > 1mm        KHz-MHz  < μeV
+
+Units:
+•  λ: usually [nm]
+•  f=c/λ [Hz]
+• Wavenumber: ν=1/λ, m-1/cm-1 (also used as energy unit (E=hc ν); 1 cm-1=1/219474
+  a.u= 1/8066 eV)
+
+====== PAGE 7 ======
+TRANSITIONS IN ATOMS
+
+====== PAGE 8 ======
+           E2
+
+ΔE=E2-E2,uf υ
+
+           E1
+
+====== PAGE 9 ======
+           E2
+
+ΔE=E2-E2Alt
+
+           E1
+
+====== PAGE 10 ======
+           E2
+
+ΔE=E2-E2Up
+
+           E1
+
+      Generally, the frequency of the radiation (laser) has to be very close to the frequency of the
+       transition (corresponding to ΔE) in order for absorption to happen.
+     The closer, the more likely the transition.
+
+====== PAGE 11 ======
+           E2
+
+ΔE=E2-E2O
+
+           E1
+
+      Generally, the frequency of the radiation (laser) has to be very close to the frequency of the
+       transition (corresponding to ΔE) in order for absorption to happen.
+     The closer, the more likely the transition.
+
+====== PAGE 12 ======
+                          E2
+
+           ΔE=E2-E2W
+
+                         E1
+
+e- charge of the electron
+E0- electric field amplitude
+ρ(υ) – radiation density
+We assume that we are on resonance, i.e. the laser
+frequency is equal to the frequency of the transition
+                                             B12 – Einstein coefficient for absorption
+
+====== PAGE 13 ======
+           E2
+
+ΔE=E2-E2D
+
+           E1
+
+====== PAGE 14 ======
+           E2
+
+ΔE=E2-E2f
+
+           E1
+
+====== PAGE 15 ======
+                       E2
+
+         ΔE=E2-E2D
+
+                      E1
+
+e- charge of the electron
+E0- electric field amplitude
+gi=2Ji+1 – degeneracy of state I
+We assume that we are on resonance, i.e. the laser
+frequency is equal to the frequency of the transition
+
+                                         B21 – Einstein coefficient for stimulated emission
+
+====== PAGE 16 ======
+           E2
+
+ΔE=E2-E2D
+
+           E1
+
+====== PAGE 17 ======
+           E2
+
+ΔE=E2-E2H
+
+           E1
+
+====== PAGE 18 ======
+               E2
+
+  ΔE=E2-E2&
+
+              E1
+
+e- charge of the electron
+E0- electric field amplitude
+ω- radial frequency of the
+transition, ω=2πυ
+gi=2Ji+1 – degeneracy of state i
+c-speed of light
+α-fine structure constant (1/137)
+                           A12 – Einstein coefficient for spontaneous emission
+
+====== PAGE 19 ======
+
+
+====== PAGE 20 ======
+(for 2-state systems only)
+
+====== PAGE 21 ======
+
+
+====== PAGE 22 ======
+Excited state lifetime τ=1/A21
+
+====== PAGE 23 ======
+Excited state lifetime τ=1/A21
+
+====== PAGE 24 ======
+Excited state lifetime τ=1/A21
+
+====== PAGE 25 ======
+Lifetime of excited state with:
+|D12|=10-10 m
+λ21=500 nm
+g1=g2
+
+                                        Excited state lifetime τ=1/A21
+
+====== PAGE 26 ======
+Lifetime of excited state with:
+|D12|=10-10 m
+λ21=500 nm
+g1=g2
+
+             f=υ=c/λ [Hz]
+
+====== PAGE 27 ======
+Lifetime of excited state with:
+|D12|=10-10 m
+λ21=5 nm
+g1=g2
+
+====== PAGE 28 ======
+SELECTION RULES
+
+====== PAGE 29 ======
+
+
+====== PAGE 30 ======
+Why do the different levels have such different lifetimes? Why are some transitions
+stronger than others? And why do not all possible transitions take place?
+
+====== PAGE 31 ======
+          SELECTIONS RULES: E1TRANSITIONS
+
+
+                      •  Parity:                                      f(x) antisymmetric: integral 0
+
+                                                     g(x) symmetric: integral can be nonzero               odd
+
+When is D12 very small? These are forbidden transitions.
+
+====== PAGE 32 ======
+•  In electric dipole (E1) transitions:
+
+1.  Parity must change. We can have transitions from odd to even configurations
+   or vice versa, but not even-even, odd-odd.
+   How do we know the parity? Sum over valence electrons:
+
+    Say 6s5d→-10+2=1, even. 6s6p →-10+1=-1, odd
+
+====== PAGE 33 ======
+Neutral Sr
+
+       Parity is determined by configuration, not by term!
+
+====== PAGE 34 ======
+ΔJ= +/-1, 0: Conservation of total angular momentum
+
+But: we will not have a transition from J1=0 to J2=0
+
+====== PAGE 35 ======
+•  In electric dipole (E1) transitions:
+
+1.  Parity must change.
+
+2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+3. ΔMJ= 0, +/-1
+
+====== PAGE 36 ======
+•  In electric dipole (E1) transitions:
+
+1.  Parity must change.
+
+2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+3. ΔMJ= 0, +/-1
+4.  ΔL=0, +/-1 (but not L=0→L=0)
+
+5. ΔML= 0, +/-1
+
+====== PAGE 37 ======
+Electric dipole operator does not act upon spin and thus can not change it
+
+====== PAGE 38 ======
+•  In electric dipole (E1) transitions:
+
+1.  Parity must change.
+
+2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+3. ΔMJ= 0, +/-1
+4.  ΔL=0, +/-1 (but not L=0→L=0)
+
+5. ΔML= 0, +/-1
+
+6. ΔS=0
+
+====== PAGE 39 ======
+                        •  In electric dipole (E1) transitions:
+
+                     1. Parity must change.
+                                                 Transitions that violate these rules are forbidden                      2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+                      3. ΔMJ= 0, +/-1
+                       4.  ΔL=0, +/-1 (but not L=0→L=0)
+                                         Depends whether LS-coupling holds: semiforbidden                       5. ΔML= 0, +/-1
+
+                       6. ΔS=0
+
+
+If a transition is (semi)forbidden, D12 is very small, and thus A21 is very small, and thus τ (lifetime) is very large.
+
+====== PAGE 40 ======
+• Which electric dipole (E1) transitions are allowed between the Ca+ ([Ar]4s) atomic
+   levels?
+
+                                                                             •  In electric dipole (E1) transitions:
+
+                                                                           1.  Parity must change.
+
+                                                                       2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+                                                                       3. ΔMJ= 0, +/-1
+                                                                       4.  ΔL=0, +/-1 (but not L=0→L=0)
+
+                                                                       5. ΔML= 0, +/-1
+
+                                                                       6. ΔS=0
+
+====== PAGE 41 ======
+                  • Which electric dipole (E1) transitions are allowed between the Ca+ atomic
+                    levels?
+
+                                                                                               •  In electric dipole (E1) transitions:
+
+                                                                                            1.  Parity must change.
+
+                                                                                        2.  ΔJ=0, +/-1 (but not J=0→J=0)
+
+                                                                                        3. ΔMJ= 0, +/-1
+                                                                                        4.  ΔL=0, +/-1 (but not L=0→L=0)
+
+• E1 forbidden transitions can still take place via other mechanisms, but at a      5. ΔML= 0, +/-1
+  much slower rate (M1, E2).                                                                                        6. ΔS=0
+
+====== PAGE 42 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 43 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 44 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 45 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 46 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 47 ======
+•   In electric dipole (E1)
+    transitions:
+
+1.    Parity must change.
+
+2.   ΔJ=0, +/-1 (but not J=0→J=0)
+
+3.  ΔMJ= 0, +/-1
+4.   ΔL=0, +/-1 (but not L=0→L=0)
+
+5.  ΔML= 0, +/-1
+
+6.   ΔS=0
+
+====== PAGE 48 ======
+• E1 forbidden transitions can still take place via other mechanisms (M1, E2, etc),
+  but at a much slower rate.
+
+====== PAGE 49 ======
+   SELECTION RULES: M1
+       TRANSITIONS
+
+•
+1.  Parity is conserved
+2.  ΔJ=0, +/-1 (but not J=0→J=0)
+3. ΔMJ= 0, +/-1
+4.  n is conserved
+
+5. ΔL=0
+6. ΔS=0
+7.  ΔF=0,+/-1 (but not F=0→J=0)
+8. ΔMF=0,+/-1
+
+====== PAGE 50 ======
+• Which magnetic dipole (M1) transitions are allowed between the Ca+ atomic
+   levels?
+
+                                                                     In magnetic dipole (M1) transitions:
+                                                                        1.  Parity is conserved
+                                                                     2.  ΔJ=0, +/-1 (but not J=0→J=0)
+                                                                     3. ΔMJ= 0, +/-1
+                                                                         4.  n is conserved
+                                                                     5. ΔL=0
+                                                                     6. ΔS=0
+                                                                     7.  ΔF=0,+/-1 (but not F=0→J=0)
+                                                                     8.  ΔMF=0,+/-1
+
+====== PAGE 51 ======
+• Which magnetic dipole (M1) transitions are allowed between the Ca+ atomic
+   levels?
+
+                                                                     In magnetic dipole (M1) transitions:
+                                                                        1.  Parity is conserved
+                                                                     2.  ΔJ=0, +/-1 (but not J=0→J=0)
+                                                                     3. ΔMJ= 0, +/-1
+                                                                         4.  n is conserved
+                                                                     5. ΔL=0
+                                                                     6. ΔS=0
+                                                                     7.  ΔF=0,+/-1 (but not F=0→J=0)
+                                                                     8.  ΔMF=0,+/-1
+
+====== PAGE 52 ======
+    SELECTION RULES: E2
+       TRANSITIONS
+
+
+• In electric quadrupole (E2) transitions:
+1. Parity is conserved
+2. ΔJ=0, +/-1, +/-2 (but not J=0→J=0, or J=1→J=0, or
+  J=1/2→J=1/2)
+3. ΔMJ= 0, +/-1, +/-2
+4. ΔL=0, +/-1, +/-2 (but not L=0→J=0 or L=1→J=0)
+5. ΔS=0
+
+====== PAGE 53 ======
+• Which electric quadrupole (E2) transitions are allowed between the Ca+
+  atomic levels?
+
+                                       •  In electric quadrupole (E2) transitions:
+                                    1.  Parity is conserved
+                                    2.  ΔJ=0, +/-1, +/-2 (but not J=0→J=0, or J=1→J=0, or
+                             J=1/2→J=1/2)
+                                    3. ΔMJ= 0, +/-1, +/-2
+                                    4. ΔL=0, +/-1, +/-2 (but not L=0→J=0 or L=1→J=0)
+                                    5. ΔS=0
+
+====== PAGE 54 ======
+• Which electric quadrupole (E2) transitions are allowed between the Ca+
+  atomic levels?
+
+                                       •  In electric quadrupole (E2) transitions:
+                                    1.  Parity is conserved
+                                    2.  ΔJ=0, +/-1, +/-2 (but not J=0→J=0, or J=1→J=0, or
+                             J=1/2→J=1/2)
+                                    3. ΔMJ= 0, +/-1, +/-2
+                                    4. ΔL=0, +/-1, +/-2 (but not L=0→J=0 or L=1→J=0)
+                                    5. ΔS=0
+
+====== PAGE 55 ======
+Transition rates:
+
+====== PAGE 56 ======
+Transition rates:
+
+====== PAGE 57 ======
+               LASERS
+
+•  Light Amplification by Stimulated Emission of Radiation
+
+• Based on the stimulated emission process
+
+====== PAGE 58 ======
+•  Light Amplification by Stimulated Emission of Radiation
+
+• Based on the stimulated emission process
+
+                       Population inversion
+                                        E2                                        E2
+
+
+                                       E1                                       E1
+
+====== PAGE 59 ======
+•   If we want to have a population inversion, we need at least 3 levels:
+
+====== PAGE 60 ======
+     •   If we have two levels only:
+
+Optical
+pumping
+
+====== PAGE 61 ======
+•   If we have two levels only, and the excited state is short lived, the excited state will immediately decay to the ground
+   state though spontaneous emission. No population inversion possible.
+
+====== PAGE 62 ======
+•   If we have two levels only, and the excited state is long lived, the pumping will not be efficient. No population inversion
+   possible.
+
+                                                                          (A21∝B12)
+
+====== PAGE 63 ======
+     •   If we want to have a population inversion, we need at least 3 levels:
+
+
+                                                           B12 coefficient is big, efficient pumping
+
+
+Optical
+pumping
+
+====== PAGE 64 ======
+population inversion possible
+
+====== PAGE 65 ======
+
+
+====== PAGE 66 ======
+
+
+====== PAGE 67 ======
+Optical
+pumping
+
+====== PAGE 68 ======
+• What are the requirements for the 4→1, 4→3, 3→2, and 2→1 decays to make a laser?
+
+                E4
+
+                 4→1 slow/fast                 E3
+                 4→3 slow/fast
+                  laser light
+                 3→2 slow/fast                 E2
+                 2→1 slow/fast
+                 E1
+
+====== PAGE 69 ======
+• What are the requirements for the 4→1, 4→3, 3→2, and 2→1 decays to make a laser?
+
+                E4
+
+                 4→1 slow/fast                 E3
+                 4→3 slow/fast
+                  laser light
+                 3→2 slow/fast                 E2
+                 2→1 slow/fast
+                 E1
+
+====== PAGE 70 ======
+Excited state lifetime τ=1/A21 is connected to uncertainty in energy through
+the uncertainty principle:
+
+ΔtΔE≥h/2
+
+Short lived excited state: large uncertainty; long-lived: small.
+
+Example: excited 2P state in hydrogen
+
+====== PAGE 71 ======
+SLOWING, COOLING,
+ AND TRAPPING OF
+     ATOMS
+
+====== PAGE 72 ======
+■  Slowing
+
+■  Cooling
+
+■  Trapping
+
+====== PAGE 73 ======
+Why trap atoms?
+
+■  Possibility to manipulate atoms
+
+■  Long interactions times
+
+■  Improving applications (i.e. atomic clocks, qubits)
+
+■  Reaching higher precision in experiments (in particular fundamental physics)
+
+====== PAGE 74 ======
+■  Slowing
+
+■  Cooling
+
+■  Trapping
+
+====== PAGE 75 ======
+Deceleration by scattering force
+
+■  ===
+
+====== PAGE 76 ======
+Deceleration by scattering force
+
+■  ===                                        Requires radiation on resonance with (very close to) the
+                                                wavelength of an allowed transition in the atom. Why?
+
+                                                                                   E2
+                                          E2        E2
+                                                                                   E1
+                                          E1        E1
+
+====== PAGE 77 ======
+Deceleration by scattering force
+
+
+                                          Fscatt=ΔP/Δt = h/λRscatt
+■  ===
+
+                                             Rscatt=ρ2/τ= ρ2 Γ (Γ=1/ τ)
+
+                                              ρ2: excited state population
+
+                                                                                       E2
+
+                                    k=ω/c=2π/λ
+                                                            I- laser intensity
+                                                                       Isat- saturation intensity
+                                   δ= ω- ω0 (detuning)
+
+====== PAGE 78 ======
+Deceleration by scattering force
+
+
+                                               Fscatt=h/λRscatt■  ===
+
+                                             Rscatt=ρ2/τ= ρ2 Γ (Γ=1/ τ)
+
+                                              ρ2: excited state population
+
+
+                              (for very high laser intensity, I→∞, ρ2→½ . Why?)
+
+                       Then, we have (highest possible deceleration force)
+                            hΓ
+                             Fmax=                               2λ
+
+====== PAGE 79 ======
+Deceleration by scattering force
+
+
+                                               Fscatt=h/λRscatt■  ===
+
+                                             Rscatt=ρ2/τ= ρ2 Γ (Γ=1/ τ)
+
+                                              ρ2: excited state population
+
+
+                              (for very high laser intensity, I→∞, ρ2→½ . Why? Because
+                          stimulated absorption and emission are symmetric, B12=B21)
+
+                       Then, we have (highest possible deceleration force)
+              hΓ
+            Fmax=               2λ
+
+====== PAGE 80 ======
+Deceleration by scattering force
+
+                                   hΓ
+                                     Fmax=                                     2λ
+■  ===vr                                             Fmax   hΓ   pΓ   vrΓ                            =       =                                    amax=                        M   2λM= M2   2
+
+                     h
+                 =       - recoil velocity (change in the velocity of                       vr                 Mλ
+                    the atom due to an absorption or emission of a photon)
+
+====== PAGE 81 ======
+ Deceleration by scattering force
+
+■  ===
+
+====== PAGE 82 ======
+ Deceleration by scattering force
+
+■  ===
+
+====== PAGE 83 ======
+ Deceleration by scattering force
+
+■  ===
+
+====== PAGE 84 ======
+ Deceleration by scattering force
+
+■  ===
+
+====== PAGE 85 ======
+ Deceleration by scattering force
+
+■  ===
+
+                                           Where will the atoms stop?
+
+====== PAGE 86 ======
+ Deceleration by scattering force
+
+■  ===
+
+                                           Where will the atoms stop?
+
+====== PAGE 87 ======
+ Deceleration by scattering force
+
+■  ===
+
+                                          How many photons will be scattered?
+
+====== PAGE 88 ======
+ Deceleration by scattering force
+
+■  ===
+
+====== PAGE 89 ======
+Deceleration by scattering force
+
+■  What is wrong with this story?
+
+====== PAGE 90 ======
+Deceleration by scattering force
+
+■  What is wrong with this story?
+
+====== PAGE 91 ======
+Doppler shift
+
+■  Atoms absorb radiation at frequency ω in the rest frame
+■  Say we have an atom moving at velocity v:
+
+■    It will see different frequency radiation, depending on whether it’s moving towards or
+   away from its source.
+■  That means we need to account for the Doppler shift when selecting the laser frequency
+
+====== PAGE 92 ======
+ (Zeeman effect)
+
+The levels will split according to MJ and shift proportionally to the strength
+of the applied magnetic field
+
+====== PAGE 93 ======
+Zeeman slowing technique
+
+Compensate for the changing Doppler shift by applying a varying magnetic field.
+
+                                                                            Doppler shift
+
+
+                                                               Laser frequency
+                              Resonance frequency
+
+                                             Zeeman shift
+                                             E2
+                                             E1
+
+====== PAGE 94 ======
+ Zeeman slowing technique
+
+   Compensate for the changing Doppler shift by applying a varying magnetic field.
+
+Maximum velocity that can be
+captured
+
+====== PAGE 95 ======
+Zeeman slowing technique
+
+Compensate for the changing Doppler shift by applying a varying magnetic field.
+
+====== PAGE 96 ======
+■  Slowing
+
+■  Cooling
+
+■  Trapping
+
+====== PAGE 97 ======
+
+
+====== PAGE 98 ======
+Add more lasers!
+
+====== PAGE 99 ======
+Optical molasses
+
+====== PAGE 100 ======
+All the lasers have the same frequency, red-detuned from
+resonance (that is, slightly lower than the transition frequency)
+
+====== PAGE 101 ======
+All the lasers have the same frequency, red-detuned from
+resonance
+
+====== PAGE 102 ======
+All the lasers have the same frequency, red-detuned from
+resonance
+
+====== PAGE 103 ======
+                                                                    All the lasers have the same frequency, red-detuned from
+                                              resonance
+
+For small v (a few m/sec), use Taylor series:
+
+====== PAGE 104 ======
+All the lasers have the same frequency, red-detuned from
+resonance
+
+====== PAGE 105 ======
+                                         All the lasers have the same frequency, red-detuned from
+                           resonance
+
+-αv
+
+====== PAGE 106 ======
+                                         All the lasers have the same frequency, red-detuned from
+                           resonance
+
+-αv
+
+====== PAGE 107 ======
+k=ω/c=2π/λ
+I- laser intensity
+Isat- saturation intensity
+δ= ω- ω0 (detuning)
+
+====== PAGE 108 ======
+
+
+====== PAGE 109 ======
+Fmolasses=-αv
+
+====== PAGE 110 ======
+■  Doppler cooling limit
+
+====== PAGE 111 ======
+            (
+
+■  Doppler cooling limit
+
+====== PAGE 112 ======
+
+
+====== PAGE 113 ======
+■  Slowing
+
+■  Cooling
+
+■  Trapping
+
+====== PAGE 114 ======
+■  For beams of 1cm2radius, it takes several seconds
+
+for the atoms to diffuse out
+
+====== PAGE 115 ======
+■  For beams of 1cm2 radius, it takes several seconds
+for the atoms to diffuse out
+
+■  Apply a force that will depend on the position of the atoms and prevent them from
+    leaving the region
+
+====== PAGE 116 ======
+Magneto-optical trap
+
+====== PAGE 117 ======
+Magneto-optical trap
+
+                                    Take a J=0 to J=1 transition (e.g. 4s2 1S0→4s4p 1P1 in Ca
+
+
+                                                   1P1
+                                                  1S0
+
+                              Remember Zeeman effect?
+
+====== PAGE 118 ======
+Magneto-optical trap
+
+                                Take a J=0 to J=1 transition (e.g. 4s2 1S0→4s4p 1P1 in Ca (422 nm))
+
+
+                                                   1P1
+                                                   1S0
+
+                              Remember Zeeman effect? 1P1 will split into 3 levels.
+
+====== PAGE 119 ======
+Light polarization
+
+                                           Linear polarization, π
+
+                                               Circular polarization, σ
+
+Right handed, σ+                        Left handed, σ-
+
+====== PAGE 120 ======
+Light polarization
+
+                                           Linear polarization, π
+
+                                                                               Selection rules:
+                                                                                       π: 0→0 (ΔMJ=0)
+                                                                                      σ+: 0→1 (ΔMJ=1)
+                                                                                                   σ-: 0→-1 (ΔMJ=-1)
+                                               Circular polarization, σ
+
+Right handed, σ+                        Left handed, σ-
+
+====== PAGE 121 ======
+Magneto-optical trap
+
+
+                                                    Selection rules:
+                                                          π: 0→0 (ΔMJ=0)
+                                                         σ+: 0→1 (ΔMJ=1)
+                                                                 σ-: 0→-1 (ΔMJ=-1)
+
+====== PAGE 122 ======
+Magneto-optical trap
+
+
+                                                    Selection rules:
+                                                          π: 0→0 (ΔMJ=0)
+                                                         σ+: 0→1 (ΔMJ=1)
+                                                                 σ-: 0→-1 (ΔMJ=-1)
+
+====== PAGE 123 ======
+Magneto-optical trap
+
+====== PAGE 124 ======
+Magneto-optical trap
+
+====== PAGE 125 ======
+Magneto-optical trap
+
+====== PAGE 126 ======
+Magneto-optical trap                                                                           velocity-dependent slowing
+
+
+                                                                         position-dependent force
+
+====== PAGE 127 ======
+Magneto-optical trap
+
+                                    For Na:
+
+                                vc(MOT)≈70 m/s
+                                                  vs.
+                                   v(molasses) ≈6 m/sec
+
+                            10000000 atoms collected
+
+                                                                     Ca, 423 nm (blue)
+                                     Na, 589 nm (yellow)
+
+====== PAGE 128 ======
+■  What makes a good atom (transition) for laser cooling?
+
+====== PAGE 129 ======
+■  What makes a good atom (transition) for laser cooling?
+        -  Two level system (effective two-level system), for closed cycling (compare to
+      laser, which requires 3 levels!)
+        -   Short lifetime of upper state (for efficiency!)
+        -   Reasonable transition frequency (ideally optical range, where lasers work best)
+
+
+                  E3                               E3
+
+                  E2
+
+
+                  E1                               E1
+
+====== PAGE 130 ======
+Atoms that were laser-cooled
+
+====== PAGE 131 ======
+not so simple…
+
+■  Here, 2 lasers are needed
+
+
+■  Why do we need the second
+
+laser?
+
+Why not repump directly to the excited
+
+state used in the cooling?

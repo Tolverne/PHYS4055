@@ -1,0 +1,360 @@
+Source: source_material/lectures/slides_and_handouts/W2L2 - Beam splitter.pdf
+Pages: 17
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 2, Lecture 2
+Beam splitter
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4pm
+
+
+ See Chapter 5.1 of Leonhardt, U. Essential Quantum Optics From
+ Quantum Measurements to Black Holes (2010)
+ See Chapter 5.1 of Bachor, Hans-A. / Ralph, Timothy C. A guide to
+ experiments in quantum optics (2019)
+
+====== PAGE 2 ======
+Review
+What you learned last lecture…
+
+                     Density operators                                                       •  Super-poissonian
+                                                >                                                                           var (n)    ¯n         To describe mixed ensembles of quantum states, we
+         use density operators:
+       !                                            –  e.g. thermal state  ˆρth
+                          ˆρ =     pi |ψi⟩⟨ψi|                                                                                                                     •  Poissonian
+                                   i                                                                                                                                                                                                                                                                                        statistics                                                                           var (n) = ¯n                                                       probability of being in state |𝜓!⟩
+
+                                                                    –  e.g. coherent state |α⟩                                                                                                                                                                        Photon
+                 Thermal states of light                                                                                                                     •  Sub-poissonian
+                                               <                    1                                                     var (n)    ¯n                                                  ¯n
+                        ˆρ =                     |n⟩⟨n|                   + 1 #n                              ¯n + 1                  " ¯n                         n                                                                    –  e.g. photon number state |n⟩        !
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+Beam splitter
+Introduction                                     Beam splitter diagram
+
+
+•  The beam splitter is a four-port optical device
+        •  Two inputs
+        •  Two outputs                                    𝜂
+
+
+  Separates beams
+
+  Different ratio 𝜂
+                                                                                                  Free space beam splitter
+ Polarised beam splitter
+
+ Separate vertical and horizontal polarisation
+
+
+  No lecture notes on the beam splitter
+
+   •  See Chapter 5.1 of Leonhardt, U. Essential Quantum Optics From Quantum
+     Measurements to Black Holes (2010)
+
+   •  See Chapter 5.1 of Bachor, Hans-A. / Ralph, Timothy C. A guide to experiments in
+     quantum optics (2019)
+
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Beam splitter
+Classical
+
+  Outgoing modes
+
+           =         1               αout  √η α !    β                −   −η                                                  𝜂
+               βout = ! 1   α + √η β               −η
+
+
+       The “-” sign can be placed anywhere but is
+         essential to conserve energy since :
+                                                                               coherent light
+                                                                 beams with              |α|2 + |β|2 = |αout|2 + |βout|2
+                                                                           complex
+                                                                                 amplitudes
+        lossless beam splitters conserve energy
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Beam splitter
+Classical
+
+
+    Matrix formalism
+
+      =         1     αout  √η α !    β                           =          −   −η                             B                                       !αoutβout "    !αβ "
+     βout = ! 1   α + √η β                                 𝜂         −η
+                                B12               B =
+                          B21  B22                         !B11     "
+
+             −r
+     B =
+              r    t                      Condition for energy conservation            !t    "
+                                                 t2 + r2 = 1
+                         t: transmissivity
+                       r: reflectivity
+
+                             √η           =         =    Here, we have used  t  √η      B         −√1 −η                                  ! √1      √η  "                           −η
+
+                                                                                                                                                                                              55
+
+====== PAGE 6 ======
+Beam splitter
+Quantum
+
+ˆa′1 = √η ˆa1 !1      ˆa2       1                                  B12                   = B            Heisenberg  B =       −   −η                                                  ˆa′                                                                     picture                                                       B21  B22                                                       ˆa2                                                      !B11                                                              "                                 2 "      !ˆa1                                  "                                      !ˆa′ˆa′2  = !1      ˆa1 + √η ˆa2     −η
+                                                  𝜂
+      Incoming and outgoing       ! ˆa′ν, ˆa′†µ " = ! ˆaν, ˆa†µ " = δνµ       bosonic modes should
+        satisfy commutation
+                    = [ˆaν, ˆaµ] = 0        relations                 ! ˆa′ν, ˆa′µ "
+
+                               + B12B∗22 = 0   |B11| + |B12|2 = |B21|2 + |B22|2 = 1       B11B∗21
+
+      𝐵 is unitary:  B−1 = B†
+
+
+                                                        is invariant, lossless beam splitters conserve energy          Total intensity    ˆa†1ˆa1 + ˆa†2ˆa2
+
+====== PAGE 7 ======
+Beam splitter
+Unitary
+
+                            θ                    ˆUB = exp !                       " ˆa†                                            1ˆa2 −ˆa1ˆa†2 #$
+                                                  𝜂
+   ˆUBˆa1 ˆU B            † = cos θˆa1 −sin θˆa2              ˆa′1 = √η ˆa1 !1      ˆa2                            −   −η
+                                           2 = !1      ˆa1 + √η ˆa2       = cos θˆa2 + sin θˆa1             ˆa′   ˆUBˆa2 ˆU B†                            −η
+
+              can verify this using Baker–Campbell–Hausdorf formula
+
+                    |ψout⟩= ˆU |ψin⟩
+
+                                            †                               ˆρout = ˆU ˆρin ˆU
+
+====== PAGE 8 ======
+Beam splitter
+Quantum
+
+       Note that the quantum mechanical beam splitter is
+       always a four-port device
+                                                  𝜂              If we ignore #𝒂𝟐:
+                                  ˆa′1 = √η ˆa1 !1      ˆa2                 −   −η
+
+
+                 ˆa′1 = √η ˆa1                                                        ˆa′1, ˆa′†1 =        √ηˆa†1                             !      "   !√ηˆa1,     " = = 1                                                                                                         η̸
+
+          Vacuum fluctuations from second input mode cannot be ignored
+
+====== PAGE 9 ======
+Combining Fock states
+
+  Combining 𝒏𝟏 photons in mode 𝟏 and 𝒏𝟐 photons
+   in mode 𝟐:                 1
+             =                 ˆa†n2                                       1    2             |n1⟩1 |n2⟩2   √n1!n2!ˆa†n1     |0⟩1 |0⟩2
+
+            Output modes          Input modes
+                                                            Invert this
+                    1 = B                                                       transformation                                                  𝜂                              ˆa′                                      ˆa2                    2 "      !ˆa1                        "                      !ˆa′
+                                                                  |n1⟩1                         B∗
+        = B†   1 =    11     21     1
+                                                                       ˆa′                     B∗                         B∗                                    ˆa′              ˆa2                                 12                                               2 "                                        22 " !ˆa′                        2 "  !B∗           !ˆa1          "        !ˆa′
+
+                 1
+       =                                 1 + B21ˆa†2                                                B12ˆa†1 + B22ˆa†2      1     2                  ! B11ˆa†                                     "n1 !                                                       "n2  |n1⟩′ |n2⟩′   √n1!n2!                                             |0⟩1 |0⟩2
+                                                                                  |n2⟩2
+                                                           binomial coefficient                                               n1,n2
+                               1
+                                               k1 # "n2k2 #                     |n1⟩′1 |n2⟩′2 = √n1!n2!      "n1        (B11)k1(B21)n1−k1(B12)k2(B22)n2−k2                                           k1,k2=0!
+
+                                     +                    + k2)!(n1 + n2 −k1 −k2)! |k1                                                                    k2⟩1 |n1                                           + n2 −k1 −k2⟩2               ×             $ (k1                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Splitting n photons
+
+  Now, we are combining 𝒏 photons in mode 𝟏 and
+   the vacuum in mode 𝟐:                                                                            2
+                    n
+                     n
+           |n→1 |0→2 →          tkrn−k |k→1 |n −k→2                         k
+                    k=0             "# $       !                                                  𝜂
+                    −r
+           B =                     t2 + r2 = 1                         r    t                                     |n⟩1                      !t    "                                                                        1
+
+ Probability of finding 𝒌 photons in mode 1 and 𝒏−𝒌
+ photons in mode 2:                                          binomial coefficient
+                                                  n!
+    pk    =                    =                    t = √η                                  k      !nk "                !n "   k!(n −k)!                           |0⟩2              # t2$k # r2$n−k
+
+                                                binomial distribution
+                         pk =      (η)k (1 −η)n−k                     !nk "
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Single photon input
+
+
+                                                                                                        output mode
+  We are combining 𝟏 photon in mode 𝑨 and the
+  vacuum in mode 𝑬:
+
+                                               n
+    Input                                    n                                           |n→1 |0→2 →          tkrn−k |k→1 |n −k→2                                                   k
+                                               k=0                            "# $         |1⟩A |0⟩E        !
+                                                                                        input mode         𝜂     output mode   Output
+
+               cannot be expressed as a product state
+
+                  Modes 𝐴 and 𝐸 are entangled
+
+
+          50:50 beam splitter                   Bell state
+             1                                                                  vacuum                       1       =         η                +             2              √ 2 (|1⟩A |0⟩E   |0⟩A |1⟩E)
+
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Coherent states
+
+ In the Fock photon-number basis:                                                                      𝑥
+                                                     𝜂
+
+                                                                            𝑝Beam splitter transformation
+
+                                                                    Coherent state
+                      two coherent states in modes 𝐴 and 𝐸
+
+                                                                                                    𝑥
+
+    A single coherent state mixed with the vacuum
+      state |0⟩ does not become entangled at a beam
+      splitter
+                                                                                                         𝑝
+
+                                                                                     Vacuum state         12
+
+====== PAGE 13 ======
+Two coherent states
+
+                                                                      𝑥
+           𝜓!" = 𝛼# $ 𝛼% &                                                     𝜂
+
+                                                                            𝑝Beam splitter transformation
+
+        𝜂𝛼# −  1 −𝜂𝛼% $  1 −𝜂𝛼# +  𝜂𝛼% &
+
+                                                                    Coherent state
+
+             two coherent states in modes 𝐴 and 𝐸
+                                                                                                    𝑥
+
+
+      Amplitudes are transformed in the same
+     way as classical fields
+                                                                                                         𝑝
+
+                                                                                                   Coherent state        13
+
+====== PAGE 14 ======
+Modelling optical loss
+
+                                                                                       we cannot access
+  Absorption of light can be modelled by a beam splitter                                                              the environment
+                                                                                        environment
+
+  Here, we can only access and control one input and one output
+  mode
+                                              𝜂
+  The other input mode is the absorption reservoir
+                                                                                  input mode                             output mode
+  The other output mode is the environment
+
+
+  Absorbed light is reflected into the environment
+
+
+   Fluctuations coming from the environment enter the outgoing light through
+   the second input port                                                                   environment
+
+                                                                                                             absorption
+  This can model photon absorption from optical fibre                                                                                                                      reservoir
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Modelling optical loss
+
+  How do we set up the problem?
+
+   Input state on mode 𝐴                                                                 environment
+          |ψ⟩A
+
+  Combine mode 𝐴 with environment mode 𝐸 using beam splitter interaction                                              𝜂
+         |ψ→A ⊗|φ→E →ˆUB [|ψ→A ⊗|φ→E]                     input mode                             output mode
+
+                         for pure loss, absorption reservoir is the vacuum
+
+   To get the reduced density matrix of our system A,
+  we need to trace over the evironment mode E.
+
+                                                                                        environment
+   Partial trace over environment mode:
+         ρA = TrE [ρAE]
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Modelling optical loss
+Single photon input
+
+      √η            |1⟩A |0⟩E + ! 1 −η |0⟩A |1⟩E                                     environment
+  •  To get the reduced density matrix of our system A, we need to trace
+     over the evironment mode E.
+                                              𝜂
+   Trace over environment mode:                                               input mode                             output mode
+
+       ρA = TrE [ρAE]
+       = η |1⟩A ⟨1|A + (1 −η) |0⟩A ⟨0|A
+
+
+                                                    single photon in environment                 environment     single photon 1 transmitted
+                                                              probability 1 −𝜂              probability 𝜂
+                                                                                                             absorption reservoir is
+                                                                                                              the vacuum     •  The pure state becomes a mixture of the zero photon term and the one
+      photon term.
+
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Summary
+What we talked about today…
+
+
+    Beam splitters transform the mode operators as:
+
+                         ˆa′1 = √η ˆa1 !1      ˆa2               −   −η
+                                          𝜂                         ˆa′2          = !1      ˆa1 + √η ˆa2              −η
+
+       Splitting n photons:
+
+                  n
+                    n
+        |n→1 |0→2 →          tkrn−k |k→1 |n −k→2                       k
+                  k=0            "# $      !
+
+
+    Beam splitters can be used to model optical loss
+
+                                                                                                                                                                                            17

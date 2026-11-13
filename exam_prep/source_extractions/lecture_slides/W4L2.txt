@@ -1,0 +1,473 @@
+Source: source_material/lectures/slides_and_handouts/W4L2.pdf
+Pages: 28
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 13, Lecture 2
+Entanglement
+
+====== PAGE 2 ======
+Entanglement
+
+====== PAGE 3 ======
+Entanglement in quantum technology
+
+                                        entangled pair is generated
+
+
+                                                each qubit in the
+            A            B             entangled pair can be sent
+                                                            to spatially separated
+                                                                 parties
+
+                         Entanglement is useful in:
+                                      • Quantum teleportation
+                                      • Quantum key distribution
+                                      • Quantum computing
+
+                                                                                                                                                                                 3
+
+====== PAGE 4 ======
+Quantum entanglement
+
+
+ Example 1
+                        can be written as                         Separable
+                                                                   not entangled
+
+ Example 2
+                                                            Not separable
+                           cannot be written as                                                              Entangled
+
+            Definition: A bipartite pure quantum state 𝜓∈ℋ!" is
+             seaparble if it can be written as 𝜓= 𝜓! ⊗|𝜓!⟩. A
+             quantum state is entangled if it is not separable.
+
+                                                                                                                                                                                 4
+
+====== PAGE 5 ======
+Bell states
+
+  The Bell states are maximally entangled
+  states of two qubits
+
+  Measuring one qubit in the computational
+  basis would reveal that the second qubit
+   is in the same state (for |Φ±⟩) or opposite
+  state (for (|Ψ±⟩)
+
+                { Φ"  , Φ#  , Ψ"  , |Ψ#⟩} form an orthonormal basis spanning the Hilbert
+          space of a two-qubit system, known as the Bell basis
+
+                                                                                                                                                                                 5
+
+====== PAGE 6 ======
+Pure entangled states of two qubits
+
+                                           Bell states
+                                  Pure and maximally entangled
+
+   Other examples of pure two qubit states:
+
+
+                                            Not maximally entangled
+                                              But still entangled
+
+                                                                                                                                                                                 6
+
+====== PAGE 7 ======
+Mixed entangled states of two qubits
+
+    pure states
+                                                           Definition: A bipartite pure quantum state 𝜓∈ℋ$% is
+                                                        separable if it can be written as 𝜓= 𝜓$ ⊗|𝜓$⟩
+
+                                                          Definition: A bipartite mixed quantum state 𝜌∈ℋ$% is   mixed states                                                                separable if it can be written as
+                                           𝜌= , 𝑝&𝜌$& ⊗𝜌%&
+                                                                                                                                         &
+
+                                                                                                                                                                                 7
+
+====== PAGE 8 ======
+Reduced density matrix
+
+                      How can we describe the
+                                  state of the system at B?
+
+      A               B
+
+                                                                                     If alice measures her qubit:            the state of bob’s qubit must be:  Alice
+                           Bob                                           %           $                                 Ø  0 ' with probability                                                                                   (           0 ) + 1 )                                                                                               %                                                                                   $
+                                 Ø  1 ' with probability                                                                                   (         1 )
+
+
+        Density matrix at B:
+
+                                               Reduced density matrix of
+                                                   subsystem B
+
+                                                                                                                                                                                 8
+
+====== PAGE 9 ======
+Partial trace
+
+        Where |𝑛)⟩ are the basis                                            Where |𝑛'⟩ are the basis
+          vectors for subsystem B        A             B                    vectors for subsystem A
+
+                     •  The operation for obtaining the reduced density matrices of a composite quantum
+                system is called the partial trace.
+                     •  To obtain the density matrix of subsystem A, we perform the partial trace over
+                subsystem B
+                     •  To obtain the density matrix of subsystem B, we perform the partial trace over
+                subsystem A
+                     •  The reduced density matrix for an entangled pure ensemble is a mixed ensemble.
+
+                                                                                                                                                                                 9
+
+====== PAGE 10 ======
+Partial trace - example
+
+                                                  How can we describe
+                             A            B           the state of the system
+                                                                                at B?
+
+                                                                                                                                                                                      10
+
+====== PAGE 11 ======
+Partial trace
+
+                                                       How can we describe
+                                                                               the state of the system                             A            B
+                                                                                        at B?
+
+                                                                                                                                                                                      11
+
+====== PAGE 12 ======
+Partial trace
+
+
+                             A            B
+                                       How can we describe the
+                                                             state of the system at A?
+
+                                                                                                                                                                                      12
+
+====== PAGE 13 ======
+Partial trace – another example
+
+                      Bell state
+
+          A               B
+
+                       How can we describe the state
+                                     of the system at A?
+
+
+                                                    z
+
+                                                      y
+             this state is maximally mixed
+                                         x
+            on the bloch sphere
+                                                                                                                                                                                      13
+
+====== PAGE 14 ======
+Classical entropy
+
+                           X       The entropy of a discrete random variable     is:
+         !
+                −                                     also called the Shannon entropy             H(X) :=      px log2 px
+                              x
+       where px is the probability of obtaining result x and the sum is over all
+     possible values of x.
+
+
+                    In classical information theory, entropy measures
+                 uncertainty or average information content in a random
+                    variable.
+
+                 Entropy quantifies our ignorance about the outcome before
+                 observing it.
+
+                                                                                                                                                                                      14
+
+====== PAGE 15 ======
+Quantum entropy
+
+
+  In quantum mechanics, we also have the von Neumann entropy:
+
+                             S(ρ) = −Tr (ρ log2 ρ)
+
+                ρ  is the density operator describing the quantum state
+
+                                                         : system is in a pure state
+
+                                                         : system is in mixed state
+
+     •   Spectral decomposition
+       !                              −!                   ˆρ =     i λi |φi⟩⟨φi|              S = −Tr [ˆρ ln ˆρ] =                                                                                                                 i λi ln λi
+
+            eigenvalues       eigenvectors
+
+                                                                                                                                                                                      15
+
+====== PAGE 16 ======
+Joint entropy
+
+ The joint entropy measures the total uncertainty of two
+ random variables considered together.
+
+              Classical                                 Quantum
+
+      !
+         −                                 S(ρAB) = −Tr (ρAB log2 ρAB)   H(X, Y ) :=       px,y log2 px,y
+                       x,y
+
+    Joint entropy is greater than or equal to the
+   maximum of the individual entropies:
+
+   H(X, Y ) ≥max [H(X), H(Y )]                        different for quantum
+
+                                                                                                                                                                                      16
+
+====== PAGE 17 ======
+ Joint entropy
+             Classical                                 Quantum
+
+ In classical physics, if two bits (A and B) are perfectly                For the quantum Bell state:
+ correlated — say:
+                                                               1
+                     (0, 0)     or    (1, 1)                                             |Ψ⟩= √ 2 (|00⟩+ |11⟩) each with 50% probability:
+                                                                   Global system is pure
+                         1
+        P(0, 0) = P(1, 1) =                                                        S(ρAB) = 0                         2
+    !
+       −                                             Subsystems are mixedH(X, Y ) :=       px,y log2 px,y = 1
+                                                       S(ρA) = S(ρB) = 1                  x,y        joint system also has
+                        nonzero entropy
+
+                                                                                   in the quantum case, the total entropy is zero, Marginal entropies
+                                                           even though each part looks maximally random
+    H(X) = H(Y ) = 1  each subsystem appears
+                            mixed (uncertain)                                                             entropy of the whole is less than the sum of
+                                                                                  its parts, reflecting nonclassical correlations
+ no pure, deterministic global state — only classical                                                                (entanglement).
+ correlations between random variables.
+                                                                                                                                                                                         17
+
+====== PAGE 18 ======
+Bell state generation
+
+                                                       The first part of this circuit is a Hadamard gate
+                                                         on the first qubit. In matrix representation:
+
+                                                       The second part of this circuit is a CNOT gate          this circuit takes the           to the four bell
+                                                           between the first and second qubits        four two-qubit states:              states:
+
+                                                                                                                                                                                      18
+
+====== PAGE 19 ======
+Measurements in the Bell basis
+
+
+                                                                                                               •  This circuit is the inverse of the
+                                                                                                            circuit shown on the previous
+                                                                                                       slide.
+                                                    measure in the
+                                                            computational          •    It performs Bell state decoding:
+                                                                  basis           we can determine which of the
+                                                                                             four Bell states the two qubits
+                                                                                             input into this circuit are in.
+
+                                                                                                               •  The Bell measurement
+           Input the four bell        The computational basis                       corresponds to measuring the
+         states into this circuit        measurement results at                                                                                                              joint observables:
+                                          the end will be:
+                                                Z ⊗Z and X ⊗X
+
+                                                                                                                                                                                      19
+
+====== PAGE 20 ======
+Entangled photon pair generation
+
+                                              vertically polarised cone
+                                𝜔!
+
+    pump beam
+        𝜔#
+
+
+   𝜔# = 𝜔! + 𝜔"                         horizontally polarised cone
+                               𝜔"
+ •  Parametric down-conversion generates pairs of photons that can be entangled in various degrees of
+   freedom.
+ • A single photon from a pump laser at angular frequency 𝜔!  is incident on a birefringent crystal and
+   down-coverted into a pair of photons at angular freqencies 𝜔" and 𝜔#, with 𝜔! = 𝜔" + 𝜔# (energy
+    entanglement).
+ •  In certain configurations, the down-converted photons are emitted in cones with orthogonal polarisation.
+    At the intersection points of the cones, the light is in a polarisation entangled Bell state.
+                                                                                                                                                                                      20
+
+====== PAGE 21 ======
+Entanglement and local hidden variables
+
+                                           entangled           Can these correlations be explained by a
+                                                                 local hidden variable?
+
+                                                                                  Local hidden variable theories ask whether there
+                                                              may be underlying unknown hidden variables that
+                                                                                  are causing the correlations in measurement
+                                                                        outcomes
+            Alice                          Bob
+
+                       can be separated
+                       by a long distance
+
+
+measurement outcome
+     If Alice measures |0⟩ then Bob’s qubit is in |0⟩ state        correlated
+                                                  measurement
+     If Alice measures |1⟩ then Bob’s qubit is in |1⟩state       outcomes
+
+                                                                                                                                                                                       21
+
+====== PAGE 22 ======
+ Bell-CHSH inequality
+
+                                                             Bell-CHSH inequality:
+
+                                                                                                    •  The Bell inequality is a used to check that
+        Alice                     Bob                              quantum entanglement cannot be caused
+                                                                     by local hidden variables.                                      Bob’s measurements      Alice’s measurements
+                                                                                                    •  The inequality gives a mathematical
+                                                                                    constraint on the correlations of the
+                                                                   outcomes of two measurements performed
+                                                                               independently.
+                                                                                                    •  Quantum physics predicts that this
+expectation values:                                                                                      inequality is violated.
+
+                                                                                    greater than the value of 2 predicted
+                                                                         by classical local hidden variables
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Peres-Horodecki criterion (PPT criterion)
+
+
+  For two qubits:
+                                                                                                     •   In general, the problem of determining
+                                         each 𝐴+, is a 2x2 matrix                                                                        whether quantum systems are entangled
+                                                                                   or not is NP-hard in the system size,
+  The partial transpose of 𝜌') with respect to subsystem B is:                   however, for some specific cases there
+                                                                            are efficient criteria for separability
+
+                                                                                                     •  The Peres-Horodecki criterion, or
+                identity on A       transpose on B                                  positive partial transpose (PPT) criterion
+                                                                                                      is a way of verifying whether a bipartite
+                                                                  quantum state is entangled or separable.
+                                       each 𝐴+, is transposed
+                                                                                                     •  You can tranpose either subsystem
+                                                                    because 𝜌*! = 𝜌*" *
+
+             Peres-Horodecki (PPT) criterion:
+         If 𝜌') is separable, then all eigenvalues of 𝜌*" are non-
+                           negative
+
+
+                                                                                                                                                                                      23
+
+====== PAGE 24 ======
+PPT criterion - example
+
+
+    Given the following two qubit state:
+
+
+   Use the PPT criterion to determine for
+    what value of F the state is entangled.
+
+    The partial transpose with
+    respect to subsystem B:
+
+
+    The eigenvalues of 𝜌-*":
+
+                          negative for 𝐹> 0.5             𝜌- is entangled for 𝐹> 0.5
+
+                                                                                                                                                                                      24
+
+====== PAGE 25 ======
+Entangled higher-dimensional systems
+
+  A single qudit:
+
+                                                                  dim:𝑑
+
+
+   Maximally entangled qudit state:
+
+                A               B
+
+     If we were to trace out one mode:
+
+
+                                                 these reduced density
+                                                   matrices would be maximally
+                                             mixed
+                                                                                                                                                                                      25
+
+====== PAGE 26 ======
+Two-mode squeezed vacuum states
+
+                                           𝑝
+•     If we combine two squeezed vacuum
+    states, with opposite squeezing
+   parameters, on a 50:50 beam splitter, the
+   output will be the entangled two-mode                          𝑥
+   squeezed vacuum state (TMSV)
+                                                   oppositely
+•   This state has quadrature correlations as      squeezed
+    well as photon number correlations          vacuum                                              50:50 beam       entangled                                                    states        𝑝                                               splitter
+
+
+                                                    𝑥
+
+    •   This state is maximally entangled only in the limit as 𝜆→∞ (but this
+        limit is not physically achievable as it requires infinite energy)
+
+                                                                                                                                                                                        26
+
+====== PAGE 27 ======
+Tripartite entanglement
+
+                                                                                                  not biseparable
+entangled                                                                                         genuine three qubit
+                                                                                         entanglement
+
+     A                    C
+                 B
+
+              •  The GHZ and W states are examples of genuine tripartite entangled states of three qubits – they are
+             both not biseparable
+              •  The GHZ and W states can both be extended to more than three qubits. For n-qubits, these states
+             are
+
+
+                                               n-qubits
+
+                                                                                                                                                                                       27
+
+====== PAGE 28 ======
+Summary
+What we talked about today…
+
+     01
+  Quantum information
+
+     02
+   Photons as qubits
+
+     03
+   Entanglement

@@ -1,0 +1,341 @@
+Source: source_material/lectures/slides_and_handouts/W3L1 - Quasiprobability distributions.pdf
+Pages: 18
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 3, Lecture 1
+Quasi-probability distributions
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4pm
+
+ Notes 6
+ Bachor & Ralph, 4.3.2
+ Walls & Milburn, 3.2
+
+====== PAGE 2 ======
+Review
+ What we covered last week…
+
+
+          States                            Operations                       Measurement
+
+                                         Beam splitters
+                                                                                                                               •  Avalanche photodiodes are sensitive
+                        =          1   Fock photon number states                           ˆa′1  √η ˆa1 !        ˆa2                             −   −η                    enough to detect single photons
+    =  {|n⟩}   {|0⟩, |1⟩, |2⟩, · · · }                    ˆa′2                        = !1      ˆa1 + √η ˆa2                       •  Homodyne detection is used to                             −η
+      Coherent states                                                                 measure quadratures !𝑥 and ̂𝑝
+     ! αn
+       e−|α|2/2                    𝜂 |α⟩=       √ n! |n⟩
+              n
+      Thermal states
+      1               ¯n
+ˆρ =                     |n⟩⟨n|          + 1 #n        " ¯n       ¯n + 1  n   !                                    Phase shift
+                                                  ˆU (θ) = exp (−iθˆn)
+
+====== PAGE 3 ======
+Phase space - review
+
+   Quadrature operators can be         ˆx = ! ˆa† + ˆa "             X and P can be measured
+   used to visualise states on a two-                                                                by homodyne detection   dimensional axis                        ˆp = i ! ˆa† −ˆa "
+
+
+                       ⟨ˆp⟩
+                                                                                                                         ⟨ˆp⟩                                        area of circle
+                                          represents
+                                             uncertainty
+                       ⟨∆ˆx2⟩        ⟨∆ˆx2⟩= ⟨∆ˆp2⟩= 1
+
+                               ⟨∆ˆp2⟩                                                                                                                                             ⟨ˆx⟩
+                                                       ⟨ˆx⟩
+
+
+          Coherent state
+
+                                                Number state
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+Quasi-probability distributions
+Overview
+
+
+                   In this lecture, we will look at three different quasi-probability distributions used in
+              quantum optics:
+
+                                         Husimi Q function
+
+                                     Glauber Sudarshan P function
+
+                                         Wigner function
+
+                       •   Useful for visualising quantum states and their evolution
+
+                       •  Each of the Q, P and W functions have their own advantages and disadvantages
+
+                       •  The Q, P and W functions are related to each other
+
+                       •  Why are they called quasi-probability distributions?
+
+                –  Could be negative or ill-behaved
+
+                                                                                                                                                                                              4
+
+====== PAGE 5 ======
+Q function
+Definition
+
+
+The Q function is defined as the overlap with a coherent state
+
+                 1         Q(α) =   |⟨ψ|α⟩|2              pure state             gives the probability distribution
+               π                                                          for finding the coherent state |𝛼 ⟩
+                                                                                          in the state !𝜌
+                 1                          general
+         Q(α) =   ⟨α|ˆρ|α⟩
+               π
+
+The Q function is:
+
+    –   non-negative
+                 !
+    –  normalised to unity                            completeness relation of       Q function can be thought of
+                                                                                  as a probability density                   Q(α)d2α = 1       coherent states
+                                                                                       (P and W functions cannot)
+
+                        !
+    –  bounded by                     "
+                0 ≤Q(α) ≤1
+                        π
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Q function
+Example: vacuum state
+
+     Q function of
+
+            1    Q(α) =   |⟨0|α⟩|2
+           π
+
+            1    Q(α) =   e−|α|2
+           π
+
+      Gaussian centred at (0,0)
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+Q function
+Example: coherent state
+
+     Q function of
+                                                 Overlap of two coherent states̸
+            1                                            2(|β|2+|α|2−2β∗α)1         = δ2(α −β)                                   ⟨β|α⟩= e−1    Q(α) =   |⟨β|α⟩|2
+           π
+
+            1    Q(α) =   e−|α−β|2
+           π
+
+      Gaussian centred at (𝑅𝑒𝛽, 𝐼𝑚(𝛽))
+
+
+      Not a delta function (coherent states are not orthogonal)
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Q function
+Example: thermal state
+          1               ¯n
+        ˆρ =                     |n⟩⟨n|              ¯n + 1   " ¯n + 1 #n               n     !
+
+            1
+    Q(α) =   ⟨α|ˆρ|α⟩
+          π
+            1  1               ¯n
+    Q(α) =                     ⟨α|n⟩⟨n|α⟩
+                                                     Overlap of coherent state with number state          π ¯n + 1   " ¯n + 1 #n                    n      !                                                  αn
+                                                            e−|α|2/2                                      ⟨n|α⟩=    √ n!
+            1       1               ¯n      |α|2n    Q(α) =   e−|α|2          π         ¯n + 1   " ¯n + 1 #n  n!                         n        !
+                                         e¯n|α|2/(1+¯n)
+
+            1  1
+    Q(α) =                                                   Broader gaussian centred at          π ¯n + 1e−|α|2/(1+¯n)                                                               (0,0)
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+Q function
+Example: Fock photon number state
+
+     Q function of
+
+
+           1   Q(α) =   |⟨n|α⟩|2
+         π
+
+                αn
+             e−|α|2/2   ⟨n|α⟩=    √ n!
+
+           1       |α|2n   Q(α) =   e−|α|2
+         π        n!
+
+
+             Ring in phase space
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Density matrix in the photon number basis
+
+
+       !
+                             ˆρ =     pi |ψi⟩⟨ψi|
+                                       i
+                                             probability of being in state |𝜓!⟩
+
+     We can represent "𝜌 in the photon number basis:
+        ! !
+                                ˆρ =      |m⟩ρmn ⟨n|
+                        n m
+
+
+               =                ρmn   ⟨m| ˆρ |n⟩
+
+        Diagonal elements are probabilities of finding 𝑛 photons in the field
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Glauber Sudarshan P function
+Definition
+
+
+ We can represent (𝜌 using coherent states
+             !
+                  ˆρ =   P(α) |α⟩⟨α| d2α                                                d2α = d Re(α) d Im(α)
+
+                               This is known as the P function
+
+        |α⟩⟨α|  is a projection onto non-orthogonal states
+
+
+           𝑃(𝛼) is not a genuine probability distribution
+
+           There are states where 𝑃(𝛼) is negative or highly singular, these states are non-classical
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+P function
+Examples              !
+                                 ˆρ =   P(α) |α⟩⟨α| d2α
+
+
+      Coherent state
+                                   ˆρ = |β⟩⟨β|
+
+
+                                                                      Delta function
+                P(α) = δ2 (α −β)                                                                                                  i.e. a single point in phase space
+
+
+       Photon number state
+
+                                  ˆρ = |n⟩⟨n|
+
+                                   e|α|2   ∂2n
+                P(α) =              δ2(α)        Derivative of a delta function
+                              n! ∂αn∂α∗n
+
+
+                                                              Sec. 3.7, of C. C. Gerry and Peter Knight Introductory quantum optics
+                                                                 (2004)
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+P function
+
+  Q function can be obtained via convolution of the P function with a Gaussian:
+
+   Wigner function can be obtained via convolution of the P function with a
+   Gaussian with a different width:
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Wigner function
+Definition
+
+  𝑾𝒙, 𝒑 behaves like a joint probability distribution
+
+   Can integrate over x or p to recover marginal distributions
+
+   The Wigner function can be negative
+
+              This indicates the state is non-classical
+
+                                                                                Wigner function of |1⟩
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+Wigner function
+Examples
+
+      Coherent state
+                                            Gaussian centred at (𝑅𝑒𝛽, 𝐼𝑚(𝛽))
+               2                  e−2|α−β|2     W(α) =                         Gaussian is narrower than coherent state Q function             π
+
+
+      Thermal state
+
+       Photon number state
+
+                                                           𝐿# is the Laguerre polynomial.
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Wigner function
+Fock states
+
+        Wigner function of |0⟩                                          |1⟩ (can see Wigner negativity)                                  |2⟩
+
+                                                                                                                                                                                            16                                                                   |3⟩                                                                                |4⟩
+
+====== PAGE 17 ======
+Comparing phase space representations
+Coherent states
+
+       P function                         Wigner                  Q function
+
+                                        2                             1    P(α) = δ2 (α −β)          W(α) =   e−2|α−β|2            Q(α) =   e−|α−β|2                                   π                                                              π
+
+                           Wigner function is broader          Q function is broader than
+                                  than P function                        Wigner function
+
+====== PAGE 18 ======
+Summary
+
+      In this lecture, we covered three different quasi-probability distributions
+     used in quantum optics:
+
+                           Husimi Q function            Q function can be thought of as a
+                                                                               probability density
+                                                                  (P and W functions cannot)
+
+                      Glauber Sudarshan P function                                                 P function can be negative and singular
+
+                           Wigner function          W function can be negative
+
+                         Wigner function negativity is a sign of
+                               non-classicality eg. |1⟩
+
+                                                                                                                                                                                            18

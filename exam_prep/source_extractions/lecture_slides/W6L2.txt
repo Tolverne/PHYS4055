@@ -1,0 +1,486 @@
+Source: source_material/lectures/slides_and_handouts/W6L2.pdf
+Pages: 25
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 6, Lecture 2
+The Tavis–Cummings Model and
+Superradiance
+
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: This Week Thursday 1-2 pm
+
+====== PAGE 2 ======
+Recap: The Jaynes–Cummings model
+
+
+                                                                          cavity
+One two-level atom interacts with one
+ quantised cavity mode:
+
+                                                               two level system HJC = ℏωca†a + ℏωaσ+σ−+ ℏg ! aσ+ + a†σ− "
+
+
+The interaction exchanges an excitation
+between the atom and cavity:
+                                                                      cavity
+                  |e, n→←→|g, n + 1→                      mode
+
+
+The total number of excitations is conserved:
+                   ˆNexc = a†a + σ+σ−
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+In this lecture
+
+           What happens when 𝑵 atoms all couple to the same cavity mode?
+
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+What you will
+  learn today
+
+
+                            How the Jaynes–Cummings model extends to
+                                          many emitters
+
+                             Why symmetric and antisymmetric atomic
+                                            states couple differently to a common field
+
+                             How collective atomic emission produces a
+                                                     superradiant burst
+
+                                                                                                                                                                                4
+
+====== PAGE 5 ======
+From One Atom to Many
+
+
+ Collective light–matter interactions
+
+
+          •  The Jaynes–Cummings model describes one two-level atom interacting with one
+          quantised cavity mode.
+
+          • We now consider many atoms coupled to the same electromagnetic field.
+
+          • A shared field can make the atoms behave collectively rather than independently.
+
+          •  Collective behaviour can enhance emission, suppress emission, or create states
+            that do not couple to the field.
+
+       Jaynes–Cummings −→Tavis–Cummings −→superradiance and subradiance
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Many Atoms Coupled to One Cavity Mode
+
+
+ Consider 𝑁 identical two-level atoms inside the same cavity:
+
+ •  Each atom has transition frequency 𝜔𝑎.
+ •   All atoms interact with the same cavity mode of frequency 𝜔𝑐.
+
+            𝑖
+ •  𝜎±  act only on atom 𝑖.
+
+ •  We initially assume that every atom has the same coupling strength 𝑔.
+
+                           N          N
+          H = ℏωca†a + ℏωa     σ(i) σ(i)   ℏg      aσ(i) + a†σ(i)                               + −+        +     −                                           "          #            !    !
+                                       i=1              i=1
+
+
+                Every atom interacts with the same operator 𝑎 and therefore with
+                                      the same photon mode.
+
+                                                                                                                                                                                              6
+
+====== PAGE 7 ======
+Collective Atomic Operators
+
+
+  Instead of describing each atom separately, define operators for the entire ensemble:
+
+                        N            N          !     !
+                 =                                                                ,   J−=     σ(i)−                     J+        σ(i)+
+                                  i=1                i=1
+
+
+                               N
+                                     1 !
+                                  Jz =       σ(i)z                                     2
+                                            i=1
+
+
+  Ignoring an additive constant, the Hamiltonian becomes
+
+               HTC = ℏωca†a + ℏωaJz + ℏg ! aJ+ + a†J− "
+
+  This is the Tavis–Cummings Hamiltonian.
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+When Does Collective Coupling Occur?
+
+                               N For atoms with individual couplings 𝑔𝑖,
+                                  ℏ                                        ˆHI =                                                                    giˆaˆσ(i) + g∗i ˆa†ˆσ(i)                                      +       −                                   "             #             !
+                                             i=1
+ The individual-emitter Hamiltonian becomes collective when the emitters are identical and experience
+ the same complex coupling:
+                     =      =                                 ωi   ωa,      gi   g
+
+ We can then define
+                         N             N
+           !             1 !
+                  =         =                                ˆJ±          ˆσ(i)± ,       ˆJz             ˆσ(i)z                                               2
+                                   i=1                  i=1
+  giving the Tavis–Cummings Hamiltonian
+               HTC = ℏωca†a + ℏωaJz + ℏg ! aJ+ + a†J− "
+
+ When is 𝒈𝒊≃𝒈?
+  •  The emitters couple to the same field mode.
+  •  They experience approximately the same field amplitude and phase.
+  •  Their transition dipoles have the same strength and orientation.
+  •  Their transition frequencies are approximately equal.                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+One way to obtain collective coupling
+
+            The field interacts with every atom in approximately the same way.
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Total Excitation Number Is Conserved
+
+
+ Define the total excitation-number operator:
+
+                        N
+          !            N
+                                               σ(i)              = a†a +     σ(i)                                      −= |ei⟩⟨ei|                      ˆNexc                           +                  −= a†a + Jz +                       σ(i)+ σ(i)                                                    2
+                                  i=1
+
+ For the Tavis–Cummings Hamiltonian,
+
+                         = 0                             !                         HTC, ˆNexc "
+ Therefore, the interaction can move an excitation between the atoms and
+ cavity, but it cannot change the total number:
+                  one photon ←→one atomic excitation
+
+
+ States with different total excitation numbers belong to different manifolds and do
+ not couple to one another.
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Two Atoms Sharing One Excitation
+
+
+ For two atoms, the one-excitation manifold contains three basis states:
+                             |eg, 0⟩,      |ge, 0⟩,     |gg, 1⟩
+
+
+ Here, the first two labels describe the states of atoms 1 and 2, while the final label gives the
+ number of cavity photons.
+
+ The interaction Hamiltonian is
+                                                              coupling doesn’t involve                      HI = ℏg ! aJ+ + a†J− "                                                                 individual spins, only collective
+
+  Its action on the two atomic-excitation states is
+                             HI|eg, 0⟩= ℏg|gg, 1⟩
+
+                             HI|ge, 0⟩= ℏg|gg, 1⟩
+
+                                                                                                                                                                                            11
+
+====== PAGE 12 ======
+Symmetric and Antisymmetric States
+
+ Construct symmetric and antisymmetric combinations of the two possible atomic excitations:
+
+                         |eg⟩+ |ge⟩             |eg⟩−|ge⟩
+                                                     2                 |S⟩=  √ 2         |A⟩=  √
+
+ Their coupling to the cavity is
+
+                                                         0                  √ 2ℏg            HI|A, 0⟩=                    HI|S, 0⟩=       |gg, 1⟩
+
+
+ ∣𝑆⟩ is the symmetric bright state.
+
+ ∣𝐴 ⟩ is the antisymmetric dark state.
+
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Two-Atom Dicke Ladder
+
+                                  |ee⟩
+
+
+                                                                  |eg⟩−|ge⟩
+                                                                       2                                                 |A⟩=  √                               |eg⟩+ |ge⟩                       |S⟩=  √ 2
+
+                                |gg⟩
+
+                                                                                                                                                                                            13
+
+====== PAGE 14 ======
+Two Atoms Form an Enhanced Emitter
+
+ Within the bright subspace
+                               {|S, 0⟩, |gg, 1⟩}                        |eg⟩+ |ge⟩                                                        |S⟩=  √ 2
+
+          HTC = ℏωca†a + ℏωaJz + ℏg ! aJ+ + a†J− "
+                       √ 2ℏg                                                            ωa  √ 2g               HTC|S, 0⟩= ℏωa|S, 0⟩+       |gg, 1⟩      = ℏ                                                             Hbright                                      √ 2g   ωc "                                          !                       √ 2ℏg                HTC|gg, 1⟩= ℏωc|gg, 1⟩+       |S, 0⟩
+ On resonance, 𝜔𝑎= 𝜔𝑐, giving
+                                  ωc  √ 2g                  = ℏ                         Hbright                    √ 2g   ωc "                     !
+
+ This has the same form as the Jaynes–Cummings
+ Hamiltonian, but with        geﬀ=                    √ 2g           collective enhancement
+
+ The corresponding collective Rabi angular frequency is
+                      ΩS = 2√ 2g
+ The antisymmetric state ∣𝐴, 0 ⟩ remains uncoupled.                                                                                                14
+
+====== PAGE 15 ======
+Collectively Enhanced Rabi Oscillations
+
+ Suppose the atoms begin in the symmetric state ∣𝑆,⟩ with no cavity photon:
+
+                             |ψ(0)⟩= |S, 0⟩
+
+
+ On resonance, and ignoring a common overall phase,
+
+                                cos   2gt            sin   2gt                      !√  "        !√  "                     |ψ(t)⟩=              |S, 0⟩−i             |gg, 1⟩
+
+ The corresponding probabilities are
+                                      2gt                                                                 2gt                                "                                                    "                       PS,0(t) = cos2 !√                                                                       ,     Pgg,1(t) = sin2 !√
+
+                           ΩS = 2√ 2g
+
+ From prev. lecture (Slide: Vacuum Rabi oscillations)
+
+                         |ψ(t)⟩= cos(gt)|e, 0⟩−i sin(gt)|g, 1⟩.
+ By comparison, one atom has Ω1 = 2𝑔.                                                                                                                    15
+
+====== PAGE 16 ======
+The 𝑁 Collective Enhancement
+
+ Define the state with all atoms in their ground states:                      Symmetric states
+
+                                                                             Symmetric states are unchanged when any two                    |G⟩= |g1g2 · · · gN⟩                                                                          atoms are exchanged: the excitations are shared
+                                                                                         equally and coherently across the ensemble.
+ The symmetric state containing one atomic excitation is
+                        N                                      |eg⟩+ |ge⟩                           1 !                             |S2⟩=  √ 2
+                                           |g1 · · · ei · · · gN⟩               |SN⟩= √ N i=1                                                                             |egg⟩+ |geg⟩+ |gge⟩                                                                   |S3⟩=     √ 3
+ The collective lowering operator gives                                       |eggg⟩+ |gegg⟩+ |ggeg⟩+ |ggge⟩                                                                   |S4⟩=        √ 4
+                    √ N                    J−|SN⟩=     |G⟩                  and so on…
+ Therefore,
+                      √ Nℏg                       HI|SN, 0⟩=       |G, 1⟩
+
+               geﬀ= √ Ng,      Ωcoll = 2√ Ng
+
+                                                                                                                                                                                            16
+
+====== PAGE 17 ======
+Dicke States: A Collective Spin
+
+                                                                1
+ Each two-level atom behaves mathematically like a spin- system.
+                                                                2
+                                                                                      Fully symmetric Dicke ladder: j = 𝑁/2
+ The ensemble can therefore be described using collective angular-      𝑚                                                                                     |𝑒𝑒⋯𝑒⟩
+ momentum states                                                                                  𝑁/2
+
+                                                                                 𝑁/2 −1
+ For the fully symmetric states of 𝑁 atoms,                                                                                                                                                                 ⋮
+              N
+               |j, m⟩,     j =     ,  m = −j, −j + 1, . . . , j                 0
+                       2                                                                                                                                                                 ⋮
+ The number of excited atoms is                                         −𝑁/2 +1
+                    Ne = j + m                                −𝑁/2               |𝑔𝑔⋯𝑔⟩
+
+ The states introduced previously can be written as                         𝑗= 𝑁/2
+     N |G⟩=      , −N  = |gg · · · g⟩        2    2          "
+     N              1                                          !!!!                   ,   + 1 =                  +
+                                                                                                                                                                                            17 |SN⟩=         2 −N2   "  √ N (|eg · · · g⟩+ |ge · · · g⟩+ · · ·   |gg · · · e⟩)                                              !!!!
+
+====== PAGE 18 ======
+Beyond the Fully Symmetric Manifold
+
+                                                         The full 𝑁-atom space contains several total-spin
+                                                                           sectors:
+                            symmetric                           N N                                            =                          subspace                                                j         ,   −1, . . . , jmin                                                                        2  2               𝑚
+                                    |𝑒𝑒⋯𝑒⟩
+                     𝑁/2                                𝑗= 𝑁/2 contains the fully symmetric Dicke states.
+
+                   𝑁/2 −1
+                                                                    Smaller 𝑗 sectors contain states that are not fully
+                                          ⋮                                             symmetric and generally show weaker collective
+                                                                       emission.                       0             …
+                                          ⋮                                                    𝐽± moves the system vertically within a ladder but
+                 −𝑁/2 +1                                        does not change 𝑗.
+                                             𝑗= 𝑁/2 −2
+                   −𝑁/2                                       The lowest states of the smaller-𝑗 ladders can be
+                                                        dark states
+                                                                          dark:
+                                  𝑗= 𝑁/2 −1                                                                            0                                                                          J−|j, −j⟩=   |𝑔𝑔⋯𝑔⟩            𝑗= 𝑁/2
+
+
+                                                                  For identical coupling and a symmetric initial state,
+                                                                       the system remains in the 𝑗= 𝑁/2 manifold.
+
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Moving Along the Dicke Ladder
+
+
+ The collective operators add or remove one atomic excitation:
+
+                      ˆJ−|j, m⟩= ! (j + m)(j −m + 1) |j, m −1⟩
+
+                   ˆJ+|j, m⟩= ! (j −m)(j + m + 1) |j, m + 1⟩
+
+  2𝐽' removes one atomic excitation.
+ 2𝐽+adds one atomic excitation.
+ These operators change 𝑚, but leave 𝑗 unchanged.
+
+ For the symmetric single-excitation state,
+                 √ N                 ˆJ−|SN⟩=     |G⟩
+ The 𝑁 indistinguishable atomic amplitudes add coherently, producing the collective enhancement  𝑁.
+
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+From Tavis–Cummings to Superradiant
+Decay
+
+
+Tavis–Cummings is a model of atom–field coupling.
+ Superradiance is a physical phenomenon of collectively enhanced emission.
+
+
+Tavis–Cummings model
+ Question: How does an atomic ensemble exchange excitation with a selected field mode?
+
+
+Dicke superradiant-decay regime
+ Question: How do the atomic excitation and emitted intensity evolve in time?
+
+                        N
+ Both are governed by    !
+                     ˆJ−=      ˆσ(i)−
+                                  i=1
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+What Is Superradiance?
+
+      Superradiance is collectively enhanced emission from a coherent atomic ensemble.
+
+  The emission is governed by
+
+
+                            N            !
+                          ˆJ−=      ˆσ(i)−
+                                         i=1
+
+
+    •  The photon does not identify which atom emitted it.
+
+    •  The atomic emission amplitudes can therefore add coherently.
+
+                                                                                                                                                                                            21
+
+====== PAGE 22 ======
+Emission Rate of a Dicke State
+
+
+ Using the collective ladder matrix element,
+
+
+                                              2
+           Rj,m = Γ  m −1| ˆJ−|j, m⟩ = Γ(j + m)(j −m + 1)                                          !!!⟨j,                                                            !!!
+
+
+ For the fully symmetric manifold, 𝑗= 𝑁/2and 𝑁𝑒= 𝑁/2 + 𝑚, giving
+
+
+                R                 = ΓNe(N −Ne + 1)
+
+
+  •   Γ: single-atom spontaneous-emission rate
+
+  •   𝑁𝑒: number of excited atoms
+  •  The additional factor 𝑁−𝑁𝑒+ 1 is the collective enhancement
+
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+The Superradiant Burst
+
+                                     The ensemble cascades down the symmetric Dicke ladder:
+
+                                                                                     |j, j→−→|j, j −1→−→· · · −→|j, −j→      𝑚                          |𝑒𝑒⋯𝑒⟩
+       𝑁/2
+             𝑅∝𝑁                               Initially,
+      𝑁/2 −1                                                                      Rinitial = NΓ
+                 ⋮
+               𝑅∝𝑁!
+         0                                Near half excitation,
+                                                                                               2
+                 ⋮                                        ≈ΓN                                                                   Rpeak                                                                          4
+     −𝑁/2 +1
+             𝑅∝𝑁
+      −𝑁/2                       |𝑔𝑔⋯𝑔⟩        The emission rate first increases and then decreases.
+                                             This produces a short, intense superradiant pulse.
+           𝑗= 𝑁/2                     The 𝑁2scaling occurs near the peak, not at the beginning.
+
+
+                                         Requires: coherent coupling to common field modes.
+                                        Dephasing or distinguishable emission suppresses the
+                                                  burst.
+                                                                                                                                                                                            23
+
+====== PAGE 24 ======
+A large-𝑁 demonstration of superradiance
+in a solid-state spin ensemble
+
+                                                                                      A. Angerer et al., “Superradiant emission from colour centres in diamond,”
+                                                                                  Nature Physics 14, 1168–1172 (2018).
+
+                                                                                                                                                                                            24
+
+====== PAGE 25 ======
+Summary
+
+
+              Jaynes–Cummings −→Tavis–Cummings −→superradiance
+
+             •  The Tavis–Cummings model extends atom–field coupling from one atom to an
+           ensemble.
+
+             •  Symmetric states couple collectively, producing enhancements such as 𝑔𝑁,
+             while antisymmetric states can be dark.
+
+             •  The same collective amplitudes can produce superradiant emission with a peak
+             rate proportional to 𝑁2.
+
+                                                                                                                                                                                            25

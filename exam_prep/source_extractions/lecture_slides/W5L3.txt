@@ -1,0 +1,481 @@
+Source: source_material/lectures/slides_and_handouts/W5L3.pdf
+Pages: 25
+WARNING: Extracted PDF text can distort math and omit figures.
+
+====== PAGE 1 ======
+Week 5, Lecture 3
+Conditional Quantum Optics
+
+ Lecturer: Josephine
+ Email: j.dias@uq.edu.au
+ Office: Parnell Room 320
+ Office hours: Thursdays 3-4 pm
+
+
+ Bachor & Ralph Ch 6.4, 13.7, 8.3; Nielsen & Chuang, Ch 8.2
+
+====== PAGE 2 ======
+Review
+
+What you learned last time…
+
+
+                   environment
+                          state
+                                         system state
+
+
+                                        system operator                                                               environment
+                                                                       operators
+
+                        What does the environment do?
+
+                 How does this evolution develop in time?
+
+
+                                                                                                                                                                                              2
+
+====== PAGE 3 ======
+Conditional quantum optics
+
+                                                   Example: photon subtraction
+                                                                                   “click”
+
+             Central question:
+
+    What happens when we retain only a                                         𝜂
+       particular measurement outcome?
+                                                                                                             output mode                               |ψ⟩A
+
+                                                       outcome k
+    input state −→interaction and measurement −−−−−−→conditional output state
+
+                                                                                                                                                                                              3
+
+====== PAGE 4 ======
+What you will
+                              By the end of this lecture,
+                                   you will be able to:  learn today
+
+
+                                        Explain why conditioning on a measurement
+                                   outcome produces a trace-non-increasing
+                                        quantum operation.
+
+
+                                         Calculate the conditional output state and
+                                                                    its probability of success.
+
+                                        Describe how conditional measurements,
+                                       feedforward and feedback enable quantum-
+                                              state engineering and control.
+
+                                                                                                                                                                                4
+
+====== PAGE 5 ======
+Review: trace-preserving quantum channels
+
+                                                           Environment is discarded
+
+ A system interacts unitarily with an environment:
+
+                                                                                               .                                          ˆρ′S = E(ˆρS) = TrE                                       ! ˆU                                                         (ˆρS ⊗ˆρE) ˆU †"
+
+ The output remains normalised:
+                                          TrS[ˆρ′S] = 1.
+
+  All possible environmental outcomes are included.
+
+                                                                                                                                                                                              5
+
+====== PAGE 6 ======
+Conditioning on one measurement outcome
+                                                  Measurement
+                                                     outcomes
+                                                                  |e0⟩
+                                                                  |e1⟩
+                                                                                                                                                                                                                                                                                                                                                                                                                              ...                     retain one                                                                     measurement
+                                                                  |ek⟩    KEEP                                                                        outcome
+                                                                                                                                                                                                                                                                                                                                                                                                                              ...
+                                                                                   discard others                                                             |ed−1⟩
+                                                !ρS|k
+
+
+                                                 = Suppose the environment is measured and we retain only the outcome k, represented by ˆΠk    |ek⟩⟨ek|.
+ The corresponding unnormalised conditional state of the system is
+               = TrE    ˆIS ⊗ˆΠk  ˆU (ˆρS ⊗ˆρE) ˆU †   ˆIS ⊗ˆΠk     .                           "#      $            #       $%                            !ρS|k  Its trace is the probability of obtaining outcome k:
+                     = TrS                                                                                                        6                                 pk                                     ≤1.                                                       !"ρS|k #
+
+====== PAGE 7 ======
+Normalising the conditional state
+
+
+ The trace of the unnormalised state gives the probability of the selected outcome:
+
+                     = TrS                                 pk                                               !    # .                                                          "ρS|k
+
+ Provided 𝑝! > 0, the normalised conditional state is
+
+
+                 =      =                           ρS|k        !ρS|k        !ρS|k .                             TrS                                       "    #    pk                                                 !ρS|k
+  Therefore,
+
+                               TrS ! ρS|k " = 1.
+
+
+ Before normalisation: trace = 𝑝!
+  After normalisation: trace = 1
+
+
+                                                                                                                                                                                              7
+
+====== PAGE 8 ======
+Conditional optical operations
+
+
+ Linear-optical interaction + measurement + post-selection
+
+
+                                           Outcome k heralds the  At the outputs:
+                                                          conditional operation
+  •  Measure mode &𝑏"#$ with a photon
+     detector.
+
+  •  Retain only measurement outcome                                       𝜂
+     k.
+                                                      ˆa
+  •  The unmeasured mode )𝑎"#$  is
+    prepared in the conditional state
+     𝜌%|!.
+                                                                         ˆb
+
+                                                                                                                                                                                              8
+
+====== PAGE 9 ======
+A single photon at a beam splitter
+
+
+|Ψin⟩= (µ|0⟩a + ν|1⟩a) ⊗|0⟩b,      |µ|2 + |ν|2 = 1.
+
+ For a beam splitter with intensity transmissivity 𝜂,                    𝜂
+
+                   ! 1  |0, 0→−→|0, 0→,      |1, 0→−→√η |1, 0→+                           −η |0, 1→.
+
+Therefore, the joint output state is
+                                                                                         ˆb
+                 ν√η       ν !     |Ψout⟩= µ|0, 0⟩+       |1, 0⟩+    1 −η |0, 1⟩.
+
+                                                                                                                                                                                              9
+
+====== PAGE 10 ======
+Same experiment, two descriptions
+
+ Write the joint output state in terms of the detector outcomes:
+
+                         + ν % 1             |Ψout⟩= (µ|0⟩+ ν√η|1⟩) |0⟩b       −η|0⟩ |1⟩b.
+                        !      |φ0⟩"#      $      !    |φ1⟩"#    $                 𝜂
+
+ where ∣𝜙'⟩ and ∣𝜙(⟩ are unnormalised branch states.
+
+    Ignore the detector outcome                                      Retain the one-photon outcome
+
+      ρloss = |φ0⟩⟨φ0| + |φ1⟩⟨φ1|.                                                   !ρa|1 = |φ1⟩⟨φ1| = |ν|2(1 −η)|0⟩⟨0|.               ˆb
+
+ This is the trace-preserving loss
+ channel studied previously.
+
+      Therefore,
+                     p1 = |ν|2(1 −η),     ρa|1 = |0⟩⟨0|.
+
+
+                                                                                                                                                                                            10
+
+====== PAGE 11 ======
+Conditioning on one reflected photon
+
+                                                                                           ⟨1|
+ For an 𝑛-photon input and vacuum in the second port, the beam splitter produces
+
+
+                 n
+         |n, 0→−→            η(n−m)/2(1 −η)m/2|n −m, m→.                𝜂
+             m             m=0            "#n $     !
+
+ where 𝑚 is the number of photons in the detector mode.
+
+ Conditioning on exactly one detected photon selects the 𝑚= 1 term:                       ˆb
+               ! 1   √n                     b⟨1| ˆUBS|n, 0⟩=   −η    η(n−1)/2|n −1⟩a.
+ The probability of detecting exactly one photon is
+                                    p(1|n) = n(1 −η)ηn−1.
+
+               One photon detected ⟹ n photons become n−1 photons.                                                11
+
+====== PAGE 12 ======
+Photon-subtraction
+
+                                                                                           ⟨1|  The result from the previous slide can be written as a
+  single measurement operator:
+
+
+            ∞
+      =   1            n−1        ˆEs          −η                    n η    |n −1⟩⟨n|.                         𝜂      " !      !
+                  n=1
+
+  The unnormalised photon-subtracted state and success probability are
+
+           =         = Tr                       ˆEsρ ˆE†s,     ps       ˆEsρ ˆE†s   .                                       "      #                        !ρs                                                                                                  ˆb
+  The normalised conditional state is
+                                  ˆEsρˆE†s                 =                           ρs                .
+                                   ps
+
+  For a highly transmissive beam splitter, 𝜂≈1,
+
+                          ≈   1                                                  ˆEs ! −η ˆa.
+                                                                                                                                                                                            12
+
+====== PAGE 13 ======
+Photon subtraction - example
+                                                                                                  ⟨1|
+ Consider an input containing up to two photons:
+
+            |ψ⟩= µ|0⟩+ ν|1⟩+ ϵ|2⟩,      |µ|2 + |ν|2 + |ϵ|2 = 1.
+                                                       𝜂
+            ˆEs|ψ⟩= µ ˆEs|0⟩+ ν ˆEs|1⟩+ ϵ ˆEs|2⟩.         |ψ⟩= µ|0⟩+ ν|1⟩+ ϵ|2⟩
+
+
+ Using the photon-subtraction operator from the previous slide,
+                                   ˆEs|0⟩= 0,
+                                                                                                          ˆb
+                                   ˆEs|1⟩= !1 −η |0⟩,
+
+                                   ˆEs|2⟩= !2η(1 −η) |1⟩.
+
+ Substituting these results gives
+                                       1 −η |0⟩+ ϵ                                                     2η(1 −η) |1⟩                         !                           ˆEs|ψ⟩= ν !
+
+                      =   1 −η ν|0⟩+  2η ϵ|1⟩   .                                    "           #                                                           13                  !      !
+
+====== PAGE 14 ======
+Photon subtraction - example
+                                                                                                  ⟨1|
+   |ψ⟩= µ|0⟩+ ν|1⟩+ ϵ|2⟩,      |µ|2 + |ν|2 + |ϵ|2 = 1.
+
+  Applying the photon-subtraction operator
+  gives the unnormalized state                                       𝜂
+                                            |ψ⟩= µ|0⟩+ ν|1⟩+ ϵ|2⟩
+                                                                              .                          ν|0⟩+  2η ϵ|1⟩            ˆEs|ψ⟩=   1 −η "                                   #          !      !
+ The probability of success is
+                    ps = (1 −η) !|ν|2 + 2η|ϵ|2" .
+                                                                                                          ˆb
+
+ The normalised conditional output is
+                           √2η                         ν|0⟩+      ϵ|1⟩ .                   |ψs⟩=    +              !|ν|2   2η|ϵ|2
+
+                                                                                                                                                                                            14
+
+====== PAGE 15 ======
+A different conditional operation
+
+
+ Input state
+                                                                                  b⟨1|
+ |Ψin⟩= (µ|0⟩a + ν|1⟩a) ⊗|1⟩b,      |µ|2 + |ν|2 = 1.
+
+ ˆUπ,a = eiπˆna,     ˆUπ,a|n⟩a = (−1)n|n⟩a.                     𝜂
+
+                                 |ψ⟩= µ|0⟩+ ν|1⟩
+                                                                                                ˆUπ,a
+
+
+ Mathematical model of the entire circuit                                                        |1⟩b
+       |!φc⟩a = ˆUπ,a b⟨1| ˆUBS(η) |Ψin⟩.
+
+                                                                                                                                                                                            15
+
+====== PAGE 16 ======
+Calculate the output selected by the detector
+ Beam-splitter convention
+ For intensity transmissivity 𝜂, choose
+                                                                                            b⟨1|   ˆa†in             ˆa† + !1       ˆb†,        ˆb†in   !   −→√η     −η      −→−  1 −η ˆa† + √η ˆb†.
+ Vacuum component of the signal
+
+          ˆUBS                                       b⟨1|      ! 1        √η |0, 1→ −−−→−  −η |1, 0→+     |0, 1→ −−−→√η |0→a.                   𝜂
+ One-photon component of the signal
+                          ˆUBS                       |ψ⟩= µ|0⟩+ ν|1⟩
+                  |1, 1→ −−−→− !2η(1 −η) |2, 0→
+                                                                                                          ˆUπ,a               + (2η −1)|1, 1→
+               + !2η(1 −η) |0, 2→.
+                                                               |1⟩b Only the middle term contains one photon in detector
+                       b⟨1|                     ˆUπ mode b:              |1, 1→ −−−→(2η −1)|1→a −−−→(1 −2η)|1→a.
+ Combining the two input components gives     = µ√η   + ν(1                                                      |!φc⟩a         |0⟩a      −2η)|1⟩a                                        16
+
+====== PAGE 17 ======
+The one-photon amplitude is amplified
+relative to vacuum
+                                                                                            b⟨1|From the conditional output derived on the previous slide:
+                µ√η     ν(1               |!φc⟩=    |0⟩+    −2η)|1⟩.
+Factor out the common amplitude  𝜂:
+                                                  𝜂
+        √η                       ,     g = 1 −2η  .     |!φc⟩=   (µ|0⟩+ gν|1⟩)        √η       |ψ⟩= µ|0⟩+ ν|1⟩
+
+        one-photon amplitude      ν      ν                                                                                                          ˆUπ,a                                                  :    −→g        vacuum amplitude      µ      µ.
+                                                               |1⟩b
+                               µ|0⟩+ gν|1⟩
+Normalised conditional state  |φc⟩=
+                 ! |µ|2 + g2|ν|2
+                                                              1
+                                        1  ⇐⇒     0The circuit provides amplification when     g >          < η < 4.
+                                                                                                                                                                                            17
+
+====== PAGE 18 ======
+Noiseless amplification
+
+
+                                                                                            b⟨1|
+ Small weak-coherent-state
+
+  For a sufficiently weak coherent state,
+                                                  𝜂
+     |α→≃|0→+ α|1→−→|0→+ gα|1→≃|gα→,     g|α| ≪1.
+
+                                                                                                          ˆUπ,a
+
+                                                               |1⟩b
+
+                                                                                                                                                                                            18
+
+====== PAGE 19 ======
+Noiseless amplification
+
+
+Deterministic phase-insensitive amplification
+                                                                                            b⟨1|A deterministic amplifier with amplitude gain 𝑔> 1
+must introduce an additional mode:
+                    ˆaout = gˆain + !g2 −1 ˆv†.      always succeeds, but
+                                            must add noise
+where )𝑣 is an independent noise mode.                             𝜂
+
+Conditional noiseless amplification
+For the selected detector outcome, our circuit                                                          ˆUπ,a
+produces
+                       detect 1                                            no additional noise, but   µ|0→+ ν|1→  −−−−−−→  |φc→∝µ|0→+ gν|1→.                                                               |1⟩b                                                does not always
+                                                    succeed
+Probability of success     psuccess = ⟨!φc|!φc⟩
+                       = η|µ|2 + (1 −2η)2|ν|2
+                       = η " |µ|2 + g2|ν|2# .
+                                                                                                                                                                                            19
+
+====== PAGE 20 ======
+A two-stage conditional optical circuit
+
+
+Input state
+                                                                           b′⟨0|                 b′′⟨1|   |ψin⟩a = µ|0⟩a + ν|1⟩a + ϵ|2⟩a.
+
+The first beam splitter uses a vacuum ancilla,
+followed by selection of the zero-photon outcome:
+                          (ab′)     ˆ      = b′⟨0| ˆU                        (η) |0⟩b′.   M0(η)                 BS                                        𝜂             𝜂′
+                                 µ|0⟩+ ν|1⟩+ ϵ|2⟩
+
+The second beam splitter uses a single-photon ancilla,                                                                                                          ˆUπ,a
+followed by selection of the one-photon outcome:
+                             (ab′′)
+                                       |1⟩b′′.    M1(η′)ˆ   = b′′⟨1| ˆU BS   (η′)                                                       |0⟩b′           |1⟩b′′
+                 = eiπˆna. The final phase shift is     ˆUπ,a
+
+                            ˆ     ˆ                       |!φc⟩a = ˆUπ,a M1(η′) M0(η) |ψin⟩a
+
+                                                                                                                                                                                            20
+
+====== PAGE 21 ======
+The circuit flips only the two-photon phase
+
+      ! η′    |0→−→      |0→,
+                                                                           b′⟨0|                 b′′⟨1|    |1→−→√η(1 −2η′)|1→,
+       !η′(3η′    |2→−→η        −2)|2→.
+We want the first two factors to be equal
+and the third to have the opposite sign:
+                                        𝜂             𝜂′
+ √η(1        = !η′,     η(3η′     −2η′)                      −2) = −1.   µ|0⟩+ ν|1⟩+ ϵ|2⟩
+The solution is
+                           3 √ 2                                                               ˆUπ,a     = 5  √     =      η           2,      η′   −      .                             7        −3
+           " η′ (µ|0⟩+ ν|1⟩−ϵ|2⟩)                   |!φc⟩=                                 |0⟩b′           |1⟩b′′
+ After normalisation,
+             µ|0→+ ν|1→+ ϵ|2→−→µ|0→+ ν|1→−ϵ|2→
+                                 3 √ 2
+                 =  =                          psuccess    η′   −                                                                                                            21                                   7                                      ≈0.227.
+
+====== PAGE 22 ======
+Nonlinear sign-shift gate
+
+
+                                                                           b′⟨0|                 b′′⟨1|  µ|0→+ ν|1→+ ϵ|2→−→µ|0→+ ν|1→−ϵ|2→
+
+  Why is this useful?
+                                        𝜂             𝜂′
+   •  This is a nonlinear sign-shift gate.      µ|0⟩+ ν|1⟩+ ϵ|2⟩
+
+   •   It creates an effective optical nonlinearity
+                                                                                                          ˆUπ,a     using measurement.
+
+   •   It      can         be used to                      construct                               entangling gates                |0⟩b′           |1⟩b′′      for          linear-optical                  quantum                             computing.
+
+                                                                                                                                                                                            22
+
+====== PAGE 23 ======
+Noiseless amplification cannot be
+deterministic
+                           |0⟩± g−1|1⟩
+                  |ψ±⟩=                    ,     g > 1.
+               ! 1 + g−2
+                                    1 −g−2
+Their overlap is nonzero:     ⟨ψ−|ψ+⟩=     > 0.
+                                    1 + g−2
+
+
+Apply ideal noiseless amplification
+Since the one-photon amplitude is multiplied by g,
+                                         |0→± |1→ .                         |ψ±→−→|ψ′±→=  √ 2
+                                  ⟨ψ′−|ψ′+⟩= 0The output states are orthogonal:
+
+
+          A deterministic quantum operation cannot transform nonorthogonal
+                     states into perfectly distinguishable orthogonal states
+                                                                                                                                                                                            23
+
+====== PAGE 24 ======
+What about the nonlinear sign-shift gate?
+
+ Consider two arbitrary states in the zero-, one- and two-photon subspace:
+                      |ψ⟩= µ|0⟩+ ν|1⟩+ ϵ|2⟩,
+                       |φ⟩= α|0⟩+ β|1⟩+ δ|2⟩.                                                                      The nonlinear sign shift is
+                                                                                           deterministic in principle. Only
+                                                                                                                     its measurement-based linear- Their initial overlap is
+                                                                                                  optical implementation is
+                          ⟨ψ|φ⟩= µ∗α + ν∗β + ϵ∗δ.                                                                                                             probabilistic.
+
+
+                                                                                    but producing a strong, low-noise Apply the nonlinear sign shift
+                                                                                            nonlinearity at the single-photon
+                         |ψ′⟩= µ|0⟩+ ν|1⟩−ϵ|2⟩,                                                                                                level is experimentally difficult.
+                          |φ′⟩= α|0⟩+ β|1⟩−δ|2⟩.
+
+ The overlap is unchanged:
+                         ⟨ψ′|φ′⟩= µ∗α + ν∗β + ϵ∗δ = ⟨ψ|φ⟩
+
+ This transformation is generated by the unitary  ˆUNS = exp iπ ˆn(ˆn −1)  ,      ˆU NS                                                    !          "         † ˆUNS = ˆI.                 24                                                   2
+
+====== PAGE 25 ======
+Summary
+
+Conditional measurements produce probabilistic optical operations: the unnormalised output
+contains the success probability and is normalised only after the selected detector outcome occurs.
+
+Conditional operations reshape photon-number amplitudes: noiseless amplification
+increases the one-photon amplitude relative to vacuum.
+
+Conditional measurement can mimic an optical nonlinearity: the sign-shift operation reverses
+the phase of ∣2⟩ while leaving ∣0⟩ and ∣1⟩ unchanged; it is unitary in principle, but its linear-optical
+implementation is probabilistic.
+
+                                                                                                                                                                                            25
