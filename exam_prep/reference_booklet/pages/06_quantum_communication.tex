@@ -1,0 +1,54 @@
+
+\section*{Part II. Applications of optics \hfill 6 / 15}
+\subsection*{1. Teleportation uses entanglement plus classical bits}
+Alice holds an unknown qubit
+\(\ket\psi=\alpha\ket0+\beta\ket1\) and one half of a
+shared Bell pair; Bob holds the other half.
+Alice performs a Bell-basis measurement and sends Bob
+\emph{two classical bits}. Depending on her outcome, Bob's
+state is one of \(\ket\psi,X\ket\psi,Z\ket\psi,XZ\ket\psi\)
+(up to global phases). He applies the corresponding correction.
+The original input is destroyed by Alice's measurement; there
+is no faster-than-light information transfer.
+\begin{methodbox}
+\textbf{Exam method:} write \(\ket\psi\otimes\ket{\Phi^+}\);
+apply CNOT (unknown qubit as control), then Hadamard to
+the first qubit; regroup by Alice's two measurement bits.
+Read off Bob's Pauli correction from each branch.
+\end{methodbox}
+
+\subsection*{2. Dense coding reverses the resource accounting}
+If Alice and Bob share a Bell pair, Alice can apply one of
+\(I,X,Z,XZ\) to her half, producing four distinguishable
+Bell states. She sends \emph{one physical qubit} to Bob, who
+performs a Bell measurement and recovers \emph{two bits}.
+The shared entanglement is the essential extra resource.
+
+\subsection*{3. BB84 quantum key distribution}
+Alice encodes random bits in one of two conjugate bases,
+such as \(\{\ket H,\ket V\}\) or
+\(\{\ket+,\ket-\}\), and Bob chooses a random measurement
+basis. They publicly announce bases, \emph{sift} positions
+where bases match, estimate error rates using a disclosed
+sample, then perform error correction and privacy
+amplification. Security uses measurement disturbance and
+no-cloning, not secrecy of the basis choices.
+An intercept-resend eavesdropper choosing random BB84 bases
+introduces a \(25\%\) error rate in the sifted bits in the ideal
+single-photon model; real security analyses include losses,
+multi-photon signals, finite-key effects and detector assumptions.
+
+\subsection*{4. Continuous-variable QKD}
+Rather than discrete photonic qubits, Alice can encode
+information in optical quadratures; Bob measures them by
+homodyne/heterodyne detection. An entanglement-based view
+starts with a two-mode squeezed state and transmission through
+a noisy/lossy channel. State covariance and channel parameters
+then describe the observable correlations and security analysis.
+\begin{cautionbox}
+\textbf{Concept check:} teleportation transfers an unknown \emph{state};
+dense coding transfers two \emph{classical bits};
+QKD establishes a \emph{shared secret key}.
+All have different resource requirements.
+\end{cautionbox}
+\src{W4L3 pp.~2--35; W4L2 pp.~20--28; Week 4 quantum-communication transcript.}

@@ -1,0 +1,66 @@
+
+\section*{Part II. Applications of optics \hfill 7 / 15}
+\subsection*{1. A noisy optical device is an open quantum system}
+For a system \(S\) interacting with an environment \(E\), evolution
+is unitary on the \emph{joint} space but generally not on \(S\):
+\[
+\boxed{\rho'_S=\mathcal E(\rho_S)
+=\operatorname{Tr}_E[U(\rho_S\otimes\rho_E)U^\dagger].}
+\]
+The same channel can be expressed with Kraus operators
+\(\mathcal E(\rho)=\sum_kK_k\rho K_k^\dagger\),
+where \(\sum_kK_k^\dagger K_k=I\) for trace preservation.
+The measurement outcome \(k\) is ignored here.
+For pure attenuation, mix the signal \(a\) with an
+environment vacuum mode \(e\) on a beam splitter:
+\[
+\hat a'=\sqrt\eta\,\hat a+\sqrt{1-\eta}\,\hat e,
+\quad
+\ket{1,0}\to\sqrt\eta\ket{1,0}
++\sqrt{1-\eta}\ket{0,1}
+\]
+(up to the selected phase convention).
+Tracing out the environment gives
+\[
+\boxed{\mathcal E_\eta(\ket1\bra1)
+=\eta\ket1\bra1+(1-\eta)\ket0\bra0.}
+\]
+A single-photon superposition loses coherence as well:
+\(\mathcal E_\eta(\ket0\bra1)=\sqrt\eta\ket0\bra1\).
+One must not just replace \(\hat a\to\sqrt\eta\hat a\):
+the vacuum noise operator preserves commutators.
+
+\subsection*{2. Continuous time: Lindblad equation}
+A Markovian reservoir produces
+\[
+\boxed{\dot\rho=-\frac{i}{\hbar}[H,\rho]
++\sum_j\gamma_j\mathcal D[L_j]\rho},\quad
+\mathcal D[L]\rho=L\rho L^\dagger
+-\tfrac12\{L^\dagger L,\rho\}.
+\]
+For cavity photon loss take \(L=\hat a\). The average photon
+number decays as \(\langle n(t)\rangle=\langle n(0)\rangle e^{-\gamma t}\)
+for zero-temperature damping. A thermal bath requires absorption
+as well as emission channels.
+
+\subsection*{3. Langevin equation: damping must accompany noise}
+In the Heisenberg picture a cavity with frequency \(\omega_c\)
+and damping rate \(\kappa\) follows a form such as
+\[
+\dot{\hat a}=-(i\omega_c+\kappa/2)\hat a
++\sqrt\kappa\,\hat a_{\rm in}(t)
+\]
+with sign convention set by the bath coupling.
+The input-noise operator is necessary to retain the
+canonical commutator. In the Gardiner--Collett derivation,
+a continuum of reservoir modes, a near-resonant/Markov
+approximation and bath initial conditions lead to both the
+damping and fluctuation terms.
+
+\begin{methodbox}
+\textbf{Method:} choose \(S,E\); specify environment state and
+unitary interaction; apply it to the joint input; trace over
+\(E\). For time evolution, identify jump operators and rates.
+Always check \(\operatorname{Tr}\rho'=1\).
+\end{methodbox}
+\src{W5L1 pp.~7--31; W5L2 pp.~2--25; W2L2 pp.~15--17.}

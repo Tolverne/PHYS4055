@@ -1,0 +1,64 @@
+
+\section*{Part II. Applications of optics \hfill 8 / 15}
+\subsection*{1. Postselection changes the quantum operation}
+If a detector outcome \(k\) is retained, the unnormalised
+state and probability are
+\[
+\tilde\rho_k=K_k\rho K_k^\dagger,\qquad
+p_k=\operatorname{Tr}\tilde\rho_k,\qquad
+\boxed{\rho_k=\tilde\rho_k/p_k.}
+\]
+In contrast, \(\sum_k\tilde\rho_k\) is trace-preserving.
+For a weakly reflecting beam splitter with a vacuum ancilla,
+detecting \emph{one} reflected photon implements
+conditional photon subtraction. For input \(\ket n\),
+\[
+K_{1}\ket n=
+\sqrt{n(1-\eta)}\,\eta^{(n-1)/2}\ket{n-1}
+\]
+up to an irrelevant overall phase. Higher-\(n\) amplitudes
+are preferentially weighted by \(\sqrt n\); this is
+\emph{not} the same as deterministically deleting a photon.
+A no-click conditioning has different photon-number weights.
+\begin{methodbox}
+\textbf{Exam method:} transform the joint input with the beam
+splitter; project the detector mode onto the specified Fock
+state; retain the unnormalised signal; calculate \(p\);
+finally normalise.
+\end{methodbox}
+
+\subsection*{2. Jaynes--Cummings: one atom plus one cavity mode}
+Near resonance, the rotating-wave approximation gives
+\[
+\boxed{H_{\rm JC}=\hbar\omega_c a^\dagger a+
+\hbar\omega_a\sigma_+\sigma_-+
+\hbar g(a\sigma_++a^\dagger\sigma_-).}
+\]
+The total excitation number is conserved, so
+\(\{\ket{e,n},\ket{g,n+1}\}\) form independent
+two-dimensional subspaces. At resonance their
+symmetric/antisymmetric dressed-state energies are split by
+\(2\hbar g\sqrt{n+1}\). In the one-excitation manifold the
+vacuum Rabi doublet has frequency separation \(2g\).
+Away from resonance, diagonalise
+\(\frac{\hbar}{2}\begin{pmatrix}\Delta&2g\sqrt{n+1}\\
+2g\sqrt{n+1}&-\Delta\end{pmatrix}\)
+after subtracting a common energy.
+
+\subsection*{3. Tavis--Cummings and bright/dark states}
+For \(N\) identical atoms coupling in phase to a common mode,
+\[
+H_I=\hbar g(aJ_++a^\dagger J_-),\quad
+J_\pm=\sum_i\sigma_\pm^{(i)}.
+\]
+For two atoms, the symmetric one-excitation state
+\(\ket S=(\ket{eg}+\ket{ge})/\sqrt2\) couples to
+\(\ket{gg,1}\) with strength \(\sqrt2g\);
+the antisymmetric \(\ket A=(\ket{eg}-\ket{ge})/\sqrt2\)
+is dark under identical coupling. For a symmetric single
+excitation in \(N\) atoms, the coupling is \(g\sqrt N\).
+This collective enhancement underlies superradiant behaviour,
+though collective coherent exchange and spontaneous superradiant
+decay are not identical phenomena.
+
+\src{W5L3 pp.~3--25; W6L1 pp.~5--29; W6L2 pp.~5--25.}
