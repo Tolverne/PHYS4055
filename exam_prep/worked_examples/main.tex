@@ -1,18 +1,130 @@
-
 \documentclass[10pt,a4paper]{article}
 \input{../../tex/common.tex}
-\hypersetup{pdftitle={PHYS4055 - Worked Examples}}
-\title{\textcolor{accent}{PHYS4055: Worked Examples}\\[2mm]\large Formula, method, calculation, physical check}
-\author{2026 open-book revision \textbar\ starter examples}
-\date{12 November 2026}
+\usepackage{titlesec}
+\geometry{top=17mm,bottom=17mm,left=17mm,right=17mm,headsep=7mm,footskip=8mm}
+\hypersetup{pdftitle={PHYS4055 - Fully Worked Examples Across Four Course Parts}}
+\setlength{\parskip}{3pt plus .5pt minus .3pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.12}
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection}{.65em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{accent}}{\thesubsection}{.65em}{}
+\titlespacing*{\section}{0pt}{15pt plus 2pt minus 1pt}{7pt}
+\newcommand{\source}[1]{\par\noindent{\footnotesize\color{gray}\textbf{Course source:} #1}\par\vspace{2pt}}
+\newcommand{\checkmethod}[1]{\begin{methodbox}\footnotesize\textbf{Physical check / common trap.} #1\end{methodbox}}
+\newcommand{\coursepart}[1]{\clearpage\phantomsection
+\addcontentsline{toc}{part}{#1}
+\noindent{\color{accent}\LARGE\bfseries #1}\par\vspace{3pt}\hrule\vspace{8pt}}
 \begin{document}
-\maketitle
-\begin{cautionbox}
-These examples are adapted from study topics, not asserted transcripts of past-paper questions.
-Verify any question wording against the original paper before labelling it source-verified.
-\end{cautionbox}
+\begin{center}
+\vspace*{12mm}
+{\Huge\bfseries\color{accent}PHYS4055}\\[4mm]
+{\LARGE Atomic Physics and Quantum Optics}\\[7mm]
+{\Large\bfseries Worked Examples and Exam Methods}\\[2mm]
+{\large Four-part companion to the course overview}\\[8mm]
+{\normalsize 2026 Open-book exam revision}
+\end{center}
+\vspace{6mm}
+\begin{methodbox}
+\textbf{What this booklet does.} Each example starts with a recognisable
+tutorial, assignment or past-exam question type and then shows the
+physics model, the algebra, the final result and at least one
+independent check. The source is identified with each example.
+\end{methodbox}
+\begin{center}
+\begin{tabular}{@{}p{4.0cm}p{9.7cm}@{}}
+\toprule
+\textbf{Course part}&\textbf{Core worked problems}\\\midrule
+I. Quantum optics&
+Displacement and coherent states; two-mode squeezed vacuum;
+beam splitters, HOM/NOON states; photon statistics and squeezing\\
+II. Applications of optics&
+Bell pairs and dense coding; BB84; distillation; Kraus loss;
+conditional filtering; Tavis--Cummings; cavity squeezing; metrology\\
+III. Atomic physics&
+Finite-nuclear-size correction; equivalent \(d^2\) electrons;
+Stark polarizability; hyperfine/Zeeman; direct/exchange Hartree--Fock\\
+IV. Atomic applications&
+E1/M1/E2 selection rules and lifetimes;
+Yb laser cooling and Zeeman slower; cesium clock and parity violation\\
+\bottomrule
+\end{tabular}
+\end{center}
+\bigskip
+\textbf{Verification status.}
+Examples cross-reference original course material. The Optics
+Assignment 1 and 2 questions have released solutions, whereas the
+atomic assignment questions do not all have official solutions.
+These sections give independently derived study solutions, not
+a substitute for unpublished marking schemes. Any exact values
+labelled \emph{illustrative} are not claimed as experimental data.
+The original PDFs remain authoritative for handwritten symbols and diagrams.
+\vfill
+\noindent{\footnotesize Updated 13 November 2026.\quad
+All calculations use explicitly stated sign/normalisation conventions.}
+\clearpage
 \tableofcontents
 \clearpage
-\input{01_hyperfine_splitting}
-\input{02_three_j_and_selection_rules}
+
+\coursepart{Part I -- Quantum optics}
+\input{sections/01_displacement_coherent}
+\input{sections/02_two_mode_squeezed}
+\input{sections/03_beamsplitter_noon}
+\input{sections/04_statistics_quadratures}
+
+\coursepart{Part II -- Applications of optics}
+\input{sections/05_bell_dense}
+\input{sections/06_bb84}
+\input{sections/07_entanglement_distillation}
+\input{sections/08_pure_loss_kraus}
+\input{sections/09_conditional_filter}
+\input{sections/10_collective_cavity}
+\input{sections/11_cavity_squeezing}
+\input{sections/12_metrology}
+
+\coursepart{Part III -- Atomic physics}
+\input{sections/13_finite_nuclear_size}
+\input{sections/14_equivalent_d2}
+\input{sections/15_stark_polarisability}
+\input{sections/16_hyperfine_zeeman}
+\input{sections/17_hartree_fock_direct_exchange}
+
+\coursepart{Part IV -- Applications of atomic physics}
+\input{sections/18_selection_lifetimes}
+\input{sections/19_laser_cooling}
+\input{sections/20_clock_parity}
+
+\coursepart{Fast method finder}
+\noindent{\color{accent}\large\bfseries Recognise the question, then find its worked calculation}
+\vspace{4pt}
+\begin{tabularx}{\linewidth}{@{}Xl@{}}
+\toprule
+\textbf{Question pattern} & \textbf{Example}\\\midrule
+Show displacement identity or coherent-state classical field & QO-01\\
+Trace a TMSV state, calculate \(g_{si}^{(2)}\), herald photon & QO-02\\
+Transform Fock states, HOM or NOON interference & QO-03\\
+Find photon variance or quadrature squeezing & QO-04\\
+Partial trace a Bell pair, encode dense-coding messages & OA-01\\
+Compute BB84 sifted key, QBER and eavesdropper detection & OA-02\\
+Evaluate distillation success and improved fidelity & OA-03\\
+Derive Kraus operators, reduced output and purity & OA-04\\
+Normalise successful conditional filter & OA-05\\
+Evolve two atoms in a common cavity and calculate populations & OA-06\\
+Fourier solve a Langevin OPO and output squeezing spectrum & OA-07\\
+Calculate quantum/classical Fisher information & OA-08\\
+First-order finite-nuclear-size perturbation & AT-01\\
+Equivalent-electron terms and microstate check & AT-02\\
+Hydrogenic ground-state Stark polarizability by closure & AT-03\\
+Hyperfine energies and weak/strong magnetic-field regimes & AT-04\\
+Slater determinant direct vs exchange Coulomb integrals & AT-05\\
+Apply E1/M1/E2 rules; compute a lifetime from dipole & AA-01\\
+Max scattering force, stopping distance and Doppler limit & AA-02\\
+Cesium clock hyperfine frequency; parity-mixed E1 amplitude & AA-03\\
+\bottomrule
+\end{tabularx}
+\begin{methodbox}
+\textbf{Reusable five-step procedure:} (1) identify the model and
+basis; (2) state operator/phase conventions; (3) calculate symbolically
+before substituting numbers; (4) normalise and check units, parity,
+state-count or probability; (5) interpret what is measured physically.
+\end{methodbox}
 \end{document}
