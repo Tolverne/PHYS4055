@@ -1,0 +1,53 @@
+
+\section*{Part II. Applications of optics \hfill 5 / 15}
+\subsection*{1. A photon can encode a qubit}
+A qubit is \(\ket\psi=\alpha\ket0+\beta\ket1\),
+\(|\alpha|^2+|\beta|^2=1\). A photon's polarisation
+\(\ket H,\ket V\), two paths \(\ket{1,0},\ket{0,1}\),
+or two frequency bins can form the logical basis.
+On the Bloch sphere,
+\(\ket\psi=\cos(\theta/2)\ket0+e^{i\phi}\sin(\theta/2)\ket1\)
+up to an unobservable global phase. Pauli operators are
+\(X,Y,Z\), and a rotation about axis \(k\) is
+\[
+\boxed{R_k(\theta)=e^{-i\theta\sigma_k/2}
+=\cos(\theta/2)I-i\sin(\theta/2)\sigma_k.}
+\]
+Wave plates implement polarisation rotations; beam splitters and
+phase shifters implement path-qubit operations. Arbitrary
+single-qubit unitaries can be decomposed into rotations.
+
+\subsection*{2. Entangled pairs and reduced states}
+The Bell states are
+\[
+\ket{\Phi^\pm}=\frac{\ket{00}\pm\ket{11}}{\sqrt2},\qquad
+\ket{\Psi^\pm}=\frac{\ket{01}\pm\ket{10}}{\sqrt2}.
+\]
+Although \(\ket{\Phi^+}\) is pure,
+\[
+\rho_A=\operatorname{Tr}_B\bigl(\ket{\Phi^+}\bra{\Phi^+}\bigr)
+=\tfrac12 I,\qquad S(\rho_A)=1\ \mathrm{bit}.
+\]
+Entanglement means the joint state cannot be factored
+into a product of states on \(A\) and \(B\).
+The reduced state alone does not reveal the correlations.
+
+\begin{methodbox}
+\textbf{Partial-trace method:} write
+\(\rho_{AB}=\sum_{ijkl}\rho_{ij,kl}\ket{i,j}\bra{k,l}\).
+Then \(\operatorname{Tr}_B\rho_{AB}
+=\sum_{i,k,j}\rho_{ij,kj}\ket i\bra k\).
+For a pure bipartite state, unequal/nonzero Schmidt coefficients
+signal entanglement.
+\end{methodbox}
+\subsection*{3. Producing and characterising correlations}
+Spontaneous parametric down-conversion can generate photon pairs
+satisfying energy and momentum phase-matching conditions.
+Appropriate mode selection and interferometry yield
+polarisation/path entanglement. Entropy
+\(S(\rho)=-\operatorname{Tr}\rho\log_2\rho\) quantifies
+a state's mixedness; for a pure bipartite state, subsystem entropy
+also measures entanglement. No-cloning forbids a universal
+unitary that copies an \emph{unknown} arbitrary state.
+
+\src{W4L1 pp.~3--37; W4L2 pp.~3--28; Week 4 lecture transcripts on photonic qubits and entanglement.}

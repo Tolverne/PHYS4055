@@ -1,0 +1,55 @@
+
+\section*{Part I. Quantum optics \hfill 3 / 15}
+\subsection*{1. Mixed states and photon-number statistics}
+A density operator \(\rho=\sum_i p_i\ket{\psi_i}\bra{\psi_i}\)
+represents either a pure state (\(\rho^2=\rho\)) or a statistical mixture.
+Photon counting gives \(p_n=\bra n\rho\ket n\) and
+\[
+\bar n=\operatorname{Tr}(\rho\hat n),\quad
+(\Delta n)^2=\langle\hat n^2\rangle-\bar n^2,\quad
+Q_{\rm M}=\frac{(\Delta n)^2-\bar n}{\bar n}.
+\]
+\begin{center}\small
+\begin{tabular}{@{}lll@{}}\toprule
+State & Number distribution / moments & Statistics\\\midrule
+\(\ket n\) & \(p_m=\delta_{mn}\), variance 0 & sub-Poissonian for \(n>0\)\\
+\(\ket\alpha\) & \(p_n=e^{-\bar n}\bar n^n/n!\), variance \(\bar n\) & Poissonian\\
+thermal & \(p_n=\bar n^n/(1+\bar n)^{n+1}\), variance \(\bar n+\bar n^2\) & super-Poissonian\\\bottomrule
+\end{tabular}
+\end{center}
+For thermal light,
+\(\bar n=[\exp(\hbar\omega/k_BT)-1]^{-1}\).
+Its density matrix is diagonal in the number basis; a coherent
+superposition and a mixture with the same \(p_n\) need not be equivalent.
+
+\subsection*{2. A beam splitter is a two-mode unitary}
+With intensity transmissivity \(\eta\), choose the real convention
+\[
+\boxed{\begin{pmatrix}\hat a'\\\hat b'\end{pmatrix}=
+\begin{pmatrix}\sqrt\eta&\sqrt{1-\eta}\\
+-\sqrt{1-\eta}&\sqrt\eta\end{pmatrix}
+\begin{pmatrix}\hat a\\\hat b\end{pmatrix}.}
+\]
+Other conventions attach phases; probabilities agree if used consistently.
+The transformation conserves total photon number and commutators.
+For \(\ket{1,0}\) input, the output has
+probabilities \(P(1,0)=\eta,\ P(0,1)=1-\eta\).
+For a coherent input plus vacuum, the output remains a product
+of coherent states with transformed amplitudes.
+\begin{methodbox}
+\textbf{Multi-photon method:} write
+\(\ket{n,m}=(\hat a^\dagger)^n(\hat b^\dagger)^m
+\ket{0,0}/\sqrt{n!m!}\).
+Transform \emph{creation operators}, expand, then collect
+normalised Fock states. For two indistinguishable photons at a balanced
+splitter the \(\ket{1,1}\) coincidence amplitude cancels (HOM bunching).
+\end{methodbox}
+\subsection*{3. Detection}
+An ideal number-resolving detector measures
+\(\{\ket n\bra n\}\); a threshold detector distinguishes vacuum
+from one-or-more photons. Real efficiency and dark counts alter
+the outcome probabilities. Balanced homodyne uses a strong coherent
+local oscillator and the difference photocurrent to measure
+a chosen field quadrature rather than photon number.
+
+\src{W2L1 pp.~3--20; W2L2 pp.~3--17; W2L3 pp.~5--17; W3L3 pp.~5--9.}

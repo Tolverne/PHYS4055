@@ -1,0 +1,51 @@
+
+\section*{Part I. Quantum optics \hfill 2 / 15}
+\subsection*{1. The electromagnetic field becomes a set of oscillators}
+A classical Maxwell field can be decomposed into independent spatial/polarisation
+modes. Each mode has a harmonic-oscillator Hamiltonian. Quantising a mode
+promotes its amplitude and conjugate momentum to operators
+\([\hat q,\hat p]=i\hbar\), giving
+\[
+\boxed{\hat H=\hbar\omega(\hat a^\dagger\hat a+\tfrac12)},\qquad
+[\hat a,\hat a^\dagger]=1,\quad
+\hat n=\hat a^\dagger\hat a.
+\]
+The number (Fock) states obey
+\[
+\hat a\ket n=\sqrt n\,\ket{n-1},\qquad
+\hat a^\dagger\ket n=\sqrt{n+1}\,\ket{n+1},
+\qquad \hat n\ket n=n\ket n.
+\]
+A photon is one excitation of a \emph{mode}, not a tiny object appended to a
+classical wave. For several independent modes,
+\(\hat H=\sum_j\hbar\omega_j(\hat n_j+\tfrac12)\) and
+\(\ket{n_1,n_2,\ldots}=\ket{n_1}\otimes\ket{n_2}\otimes\cdots\).
+Mode labels (frequency, wavevector, polarisation, path) therefore matter.
+
+\subsection*{2. Coherent states: a quantum version of a classical field}
+A coherent state is an eigenstate of annihilation:
+\[
+\boxed{\hat a\ket\alpha=\alpha\ket\alpha},\qquad
+\ket\alpha=\hat D(\alpha)\ket0
+=e^{-|\alpha|^2/2}\sum_{n=0}^\infty
+\frac{\alpha^n}{\sqrt{n!}}\ket n,
+\quad
+\hat D(\alpha)=e^{\alpha\hat a^\dagger-\alpha^*\hat a}.
+\]
+Thus \(\langle \hat n\rangle=|\alpha|^2\), while the optical phase is
+encoded in \(\arg\alpha\). The identity
+\(\hat D^\dagger(\alpha)\hat a\hat D(\alpha)=\hat a+\alpha\)
+lets you evaluate expectation values using the vacuum.
+\begin{methodbox}
+\textbf{Typical calculation:} for a coherent input, expand in Fock states
+if the question asks for photon probabilities; use
+\(\hat a\ket\alpha=\alpha\ket\alpha\) for normally ordered moments;
+use \(\hat D^\dagger\hat a\hat D\) for field quadratures.
+\end{methodbox}
+\subsection*{3. Why propagation and modes matter}
+An infinitely monochromatic plane wave has no finite temporal envelope.
+A physical pulse is a superposition of frequency modes. The free evolution
+\(\hat a_j(t)=\hat a_j(0)e^{-i\omega_jt}\) rotates each mode's phase.
+Which modes are combined by optics determines whether they interfere.
+
+\src{W1L1 pp.~16--41; W1L2 pp.~3--29; W1L3 pp.~2--3; quantum-optics lecture notes, sections 1--2.}

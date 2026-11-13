@@ -1,0 +1,61 @@
+
+\section*{Part I. Quantum optics \hfill 4 / 15}
+\subsection*{1. Quadratures and optical phase space}
+The course uses the dimensionless quadrature convention
+\[
+\boxed{\hat x=\hat a+\hat a^\dagger,\quad
+\hat p=i(\hat a^\dagger-\hat a),\quad [\hat x,\hat p]=2i.}
+\]
+Consequently \((\Delta x)^2(\Delta p)^2\ge1\).
+For \(\ket\alpha\):
+\[
+\langle x\rangle=2\operatorname{Re}\alpha,\quad
+\langle p\rangle=2\operatorname{Im}\alpha,\quad
+(\Delta x)^2=(\Delta p)^2=1.
+\]
+For phase angle \(\theta\),
+\(\hat X_\theta=\hat a e^{-i\theta}+\hat a^\dagger e^{i\theta}\).
+Balanced homodyne detection selects \(\theta\) via the local oscillator.
+These formulas are convention-sensitive: some texts scale \(x,p\)
+by \(\sqrt2\).
+
+\subsection*{2. Squeezing changes noise, not the uncertainty bound}
+For real \(r\), take
+\(\hat S(r)=\exp[\frac r2(\hat a^2-\hat a^{\dagger2})]\).
+The squeezed vacuum \(\hat S(r)\ket0\) has zero means but
+\[
+\boxed{(\Delta x)^2=e^{-2r},\qquad
+(\Delta p)^2=e^{2r}.}
+\]
+One quadrature is quieter than vacuum and its conjugate noisier;
+the product stays 1. Squeezing two appropriate modes and combining
+them at a balanced beam splitter can produce entangled two-mode light.
+
+\subsection*{3. Representing quantum states in phase space}
+The Husimi function is always positive:
+\(Q(\alpha)=\pi^{-1}\bra\alpha\rho\ket\alpha\).
+The Glauber--Sudarshan \(P\) representation writes
+\(\rho=\int P(\alpha)\ket\alpha\bra\alpha\,d^2\alpha\);
+\(P\) may be singular or nonclassical. The Wigner function is a
+real quasiprobability; negative regions provide a nonclassicality
+witness. These are different representations of the same state.
+For Gaussian states, a displacement vector
+\(d=\langle R\rangle\), \(R=(x,p)^T\), and covariance
+\(V_{jk}=\langle\{\Delta R_j,\Delta R_k\}\rangle/2\)
+fully specify the state. A Gaussian optical circuit acts as
+\(d'=Sd,\ V'=SVS^T\) (plus environmental noise for a channel).
+
+\subsection*{4. Coherence and photon correlations}
+\[
+\boxed{g^{(2)}(0)=
+\frac{\langle\hat a^{\dagger2}\hat a^2\rangle}{\bar n^2}
+=\frac{\langle n(n-1)\rangle}{\bar n^2}.}
+\]
+Coherent light gives 1; single-mode thermal light gives 2;
+a one-photon Fock state gives 0 (antibunching).
+\begin{methodbox}
+\textbf{Exam method:} identify the quadrature convention;
+compute first and second moments or \(g^{(2)}\);
+interpret the variance ellipse or photon statistics physically.
+\end{methodbox}
+\src{W1L3 pp.~8--27; W3L1 pp.~4--18; W3L2 pp.~3--21; W3L3 pp.~5--28.}
