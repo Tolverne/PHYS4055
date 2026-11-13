@@ -1,0 +1,67 @@
+
+\section*{Part IV. Applications of atomic physics \hfill 15 / 15}
+\subsection*{1. Atomic clocks measure a stable transition frequency}
+A clock locks a local oscillator to a narrow atomic transition.
+The modern SI second is defined by the unperturbed ground-state
+hyperfine transition frequency of \(^{133}\mathrm{Cs}\):
+\[
+\boxed{\nu_{\rm Cs}=9\,192\,631\,770\ \mathrm{Hz}.}
+\]
+Cs has configuration \([\mathrm{Xe}]6s\), electronic
+\(J=1/2\), nuclear \(I=7/2\), hence \(F=3,4\).
+The clock transition is
+\[
+\boxed{\ket{F=3,m_F=0}\ \longleftrightarrow\
+\ket{F=4,m_F=0},}
+\]
+not \(F=3\to F=3\). The \(m_F=0\) choice strongly reduces
+first-order Zeeman sensitivity near zero field.
+Optical clocks exploit much higher carrier frequencies,
+e.g. strontium clock transitions around \(429\) THz,
+and narrow, often nominally forbidden, transitions.
+Trap/lattice configurations help reduce motion and
+frequency shifts.
+
+\subsection*{2. Linewidth, interrogation time and stability}
+The quality factor is \(Q=\nu_0/\Delta\nu\).
+Long-lived excited states have narrow natural linewidths;
+long coherent interrogation time \(T\) can produce spectral
+features with width of order \(1/T\).
+For \(N\) independent atoms, projection noise typically
+scales as \(1/\sqrt N\) and repeated measurements improve
+statistics as the square root of averaging time under
+appropriate noise models. Real clock accuracy requires
+controlling black-body shifts, Zeeman and Stark shifts,
+collisions, gravitational redshift and laser noise.
+Clock comparisons can test relativity and variation of
+fundamental constants.
+
+\subsection*{3. Find the right formula quickly}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}lXr@{}}\toprule
+Question type & Starting formula or test & Page\\\midrule
+Photon counts & \(p_n,\ \bar n,\ (\Delta n)^2,\ g^{(2)}\) & 3--4\\
+Coherent/squeezed light & \(\hat a\ket\alpha=\alpha\ket\alpha,\ (\Delta x)^2=e^{-2r}\) & 2,4\\
+Beam splitter / HOM & transform \(\hat a^\dagger,\hat b^\dagger\) & 3\\
+Photonic entanglement & Bell basis; partial trace / entropy & 5\\
+Teleport / QKD & measurement branches; basis sifting & 6\\
+Optical loss & joint unitary then \(\operatorname{Tr}_E\) & 7\\
+Photon subtraction & project detector mode, then normalise & 8\\
+Cavity coupling & JC excitation block; dressed eigenvalues & 8\\
+Interferometric sensing & \(F_Q=4\operatorname{Var}(G)\) & 9\\
+Radial / finite nucleus & \(u=rR,\ \Delta E=\langle\Delta V\rangle\) & 10\\
+Term symbols and \(3j\) & triangle rule, microstate count, W--E & 11\\
+Hyperfine / Zeeman / Stark & \(E_F,\ g_Fm_FB,\ -\alpha E^2/2\) & 12\\
+E1 / M1 / E2 and lifetimes & rank + parity + \(A_{if}\), then \(\tau\) & 13\\
+Atomic PV / EDM & weak-induced mixing / \(-\mathbf d\cdot\mathbf E\) & 14\\
+Clocks & \(F,m_F\) choice; \(\nu_0/\Delta\nu\) & 15\\\bottomrule
+\end{tabularx}
+\end{center}
+\begin{methodbox}
+\textbf{Universal exam workflow:} recognise the model and basis;
+write assumptions/conventions; derive or quote the governing operator;
+calculate with explicit normalisation; check dimensions,
+limiting cases, parity/selection rules and degeneracy;
+interpret the observable physically.
+\end{methodbox}
+\src{Week 13 pp.~1--35; Week 9 on hyperfine shifts; Week 10 on linewidths and forbidden lines.}

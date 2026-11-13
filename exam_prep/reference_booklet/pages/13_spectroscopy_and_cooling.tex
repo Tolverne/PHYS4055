@@ -1,0 +1,69 @@
+
+\section*{Part IV. Applications of atomic physics \hfill 13 / 15}
+\subsection*{1. Optical transitions: identify the allowed operator}
+An electromagnetic transition has both angular and parity constraints.
+Electric multipole \(Ek\): rank \(k\), parity \((-1)^k\).
+Magnetic multipole \(Mk\): rank \(k\), parity \((-1)^{k+1}\).
+For a transition \(J,m\to J',m'\), angular momentum requires
+\[
+\boxed{|J-J'|\le k\le J+J',\qquad
+m'=m+q,\ |q|\le k.}
+\]
+\begin{center}\small
+\begin{tabular}{@{}llll@{}}\toprule
+Type & Parity & Usual \(\Delta J\) & Single-electron orbital check\\\midrule
+E1 & changes & \(0,\pm1\), not \(0\leftrightarrow0\) & \(\Delta l=\pm1\)\\
+M1 & same & \(0,\pm1\), not \(0\leftrightarrow0\) & typically \(\Delta l=0\)\\
+E2 & same & \(0,\pm1,\pm2\), triangle rule & \(\Delta l=0,\pm2\), triangle rule\\\bottomrule
+\end{tabular}
+\end{center}
+Total \(L,S\) rules and level mixing depend on the coupling
+approximation. \emph{Example:} \(s\to p\) can be E1;
+\(s\to d\) can be E2; \(s\to p\) cannot be E2
+because the orbital parity changes.
+
+\subsection*{2. Einstein coefficients, linewidths, lifetimes}
+Stimulated absorption/emission depend on the incident spectral
+energy density; spontaneous decay occurs even in vacuum.
+For an E1 transition between specified states (with
+consistent treatment of polarisation/sublevels),
+\[
+\boxed{A_{if}=
+\frac{\omega_{if}^3}{3\pi\epsilon_0\hbar c^3}
+|\langle f|\mathbf d|i\rangle|^2,\quad
+\tau_i=\Big(\sum_{f:E_f<E_i}A_{if}\Big)^{-1}.}
+\]
+Here \(\mathbf d=-e\mathbf r\).
+For \(R(r)\) normalisation, the radial dipole integral is
+\(\int_0^\infty R_f^*(r)R_i(r)r^3\,dr\);
+multiply by the angular factor or reduced matrix element.
+The natural linewidth (angular frequency) is of order
+\(\Gamma=\sum_fA_{if}=1/\tau\).
+With \(\hbar\omega\) in atomic units, convert
+energies, dipoles and time consistently
+(\(t_{\rm au}=2.418884\times10^{-17}\ {\rm s}\)).
+
+\subsection*{3. Laser cooling and trapping}
+Absorbing a photon transfers momentum \(+\hbar\mathbf k\);
+spontaneous emission gives a random recoil.
+For a driven two-level atom, the scattering rate is
+\[
+R_{\rm sc}=\frac{\Gamma}{2}
+\frac{s}{1+s+(2\Delta/\Gamma)^2},\quad
+\mathbf F_{\rm sc}=\hbar\mathbf k R_{\rm sc},\quad
+s=I/I_{\rm sat}.
+\]
+The atom experiences Doppler-shifted detuning
+\(\Delta_{\rm eff}=\Delta-\mathbf k\cdot\mathbf v\).
+Opposing red-detuned beams yield velocity-dependent damping
+(optical molasses). A basic two-level Doppler limit is
+\(T_D=\hbar\Gamma/(2k_B)\). In a magneto-optical trap
+a magnetic-field gradient plus polarisation-dependent
+Zeeman shifts adds a restoring force.
+\begin{methodbox}
+\textbf{Method:} check selection rules first;
+obtain matrix elements and rates, then lifetime.
+For cooling problems, identify detuning, Doppler shift,
+scattering momentum and restoring/damping force.
+\end{methodbox}
+\src{Week 9 pp.~8--21; Week 10 pp.~4--58 (radiation), 60--130 (optical pumping/cooling).}
