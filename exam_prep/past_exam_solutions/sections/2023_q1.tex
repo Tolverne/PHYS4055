@@ -1,0 +1,104 @@
+
+\examquestion{2023}{1}{A nonlinear optical mode: coherent states and Schr\"odinger cats}{2}
+Consider the Hamiltonian
+\[
+H=\hbar[\omega a^\dagger a+\lambda(a^\dagger a)^p]
+=\hbar[\omega\hat n+\lambda\hat n^p].
+\]
+Take \(p\) to be a \emph{positive} integer and
+\(\lambda\ne0\) in the specified evolution time.
+
+\subsection*{(a) Eigenstates and eigenvalues}
+Because \(H\) is a function of \(\hat n=a^\dagger a\),
+all number states are eigenstates:
+\[
+\boxed{H\ket n=E_n\ket n,\qquad
+E_n=\hbar(\omega n+\lambda n^p),\quad n=0,1,2,\ldots}.
+\]
+This is a number-dependent nonlinearity. The
+energy spacings are generally not constant.
+
+\subsection*{(b) Evolve a coherent input in the interaction picture}
+Take \(H_0=\hbar\omega\hat n\); it commutes with
+\(H_I=\hbar\lambda\hat n^p\).
+Write the initial coherent state as
+\[
+\ket\alpha=e^{-|\alpha|^2/2}
+\sum_{n=0}^\infty\frac{\alpha^n}{\sqrt{n!}}\ket n .
+\]
+Since
+\(U_I(t)=\exp(-i\lambda t\hat n^p)\),
+the evolved state is
+\[
+\boxed{\ket{\psi_I(t)}=
+e^{-|\alpha|^2/2}
+\sum_{n=0}^\infty
+\frac{\alpha^n}{\sqrt{n!}}
+e^{-i\lambda t n^p}\ket n}.
+\]
+The nonlinear unitary changes phases but
+\emph{not} photon-number probabilities.
+
+\subsection*{(c) Recover the coherent-state cat for even \(p\)}
+For \(p=2,4,\ldots\) and integer \(n\),
+\(n^p\) is divisible by 4 if \(n\) is even,
+while \(n^p\equiv1\pmod4\) if \(n\) is odd.
+At the time \(t=\pi/(2\lambda)\),
+\[
+e^{-i\pi n^p/2}=
+\begin{cases}1,&n\text{ even},\\-i,&n\text{ odd}.\end{cases}
+\]
+The parity-dependent coefficient is
+\[
+e^{-i\pi n^p/2}=
+\tfrac12[(1-i)+(1+i)(-1)^n].
+\]
+Substitute into the Fock expansion and use
+\((-1)^n\alpha^n=(-\alpha)^n\):
+\[
+\boxed{\ket{\psi_I}=\frac12
+[(1-i)\ket\alpha+(1+i)\ket{-\alpha}]}.
+\]
+It is correctly normalised: the cross term
+between \(\ket\alpha\) and \(\ket{-\alpha}\)
+has purely imaginary coefficient, while
+\(\braket{\alpha}{-\alpha}=e^{-2|\alpha|^2}\)
+is real.
+
+\subsection*{(d) Calculate all normal-ordered correlations}
+The diagonal photon-number probabilities remain
+\[
+P_n=e^{-|\alpha|^2}\frac{|\alpha|^{2n}}{n!}.
+\]
+For positive integer \(k\), the normally
+ordered factorial moment is
+\[
+\langle(a^\dagger)^ka^k\rangle
+=\sum_{n=k}^\infty
+n(n-1)\cdots(n-k+1)P_n=|\alpha|^{2k}.
+\]
+As \(\langle\hat n\rangle=|\alpha|^2\),
+\[
+\boxed{g^{(k)}(0)=
+\frac{\langle(a^\dagger)^ka^k\rangle}{
+\langle\hat n\rangle^k}=1
+\qquad(k=1,2,\ldots,\ |\alpha|>0).}
+\]
+This is the usual \emph{normalised zero-delay}
+intensity-correlation definition.
+
+\subsection*{(e) Is the state classical?}
+Despite having \emph{Poissonian photon statistics}
+and \(g^{(k)}(0)=1\), the state is a coherent
+superposition of distinguishable field amplitudes
+\(\alpha\) and \(-\alpha\), not a classical mixture.
+Its phase-space representation contains quantum
+interference fringes and, for nonzero well-resolved
+amplitudes, Wigner negativity; a positive classical
+mixture of coherent states cannot reproduce it.
+Photon counts alone fail to reveal these
+phase-sensitive coherences. For \(\alpha=0\) the
+state reduces to the vacuum (not a nontrivial cat).
+\solcheck{The relative phase between Fock amplitudes
+changes, but \(|e^{-i\lambda tn^p}|^2=1\),
+so every photon-number probability is unchanged.}

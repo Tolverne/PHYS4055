@@ -1,0 +1,129 @@
+
+\examquestion{2023}{2}{Hydrogen radial probabilities, helium spins and E1 lines}{3}
+The hydrogen \(1s\) wavefunction is
+\[
+\psi_{1s}(r)=\frac{e^{-r/a_0}}{\sqrt{\pi a_0^3}},
+\qquad
+|\psi_{1s}|^2=\frac{e^{-2r/a_0}}{\pi a_0^3}.
+\]
+
+\subsection*{(a) Radius with maximum detection probability}
+The correct \emph{radial probability distribution}
+is the probability in a spherical shell,
+\(P(r)\diff r=4\pi r^2|\psi|^2\diff r\):
+\[
+P(r)=\frac{4r^2}{a_0^3}e^{-2r/a_0}.
+\]
+Differentiating the log,
+\(P'/P=2/r-2/a_0\). Apart from the zero
+endpoint, the maximum is
+\[
+\boxed{r_{\rm most\ probable}=a_0}.
+\]
+Maximising \(|\psi(r)|^2\) alone would wrongly give
+\(r=0\): it omits the increasing spherical-shell volume.
+
+\subsection*{(b) Evaluate \(\langle r\rangle\) and
+\(\langle1/r\rangle\)}
+Using
+\(\int_0^\infty r^n e^{-\beta r}\diff r
+=n!/\beta^{n+1}\),
+\begin{align*}
+\langle r\rangle
+&=\frac4{a_0^3}\int_0^\infty
+r^3e^{-2r/a_0}\diff r
+=\frac4{a_0^3}\frac{3!}{(2/a_0)^4}
+=\boxed{\frac{3a_0}{2}},\\
+\left\langle\frac1r\right\rangle
+&=\frac4{a_0^3}\int_0^\infty
+re^{-2r/a_0}\diff r
+=\frac4{a_0^3}\frac{1!}{(2/a_0)^2}
+=\boxed{\frac1{a_0}}.
+\end{align*}
+Bohr's \(n=1\) orbit has fixed radius \(a_0\);
+it agrees with the quantum \emph{most probable}
+radius and \(\langle1/r\rangle=1/a_0\),
+but not the mean radius \(\langle r\rangle=3a_0/2\).
+
+\subsection*{(c) Schr\"odinger equation for helium}
+For a fixed nucleus \(Z=2\), a simplified
+non-relativistic two-electron Hamiltonian is
+\[
+\boxed{H=
+-\frac{\hbar^2}{2m_e}(\nabla_1^2+\nabla_2^2)
+-\frac{2e^2}{4\pi\epsilon_0}
+\left(\frac1{r_1}+\frac1{r_2}\right)
++\frac{e^2}{4\pi\epsilon_0r_{12}}.}
+\]
+The three terms represent electron kinetic
+energy, attractions to the nucleus and mutual
+electron repulsion, respectively. Solve
+\(H\Psi(\mathbf r_1,\mathbf r_2)=E\Psi\)
+with total fermion-exchange antisymmetry.
+Spin and relativistic interactions would be
+additional smaller corrections.
+
+\subsection*{(d) All four two-electron spin states}
+\[
+\begin{array}{c|l|c}
+\text{Total }S&\text{Spin state}&\text{Exchange}\\\hline
+1,\ M_S=1&\ket{\uparrow\uparrow}&\text{symmetric}\\
+1,\ M_S=0&
+(\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow})/\sqrt2&
+\text{symmetric}\\
+1,\ M_S=-1&\ket{\downarrow\downarrow}&\text{symmetric}\\
+0,\ M_S=0&
+(\ket{\uparrow\downarrow}-\ket{\downarrow\uparrow})/\sqrt2&
+\text{antisymmetric}
+\end{array}
+\]
+The first three are the triplet, the last the singlet.
+Since total two-electron wavefunction is antisymmetric,
+a triplet needs an antisymmetric spatial part, while
+a singlet needs a symmetric spatial part.
+
+\subsection*{(e) Physical origin and relative magnitude of hyperfine structure}
+Fine structure primarily concerns electronic
+spin--orbit and relativistic effects. Hyperfine
+structure couples electronic angular momentum and
+fields to \emph{nuclear} magnetic dipole/electric
+quadrupole moments. The nuclear magnetic moment
+is typically of nuclear-magneton scale,
+\(\mu_N=e\hbar/(2m_p)\), much smaller than the
+electron Bohr magneton \(\mu_B=e\hbar/(2m_e)\);
+this suppresses hyperfine interactions.
+For \({}^4\mathrm{He}\), whose nucleus has \(I=0\),
+magnetic-dipole hyperfine splitting is absent.
+
+\subsection*{(f) Allowed E1 transitions among the stated terms}
+To leading order in LS coupling, E1 requires
+opposite orbital parity, \(\Delta S=0\), and
+\(|\Delta J|\le1\) with \(J=0\not\to J'=0\).
+Thus the allowed combinations are
+\[
+\boxed{{}^1P_1\longleftrightarrow{}^1S_0,\qquad
+{}^3P_{0,1,2}\longleftrightarrow{}^3S_1.}
+\]
+The direction of spontaneous emission is from the
+higher to the lower member of each pair.
+Singlet--triplet lines are spin-forbidden in pure
+LS coupling but can gain weak intensity through
+spin--orbit mixing. A simple term diagram is:
+\[
+\begin{tikzpicture}[x=1cm,y=.5cm]
+\draw[-{Latex[length=2mm]}](0,0)--(0,6.7) node[above]{energy};
+\draw[accent,thick](1,5)--(3.3,5) node[right,ink]{\({}^1P_1\)};
+\draw[accent,thick](1,1.5)--(3.3,1.5) node[right,ink]{\({}^1S_0\)};
+\draw[-{Latex[length=2mm]}](2,4.8)--(2,1.7);
+\draw[accent,thick](6,5.5)--(8,5.5) node[right,ink]{\({}^3P_2\)};
+\draw[accent,thick](6,4.9)--(8,4.9) node[right,ink]{\({}^3P_1\)};
+\draw[accent,thick](6,4.3)--(8,4.3) node[right,ink]{\({}^3P_0\)};
+\draw[accent,thick](6,1.4)--(8,1.4) node[right,ink]{\({}^3S_1\)};
+\foreach \y/\x in {5.5/6.5,4.9/7,4.3/7.5}
+{\draw[-{Latex[length=1.7mm]}](\x,\y-.2)--(7,1.6);}
+\end{tikzpicture}
+\]
+\solcheck{Radial expectations require the
+\(4\pi r^2\) measure. For selection rules,
+check \emph{spin}, \emph{parity} and \emph{angular
+momentum} independently.}
