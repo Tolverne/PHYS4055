@@ -1,0 +1,60 @@
+name: Publish PHYS4055 15-page course overview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/reference_booklet/**/*.tex'
+      - 'tex/common.tex'
+      - '.github/workflows/publish-course-overview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the reviewed overview
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: exam_prep/reference_booklet
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Inspect page count and render overview thumbnail sheet
+        run: |
+          python -m pip install --quiet pymupdf pillow
+          python - <<'PY'
+          import fitz
+          from PIL import Image, ImageDraw, ImageFont
+          from pathlib import Path
+          base = Path("exam_prep/reference_booklet")
+          pdf = fitz.open(base / "main.pdf")
+          assert len(pdf) == 15, f"Expected 15 pages, got {len(pdf)}"
+          width, height = 320, 452
+          gap, margin, label = 16, 16, 20
+          sheet = Image.new("RGB", (margin*2 + 3*width + 2*gap, margin*2 + 5*(height+label) + 4*gap), "white")
+          draw = ImageDraw.Draw(sheet)
+          for i, page in enumerate(pdf):
+              pix = page.get_pixmap(matrix=fitz.Matrix(width/page.rect.width, height/page.rect.height), alpha=False)
+              tile = Image.frombytes("RGB", [pix.width,pix.height], pix.samples)
+              x = margin + (i%3)*(width+gap)
+              y = margin + (i//3)*(height+label+gap)
+              sheet.paste(tile, (x,y))
+              draw.rectangle((x,y,x+width,y+height), outline="#B0B8BE",width=1)
+              draw.text((x,y+height+3), f"Page {i+1}", fill="black")
+          sheet.save(base / "PHYS4055_Course_Overview_Contact_Sheet.jpg", quality=88, optimize=True)
+          (base / "main.pdf").replace(base / "PHYS4055_Course_Overview_15pp.pdf")
+          print("Verified a 15-page course overview and rendered thumbnail sheet.")
+          PY
+      - name: Publish PDF and contact sheet
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/reference_booklet/PHYS4055_Course_Overview_15pp.pdf exam_prep/reference_booklet/PHYS4055_Course_Overview_Contact_Sheet.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified 15-page PHYS4055 overview PDF and contact sheet'
+            git push
+          fi
