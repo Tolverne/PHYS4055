@@ -1,0 +1,71 @@
+
+\examquestion{2024}{2}{Zeeman-transition absorption as a magnetic-field sensor}{3}
+The problem supplies the steady-state Bloch inversion
+\[
+\langle\sigma_z\rangle_{\rm ss}
+=-\frac{\gamma^2+4\Delta(B)^2}{
+\gamma^2+4\Delta(B)^2+8\Omega^2},\qquad
+\Delta(B)=\kappa B.
+\]
+Here \(\Omega\) and \(\gamma\) are \emph{frequencies};
+the Hamiltonian's drive term must have energy units,
+i.e.\ effectively \(\hbar\Omega\sigma_x\), if the
+printed shorthand is missing \(\hbar\).
+
+\subsection*{(a) Probability of the ground state}
+Since \(\sigma_z=\ket e\bra e-\ket g\bra g\),
+\(P_e-P_g=\langle\sigma_z\rangle\) while \(P_e+P_g=1\).
+Therefore \(P_g=(1-\langle\sigma_z\rangle)/2\).
+Define \(D=\gamma^2+4\kappa^2 B^2+8\Omega^2\), giving
+\[
+P_g=\frac12\left(1+\frac{D-8\Omega^2}{D}\right)
+=\boxed{1-\frac{4\Omega^2}{
+\gamma^2+4\kappa^2B^2+8\Omega^2}}.
+\]
+On resonance \(B=0\), \(P_g\) is smallest; well away
+from resonance \(P_g\to1\).
+
+\subsection*{(b) What is measured?}
+The AC absorption signal is assumed proportional to \(P_g\).
+Calibrating the signal versus \(B\) gives a Lorentzian-shaped
+dip. For unknown perturbations near a known bias \(B_0\),
+\[
+P_g(B_0+\delta B)\simeq P_g(B_0)
++\left.\frac{\diff P_g}{\diff B}\right|_{B_0}\delta B.
+\]
+Measuring the absorption change then estimates
+\(\delta B\simeq \delta P_g/P'_g(B_0)\).
+The signal is \emph{even} in \(B\); its sign alone cannot
+distinguish \(+B\) from \(-B\). A known bias removes that ambiguity.
+
+\subsection*{(c) Determine the optimal linear operating point}
+Put \(C=\gamma^2+8\Omega^2\). Differentiate:
+\[
+\frac{\diff P_g}{\diff B}
+=\frac{32\Omega^2\kappa^2B}
+{(C+4\kappa^2B^2)^2}.
+\]
+The sensitivity magnitude is maximised where
+the second derivative is zero:
+\[
+\frac{\diff^2 P_g}{\diff B^2}
+=32\Omega^2\kappa^2
+\frac{C-12\kappa^2B^2}{(C+4\kappa^2 B^2)^3}=0.
+\]
+Thus \(12\kappa^2B_0^2=C\), so
+\[
+\boxed{B_0=\pm\frac{\sqrt{\gamma^2+8\Omega^2}}
+{2\sqrt3\,|\kappa|}.}
+\]
+\begin{cautionbox}
+\textbf{Dimensional check.} The numerator has units of
+frequency, so the expression for \(B_0\) must include
+division by \(\kappa\) (frequency per magnetic field).
+If the source print or text extraction omits this factor,
+the formula as printed cannot be dimensionally correct.
+The result above follows unambiguously from the supplied
+\(\Delta(B)=\kappa B\).
+\end{cautionbox}
+\solcheck{The slope vanishes at \(B=0\) and far off
+resonance. The inflection points at \(\pm B_0\) produce
+maximum local linear response.}

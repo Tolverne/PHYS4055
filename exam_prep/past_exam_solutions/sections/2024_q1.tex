@@ -1,0 +1,64 @@
+
+\examquestion{2024}{1}{Spin--orbit splitting of the \(\boldsymbol{{}^3D}\) term}{2}
+\subsection*{(a) Allowed values of \(J\)}
+The superscript \(3=2S+1\) gives \(S=1\); the letter \(D\) gives \(L=2\).
+Angular-momentum addition therefore allows
+\[
+\boxed{J=|L-S|,\ldots,L+S=1,2,3.}
+\]
+\subsection*{(b) Derive the energy formula}
+With \(\mathbf J=\mathbf L+\mathbf S\),
+\[
+\mathbf J^2=\mathbf L^2+\mathbf S^2+2\mathbf L\cdot\mathbf S,
+\qquad H_{\rm SO}=A\mathbf L\cdot\mathbf S.
+\]
+Using angular momenta in dimensionless \(\hbar\) units, the
+eigenvalues satisfy
+\[
+\boxed{\Delta E_J=\frac A2
+\{J(J+1)-L(L+1)-S(S+1)\}.}
+\]
+If angular-momentum operators retain SI dimensions, \(A\)
+here absorbs the required \(\hbar^{-2}\).
+
+\subsection*{(c) Evaluate all three energies and draw a level pattern}
+Since \(L(L+1)=6\) and \(S(S+1)=2\),
+\[
+\begin{array}{c|c|c|c}
+J&J(J+1)&\Delta E_J&\text{degeneracy }2J+1\\\hline
+1&2&\boxed{-3A}&3\\
+2&6&\boxed{-A}&5\\
+3&12&\boxed{+2A}&7
+\end{array}
+\]
+For \(A>0\) the energy levels are ordered \(J=1,2,3\)
+from lowest to highest. The adjacent intervals are
+\[
+\boxed{E_2-E_1=2A,\qquad E_3-E_2=3A}.
+\]
+They are \emph{not} equally spaced. A sketch:
+\[
+\begin{tikzpicture}[x=1cm,y=.48cm]
+\draw[-{Latex[length=2mm]}] (0,0)--(0,8) node[above]{energy};
+\draw[gray,very thick] (.7,3)--(2.5,3) node[right,black] {unsplit \({}^3D\)};
+\draw[-{Latex[length=2mm]},gray] (3.6,3)--(4.6,3);
+\draw[very thick,accent] (5,1)--(7,1) node[right,ink] {\({}^3D_1:-3A\)};
+\draw[very thick,accent] (5,3)--(7,3) node[right,ink] {\({}^3D_2:-A\)};
+\draw[very thick,accent] (5,6)--(7,6) node[right,ink] {\({}^3D_3:+2A\)};
+\end{tikzpicture}
+\]
+The degeneracy-weighted centre of gravity is unchanged:
+\(3(-3A)+5(-A)+7(2A)=0\).
+
+\subsection*{(d) Does spin--orbit coupling create more states?}
+No. The initial product basis has
+\((2L+1)(2S+1)=5\cdot3=15\) states.
+The split multiplets have
+\[
+\boxed{(2\cdot1+1)+(2\cdot2+1)+(2\cdot3+1)
+=3+5+7=15.}
+\]
+The interaction redistributes energies without changing
+Hilbert-space dimension.
+\solcheck{The weighted-energy sum is zero and total degeneracy
+is conserved. The ordering assumes the stated \(A>0\).}

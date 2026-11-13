@@ -1,0 +1,88 @@
+
+\examquestion{2024}{4}{Two-port cavity Langevin equation and photonic qubit encoding}{5}
+Given the cavity damping rate \(\gamma=\gamma_1+\gamma_2\),
+\[
+\dot a=-\frac{\gamma}{2}a+
+\sqrt{\gamma_1}A_{{\rm in},1}
++\sqrt{\gamma_2}A_{{\rm in},2}.
+\]
+\subsection*{(a) Fourier-domain intracavity field}
+Take
+\(\tilde a(\omega)=\int e^{-i\omega t}a(t)\diff t\),
+so \(\widetilde{\dot a}=i\omega\tilde a\).
+Collecting terms,
+\[
+\left(\frac{\gamma}{2}+i\omega\right)\tilde a
+=\sqrt{\gamma_1}\tilde A_{{\rm in},1}
++\sqrt{\gamma_2}\tilde A_{{\rm in},2},
+\]
+\[
+\boxed{\tilde a=
+\frac{\sqrt{\gamma_1}\tilde A_{{\rm in},1}
++\sqrt{\gamma_2}\tilde A_{{\rm in},2}}
+{\gamma/2+i\omega}}.
+\]
+
+\subsection*{(b) Field reflected from the first port}
+Use the specified boundary condition
+\(\tilde A_{{\rm out},1}=
+\sqrt{\gamma_1}\tilde a-\tilde A_{{\rm in},1}\).
+After substituting,
+\[
+\boxed{\tilde A_{{\rm out},1}=
+\frac{\gamma_1-\gamma/2-i\omega}{\gamma/2+i\omega}
+\tilde A_{{\rm in},1}
++\frac{\sqrt{\gamma_1\gamma_2}}{\gamma/2+i\omega}
+\tilde A_{{\rm in},2}.}
+\]
+The second input is the internal loss reservoir and is
+required in the \emph{operator} output, even if its
+mean coherent amplitude is zero.
+
+\subsection*{(c) Critical coupling at zero Fourier frequency}
+For \(\gamma_1=\gamma_2\), we have
+\(\gamma_1=\gamma/2\). Therefore the \emph{coherent
+reflection coefficient} at \(\omega=0\) is
+\[
+\boxed{r_1(0)=\frac{\gamma_1-\gamma/2}{\gamma/2}=0}.
+\]
+A coherent field incident at port 1 then has zero
+mean resonant reflected amplitude and, ideally, no
+reflected coherent intensity. Energy is lost through
+port 2 (the internal-loss channel); unavoidable reservoir
+vacuum fluctuations remain in the output operator.
+
+\subsection*{(d) Two dual-rail encodings}
+A dual-rail qubit places one photon in exactly one of
+two distinguishable optical modes.
+\begin{itemize}
+\item \textbf{Spatial path}: \(\ket{0_L}=\ket{1_a0_b}\),
+\(\ket{1_L}=\ket{0_a1_b}\). Natural for chip-based
+interferometers with spatially separate waveguides.
+\item \textbf{Polarisation modes}: \(\ket{0_L}=\ket{H}\),
+\(\ket{1_L}=\ket V\), i.e.\ occupancy of the \(H/V\)
+polarisation modes. Efficient in a single fibre/path
+where maintaining two spatial arms is inconvenient.
+\end{itemize}
+Path encoding is often robust to uniform polarisation
+rotations but sensitive to relative path phase;
+polarisation encoding avoids distinct paths but can
+suffer birefringence and polarisation drift.
+
+\subsection*{(e) Implement a Hadamard physically}
+For the logical basis, the Hadamard is
+\[
+H=\frac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
+\]
+In \textbf{path encoding}, a balanced beam splitter
+with the appropriate phase convention implements \(H\)
+(up to phase shifters). In \textbf{polarisation encoding},
+a half-wave plate with its fast axis at \(22.5^\circ\)
+to horizontal implements
+\(\ket H\mapsto(\ket H+\ket V)/\sqrt2\),
+\(\ket V\mapsto(\ket H-\ket V)/\sqrt2\),
+up to overall/relative phases set by conventions.
+\solcheck{At equal rates, the two-port cavity must
+still preserve the combined input/output commutation
+relations; discarding port 2 at the operator level
+would violate quantum noise balance.}

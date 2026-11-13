@@ -1,0 +1,66 @@
+
+\examquestion{2024}{3}{HOM bunching, energy conservation and photon statistics}{4}
+The balanced beam-splitter convention in the question is
+\[
+c=\frac{a+b}{\sqrt2},\qquad d=\frac{a-b}{\sqrt2},
+\quad\Longrightarrow\quad
+a^\dagger=\frac{c^\dagger+d^\dagger}{\sqrt2},
+\quad b^\dagger=\frac{c^\dagger-d^\dagger}{\sqrt2}.
+\]
+\subsection*{(a) Output for \(\ket{1,1}\)}
+Generate the input from vacuum:
+\[
+\ket{1,1}_{ab}=a^\dagger b^\dagger\ket{0,0}.
+\]
+On substitution,
+\[
+a^\dagger b^\dagger\ket0
+=\frac12[(c^\dagger)^2-(d^\dagger)^2]\ket0
+=\boxed{\frac{\ket{2,0}_{cd}-\ket{0,2}_{cd}}{\sqrt2}}.
+\]
+The \(\ket{1,1}_{cd}\) amplitude is exactly zero:
+two indistinguishable photons bunch.
+
+\subsection*{(b) Photon-number conservation for arbitrary inputs}
+Expand both output number operators:
+\begin{align*}
+c^\dagger c&=\tfrac12
+(a^\dagger a+a^\dagger b+b^\dagger a+b^\dagger b),\\
+d^\dagger d&=\tfrac12
+(a^\dagger a-a^\dagger b-b^\dagger a+b^\dagger b).
+\end{align*}
+All cross terms cancel, giving the operator identity
+\[
+\boxed{c^\dagger c+d^\dagger d=a^\dagger a+b^\dagger b}.
+\]
+With equal carrier frequencies this also conserves optical energy.
+
+\subsection*{(c) Number variance for adjacent Fock states}
+For \(\ket\psi=\alpha\ket n+\beta\ket{n+1}\),
+let \(q=|\beta|^2\). Then
+\[
+\langle n\rangle=(1-q)n+q(n+1)=n+q,
+\]
+\[
+\langle n^2\rangle=(1-q)n^2+q(n+1)^2
+=n^2+q(2n+1),
+\]
+so
+\[
+\boxed{\operatorname{Var}(n)=q-q^2=q(1-q)}.
+\]
+Compare with the mean: for a non-vacuum state
+\(\operatorname{Var}(n)<n+q=\langle n\rangle\).
+The only equality in this family occurs for the
+trivial vacuum \(n=q=0\).
+
+\subsection*{(d) Physical significance}
+Sub-Poissonian number fluctuations cannot arise from
+a mixture of classical coherent fields with a positive
+Glauber--Sudarshan \(P\) distribution; they are an
+operational signature of nonclassical light.
+A conventional coherent state instead has
+\(\operatorname{Var}(n)=\langle n\rangle\).
+\solcheck{In part (a), the two probabilities are \(1/2\)
+and \(1/2\), so they sum to 1. In part (c), the variance
+depends only on the probability \(q\), not the base integer \(n\).}
