@@ -1,0 +1,78 @@
+
+\section{AA-02: Zeeman slowing and the Doppler limit}
+\source{2025 PHYS4055 Exam, Question 2(d)--(e);
+Week 10 tutorial \texttt{Tutorial\_questions.pdf}, Question 2.}
+\subsection*{Given and modelling choice}
+Consider the 2025 Yb beam:
+\(M=1.73\times10^{-25}\) kg, source temperature
+\(T=300\) K, cooling wavelength \(\lambda=399\) nm,
+and excited-state lifetime \(\tau=5.5\) ns.
+The question does not define a unique initial velocity,
+so explicitly choose the 3D rms thermal speed
+\(v_{\rm rms}=\sqrt{3k_BT/M}\).
+This gives
+\[
+v_0=\sqrt{\frac{3(1.38065\times10^{-23})(300)}
+{1.73\times10^{-25}}}
+=\boxed{268\ {\rm m\,s^{-1}}}.
+\]
+The most probable speed \(\sqrt{2k_BT/M}\) would give a
+different stopping distance; state which convention you use.
+
+\subsection*{Step 1: maximum photon-scattering force}
+A saturated cycling transition can scatter at most
+approximately \(\Gamma/2\) photons per second,
+\(\Gamma=1/\tau\). One absorbed photon transfers
+momentum \(p_\gamma=h/\lambda\) opposite the atomic beam:
+\[
+F_{\rm max}=\frac{h}{2\lambda\tau},\quad
+a_{\rm max}=\frac{h}{2M\lambda\tau}.
+\]
+The question specifies \emph{half} the maximum
+deceleration:
+\[
+\boxed{a=\frac{a_{\rm max}}2
+=\frac{h}{4M\lambda\tau}
+\simeq4.36\times10^{5}\ {\rm m\,s^{-2}}}.
+\]
+
+\subsection*{Step 2: stopping length and photon count}
+Using \(v_f^2=v_0^2-2aL\) with \(v_f=0\):
+\[
+\boxed{L=\frac{v_0^2}{2a}
+\simeq0.0823\ {\rm m}=8.23\ {\rm cm}}.
+\]
+Each counter-propagating photon changes the
+atom's momentum by \(h/\lambda\), so the required
+net momentum \(Mv_0\) corresponds to
+\[
+\boxed{N_{\gamma}\simeq\frac{Mv_0}{h/\lambda}
+=\frac{Mv_0\lambda}{h}
+\simeq2.79\times10^4\ \text{photons}}.
+\]
+Spontaneous emission has zero \emph{mean} momentum
+along the slowing axis but causes recoil heating.
+
+\subsection*{Step 3: Doppler cooling and Zeeman resonance}
+The two-level Doppler cooling limit is
+\[
+\boxed{T_D=\frac{\hbar\Gamma}{2k_B}
+=\frac{h}{4\pi k_B\tau}
+\simeq6.94\times10^{-4}\ {\rm K}=0.694\ {\rm mK}}.
+\]
+In optical molasses, red-detuned counter-propagating
+beams are seen closer to resonance by an atom moving
+against them, creating velocity-dependent damping.
+As an atom slows, its Doppler shift changes; a
+Zeeman slower uses a position-dependent magnetic field
+to shift the atomic transition and maintain resonance.
+For approximately constant deceleration,
+\(v(z)=\sqrt{v_0^2-2az}\), motivating a
+square-root magnetic-field profile when the Zeeman
+shift is roughly linear in \(B\).
+
+\checkmethod{Scattering force, slowing distance and Doppler
+temperature depend on different quantities. A small
+lifetime increases maximum force but also increases
+the simple two-level Doppler limit. Include the factor
+of 1/2 when the question asks for half maximum acceleration.}

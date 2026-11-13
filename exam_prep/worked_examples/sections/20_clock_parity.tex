@@ -1,0 +1,75 @@
+
+\section{AA-03: Cesium clock splitting and weak-induced E1 amplitude}
+\source{Week 13 clock slides; Week 12 atomic-parity-violation slides.}
+\subsection*{Example A: the clock's hyperfine states}
+For \(^{133}\mathrm{Cs}\) ground state \({}^2S_{1/2}\),
+\(J=1/2\) and nuclear spin \(I=7/2\). Therefore
+\[
+\boxed{F=3,4},\qquad
+I(I+1)=63/4,\quad J(J+1)=3/4.
+\]
+Using the magnetic-dipole hyperfine formula,
+\[
+\begin{aligned}
+E_3&=\frac A2\left(12-\frac{63}{4}-\frac34\right)
+=\boxed{-\frac{9A}{4}},\\
+E_4&=\frac A2\left(20-\frac{63}{4}-\frac34\right)
+=\boxed{\frac{7A}{4}} .
+\end{aligned}
+\]
+The clock frequency is determined by
+\[
+\boxed{E_4-E_3=4A=h\nu_{\rm Cs}},\qquad
+\nu_{\rm Cs}=9\,192\,631\,770\ {\rm Hz}.
+\]
+Consequently \(A/h=\nu_{\rm Cs}/4
+\simeq2.29816\ \mathrm{GHz}\).
+The actual clock transition is
+\(\ket{F=3,m_F=0}\leftrightarrow\ket{F=4,m_F=0}\):
+both \(m_F=0\) states have no linear Zeeman shift
+in the weak-field approximation, reducing
+magnetic-field sensitivity.
+\(\sum_F(2F+1)=7+9=16=(2I+1)(2J+1)\)
+checks the state count.
+
+\subsection*{Example B: weak interaction opens a forbidden line}
+Suppose \(\ket i\) and \(\ket f\) have the \emph{same} parity.
+An electric dipole \(d\) is parity-odd, therefore
+\(\langle f|d|i\rangle=0\) if parity is exact.
+Introduce a weak parity-violating perturbation \(H_W\)
+that mixes the initial state with an opposite-parity
+state \(\ket n\):
+\[
+\ket{\tilde i}\simeq\ket i+
+\epsilon\ket n,\qquad
+\epsilon=\frac{\langle n|H_W|i\rangle}{E_i-E_n}.
+\]
+To first order,
+\[
+\boxed{\langle f|d|\tilde i\rangle
+\simeq\epsilon\langle f|d|n\rangle}.
+\]
+For an \emph{illustrative} ratio
+\(|\epsilon|=10^{-8}\) and allowed
+\(|\langle f|d|n\rangle|=1\ e a_0\),
+the induced amplitude is only
+\(10^{-8}ea_0\); a measurement needs a
+sensitive interference technique.
+In general, corrections to both initial and final
+states contribute, with a sum over intermediate states.
+
+\subsection*{Why this connects to EDM experiments}
+An intrinsic permanent EDM along angular momentum
+would violate parity and time reversal.
+An external electric field gives
+\(H_{\rm EDM}=-\mathbf d\cdot\mathbf E\).
+Field reversal is used to distinguish an EDM-like
+signal from many conventional shifts. Atomic
+structure and symmetry selection rules are thus
+essential for precision fundamental-physics tests.
+
+\checkmethod{Do not confuse a \emph{clock}
+transition frequency with the frequency of an
+allowed optical E1 line. Weak perturbations can
+produce tiny transitions that are exactly forbidden
+in the unperturbed parity basis.}
