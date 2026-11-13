@@ -1,0 +1,62 @@
+
+\section{AT-02: All terms for two equivalent \(d\) electrons}
+\source{2026 Atomic Assignment 3, Question 2; Week 8 angular-momentum lectures.}
+\subsection*{Step 1: count allowed antisymmetric states}
+A \(d\) electron has \(l=2\), with five \(m_l\) values
+and two spin projections: 10 spin-orbitals. Two equivalent
+electrons cannot occupy the same spin-orbital,
+so there are
+\[
+\boxed{N_{\rm microstates}=\binom{10}{2}=45}
+\]
+independent antisymmetric states. This count must equal
+the total degeneracy of the final terms.
+
+\subsection*{Step 2: couple spatial and spin angular momenta}
+The orbital total can be
+\(L=0,1,2,3,4\); two spins \(s=1/2\) give
+\(S=0\) (antisymmetric singlet) or \(S=1\)
+(symmetric triplet). For two identical \(l=2\)
+electrons, exchanging their positions in the
+coupled orbital state contributes \((-1)^{2l-L}=(-1)^L\).
+Fermionic antisymmetry requires:
+\[
+\begin{array}{c|c|l}
+\text{Orbital exchange}&\text{Spin exchange}&\text{Allowed }L,S\\\hline
+L\text{ even (symmetric)}&S=0\text{ (antisymmetric)}&
+{}^1S,\ {}^1D,\ {}^1G\\
+L\text{ odd (antisymmetric)}&S=1\text{ (symmetric)}&
+{}^3P,\ {}^3F
+\end{array}
+\]
+
+\subsection*{Step 3: attach the total electronic \(J\)}
+For each term, \(J=|L-S|,\ldots,L+S\):
+\[
+\boxed{\begin{gathered}
+{}^1S_0,\quad {}^1D_2,\quad{}^1G_4,\\
+{}^3P_{0,1,2},\quad{}^3F_{2,3,4}.
+\end{gathered}}
+\]
+Check all degeneracies:
+\[
+\underbrace{1}_{^1S}+\underbrace5_{^1D}
++\underbrace9_{^1G}+\underbrace{(1+3+5)}_{^3P}
++\underbrace{(5+7+9)}_{^3F}
+=\boxed{45}.
+\]
+
+\subsection*{Step 4: apply Hund's rules with their caveats}
+First maximise total spin \(S\), favouring triplets;
+next maximise \(L\), favouring the \({}^3F\) term;
+since \(d^2\) is less than half full, lowest \(J\)
+is favoured within that term:
+\[
+\boxed{\text{Predicted ground term: }{}^3F_2}.
+\]
+These rules do not uniquely order \emph{all}
+excited terms. Consult the specified species in
+the NIST Atomic Spectra Database for the measured order.
+\checkmethod{Only listing \(L=0,\ldots,4\) and \(S=0,1\)
+overcounts forbidden states. Exchange antisymmetry and
+the 45-microstate check are essential.}

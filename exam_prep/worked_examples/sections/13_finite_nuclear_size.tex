@@ -1,0 +1,65 @@
+
+\section{AT-01: Finite nuclear size in a hydrogen-like ion}
+\source{2026 Atomic Assignment 3 (\texttt{PHYS4055\_A3.pdf}), Question 1(a).}
+\subsection*{Step 1: construct the perturbing potential}
+In atomic units (\(a_0=1,\ e=\hbar=m_e=1\)),
+a point nucleus has potential \(V_0(r)=-Z/r\).
+For uniform nuclear charge in a sphere of radius \(R\),
+\[
+V_R(r)=
+\begin{cases}
+-\dfrac{Z}{2R}\left(3-\dfrac{r^2}{R^2}\right),&r<R,\\[1mm]
+-\dfrac Zr,&r\ge R .
+\end{cases}
+\]
+The perturbation is therefore
+\[
+\Delta V(r)=
+\begin{cases}
+\displaystyle Z\!\left(\frac1r-\frac{3}{2R}
++\frac{r^2}{2R^3}\right),&r<R,\\
+0,&r\ge R .
+\end{cases}
+\]
+It is nonnegative inside the nucleus: a distributed
+charge is less singular than a point charge.
+
+\subsection*{Step 2: use first-order perturbation theory}
+For sufficiently small \(R\), approximate an \(ns\)
+wavefunction as constant inside the nucleus.
+Its nucleus density for a hydrogenic state is
+\(|\psi_{ns}(0)|^2=Z^3/(\pi n^3)\).
+Then
+\[
+\Delta E_{ns}^{(1)}
+\simeq4\pi|\psi_{ns}(0)|^2
+\int_0^R r^2\Delta V(r)\,dr .
+\]
+Do the integral explicitly:
+\begin{align*}
+\int_0^R r^2\Delta V(r)\,dr
+&=Z\int_0^R
+\left(r-\frac{3r^2}{2R}+\frac{r^4}{2R^3}\right)dr\\
+&=ZR^2\left(\frac12-\frac12+\frac1{10}\right)
+=\frac{ZR^2}{10}.
+\end{align*}
+Thus
+\[
+\boxed{\Delta E_{\rm fns}(ns)\simeq
+\frac{2Z^4R^2}{5n^3}
+=\frac{2Z^2}{5n^3}(ZR)^2\quad\text{(Hartree)}}.
+\]
+The result is positive and scales as \(R^2\);
+it becomes negligible for a point nucleus.
+The radius \(R\) here is the \emph{uniform-sphere} radius,
+\(R=\sqrt{5/3}\,R_{\rm rms}\).
+
+\subsection*{Physical check and limitation}
+For \(l>0\), the wavefunction vanishes at the origin in
+the nonrelativistic central-field model, and the leading
+small-\(R\) correction is suppressed relative to \(s\)-states.
+For high-\(Z\) ions, relativistic wavefunctions and more
+accurate nuclear charge models may be needed.
+\checkmethod{Write the \emph{difference} between finite-
+and point-nucleus potentials, not the full Coulomb energy.
+Use consistent atomic units and the correct radial measure \(r^2dr\).}

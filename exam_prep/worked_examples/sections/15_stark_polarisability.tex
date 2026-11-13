@@ -1,0 +1,65 @@
+
+\section{AT-03: Hydrogenic Stark shift from closure}
+\source{2026 Atomic Assignment 3, Question 3(a)--(c).}
+\subsection*{Step 1: write the perturbation and parity argument}
+An atom in a uniform electric field \(\mathcal E\hat z\)
+has perturbation \(H_E=e\mathcal E z\) for an electron,
+because its dipole is \(-e\mathbf r\).
+A non-degenerate \(1s\) state has even parity, so
+\(\langle1s|z|1s\rangle=0\) and the first-order Stark
+shift vanishes. In second order,
+\[
+\Delta E_{1s}^{(2)}=
+\mathcal E^2\sum_{m\ne1s}
+\frac{|\langle m|ez|1s\rangle|^2}{E_{1s}-E_m}
+=-\frac12\alpha\mathcal E^2.
+\]
+Hence, in atomic units,
+\[
+\boxed{\alpha=2\sum_{m\ne1s}
+\frac{|\langle m|z|1s\rangle|^2}{E_m-E_{1s}}}.
+\]
+
+\subsection*{Step 2: approximate all denominators}
+As requested in the assignment, take
+\(E_m-E_1\simeq E_2-E_1=3Z^2/8\) Hartree.
+Using completeness,
+\[
+\sum_{m\ne1s}|\langle m|z|1s\rangle|^2
+=\langle1s|z^2|1s\rangle
+-|\langle1s|z|1s\rangle|^2 .
+\]
+The second term is zero by parity. Spherical symmetry
+gives \(\langle z^2\rangle=\langle r^2\rangle/3\).
+For the hydrogenic \(1s\) orbital,
+\(\langle r^2\rangle=3/Z^2\) in Bohr-radius units.
+Therefore \(\langle z^2\rangle=1/Z^2\), and
+\[
+\boxed{\alpha_{\rm approx}
+=\frac{2(1/Z^2)}{3Z^2/8}
+=\frac{16}{3Z^4}\ a_0^3}.
+\]
+
+\subsection*{Step 3: numerical checks and interpretation}
+For hydrogen, \(Z=1\):
+\[
+\alpha_{\rm approx}=\frac{16}{3}a_0^3
+=5.333\,a_0^3\simeq7.903\times10^{-25}\ {\rm cm}^3,
+\]
+using \(a_0^3=1.48185\times10^{-25}\ {\rm cm}^3\).
+The exact \(1s\) result is
+\(\alpha_{\rm exact}=4.5\,a_0^3\), so this crude
+denominator approximation overestimates it by \(18.5\%\).
+
+For hydrogen-like \(\mathrm{Rb}^{36+}\) (\(Z=37\)),
+\[
+\boxed{\alpha_{\rm approx}=
+\frac{16}{3(37)^4}a_0^3
+=2.846\times10^{-6}a_0^3
+\simeq4.217\times10^{-31}\ {\rm cm}^3}.
+\]
+The tightly bound single \(1s\) electron is much less
+polarisable than valence electrons in \emph{neutral} Rb.
+\checkmethod{Use parity before a long sum; in closure,
+exclude the initial state explicitly. The \(Z^{-4}\)
+scaling is a powerful plausibility test.}
