@@ -1,0 +1,93 @@
+Source: source_material/tutorials/Week1TutorialQuestions (1).pdf
+Pages: 2
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                   PHYS4055 Week 1 Tutorial Notes
+
+                                              Josephine Dias∗
+                                                (Dated: July 28, 2026)
+
+
+
+
+
+                         Question 1: Displacement of the annihilation operator
+
+
+  The displacement operator is defined by
+                                                       (          )
+                                            ˆD(α) = exp  αˆa† −α∗ˆa  ,                                            (1)
+
+where α is a complex number and
+
+                                                                                      [ˆa, ˆa†] = 1.                                                   (2)
+
+  Use the Baker–Campbell–Hausdorff relation given by
+
+                           Xˆ   X                                     e  ˆY e−ˆ = ˆY + [ ˆX, ˆY ]
+                                               1
+                             + 2![ ˆX, [ ˆX, ˆY ]]
+                                               1
+                             + 3![ ˆX, [ ˆX, [ ˆX, ˆY ]]] + · · · .                                     (3)
+
+for any two operators ˆX and ˆY , to show that
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α .                                             (4)
+
+
+
+                              Question 2: Coherent states as eigenstates
+
+
+ A coherent state is defined by
+
+                                      |α⟩= ˆD(α)|0⟩,                                                 (5)
+
+where |0⟩is the vacuum state.
+  Using the displacement-operator identity
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α,                                              (6)
+
+show that |α⟩is an eigenstate of the annihilation operator ˆa.
+
+
+
+                             Question 3: Electric field of a coherent state
+
+
+  Consider a single travelling optical mode with electric-field operator
+                                                      (                                                 ˆE(z, t) = eE0  ˆaeiϕ + ˆa†e−iϕ) ,                                         (7)
+
+where
+                         √
+                                              ℏω
+                                        E0 =                                                           (8)
+                                                    2ε0V
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                     2
+
+
+and
+
+                                      ϕ = kz −ωt.                                                  (9)
+
+  Here, e is the polarization vector, V  is the quantization volume, and ω is the angular frequency of the mode.
+  For a coherent state satisfying
+
+                                               ˆa|α⟩= α|α⟩,                                               (10)
+
+calculate the expectation value
+
+                                                   ⟨ˆE(z, t)⟩α = ⟨α|ˆE(z, t)|α⟩.                                         (11)
+
+  Write
+
+                                    α = |α|eiθ                                                 (12)
+
+and show that the expectation value has the form of a classical oscillating electric field.

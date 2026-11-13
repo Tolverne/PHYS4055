@@ -1,0 +1,252 @@
+Source: source_material/past_exams/2025/Semester_Two_Examinations_2025_PHYS4055.pdf
+Pages: 5
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+Semester 2 Examinations, 2025                                          PHYS4055
+
+
+                                           Venue          ____________________
+
+                                                Seat Number     __________
+
+                                                  Student Number   |__|__|__|__|__|__|__|__|
+                                                  Family Name     ____________________
+ This exam paper must not be removed from the venue
+                                                               First Name       ____________________
+
+
+               School of Mathematics & Physics
+               Semester 2 Examinations, 2025
+        PHYS4055 Atomic Physics and Quantum Optics
+
+                           This paper is for St Lucia Campus students.
+
+
+ Examination Duration: 120 minutes                                   For Examiner Use Only
+
+ Planning Time:       10 minutes                                               Question      Mark
+
+ Exam Conditions:
+
+ •Any written or printed material is permitted; material may also be
+ annotated.
+ •Casio FX82 series or UQ approved and labelled calculator only
+ •During Planning Time - Students are encouraged to review and plan
+ responses to the exam questions
+
+ Materials Permitted in the Exam Venue:
+ (No electronic aids are permitted e.g. laptops, phones)
+
+ Any additional written or printed material is permitted; material may also
+ be annotated.
+
+ Materials to be supplied to Students:
+ Additional exam materials (e.g. answer booklets, rough paper) will
+ be provided upon request.
+
+ 1 x 14-Page Answer Booklet
+
+ Instructions to Students:
+  If you believe there is missing or incorrect information impacting
+ your ability to answer any question, please state this when writing
+ your answer.
+
+ There are FOUR questions. Answer any THREE.
+
+
+
+
+
+                                                                 Total _________
+
+
+
+
+
+                                  Page 1 of 5
+
+======== PAGE 2 ========
+Semester 2 Examinations, 2025                                               PHYS4055
+
+
+
+Question 1
+
+
+(10 marks)
+
+
+In this question, we look at the hyperfine splitting of levels, which occurs due to the interaction of
+atomic electrons with the nucleus.
+
+We will consider the atom with electronic term 2P1/2 and nuclear spin I = 5/2.
+
+
+  (a) (1 mark) What are the possible values of the total atomic angular momentum F, where F =
+      I + J, with I and J the nuclear spin and electronic angular momentum?
+
+ (b) (2 marks) The Hamiltonian for the magnetic hyperfine interaction may be expressed as the
+      scalar product of the nuclear spin and electronic angular momentum, H = AI · J, where A is
+     the magnetic hyperfine constant.
+
+    Show that the hyperfine energy shift is given by
+
+                      A
+                 ∆E =   F(F + 1) −I(I + 1) −J(J + 1)   ,                      (1)
+                                 2
+
+     showing all working.
+
+  (c) (2 marks) Hence, find an expression for the energy difference between hyperfine levels for the
+     considered term, and sketch an energy-level diagram.
+
+ (d) (3 marks) Consider that a weak magnetic field is applied to the atom.
+
+         (i) (1 mark) Show how your energy-level diagram from (c) is modified in this field, justifying
+          your answer.
+
+         (ii) (1 mark) How many levels of different energy are there? Explain your result.
+
+        (iii) (1 mark) Describe, with the aid of a diagram, the pattern of the energy-level splitting if
+          the magnetic field were strong rather than weak.
+
+  (e) (2 marks) As well as the magnetic hyperfine interaction, in general there is also the possibility of
+      contributions to the hyperfine splitting from interaction of electrons with higher-order nuclear
+     moments.
+
+     Using the Wigner-Eckart theorem, briefly explain why there will or will not be a contribution
+      to the hyperfine splitting from higher-order nuclear moments for the atom considered in this
+      question.
+
+
+
+
+
+Next question over ...                  Page 2 of 5
+
+======== PAGE 3 ========
+Semester 2 Examinations, 2025                                               PHYS4055
+
+
+
+Question 2
+
+
+(10 marks)
+
+  (a) (2 marks) The figure below shows a partial level diagram of Yb ([Xe]4f 146s2). Identify all the
+     E1-allowed transitions in this system and mark them on the diagram below.
+
+
+
+
+
+ (b) (1 mark) A transition between one of the excited states and the ground state can be used as
+     a clock transition. Propose which one (there is more than one suitable transition, but one is
+       sufficient). Explain your answer.
+
+  (c) (1 mark) In order to construct an atomic clock the atoms must be decelerated and trapped.
+     Propose a suitable transition for this. Explain your answer.
+
+ (d) (4 marks) An atomic beam of Yb (M=1.73×10−25 kg) is produced in a source at 300 K and
+     slowed by counter-propagating laser radiation, using the transition that you deemed suitable
+      for laser-cooling. Assume that the wavelength of this transition is 399 nm and the lifetime of
+     the excited level is 5.5 ns.
+
+         (i) (1 mark) What is the role of the magnet in the Zeeman slower?
+
+         (ii) (2 marks) What is the stopping distance at half the maximum deceleration?
+
+        (iii) (1 mark) How many photons are scattered to stop the atom?
+
+    h = 6.62607 × 10−34 J s  ; kB = 1.38065 × 10−23 J/K
+
+  (e) (2 marks) After the Zeeman slowing, the atoms are cooled in optical molasses.
+
+         (i) (1 mark) Why are the lasers in optical molasses red detuned?
+
+         (ii) (1 mark) What is the Doppler-limit temperature for this atom, assuming the cooling is
+         done on the transition discussed above?
+
+Next question over ...                  Page 3 of 5
+
+======== PAGE 4 ========
+Semester 2 Examinations, 2025                                               PHYS4055
+
+
+
+Question 3
+
+
+(10 marks)
+
+A beam-splitter is an optical device with two input modes and two output modes. Consider a 50:50
+beam splitter with input modes 1 and 2 and output modes 3 and 4. This beam-splitter combines the
+            √          √
+modes as ˆc =   ˆa + ˆb /  2 and ˆd =   ˆa −ˆb /  2 .
+
+                                                      √  (|2, 0⟩+ |0, 2⟩)? (a) (3 marks) What output state is expected for the input state |Ψin⟩=  1                                                                                           2
+ (b) (2 marks) Calculate the probabilities P20, P02, and P11 of detecting 2 photons in  ˆc, 2 photons
+     in ˆd, or one photon in each output port.
+
+ (c) (2 marks) Briefly remark on the physical significance of the detection probabilities in the previous
+     question.
+
+                                           √  (|1, 1⟩+ |2, 0⟩). Derive the probability (d) (3 marks) Suppose we instead input the state |Φin⟩=  1                                                                         2
+     P11 of detecting one photon in each output mode after the beam splitter.
+
+
+
+
+
+Next question over ...                  Page 4 of 5
+
+======== PAGE 5 ========
+Semester 2 Examinations, 2025                                               PHYS4055
+
+
+
+Question 4
+
+
+(10 marks)
+
+In a frame rotating at the optical frequency, a single optical cavity mode interacting with an external
+field through a cavity mirror can be described by the quantum Langevin equation:   ˙ˆa = −γ/2 ˆa +
+√γ ˆAin, where  ˆa is the annihilation operator for the cavity mode, γ represents the coupling rate
+through the mirror and ˆAin is the annihilation operator representing the input field.
+
+Now suppose we introduce a pumped non-linear crystal inside the cavity that induces the interaction
+Hamiltonian Hi = iℏχ2(ˆa2 −ˆa†2), where χ is a real number.
+
+ (a) (2 marks) Show that the quantum Langevin equation describing this cavity mode is now:
+                                                                                              ˙ˆa = −χ ˆa† −γ/2 ˆa + √γ ˆAin .                              (2)
+
+    Show all working.
+
+ (b) (3 marks) Find the solution to the above Langevin equation for the amplitude quadrature of
+     the cavity mode in the Fourier domain, ˜X+ = ˜a(ω) + ˜a†(ω).
+
+ (c) (2 marks) Using the input/output relations, show that the amplitude quadrature of the output
+      field is given by:
+                                       γ/2 −iω −χ
+                                   ˜X+out =             ˜X+in .                                (3)
+                                       γ/2 + iω + χ
+
+ (d) (1 marks) Under what conditions will the spectral variance of the output field, V + = |⟨˜X+out⟩|2,
+    be squeezed?
+
+Suppose Alice and Bob, via some protocol, are able to share maximally entangled photonic qubits
+(i.e. Bell pairs) between them.
+
+ (e) (2 marks) By sequentially measuring the entangled photon pairs in the same basis they can
+     generate a correlated string of bits. Describe why the resulting bit string is random and secret.
+
+
+
+
+
+                  END OF EXAMINATION
+
+                                     Page 5 of 5

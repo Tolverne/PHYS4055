@@ -1,0 +1,110 @@
+Source: source_material/tutorials/Week6TutorialQuestions (1).pdf
+Pages: 2
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                  PHYS4055 Week 6 Tutorial Questions
+
+                                              Josephine Dias∗
+                                             (Dated: September 1, 2026)
+
+
+
+
+
+                       Question 1: Two atoms coupled to a common cavity mode
+
+
+  Two identical two-level atoms are resonantly coupled, with equal coupling strength g, to the same cavity mode. In
+the interaction picture, the Tavis–Cummings Hamiltonian is
+                                        (         )
+                                                   ˆHI = ℏg   ˆa ˆJ+ + ˆa† ˆJ−   ,
+
+where
+
+                                                       ˆJ± = ˆσ(1)± + ˆσ(2)±  .
+
+  The cavity initially contains no photons, atom 1 is excited and atom 2 is in its ground state:
+
+                                        |Ψ(0)⟩= |e, g; 0⟩.
+
+  Define the symmetric and antisymmetric single-excitation states
+
+                                                       |e, g⟩+ |g, e⟩                |e, g⟩−|g, e⟩
+                          |S⟩=   √          ,    |A⟩=   √          .
+                                           2                     2
+
+   1. Write the initial atomic state |e, g⟩as a superposition of |S⟩and |A⟩.
+
+   2. Show that
+                            √
+                                      ˆJ−|S⟩=   2|g, g⟩,    ˆJ−|A⟩= 0.
+
+   3. Explain why the symmetric state interacts with the cavity while the antisymmetric state does not.
+
+   4. The symmetric component evolves according to
+                           √         √
+                                         |S; 0⟩−→cos(  2gt)|S; 0⟩−i sin(  2gt)|g, g; 1⟩,
+
+     while |A; 0⟩does not evolve. Write the complete atom–cavity state at time t.
+
+   5. Calculate the expected number of photons in the cavity,
+
+                                                    ⟨ˆncav⟩= ⟨ˆa†ˆa⟩,
+
+     and the expected total number of excited atoms,
+                                       ⟨             ⟩
+                                         ⟨ˆNat⟩=   ˆσ(1)+  ˆσ(1)−+ ˆσ(2)+  ˆσ(2)−     .
+
+      Verify that the total number of excitations is conserved.
+
+   6. What is the maximum probability of finding one photon in the cavity? Explain why the initial atomic excitation
+     cannot be transferred completely to the cavity.
+
+   7. Calculate the probability that each atom is excited as a function of time. Show that, at an appropriate time,
+     the excitation is transferred completely from atom 1 to atom 2.
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                     2
+
+
+                          Question 2: Conditional filtering and state overlap
+
+
+ A source prepares one of the two non-orthogonal states
+
+                                               2|0⟩± |1⟩
+                                   |ψ±⟩=  √       .
+                                                      5
+
+  When a particular detector result occurs, the following conditional operation is applied:
+
+                                               1
+                                                     ˆKs = 2|0⟩⟨0| + |1⟩⟨1|.
+
+The label “s” denotes the successful detector result.
+
+   1. Calculate the initial overlap ⟨ψ+|ψ−⟩. Can the two input states be distinguished perfectly?
+
+   2. Calculate the unnormalised output state ˆKs|ψ±⟩.
+
+   3. Find the probability of success for each input state.
+
+   4. Normalise the successful output states and calculate their overlap.
+
+   5. The operation has apparently transformed two non-orthogonal states into orthogonal states. Explain why this
+     does not mean that a deterministic physical operation can always distinguish non-orthogonal states perfectly.
+
+   6. The other measurement result is represented by
+                               √
+                                                      3
+                                                                ˆKf =     |0⟩⟨0|.
+                                                     2
+
+     Determine the conditional output when this result occurs and explain what information it provides about the
+      input.

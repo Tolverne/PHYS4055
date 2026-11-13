@@ -1,0 +1,111 @@
+Source: source_material/tutorials/Week2TutorialQuestions (1).pdf
+Pages: 2
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                  PHYS4055 Week 2 Tutorial Questions
+
+                                              Josephine Dias∗
+                                               (Dated: August 4, 2026)
+
+
+
+
+
+                               Question 1: Beam-splitter transformation
+
+  Consider two independent bosonic modes with annihilation operators ˆa and ˆb, satisfying
+
+                                                             [ˆa, ˆa†] = [ˆb,ˆb†] = 1,        [ˆa,ˆb] = [ˆa,ˆb†] = 0.
+
+ A lossless beam splitter is described by the unitary operator
+                                                   [ (
+                                              ˆUB = exp θ   ˆa†ˆb −ˆaˆb†)] .
+
+  The Baker–Campbell–Hausdorff relation may be written as
+
+                    Aˆ   A               1            1                         e ˆBe−ˆ = ˆB + [ ˆA, ˆB] +    ˆA, [ ˆA, ˆB]] +    ˆA, [ ˆA, [ ˆA, ˆB]]] + · · · .                                                          2![              3![
+  Using this relation:
+
+   1. Calculate the first four nested commutators required to evaluate
+                                                         ˆUBˆa ˆU B†  and   ˆUBˆbˆU B.†
+
+   2. Group the resulting series into sine and cosine expansions and show that
+                                                        ˆUBˆa ˆU B† = ˆa cos θ −ˆb sin θ,
+
+                                                          ˆUBˆbˆU B† = ˆa sin θ + ˆb cos θ.
+
+   3. Defining the beam-splitter transmissivity as
+
+                                                 η = cos2 θ,
+
+     show that the output-mode operators are
+                           √
+                                                                                       ˆa′ = √η ˆa −  1 −η ˆb,
+
+                        √
+                                                                                               ˆb′ =   1 −η ˆa + √η ˆb.
+
+
+
+                       A.  Question 2: Energy conservation at a beam splitter
+
+
+  Consider a lossless beam splitter acting on two optical modes. The input and output mode operators are related
+by
+                          √
+                                                                                  ˆa′ = √η ˆa −  1 −η ˆb,
+
+and
+                       √
+                                                                                          ˆb′ =   1 −η ˆa + √η ˆb,
+
+where 0 ≤η ≤1 is the beam-splitter transmissivity.
+  The photon-number operators of the two output modes are
+                                                     ˆNa′ = ˆa′†ˆa′,      ˆNb′ = ˆb′†ˆb′.
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                   2
+
+ 1. Write down the transformed creation operators ˆa′† and ˆb′†.
+
+ 2. Calculate ˆNa′ explicitly in terms of the input-mode operators ˆa, ˆa†, ˆb, and ˆb†.
+
+ 3. Similarly, calculate ˆNb′ in terms of the input-mode operators.
+
+ 4. By adding your results, show that
+
+                                                          ˆNa′ + ˆNb′ = ˆNa + ˆNb,
+
+   where
+
+                                                  ˆNa = ˆa†ˆa,      ˆNb = ˆb†ˆb.
+
+
+
+                                  B.  Question 3: Partial trace
+
+
+A single photon passes through a balanced beam splitter, producing the two-mode state
+
+                                           1
+                                         |ψ⟩ab = √  (|1⟩a|0⟩b + |0⟩a|1⟩b) .
+                                            2
+
+ 1. Write down the two-mode density operator
+
+                                                                     ˆρab = |ψ⟩ab⟨ψ|.
+
+ 2. Suppose that we only have access to mode a. Calculate its reduced density operator by tracing over mode b:
+
+                  ∑1
+                                                           ˆρa = Trb(ˆρab) =     b⟨n|ˆρab|n⟩b.
+                                                    n=0
+
+ 3. What is the probability of detecting zero photons in mode a? What is the probability of detecting one photon?
+
+ 4. Is the reduced state ˆρa pure or mixed?

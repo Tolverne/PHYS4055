@@ -1,0 +1,168 @@
+Source: source_material/tutorials/Week5TutorialQuestions(1) (1).pdf
+Pages: 3
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                  PHYS4055 Week 5 Tutorial Questions
+
+                                              Josephine Dias∗
+                                              (Dated: August 26, 2026)
+
+
+
+
+
+                  Tutorial Question 1: A Pure-Loss Channel and its Kraus Representation
+
+
+ A single-rail photonic qubit is prepared in the state
+
+                                   |ψ⟩S = α|0⟩S + β|1⟩S,     |α|2 + |β|2 = 1.                                   (1)
+
+ A pure-loss channel with transmissivity 0 ≤η ≤1 is modelled by coupling the system to an environment initially
+in the vacuum state |0⟩E. The joint system–environment evolution is
+
+                                    |0⟩S|0⟩E −→|0⟩S|0⟩E,                                                         (2)
+                            p
+                                    |1⟩S|0⟩E −→√η |1⟩S|0⟩E +  1 −η |0⟩S|1⟩E.                                  (3)
+
+   1. Find the joint system–environment state after the interaction.
+
+
+New tool: Kraus representation
+  In this problem, the environment is not accessed or measured. The output state of the system is obtained by tracing
+over the environment:
+                                                h                   i
+                                                                         ˆρ′S = TrE  ˆUη (ˆρS ⊗|0⟩E⟨0|) ˆU η†  .                                        (4)
+
+  To evaluate the partial trace, choose an orthonormal basis {|j⟩E} for the environment and insert
+                 X
+                                                                ˆIE =     |j⟩E⟨j|.                                                (5)
+                                                                           j
+
+  The reduced system state can then be written as
+              X
+                                                                     ˆρ′S =    E⟨j| ˆUη (ˆρS ⊗|0⟩E⟨0|) ˆU η|j⟩E†                                          (6)
+                                                             j
+              X
+                        =     ˆKj ˆρS ˆK†j ,                                                         (7)
+                                                             j
+
+where
+
+                                                       ˆKj = E⟨j| ˆUη|0⟩E.                                                (8)
+
+  The operators ˆKj are called Kraus operators. The index j labels an environment basis component used when
+performing the partial trace; it does not imply that the environment is measured.
+  Each Kraus operator gives an unnormalised contribution
+
+                                                                      eρS,j = ˆKj ˆρS ˆK†j .                                                 (9)
+
+  The trace
+
+                                           wj = Tr (eρS,j)                                              (10)
+
+is the weight of this contribution in the reduced system state.
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                     2
+
+
+  Since the environment is not observed, the individual contributions are not selected or normalised separately. The
+physical output state is their sum:
+                 X
+                                                                                          ˆρ′S =      eρS,j.                                               (11)
+                                                                             j
+
+  The complete channel preserves the trace provided that
+               X
+                                                       ˆK†j ˆKj = ˆIS.                                              (12)
+                                                                    j
+
+   2. Use the beam-splitter transformations and the definition of the Kraus operators to show that, within the single-
+       rail subspace,
+                                                    ˆK0 = |0⟩⟨0| + √η |1⟩⟨1|,                                       (13)
+                        p
+                                                    ˆK1 =   1 −η |0⟩⟨1|.                                           (14)
+
+      Verify explicitly that
+
+                                                    ˆK†0 ˆK0 + ˆK†1 ˆK1 = ˆIS.                                        (15)
+
+     Explain why this condition ensures that the complete channel preserves the trace.
+
+   3. For each Kraus operator, calculate the unnormalised state vector
+
+                                                      |ϕj⟩S = ˆKj|ψ⟩S                                           (16)
+
+     and the corresponding contribution
+
+                                                                           eρS,j = |ϕj⟩⟨ϕj|.                                           (17)
+
+     Calculate the weights
+
+                                              wj = ⟨ϕj|ϕj⟩                                            (18)
+
+     and verify that
+
+                                           w0 + w1 = 1.                                            (19)
+
+      Identify which Kraus contribution represents the no-loss component and which represents the photon-loss com-
+     ponent.
+     Explain why the individual contributions eρS,j do not generally have unit trace, and why the physical reduced
+     system state must include both contributions.
+
+   4. Using
+
+                                                                        ˆρS = |ψ⟩⟨ψ|,                                            (20)
+
+      calculate the reduced system state
+
+                                                                                     ˆρ′S = ˆK0ˆρS ˆK†0 + ˆK1ˆρS ˆK†1.                                      (21)
+
+     Write the result explicitly in the basis {|0⟩, |1⟩}.
+
+     Explain why the one-photon population is multiplied by η, while the coherence between |0⟩and |1⟩is multiplied
+     by √η.
+
+     Explain why the reduced system state can be mixed even though the initial system state and the joint system–
+     environment output state are both pure. In particular, discuss the role of the orthogonal environment states
+      associated with the loss and no-loss components.
+
+======== PAGE 3 ========
+                                                                                                  3
+
+
+5. Calculate the purity of the reduced output state and show that
+                                          h
+                                    Tr  (ˆρ′S)2i = 1 −2η(1 −η)|β|4.                                   (22)
+
+
+  For 0 < η < 1, determine which input state remains pure after the channel. Explain how the reduction in system
+   purity is related to correlations between the system and environment.
+
+6. Now consider the particular input state
+
+                                                 |ψ⟩S = |1⟩S.                                             (23)
+
+   Calculate the output probabilities for detecting zero photons and one photon. Hence calculate
+
+                                                                    ⟨ˆn⟩,      ⟨ˆn2⟩,                                            (24)
+
+  where
+
+                                                                              ˆn = |1⟩⟨1|                                              (25)
+
+   within the single-rail subspace.
+
+  Show that the output photon-number variance is
+
+                                            Var(ˆn) = ⟨ˆn2⟩−⟨ˆn⟩2 = η(1 −η).                                  (26)
+
+  Determine the value of η for which the photon-number uncertainty is greatest, and explain why the variance
+   vanishes at both η = 0 and η = 1.

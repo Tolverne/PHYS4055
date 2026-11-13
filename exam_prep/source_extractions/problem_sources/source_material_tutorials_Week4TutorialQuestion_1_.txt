@@ -1,0 +1,62 @@
+Source: source_material/tutorials/Week4TutorialQuestion (1).pdf
+Pages: 1
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+          PHYS4055 Week 4 Tutorial Solutions
+
+                                Laura Serino
+
+                             Tutorial date: 20 August 2026
+
+
+Question 1: Entanglement distillation
+
+Alice and Bob share n copies of the mixed state
+
+                                                              1
+                 ρAB = p ϕ+  ϕ+ + (1 −p) ψ+  ψ+   ,    p >    ,
+                                                              2
+
+where
+                          1                          1
+               ϕ+ = √  (|00⟩+ |11⟩) ,    ψ+ = √  (|01⟩+ |10⟩)
+                          2                          2
+are Bell states. The goal of entanglement distillation is to use several imperfectly entangled
+pairs to obtain fewer pairs with higher entanglement.
+   For one step of the protocol, Alice and Bob take two copies of ρAB. On each side, they apply
+a CNOT gate, using the qubit from the first pair as the control qubit and the qubit from the
+second pair as the target qubit. The unitary operation of the CNOT gate can be written as
+
+                       ˆUCNOT = |0C⟩⟨0C| ⊗ˆIT + |1C⟩⟨1C| ⊗ˆσx,T ,
+
+that is, the target qubit is flipped if and only if the control qubit is |1⟩.
+   After applying the two CNOT gates, Alice and Bob measure the target pair in the compu-
+tational basis {|0⟩, |1⟩} as shown in the figure below (where the first line is the target and the
+second line is the control). If they obtain the same measurement outcome, they keep the control
+pair; otherwise, they discard it.
+
+
+
+
+
+  (a) Calculate the state after one successful step:
+
+     (a.1) Calculate the initial joint system.
+
+     (a.2) Apply the CNOT gates.
+
+     (a.3) Measure in the described basis and determine the resulting state.
+
+ (b) What is the probability that one distillation step is successful?
+
+  (c) Calculate the fidelity of the resulting state with respect to |ϕ+⟩.  Is it larger or smaller
+     than the initial fidelity?
+
+ (d) Suppose that, after one successful step, Alice and Bob repeat the same procedure using
+      pairs with the improved fidelity. What do you expect to happen to the fidelity after several
+      successful rounds? What is the trade-off?
+
+
+
+                                         1

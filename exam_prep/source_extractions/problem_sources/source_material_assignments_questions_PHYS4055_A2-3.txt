@@ -1,0 +1,67 @@
+Source: source_material/assignments/questions/PHYS4055_A2-3.pdf
+Pages: 2
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+     PHYS4055 – Atomic Physics and Quantum Optics – Semester 2, 2026
+                               Assignment 4
+                        Deadline: 4pm Friday 23 October 2026
+
+
+This assessment contributes 25%/4 towards your overall grade.  It consists of three questions, on
+topics covered in the second half of the atomic physics part of the course. Each of the four questions
+carries equal weight. In answering these questions show all working. While you may consult the
+reference texts and discuss the questions broadly with your peers, you need to carry out and submit
+your own work.
+
+
+   1. Hartree-Fock.
+
+    An important matrix element in atomic structure is that of the two-body Coulomb operator,
+
+                              ∞                                                                                                              l
+              1                     1                                                                                    rl<                   ∞   rl<                 X                                                (−1)m          =                 = X                                        Pl(cos θ) = X                                                              Cl−m(ni)Clm(nj) ,
+                   rij     |ri −rj|                                     rl+1>               l=0 m=−l       rl+1>                                  l=0
+
+     where r< and r> is the smaller and greater of the distances ri and rj, and Pl is the Legendre
+     polynomial.
+
+    The derivation of the Hartree-Fock equations – that  is, the derivation of the direct and
+     exchange Hartree-Fock potentials – involves taking the matrix elements of this equation to
+      evaluate the total energy of the atom. For this, it is necessary to evaluate the two-body matrix
+     element gabab and gabba (using Johnson’s notation) which leads to Eqs. (3.64) and (3.66) of
+     Johnson’s lecture notes.
+
+      Starting from orbitals given as products of radial, orbital, and spin parts,
+
+                                ψa(ri) = (Pnala(ri)/ri)Ylama(ni)χµa(i) ,                        (1)
+
+      calculate the Coulomb matrix element and derive the final expressions Eqs. (3.64) and (3.66),
+     showing all working. If you are versed in the angular diagram technique, you may use this.
+
+   2. Zeeman slower.
+
+     In your answers below, it may be helpful to include the use, or derivation, of equations.
+
+       (a) Explain how the maximum scattering rate influences the design of a Zeeman slower.
+
+      (b) Explain the shape of the magnetic field required for optimal deceleration efficiency.
+
+       (c) What determines the maximum velocity of the atoms that can still be captured and
+           decelerated by a Zeeman slower?
+
+      (d) The figures below show magnetic fields inside a Zeeman slower that are used to decelerate
+         an atomic beam moving in the z-direction. Panel a) shows the square-root-shaped field
+         which is optimal for decelerating the atoms from their initial velocity down to 0 (at
+          z = L0). Alternative field shapes are shown in panels b)-e). Discuss whether for fields
+           b)-e) the atoms get decelerated to zero velocity, too. Explain your answers.
+
+   3. Lifetimes of atomic states.
+
+    With the aid of the Mathematica Notebook 2 – solving the Schr¨odinger equation with one of
+     the example parametric potentials – calculate the lifetimes of the states 3p, 4s, and 3d of the
+      (neutral) Na atom, and compare your results to measured data. Illustrate your working with
+     a sketch of the spectra of the ground state and lowest excited levels, denoting the allowed
+     (E1) transitions. Explain the limitations of your approach.
+
+======== PAGE 2 ========

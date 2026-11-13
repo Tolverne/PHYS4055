@@ -1,0 +1,54 @@
+Source: source_material/tutorials/Tutorial_questions.pdf
+Pages: 1
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+     SLOWING, COOLING, AND TRAPPING: TUTORIAL QUESTIONS
+
+
+
+                                  1- Magneto-optical trap
+
+  Consider a magneto-optical trap for Cs atoms. There is a number of allowed transitions between
+the 2S1/2 ground state hyperfine levels and the hyperfine levels of the 2P1/2 and 2P3/2 excited state.
+Which transition would be best for the creation of the magneto-optical trap, and why?
+
+                                  2- The Scattering Force
+
+  Atomic beam of Cs (M=132 amu)  is produced in a source at 300 K and slowed by counter-
+propagating laser radiation, using a transition with a wavelength of 852 nm and a lifetime of the
+excited state of 30 ns. What is the stopping distance at half the maximum deceleration?
+
+  How many photons are scattered to stop the atom?
+
+  Answer the above questions for a beam of hydrogen atoms cooled on the Lyman-α transition (121.6
+nm), where the excited state lives for 1.6 ns.
+
+h = 6.62607004 × 10−34 Js
+kB = 1.38064852 × 10−23 J/K
+MCs = 2.20694688 × 10−25 kg
+
+                                          3- Lasers
+
+  Explain why it is difficult to construct lasers in the UV range.
+
+                            4- Slowing and cooling with lasers
+
+a. Consider an atom with a short excited-state lifetime (A) and an atom with a long excited-state
+lifetime (B), all other properties being the same. Which atom, A or B,
+a) can be cooled at a higher rate using the scattering force?
+b) can be cooled to a lower Doppler-limit temperature?
+Explain your answer.
+
+
+b. Consider an atom with a short excitation wavelength (C) and an atom with a long excitation
+wavelength (D), all other properties being the same.
+Which atom, C or D, has the larger recoil velocity? Explain your answer.
+
+c. What makes a transition suitable for laser cooling? Give at least 3 criteria.
+
+
+
+
+
+                                                        1

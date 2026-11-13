@@ -1,0 +1,342 @@
+Source: source_material/tutorials/Week2Solutions (1).pdf
+Pages: 6
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                  PHYS4055 Week 2 Tutorial Solutions
+
+                                              Josephine Dias∗
+                                               (Dated: August 4, 2026)
+
+
+
+
+
+                               Question 1: Beam-splitter transformation
+
+  Consider two independent bosonic modes with annihilation operators ˆa and ˆb, satisfying
+
+                                                             [ˆa, ˆa†] = [ˆb,ˆb†] = 1,        [ˆa,ˆb] = [ˆa,ˆb†] = 0.
+
+ A lossless beam splitter is described by the unitary operator
+                                                   [                                          (
+                                                    θ                                                                                            ˆa†ˆb −ˆaˆb†)] .                                              ˆUB = exp
+
+  The Baker–Campbell–Hausdorff relation may be written as
+
+                    Aˆ   A               1            1                         e ˆBe−ˆ = ˆB + [ ˆA, ˆB] +    ˆA, [ ˆA, ˆB]] +    ˆA, [ ˆA, [ ˆA, ˆB]]] + · · · .                                                          2![              3![
+
+  Using this relation:
+
+   1. Calculate the first four nested commutators required to evaluate
+
+                                                         ˆUBˆa ˆU B†  and   ˆUBˆbˆU B.†
+
+   2. Group the resulting series into sine and cosine expansions and show that
+
+                                                        ˆUBˆa ˆU B† = ˆa cos θ −ˆb sin θ,
+
+                                                          ˆUBˆbˆU B† = ˆa sin θ + ˆb cos θ.
+
+   3. Defining the beam-splitter transmissivity as
+
+                                                 η = cos2 θ,
+
+     show that the output-mode operators are
+                           √
+                                                                                       ˆa′ = √η ˆa −  1 −η ˆb,
+
+                        √
+                                                                                               ˆb′ =   1 −η ˆa + √η ˆb.
+
+
+Solution
+  Define
+
+                                                    ˆK = ˆa†ˆb −ˆaˆb†,
+
+so that
+
+                                             ˆUB = eθ K,ˆ        ˆU B† = e−θ K.ˆ
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                     2
+
+
+  Using
+
+                 Kˆ    Kˆ                  θ2              θ3                         eθ  ˆAe−θ = ˆA + θ[ ˆK, ˆA] +     [ ˆK, [ ˆK, ˆA]] +     [ ˆK, [ ˆK, [ ˆK, ˆA]]] + · · · ,
+                                                           2!                3!
+
+we first consider the transformation of ˆa.
+  The first commutator is
+
+                                                                         [ ˆK, ˆa] = [ˆa†ˆb −ˆaˆb†, ˆa]
+                             = [ˆa†ˆb, ˆa] −[ˆaˆb†, ˆa]
+                             = −ˆb.
+
+ We also require
+
+                                                                            [ ˆK,ˆb] = [ˆa†ˆb −ˆaˆb†,ˆb]
+                              = ˆa.
+
+  The nested commutators for ˆa are therefore
+
+                                                                                             [ ˆK, ˆa] = −ˆb,
+                                                                                      [ ˆK, [ ˆK, ˆa]] = −ˆa,
+                                                                               [ ˆK, [ ˆK, [ ˆK, ˆa]]] = ˆb,
+                                                                        [ ˆK, [ ˆK, [ ˆK, [ ˆK, ˆa]]]] = ˆa.
+
+  Substituting these into the BCH expansion gives
+
+                                 ˆUBˆa ˆU B† = ˆa −θˆb −θ2 ˆa + θ3 ˆb + θ4 ˆa −· · ·                                                       2!      3!     4!                        (           )  (           )
+                                                   θ4                       θ5                     = ˆa  1 −θ2 +   −· · ·  −ˆb  θ −θ3 +   −· · ·
+                                                     2!    4!                     3!    5!
+                     = ˆa cos θ −ˆb sin θ.
+
+  For the transformation of ˆb, the nested commutators are
+
+                                                                                             [ ˆK,ˆb] = ˆa,
+                                                                                      [ ˆK, [ ˆK,ˆb]] = −ˆb,
+                                                                               [ ˆK, [ ˆK, [ ˆK,ˆb]]] = −ˆa,
+                                                                        [ ˆK, [ ˆK, [ ˆK, [ ˆK,ˆb]]]] = ˆb.
+
+  The BCH expansion then gives
+
+                                  ˆUBˆbˆU B† = ˆb + θˆa −θ2 ˆb −θ3 ˆa + θ4 ˆb + · · ·                                                       2!     3!      4!                        (           )   (           )
+                                                   θ4                       θ5                     = ˆb  1 −θ2 +   −· · · + ˆa  θ −θ3 +   −· · ·
+                                                     2!    4!                     3!    5!
+                     = ˆa sin θ + ˆb cos θ.
+
+  Therefore,
+
+                                                              ˆa′ = ˆa cos θ −ˆb sin θ,         ˆb′ = ˆa sin θ + ˆb cos θ.
+
+  Defining the beam-splitter transmissivity by
+
+                                               η = cos2 θ,
+
+======== PAGE 3 ========
+                                                                                                     3
+
+
+we have
+                             √
+                                          cos θ = √η,     sin θ =   1 −η.
+
+  Thus,
+                          √
+                                                                                  ˆa′ = √η ˆa −  1 −η ˆb
+
+and
+                       √
+                                                                                          ˆb′ =   1 −η ˆa + √η ˆb.
+
+
+
+                       A.  Question 2: Energy conservation at a beam splitter
+
+
+  Consider a lossless beam splitter acting on two optical modes. The input and output mode operators are related
+by
+                          √
+                                                                                  ˆa′ = √η ˆa −  1 −η ˆb,
+
+and
+                       √
+                                                                                          ˆb′ =   1 −η ˆa + √η ˆb,
+
+where 0 ≤η ≤1 is the beam-splitter transmissivity.
+  The photon-number operators of the two output modes are
+
+                                                     ˆNa′ = ˆa′†ˆa′,      ˆNb′ = ˆb′†ˆb′.
+   1. Write down the transformed creation operators ˆa′† and ˆb′†.
+   2. Calculate ˆNa′ explicitly in terms of the input-mode operators ˆa, ˆa†, ˆb, and ˆb†.
+   3. Similarly, calculate ˆNb′ in terms of the input-mode operators.
+
+   4. By adding your results, show that
+
+                                                            ˆNa′ + ˆNb′ = ˆNa + ˆNb,
+
+     where
+                                                    ˆNa = ˆa†ˆa,      ˆNb = ˆb†ˆb.
+
+Solution
+
+   1. Taking the Hermitian conjugate of the output-mode operators gives
+                            √
+                                                                            ˆa′† = √η ˆa† −  1 −η ˆb†,
+
+     and
+                        √
+                                                                                 ˆb′† =   1 −η ˆa† + √η ˆb†.
+
+   2. The photon-number operator for output mode a′ is
+                                                                  ˆNa′ = ˆa′†ˆa′.
+
+      Substituting the beam-splitter transformations,
+                     √        √     )                                      ˆNa′ = (√η ˆa† −  1 −η ˆb†) (√η ˆa −  1 −η ˆb
+                    √      √
+                    = η ˆa†ˆa −   η(1 −η) ˆa†ˆb −   η(1 −η)ˆb†ˆa + (1 −η)ˆb†ˆb.
+
+      Therefore,
+                            √      (       )
+                                           ˆNa′ = η ˆNa + (1 −η) ˆNb −   η(1 −η)   ˆa†ˆb + ˆb†ˆa   .
+
+======== PAGE 4 ========
+                                                                                                     4
+
+   3. The photon-number operator for output mode b′ is
+
+                                                                       ˆNb′ = ˆb′†ˆb′.
+
+
+      Substituting the beam-splitter transformations,
+                     (√          (√          )                                         ˆNb′ =    1 −η ˆa† + √η ˆb†)    1 −η ˆa + √η ˆb
+                       √      √
+                    = (1 −η) ˆa†ˆa +   η(1 −η) ˆa†ˆb +   η(1 −η)ˆb†ˆa + η ˆb†ˆb.
+
+
+      Therefore,
+
+                           √      (       )
+                                              ˆNb′ = (1 −η) ˆNa + η ˆNb +   η(1 −η)   ˆa†ˆb + ˆb†ˆa   .
+
+
+   4. Adding the two output photon-number operators gives
+                             √      (       )
+                                       ˆNa′ + ˆNb′ = η ˆNa + (1 −η) ˆNb −   η(1 −η)   ˆa†ˆb + ˆb†ˆa
+                             √      (       )
+                         + (1 −η) ˆNa + η ˆNb +   η(1 −η)   ˆa†ˆb + ˆb†ˆa
+                        = [η + (1 −η)] ˆNa + [(1 −η) + η] ˆNb
+                        = ˆNa + ˆNb.
+
+
+     Hence,
+
+                                                            ˆNa′ + ˆNb′ = ˆNa + ˆNb .
+
+
+    The beam splitter can redistribute photons between the two modes, but it preserves the total photon number.
+
+
+
+                                    B.  Question 3: Partial trace
+
+
+ A single photon passes through a balanced beam splitter, producing the two-mode state
+
+                                             1
+                                           |ψ⟩ab = √  (|1⟩a|0⟩b + |0⟩a|1⟩b) .
+                                              2
+
+   1. Write down the two-mode density operator
+
+                                                                        ˆρab = |ψ⟩ab⟨ψ|.
+
+   2. Suppose that we only have access to mode a. Calculate its reduced density operator by tracing over mode b:
+
+                   ∑1
+                                                               ˆρa = Trb(ˆρab) =     b⟨n|ˆρab|n⟩b.
+                                                      n=0
+
+   3. What is the probability of detecting zero photons in mode a? What is the probability of detecting one photon?
+
+   4. Is the reduced state ˆρa pure or mixed?
+
+Solution
+
+   1. The two-mode density operator is
+
+                                                                        ˆρab = |ψ⟩ab⟨ψ|.
+
+======== PAGE 5 ========
+                                                                                                  5
+
+
+   Substituting the two-mode state gives
+
+                                    1
+                                              ˆρab =   (|1⟩a|0⟩b + |0⟩a|1⟩b) (a⟨1|b⟨0| + a⟨0|b⟨1|)
+                                    2
+                               (                                    1
+                      =    |1⟩a|0⟩ba⟨1|b⟨0| + |1⟩a|0⟩ba⟨0|b⟨1|
+                                    2                                                         )
+                        + |0⟩a|1⟩ba⟨1|b⟨0| + |0⟩a|1⟩ba⟨0|b⟨1|  .
+
+
+  Using the shorthand
+
+                                                        |n, m⟩= |n⟩a|m⟩b,
+
+   this can also be written as
+
+                               1
+                                       ˆρab =   (|1, 0⟩⟨1, 0| + |1, 0⟩⟨0, 1| + |0, 1⟩⟨1, 0| + |0, 1⟩⟨0, 1|) .
+                               2
+
+2. The reduced density operator of mode a is
+
+                                                                       ˆρa = Trb(ˆρab).
+
+
+   In the basis {|0⟩b, |1⟩b},
+
+                                                            ˆρa = b⟨0|ˆρab|0⟩b + b⟨1|ˆρab|1⟩b.
+
+
+  The first term is
+
+                                                     1
+                                                       b⟨0|ˆρab|0⟩b = 2|1⟩aa⟨1|.
+
+  The second term is
+
+                                                     1
+                                                       b⟨1|ˆρab|1⟩b = 2|0⟩aa⟨0|.
+
+  The cross terms vanish because
+
+                                             ⟨0|1⟩= 0.
+
+
+   Therefore,
+
+                                            1          1
+                                                             ˆρa = 2|0⟩aa⟨0| + 2|1⟩aa⟨1| .
+
+
+3. The probability of detecting zero photons in mode a is
+
+                                          P(0) = a⟨0|ˆρa|0⟩a
+                                                  1
+                               = 2.
+
+  The probability of detecting one photon is
+
+                                          P(1) = a⟨1|ˆρa|1⟩a
+                                                  1
+                               = 2.
+
+======== PAGE 6 ========
+                                                                                                  6
+
+
+4. To determine whether the state is pure or mixed, we calculate its purity:
+                                        [1          1      ]
+                                             Tr(ˆρ2a) = Tr  4|0⟩aa⟨0| + 4|1⟩aa⟨1|
+                                            1
+                           = 2.
+
+   Since
+
+                                                           Tr(ˆρ2a) < 1,
+
+   the reduced state is mixed. Thus,
+
+                                                                   ˆρa is a mixed state.

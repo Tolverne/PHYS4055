@@ -1,0 +1,164 @@
+Source: source_material/tutorials/Week4Tutorial (1).pdf
+Pages: 3
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+          PHYS4055 Week 4 Tutorial Solutions
+
+                                Laura Serino
+
+                             Tutorial date: 20 August 2026
+
+
+Question 1: Entanglement distillation
+
+Alice and Bob share n copies of the mixed state
+
+                                                              1
+                 ρAB = p ϕ+  ϕ+ + (1 −p) ψ+  ψ+   ,    p >    ,
+                                                              2
+
+where
+                          1                          1
+               ϕ+ = √  (|00⟩+ |11⟩) ,    ψ+ = √  (|01⟩+ |10⟩)
+                          2                          2
+are Bell states. The goal of entanglement distillation is to use several imperfectly entangled
+pairs to obtain fewer pairs with higher entanglement.
+   For one step of the protocol, Alice and Bob take two copies of ρAB. On each side, they apply
+a CNOT gate, using the qubit from the first pair as the control qubit and the qubit from the
+second pair as the target qubit. The unitary operation of the CNOT gate can be written as
+
+                       ˆUCNOT = |0C⟩⟨0C| ⊗ˆIT + |1C⟩⟨1C| ⊗ˆσx,T ,
+
+that is, the target qubit is flipped if and only if the control qubit is |1⟩.
+   After applying the two CNOT gates, Alice and Bob measure the target pair in the compu-
+tational basis {|0⟩, |1⟩} as shown in the figure below (where the first line is the target and the
+second line is the control). If they obtain the same measurement outcome, they keep the control
+pair; otherwise, they discard it.
+
+
+
+
+
+  (a) Calculate the state after one successful step:
+
+     (a.1) Calculate the initial joint system.
+
+     (a.2) Apply the CNOT gates.
+
+     (a.3) Measure in the described basis and determine the resulting state.
+
+ (b) What is the probability that one distillation step is successful?
+
+  (c) Calculate the fidelity of the resulting state with respect to |ϕ+⟩.  Is it larger or smaller
+     than the initial fidelity?
+
+ (d) Suppose that, after one successful step, Alice and Bob repeat the same procedure using
+      pairs with the improved fidelity. What do you expect to happen to the fidelity after several
+      successful rounds? What is the trade-off?
+
+
+
+                                         1
+
+======== PAGE 2 ========
+   Solution
+
+(a.1) We label the two copies as pair 1 and pair 2, which correspond to control and target pairs,
+      respectively. The two-copy state is
+                         ρ⊗2AB = p2 ϕ+ 1 ϕ+ 2 ϕ+ 1 ϕ+ 2
+                    + p(1 −p) ϕ+  ψ+   ϕ+  ψ+                                                          1      2      1      2
+                    + p(1 −p) ψ+  ϕ+  ψ+  ϕ+                                                          1      2      1      2
+                    + (1 −p)2 ψ+  ψ+  ψ+  ψ+    .                                                          1      2      1      2
+
+     This is a mixed state that yields the four possible two-pair input states with probabilities
+
+                                    input state  probability
+                                     |ϕ+⟩1 |ϕ+⟩2       p2
+                                    |ϕ+⟩1 |ψ+⟩2    p(1 −p)
+                                   |ψ+⟩1 |ϕ+⟩2    p(1 −p)
+                                   |ψ+⟩1 |ψ+⟩2    (1 −p)2
+
+(a.2) Now Alice applies a CNOT from her qubit in pair 1 (control) to her qubit in pair 2 (target),
+     and Bob does the same on his side. We can track separately what happens to the four
+      possible Bell-state combinations, keeping in mind that Alice operates on the first qubit of
+     each Bell state, and Bob on the second qubit. If the control pair is |a1b1⟩1 and the target
+      pair is |a2b2⟩2, the bilateral CNOT acts as
+
+                              |a1b1⟩1 |a2b2⟩2 7−→|a1b1⟩1 |a1 ⊕a2, b1 ⊕b2⟩2 .
+
+    We now apply this to the four possible input states:
+
+                                  1
+         ˆUCNOT ϕ+ 1 ϕ+ 2 = ˆUCNOT  (|00⟩1 |00⟩2 + |00⟩1 |11⟩2 + |11⟩1 |00⟩2 + |11⟩1 |11⟩2)                                  2
+                            1
+                 =   (|00⟩1 |00⟩2 + |00⟩1 |11⟩2 + |11⟩1 |11⟩2 + |11⟩1 |00⟩2)                            2
+                 = ϕ+  ϕ+     ,                                         1      2
+
+
+     and similarly
+                             ˆUCNOT ϕ+ 1 ψ+ 2 = ϕ+ 1 ψ+ 2 ,
+                             ˆUCNOT ψ+ 1 ϕ+ 2 = ψ+ 1 ψ+ 2 ,
+                             ˆUCNOT ψ+ 1 ψ+ 2 = ψ+ 1 ϕ+ 2 .
+
+(a.3) Alice and Bob measure the target pair in the computational basis. A successful event
+     corresponds to Alice and Bob obtaining the same result, i.e., the target pair is projected
+     onto either |00⟩2 or |11⟩2. The corresponding projection operator is
+                           Πs = ˆI1 ⊗(|00⟩2 ⟨00|2 + |11⟩2 ⟨11|2) .
+
+     Applying this projection to the four cases after the CNOT gives
+
+                             Πs ϕ+ 1 ϕ+ 2 = ϕ+ 1 ϕ+ 2 ,
+                             Πs ϕ+ 1 ψ+ 2 = 0 ,
+                             Πs ψ+ 1 ψ+ 2 = 0 ,
+                             Πs ψ+ 1 ϕ+ 2 = ψ+ 1 ϕ+ 2 .
+
+
+                                         2
+
+======== PAGE 3 ========
+    After the measurement, the target pair is discarded.  Therefore, the surviving control-
+    pair states are |ϕ+⟩1 and |ψ+⟩1. Since the surviving contributions came from the initial
+    components |ϕ+⟩1 |ϕ+⟩2 and |ψ+⟩1 |ψ+⟩2, with probabilities p2 and (1 −p)2, respectively,
+    the unnormalised state of the retained pair is
+
+                                ρ′unnorm = p2 ϕ+  ϕ+ + (1 −p)2 ψ+  ψ+  .
+
+    Normalising, the state after one successful step is
+
+                                   p2 |ϕ+⟩⟨ϕ+| + (1 −p)2 |ψ+⟩⟨ψ+|
+                                  ρ′AB =                                                    .                                             p2 + (1 −p)2
+
+
+(b) The probability of success is given by the coefficients of the unnormalised output state:
+
+                                    Ps = p2 + (1 −p)2.
+
+(c) The fidelity with respect to |ϕ+⟩is
+
+                                                              ′                                              ′         p2                   F = ϕ+  ρ′AB ϕ+ = F =                      .                                                       p2 + (1 −p)2
+
+
+    Since p > 1/2, this value is greater than the initial fidelity F = p. Therefore, one successful
+     distillation step increases the fidelity with respect to |ϕ+⟩.
+
+(d) If Alice and Bob repeat the protocol using two pairs with the same current fidelity pk,
+    then after a successful step the fidelity becomes
+
+                                                  p2k
+                                  pk+1 =                        .
+                                             p2k + (1 −pk)2
+
+    Since in the initial state p0 > 1/2, the sequence increases towards 1. Thus, the retained
+    pairs become closer and closer to the maximally entangled Bell state |ϕ+⟩.
+
+   The trade-off is that the protocol consumes entangled pairs for measurements and only
+    keeps the result when the measurement outcomes agree, which happens probabilistically.
+    Therefore, the fidelity of the retained pairs increases, but the total number of remaining
+    pairs decreases.
+
+
+
+
+
+                                        3

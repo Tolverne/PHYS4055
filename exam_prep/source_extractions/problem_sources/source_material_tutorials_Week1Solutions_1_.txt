@@ -1,0 +1,332 @@
+Source: source_material/tutorials/Week1Solutions (1).pdf
+Pages: 5
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                   PHYS4055 Week 1 Tutorial Notes
+
+                                              Josephine Dias∗
+                                                (Dated: July 28, 2026)
+
+
+
+
+
+                         Question 1: Displacement of the annihilation operator
+
+
+  The displacement operator is defined by
+                                                       (          )
+                                            ˆD(α) = exp  αˆa† −α∗ˆa  ,                                            (1)
+
+where α is a complex number and
+
+                                                                                      [ˆa, ˆa†] = 1.                                                   (2)
+
+  Use the Baker–Campbell–Hausdorff relation given by
+
+                           Xˆ   X                                     e  ˆY e−ˆ = ˆY + [ ˆX, ˆY ]
+                                               1
+                             + 2![ ˆX, [ ˆX, ˆY ]]
+                                               1
+                             + 3![ ˆX, [ ˆX, [ ˆX, ˆY ]]] + · · · .                                     (3)
+
+for any two operators ˆX and ˆY , to show that
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α .                                             (4)
+
+
+
+                                             Worked solution
+
+
+  Define
+
+                                                          ˆA = αˆa† −α∗ˆa.                                                 (5)
+
+  The displacement operator can then be written as
+
+                                                   ˆD(α) = e A.ˆ                                                    (6)
+
+ We calculate the Hermitian conjugate of ˆA:
+                                                    (           )†
+                                                         ˆA† =  αˆa† −α∗ˆa                                                 (7)
+                             = α∗ˆa −αˆa†                                                  (8)
+                             = −ˆA.                                                        (9)
+
+  Therefore,
+                                            ( A)†ˆ                                                 ˆD†(α) =  e                                                  (10)
+
+                                                         A†ˆ                                = e                                                   (11)
+                                = e−ˆA.                                               (12)
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                     2
+
+
+  The operator that we wish to calculate is therefore
+
+                                                  ˆD†(α)ˆa ˆD(α) = e−ˆAˆae A.ˆ                                          (13)
+
+  To match the Baker–Campbell–Hausdorff relation, we identify
+
+                                                         ˆX = −ˆA                                                 (14)
+
+and
+
+                                                                          ˆY = ˆa.                                                  (15)
+
+  The Baker–Campbell–Hausdorff relation then gives
+
+                                  e−ˆAˆae Aˆ = ˆa + [−ˆA, ˆa]
+                                                   1
+                               + 2![−ˆA, [−ˆA, ˆa]]
+                               + · · · .                                                  (16)
+
+ We first calculate the first commutator:
+
+                                                    [−ˆA, ˆa] = −[ ˆA, ˆa].                                             (17)
+
+  Using the definition of ˆA,
+                                                        [             ]
+                                                                       [ ˆA, ˆa] =  αˆa† −α∗ˆa, ˆa                                             (18)
+                             = α[ˆa†, ˆa] −α∗[ˆa, ˆa].                                         (19)
+
+  The canonical commutation relation gives
+
+                                                                            [ˆa†, ˆa] = −1,                                               (20)
+
+and
+
+                                                                                       [ˆa, ˆa] = 0.                                                 (21)
+
+  Therefore,
+
+                                                                          [ ˆA, ˆa] = α(−1) −α∗(0)                                          (22)
+                              = −α.                                                     (23)
+
+   It follows that
+
+                                                    [−ˆA, ˆa] = −(−α)                                             (24)
+                                = α.                                                  (25)
+
+ We now calculate the second nested commutator:
+
+                                                 [−ˆA, [−ˆA, ˆa]] = [−ˆA, α].                                          (26)
+
+  Since α is a complex number rather than an operator,
+
+                                                       [−ˆA, α] = 0.                                               (27)
+
+  All higher nested commutators also vanish. Therefore, the Baker–Campbell–Hausdorff expansion terminates after
+the first commutator:
+                                     e−ˆAˆae Aˆ = ˆa + [−ˆA, ˆa]                                           (28)
+                               = ˆa + α.                                               (29)
+
+  Hence,
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α .                                          (30)
+
+======== PAGE 3 ========
+                                                                                                     3
+
+
+                              Question 2: Coherent states as eigenstates
+
+
+ A coherent state is defined by
+
+                                      |α⟩= ˆD(α)|0⟩,                                              (31)
+
+where |0⟩is the vacuum state.
+  Using the displacement-operator identity
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α,                                           (32)
+
+show that |α⟩is an eigenstate of the annihilation operator ˆa.
+
+
+
+                                             Worked solution
+
+
+ We begin with the action of the annihilation operator on the coherent state:
+
+                                             ˆa|α⟩= ˆa ˆD(α)|0⟩.                                             (33)
+
+ We insert the identity operator in the form
+
+                                                                       ˆI = ˆD(α) ˆD†(α).                                             (34)
+
+  Therefore,
+
+                                        ˆa|α⟩= ˆD(α) ˆD†(α)ˆa ˆD(α)|0⟩.                                       (35)
+
+ We now use
+
+                                                    ˆD†(α)ˆa ˆD(α) = ˆa + α.                                           (36)
+
+  This gives
+
+                                          ˆa|α⟩= ˆD(α) (ˆa + α) |0⟩.                                          (37)
+
+  Expanding the right-hand side gives
+
+                                        ˆa|α⟩= ˆD(α)ˆa|0⟩+ α ˆD(α)|0⟩.                                       (38)
+
+  The annihilation operator acting on the vacuum gives
+
+                                                   ˆa|0⟩= 0.                                                 (39)
+
+  Therefore,
+
+                                                 ˆD(α)ˆa|0⟩= 0.                                               (40)
+
+  The remaining term is
+
+                                             ˆa|α⟩= α ˆD(α)|0⟩.                                             (41)
+
+  Using
+
+                                             ˆD(α)|0⟩= |α⟩,                                              (42)
+
+we obtain
+
+                                               ˆa|α⟩= α|α⟩.                                               (43)
+
+  Therefore, the coherent state |α⟩is an eigenstate of the annihilation operator ˆa, with eigenvalue α.
+
+======== PAGE 4 ========
+                                                                                                     4
+
+
+                             Question 3: Electric field of a coherent state
+
+
+  Consider a single travelling optical mode with electric-field operator
+                                                      (                                                 ˆE(z, t) = eE0  ˆaeiϕ + ˆa†e−iϕ) ,                                      (44)
+
+where
+                         √
+                                              ℏω
+                                        E0 =                                                       (45)
+                                                    2ε0V
+
+and
+
+                                      ϕ = kz −ωt.                                               (46)
+
+  Here, e is the polarization vector, V  is the quantization volume, and ω is the angular frequency of the mode.
+  For a coherent state satisfying
+
+                                               ˆa|α⟩= α|α⟩,                                               (47)
+
+calculate the expectation value
+
+                                                   ⟨ˆE(z, t)⟩α = ⟨α|ˆE(z, t)|α⟩.                                         (48)
+
+  Write
+
+                                    α = |α|eiθ                                                 (49)
+
+and show that the expectation value has the form of a classical oscillating electric field.
+
+
+
+                                             Worked solution
+
+
+  The coherent-state eigenvalue equation is
+
+                                               ˆa|α⟩= α|α⟩.                                               (50)
+
+  Taking the Hermitian conjugate of both sides gives
+
+                                                          (ˆa|α⟩)† = (α|α⟩)† .                                            (51)
+
+  Therefore,
+
+                                                             ⟨α|ˆa† = α∗⟨α|.                                              (52)
+
+ We now calculate the expectation value of the electric field:
+
+                                                   ⟨ˆE(z, t)⟩α = ⟨α|ˆE(z, t)|α⟩.                                         (53)
+
+  Substituting the electric-field operator gives
+                                                        (                                            ⟨ˆE(z, t)⟩α = eE0⟨α|  ˆaeiϕ + ˆa†e−iϕ) |α⟩.                                  (54)
+
+ We separate the two terms:
+
+                                                ⟨ˆE(z, t)⟩α = eE0eiϕ⟨α|ˆa|α⟩
+                               + eE0e−iϕ⟨α|ˆa†|α⟩.                                      (55)
+
+  For the first expectation value,
+
+                                             ⟨α|ˆa|α⟩= ⟨α| (ˆa|α⟩) .                                           (56)
+
+======== PAGE 5 ========
+                                                                                                     5
+
+
+  Using the coherent-state eigenvalue equation gives
+
+                                              ⟨α|ˆa|α⟩= α⟨α|α⟩.                                             (57)
+
+  Since the coherent state is normalized,
+
+                                         ⟨α|α⟩= 1.                                                (58)
+
+  Therefore,
+
+                                                 ⟨α|ˆa|α⟩= α.                                               (59)
+
+  Similarly,
+
+                                                ⟨α|ˆa†|α⟩= α∗.                                              (60)
+
+  The electric-field expectation value is therefore
+                                                        (                                               ⟨ˆE(z, t)⟩α = eE0 αeiϕ + α∗e−iϕ) .                                     (61)
+
+ We now write the coherent amplitude as
+
+                                    α = |α|eiθ.                                                (62)
+
+   Its complex conjugate is
+
+                               α∗= |α|e−iθ.                                               (63)
+
+  The first term becomes
+
+                                              αeiϕ = |α|ei(ϕ+θ).                                             (64)
+
+  The second term becomes
+
+                                          α∗e−iϕ = |α|e−i(ϕ+θ).                                           (65)
+
+  Therefore,
+                                          (
+                                           ⟨ˆE(z, t)⟩α = eE0|α|  ei(ϕ+θ) + e−i(ϕ+θ)) .                                 (66)
+
+  Using
+
+                                                    eix + e−ix = 2 cos(x),                                           (67)
+
+we obtain
+
+                                                ⟨ˆE(z, t)⟩α = 2eE0|α| cos(ϕ + θ).                                      (68)
+
+  Finally, substituting
+
+                                      ϕ = kz −ωt                                               (69)
+
+gives
+
+                                            ⟨ˆE(z, t)⟩α = 2eE0|α| cos (kz −ωt + θ) .                                  (70)
+
+  This expectation value has the same sinusoidal form as a classical travelling electromagnetic wave. The magnitude
+|α| determines the field amplitude, while the argument θ determines its phase.

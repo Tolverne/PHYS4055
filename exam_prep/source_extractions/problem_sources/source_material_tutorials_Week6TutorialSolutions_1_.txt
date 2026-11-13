@@ -1,0 +1,312 @@
+Source: source_material/tutorials/Week6TutorialSolutions (1).pdf
+Pages: 5
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                 PHYS4055 Week 6 Tutorial Questions
+
+                                              Josephine Dias∗
+                                             (Dated: September 1, 2026)
+
+
+
+
+
+                                          Solution to Question 1
+
+
+   1. From the definitions of the symmetric and antisymmetric states,
+                                 √
+                                      |S⟩+ |A⟩=   2|e, g⟩.
+
+     Therefore,
+
+                                             |S⟩+ |A⟩
+                                                                   |e, g⟩=  √
+                                                         2
+
+    and the complete initial state is
+
+                                                  1
+                                     |Ψ(0)⟩= √  (|S; 0⟩+ |A; 0⟩) .
+                                                  2
+
+   2. For the symmetric state,
+
+                                            1
+                                  ˆJ−|S⟩= √    ˆσ(1)−+ ˆσ(2)−    (|e, g⟩+ |g, e⟩)
+                                             2
+                                            1
+                           = √  (|g, g⟩+ |g, g⟩)
+                                             2
+                          √
+                           =   2|g, g⟩.
+
+     Hence,
+
+                                √
+                                            ˆJ−|S⟩=   2|g, g⟩.
+
+
+     For the antisymmetric state,
+
+                                             1
+                                  ˆJ−|A⟩= √    ˆσ(1)−+ ˆσ(2)−    (|e, g⟩−|g, e⟩)
+                                             2
+                                             1
+                           = √  (|g, g⟩−|g, g⟩)
+                                             2
+                           = 0.
+
+     Thus,
+
+                                              ˆJ−|A⟩= 0.
+
+
+   3. For the symmetric state, the two possible atomic emission amplitudes add together because they produce the                               √
+    same final state. This gives an enhanced coupling of   2g.
+
+     For the antisymmetric state, the two amplitudes have opposite signs and cancel. Therefore, the antisymmetric
+      state does not couple to the cavity mode.
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                  2
+
+
+4. The initial state contains equal symmetric and antisymmetric components. The symmetric component evolves
+   while the antisymmetric component remains unchanged. Therefore,
+
+                                      h  √             √          i                                  1
+                        |Ψ(t)⟩= √   cos(  2gt)|S; 0⟩+ |A; 0⟩−i sin(  2gt)|g, g; 1⟩  .
+                                  2
+
+
+  Returning to the individual-atom basis gives
+
+                               √
+                                            1 + cos(  2gt)
+                                   |Ψ(t)⟩=                   |e, g; 0⟩
+                                                  2                              √
+                                                      cos(  2gt) −1
+                             +                  |g, e; 0⟩
+                                                    2                               √
+                               −i sin(√ 2gt) |g, g; 1⟩.
+                                                    2
+
+
+5. Only the state |g, g; 1⟩contains a cavity photon. Therefore,
+
+                                 √      2
+                                                                sin(  2gt)                                            ⟨ˆncav⟩= −i  √
+                                                       2
+
+                                                 1   √
+                             =    sin2(  2gt) .
+                                                 2
+
+
+  Both |S; 0⟩and |A; 0⟩contain one excited atom. Their probabilities are respectively
+
+                                       1   √               1
+                                              cos2(  2gt)    and                                       2                        2.
+
+   Consequently,
+
+                                               1   √      1
+                                        ⟨ˆNat⟩=   cos2(  2gt) +
+                                               2             2
+                            = 1 −1 sin2( √ 2gt) .
+                                                   2
+
+
+  The expected total number of excitations is
+
+                                     ⟨ˆNtotal⟩= ⟨ˆNat⟩+ ⟨ˆncav⟩
+                         = 1 −1 sin2( √ 2gt) + 1 sin2( √ 2gt)
+                                             2             2
+                         = 1.
+
+  Thus,
+
+                                                    ⟨ˆNtotal⟩= 1,
+
+   so the total number of excitations is conserved.
+
+6. The probability of finding one photon in the cavity is
+
+                                                  1   √
+                                                Pcav(t) =   sin2(  2gt).
+                                                  2
+
+  This is largest when
+                             √
+                                                     sin2(  2gt) = 1.
+
+======== PAGE 3 ========
+                                                                                                  3
+
+
+  The first such time is
+
+                                             π
+                                                                t = √    .
+                                                  2  2g
+
+  The maximum probability is
+
+                                                 max   1
+                                    Pcav = 2.
+
+  The initial state contains equal symmetric and antisymmetric components. The symmetric component can
+   transfer its excitation to the cavity, but the antisymmetric component does not interact with the cavity. Since
+   half of the initial state remains in the antisymmetric component, the cavity photon probability cannot exceed
+   1/2.
+
+7. From the state in the individual-atom basis, the probability that atom 1 is excited is
+
+                                 √     2
+                                                1 + cos(  2gt)
+                                                Pe,1(t) =                            .
+                                                      4
+
+   Similarly, the probability that atom 2 is excited is
+
+                                 √     2
+                                                1 −cos(  2gt)
+                                                Pe,2(t) =                            .
+                                                      4
+
+  Complete transfer from atom 1 to atom 2 occurs when
+                            √
+                                                   cos(  2gt) = −1.
+
+  The first such time is
+
+                                             π
+                                                                 t = √    .
+                                                     2g
+
+  At this time,
+
+                                          Pe,1 = 0,     Pe,2 = 1,     Pcav = 0.
+
+  The complete state is
+
+                                         |Ψ(t)⟩= −|g, e; 0⟩.
+
+  The minus sign is an overall phase and has no physical consequence. Therefore, the excitation has been trans-
+   ferred completely from atom 1 to atom 2.
+
+
+
+                                       Solution to Question 2
+
+
+1. The initial overlap is
+
+                                             1
+                              ⟨ψ+|ψ−⟩=   (2⟨0| + ⟨1|) (2|0⟩−|1⟩)
+                                             5
+                                             4 −1
+                            =
+                                               5
+                                              3
+                            =      .
+                                              5
+
+   Since the overlap is non-zero, the states are not orthogonal and cannot be distinguished perfectly by a deter-
+   ministic measurement.
+
+======== PAGE 4 ========
+                                                                                                  4
+
+
+2. Applying the successful conditional operation gives
+
+                                             1             2|0⟩± |1⟩
+                                ˆKs|ψ±⟩=   2|0⟩⟨0| + |1⟩⟨1|   √ 5
+
+                                        |0⟩± |1⟩
+                          =  √       .
+                                                5
+
+  These states are unnormalised.
+
+3. The probability of success is the squared norm of the unnormalised output:
+
+                                             Ps,± = ⟨ψ±| ˆK†s ˆKs|ψ±⟩
+                                             |0⟩± |1⟩  2
+                             =  √
+                                                     5
+                                                1 + 1
+                             =
+                                                 5
+                                                2
+                             =      .
+                                                5
+
+  The probability of success is the same for both input states.
+
+4. Dividing each successful output by the square root of its success probability gives
+
+                                                 ˆKs|ψ±⟩    |0⟩± |1⟩
+                                |ϕ±⟩= p   =  √       .
+                                                    Ps,±        2
+
+  Their overlap is
+
+                                              1
+                               ⟨ϕ+|ϕ−⟩=   (⟨0| + ⟨1|) (|0⟩−|1⟩)
+                                              2
+                                              1 −1
+                            =
+                                                2
+                            = 0 .
+
+  The successful output states are therefore orthogonal.
+
+5. The operation associated with ˆKs  is conditional and is not a deterministic, trace-preserving operation.  It
+  produces the orthogonal output states only when the successful detector result occurs, which has probability
+   2/5.
+  The complete physical measurement must include both the successful and failed outcomes. Indeed,
+
+                                                1
+                                               ˆK†s ˆKs = 4|0⟩⟨0| + |1⟩⟨1|,
+                                                3
+                                               ˆK†f ˆKf = 4|0⟩⟨0|,
+
+  and hence
+                   ˆK†s ˆKs + ˆK†f ˆKf = |0⟩⟨0| + |1⟩⟨1| = I  within the subspace spanned by {|0⟩, |1⟩}.
+
+  Thus, the increased distinguishability of the successful outputs is accompanied by a non-zero probability of
+   failure.
+
+6. Applying the failure operator gives
+                            √
+                                                 3              |1⟩                                    ˆKf|ψ±⟩=    |0⟩⟨0|2|0⟩±√
+                                                2          5
+                        r
+                                                  3
+                             =    5|0⟩.
+
+======== PAGE 5 ========
+                                                                                                5
+
+
+The probability of this result is
+
+                       r      2
+                                                3        3
+                                          Pf,± =    5|0⟩  = 5  .
+
+
+After normalisation, both input states produce the same conditional output:
+
+                                           |ϕf,±⟩= |0⟩.
+
+The failed result therefore provides no information about whether the input was |ψ+⟩or |ψ−⟩.

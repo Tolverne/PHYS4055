@@ -1,0 +1,406 @@
+Source: source_material/assignments/feedback_and_solutions/PHYS4055 Assignment 2 - SOLUTIONS.pdf
+Pages: 7
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+   Quantum Optics Assignment: Worked Solutions
+
+Question 1: Photonic qubits and Bell states
+
+(a) Bell-basis orthogonality
+
+Write the Bell states as
+
+                                   |00⟩+ s |11⟩
+                            |Φs⟩=   √         ,                                  (1)
+                                            2
+                                   |01⟩+ s |10⟩
+                           |Ψs⟩=   √         ,                                  (2)
+                                            2
+
+where s ∈{+1, −1}.
+Using the orthonormality of the computational basis,
+
+                                   1
+                        ⟨Φs|Φt⟩=  (⟨00|00⟩+ st ⟨11|11⟩)                           (3)
+                                   2
+                                   1 + st
+                     =           .                                           (4)
+                                     2
+
+Therefore,                        {
+                                                     1,  s = t,
+                             ⟨Φs|Φt⟩=                                              (5)
+                                                     0,    s̸ = t.
+
+Similarly,
+                                          1 + st
+                              ⟨Ψs|Ψt⟩=           .                                   (6)
+                                            2
+The states in the Φ and Ψ families are mutually orthogonal because
+
+                                ⟨Φs|Ψt⟩= 0.                                      (7)
+
+Hence,
+                                ⟨Bi|Bj⟩= δij,                                     (8)
+
+so the four Bell states form an orthonormal basis.
+
+
+(b) Local state of one photon
+
+The two-photon density operator is
+
+           ρAB = |Φ+⟩⟨Φ+|                                                            (9)
+                   1
+          =  (|HH⟩⟨HH| + |HH⟩⟨V V | + |V V ⟩⟨HH| + |V V ⟩⟨V V |) .          (10)
+                   2
+
+To trace over photon B, use
+
+                      TrB (|i⟩A |j⟩B ⟨k|A ⟨l|B) = ⟨l|j⟩|i⟩A ⟨k|A .                      (11)
+
+Therefore,
+
+                      TrB (|HH⟩⟨HH|) = |H⟩⟨H| ,                                (12)
+                      TrB (|HH⟩⟨V V |) = ⟨V |H⟩|H⟩⟨V | = 0,                      (13)
+                      TrB (|V V ⟩⟨HH|) = ⟨H|V ⟩|V ⟩⟨H| = 0,                      (14)
+                       TrB (|V V ⟩⟨V V |) = |V ⟩⟨V | .                                 (15)
+
+
+                                       1
+
+======== PAGE 2 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+Thus,
+
+                           ρA = TrB(ρAB)                                       (16)
+                                  1
+                    =  (|H⟩⟨H| + |V ⟩⟨V |)                            (17)
+                                  2
+                                      I
+                    = 2.                                              (18)
+
+Photon A is therefore in a maximally mixed state. For an H/V measurement,
+
+                                           1
+                             P(H) = 2,                                    (19)
+                                           1
+                              P(V ) = 2.                                    (20)
+
+Equal probability for H and V.
+
+
+(c) Correlations in two bases
+
+From the definitions of |D⟩and |A⟩,
+
+                              |D⟩+ |A⟩
+                         |H⟩=  √       ,                                 (21)
+                                           2
+                                |D⟩−|A⟩
+                                      |V ⟩=  √       .                                 (22)
+                                           2
+
+Therefore,
+
+                             1
+               |HH⟩=  (|DD⟩+ |DA⟩+ |AD⟩+ |AA⟩) ,                    (23)
+                             2
+                             1
+                         |V V ⟩=  (|DD⟩−|DA⟩−|AD⟩+ |AA⟩) .                    (24)
+                             2
+
+Adding these expressions gives
+
+                   |HH⟩+ |V V ⟩= |DD⟩+ |AA⟩.                          (25)
+
+Hence,
+                            |DD⟩+ |AA⟩
+                         |Φ+⟩=   √          .                              (26)
+                                            2
+In the H/V basis, the possible outcomes are
+
+                   HH  or  V V,                                  (27)
+
+each with probability 1/2.
+In the D/A basis, the possible outcomes are
+
+                    DD  or  AA,                                  (28)
+
+each with probability 1/2.
+The measurement outcomes are therefore perfectly correlated in both bases.
+
+
+
+
+                                       2
+
+======== PAGE 3 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+Question 2: Superdense coding with polarisation qubits
+
+(a) Encoding the messages
+
+Applying the identity operation gives
+
+                                       |00⟩+ |11⟩
+                                   (I ⊗I) |Φ+⟩=  √                                 (29)
+                                               2
+                          = |Φ+⟩.                                  (30)
+
+Applying X to Alice’s qubit gives
+
+                                        |10⟩+ |01⟩
+                       (X ⊗I) |Φ+⟩=  √                                 (31)
+                                                2
+                          = |Ψ+⟩.                                 (32)
+
+Applying Z to Alice’s qubit gives
+
+                                         |00⟩−|11⟩
+                           (Z ⊗I) |Φ+⟩=  √                                 (33)
+                                               2
+                          = |Φ−⟩.                                 (34)
+
+For the final operation,
+
+                     XZ |0⟩= |1⟩,                                    (35)
+                     XZ |1⟩= −|0⟩.                                 (36)
+
+Therefore,
+
+                                          |10⟩−|01⟩
+                     (XZ ⊗I) |Φ+⟩=  √                                (37)
+                                                2
+                          = −|Ψ−⟩.                              (38)
+
+The overall minus sign is a global phase and has no physical significance. One possible
+encoding table is therefore
+
+                  Classical message  Alice’s operation  Resulting Bell state
+                      00                 I               |Φ+⟩
+                      01         X              |Ψ+⟩                    (39)
+                      10           Z               |Φ−⟩
+                      11         XZ              |Ψ−⟩
+
+
+(b) Information transmitted
+
+Alice’s four possible operations transform the shared state into four mutually orthogonal Bell
+states.
+An ideal Bell-state measurement can distinguish all four possibilities.
+
+
+
+
+
+                                       3
+
+======== PAGE 4 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+(c) Linear-optical Bell-state measurement
+
+In terms of the input-mode creation operators,
+                             (         )                                 1
+                     |Φ±⟩= √     ˆa†Hˆb†H ± ˆa†V ˆb†V  |vac⟩,                         (40)
+                                  2
+                             (         )                                 1
+                    |Ψ±⟩= √     ˆa†Hˆb†V ± ˆa†V ˆb†H  |vac⟩.                         (41)
+                                  2
+
+For two photons with the same polarisation,
+                              (     ) (     )
+                                               ˆa†λˆb†λ −→1    ˆc†λ + ˆd†λ      ˆc†λ −ˆd†λ                           (42)                                   2
+                              [(  )2  (  )2]                                 1
+                    =         ˆc†λ  −   ˆd†λ      .                              (43)                                 2
+
+It follows that
+                                    [ (  )2  (  )2                                1
+                 |Φ±⟩−→ √       ˆc†H  −   ˆd†H
+                               2  2
+                               (  )2  (  )2 ]
+                       ±   ˆc†V  ∓   ˆd†V     |vac⟩.                     (44)
+
+For the two Ψ states,
+
+                                              ˆa†Hˆb†V + ˆa†V ˆb†H −→ˆc†Hˆc†V −ˆd†H ˆd†V ,                         (45)
+
+and
+
+                                              ˆa†Hˆb†V −ˆa†V ˆb†H −→ˆc†V ˆd†H −ˆc†H ˆd†V .                         (46)
+
+Therefore,
+                              (         )
+                |Ψ+⟩−→1√      ˆc†Hˆc†V −ˆd†H ˆd†V  |vac⟩,                        (47)
+                                   2
+                              (         )
+                |Ψ−⟩−→1√      ˆc†V ˆd†H −ˆc†H ˆd†V  |vac⟩.                        (48)
+                                   2
+
+The corresponding detection patterns are
+
+    Input state                        Detection pattern
+       |Φ+⟩    Two photons in the same output port with the same polarisation
+       |Φ−⟩    Two photons in the same output port with the same polarisation     (49)
+       |Ψ+⟩     Two orthogonally polarised photons in the same output port
+       |Ψ−⟩     One photon in each output port, with orthogonal polarisations
+
+The states |Ψ+⟩and |Ψ−⟩produce different detection patterns and can therefore be distin-
+guished unambiguously.
+The states |Φ+⟩and |Φ−⟩differ only through relative phases that are not detected by photon
+counting. They therefore remain indistinguishable using this measurement.
+
+
+
+
+
+                                       4
+
+======== PAGE 5 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+(d) Decoding eﬀiciency
+
+Two of the four Bell states can be identified unambiguously. For four equally likely messages,
+the success probability is
+
+                                            2
+                                                 Psuccess =                                      (50)
+                                            4
+                                            1
+                           = 2.                                   (51)
+
+Thus, the standard passive linear-optical Bell-state measurement succeeds with probability
+50%.
+The other 50% of the events correspond to |Φ+⟩or |Φ−⟩, which cannot be distinguished.
+Consequently, this measurement alone cannot implement deterministic dense coding.
+
+
+
+
+
+                                       5
+
+======== PAGE 6 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+Question 3: BB84 quantum key distribution – Solutions
+
+(a) State preparation
+
+Alice’s encoding is
+                           Basis  Bit value     State sent
+                   Z       0          |H⟩
+                   Z       1             |V ⟩
+                                    |H⟩+ |V ⟩                        (52)
+                X       0    |D⟩=  √
+                                                   2
+                                      |H⟩−|V ⟩
+                X       1    |A⟩=  √
+                                                   2
+
+(b) Basis sifting and loss
+
+Alice and Bob each choose the Z or X basis with probability 1/2. Therefore, the probability
+that they choose the same basis is
+
+                      P(same basis) = P(Z, Z) + P(X, X)                       (53)
+                                        1 1   1 1
+                        =  +                                     (54)
+                                        2 2   2 2
+                                        1
+                        = 2.                                        (55)
+
+Thus, one half of Bob’s detections are retained.
+The probability that a transmitted photon reaches Bob and is detected is
+
+                                 P(detection) = ηchηd.                               (56)
+
+Hence, the expected number of detections is
+
+                                     Ndet = Nηchηd.                                  (57)
+
+After basis sifting, the expected sifted-key length is
+
+                                        1
+                                              Nsift = 2Nηchηd.                                 (58)
+
+(c) Intercept–resend attack
+
+Eve chooses the same basis as Alice with probability
+
+                                                    1
+                        P(Eve uses Alice’s basis) = 2.                          (59)
+
+In this case, Eve obtains Alice’s bit correctly and sends Bob the correct state. Therefore,
+
+                          P(error | Eve uses Alice’s basis) = 0.                       (60)
+
+Eve chooses a different basis from Alice with probability
+
+                                                     1
+                       P(Eve uses a different basis) = 2.                        (61)
+
+In this case, Eve’s result is random relative to Alice’s bit. The state resent by Eve gives Bob
+the correct or incorrect result with equal probability. Therefore,
+
+                                                        1
+                        P(error | Eve uses a different basis) = 2.                     (62)
+
+                                       6
+
+======== PAGE 7 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+The QBER is consequently
+                               )                                    1     1 (1
+                    Q = 2(0) + 2  2                                  (63)
+                                    1
+                      = 4.                                            (64)
+
+Thus, the intercept–resend attack produces
+
+                       Q = 25%.                                    (65)
+
+
+(d) Detecting the attack and completing the protocol
+
+   (i) For Q = 1/4 and m = 20, the probability of observing at least one error is
+
+                         P(at least one error) = 1 −(1 −Q)m                     (66)
+                                 (     )20
+                             = 1 −  1 −1                       (67)
+                                                       4
+                                     (3 )20
+                             = 1 −                              (68)
+                                                    4
+                                           ≈0.9968.                           (69)
+
+
+      Therefore,
+                            P(at least one error) ≈99.68%.                       (70)
+
+  (ii) The test bits are publicly revealed, so Eve also knows their values. They can no longer
+     be considered secret and must be discarded from the key.
+
+ (iii) Error correction allows Alice and Bob to identify and correct disagreements so that
+     they share identical keys. Privacy amplification compresses the corrected key to reduce
+      Eve’s possible information about the final key.
+
+
+
+
+
+                                       7

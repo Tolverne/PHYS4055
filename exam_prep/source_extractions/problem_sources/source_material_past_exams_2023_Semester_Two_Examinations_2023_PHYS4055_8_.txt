@@ -1,0 +1,291 @@
+Source: source_material/past_exams/2023/Semester_Two_Examinations_2023_PHYS4055 (8).pdf
+Pages: 6
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+                                           Venue          ____________________
+
+                                                Seat Number     __________
+
+                                                  Student Number   |__|__|__|__|__|__|__|__|
+
+                                                  Family Name     ____________________
+ This exam paper must not be removed from the venue
+                                                               First Name       ____________________
+
+
+               School of Mathematics & Physics
+              Semester Two Examinations, 2023
+        PHYS4055 Atomic Physics and Quantum Optics
+
+                           This paper is for St Lucia Campus students.
+
+
+ Examination Duration: 120 minutes                                   For Examiner Use Only
+
+ Planning Time:       10 minutes                                              Question      Mark
+
+ Exam Conditions:
+
+ •This is an Open Book examination
+ •Any calculator permitted - unrestricted
+ •During Planning Time - Students are encouraged to review and plan
+ responses to the exam questions
+ •This examination paper will be released to the Library
+
+ Materials Permitted in the Exam Venue:
+ (No electronic aids are permitted e.g. laptops, phones)
+
+ * Open-book: Any additional written or printed material is permitted;
+ material may also be annotated.
+
+ Materials to be supplied to Students:
+ Additional exam materials (e.g. answer booklets, rough paper) will
+ be provided upon request.
+
+ 1 x 14-Page Answer Booklet
+
+ Instructions to Students:
+  If you believe there is missing or incorrect information impacting
+ your ability to answer any question, please state this when writing
+ your answer.
+
+ There are FOUR questions. Answer any THREE.
+
+
+
+
+
+                                                                 Total _________
+
+
+
+
+
+                                  Page 1 of 6
+
+======== PAGE 2 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+
+Question 1.
+
+(10 marks)
+
+Consider a single mode of the electromagnetic field in a nonlinear medium represented by
+the Hamiltonian:
+                                         𝐻̂ = ℏ(𝜔𝑎†𝑎+ 𝜆(𝑎†𝑎)𝑝),
+
+where 𝜔 and 𝜆 are real parameters, and 𝑝 is an integer.
+
+a) (2 marks) What are the eigenstates and eigenvalues of 𝐻?
+
+b) (2 marks) What is the time evolution, in the interaction picture, of an initial coherent state
+    |𝛼⟩ under the action of this Hamiltonian? Write your final expression in the number-state
+    basis.
+
+c)  (2 marks) Show that, for even 𝑝, the coherent state in the interaction picture at time 𝑡=
+    𝜋 can be written as;
+    2𝜆
+
+                                     1
+                      |𝜓(𝑡)⟩=  [(1 −𝑖)|𝛼⟩+ (1 + 𝑖)| −𝛼⟩].
+                                     2
+
+ Hint: For integer 𝑛 and even 𝑝;
+
+                     exp(−𝑖𝜋 𝑛𝑝) = 1 [1 + (−1)𝑛−𝑖+ 𝑖(−1)𝑛]
+                          2      2
+
+d) (2 marks) Using the state shown in part c), determine the correlation function 𝑔(𝑘) for
+    positive integers 𝑘.
+
+e) (2 marks) Given your answer to d), to what extent can the state shown in c) be described
+   as classical? Describe any features that are non-classical.
+
+
+
+
+
+                                  Page 2 of 6
+
+======== PAGE 3 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+Question 2.
+
+(10 marks)
+
+Consider the electronic structure of the hydrogen atom. The normalised wavefunction of an
+electron in the state 1s (assuming a point nucleus) is given by;
+
+                                                    1   −𝑟
+                                   𝜓1𝑠(𝑟) = √   3 𝑒  𝑎0.
+                                                  𝜋𝑎0
+
+    a)  (2 marks) What radius from the nucleus corresponds to the maximum probability
+        of finding the electron?
+
+    b)  (2 marks) Calculate the expectation value 〈𝑟〉 and 〈1  for the 𝜓1𝑠 state. How do these                                                                  𝑟〉
+        results compare with the result found using the Bohr theory?
+
+       Hint:∫ ∞ 𝑥𝑛𝑒−𝑎𝑥𝑑𝑥 = 𝑛!⁄ 𝑎𝑛+1 .             0
+
+
+Now consider the electronic structure of the helium atom.
+
+    c)  (2 marks) Write down the Schrödinger equation for helium and explain the physical
+        significance of each of the terms.
+
+    d)  (2 marks) There are four possible spin states of the two electrons in the helium atom.
+       Write the states down and identify whether they are symmetric or antisymmetric
+      under exchange. Label the singlet and triplet states.
+
+    e)  (1 mark) Explain the physical origin of hyperfine structure. Explain why the hyperfine
+       structure is expected to be of orders of magnitude smaller than fine structure.
+
+     f)  (1 mark) Consider the excited states of the Helium atom 21𝑆0, 21𝑃1, 23𝑆1 and 23𝑃0,1,2.
+      Draw the energy level diagram and list the possible electric-dipole allowed
+        transitions.
+
+
+
+
+
+                                  Page 3 of 6
+
+======== PAGE 4 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+Question 3.
+
+(10 marks)
+
+See the image below for an example interferometer.
+
+
+
+
+
+                                    𝑖/√2    a)  (2 mark) The matrix 𝑀= (1/√2      ) is used to represent the first beam splitter.
+                              𝑖/√2  1/√2
+     Show that the output of the first beam splitter conserves energy when sending two
+        input fields 𝐸in and 𝐸v into the input ports.
+
+    b)  (1 mark) We now send a squeezed coherent state into this interferometer |𝜓in〉=
+         |𝛼, 𝜉〉𝑖𝑛|0〉𝑣 with squeezing parameter 𝑟 and 𝜑𝑆 (𝜉= 𝑟𝑒2𝑖𝜑𝑆). Do you expect a
+        sensitivity enhancement due to the squeezing? Explain.
+
+    c)  (2 marks) Knowing that 𝑎𝐴= 1 [𝑎𝑖𝑛(𝑒𝑖𝜙+ 1) + 𝑎𝑣(𝑒𝑖𝜙−1)] and 𝑎𝐵=                                      2
+        1 [𝑎𝑖𝑛(𝑒𝑖𝜙−1) + 𝑎𝑣(𝑒𝑖𝜙+ 1)] show that,        2
+              𝑛𝐴−𝑛𝐵= cos(𝜙) (𝑛𝑖𝑛−𝑛𝑣) + 𝑖sin(𝜙)(𝑎𝑖𝑛† 𝑎𝑣−𝑎𝑣†𝑎𝑖𝑛).
+
+    d)  (2 marks) Calculate the expression of the signal ⟨𝑛𝐴−𝑛𝐵⟩ for the squeezed coherent
+        input state. Use the expressions 𝜇= cosh(𝑟) and 𝜈= 𝑒2𝑖𝜑𝑆sinh(𝑟), and their
+       associated identities, to get the solution in terms of 𝛼 and 𝜈.
+
+    e)  (2 marks) Calculate the expression of the noise Var[𝑛𝐴−𝑛𝐵] for a phase shift 𝜙=
+       𝜋/2. Use the expressions 𝜇= cosh(𝑟) and 𝜈= 𝑒2𝑖𝜑𝑆sinh(𝑟), and their associated
+         identities, to get the solution in terms of 𝛼 and 𝜈.
+
+     f)  (1 marks) Using the expression of the SNR = ⟨𝑛𝐴−𝑛𝐵⟩/√Var[𝑛𝐴−𝑛𝐵]  , calculate
+       the smallest resolvable change in phase shift with this squeezed state for 𝜙 around
+       𝜋/2.
+
+
+
+
+
+                                  Page 4 of 6
+
+======== PAGE 5 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+Question 4.
+
+(10 marks)
+
+A two-photon Raman transition couples two atomic states |𝑔⟩ and |𝑒⟩ via an off-resonant
+transition with an auxiliary state, |𝑎⟩, as shown below.
+
+                                   a
+
+
+
+                                   e
+
+
+
+
+
+                                   g
+
+The field ℰ𝑐(𝑡) is a time dependent classical control field at carrier frequency 𝜔𝑐 and 𝑎, 𝑎†
+are the annihilation and creation operators of a quantised cavity field with resonant
+frequency 𝜔𝑎. The diagram above shows the resonant case, but in general there can be a
+detuning 𝛿= 𝜔𝑒𝑔−(𝜔𝑎−𝜔𝑐) where 𝜔𝑒𝑔 is the transition frequency between the ground and
+excited state. In the dipole and rotating wave approximation the Hamiltonian is
+
+                            𝜔𝑒𝑔
+      𝐻= ℏ𝜔𝑎𝑎†𝑎+ ℏ   𝜎𝑧+ ℏ𝑔൫ℰ𝑐(𝑡)𝑎†|𝑔⟩⟨𝑒|𝑒−𝑖𝜔𝑐𝑡+ ℰ𝑐∗(𝑡)𝑎|𝑒⟩⟨𝑔|𝑒𝑖𝜔𝑐𝑡൯.                               2
+
+We will ignore spontaneous emission in this question as the coupled states are dipole
+forbidden transitions.
+
+    a)  (2 marks) Show that the interaction picture Hamiltonian is
+                  𝐻𝐼= −ℏ𝛿𝑎†𝑎+ ℏ𝑔ℰ𝑐(𝑡)൫𝑎†|𝑔⟩⟨𝑒| + 𝑎|𝑒⟩⟨𝑔|൯.
+
+    b)  (3 marks) If the cavity field is strongly driven we may replace 𝑎, 𝑎† by the
+       semiclassical coherent amplitudes 𝛼, 𝛼∗. Show that the equations of motion for the
+       atomic system are
+
+                              𝑑𝑧ሺ𝑡ሻ
+                      = 2𝑖𝑔ℰ𝑐ሺ𝑡ሻሺ𝛼∗𝑤∗−𝛼𝑤ሻ
+                              𝑑𝑡
+
+                          𝑑𝑤ሺ𝑡ሻ
+                      = −𝑖𝑔ℰ𝑐ሺ𝑡ሻ𝛼∗𝑧
+                              𝑑𝑡
+
+      where 𝑧= ⟨𝜎𝑧⟩, 𝑤= ⟨𝜎+⟩, 𝑤∗= ⟨𝜎−⟩.
+
+    c)  (3 marks) Define a pulse amplitude as
+                                                 2ℰ0
+                     𝐴= ∫−∞∞ℰ𝑐(𝑡)𝑑𝑡=                                                 𝛾
+       given the Lorentzian control pulse ℰ𝑐(𝑡) = ℰ0𝑒−𝛾|𝑡|.
+        Starting with the equations in b), find the conditions on ℰ0, 𝛾, 𝛿 such that an atom
+       prepared in the ground state in the far past of the pulse will evolve to the excited
+        state after the passage of the control pulse.
+
+
+
+
+
+                                  Page 5 of 6
+
+======== PAGE 6 ========
+Semester Two Examinations, 2023                                        PHYS4055
+
+
+        Hint: define a new time variable 𝜏ሺ𝑡ሻ= ׬                                                                  𝑡  ℰ𝑐ሺ𝑡′ሻ𝑑𝑡′ such that 𝑑𝜏                                   −∞                                                  𝑑𝑡= ℰ𝑐ሺ𝑡ሻ. Also,
+       recognising the coherent amplitude 𝛼 is dependent on detuning, use the simplified
+       expression ξ2𝑔ξ𝛼2 + 𝛼∗2 = 𝜔ሺ𝛿ሻ.
+
+    d)  (2 marks) How might this process be used as a sensor for the detuning 𝛿?
+
+
+
+                  END OF EXAMINATION
+
+
+
+
+
+                                  Page 6 of 6

@@ -1,0 +1,325 @@
+Source: source_material/tutorials/Week5Solutions (1).pdf
+Pages: 5
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                  PHYS4055 Week 5 Tutorial Solutions
+
+                                              Josephine Dias∗
+                                              (Dated: August 24, 2026)
+
+
+
+
+
+                Worked Solution: A Pure-Loss Channel and Conditional Evolution
+
+
+   1. Joint system–environment state
+
+    The initial joint state is
+
+                                          |Ψin⟩SE = (α|0⟩S + β|1⟩S) |0⟩E.                                      (1)
+
+     Applying the beam-splitter transformations to each term gives
+                                √
+                              |Ψout⟩SE = α|0⟩S|0⟩E + √η β|1⟩S|0⟩E +  1 −η β|0⟩S|1⟩E                         (2)
+                               √
+                       = (α|0⟩S + √η β|1⟩S) |0⟩E +  1 −η β|0⟩S|1⟩E.                          (3)
+
+    The first term corresponds to no photon being found in the environment, while the second corresponds to the
+     photon being lost into the environment.
+
+   2. Kraus operators
+
+    The Kraus operators are defined by
+
+                                                          ˆKj = E⟨j| ˆUη|0⟩E.                                             (4)
+
+   We first determine how ˆK0 acts on the system basis states:
+
+                                            ˆK0|0⟩S = E⟨0| ˆUη|0⟩S|0⟩E = |0⟩S,                                       (5)
+                                            ˆK0|1⟩S = E⟨0| ˆUη|1⟩S|0⟩E = √η |1⟩S.                                   (6)
+
+     Therefore,
+
+                                                    ˆK0 = |0⟩⟨0| + √η |1⟩⟨1| .                                         (7)
+
+
+      Similarly,
+
+                                          ˆK1|0⟩S = E⟨1| ˆUη|0⟩S|0⟩E = 0,                                            (8)
+                              √
+                                          ˆK1|1⟩S = E⟨1| ˆUη|1⟩S|0⟩E =   1 −η |0⟩S.                                 (9)
+
+     Thus,
+
+                         √
+                                                      ˆK1 =   1 −η |0⟩⟨1| .                                        (10)
+
+
+     In the ordered basis {|0⟩, |1⟩}, these operators are
+                            (   )       (      )                                          1  0              0 √1 −η
+                                           ˆK0 =                ,     ˆK1 =                      .                              (11)                                          0 √η              0    0
+
+
+
+
+∗j.dias@uq.edu.au
+
+======== PAGE 2 ========
+                                                                                                  2
+
+
+  We now check the completeness relation:
+
+                                               ˆK†0 ˆK0 = |0⟩⟨0| + η|1⟩⟨1|,                                       (12)
+                                               ˆK†1 ˆK1 = (1 −η)|1⟩⟨1|.                                         (13)
+
+   Therefore,
+
+                                     ˆK†0 ˆK0 + ˆK†1 ˆK1 = |0⟩⟨0| + [η + (1 −η)] |1⟩⟨1|                             (14)
+                             = |0⟩⟨0| + |1⟩⟨1|                                         (15)
+                             = ˆIS.                                                    (16)
+
+   Consequently,
+                                  
+                  ∑1
+                                                     Tr(ˆρ′S) = Tr     ˆKj ˆρS ˆK†j                                     (17)
+                                                       j=0
+                                             
+                  ∑1
+                             = Tr ˆρS    ˆK†j ˆKj                                      (18)
+                                                          j=0
+
+                             = Tr(ˆρS) = 1.                                            (19)
+
+  The completeness relation therefore ensures that the complete channel preserves the trace.
+
+3. Conditional evolution
+
+  For the environmental outcome j = 0, the unnormalised conditional system state vector is
+                                           ˆK0|ψ⟩S = α|0⟩S + √η β|1⟩S.                                     (20)
+
+   Its probability is
+
+                                                p0 = ⟨ψ| ˆK†0 ˆK0|ψ⟩                                          (21)
+                             = |α|2 + η|β|2.                                          (22)
+
+  The corresponding normalised conditional state is
+                                                   α|0⟩S + √η β|1⟩S
+                                           |ψ0⟩S = √                      .                                     (23)
+                                                               |α|2 + η|β|2
+
+
+  This is the no-loss outcome: no photon is found in the environment.
+
+  For the outcome j = 1,
+                         √
+                                             ˆK1|ψ⟩S =   1 −η β|0⟩S.                                       (24)
+
+  The probability of this outcome is
+
+                                                p1 = ⟨ψ| ˆK†1 ˆK1|ψ⟩                                          (25)
+                             = (1 −η)|β|2.                                           (26)
+
+  Provided that p1̸ = 0, the normalised conditional state is, up to an irrelevant global phase,
+
+                                                  |ψ1⟩S = |0⟩S  .                                           (27)
+
+
+  This outcome corresponds to photon loss: one photon is found in the environment and the system is left in the
+  vacuum state.
+
+======== PAGE 3 ========
+                                                                                                  3
+
+
+  The two probabilities sum to
+
+                                       p0 + p1 = |α|2 + η|β|2 + (1 −η)|β|2                                 (28)
+                           = |α|2 + |β|2 = 1.                                           (29)
+
+
+  An individual conditional operation is not trace-preserving because
+                                     (      )
+                                         Tr  ˆKj ˆρS ˆK†j = pj,                                         (30)
+
+  which is generally less than one. The trace is the probability that outcome j occurs. The remaining probability
+   corresponds to the other possible environmental outcomes.
+
+4. Unconditional reduced system state
+
+  The input density operator is
+
+                                          ˆρS = |ψ⟩⟨ψ|                                                                (31)
+                    = |α|2|0⟩⟨0| + αβ∗|0⟩⟨1| + α∗β|1⟩⟨0| + |β|2|1⟩⟨1|.                         (32)
+
+
+   In matrix form,
+                                (     )
+                                                             |α|2 αβ∗
+                                                               ˆρS =                      .                                         (33)                                            α∗β  |β|2
+
+
+  The no-loss contribution is
+                             (   ) (     ) (   )
+                                            1  0     |α|2 αβ∗   1  0
+                                          ˆK0ˆρS ˆK†0 =                                                             (34)                                            0 √η   α∗β  |β|2   0 √η
+                             (          )
+                                                         |α|2  √η αβ∗
+                          =  √η α∗β   η|β|2     .                                        (35)
+
+
+  The loss contribution is
+                          (      ) (     ) (      )                                        0 √1 −η    |α|2 αβ∗      0    0
+                                     ˆK1ˆρS ˆK†1 =                                                                 (36)                                        0    0     α∗β  |β|2   √1 −η 0
+                          (        )
+                                             (1 −η)|β|2 0
+                        =                            .                                               (37)
+                                            0     0
+
+
+  Adding the two possible outcomes gives
+
+                           (               )
+                                                    |α|2 + (1 −η)|β|2 √η αβ∗
+                                                                       ˆρ′S =     √η α∗β        η|β|2      .                                (38)
+
+
+   Equivalently,
+                                            [
+                                                                ˆρ′S =  |α|2 + (1 −η)|β|2] |0⟩⟨0| + η|β|2|1⟩⟨1|
+                        + √η αβ∗|0⟩⟨1| + √η α∗β|1⟩⟨0|.                                   (39)
+
+
+  The one-photon population is multiplied by η because η is the probability that the photon is transmitted. The
+   corresponding probability amplitude is multiplied by √η, so the coherences between the vacuum and one-photon
+  components are multiplied by √η.
+
+  Conditioning on a particular environmental outcome selects a single pure branch of the joint state.   If the
+  environmental outcome is ignored, the no-loss and loss branches must be added incoherently.  Because the
+  environment contains information about which process occurred, the resulting reduced system state can be
+  mixed.
+
+======== PAGE 4 ========
+                                                                                                  4
+
+
+5. Purity of the output state
+
+  Using the normalisation condition,
+
+                                                       |α|2 = 1 −|β|2,                                           (40)
+
+   the output matrix elements may be written as
+
+                                                            ρ′00 = 1 −η|β|2,                                          (41)
+                                                            ρ′11 = η|β|2,                                              (42)
+                                                               |ρ′01|2 = η|α|2|β|2.                                          (43)
+
+  For a two-dimensional density matrix,
+                                       [
+                                 Tr  (ˆρ′S)2] = (ρ′00)2 + (ρ′11)2 + 2 |ρ′01|2 .                                (44)
+
+
+   Substitution gives
+                             [         (                         Tr  (ˆρ′S)2] =  1 −η|β|2)2 + η2|β|4 + 2η|α|2|β|2                                 (45)
+                                         (                        (                      =  1 −η|β|2)2 + η2|β|4 + 2η 1 −|β|2) |β|2                           (46)
+                      = 1 −2η|β|2 + η2|β|4 + η2|β|4 + 2η|β|2 −2η|β|4                      (47)
+
+                      = 1 −2η(1 −η)|β|4 .                                               (48)
+
+
+  For 0 < η < 1, the factor η(1 −η) is nonzero. Therefore, the output has unit purity only when
+
+                                                             |β| = 0.                                               (49)
+
+
+  Thus, within this range of η, only the vacuum input
+
+                                                  |ψ⟩S = |0⟩S                                             (50)
+
+  remains pure.
+
+  At η = 1, the channel is the identity and every pure input remains pure. At η = 0, every input is mapped to
+   the vacuum state, which is also pure.
+
+  For 0 < η < 1 and |β|̸ = 0, the system becomes correlated with the environment.  Since the total system–
+  environment state remains pure under the unitary evolution, the mixedness of the reduced system state is a
+  consequence of system–environment entanglement.
+
+6. Photon-number statistics for a one-photon input
+
+  For the input state
+
+                                                 |ψ⟩S = |1⟩S,                                             (51)
+
+  we have α = 0 and β = 1. The output state becomes
+
+                                                                              ˆρ′S = (1 −η)|0⟩⟨0| + η|1⟩⟨1|.                                     (52)
+
+   Therefore,
+
+                             P(n = 0) = 1 −η,    P(n = 1) = η.                                (53)
+
+
+  Within the single-rail subspace,
+
+                                                                             ˆn = |1⟩⟨1|,                                             (54)
+
+======== PAGE 5 ========
+                                                                                                5
+
+
+and hence
+
+                                                                    ˆn2 = ˆn.                                               (55)
+
+
+The mean photon number is
+
+                                       ⟨ˆn⟩= Tr (ˆnˆρ′S)                                                 (56)
+                          = 0 × (1 −η) + 1 × η                                      (57)
+                          = η.                                                       (58)
+
+
+Similarly,
+                                                      (     )
+                                           ⟨ˆn2⟩= Tr  ˆn2ˆρ′S                                           (59)
+                             = η.                                                  (60)
+
+
+The variance is therefore
+
+                                               Var(ˆn) = ⟨ˆn2⟩−⟨ˆn⟩2                                        (61)
+                             = η −η2                                             (62)
+
+                             = η(1 −η) .                                         (63)
+
+
+To find the maximum, differentiate with respect to η:
+
+                                      d
+                                                 [η(1 −η)] = 1 −2η.                                       (64)
+                                      dη
+
+Setting this equal to zero gives
+
+                                                  1
+                                              η = 2.                                               (65)
+
+Since
+
+                                          d2
+                                                 [η(1 −η)] = −2 < 0,                                      (66)
+                                       dη2
+
+this is a maximum. The maximum variance is
+
+                                                      1
+                                               Var(ˆn)max = 4.                                           (67)
+
+At η = 0, the output is always the vacuum state, so the photon number is certainly zero. At η = 1, the photon
+is always transmitted, so the photon number is certainly one. The variance vanishes in both cases because there
+is no uncertainty in the measurement outcome.

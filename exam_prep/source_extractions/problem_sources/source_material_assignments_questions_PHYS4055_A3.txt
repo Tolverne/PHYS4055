@@ -1,0 +1,119 @@
+Source: source_material/assignments/questions/PHYS4055_A3.pdf
+Pages: 2
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+     PHYS4055 – Atomic Physics and Quantum Optics – Semester 2, 2026
+                               Assignment 3
+                       Deadline: 4pm Friday 25 September 2026
+
+
+This assessment contributes 25%/4 towards your overall grade.  It consists of four questions on
+topics covered in the first few weeks of the atomic physics part of the course. Each question carries
+equal weight. In answering these questions show all working. While you may consult the reference
+texts and discuss the questions broadly with your peers, you need to carry out and submit your
+own work.
+
+
+   1. Nuclear-size effects.
+
+     In class, we have explored the first-order corrections to the energies in hydrogen and H-like
+      ions arising from relativistic and spin-orbit effects. So far, we have treated the nucleus as
+      point-like. In this problem, we are going to explore the effect of account of finite nuclear size
+     on the energies.
+
+      Let’s model the charge distribution of the nucleus as uniform within a radius R, corresponding
+      to the nuclear charge radius. This corresponds to a step-function density profile, and is a
+     reasonable model. The nuclear charge radius R is related to the root-mean-square charge
+      radius Rrms – which may be found in data tables – as R = p5/3 Rrms.
+
+     This nuclear charge distribution corresponds to the following expression for the nuclear po-
+      tential inside the radius R:
+                             V (r) = −Z h3 −1  r  2i ,                              (1)
+                            R 2   2 R
+     and outside the nucleus (r ≥R) the potential is V (r) = −Z/r.
+
+       (a) Show that the leading correction (in powers of R) for s-states is
+
+                                          2Z2
+                                      ∆Efns =    (ZR)2 .                               (2)
+                                               5n3
+
+      (b) Using the Mathematica codes, or your favourite programming language, numerically
+          evaluate the finite-nuclear-size energy corrections for 1s, 2p, and 3d states of H-like 209Bi.
+         Submit your code and include comments. How does your numerical result compare to
+         what you obtained analytically for the s-states?
+
+       (c) Compare your results from (b) with the size of the relativistic corrections we considered
+           in class for the same system and states. Comment on your results.
+
+   2. Electron configurations and terms.
+
+     Coupling of two identical d states.
+
+       (a) Find all possible terms from the configuration nd2, where n is the principal quantum
+         number, showing all working.
+
+      (b) What is the expected ordering of the energy levels of these terms? Explain your answer.
+       (c) Peruse the Periodic Table and pick your favourite element with an unpaired nd2 in the
+         ground state, with all other shells or subshells filled (e.g., n′s2, n′f14). Consulting the
+        NIST Atomic Spectra Database, do the energy levels follow the ordering you predicted
+            for the terms? Comment on the similarities/differences.
+
+      (d) For one of the considered excited states (terms) from your answer to (c), find the exci-
+           tation energy (energy above the ground state) in both atomic units and cm−1.
+
+======== PAGE 2 ========
+3. Atomic polarisability.
+
+  Due to the interaction of a static electric field ε with an atom or ion, the atomic energy levels
+  may shift (Stark shift). The interaction term is given by HE = −Pi di · ε = e Pi ziε =
+   e Pi εri cos θ, where the electric field direction defines the z axis, and ε is uniform. The
+   energy shift ∆E of the state n arises in the second order of perturbation theory,
+
+                                                              2
+                                  ⟨ψn|HE|ψm⟩                 ∆E = X         = −1       ,                                En −Em       2αε2                        m
+
+  where relevant quantum numbers are wrapped up in the state labels, and the sum runs over all
+   possible states that satisfy the angular momentum and parity rules. This energy shift is often
+   expressed in terms of the atomic polarisability α, which gives a measure of how polarisable or
+   distorted the atom is on application of an electric field.
+
+   Here, we will consider the simple case of the Stark shift for a hydrogen-like ion.
+
+    (a) Approximating the energy denominator E1 −Em by E1 −E2, where E1 and E2 are the
+       unperturbed ground and first-excited state energies, calculate the polarizability α in the
+       ground state of a hydrogen-like ion, in terms of Z.
+        [Hint: You may wish to use closure, Pm |ψm⟩⟨ψm| = 1, to simplify for your expression.]
+    (b) From this result, determine a numerical value for the polarisability for hydrogen (Z=1),
+        expressing your result in both atomic units a3B and cm3, where aB is the Bohr radius.
+      Compare your value to the exact value for hydrogen 1s, α = 9/2 a3B, and comment on
+      how your value compares.
+
+    (c) Similarly, determine a numerical value for hydrogen-like rubidium 1s (Z=37), again ex-
+        pressing your result in both atomic units and cm3. Explain why this value is significantly
+         different to that for the ground state of neutral rubidum, 319 a3B.
+
+4. Land´e factor.
+
+   In this problem we will consider the interaction of an external magnetic field with the magnetic
+  moment of an atom, HB = −µ · B.
+
+  We will take the magnetic moment to be comprised of orbital and spin parts of the electrons,
+  µ = −µB(gLL+gSS), where µB is the Bohr magneton, and gL = 1 and gS ≈2 are the orbital
+  and spin g-factors of the electron. For simplicity, we will take gS = 2. We will ignore the
+   smaller contribution from the nuclear magnetic moment.
+
+    (a) Considering the total angular momentum of the system to be J = L + S, and hence
+     µ = −gJµBJ, show that the so-called Land´e factor gJ is given by
+
+                                 J(J + 1) + S(S + 1) −L(L + 1)
+                             gJ = 1 +                                                     .
+                                          2J(J + 1)
+
+    (b) Now consider the case where the total angular momentum of the atom F = I + J is
+        considered, hence µ = −gF µBF, and with the nuclear magnetic moment contribution
+           still neglected. Find the corresponding expression for the Land´e factor gF .
+    (c) Consider the term 2P1/2. Considering the case with total angular momentum F, explain
+      how this term splits on applicaton of a magnetic field. Obtain the possible values for gF
+        in terms of nuclear spin I.

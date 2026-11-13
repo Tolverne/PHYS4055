@@ -1,0 +1,233 @@
+Source: source_material/past_exams/2024/Semester_Two_Examinations_2024_PHYS4055.pdf
+Pages: 5
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+Semester Two Examinations, 2024                                        PHYS4055
+
+
+                                           Venue          ____________________
+
+                                                Seat Number     __________
+
+                                                  Student Number   |__|__|__|__|__|__|__|__|
+                                                  Family Name     ____________________
+ This exam paper must not be removed from the venue
+                                                               First Name       ____________________
+
+
+               School of Mathematics & Physics
+              Semester Two Examinations, 2024
+        PHYS4055 Atomic Physics and Quantum Optics
+
+                           This paper is for St Lucia Campus students.
+
+
+ Examination Duration: 120 minutes                                   For Examiner Use Only
+
+ Planning Time:       10 minutes                                               Question      Mark
+
+ Exam Conditions:
+
+ •Any written or printed material is permitted; material may also be
+ annotated.
+ •Casio FX82 series or UQ approved and labelled calculator only
+ •During Planning Time - Students are encouraged to review and plan
+ responses to the exam questions
+
+ Materials Permitted in the Exam Venue:
+ (No electronic aids are permitted e.g. laptops, phones)
+
+ Any additional written or printed material is permitted; material may
+ also be annotated.
+
+ Materials to be supplied to Students:
+ Additional exam materials (e.g. answer booklets, rough paper) will
+ be provided upon request.
+
+ 1 x 14-Page Answer Booklet
+
+ Instructions to Students:
+  If you believe there is missing or incorrect information impacting
+ your ability to answer any question, please state this when writing
+ your answer.
+
+ There are FOUR questions. Answer any THREE.
+
+
+
+
+
+                                                                 Total _________
+
+
+
+
+
+                                PagePage 11 ofof 52
+
+======== PAGE 2 ========
+Semester Two Examinations, 2024                                             PHYS4055
+
+
+
+Question 1
+
+
+(10 marks)
+
+In this question we will consider the splitting of energy levels due to the spin-orbit interaction. We
+will focus on the term 3D.
+
+
+  (a) (1 mark) What are the possible values of the total angular momentum J for this term?
+
+ (b) (3 marks) The Hamiltonian for the spin-orbit interaction may be expressed as the scalar product
+      of the spin and orbital angular momenta, H = AL·S, where A is a constant taken to be positive.
+
+    Show that the energy shift is given by
+
+                      A
+                 ∆E =   J(J + 1) −L(L + 1) −S(S + 1)   ,                      (1)
+                                 2
+
+     showing all working.
+
+  (c) (4 marks) Hence, find the energy shift for all 3DJ and sketch the original (unsplit) and split
+     terms on an energy-level diagram. Comment on the energy difference between adjacent levels.
+
+ (d) (2 marks) Does the total number of states (including magnetic sublevels) change due to spin-
+      orbit interaction? Show your working.
+
+
+
+
+
+Next question over ...                  Page 2 of 5
+
+======== PAGE 3 ========
+Semester Two Examinations, 2024                                             PHYS4055
+
+
+
+Question 2
+
+
+(10 marks)
+
+
+A Zeeman-split magnetic hyperfine transition is driven by a transverse AC magnetic field. The
+interaction picture Hamiltonian is
+
+                    H = ℏ∆(B) σz + Ωσx ,                                    (2)
+                                         2
+
+where σz = |e⟩⟨e| −|g⟩⟨g| and σx = |e⟩⟨g| + |g⟩⟨e|, ∆(B) is the Zeeman splitting as a function of
+the external DC magnetic field and Ωis the Rabi frequency of the transverse driving field. The
+spontaneous decay rate on the transition is γ. The steady state average of ⟨σz⟩is given by
+
+
+                                   ⌦       γ
+
+
+
+                                             γ2 + 4∆(B)2
+                                     ⟨σz⟩ss = −                                .                                (3)
+                                          γ2 + 4∆(B)2 + 8Ω2
+
+We assume that ∆(B) = κB.
+
+
+  (a) (4 marks) Calculate the steady state probability to find the atom in the ground state.
+
+ (b) (3 marks) The absorption coefficient for AC field is proportional to the steady-state probability
+      to find the system in the ground state, Pg. Describe how this system could be used as a sensor
+      for the static magnetic field at the atom.
+
+  (c) (3 marks) Show that to operate as a linear sensor we should choose a fixed external DC bias
+       field given by
+                      p8Ω2 + γ2
+                                 B0 = ±  √          .
+                                                 3
+
+
+
+
+
+Next question over ...                  Page 3 of 5
+
+======== PAGE 4 ========
+Semester Two Examinations, 2024                                             PHYS4055
+
+
+
+Question 3
+
+
+(10 marks)
+
+A beam-splitter is an optical device with two input modes and two output modes. Consider a 50:50
+beam splitter with input modes 1 and 2 and output modes 3 and 4. This beam-splitter combines the             √           √
+modes as ˆa3 = (ˆa1 + ˆa2) /  2 and ˆa4 = (ˆa1 −ˆa2) /  2 .
+
+  (a) (3 marks) What output state is expected when the two inputs each have a single photon in
+    them |1⟩1|1⟩2?
+
+ (b) (2 marks) Show that for any input this beam-splitter conserves energy.
+
+Consider the normalised state |ψ⟩= α|n⟩+β|n+1⟩where |n⟩is the n-photon state and |α|2+|β|2 = 1.
+
+
+  (c) (3 marks) Show that this state exhibits sub-Poissonian statistics, i.e. Var(n) < ⟨n⟩.
+
+ (d) (2 marks) Briefly describe the significance of sub-Poissonian statistics in light.
+
+
+
+
+
+Next question over ...                  Page 4 of 5
+
+======== PAGE 5 ========
+Semester Two Examinations, 2024                                             PHYS4055
+
+
+
+Question 4
+
+
+(10 marks)
+
+Consider a single optical cavity mode interacting with an external field through a cavity mirror and
+also experiencing internal loss. In a frame rotating at the optical frequency the quantum Langevin
+equation describing this cavity mode is:   ˙ˆa = −γ/2 ˆa + √γ1 ˆAin,1 + √γ2 ˆAin,2, where γ = γ1 + γ2, and
+γ1 represents the coupling through the mirror and γ2 represents the coupling to internal loss.
+
+  (a) (2 marks) Find the solution to the above Langevin equation for the cavity mode in the Fourier
+     domain, ˜a(ω).
+
+ (b) (2 marks) Suppose the input mode ˆAin,1 represents a laser beam in an unspecified state im-
+     pinging on the cavity mirror. Using the solution from part (a) and the input/output relation,
+       ˆAout,1 = √γ1ˆa −ˆAin,1, find the Fourier domain output mode operator for the light reflected
+     from the cavity mirror, ˜Aout,1(ω).
+
+  (c) (2 marks) What happens to the laser light at low Fourier frequencies (ω = 0) if γ1 = γ2? What
+     does this mean for the intensity of the reflected beam?
+
+
+Suppose we wish to encode qubit information on a single photon using a dual-rail encoding.
+
+
+ (d) (2 marks) Describe two different physical degrees of freedom that could be used for the encoding
+     and situations where one may be preferred over another.
+
+  (e) (2 marks) For the physical encodings discussed in part (c), describe how a Hadamard gate
+     could be implemented in the lab for each of your encodings.
+
+
+
+
+
+                  END OF EXAMINATION
+
+                                     Page 5 of 5

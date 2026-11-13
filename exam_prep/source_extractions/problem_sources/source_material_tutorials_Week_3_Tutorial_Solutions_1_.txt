@@ -1,0 +1,60 @@
+Source: source_material/tutorials/Week 3 Tutorial Solutions (1).pdf
+Pages: 1
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+                   PHYS4055 Week 3 Tutorial Notes
+
+                                              Josephine Dias∗
+                                               (Dated: August 8, 2026)
+
+
+
+
+
+                                                      I.  2024 EXAM SOLUTION
+
+
+                                        A.  Question 3
+
+
+  (10 marks)
+
+A beam-splitter is an optical device with two input modes and two output modes. Consider a 50:50 beam splitter                                                            √
+with input modes 1 and 2 and output modes 3 and 4. This beam-splitter combines the modes as ˆa1 = (ˆa3 + ˆa4) /  2           √
+and ˆa2 = (ˆa3 −ˆa4) /  2 .
+
+   1. (3 marks) What output state is expected when the two inputs each have a single photon in them |1⟩1|1⟩2?
+
+                              (     ) (     )                                                                1                                   ˆa†1ˆa†2|0⟩1|0⟩2 →1   ˆa†3 + ˆa†4     ˆa†3 −ˆa†4  |0⟩3|0⟩4 = √  (|2⟩3|0⟩4 −|0⟩3|2⟩4)                  (1)
+                                   2                              2
+
+   2. (2 marks) Show that for any input this beam-splitter conserves energy.
+
+             ∑
+                       E ∝    ˆnm
+                        (m    )      )  (    )      )                                                                    ˆa†3 + ˆa†4   (ˆa3 + ˆa4          ˆa†3 −ˆa†4   (ˆa3 −ˆa4                       (2)                                           ˆa†1ˆa1 + ˆa†2ˆa2 =   √     √   +  √     √
+                                            2         2           2         2
+                        = ˆa†3ˆa3 + ˆa†4ˆa4
+
+Consider the normalised state |ψ⟩= α|n⟩+ β|n + 1⟩where |n⟩is the n-photon state and |α|2 + |β|2 = 1.
+
+   3. (3 marks) Show that this state exhibits sub-Poissonian statistics, i.e. Var(n) < ⟨n⟩.
+
+                  Var(n) = ⟨ˆn2⟩−⟨ˆn⟩2
+                     ⟨ˆn2⟩= |α|2n2 + |β|2(n + 1)2 = n2 + |β|2(2n + 1)
+                      ⟨ˆn⟩= |α|2n + |β|2(n + 1) = n + |β|2                                                       (3)
+                  Var(n) = n2 + |β|2(2n + 1) −(n + |β|2)2 = n2 + |β|2(2n + 1) −n2 −2n|β|2 −|β|4
+                = |β|2 −|β|4
+
+                                  Var(n) = |β|2 −|β|4 < |β|2 + n = ⟨ˆn⟩   n ≥0                              (4)
+
+
+   4. (2 marks) Briefly describe the significance of sub-Poissonian statistics in light.
+    No semi-classical explanation of sub-Poissonian statistics, demonstrates that light is quantized.
+
+
+
+
+
+∗j.dias@uq.edu.au

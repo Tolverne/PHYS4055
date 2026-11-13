@@ -1,0 +1,248 @@
+Source: source_material/assignments/questions/PHYS4055 Assignment 2 (2).pdf
+Pages: 4
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+Quantum Optics Applications
+
+(10 marks)
+
+  • Use the polarisation encoding
+
+                            |0⟩≡|H⟩,    |1⟩≡|V ⟩.                            (1)
+
+The Pauli operators are defined by
+
+            X |0⟩= |1⟩,            X |1⟩= |0⟩,                      (2)
+              Z |0⟩= |0⟩,              Z |1⟩= −|1⟩.                   (3)
+
+The four Bell states are
+                                    |00⟩± |11⟩
+                          |Φ±⟩=  √        ,                                  (4)
+                                            2
+                                    |01⟩± |10⟩
+                         |Ψ±⟩=  √        .                                  (5)
+                                            2
+
+Question 1: Photonic qubits and Bell states
+
+(2 marks)
+Consider a pair of polarisation-entangled photons prepared in the state
+                                |H⟩A |H⟩B + |V ⟩A |V ⟩B                        |Φ+⟩AB =      √                  .                          (6)
+                                             2
+
+(a) Bell-basis orthogonality
+
+Show that the four Bell states are mutually orthonormal.
+
+
+(b) Local state of one photon
+
+Construct the density operator
+                               ρAB = |Φ+⟩⟨Φ+|                                    (7)
+and calculate the reduced state
+                               ρA = TrB (ρAB) .                                    (8)
+Explain what this reduced state implies about the outcome of a polarisation measurement
+performed on photon A alone.
+
+
+(c) Correlations in two bases
+
+Define the diagonal-polarisation states
+                              |H⟩+ |V ⟩
+                         |D⟩=  √        ,                                   (9)
+                                           2
+                               |H⟩−|V ⟩
+                          |A⟩=  √        .                                 (10)
+                                           2
+Rewrite |Φ+⟩in the basis
+                                   {|D⟩, |A⟩} .                                    (11)
+Describe the correlations observed when both photons are measured:
+
+   (i) in the {|H⟩, |V ⟩} basis; and
+
+  (ii) in the {|D⟩, |A⟩} basis.
+
+                                       1
+
+======== PAGE 2 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+Question 2: Superdense coding with polarisation qubits
+
+(4 marks)
+Alice and Bob initially share the Bell state
+
+                                   |Φ+⟩AB .                                     (12)
+
+Alice wishes to send one of the classical messages
+
+                                 00,     01,     10,     11.                            (13)
+
+She applies one of the operations
+
+                                    I,    X,     Z,   XZ                             (14)
+
+to her photon and then sends that photon to Bob.
+
+
+(a) Encoding the messages
+
+For each of the four operations, calculate the resulting two-photon state:
+
+                                           (I ⊗I) |Φ+⟩,                                 (15)
+                             (X ⊗I) |Φ+⟩,                                 (16)
+                                 (Z ⊗I) |Φ+⟩,                                 (17)
+                         (XZ ⊗I) |Φ+⟩.                                 (18)
+
+Hence complete a table containing:
+
+  • the classical message;
+
+  • Alice’s operation; and
+
+  • the resulting Bell state.
+
+Choose a consistent assignment of the four classical messages to the four operations.
+
+
+(b) Information transmitted
+
+Explain why an ideal Bell-state measurement allows Bob to recover two classical bits even
+though Alice sends only one photon.
+
+
+(c) Linear-optical Bell-state measurement
+
+Bob attempts to identify the Bell state by sending the two photons into the two input ports
+a and b of a balanced beam splitter.
+For each polarisation
+                              λ ∈{H, V },                                   (19)
+
+use the beam-splitter transformations
+
+                                                λ + ˆd†λ                         √     ,                                  (20)                                                           ˆa†λ −→ˆc†
+                                            2
+                                                λ −ˆd†λ                         √     .                                  (21)                                                                ˆb†λ −→ˆc†
+                                            2
+
+
+                                       2
+
+======== PAGE 3 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+Determine the output photon-number and polarisation patterns for the four input states
+
+                        |Φ+⟩,     |Φ−⟩,    |Ψ+⟩,    |Ψ−⟩.                       (22)
+
+Assuming that Bob has polarising beam splitters and photon-number-resolving detectors at
+the outputs, identify:
+
+   (i) which Bell states can be distinguished unambiguously; and
+
+  (ii) which Bell states remain indistinguishable.
+
+
+(d) Decoding eﬀiciency
+
+For four equally likely messages, what is the probability that the standard passive linear-
+optical measurement identifies Alice’s message unambiguously?
+Briefly explain why this prevents deterministic dense coding using this measurement alone.
+
+Question 3: BB84 quantum key distribution
+
+(4 marks)
+Alice implements the BB84 protocol using single photons. For each photon, she randomly
+chooses a bit value and one of two polarisation bases:
+
+                        Z = {|H⟩, |V ⟩} ,                                 (23)
+                    X = {|D⟩, |A⟩} ,                                 (24)
+
+where
+
+                              |H⟩+ |V ⟩
+                         |D⟩=  √        ,                                 (25)
+                                           2
+                               |H⟩−|V ⟩
+                          |A⟩=  √        .                                 (26)
+                                           2
+
+Bob independently and randomly chooses the Z or X basis for each measurement.
+
+
+(a) State preparation
+
+Construct a table showing the quantum state Alice sends for each combination of bit value
+and basis.
+
+
+(b) Basis sifting and loss
+
+After the transmission, Alice and Bob publicly announce which bases they used. They retain
+only the results for which they used the same basis. These retained bits form the sifted key.
+What fraction of Bob’s detections are expected to be retained?
+If Alice sends N photons through a channel with transmission ηch, and Bob’s detector has
+eﬀiciency ηd, calculate:
+
+   (i) the expected number of photons detected by Bob; and
+
+  (ii) the expected length of the sifted key.
+
+Neglect dark counts and all other imperfections.
+
+
+                                       3
+
+======== PAGE 4 ========
+PHYS4055: Assignment 2                                       Due: 04/09/2026 4:00 pm
+
+
+(c) Intercept–resend attack
+
+Suppose Eve intercepts every photon, measures it in a randomly chosen Z or X basis, and
+sends Bob a new photon prepared according to her measurement outcome.
+The quantum bit error rate (QBER) is the fraction of sifted-key bits for which Bob’s bit
+differs from Alice’s bit:
+                                                   Nerror
+                      Q =          .                                    (27)
+                                                        Nsift
+Because the QBER is calculated using the sifted key, Alice and Bob are already known to
+have used the same basis. Calculate the QBER caused by Eve using
+
+     Q = P(Eve uses Alice’s basis)P(error | Eve uses Alice’s basis)
+         + P(Eve uses a different basis)P(error | Eve uses a different basis).      (28)
+
+Determine each probability appearing in this expression.
+
+
+(d) Detecting the attack and completing the protocol
+
+Alice and Bob estimate the QBER by publicly comparing m randomly selected bits from
+their sifted key.
+Assuming that errors in different bits are independent, the probability that they observe no
+errors is
+                          P(no errors) = (1 −Q)m.                             (29)
+
+Therefore, the probability that they detect at least one error is
+
+                       P(at least one error) = 1 −(1 −Q)m.                       (30)
+
+   (i) Using the QBER calculated in part (c), calculate the probability that Alice and Bob
+      observe at least one error when they compare m = 20 sifted-key bits.
+
+  (ii) Explain why the bits publicly revealed during this test cannot be included in the secret
+      key.
+
+ (iii) After estimating the QBER, Alice and Bob perform error correction and privacy am-
+       plification. Briefly state the purpose of each step.
+
+
+
+
+
+                                       4

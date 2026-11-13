@@ -1,0 +1,28 @@
+Source: source_material/tutorials/PHYS4055_2024_Final_Exam (1).pdf
+Pages: 1
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+Semester Two Examinations, 2024                                             PHYS4055
+
+
+Question 3
+
+(10 marks)
+
+A beam-splitter is an optical device with two input modes and two output modes. Consider a 50:50
+beam splitter with input modes 1 and 2 and output modes 3 and 4. This beam-splitter combines the
+modes as ˆa1 = (ˆa3 + ˆa4) / √ 2 and ˆa2 = (ˆa3      / √ 2 .                                        −ˆa4)
+  (a) (3 marks) What output state is expected when the two inputs each have a single photon in
+     them |1⟩1|1⟩2?
+  (b) (2 marks) Show that for any input this beam-splitter conserves energy.
+
+Consider the normalised state                               the n-photon state and      = 1.                     |ψ⟩= α|n⟩+β|n+1⟩where |n⟩is                       |α|2+|β|2
+  (c) (3 marks) Show that this state exhibits sub-Poissonian statistics, i.e. Var(n) < ⟨n⟩.
+  (d) (2 marks) Briefly describe the significance of sub-Poissonian statistics in light.
+
+
+
+
+
+Next question over …                   Page 4 of 5

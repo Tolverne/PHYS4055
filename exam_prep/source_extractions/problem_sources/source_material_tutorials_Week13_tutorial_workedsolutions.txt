@@ -1,0 +1,11 @@
+Source: source_material/tutorials/Week13_tutorial_workedsolutions.pdf
+Pages: 3
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+
+
+======== PAGE 2 ========
+
+
+======== PAGE 3 ========

@@ -1,0 +1,67 @@
+Source: source_material/assignments/questions/PHYS4055 Assignment 1 (2).pdf
+Pages: 1
+WARNING: math from PDFs needs visual verification.
+
+======== PAGE 1 ========
+PHYS4055: Assignment 1                                       Due: 14/08/2026 4:00 pm
+
+Introduction to Quantum Optics
+
+(10 marks)
+
+
+Question 1: Two-Mode Squeezed Vacuum
+
+(5 marks) Consider the two-mode squeezed vacuum state produced via spontaneous para-
+metric down-conversion (SPDC):
+
+                   √  ∑∞
+                      |Ψ⟩=  1 −λ2    λn|n⟩s|n⟩i,
+
+                                             n=0
+
+where 0 ≤λ < 1, s denotes the signal mode, and i denotes the idler mode. The squeezing
+parameter is related via λ = tanh r.
+
+(a) (2 marks) Show that the reduced state of either the signal or idler mode is a thermal
+    state and compute the mean photon number ¯n.
+
+(b) (2 marks) Compute the cross-correlation function:
+
+                                                                 ⟨ˆnsˆni⟩
+                                               g(2)si (0) = ⟨ˆns⟩⟨ˆni⟩.
+
+(c) (1 mark) Explain why, in the low-gain limit (r →0), detection of one idler photon
+    “heralds” a single photon in the signal mode.
+
+Question 2: Beam splitter
+
+(5 marks)
+
+The beam splitter is a four port optical device that transmits light with transmissivity τ and
+reflects light with reflectivity ϱ. Here, input modes are A and B, output modes are C and
+D. We may represent the beam splitter in terms of a matrix B, acting on the input modes:
+                           (ˆc)      (ˆa )         (τ −ϱ )
+                  = B      B =                                    (1)
+                                      ˆd               ˆb              ϱ   τ
+
+(a) (2 marks) Assuming a real beam splitter matrix, show that the beam splitter transforms
+    a Fock state |n⟩A and a vacuum state |0⟩B into
+                √
+          ∑n                                            n!
+                     |n⟩A |0⟩B →                 kϱn−k |k⟩C |n −k⟩D                   (2)                                       k!(n −k)!τ
+                                  k=0
+
+A coherent state |α⟩enters port A and vacuum enters port B of a lossless 50:50 beam splitter
+with mode relations
+                                                               ˆa + ˆb                 ˆa −ˆb
+                                                        ˆc = √    ,       ˆd = √    .
+                                   2             2
+(b) (2 marks) Show that the output is a product of coherent states.
+
+(c) (1 mark) A photodetector measures the output mode ˆc. Assuming ideal photon counting,
+    derive the photon-number distribution P(n) in mode c for the coherent input of part (b).
+   What kind of statistics does the detector register?
+
+
+                                       1
