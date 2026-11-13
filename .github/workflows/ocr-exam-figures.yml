@@ -1,0 +1,52 @@
+name: Recover diagram labels from scanned exam figures
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ocr-exam-figures.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagram_labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          python -m pip install --quiet pymupdf
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+      - name: Scan only the otherwise unreadable figure regions
+        run: |
+          mkdir -p exam_prep/source_extractions/exam_figures/diagram_labels
+          python - <<'PY'
+          import fitz, pathlib
+          targets={
+             "yb_2025":("source_material/past_exams/2025/Semester_Two_Examinations_2025_PHYS4055.pdf",2),
+             "raman_2023":("source_material/past_exams/2023/Semester_Two_Examinations_2023_PHYS4055 (8).pdf",4),
+             "interferometer_2023":("source_material/past_exams/2023/Semester_Two_Examinations_2023_PHYS4055 (8).pdf",3),
+          }
+          dest=pathlib.Path("exam_prep/source_extractions/exam_figures/diagram_labels")
+          for label,(file,p) in targets.items():
+              with fitz.open(file) as pdf:
+                  page=pdf[p]
+                  # Upscale full question page, since label coordinates are uncertain.
+                  pix=page.get_pixmap(matrix=fitz.Matrix(3.0,3.0),alpha=False)
+                  pix.save(dest/f"{label}.png")
+          PY
+          for x in exam_prep/source_extractions/exam_figures/diagram_labels/*.png; do
+            tesseract "$x" "${x%.png}" --psm 11 -l eng 2>/dev/null
+          done
+          rm -f exam_prep/source_extractions/exam_figures/diagram_labels/*.png
+          cat exam_prep/source_extractions/exam_figures/diagram_labels/*.txt
+      - name: Commit OCR transcription for auditing only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/source_extractions/exam_figures/diagram_labels/*.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Capture rough scanned exam figure labels for question audit'
+            git pull --rebase origin main
+            git push
+          fi
