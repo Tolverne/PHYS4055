@@ -1,0 +1,66 @@
+
+\section{OA-03: One round of entanglement distillation}
+\source{Week 4 Tutorial, Question 1 (\texttt{Week4TutorialQuestion (1).pdf}).}
+\subsection*{Set up a noisy pair}
+Alice and Bob share
+\[
+\rho=p\ket{\Phi^+}\bra{\Phi^+}
++(1-p)\ket{\Psi^+}\bra{\Psi^+},
+\qquad \tfrac12<p\le1 .
+\]
+The input fidelity to \(\ket{\Phi^+}\) is \(F_{\rm in}=p\).
+Take two independent copies. Each party performs a CNOT
+from their \emph{first} pair to their \emph{second} pair,
+then measures the target pair and keeps the control pair
+only if the target measurement results agree.
+
+\subsection*{Step 1: classify the four pure branches}
+The four possibilities and their probabilities are
+\[
+\begin{array}{c|c|c}
+\text{Control}\otimes\text{target}&\text{Weight}&
+\text{Target results agree?}\\\hline
+\Phi^+\otimes\Phi^+&p^2&\text{yes}\\
+\Phi^+\otimes\Psi^+&p(1-p)&\text{no}\\
+\Psi^+\otimes\Phi^+&(1-p)p&\text{no}\\
+\Psi^+\otimes\Psi^+&(1-p)^2&\text{yes}
+\end{array}
+\]
+The bilateral CNOT copies the \emph{bit-flip error label}
+of the two Bell pairs into the target pair: matching labels
+lead to equal target outcomes. For example,
+\(\ket{\Phi^+}\ket{\Phi^+}\) remains two \(\Phi^+\) pairs,
+whereas \(\ket{\Phi^+}\ket{\Psi^+}\) produces a target
+\(\Psi^+\), whose two computational outcomes differ.
+
+\subsection*{Step 2: condition on successful heralding}
+The successful event has probability
+\[
+\boxed{P_{\rm suc}=p^2+(1-p)^2}.
+\]
+The (unnormalised) retained control state is
+\[
+\tilde\rho=p^2\ket{\Phi^+}\bra{\Phi^+}
++(1-p)^2\ket{\Psi^+}\bra{\Psi^+}.
+\]
+Normalise by its trace:
+\[
+\boxed{\rho'=
+\frac{p^2}{p^2+(1-p)^2}\ket{\Phi^+}\bra{\Phi^+}
++\frac{(1-p)^2}{p^2+(1-p)^2}\ket{\Psi^+}\bra{\Psi^+}}.
+\]
+Therefore
+\[
+\boxed{F'=\frac{p^2}{p^2+(1-p)^2}>p
+\quad\text{for }1/2<p<1}.
+\]
+For \(p=0.8\), \(P_{\rm suc}=0.68\) and
+\(F'=0.64/0.68\simeq0.9412\).
+
+\subsection*{Interpretation}
+The fidelity improves \emph{conditional on success}, but
+each round consumes two pairs to create at most one.
+Repeated rounds improve quality at the expense of yield.
+\checkmethod{Postselection requires two distinct quantities:
+the trace (success probability) and the normalised
+postselected density matrix. Do not confuse them.}

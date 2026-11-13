@@ -1,0 +1,67 @@
+
+\section{OA-04: Pure-loss channel, Kraus operators and purity}
+\source{Week 5 Tutorial, Question 1; \texttt{Week5Solutions (1).pdf}.}
+\subsection*{Step 1: write a joint unitary on a single-rail qubit}
+Let \(\ket\psi_S=\alpha\ket0+\beta\ket1\), with
+\(|\alpha|^2+|\beta|^2=1\), and start the environment
+in vacuum. The loss model is
+\[
+\ket{0,0}\mapsto\ket{0,0},\quad
+\ket{1,0}\mapsto\sqrt\eta\ket{1,0}
++\sqrt{1-\eta}\ket{0,1}.
+\]
+Thus
+\[
+\ket{\Psi_{\rm out}}=
+\alpha\ket{0,0}
++\beta\sqrt\eta\ket{1,0}
++\beta\sqrt{1-\eta}\ket{0,1}.
+\]
+
+\subsection*{Step 2: identify Kraus operators}
+Project the environment onto \(\bra0_E\) and \(\bra1_E\):
+\[
+K_0=\ket0\bra0+\sqrt\eta\ket1\bra1,\qquad
+K_1=\sqrt{1-\eta}\ket0\bra1.
+\]
+Explicitly,
+\[
+K_0=\begin{pmatrix}1&0\\0&\sqrt\eta\end{pmatrix},\quad
+K_1=\begin{pmatrix}0&\sqrt{1-\eta}\\0&0\end{pmatrix},\quad
+K_0^\dagger K_0+K_1^\dagger K_1=I .
+\]
+
+\subsection*{Step 3: trace over the unobserved environment}
+The physical output is \(\rho'=K_0\rho K_0^\dagger+
+K_1\rho K_1^\dagger\):
+\[
+\boxed{\rho'=
+\begin{pmatrix}
+|\alpha|^2+(1-\eta)|\beta|^2&\sqrt\eta\alpha\beta^*\\
+\sqrt\eta\alpha^*\beta&\eta|\beta|^2
+\end{pmatrix}}.
+\]
+The number population falls by \(\eta\), but vacuum--one-photon
+coherence only by \(\sqrt\eta\).
+The Kraus branch weights are
+\[
+w_0=|\alpha|^2+\eta|\beta|^2,\quad
+w_1=(1-\eta)|\beta|^2,\quad w_0+w_1=1.
+\]
+The environment has not been measured, so these branches are
+\emph{added}, not individually normalised.
+
+\subsection*{Step 4: calculate purity}
+For a \(2\times2\) density matrix with trace 1,
+\(\operatorname{Tr}(\rho'^2)=1-2\det\rho'\).
+Here \(\det\rho'=\eta(1-\eta)|\beta|^4\), hence
+\[
+\boxed{\operatorname{Tr}(\rho'^2)
+=1-2\eta(1-\eta)|\beta|^4}.
+\]
+For an input \(\ket1\), \(P(1)=\eta,\ P(0)=1-\eta\),
+\(\langle n\rangle=\langle n^2\rangle=\eta\),
+\(\operatorname{Var}(n)=\eta(1-\eta)\), greatest at \(\eta=1/2\).
+\checkmethod{Unitary evolution of system+environment can be pure
+while the reduced system becomes mixed. Trace and positivity
+are your first checks.}

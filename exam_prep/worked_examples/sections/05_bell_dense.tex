@@ -1,0 +1,67 @@
+
+\section{OA-01: Bell states, partial traces and dense coding}
+\source{2026 Optics Assignment 2, Questions 1--2; released solutions.}
+\subsection*{Step 1: build the joint density matrix}
+For \(\ket{\Phi^+}=(\ket{00}+\ket{11})/\sqrt2\),
+\[
+\rho_{AB}=\ket{\Phi^+}\bra{\Phi^+}
+=\frac12(\ket{00}\bra{00}+\ket{00}\bra{11}
++\ket{11}\bra{00}+\ket{11}\bra{11}).
+\]
+Tracing over Bob uses
+\(\operatorname{Tr}_B(\ket{i,j}\bra{k,l})
+=\delta_{jl}\ket i\bra k\).
+The cross terms disappear:
+\[
+\boxed{\rho_A=\operatorname{Tr}_B\rho_{AB}
+=\tfrac12(\ket0\bra0+\ket1\bra1)=\tfrac12I}.
+\]
+Thus Alice's measurement is \(0\) or \(1\) with probability
+\(1/2\), even though the two-qubit state is pure.
+\(\operatorname{Tr}\rho_A^2=\tfrac12<1\) confirms mixing.
+
+\subsection*{Step 2: rewrite the correlations in another basis}
+With \(\ket\pm=(\ket0\pm\ket1)/\sqrt2\),
+substitute \(\ket0=(\ket++\ket-)/\sqrt2\),
+\(\ket1=(\ket+-\ket-)/\sqrt2\). The cross terms cancel:
+\[
+\boxed{\ket{\Phi^+}
+=\frac{\ket{++}+\ket{--}}{\sqrt2}}.
+\]
+The outcomes are individually random but perfectly
+correlated in both the \(Z\) and \(X\) bases.
+
+\subsection*{Step 3: superdense coding}
+Alice and Bob already share \(\ket{\Phi^+}\).
+Alice acts on \emph{her} qubit:
+\[
+\begin{array}{c|c|l}
+\text{Message}&\text{Alice's gate}&\text{shared state}\\\hline
+00&I&\ket{\Phi^+}\\
+01&X&\ket{\Psi^+}\\
+10&Z&\ket{\Phi^-}\\
+11&XZ&-\ket{\Psi^-}
+\end{array}
+\]
+The last minus is an irrelevant global phase. The
+four Bell states are mutually orthogonal: e.g.,
+\(\langle\Phi^+|\Phi^-\rangle=(1-1)/2=0\).
+After Alice sends her photon, an ideal Bell-basis
+measurement at Bob identifies two classical bits.
+
+\subsection*{Step 4: why ordinary linear optics is limited}
+At a passive 50:50 splitter, bosonic interference makes
+\(\Psi^-\) and \(\Psi^+\) distinguishable using appropriate
+port/polarisation coincidence patterns, but
+\(\Phi^+\) and \(\Phi^-\) share the same unresolved
+patterns under the standard passive scheme.
+Consequently only two of four equally likely Bell
+messages are unambiguously identified:
+\[
+\boxed{P_{\rm unambiguous}=\tfrac24=\tfrac12}.
+\]
+This is a measurement limitation, not a failure of dense
+coding with an ideal Bell measurement.
+\checkmethod{A reduced mixed state alone does not prove that
+the joint state is mixed. The two independent random local
+strings can still be strongly correlated.}

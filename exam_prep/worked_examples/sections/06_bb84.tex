@@ -1,0 +1,60 @@
+
+\section{OA-02: BB84 basis sifting and intercept--resend}
+\source{2026 Optics Assignment 2, Question 3; released solutions.}
+\subsection*{Step 1: record the encoding}
+Use \(Z=\{\ket H,\ket V\}\) and
+\(X=\{\ket D,\ket A\}\), with
+\(\ket D=(\ket H+\ket V)/\sqrt2\) and
+\(\ket A=(\ket H-\ket V)/\sqrt2\).
+\[
+\begin{array}{c|cc}
+\text{Bit}&Z\text{ basis}&X\text{ basis}\\\hline
+0&\ket H&\ket D\\
+1&\ket V&\ket A
+\end{array}
+\]
+Alice and Bob choose bases independently and uniformly,
+so they match with probability \(1/2\).
+
+\subsection*{Step 2: account for transmission and detection}
+For \(N\) transmitted pulses, channel transmissivity
+\(\eta_{\rm ch}\) and detector efficiency \(\eta_d\),
+assuming single photons and no dark counts,
+\[
+\boxed{\mathbb E[N_{\rm detected}]=N\eta_{\rm ch}\eta_d},
+\qquad
+\boxed{\mathbb E[N_{\rm sifted}]=\tfrac12
+N\eta_{\rm ch}\eta_d}.
+\]
+For example, with \(N=10^6\), \(\eta_{\rm ch}=0.2\),
+\(\eta_d=0.8\), expect 160,000 detected and
+80,000 sifted bits \emph{before} sampling and key distillation.
+
+\subsection*{Step 3: derive the intercept--resend error rate}
+Condition on an Alice--Bob matched basis (the sifted key):
+\[
+P(\text{Eve matches Alice})=\tfrac12,\quad
+P(\text{error}\mid\text{match})=0.
+\]
+If Eve chose the wrong conjugate basis, her result is
+random; once Bob measures in Alice's basis, he has a
+\(1/2\) chance of the wrong bit. Therefore
+\[
+\boxed{\mathrm{QBER}=\tfrac12(0)+\tfrac12(\tfrac12)=\tfrac14}.
+\]
+To estimate the QBER, they publicly reveal \(m\)
+sifted bits. Under independent errors,
+\[
+P(\ge1\text{ error observed})=1-(1-Q)^m.
+\]
+For \(m=20,\ Q=1/4\),
+\[
+\boxed{P(\text{detect attack})=1-(3/4)^{20}
+\simeq0.99683}.
+\]
+Those 20 disclosed bits must be removed from the secret
+key. Error correction reconciles discrepancies; privacy
+amplification reduces an eavesdropper's possible information.
+\checkmethod{The \(25\%\) is calculated \emph{after basis
+sifting}, not across all sent photons. The \(50\%\) sift factor
+is independent of optical transmission in this ideal model.}
