@@ -1,21 +1,147 @@
-
 \documentclass[10pt,a4paper]{article}
 \input{../../tex/common.tex}
-\hypersetup{pdftitle={PHYS4055 - Past-Paper Solution Book Draft}}
-\title{\textcolor{accent}{PHYS4055: Past-Paper Solutions}}
-\author{2026 revision \textbar\ source-verification required}
-\date{12 November 2026}
+\usepackage{titlesec}
+\geometry{top=16mm,bottom=16mm,left=17mm,right=17mm,headsep=5mm,footskip=7mm}
+\hypersetup{pdftitle={PHYS4055 2023-2025 Complete Worked Past Exam Solutions}}
+\setlength{\parskip}{3pt plus 1pt minus .2pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.18}
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection}{.6em}{}
+\titlespacing*{\section}{0pt}{13pt plus 2pt}{7pt}
+\newcommand{\examquestion}[4]{%
+\section[#1 Q#2]{Question #2: #3}%
+{\footnotesize\color{gray}Original: PHYS4055 Semester 2 #1,
+Question #2, source paper page #4. All subparts answered.}\par\vspace{3pt}}
+\newcommand{\solcheck}[1]{\begin{methodbox}\footnotesize
+\textbf{Verification check.} #1\end{methodbox}}
+\newcommand{\paperyear}[1]{\clearpage
+\phantomsection
+\addcontentsline{toc}{part}{#1 examination}
+\begin{center}{\color{accent}\LARGE\bfseries
+Semester 2 #1 examination}\end{center}
+\vspace{2pt}\hrule\vspace{7pt}}
 \begin{document}
-\maketitle
+\begin{center}
+\vspace*{8mm}
+{\Huge\bfseries\color{accent}PHYS4055}\\[4mm]
+{\LARGE Atomic Physics and Quantum Optics}\\[7mm]
+{\Large\bfseries Complete Worked Past Exam Solutions}\\[4mm]
+{\Large 2023 \(\cdot\) 2024 \(\cdot\) 2025}\\[5mm]
+{\normalsize All 12 questions, including every subpart}\\[4mm]
+{\normalsize 2026 open-book examination preparation}
+\end{center}
+\vspace{8mm}
+\begin{methodbox}
+\textbf{What this book contains.}
+All four questions from \emph{each} of the three
+uploaded exam papers are solved step by step.
+The calculations include intermediate algebra,
+physical reasoning, level sketches and result
+checks. Although the papers require students
+to answer only three of four questions, this
+book covers \emph{every} question.
+\end{methodbox}
+\noindent{\bfseries How to use it:}
+Read a past question first, attempt the
+derivation, then compare the worked steps.
+For a timed revision exercise, choose
+three questions per paper and work for two hours.
 \begin{cautionbox}
-No original PHYS4055 exam PDF is yet in this repository.
-This booklet does \textbf{not} claim to reconstruct the full 2025
-paper. Upload original papers before writing source-verified question numbers.
+\textbf{Important conventions and source caveats.}
+The original PDFs in \texttt{source\_material/past\_exams}
+remain authoritative for diagrams and printed notation.
+When a problem leaves a speed convention or squeezed-state
+ordering unspecified, this book states a reasonable convention
+and also notes valid alternatives. In the 2024 sensor
+problem a dimensionally necessary \(\kappa\) factor is
+derived explicitly. These are independently prepared
+study solutions; no official past-exam marking scheme
+was provided.
 \end{cautionbox}
-\section{2025 paper}
-\input{solutions_2025}
-\section{2024 paper}
-Original paper and question-level audit pending.
-\section{2023 paper}
-Original paper and question-level audit pending.
+\vspace{4mm}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Paper}&\textbf{Question themes}\\\midrule
+2023&
+Nonlinear optical cat states; H/He radial and spin structure;
+squeezed interferometry; Raman \(\pi\)-pulse sensing\\
+2024&
+\({}^3D\) spin--orbit splitting; Zeeman sensor;
+HOM and statistics; lossy cavity and dual-rail gates\\
+2025&
+Hyperfine/Zeeman structure; Yb optical clock, cooling
+and Doppler limit; NOON-state beam splitter;
+parametric cavity squeezing and Bell keys\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\vfill
+{\footnotesize First prepared 13 November 2026.
+Source audit: \texttt{SOURCE\_MAP.md}.
+Editable sections: \texttt{sections/\{year\}\_q\{n\}.tex}.}
+\clearpage
+\tableofcontents
+
+\paperyear{2023}
+\input{sections/2023_q1}
+\input{sections/2023_q2}
+\input{sections/2023_q3}
+\input{sections/2023_q4}
+
+\paperyear{2024}
+\input{sections/2024_q1}
+\input{sections/2024_q2}
+\input{sections/2024_q3}
+\input{sections/2024_q4}
+
+\paperyear{2025}
+\input{sections/2025_q1}
+\input{sections/2025_q2}
+\input{sections/2025_q3}
+\input{sections/2025_q4}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{part}{Rapid method index}
+\begin{center}{\color{accent}\LARGE\bfseries Rapid method index}
+\end{center}
+\begin{tabularx}{\linewidth}{@{}p{20mm}X@{}}
+\toprule
+\textbf{Question}&\textbf{Most reusable starting method}\\\midrule
+2023 Q1&Diagonalise \(f(\hat n)\) in Fock basis; expand a
+coherent state; inspect parity-dependent phases\\
+2023 Q2&Use \(4\pi r^2|\psi|^2\); shell probability and gamma
+integrals; enforce fermion antisymmetry/E1 rules\\
+2023 Q3&Show optical matrix unitarity; expand output number
+difference; compute noise with vacuum input; divide by slope\\
+2023 Q4&Enter interaction picture; use spin commutators;
+define integrated pulse time; solve Bloch oscillator\\
+2024 Q1&Couple \(L,S\to J\); use
+\(2\mathbf L\cdot\mathbf S=J^2-L^2-S^2\)\\
+2024 Q2&Convert \(\langle\sigma_z\rangle\) to \(P_g\),
+differentiate twice; apply dimensions to bias field\\
+2024 Q3&Transform creation operators; use normalised Fock
+states; compute mean and variance\\
+2024 Q4&Fourier transform Langevin equation; apply
+input--output relation; keep the loss reservoir\\
+2025 Q1&Couple \(I,J\to F\); calculate \(E_F\);
+switch from coupled to uncoupled basis at high \(B\)\\
+2025 Q2&Test E1 parity/\(\Delta J\)/\(\Delta S\);
+scattering \(h/(2\lambda\tau)\); kinematics;
+Doppler limit \(\hbar/(2k_B\tau)\)\\
+2025 Q3&Expand two-photon creation operators and
+sum \emph{amplitudes} before probabilities\\
+2025 Q4&Heisenberg commutator; form \(X_+\);
+Fourier solve and input--output; noise spectrum\\
+\bottomrule
+\end{tabularx}
+\begin{methodbox}
+\textbf{Exam method.} Start by writing the relevant model,
+operator definitions and basis. Evaluate symbolically
+before numerical substitution. Check probability and
+normalisation, limiting cases, angular-momentum
+degeneracy, selection-rule triangle/parity conditions
+and units. Explain the physical observable in words.
+\end{methodbox}
 \end{document}
