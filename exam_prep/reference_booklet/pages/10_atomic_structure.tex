@@ -1,0 +1,62 @@
+
+\section*{Part III. Atomic physics \hfill 10 / 15}
+\subsection*{1. Start from a Coulomb-bound electron}
+For a hydrogen-like ion of nuclear charge \(Z\), the nonrelativistic
+energy, with reduced mass \(\mu\), is
+\[
+\boxed{E_n=-\frac{\mu Z^2e^4}
+{2(4\pi\epsilon_0)^2\hbar^2n^2}
+\simeq-13.6\,{\rm eV}\,
+\frac{\mu}{m_e}\frac{Z^2}{n^2}.}
+\]
+The eigenstates separate into radial and angular factors:
+\[
+\psi_{nlm}(\mathbf r)=R_{nl}(r)Y_{lm}(\theta,\phi),\quad
+\int_0^\infty |R_{nl}(r)|^2r^2\,dr=1.
+\]
+With \(u_{nl}=rR_{nl}\), the radial Schr\"odinger equation
+takes a one-dimensional form,
+\[
+-\frac{\hbar^2}{2\mu}\frac{d^2u}{dr^2}+
+\left[V(r)+\frac{\hbar^2l(l+1)}{2\mu r^2}\right]u=Eu.
+\]
+The angular-momentum barrier suppresses high-\(l\) wavefunctions
+near the nucleus. Hydrogenic orbitals have \(l=0,\ldots,n-1\),
+\(m_l=-l,\ldots,l\), and orbital parity \((-1)^l\).
+A transition photon has frequency
+\(\nu=(E_i-E_f)/h\) and wavelength \(hc/(E_i-E_f)\).
+
+\subsection*{2. Many-electron atoms: the central-field approximation}
+For more than one electron, electron--electron repulsion breaks the
+simple \(n\)-only degeneracy:
+\[
+H=\sum_i\left[\frac{p_i^2}{2m_e}
+-\frac{Ze^2}{4\pi\epsilon_0r_i}\right]
++\sum_{i<j}\frac{e^2}{4\pi\epsilon_0r_{ij}}.
+\]
+An effective central potential replaces part of the many-body
+interaction by screening. Hartree--Fock improves this by
+self-consistently including direct and exchange effects in a
+Slater determinant. The Aufbau \(n+l\) ordering is a useful
+rule of thumb, not an exact theorem; shell energies and order
+change with ionisation and configuration.
+
+\subsection*{3. Nuclear size and relativistic effects}
+A finite nuclear charge distribution changes the potential
+at small \(r\), especially affecting orbitals that penetrate
+the nucleus. In first-order perturbation theory,
+\[
+\boxed{\Delta E^{(1)}=\bra\psi\Delta V\ket\psi
+=\int_0^\infty |R_{nl}(r)|^2\Delta V(r)\,r^2\,dr.}
+\]
+The sign and magnitude depend on the defined
+\(\Delta V=V_{\rm finite}-V_{\rm point}\).
+For heavy atoms, spin--orbit and other relativistic corrections
+grow important; the Dirac equation incorporates the electron's
+spin and relativistic kinematics from the outset.
+\begin{methodbox}
+\textbf{Method:} specify the central potential and boundary conditions;
+choose \(R\) or \(u=rR\) consistently; solve energies/states;
+evaluate corrections using normalised wavefunctions and check units.
+\end{methodbox}
+\src{Week 8 slides pp.~2--7, 26--36; Week 8 atomic transcripts; nuclear-size assignment.}

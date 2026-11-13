@@ -1,0 +1,64 @@
+
+\section*{Part III. Atomic physics \hfill 12 / 15}
+\subsection*{1. Fine structure and hyperfine structure}
+In a spin--orbit model, \(H_{\rm SO}\propto\mathbf L\cdot\mathbf S\).
+Since \(\mathbf J=\mathbf L+\mathbf S\),
+\[
+\langle\mathbf L\cdot\mathbf S\rangle
+=\frac{\hbar^2}{2}
+[J(J+1)-L(L+1)-S(S+1)].
+\]
+This separates \(J\) levels within a fixed LS term.
+For the magnetic-dipole hyperfine interaction,
+\[
+H_{\rm hfs}=\frac A{\hbar^2}\mathbf I\cdot\mathbf J,\qquad
+\boxed{E_F=\frac A2[F(F+1)-I(I+1)-J(J+1)].}
+\]
+Here \(F=|I-J|,\ldots,I+J\); each level has
+\(2F+1\) projections when no magnetic field breaks degeneracy.
+Electric-quadrupole hyperfine terms can also appear for
+sufficient nuclear/electronic angular momentum.
+
+\textbf{Worked example:} \(I=5/2,J=1/2\) gives \(F=2,3\).
+Using \(I(I+1)=35/4,\ J(J+1)=3/4\),
+\[
+\boxed{E_{2}=-\frac{7A}{4},\quad
+E_{3}=\frac{5A}{4},\quad \Delta E=3A.}
+\]
+The multiplicities \(5+7=12=(2I+1)(2J+1)\).
+For \(A<0\), the energy order is reversed.
+
+\subsection*{2. Magnetic and electric fields}
+In a weak magnetic field, \(F,m_F\) are approximately good
+quantum numbers. The linear Zeeman shift is
+\[
+\Delta E\simeq g_F\mu_Bm_FB,\quad
+g_F\simeq g_J
+\frac{F(F+1)+J(J+1)-I(I+1)}{2F(F+1)}
+\]
+for \(F>0\) and neglecting the small nuclear magnetic term.
+At strong fields, \(I\) and \(J\) decouple approximately,
+so a basis \(\ket{Jm_J,Im_I}\) becomes useful.
+A static electric field induces a Stark shift. For a
+nondegenerate parity eigenstate with no permanent dipole,
+\[
+\Delta E_{\rm Stark}^{(2)}
+=-\tfrac12\alpha(0)\mathcal E^2,\qquad
+\alpha(0)=2\sum_{n\ne i}
+\frac{|\langle n|d_z|i\rangle|^2}{E_n-E_i}
+\]
+with field along \(z\) (and compatible dipole conventions).
+Degenerate states require diagonalisation rather than this
+simple nondegenerate formula.
+
+\subsection*{3. Isotope shifts}
+Changing neutron number changes the nuclear mass and charge
+distribution. Spectral isotope shifts reflect normal/specific
+mass shifts and field (volume) shifts; these can reveal nuclear
+radius differences when atomic sensitivity coefficients are known.
+\begin{methodbox}
+\textbf{Method:} choose the coupling/field regime,
+list allowed \(F\), compute splitting; for a perturbation,
+identify the operator and apply first- or second-order theory.
+\end{methodbox}
+\src{Week 8 slides on relativistic structure; Week 9 pp.~2--7, 21--27; hyperfine tutorial and transcripts.}

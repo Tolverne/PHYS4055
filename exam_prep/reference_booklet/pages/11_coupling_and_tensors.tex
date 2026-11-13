@@ -1,0 +1,57 @@
+
+\section*{Part III. Atomic physics \hfill 11 / 15}
+\subsection*{1. Adding angular momenta}
+Operators \(\mathbf J=\mathbf J_1+\mathbf J_2\) obey
+\[
+\hat J^2\ket{jm}=\hbar^2j(j+1)\ket{jm},\quad
+\hat J_z\ket{jm}=\hbar m\ket{jm},
+\]
+\[
+\boxed{j=|j_1-j_2|,\ |j_1-j_2|+1,\ldots,j_1+j_2.}
+\]
+In atomic LS coupling, first sum the electron orbital momenta
+to \(L\) and electron spins to \(S\), then form \(J=L+S\).
+The term notation is \({}^{2S+1}L_J\), with
+\(L=0,1,2,3,4\leftrightarrow S,P,D,F,G\).
+For hyperfine structure \(\mathbf F=\mathbf J+\mathbf I\)
+where \(I\) is nuclear spin. A multiplet with angular momentum
+\(j\) contains \(2j+1\) projections.
+
+\subsection*{2. Equivalent electrons and Hund's rules}
+For \(nd^2\), there are 10 single-electron spin-orbitals
+and \(\binom{10}{2}=45\) antisymmetric two-electron states.
+Allowed LS terms are
+\[
+{}^3F_{2,3,4},\quad {}^3P_{0,1,2},\quad
+{}^1G_4,\quad{}^1D_2,\quad{}^1S_0.
+\]
+The check \(21+9+9+5+1=45\) tests completeness.
+Hund's rules (in their range of validity): maximise \(S\),
+then maximise \(L\); in a less-than-half-filled subshell,
+the lowest \(J\) of a given term lies lowest. This predicts
+a \({}^3F_2\) ground state for a simple \(d^2\) system.
+It does not determine an unambiguous ordering among all
+excited terms.
+
+\subsection*{3. Wigner--Eckart factors out the geometry}
+A rank-\(k\) spherical tensor has components \(q=-k,\dots,k\).
+For a fixed reduced-matrix-element convention,
+\[
+\boxed{\langle j'm'|T_q^{(k)}|jm\rangle=
+(-1)^{j'-m'}\!
+\begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+\langle j'\Vert T^{(k)}\Vert j\rangle.}
+\]
+For a nonzero \(3j\) symbol, magnetic quantum numbers must
+sum to zero, each \(|m_i|\le j_i\), and the triangle rule must
+hold. In this arrangement \(m'=m+q\).
+The \(3j\) coefficient describes geometry; the reduced element
+encodes the actual atom/operator.
+\begin{methodbox}
+\textbf{Short example:} adding \(j_1=0\) to \(j_2=1\)
+has CG coefficient \(\langle 0,0;1,0|1,0\rangle=1\).
+Using the CG--\(3j\) conversion yields
+\(\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}=-1/\sqrt3\).
+Check zeros \emph{before} doing an explicit sum.
+\end{methodbox}
+\src{Week 8 slides pp.~7--19; Week 8 transcripts on LS coupling, 3-j symbols and Wigner--Eckart.}
