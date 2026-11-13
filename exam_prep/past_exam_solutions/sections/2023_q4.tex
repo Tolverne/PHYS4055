@@ -1,0 +1,172 @@
+
+\examquestion{2023}{4}{Raman transition, atomic Bloch equations and pulse-area sensing}{5--6}
+The question describes an effective two-photon
+Raman coupling between \(\ket g,\ket e\)
+mediated by an auxiliary state \(\ket a\).
+The effective Hamiltonian is already written
+in terms of a cavity photon and a control field;
+the off-resonant auxiliary state has been
+eliminated in the model.
+
+\subsection*{(a) Remove the fast free oscillations}
+Write
+\[
+\sigma_+=\ket e\bra g,\quad
+\sigma_-=\ket g\bra e,\quad
+H_0=\hbar\omega_a a^\dagger a+
+\frac{\hbar\omega_{eg}}2\sigma_z.
+\]
+The interaction in the Schr\"odinger picture
+contains
+\(\hbar g\mathcal E_c(t)
+a^\dagger\sigma_-e^{-i\omega_ct}+\mathrm{h.c.}\).
+Under the free interaction picture,
+\[
+a^\dagger\sigma_-\mapsto
+a^\dagger\sigma_-e^{i(\omega_a-\omega_{eg})t},
+\]
+so the coupling acquires
+\[
+e^{i(\omega_a-\omega_{eg}-\omega_c)t}
+=e^{-i\delta t},
+\quad \delta=\omega_{eg}-(\omega_a-\omega_c).
+\]
+A further rotating-frame phase transformation
+transfers this time-dependent phase to the
+cavity-number term. With a real control
+envelope, an equivalent form is
+\[
+\boxed{H_I=-\hbar\delta\,a^\dagger a+
+\hbar g\mathcal E_c(t)(a^\dagger\sigma_-+
+a\sigma_+)}.
+\]
+The sign of the displayed number term is set
+by the selected rotating-frame convention;
+the physics depends on the \emph{relative}
+two-photon detuning.
+
+\subsection*{(b) Derive the equations for \(z,w\)}
+For a strongly driven cavity mode replace
+\(a\to\alpha\), \(a^\dagger\to\alpha^*\), treating
+\(\alpha\) as the effective coherent amplitude
+(including any detuning response).
+The atomic coupling is
+\(H_{\rm at}=\hbar g\mathcal E_c(t)
+(\alpha^*\sigma_-+\alpha\sigma_+)\).
+With
+\[
+z=\langle\sigma_z\rangle,\quad
+w=\langle\sigma_+\rangle,\quad
+w^*=\langle\sigma_-\rangle,
+\]
+and commutators
+\([\sigma_z,\sigma_\pm]=\pm2\sigma_\pm\),
+\([\sigma_-,\sigma_+]=-\sigma_z\),
+the Heisenberg equation gives
+\[
+\dot z=\frac i\hbar\langle[H_{\rm at},\sigma_z]\rangle
+=\boxed{2ig\mathcal E_c(t)(\alpha^*w^*-\alpha w)},
+\]
+\[
+\dot w=\frac i\hbar
+\langle[H_{\rm at},\sigma_+]\rangle
+=\boxed{-ig\mathcal E_c(t)\alpha^* z}.
+\]
+Its conjugate is
+\(\dot w^*=ig\mathcal E_c(t)\alpha z\).
+The equations supplied in part (b) assume
+that the coupling phase can be taken
+time-independent in this rotating description.
+
+\subsection*{(c) Pulse-area solution for complete inversion}
+The specified envelope is
+\(\mathcal E_c(t)=\mathcal E_0e^{-\gamma|t|}\).
+The \emph{pulse area} is
+\[
+\boxed{\mathcal A=
+\int_{-\infty}^\infty\mathcal E_c(t)\diff t
+=\frac{2\mathcal E_0}{\gamma}}.
+\]
+Define the new time coordinate
+\(\tau(t)=\int_{-\infty}^t\mathcal E_c(t')\diff t'\).
+Then \(\diff/\diff t=\mathcal E_c(t)\diff/\diff\tau\).
+The equations reduce to
+\[
+\frac{\diff z}{\diff\tau}
+=2ig(\alpha^*w^*-\alpha w),\qquad
+\frac{\diff w}{\diff\tau}=-ig\alpha^*z.
+\]
+Differentiate \(z\) once more and substitute
+the equations for \(w,w^*\):
+\[
+\frac{\diff^2z}{\diff\tau^2}
+=2ig[
+\alpha^*(ig\alpha z)-\alpha(-ig\alpha^*z)]
+=\boxed{-4g^2|\alpha|^2z}.
+\]
+The initial atom is in \(\ket g\), so
+\(z(-\infty)=-1\), \(w(-\infty)=0\).
+The resonant solution is
+\[
+\boxed{z(t)=-\cos[2g|\alpha|\tau(t)]},\quad
+P_e(t)=\frac{1+z(t)}2
+=\sin^2[g|\alpha|\tau(t)].
+\]
+After the complete pulse,
+\[
+\boxed{P_e(\infty)
+=\sin^2\!\left(\frac{2g|\alpha|\mathcal E_0}{\gamma}\right)}.
+\]
+Complete population inversion requires
+\[
+\boxed{\frac{4g|\alpha|\mathcal E_0}{\gamma}
+=(2m+1)\pi,\quad m=0,1,\ldots,}
+\]
+equivalently \(2g|\alpha|\mathcal A=(2m+1)\pi\).
+This is a \emph{\(\pi\)-pulse} condition.
+
+\textbf{Where does detuning enter?} These Bloch
+equations have constant-phase coupling and no
+separate atomic detuning term. For their exact
+area solution, the effective Raman resonance
+must be satisfied, \(\delta=0\), or the relevant
+detuning must already have been consistently
+absorbed into \(\alpha(\delta)\). If finite
+two-photon detuning remains in the atomic
+Hamiltonian, the Bloch equations gain extra
+precession terms and the simple area result
+is not sufficient. For a \emph{constant} drive
+of strength \(\Omega_R=2g|\alpha|\mathcal E_c\),
+one finds \(\Omega_{\rm eff}=
+\sqrt{\Omega_R^2+\delta^2}\), with peak
+excitation probability
+\(\Omega_R^2/\Omega_{\rm eff}^2<1\) for
+\(\delta\ne0\). A pulsed detuned problem must
+be solved with its actual time-dependent
+Hamiltonian. The question supplies no explicit
+cavity response \(\alpha(\delta)\), so a
+unique nonzero-detuning inversion condition
+cannot be inferred from the given data alone.
+
+\subsection*{(d) Use it as a detuning sensor}
+Prepare \(\ket g\), apply the control pulse,
+then measure \(P_e\) by state-selective
+fluorescence or another population readout.
+Scan the frequency difference \(\omega_a-\omega_c\)
+and fit \(P_e(\delta)\) to find the two-photon
+resonance \(\delta=0\). With a calibrated
+drive and detuning-dependent cavity amplitude
+\(\alpha(\delta)\), the measured population
+provides a frequency-to-population transducer.
+For a locally linear sensor, choose a bias
+at a nonzero response slope:
+\(\delta P_e\simeq P'_e(\delta_0)\,\delta\delta\).
+Noise, spontaneous emission, finite pulse
+bandwidth and fluctuations set the practical
+resolution.
+\solcheck{Check the initial condition
+\(P_e(-\infty)=0\), final inversion
+\(P_e(\infty)=1\) for an odd-\(\pi\) pulse,
+and population conservation \(P_e+P_g=1\).
+Avoid using a resonance-only pulse-area
+solution unchanged at finite detuning.}
