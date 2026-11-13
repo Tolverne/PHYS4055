@@ -1,5 +1,13 @@
 # PHYS4055 — Atomic Physics and Optics | 2026 Open-Book Exam Revision
 
+## New: four-part, 15-page source-reviewed course overview
+
+- **[Open the compiled 15-page PDF](exam_prep/reference_booklet/PHYS4055_Course_Overview_15pp.pdf)** — physical ideas, key equations, common methods and a quick question-type index, organised across optics, applications of optics, atomic physics and applications of atomic physics.
+- [Editable LaTeX source (15 topic pages)](exam_prep/reference_booklet/pages/)
+- [Lecture slide/transcript source map and verification notes](exam_prep/reference_booklet/SOURCE_MAP.md)
+- [15-page thumbnail contact sheet](exam_prep/reference_booklet/PHYS4055_Course_Overview_Contact_Sheet.jpg)
+
+
 **Exam target: Friday 20 November 2026** (confirm exact time and permitted materials against the official 2026 exam instructions).
 
 This repository follows the workflow of [PHYS7045](https://github.com/Tolverne/PHYS7045): preserve the source material, build clear topic notes, solve past papers in full, then assemble searchable/printable LaTeX reference documents.
