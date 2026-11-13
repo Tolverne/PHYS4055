@@ -1,6 +1,11 @@
 name: Extract PHYS4055 lecture slide text
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-lecture-slides.yml'
+      - 'scripts/index_lecture_slides.py'
   workflow_dispatch:
 
 permissions:
