@@ -1,5 +1,12 @@
 # PHYS4055 — Atomic Physics and Optics | 2026 Open-Book Exam Revision
 
+## New: complete 20-example worked booklet (2026)
+
+- **[Open the compiled 22-page worked examples PDF](exam_prep/worked_examples/PHYS4055_Worked_Examples.pdf)** — full step-by-step calculations across all four course parts.
+- [LaTeX master and twenty editable example sections](exam_prep/worked_examples/)
+- [Question-to-source audit](exam_prep/worked_examples/SOURCE_MAP.md) — identifies tutorial, released-assignment and past-exam sources.
+- [Page-preview contact sheet](exam_prep/worked_examples/PHYS4055_Worked_Examples_Contact_Sheet.jpg)
+
 ## New: four-part, 15-page source-reviewed course overview
 
 - **[Open the compiled 15-page PDF](exam_prep/reference_booklet/PHYS4055_Course_Overview_15pp.pdf)** — physical ideas, key equations, common methods and a quick question-type index, organised across optics, applications of optics, atomic physics and applications of atomic physics.
