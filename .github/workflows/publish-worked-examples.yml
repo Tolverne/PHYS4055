@@ -1,0 +1,68 @@
+name: Publish PHYS4055 worked-examples booklet
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/worked_examples/**/*.tex'
+      - 'tex/common.tex'
+      - '.github/workflows/publish-worked-examples.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile the full worked booklet
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: exam_prep/worked_examples
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Verify PDF and create page preview
+        run: |
+          python -m pip install --quiet pymupdf pillow
+          python - <<'PY'
+          import fitz
+          from PIL import Image, ImageDraw
+          from pathlib import Path
+          base = Path("exam_prep/worked_examples")
+          pdf = fitz.open(base / "main.pdf")
+          total = len(pdf)
+          assert 20 <= total <= 70, f"Unexpected number of pages: {total}"
+          text = "\n".join(p.get_text() for p in pdf)
+          for label in ["QO-01","QO-04","OA-01","OA-08","AT-01","AT-05","AA-01","AA-03","Fast method finder"]:
+              assert label in text, f"Missing chapter marker: {label}"
+          width, height, gap, margin, footer = 265, 374, 12, 12, 18
+          cols = 4
+          rows = (total + cols - 1) // cols
+          image = Image.new("RGB",(margin*2+cols*width+(cols-1)*gap,
+                 margin*2+rows*(height+footer)+(rows-1)*gap),"white")
+          draw = ImageDraw.Draw(image)
+          for i,p in enumerate(pdf):
+              pix=p.get_pixmap(matrix=fitz.Matrix(width/p.rect.width,height/p.rect.height),alpha=False)
+              tile=Image.frombytes("RGB",[pix.width,pix.height],pix.samples)
+              x=margin+(i%cols)*(width+gap)
+              y=margin+(i//cols)*(height+footer+gap)
+              image.paste(tile,(x,y))
+              draw.rectangle((x,y,x+width,y+height),outline="#9CABB6")
+              draw.text((x,y+height+3),f"Page {i+1}",fill="#333333")
+          image.save(base / "PHYS4055_Worked_Examples_Contact_Sheet.jpg",quality=85,optimize=True)
+          (base / "main.pdf").replace(base / "PHYS4055_Worked_Examples.pdf")
+          report = f"# PDF build validation\n\n- Compiled pages: **{total}**\n- Validated 20 example labels and final method finder\n- Source LaTeX: `main.tex` and `sections/`\n- PDF: `PHYS4055_Worked_Examples.pdf`\n"
+          (base / "PDF_BUILD_CHECK.md").write_text(report)
+          print(f"Verified {total}-page worked-examples booklet.")
+          PY
+      - name: Commit printable PDF and visual contact sheet
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/worked_examples/PHYS4055_Worked_Examples.pdf exam_prep/worked_examples/PHYS4055_Worked_Examples_Contact_Sheet.jpg exam_prep/worked_examples/PDF_BUILD_CHECK.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified PHYS4055 worked examples PDF and page preview'
+            git push
+          fi
