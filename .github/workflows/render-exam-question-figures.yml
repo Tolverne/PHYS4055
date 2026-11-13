@@ -1,0 +1,53 @@
+name: Render exam question diagrams for verified solutions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/render-exam-question-figures.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet pymupdf
+      - name: Render source questions
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          base=Path("source_material/past_exams")
+          out=Path("exam_prep/source_extractions/exam_figures")
+          out.mkdir(parents=True,exist_ok=True)
+          exams={
+            "2023":("Semester_Two_Examinations_2023_PHYS4055 (8).pdf",[3,4,5]),
+            "2024":("Semester_Two_Examinations_2024_PHYS4055.pdf",[2,4]),
+            "2025":("Semester_Two_Examinations_2025_PHYS4055.pdf",[1,2,3,4]),
+          }
+          for year,(file,pages) in exams.items():
+              with fitz.open(base/year/file) as pdf:
+                  for p in pages:
+                      page=pdf[p]
+                      pix=page.get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+                      path=out/f"exam_{year}_page_{p+1}.png"
+                      pix.save(str(path))
+                      print(f"{path}: {path.stat().st_size} bytes")
+          PY
+      - name: Commit rendered pages for source diagrams
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/source_extractions/exam_figures/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add verified original exam question page previews for worked solutions'
+            git pull --rebase origin main
+            git push
+          fi
