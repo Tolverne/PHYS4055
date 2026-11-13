@@ -1,1 +1,13 @@
 source,year,question_part,topic,marks,source_page,solution_path,verified,notes
+Semester Two Exam,2023,Q1,Nonlinear optical mode and Schrodinger-cat statistics,10,2,exam_prep/past_exam_solutions/sections/2023_q1.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2023,Q2,Hydrogen radial helium spins and E1 rules,10,3,exam_prep/past_exam_solutions/sections/2023_q2.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2023,Q3,Squeezed-coherent Mach Zehnder phase sensitivity,10,4,exam_prep/past_exam_solutions/sections/2023_q3.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2023,Q4,Raman atom-cavity pulse and detuning sensor,10,5-6,exam_prep/past_exam_solutions/sections/2023_q4.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2024,Q1,Spin orbit splitting of triplet D,10,2,exam_prep/past_exam_solutions/sections/2024_q1.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2024,Q2,Zeeman hyperfine transition magnetometer,10,3,exam_prep/past_exam_solutions/sections/2024_q2.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2024,Q3,Beam splitter HOM and sub-Poisson statistics,10,4,exam_prep/past_exam_solutions/sections/2024_q3.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2024,Q4,Lossy optical cavity and dual-rail qubits,10,5,exam_prep/past_exam_solutions/sections/2024_q4.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2025,Q1,Hyperfine and weak strong Zeeman,10,2,exam_prep/past_exam_solutions/sections/2025_q1.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2025,Q2,Yb energy levels cooling and Doppler limit,10,3,exam_prep/past_exam_solutions/sections/2025_q2.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2025,Q3,NOON state beam splitter interference,10,4,exam_prep/past_exam_solutions/sections/2025_q3.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
+Semester Two Exam,2025,Q4,Parametric cavity squeezing and Bell pair randomness,10,5,exam_prep/past_exam_solutions/sections/2025_q4.tex,source-matched,independently derived; see SOURCE_MAP for convention caveats
