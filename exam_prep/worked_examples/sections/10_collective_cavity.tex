@@ -1,0 +1,66 @@
+
+\section{OA-06: Tavis--Cummings bright and dark states}
+\source{Week 6 Tutorial, Question 1; released Week 6 tutorial solutions.}
+\subsection*{Step 1: identify the coupled subspace}
+For two identical resonant atoms and one cavity mode,
+\[
+H_I=\hbar g(aJ_++a^\dagger J_-),\qquad
+J_-=\sigma_-^{(1)}+\sigma_-^{(2)}.
+\]
+Define
+\(\ket S=(\ket{eg}+\ket{ge})/\sqrt2\) and
+\(\ket A=(\ket{eg}-\ket{ge})/\sqrt2\).
+Act on each state:
+\[
+J_-\ket S=\sqrt2\ket{gg},\qquad
+J_-\ket A=0.
+\]
+The symmetric state is \emph{bright} with enhanced coupling
+\(\sqrt2g\); the antisymmetric state is \emph{dark}.
+
+\subsection*{Step 2: propagate a localised excitation}
+Initially \(\ket{\Psi(0)}=\ket{eg;0}
+=(\ket{S;0}+\ket{A;0})/\sqrt2\).
+Set \(\vartheta=\sqrt2gt\). The bright component
+Rabi-oscillates to \(\ket{gg;1}\) while the dark
+component does not:
+\[
+\ket{\Psi(t)}=\frac1{\sqrt2}\left[
+\cos\vartheta\ket{S;0}+\ket{A;0}
+-i\sin\vartheta\ket{gg;1}\right].
+\]
+Return to the individual-atom basis:
+\[
+\boxed{\begin{aligned}
+\ket{\Psi(t)}={}&\frac{1+\cos\vartheta}{2}\ket{eg;0}
++\frac{\cos\vartheta-1}{2}\ket{ge;0}\\
+&-\frac{i\sin\vartheta}{\sqrt2}\ket{gg;1}.
+\end{aligned}}
+\]
+
+\subsection*{Step 3: calculate observables and conserved excitation}
+The cavity has exactly one photon in the last branch:
+\[
+\boxed{\langle n_{\rm cav}\rangle
+=\tfrac12\sin^2\vartheta}.
+\]
+Atom 1 is excited only in the first term, atom 2
+only in the second:
+\[
+P(e_1)=\frac{(1+\cos\vartheta)^2}{4},\qquad
+P(e_2)=\frac{(1-\cos\vartheta)^2}{4}.
+\]
+Thus \(\langle N_{\rm at}\rangle
+=P(e_1)+P(e_2)=\tfrac12(1+\cos^2\vartheta)\)
+and
+\[
+\boxed{\langle N_{\rm at}\rangle+
+\langle n_{\rm cav}\rangle=1}.
+\]
+At \(\vartheta=\pi\), the excitation transfers entirely
+from atom 1 to atom 2 (up to phase). But
+\(P(n_{\rm cav}=1)\le1/2\): the dark half
+cannot populate the cavity.
+\checkmethod{Writing the initial state in the bright/dark
+basis is the key shortcut. Conservation of one excitation
+is a useful error check at every time.}

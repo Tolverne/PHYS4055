@@ -1,0 +1,57 @@
+
+\section{OA-05: Conditional filtering can distinguish non-orthogonal states}
+\source{Week 6 Tutorial, Question 2; released Week 6 tutorial solutions.}
+\subsection*{Step 1: measure the input overlap}
+The inputs and successful Kraus operator are
+\[
+\ket{\psi_\pm}=\frac{2\ket0\pm\ket1}{\sqrt5},\qquad
+K_s=\tfrac12\ket0\bra0+\ket1\bra1 .
+\]
+Both input states are normalised, but
+\[
+\boxed{\langle\psi_+|\psi_-\rangle
+=\frac{4-1}{5}=\frac35\ne0}.
+\]
+Thus no \emph{deterministic} measurement can perfectly
+distinguish them.
+
+\subsection*{Step 2: apply the success operator before normalising}
+\[
+K_s\ket{\psi_\pm}=\frac{\ket0\pm\ket1}{\sqrt5}.
+\]
+The trace/weight of this unnormalised branch is
+\[
+\boxed{p_s=\|K_s\ket{\psi_\pm}\|^2
+=\frac15+\frac15=\frac25},
+\]
+the same for either input. Conditional on success,
+\[
+\boxed{\ket{\phi_\pm}=
+\frac{K_s\ket{\psi_\pm}}{\sqrt{p_s}}
+=\frac{\ket0\pm\ket1}{\sqrt2}},
+\quad
+\langle\phi_+|\phi_-\rangle=0 .
+\]
+A subsequent measurement in the \(\{\ket+,\ket-\}\) basis
+identifies which input was sent \emph{when the filter succeeds}.
+
+\subsection*{Step 3: explain the failure outcome}
+The other Kraus operator is
+\(K_f=(\sqrt3/2)\ket0\bra0\).
+Check completeness:
+\[
+K_s^\dagger K_s+K_f^\dagger K_f
+=\begin{pmatrix}1/4&0\\0&1\end{pmatrix}
++\begin{pmatrix}3/4&0\\0&0\end{pmatrix}=I.
+\]
+Each failed branch is
+\[
+K_f\ket{\psi_\pm}=\sqrt{\frac35}\ket0,
+\quad p_f=\frac35,\quad
+\ket{\phi_f}=\ket0.
+\]
+Failure produces the \emph{same} state for both signs
+and reveals no information distinguishing the inputs.
+\checkmethod{The output states become orthogonal only in the
+successful subensemble. It is the non-unit success probability
+that prevents violation of deterministic distinguishability.}

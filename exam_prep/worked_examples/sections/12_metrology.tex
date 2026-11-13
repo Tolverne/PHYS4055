@@ -1,0 +1,48 @@
+
+\section{OA-08: Phase estimation with Fisher information}
+\source{Week 6 Lecture 3, Quantum Optical Metrology; Mach--Zehnder slides.}
+\subsection*{Step 1: identify the phase generator}
+If a pure probe state is encoded by
+\(\ket{\psi_\phi}=e^{-i\phi G}\ket{\psi_0}\),
+the quantum Fisher information is
+\[
+\boxed{F_Q=4[\langle G^2\rangle-\langle G\rangle^2]}.
+\]
+For \(M\) independent identical probes and an unbiased
+estimator the quantum Cram\'er--Rao inequality gives
+\(\operatorname{Var}(\tilde\phi)\ge1/(MF_Q)\).
+
+\subsection*{Step 2: calculate for a coherent optical phase}
+The number operator generates an optical phase:
+\(G=\hat n\). For \(\ket\alpha\),
+\(\langle n\rangle=|\alpha|^2=\bar n\) and
+\(\operatorname{Var}n=\bar n\), giving
+\[
+\boxed{F_Q=4\bar n,\quad
+\Delta\tilde\phi\ge\frac1{2\sqrt{M\bar n}}}.
+\]
+This displays standard shot-noise scaling in total photon
+resource \(M\bar n\). The factor of 2 depends on the
+parameter-generator definition, not on a fundamental
+change to the scaling.
+
+\subsection*{Step 3: compare with actual measurement statistics}
+For one photon in a balanced Mach--Zehnder interferometer,
+write \(P_1=\cos^2(\phi/2)\),
+\(P_2=\sin^2(\phi/2)\). The classical Fisher information is
+\[
+F=\sum_{j=1}^2\frac{(\partial_\phi P_j)^2}{P_j}.
+\]
+Since \(\partial_\phi P_1=-\tfrac12\sin\phi\),
+\(\partial_\phi P_2=+\tfrac12\sin\phi\),
+\[
+F=\frac{\sin^2\phi}{4}
+\left(\frac1{\cos^2(\phi/2)}+
+\frac1{\sin^2(\phi/2)}\right)=\boxed{1}
+\]
+away from singular endpoints (with the continuous limit 1).
+The one-photon phase bound for \(M\) trials is
+\(\Delta\phi\ge1/\sqrt M\).
+\checkmethod{The QFI is the optimal information available
+from a \emph{state}; the classical Fisher information depends
+on which measurement is actually made. State the resource count.}

@@ -1,0 +1,68 @@
+
+\section{OA-07: Cavity squeezing from a Langevin equation}
+\source{2025 PHYS4055 Exam, Question 4(a)--(d); Week 5 open-systems lectures.}
+\subsection*{Step 1: obtain the parametric interaction term}
+The interaction Hamiltonian and bare cavity equation are
+\[
+H_I=\frac{i\hbar\chi}{2}(a^2-a^{\dagger2}),\quad
+\dot a\big|_{\chi=0}=-\tfrac\gamma2 a+\sqrt\gamma A_{\rm in}.
+\]
+Using \([a^{\dagger2},a]=-2a^\dagger\),
+\[
+\frac{i}{\hbar}[H_I,a]
+=\frac{i}{\hbar}\left(\frac{i\hbar\chi}{2}
+[\,a^2-a^{\dagger2},a]\right)
+=-\chi a^\dagger.
+\]
+Therefore
+\[
+\boxed{\dot a=-\chi a^\dagger-\tfrac\gamma2a
++\sqrt\gamma A_{\rm in}}.
+\]
+
+\subsection*{Step 2: transform the measured quadrature}
+Define \(X_+=a+a^\dagger\), and the corresponding
+input \(X_{+,\rm in}=A_{\rm in}+A^\dagger_{\rm in}\).
+Adding the equation to its adjoint gives
+\[
+\boxed{\dot X_+=-(\gamma/2+\chi)X_+
++\sqrt\gamma X_{+,\rm in}}.
+\]
+Take the Fourier convention
+\(\tilde X(\omega)=\int_{-\infty}^\infty
+e^{-i\omega t}X(t)\,dt\), so
+\(\widetilde{\dot X}=i\omega\tilde X\).
+Then
+\[
+\boxed{\tilde X_+(\omega)=
+\frac{\sqrt\gamma}{\gamma/2+\chi+i\omega}
+\tilde X_{+,\rm in}(\omega)}.
+\]
+
+\subsection*{Step 3: apply input--output theory}
+With the convention in the exam,
+\(A_{\rm out}=\sqrt\gamma\,a-A_{\rm in}\),
+so \(X_{+,\rm out}=\sqrt\gamma X_+-X_{+,\rm in}\).
+Consequently
+\[
+\boxed{\tilde X_{+,\rm out}=
+\frac{\gamma/2-\chi-i\omega}
+{\gamma/2+\chi+i\omega}\,
+\tilde X_{+,\rm in}.}
+\]
+For a vacuum input with unit noise spectral density
+and stable dynamics, the output spectral noise is
+\[
+\boxed{V_+(\omega)=
+\frac{(\gamma/2-\chi)^2+\omega^2}
+{(\gamma/2+\chi)^2+\omega^2}}.
+\]
+For \(0<\chi<\gamma/2\), \(V_+<1\) at any
+finite frequency, approaching 1 at high frequency.
+At \(\omega=0\),
+\(V_+(0)=[(\gamma/2-\chi)/(\gamma/2+\chi)]^2\).
+The conjugate quadrature is anti-squeezed.
+\checkmethod{State the Fourier convention and output-field
+sign before doing algebra; otherwise phase factors can appear
+inconsistent. A \emph{spectral variance} is based on fluctuation
+correlations, not the squared mean field.}
