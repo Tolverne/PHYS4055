@@ -1,0 +1,71 @@
+
+\section{AT-05: Hartree--Fock direct and exchange matrix elements}
+\source{2026 Atomic Assignment 4 (\texttt{PHYS4055\_A2-3.pdf}), Question 1.}
+\subsection*{Step 1: antisymmetrise two occupied spin-orbitals}
+Let \(a(x)\), \(b(x)\) be orthonormal spin-orbitals;
+\(x=(\mathbf r,\sigma)\). A two-electron determinant is
+\[
+\Psi_{ab}(1,2)=\frac1{\sqrt2}
+\left[a(1)b(2)-b(1)a(2)\right].
+\]
+The electron repulsion is \(v_{12}=e^2/(4\pi\epsilon_0r_{12})\).
+Expanding \(\langle\Psi_{ab}|v_{12}|\Psi_{ab}\rangle\)
+gives four terms. Interchanging labels \(1\leftrightarrow2\)
+shows that the two direct terms agree and the two exchange
+terms agree:
+\[
+\boxed{\langle v_{12}\rangle=J_{ab}-K_{ab}}.
+\]
+With atomic units, these integrals are
+\[
+\begin{aligned}
+J_{ab}&=\iint
+\frac{|a(x_1)|^2|b(x_2)|^2}{r_{12}}\,dx_1dx_2,\\
+K_{ab}&=\iint
+\frac{a^*(x_1)b(x_1)b^*(x_2)a(x_2)}{r_{12}}
+\,dx_1dx_2.
+\end{aligned}
+\]
+The exchange term comes from fermionic antisymmetry;
+it is not a separate classical Coulomb force.
+
+\subsection*{Step 2: integrate spins before orbital angles}
+For separable \(a(x)=\phi_a(\mathbf r)\chi_a(\sigma)\),
+\(b(x)=\phi_b(\mathbf r)\chi_b(\sigma)\), the direct term
+is independent of the relative spin. The exchange term
+contains \(|\langle\chi_a|\chi_b\rangle|^2\).
+For orthogonal spin states \(\alpha\) and \(\beta\),
+this factor is zero: \(\boxed{K_{a\alpha,b\beta}=0}\).
+For equal spin states, \(K_{ab}\) generally survives.
+
+\subsection*{Step 3: reduce an illustrative \(s\)-orbital pair}
+Take orbitals with \(l_a=l_b=0\) and
+\(\phi_a(\mathbf r)=P_a(r)Y_{00}(\Omega)/r\)
+with \(\int_0^\infty |P_a(r)|^2dr=1\).
+In the multipole expansion of \(1/r_{12}\),
+only \(k=0\) survives the angular integrations.
+Write \(r_>=\max(r_1,r_2)\). Then
+\[
+\boxed{J_{ab}=\int_0^\infty\!\int_0^\infty
+\frac{|P_a(r_1)|^2|P_b(r_2)|^2}{r_>}
+\,dr_1dr_2}
+\]
+and for equal spin
+\[
+\boxed{K_{ab}=\int_0^\infty\!\int_0^\infty
+\frac{P_a^*(r_1)P_b(r_1)P_b^*(r_2)P_a(r_2)}
+{r_>}\,dr_1dr_2}.
+\]
+For higher \(l\), retain the appropriate
+\(k,q\) angular coefficients (Gaunt/3-j factors).
+
+\subsection*{Interpretation}
+The direct mean field is the Coulomb potential
+of the other electron density; exchange is a
+nonlocal, spin-selective operator. In Hartree--Fock,
+optimising the determinant self-consistently produces
+both terms in the one-electron equations.
+\checkmethod{The full Assignment 4 derivation requires
+the Johnson-textbook angular and radial conventions.
+This example isolates the physical and algebraic
+direct--exchange mechanism, not every general \(k\) term.}

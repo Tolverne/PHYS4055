@@ -1,0 +1,76 @@
+
+\section{AA-01: Selection rules and radiative lifetime}
+\source{Week 9 lectures; Week 10 spectroscopy; 2026 Assignment 4,
+Question 3 (sodium lifetimes).}
+\subsection*{Step 1: decide whether the matrix element can exist}
+For an E1 transition, the dipole operator \(d_q\)
+is a rank-1 tensor of \emph{odd} parity:
+\[
+\langle J'm'|d_q|Jm\rangle=
+(-1)^{J'-m'}
+\begin{pmatrix}J'&1&J\\-m'&q&m\end{pmatrix}
+\langle J'\Vert d\Vert J\rangle .
+\]
+Thus \(m'=m+q\), \(|J-J'|\le1\le J+J'\),
+and parity must change. For one electron in the
+LS-coupled limit, E1 orbital selection gives
+\(\Delta l=\pm1\). This predicts, for example,
+\[
+3p\to3s\ \text{E1 allowed},\quad
+4s\to3p\ \text{E1 allowed},\quad
+3d\to3p\ \text{E1 allowed},
+\]
+but \(3d\to3s\) is \emph{not} E1 allowed because
+\(\Delta l=-2\). It may be possible by higher multipoles.
+Whether a decay is physically available also requires
+the final state to lie below the initial energy.
+
+\subsection*{Step 2: separate angular and radial factors}
+For \(\psi_{nlm}=R_{nl}(r)Y_{lm}(\Omega)\),
+the dipole amplitude separates into
+\[
+\langle f|r_q|i\rangle=
+\underbrace{\int_0^\infty
+R_f^*(r)R_i(r)r^3\,dr}_{\text{radial overlap}}\!
+\underbrace{\int Y_{l_fm_f}^*(\Omega)
+C_q^{(1)}(\Omega)Y_{l_im_i}(\Omega)\,d\Omega}_{
+\text{angular / selection factor}} .
+\]
+The reduced radial convention \(u(r)=rR(r)\)
+uses \(\int u_f^*r u_i\,dr\) instead.
+Never confuse \(R\) and \(u\).
+
+\subsection*{Step 3: convert an E1 dipole into a rate}
+For one specified transition with correctly summed
+polarisation components,
+\[
+\boxed{A_{if}=\frac{\omega_{if}^3}{3\pi\epsilon_0\hbar c^3}
+|\langle f|\mathbf d|i\rangle|^2},\quad
+\omega_{if}=\frac{E_i-E_f}{\hbar}.
+\]
+If the excited state has several allowed lower states,
+\(\Gamma_i=\sum_f A_{if}\) and
+\(\boxed{\tau_i=1/\Gamma_i}\).
+\textbf{Illustrative calculation (not measured Na data):}
+take a single 589 nm transition with
+\(|\mathbf d|=2ea_0\). Using
+\(a_0=5.29177\times10^{-11}\) m and
+\(\omega=2\pi c/\lambda\) gives
+\[
+A\simeq3.97\times10^7\ {\rm s}^{-1},\qquad
+\boxed{\tau\simeq25.2\ {\rm ns}}
+\]
+if no other decay channels contribute.
+For actual sodium \(3p,4s,3d\), calculate the
+state-dependent dipole integrals and sum all
+E1-allowed downward channels as the assignment asks.
+
+\subsection*{Step 4: contrast E1, M1 and E2}
+E1: rank 1, odd parity; M1: rank 1, even parity;
+E2: rank 2, even parity. Rank-2 angular momentum
+demands \(|J-J'|\le2\le J+J'\). In particular,
+an \(s\to d\) orbital transition can be E2,
+whereas \(s\to p\) cannot be E2 by parity.
+\checkmethod{A nonzero 3-j symbol proves only angular
+compatibility. The reduced matrix element may still vanish;
+the full lifetime requires all permitted lower channels.}
