@@ -1,5 +1,12 @@
 # PHYS4055 — Atomic Physics and Optics | 2026 Open-Book Exam Revision
 
+## New: complete 2023–2025 past-exam solutions
+
+- **[Open the full worked past-exam PDF](exam_prep/past_exam_solutions/PHYS4055_Exams_2023_2025_Worked_Solutions.pdf)** — all 12 questions, all subparts, original paper references and exam-method checks.
+- [Editable LaTeX solutions, separate files per question](exam_prep/past_exam_solutions/sections/)
+- [Source and convention audit](exam_prep/past_exam_solutions/SOURCE_MAP.md)
+- [2023–2025 question index](exam_prep/question_index.csv)
+
 ## New: complete 20-example worked booklet (2026)
 
 - **[Open the compiled 22-page worked examples PDF](exam_prep/worked_examples/PHYS4055_Worked_Examples.pdf)** — full step-by-step calculations across all four course parts.
