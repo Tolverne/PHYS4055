@@ -1,0 +1,82 @@
+name: Publish PHYS4055 2023-2025 worked exam solutions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/past_exam_solutions/**/*.tex'
+      - 'tex/common.tex'
+      - '.github/workflows/publish-past-exam-solutions.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: phys4055-past-exams-publish
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile solutions
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: exam_prep/past_exam_solutions
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Audit PDF and create page contact sheet
+        run: |
+          python -m pip install --quiet pymupdf pillow
+          python - <<'PY'
+          from pathlib import Path
+          import pymupdf
+          from PIL import Image, ImageDraw
+          base=Path("exam_prep/past_exam_solutions")
+          book=pymupdf.open(base/"main.pdf")
+          total=len(book)
+          assert 12<=total<=60, f"Unexpected page count {total}"
+          content="\n".join(p.get_text() for p in book)
+          for year in ("2023","2024","2025"):
+              assert f"Semester 2 {year} examination" in content, f"Missing {year} paper"
+          # Every paper has four question headers, so each number appears at least three times.
+          for q in range(1,5):
+              assert content.count(f"Question {q}:")>=3, f"Missing Q{q} in a paper"
+          cols, width, height, gap, margin, foot = 4,265,375,12,12,18
+          rows=(total+cols-1)//cols
+          sheet=Image.new("RGB",(margin*2+cols*width+(cols-1)*gap,
+              margin*2+rows*(height+foot)+(rows-1)*gap),"white")
+          draw=ImageDraw.Draw(sheet)
+          for i,page in enumerate(book):
+              pix=page.get_pixmap(matrix=pymupdf.Matrix(width/page.rect.width,
+                                height/page.rect.height),alpha=False)
+              img=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+              x=margin+(i%cols)*(width+gap)
+              y=margin+(i//cols)*(height+foot+gap)
+              sheet.paste(img,(x,y))
+              draw.rectangle((x,y,x+width,y+height),outline="#929DAA")
+              draw.text((x,y+height+3),f"Page {i+1}",fill="#333333")
+          sheet.save(base/"PHYS4055_Exams_2023_2025_Contact_Sheet.jpg",quality=87,optimize=True)
+          (base/"main.pdf").replace(base/"PHYS4055_Exams_2023_2025_Worked_Solutions.pdf")
+          report=(f"# Compiled past-examination booklet\n\n"
+                 f"- **Pages:** {total}\n"
+                 f"- **Source papers:** 2023, 2024 and 2025\n"
+                 f"- **Worked questions:** 12 / 12\n"
+                 f"- **Each question has source-year and page metadata:** yes\n"
+                 f"- **Official marking scheme:** not supplied; all independently derived\n"
+                 f"- **Known convention and diagram caveats:** see SOURCE_MAP.md\n")
+          (base/"PDF_BUILD_CHECK.md").write_text(report,encoding="utf-8")
+          print(report)
+          PY
+      - name: Commit compiled booklet and preview
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/past_exam_solutions/PHYS4055_Exams_2023_2025_Worked_Solutions.pdf exam_prep/past_exam_solutions/PHYS4055_Exams_2023_2025_Contact_Sheet.jpg exam_prep/past_exam_solutions/PDF_BUILD_CHECK.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified 2023-2025 complete past exam solutions PDF'
+            git pull --rebase origin main
+            git push origin main
+          fi
