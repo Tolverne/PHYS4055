@@ -1,0 +1,128 @@
+\examquestion{2025}{2}{Ytterbium level diagram, slowing and laser cooling}{3}
+The source paper supplies a Yb level diagram, including
+\(6s^2\,{}^1S_0\), \(6s6p\ P\) and \(5d6s\ D\) terms.
+Distinguish strictly LS-allowed E1 transitions from weak
+spin-mixed intercombination lines.
+\subsection*{(a) Identify E1 arrows}
+Electric dipole (E1) has odd parity and angular rank 1.
+In a good LS-coupling approximation, require a parity
+change, \(\Delta S=0\), and \(\Delta J=0,\pm1\)
+excluding \(0\leftrightarrow0\).
+For the terms visible in the supplied diagram,
+\[
+\begin{array}{l|l}
+\text{Level pair}&\text{Strict LS E1?}\\\hline
+{}^1P_1\leftrightarrow{}^1S_0&\text{yes}\\
+{}^1P_1\leftrightarrow{}^1D_2&\text{yes}\\
+{}^3P_1\leftrightarrow{}^3D_1&\text{yes}\\
+{}^3P_1\leftrightarrow{}^3D_2&\text{yes}\\
+{}^3P_1\leftrightarrow{}^3D_3&\text{no, }\Delta J=2\\
+{}^3P_1\leftrightarrow{}^1S_0&
+\text{spin-forbidden in pure LS coupling}
+\end{array}
+\]
+With spin--orbit mixing the
+\({}^3P_1\leftrightarrow{}^1S_0\) line becomes
+a weak \emph{intercombination} E1 transition.
+A \(J=0\leftrightarrow0\) line remains forbidden
+for a rank-1 operator even with state mixing.
+If additional \(P_J\) levels are present in the
+original figure, apply the same rules to each.
+See the original level diagram in the paper and
+the corresponding page preview retained with
+the source extractions.
+
+\subsection*{(b) Clock transition}
+An optical clock favours a narrow, long-lived
+excited state. A standard choice for Yb is
+\[
+\boxed{6s^2\,{}^1S_0\longleftrightarrow
+6s6p\,{}^3P_0\quad(\sim578~\mathrm{nm})}.
+\]
+This line is nominally E1-forbidden:
+\(J=0\leftrightarrow0\). Weak mixing/assisted
+interrogation in suitable isotopes enables
+spectroscopy. Other suitably narrow
+weak/forbidden lines may also serve as references.
+
+\subsection*{(c) Laser-cooling transition}
+Use the strong, nearly cycling
+\[
+\boxed{6s^2\,{}^1S_0\longleftrightarrow
+6s6p\,{}^1P_1\quad(\lambda\simeq399~\mathrm{nm})}.
+\]
+Its large spontaneous-emission rate allows many
+momentum kicks. The narrower
+\({}^1S_0\to{}^3P_1\) line near 556 nm
+is useful for subsequent cooling.
+
+\subsection*{(d.i) Why the Zeeman slower needs a magnet}
+As atoms slow, their Doppler shift changes,
+tending to move the laser away from resonance.
+A position-dependent magnetic field Zeeman-shifts
+the transition and compensates the changing
+Doppler shift, maintaining efficient scattering.
+
+\subsection*{(d.ii--iii) Stopping distance and number of photons}
+The data are \(M=1.73\times10^{-25}~\mathrm{kg}\),
+\(T=300~\mathrm{K}\), \(\lambda=399~\mathrm{nm}\),
+and excited-state lifetime \(\tau=5.5~\mathrm{ns}\).
+The paper does not specify which characteristic
+thermal beam speed to use. Taking the
+3D rms speed as an explicit convention,
+\[
+v_0=\sqrt{\frac{3k_BT}{M}}=
+\boxed{268.0~\mathrm{m\,s^{-1}}}.
+\]
+At saturation a two-level transition has
+maximum photon-scattering rate \(\Gamma/2\)
+where \(\Gamma=1/\tau\).
+Each photon transfers mean directed momentum
+\(h/\lambda\), so
+\[
+F_{\max}=\frac{h}{2\lambda\tau},\quad
+a_{\max}=\frac{h}{2M\lambda\tau}.
+\]
+At \emph{half} the maximum deceleration,
+\[
+a=\frac{a_{\max}}2
+=\frac{h}{4M\lambda\tau}
+=\boxed{4.36\times10^5~\mathrm{m\,s^{-2}}}.
+\]
+Using \(0=v_0^2-2aL\),
+\[
+\boxed{L=\frac{v_0^2}{2a}=0.0823~\mathrm{m}
+=8.23~\mathrm{cm}}.
+\]
+Momentum balance requires
+\[
+\boxed{N_\gamma=\frac{Mv_0}{h/\lambda}
+=\frac{Mv_0\lambda}{h}\simeq2.79\times10^4}.
+\]
+If instead one uses the Maxwell most-probable
+speed \(\sqrt{2k_BT/M}=218.8~\mathrm{m\,s^{-1}}\),
+the corresponding results are
+\(L=5.49~\mathrm{cm}\) and
+\(N_\gamma\simeq2.28\times10^4\).
+State the chosen speed definition in the exam.
+
+\subsection*{(e.i) Red-detuned optical molasses}
+An atom moving into a counter-propagating
+red-detuned beam sees its light shifted toward
+resonance and preferentially absorbs photons
+that oppose its motion. The average force near
+rest has the form \(\mathbf F\simeq-\beta\mathbf v\).
+
+\subsection*{(e.ii) Doppler limit}
+For a simple two-level transition,
+\[
+T_D=\frac{\hbar\Gamma}{2k_B}
+=\frac{h}{4\pi k_B\tau}
+=\boxed{6.94\times10^{-4}~\mathrm{K}
+=0.694~\mathrm{mK}}.
+\]
+\solcheck{Cooling requires a bright, rapid
+cycling transition; clocks require a narrow,
+long-lived one. Check the factor of one-half
+in the stated deceleration and the units of
+acceleration, length, temperature and photon count.}
