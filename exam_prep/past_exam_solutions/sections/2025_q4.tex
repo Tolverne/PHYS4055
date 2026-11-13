@@ -1,0 +1,102 @@
+
+\examquestion{2025}{4}{Parametric cavity squeezing and entanglement-based random bits}{5}
+Start from the supplied quantum Langevin model,
+\[
+\dot a=-\frac\gamma2a+\sqrt\gamma A_{\rm in},\quad
+H_i=\frac{i\hbar\chi}{2}(a^2-a^{\dagger2}).
+\]
+
+\subsection*{(a) Derive the modified quantum Langevin equation}
+The Heisenberg interaction term is
+\(\dot a|_{H_i}=(i/\hbar)[H_i,a]\).
+Using \([a^2,a]=0\),
+\([a^{\dagger2},a]=-2a^\dagger\), we find
+\[
+\frac i\hbar[H_i,a]
+=\frac i\hbar\frac{i\hbar\chi}{2}(2a^\dagger)
+=-\chi a^\dagger.
+\]
+Thus
+\[
+\boxed{\dot a=-\chi a^\dagger-\frac\gamma2a
++\sqrt\gamma A_{\rm in}}.
+\]
+
+\subsection*{(b) Fourier-domain amplitude quadrature}
+Taking the adjoint (real \(\chi\)), and defining
+\(X_+=a+a^\dagger\),
+\(X_{+,\rm in}=A_{\rm in}+A_{\rm in}^\dagger\),
+\[
+\dot X_+=-\left(\chi+\frac\gamma2\right)X_+
++\sqrt\gamma X_{+,\rm in}.
+\]
+Adopt the Fourier convention
+\(\tilde X(\omega)=\int e^{-i\omega t}X(t)\diff t\);
+then \(\widetilde{\dot X}=i\omega\tilde X\), giving
+\[
+\boxed{\tilde X_+(\omega)=
+\frac{\sqrt\gamma}{\gamma/2+\chi+i\omega}
+\tilde X_{+,\rm in}(\omega)}.
+\]
+
+\subsection*{(c) Input--output relation}
+For the convention \(A_{\rm out}=\sqrt\gamma\,a-A_{\rm in}\),
+\[
+\tilde X_{+,\rm out}
+=\sqrt\gamma\,\tilde X_+-\tilde X_{+,\rm in}
+=\left[
+\frac{\gamma}{\gamma/2+\chi+i\omega}-1\right]
+\tilde X_{+,\rm in}.
+\]
+Therefore
+\[
+\boxed{\tilde X_{+,\rm out}=
+\frac{\gamma/2-\chi-i\omega}
+{\gamma/2+\chi+i\omega}
+\tilde X_{+,\rm in}}.
+\]
+This agrees with the expression requested in the exam.
+
+\subsection*{(d) When does squeezing occur?}
+For vacuum input with unit quadrature noise spectrum,
+the output \emph{fluctuation spectrum} is
+\[
+V_+(\omega)=\left|
+\frac{\gamma/2-\chi-i\omega}
+{\gamma/2+\chi+i\omega}\right|^2
+=\boxed{\frac{(\gamma/2-\chi)^2+\omega^2}
+{(\gamma/2+\chi)^2+\omega^2}}.
+\]
+For \(\boxed{0<\chi<\gamma/2}\), the steady
+system is below parametric threshold and
+\(V_+(\omega)<1\) for finite \(\omega\);
+the largest reduction occurs near \(\omega=0\).
+The orthogonal quadrature is anti-squeezed.
+\begin{cautionbox}
+\textbf{Exam notation issue.} The prompt's shorthand
+\(V_+=|\langle\tilde X_{+,\rm out}\rangle|^2\)
+is not the usual \emph{noise spectral variance}:
+for a vacuum input, the mean is zero even though
+its fluctuations are nonzero. The physically
+relevant squeezing test uses the fluctuation
+autocorrelation / power spectrum as above.
+\end{cautionbox}
+
+\subsection*{(e) Random and secret bits from Bell pairs}
+For \(\ket{\Phi^+}=(\ket{00}+\ket{11})/\sqrt2\),
+both parties measuring in the same \(Z\) basis
+obtain \(00\) or \(11\), each with probability \(1/2\).
+Their local marginal states are maximally mixed:
+\(\rho_A=\rho_B=I/2\), hence every local bit is
+unpredictable. The outcomes nevertheless match
+perfectly. If the pairs are \emph{verified} as
+high-fidelity entangled states and Eve is
+uncorrelated with them, monogamy limits what
+Eve can know. In practice secrecy is not
+guaranteed just by \emph{assuming} Bell pairs:
+Alice and Bob should estimate disturbance,
+authenticate their discussion and perform
+error correction/privacy amplification as needed.
+\solcheck{The output squeezing factor approaches 1 at
+large \(|\omega|\) and is below 1 at \(\omega=0\)
+for positive \(\chi\) below threshold.}

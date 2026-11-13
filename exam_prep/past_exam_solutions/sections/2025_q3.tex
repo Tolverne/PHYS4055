@@ -1,0 +1,74 @@
+
+\examquestion{2025}{3}{Two-photon NOON input and beam-splitter output probabilities}{4}
+With the paper's balanced beam splitter
+\(c=(a+b)/\sqrt2,\ d=(a-b)/\sqrt2\), the inverse
+relations for creation operators are
+\[
+a^\dagger=\frac{c^\dagger+d^\dagger}{\sqrt2},
+\qquad b^\dagger=\frac{c^\dagger-d^\dagger}{\sqrt2}.
+\]
+\subsection*{(a) Transform the plus NOON input}
+Using \(\ket{2,0}_{ab}=(a^\dagger)^2\ket0/\sqrt2\),
+\[
+\ket{2,0}\ \longrightarrow\
+\frac12\ket{2,0}_{cd}
++\frac1{\sqrt2}\ket{1,1}_{cd}
++\frac12\ket{0,2}_{cd}.
+\]
+Similarly
+\[
+\ket{0,2}\ \longrightarrow\
+\frac12\ket{2,0}_{cd}
+-\frac1{\sqrt2}\ket{1,1}_{cd}
++\frac12\ket{0,2}_{cd}.
+\]
+The initial state is
+\(\ket{\Psi_{\rm in}}=(\ket{2,0}+\ket{0,2})/\sqrt2\).
+Add the two output \emph{amplitude vectors}:
+\[
+\boxed{\ket{\Psi_{\rm out}}=
+\frac{\ket{2,0}_{cd}+\ket{0,2}_{cd}}{\sqrt2}}.
+\]
+
+\subsection*{(b) Detection probabilities}
+Read probabilities from squared moduli:
+\[
+\boxed{P_{20}=\frac12,\qquad
+P_{02}=\frac12,\qquad P_{11}=0}.
+\]
+They add to 1.
+
+\subsection*{(c) Physical interpretation}
+The two input components are \emph{coherent}
+number-state amplitudes, so the histories leading
+to one photon in each output port interfere
+destructively. The input is a two-photon path-entangled
+NOON state. The output has perfect two-photon bunching,
+but here it originates from the plus-NOON superposition:
+this is not the same initial state as the ordinary
+two-single-photon HOM experiment. The \emph{minus}
+NOON state in the same convention would instead
+map to \(\ket{1,1}_{cd}\).
+
+\subsection*{(d) An alternative superposition}
+For
+\(\ket{\Phi_{\rm in}}=(\ket{1,1}+\ket{2,0})/\sqrt2\),
+first transform the \(\ket{1,1}\) part:
+\[
+a^\dagger b^\dagger\ket0
+=\frac{(c^\dagger)^2-(d^\dagger)^2}{2}\ket0
+=\frac{\ket{2,0}-\ket{0,2}}{\sqrt2}.
+\]
+This contains \emph{no} \(\ket{1,1}_{cd}\).
+The \(\ket{2,0}\) input contributes
+\(\ket{1,1}\) with amplitude \(1/\sqrt2\).
+Including the initial superposition coefficient
+\(1/\sqrt2\) yields
+\[
+\boxed{\mathcal A_{11}=\frac12,\qquad
+P_{11}=|\mathcal A_{11}|^2=\frac14}.
+\]
+\solcheck{Never square each path probability before
+adding coherent amplitudes; the cancellation in
+part (a) would be lost. Account for \(\sqrt{2!}\)
+when normalising the two-photon states.}

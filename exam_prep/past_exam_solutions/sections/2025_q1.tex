@@ -1,0 +1,95 @@
+
+\examquestion{2025}{1}{Hyperfine structure, weak/strong Zeeman splitting and quadrupole rules}{2}
+The specified electronic term \({}^2P_{1/2}\) has
+\(L=1,S=1/2,J=1/2\), coupled to \(I=5/2\).
+
+\subsection*{(a) Allowed \(F\) levels}
+\(\mathbf F=\mathbf I+\mathbf J\) gives
+\(F=|I-J|,\ldots,I+J\), therefore
+\(\boxed{F=2,\ 3}\).
+
+\subsection*{(b) Derive the magnetic hyperfine energies}
+With \(H_{\rm hfs}=A\,\mathbf I\cdot\mathbf J/\hbar^2\),
+and \(\mathbf F^2=\mathbf I^2+\mathbf J^2+
+2\mathbf I\cdot\mathbf J\), take expectation values:
+\[
+\boxed{E_F=\frac A2[
+F(F+1)-I(I+1)-J(J+1)]}.
+\]
+The convention absorbs \(\hbar^{-2}\) into the Hamiltonian
+when angular momenta are written dimensionlessly.
+
+\subsection*{(c) Find the splitting and sketch the diagram}
+Substitute \(I(I+1)=35/4\), \(J(J+1)=3/4\):
+\[
+\begin{aligned}
+E_{F=2}&=\frac A2\left(6-\frac{35}4-\frac34\right)
+=\boxed{-\frac{7A}{4}},\\
+E_{F=3}&=\frac A2\left(12-\frac{35}4-\frac34\right)
+=\boxed{\frac{5A}{4}}.
+\end{aligned}
+\]
+The signed difference is \(E_3-E_2=3A\);
+the physical frequency separation is
+\(\boxed{\Delta\nu=3|A|/h}\).
+For \(A>0\), the \(F=3\) multiplet lies higher.
+\[
+\begin{tikzpicture}[x=1cm,y=.45cm]
+\draw[-{Latex[length=2mm]}](0,0)--(0,7.5) node[above]{energy};
+\draw[accent,very thick](.7,2)--(4,2) node[right,ink]{\(F=2:\ -7A/4\quad (5~\text{substates})\)};
+\draw[accent,very thick](.7,5.3)--(4,5.3) node[right,ink]{\(F=3:\ +5A/4\quad (7~\text{substates})\)};
+\draw[<->](3.3,2.1)--(3.3,5.2) node[midway,right]{\(3A\)};
+\end{tikzpicture}
+\]
+
+\subsection*{(d.i--ii) Weak magnetic field}
+For \(\mu_B|B|\ll |A|\) (up to numerical factors),
+\(F,m_F\) remain approximately good quantum numbers:
+\[
+E_{Fm_F}\simeq E_F+\mu_Bg_Fm_FB,\quad
+g_F\simeq g_J
+\frac{F(F+1)+J(J+1)-I(I+1)}{2F(F+1)}.
+\]
+For \({}^2P_{1/2}\), \(g_J=2/3\); therefore
+\[
+\boxed{g_2=-\frac19,\quad g_3=+\frac19.}
+\]
+The \(F=2\) level becomes \(m_F=-2,-1,0,1,2\)
+(5 lines) and \(F=3\) becomes \(-3,\ldots,3\)
+(7 lines). Thus generically there are
+\(\boxed{12}\) distinct weak-field substates.
+Each multiplet fans into equally separated
+lines in \(m_F\), but the two multiplets have
+opposite slopes.
+
+\subsection*{(d.iii) Strong magnetic field}
+When \(\mu_Bg_JB\gg|A|\), the preferred basis is
+\(\ket{Jm_J,Im_I}\), with two electronic branches
+\(m_J=\pm1/2\), each containing six \(m_I\) values:
+\[
+E_{m_Jm_I}\simeq
+\mu_Bg_Jm_JB+A\,m_Jm_I
+\quad\text{(small nuclear Zeeman term neglected)}.
+\]
+The level pattern looks like two steep
+approximately linear electronic fans,
+each split by six hyperfine offsets; it is
+not appropriate to extrapolate fixed-\(F\) lines
+into this regime.
+
+\subsection*{(e) Are higher nuclear multipoles allowed?}
+The nuclear spin \(I=5/2\) \emph{can} support a
+nuclear electric quadrupole (rank 2), but its
+diagonal hyperfine contribution also requires a
+rank-2 electronic tensor matrix element
+\(\langle J\Vert T^{(2)}\Vert J\rangle\).
+By Wigner--Eckart the \(3j\) triangle condition is
+\(2\le J+J=1\), which fails for \(J=1/2\).
+Thus the \(\boxed{\text{electric-quadrupole hyperfine
+term vanishes for this level}}\), as do
+higher ranks \(k>1\) at first order within
+the fixed \(J=1/2\) manifold.
+\solcheck{Total state count:
+\(5+7=12=(2I+1)(2J+1)\).
+The existence of a nuclear quadrupole alone does
+not guarantee a nonzero electronic quadrupole interaction.}
