@@ -1,0 +1,153 @@
+\unit{One atom, one photon: Jaynes--Cummings physics}
+\unitref{W6L1; W6L2; Week 6 tutorial}
+\subsection{Why a two-level atom is a useful model}
+An atom has many levels, but when a narrow-band
+cavity is tuned close to a single transition
+\(\ket g\leftrightarrow\ket e\), the other
+levels may be neglected to a good approximation.
+The atom then behaves like a spin-\(1/2\)
+system with
+\[
+\sigma_+=\ket e\bra g,\quad
+\sigma_-=\ket g\bra e,\quad
+\sigma_z=\ket e\bra e-\ket g\bra g.
+\]
+One photon of frequency \(\omega_c\) has
+the right energy to excite the atom if
+\(\omega_c\approx\omega_a\).
+The dipole interaction
+\(H_{\rm int}=-\mathbf d\cdot\mathbf E\)
+contains products of photon and atomic
+raising/lowering operators.
+
+\subsection{Rotating-wave approximation}
+Terms \(a\sigma_+\) and \(a^\dagger\sigma_-\)
+exchange excitation between atom and field.
+The counter-rotating combinations
+\(a\sigma_-\) and \(a^\dagger\sigma_+\)
+change excitation number by two and
+oscillate rapidly near resonance.
+If \(g\ll\omega_a,\omega_c\), the
+rotating-wave approximation retains
+the slowly varying terms:
+\[
+\boxed{H_{\rm JC}=
+\hbar\omega_c a^\dagger a+
+\hbar\omega_a\sigma_+\sigma_-+
+\hbar g(a\sigma_++a^\dagger\sigma_-).}
+\]
+The excitation operator
+\(N=a^\dagger a+\sigma_+\sigma_-\)
+commutes with \(H_{\rm JC}\):
+excitations move, but their total number is conserved.
+
+\subsection{Reduce the problem to a two-state block}
+For a fixed total excitation,
+the coupled states are
+\(\ket{e,n}\) and \(\ket{g,n+1}\).
+After subtracting a common energy, the
+Hamiltonian block is
+\[
+\frac{H_n}{\hbar}=
+\frac12\begin{pmatrix}
+\Delta&2g\sqrt{n+1}\\
+2g\sqrt{n+1}&-\Delta
+\end{pmatrix},
+\quad \Delta=\omega_a-\omega_c.
+\]
+Its eigenfrequency separation is
+\[
+\boxed{\Omega_n=
+\sqrt{\Delta^2+4g^2(n+1)}}.
+\]
+The factor \(\sqrt{n+1}\) comes from
+\(a^\dagger\ket n=\sqrt{n+1}\ket{n+1}\).
+It is a directly observable signature
+of a quantised cavity field.
+
+\begin{worked}{Vacuum Rabi oscillation}
+Begin in \(\ket{e,0}\) at resonance
+(\(\Delta=0\)). The interaction block is
+\(\hbar g\sigma_x\), so
+\[
+\ket{\psi(t)}
+=\cos(gt)\ket{e,0}
+-i\sin(gt)\ket{g,1}.
+\]
+Thus
+\[
+\boxed{P_e(t)=\cos^2(gt),\quad
+P_{g,1}(t)=\sin^2(gt)}.
+\]
+At \(t=\pi/(2g)\) the atom has emitted
+one photon into the cavity.
+At a full period \(t=\pi/g\),
+the excitation has returned to the atom.
+\end{worked}
+
+\subsection{From one atom to many: Tavis--Cummings}
+For \(N\) identical emitters with the same
+coupling phase,
+\[
+H_I=\hbar g(aJ_++a^\dagger J_-),\quad
+J_\pm=\sum_{i=1}^N\sigma_\pm^{(i)}.
+\]
+For two atoms with one excitation, define
+\[
+\ket S=\frac{\ket{eg}+\ket{ge}}{\sqrt2},
+\quad
+\ket A=\frac{\ket{eg}-\ket{ge}}{\sqrt2}.
+\]
+Because
+\[
+J_-\ket S=\sqrt2\ket{gg},\qquad
+J_-\ket A=0,
+\]
+the symmetric state is \emph{bright},
+with coupling \(\sqrt2g\);
+the antisymmetric state is \emph{dark}
+to the common cavity mode.
+
+\subsection{Dicke states and superradiant enhancement}
+For \(N\) symmetric spins, collective
+angular-momentum labels \(J=N/2,m\)
+describe a Dicke ladder. The lowering operator
+has matrix element
+\[
+J_-\ket{J,m}=
+\sqrt{(J+m)(J-m+1)}\ket{J,m-1}.
+\]
+If all atoms couple to a \emph{common}
+radiation reservoir under appropriate
+conditions, these factors enhance
+collective spontaneous emission rates.
+The coherent cavity-exchange enhancement
+\(\sqrt N\,g\) and cooperative radiative
+superradiance are related but not
+identical phenomena: the reservoir and
+initial state also matter.
+
+\begin{worked}{Two-atom conservation check}
+Start with \(\ket{eg,0}\).
+It equals \((\ket{S,0}+\ket{A,0})/\sqrt2\).
+The bright half oscillates with
+\(\sqrt2g\), while the dark half stays.
+Writing \(\vartheta=\sqrt2gt\),
+\[
+\ket{\psi(t)}
+=\frac{\cos\vartheta\ket{S,0}+\ket{A,0}
+-i\sin\vartheta\ket{gg,1}}{\sqrt2}.
+\]
+The mean cavity photon number is
+\(\langle n\rangle=\tfrac12\sin^2\vartheta\).
+The missing probability remains as atomic
+excitation, preserving \(\langle N\rangle=1\).
+\end{worked}
+
+\begin{checkpoint}
+To solve cavity-QED problems, identify
+the conserved excitation number first.
+That reduces an infinite-dimensional
+Hamiltonian to independent \(2\times2\)
+or small collective subspaces.
+\end{checkpoint}
