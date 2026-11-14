@@ -1,0 +1,115 @@
+name: Publish PHYS4055 mini-textbook PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/mini_textbook/**/*.tex'
+      - 'tex/common.tex'
+      - '.github/workflows/publish-mini-textbook.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: phys4055-mini-textbook-publish
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile teaching text and figures
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: exam_prep/mini_textbook
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Install PDF inspection dependencies
+        run: python -m pip install --quiet pymupdf pillow
+      - name: Validate chapters and create visual page index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import pymupdf
+          from PIL import Image, ImageDraw
+          base=Path("exam_prep/mini_textbook")
+          pdf=pymupdf.open(base/"main.pdf")
+          n=len(pdf)
+          text="\n".join(page.get_text() for page in pdf)
+          assert 28<=n<=75, f"Unexpected mini-textbook length: {n} pages"
+          titles=["Why light is a quantum oscillator",
+                  "Coherent, number and thermal light",
+                  "Beam splitters, HOM interference",
+                  "Quadratures and phase-space pictures",
+                  "Squeezing, coherence",
+                  "Photonic qubits and the Bloch sphere",
+                  "Quantum communication",
+                  "Noise, loss and quantum channels",
+                  "Damping, Langevin noise",
+                  "Conditional optics",
+                  "One atom, one photon",
+                  "Quantum metrology",
+                  "Hydrogenic atoms and radial wavefunctions",
+                  "Many-electron atoms",
+                  "Adding angular momenta",
+                  "Fine structure, hyperfine structure",
+                  "Atomic spectroscopy",
+                  "Driving, cooling",
+                  "Atoms as tests of parity",
+                  "Atomic clocks",
+                  "A practical mathematical toolkit",
+                  "Question-type atlas"]
+          missing=[x for x in titles if x not in text]
+          assert not missing, f"Missing chapter text: {missing}"
+          assert text.count("Worked example:")>=15, "Not enough embedded worked examples"
+          log=(base/"main.log").read_text(errors="replace")
+          overfull=[x for x in log.splitlines() if "Overfull \\hbox" in x or "Overfull \\vbox" in x]
+          outside=[]
+          for i,p in enumerate(pdf):
+              for block in p.get_text("dict")["blocks"]:
+                  if block["type"]!=0: continue
+                  x0,y0,x1,y1=block["bbox"]
+                  if x0< -2 or y0< -2 or x1>p.rect.width+3 or y1>p.rect.height+3:
+                      outside.append((i+1,tuple(round(v,1) for v in block["bbox"])))
+          # Compact page-by-page preview, useful when verifying layout.
+          cols,w,h,gap,margin,footer=5,215,302,10,10,16
+          rows=(n+cols-1)//cols
+          sheet=Image.new("RGB",(2*margin+cols*w+(cols-1)*gap,
+              2*margin+rows*(h+footer)+(rows-1)*gap),"white")
+          draw=ImageDraw.Draw(sheet)
+          for i,page in enumerate(pdf):
+              pix=page.get_pixmap(matrix=pymupdf.Matrix(w/page.rect.width,h/page.rect.height),alpha=False)
+              tile=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+              x=margin+(i%cols)*(w+gap)
+              y=margin+(i//cols)*(h+footer+gap)
+              sheet.paste(tile,(x,y))
+              draw.rectangle((x,y,x+w,y+h),outline="#9DAAB4")
+              draw.text((x,y+h+2),f"p. {i+1}",fill="#333333")
+          sheet.save(base/"PHYS4055_Mini_Textbook_Page_Preview.jpg",quality=86,optimize=True)
+          (base/"main.pdf").replace(base/"PHYS4055_Mini_Textbook.pdf")
+          summary=(f"# PHYS4055 mini-textbook PDF verification\n\n"
+                   f"- Pages: **{n}**\n"
+                   f"- Teaching chapters: **22** plus front matter\n"
+                   f"- Embedded worked examples: at least 15, checked\n"
+                   f"- Chapters present: all 22\n"
+                   f"- Source map and editable LaTeX: committed\n"
+                   f"- Overfull LaTeX boxes: {len(overfull)}\n"
+                   f"- Out-of-page text blocks: {len(outside)}\n")
+          (base/"PDF_BUILD_CHECK.md").write_text(summary,encoding="utf-8")
+          print(summary)
+          print("Overfull warnings:",overfull[:30])
+          print("Out-of-page blocks:",outside[:20])
+          PY
+      - name: Publish PDF, preview and validation report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/mini_textbook/PHYS4055_Mini_Textbook.pdf exam_prep/mini_textbook/PHYS4055_Mini_Textbook_Page_Preview.jpg exam_prep/mini_textbook/PDF_BUILD_CHECK.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish PHYS4055 teaching mini-textbook with verified chapters and page previews'
+            git pull --rebase origin main
+            git push origin main
+          fi
