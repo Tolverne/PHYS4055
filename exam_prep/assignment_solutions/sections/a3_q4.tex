@@ -1,0 +1,79 @@
+\assignq{3}{4}{Land\'e factors: electronic and nuclear coupling}{2}
+\subsection*{(a) Derive \(g_J\)}
+Write \(\mathbf J=\mathbf L+\mathbf S\),
+\(\boldsymbol\mu=-\mu_B(g_L\mathbf L+g_S\mathbf S)\)
+in dimensionless angular-momentum units,
+with \(g_L=1,\ g_S=2\).
+Only the projection of \(\boldsymbol\mu\)
+on \(\mathbf J\) contributes to the
+weak-field diagonal energy in a fixed \(J\) manifold:
+\[
+g_J=\frac{\langle(g_L\mathbf L+g_S\mathbf S)
+\cdot\mathbf J\rangle}{J(J+1)}.
+\]
+Using
+\[
+2\mathbf J\cdot\mathbf L
+=\mathbf J^2+\mathbf L^2-\mathbf S^2,\quad
+2\mathbf J\cdot\mathbf S
+=\mathbf J^2+\mathbf S^2-\mathbf L^2,
+\]
+we find
+\[
+\boxed{g_J=1+
+\frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)}}
+\quad (J>0).
+\]
+
+\subsection*{(b) Derive \(g_F\) neglecting nuclear magnetism}
+Now \(\mathbf F=\mathbf I+\mathbf J\).
+The electronic moment lies along \(\mathbf J\)
+on average, while \(\mathbf J\) projects onto
+\(\mathbf F\) with factor
+\[
+\frac{\langle\mathbf J\cdot\mathbf F\rangle}{F(F+1)}
+=\frac{F(F+1)+J(J+1)-I(I+1)}{2F(F+1)}.
+\]
+Thus
+\[
+\boxed{g_F=g_J
+\frac{F(F+1)+J(J+1)-I(I+1)}{2F(F+1)}},
+\qquad F>0.
+\]
+This is the electronic contribution only;
+the nuclear \(g_I\mu_N\) term was excluded
+by the question's stated approximation.
+
+\subsection*{(c) \({}^2P_{1/2}\) in a weak field}
+Here \(L=1,\ S=1/2,\ J=1/2\) and
+\[
+g_J=1+\frac{3/4+3/4-2}{2(3/4)}
+=\boxed{\frac23}.
+\]
+For \(I>0\), the coupled manifolds are
+\(F_+=I+\tfrac12\) and \(F_-=I-\tfrac12\)
+(the latter is \(F=0\) for \(I=1/2\)).
+Substituting into the preceding expression
+gives, for nonzero \(F\),
+\[
+\boxed{g_{I+1/2}=+\frac{2}{3(2I+1)},\qquad
+g_{I-1/2}=-\frac{2}{3(2I+1)}}.
+\]
+The weak-field energies are
+\[
+\boxed{\Delta E_{Fm_F}=\mu_B g_Fm_FB},
+\quad m_F=-F,\ldots,F.
+\]
+The upper/lower hyperfine multiplets
+fan out into \(2F+1\) equally spaced
+Zeeman levels with \emph{opposite} slopes.
+For the common \(I=5/2\) example,
+\(F=3,2\) with \(g_F=+1/9,-1/9\).
+When \(F=0\), there is only \(m_F=0\)
+and no first-order electronic Zeeman
+splitting, so the formula defining \(g_{F=0}\)
+should not be used.
+\methodnote{Project angular momenta
+sequentially \(L,S\to J\), then \(I,J\to F\).
+In strong fields this coupled-\(F\) result
+no longer applies without state mixing.}
