@@ -5,5 +5,5 @@
 - Embedded worked examples: at least 15, checked
 - Chapters present: all 22
 - Source map and editable LaTeX: committed
-- Overfull LaTeX boxes: 1
-- Out-of-page text blocks: 7
+- Overfull LaTeX boxes: 0
+- Out-of-page text blocks: 0
