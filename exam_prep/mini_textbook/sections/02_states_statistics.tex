@@ -1,0 +1,128 @@
+\unit{Coherent, number and thermal light}
+\unitref{Weeks 1--2; photon statistics tutorial; Assignment 1}
+\subsection{What does classical-looking light mean?}
+A coherent state satisfies \(\hat a\ket\alpha=\alpha\ket\alpha\)
+for a complex amplitude \(\alpha=|\alpha|e^{i\theta}\).
+Unlike a number state, it is a \emph{superposition}
+of different photon numbers:
+\[
+\boxed{\ket\alpha=e^{-|\alpha|^2/2}
+\sum_{n=0}^\infty\frac{\alpha^n}{\sqrt{n!}}\ket n.}
+\]
+The probability of \(n\) photons is obtained by
+squaring the corresponding amplitude:
+\[
+P(n)=e^{-|\alpha|^2}\frac{|\alpha|^{2n}}{n!}.
+\]
+This is Poissonian: \(\langle n\rangle=|\alpha|^2\),
+\(\operatorname{Var}(n)=|\alpha|^2\).
+A coherent state has a mean oscillating electric
+field because \(\langle a\rangle=\alpha\), with
+\(\langle E\rangle\propto2|\alpha|\cos(kz-\omega t+\theta)\).
+
+\subsection{Displacement: making a coherent state}
+The unitary displacement operator
+\[
+D(\alpha)=e^{\alpha a^\dagger-\alpha^*a}
+\]
+acts on vacuum to give \(\ket\alpha=D(\alpha)\ket0\).
+A useful calculation employs the BCH identity:
+\[
+D^\dagger aD=a+[a,\alpha a^\dagger-\alpha^*a]
++\tfrac12[[a,\alpha a^\dagger-\alpha^*a],\ldots]
+=\boxed{a+\alpha}.
+\]
+The first commutator equals \(\alpha\), a scalar;
+all higher nested commutators vanish. Therefore
+\(aD\ket0=D(a+\alpha)\ket0=\alpha D\ket0\),
+which proves the eigenstate property.
+
+\subsection{A density operator describes mixtures}
+A pure state \(\ket\psi\) has \(\rho=\ket\psi\bra\psi\).
+When preparation involves several alternative states,
+\[
+\boxed{\rho=\sum_jp_j\ket{\psi_j}\bra{\psi_j},
+\quad \langle O\rangle=\operatorname{Tr}(\rho O).}
+\]
+A mixture differs from a coherent superposition.
+For example,
+\((\ket0+\ket1)/\sqrt2\) has off-diagonal
+density-matrix terms, whereas a 50--50 mixture
+of \(\ket0,\ket1\) does not. Both have the
+same probabilities in a photon-number measurement,
+but different phase-sensitive expectations.
+Purity is measured by \(\operatorname{Tr}\rho^2\):
+it equals 1 for a pure state and is smaller for a mixture.
+
+\subsection{Thermal light and bunching}
+A single thermal optical mode has
+\[
+\rho_{\rm th}=\sum_{n=0}^\infty
+\frac{\bar n^n}{(1+\bar n)^{n+1}}\ket n\bra n,
+\quad
+\bar n=\frac{1}{e^{\hbar\omega/(k_BT)}-1}.
+\]
+The variance is
+\(\operatorname{Var}(n)=\bar n+\bar n^2\).
+Compare with coherent light, where the variance
+equals the mean, and a fixed-\(n\) Fock state,
+where the variance vanishes.
+The Mandel parameter
+\[
+Q_M=\frac{\operatorname{Var}(n)-\bar n}{\bar n}
+\]
+describes super-Poissonian (\(Q_M>0\)),
+Poissonian (\(Q_M=0\)) and sub-Poissonian
+(\(Q_M<0\)) fluctuations.
+
+\begin{worked}{Three states with mean photon number 4}
+A coherent state with \(|\alpha|^2=4\)
+has variance \(4\). A thermal mode with
+\(\bar n=4\) has variance \(4+16=20\).
+The Fock state \(\ket4\) has variance \(0\).
+Equal mean energy does \emph{not} mean equal noise.
+\end{worked}
+
+\subsection{Second-order coherence counts pairs}
+The zero-delay Glauber correlation is
+\[
+\boxed{g^{(2)}(0)=
+\frac{\langle a^{\dagger2}a^2\rangle}{\bar n^2}
+=\frac{\langle n(n-1)\rangle}{\bar n^2}}.
+\]
+Why \(n(n-1)\)? It measures the number of
+ordered pairs that can be formed from \(n\)
+photons, which is relevant for two detections.
+A one-photon state has \(g^{(2)}=0\):
+it cannot cause two ideal simultaneous counts.
+A coherent state has \(g^{(2)}=1\);
+a thermal mode has \(g^{(2)}=2\).
+
+\subsection{Entangled pairs can look thermal locally}
+A two-mode squeezed state has the form
+\[
+\ket\Psi=\sqrt{1-\lambda^2}
+\sum_n\lambda^n\ket n_s\ket n_i.
+\]
+It has perfectly correlated photon numbers.
+Tracing over the unobserved idler gives
+\[
+\rho_s=(1-\lambda^2)\sum_n\lambda^{2n}\ket n\bra n,
+\quad \bar n=\frac{\lambda^2}{1-\lambda^2}.
+\]
+This is \emph{thermal locally} despite the joint state
+being pure. The signal--idler cross-correlation is
+\[
+g_{si}^{(2)}(0)=
+\frac{\langle n_sn_i\rangle}{\bar n^2}
+=2+\frac1{\bar n}.
+\]
+At low gain, detection of one idler photon
+heralds one signal photon.
+
+\begin{checkpoint}
+A photon-number histogram alone cannot reveal
+all coherences or entanglement. Ask whether
+the experiment measures number, field phase,
+or correlations between modes.
+\end{checkpoint}
