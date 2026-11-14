@@ -1,0 +1,129 @@
+\unit{Quadratures and phase-space pictures}
+\unitref{W1L3 and W3L1; homodyne lectures}
+\subsection{What are the two quadratures of a wave?}
+A monochromatic classical electric field can be written
+\[
+E(t)=A\cos\omega t+B\sin\omega t.
+\]
+The coefficients \(A,B\) specify its amplitude and
+phase. They are not frequency and amplitude: the
+\emph{frequency} \(\omega\) is already fixed by
+the mode. Quantum mechanically, define
+\[
+\boxed{x=a+a^\dagger,\qquad
+p=i(a^\dagger-a),\qquad a=(x+ip)/2.}
+\]
+The commutator is
+\[
+[x,p]=[a+a^\dagger,i(a^\dagger-a)]
+=2i.
+\]
+Heisenberg's inequality gives
+\[
+\boxed{\Delta x\,\Delta p\ge1.}
+\]
+In this course convention the vacuum has
+\((\Delta x)^2=(\Delta p)^2=1\).
+A textbook using \(x=(a+a^\dagger)/\sqrt2\)
+has vacuum variance \(1/2\); no physics
+changes, only the scaling.
+
+\subsection{The meaning of the phase-space plane}
+For a coherent state \(\ket\alpha\),
+\[
+\langle x\rangle=2\operatorname{Re}\alpha,\quad
+\langle p\rangle=2\operatorname{Im}\alpha,\quad
+(\Delta x)^2=(\Delta p)^2=1.
+\]
+Thus a coherent state looks like a
+vacuum uncertainty circle displaced from the
+origin. Its centre identifies a classical-like
+field amplitude; its width encodes unavoidable
+quantum fluctuations.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,scale=.8]
+\draw[->](-2.2,0)--(6.2,0)node[right]{\(x\)};
+\draw[->](0,-2.3)--(0,3.4)node[above]{\(p\)};
+\draw[gray,dashed,thick](0,0)circle(1);
+\draw[accent,fill=accent!10,thick](3.4,1.3)circle(1);
+\fill[accent](3.4,1.3)circle(.07);
+\draw[dotted](0,0)--(3.4,1.3);
+\node[below left]at(-.4,-1){vacuum};
+\node[above right]at(4.1,1.9){coherent};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Rotated quadratures}
+For a local-oscillator phase \(\theta\),
+\[
+\boxed{X_\theta=ae^{-i\theta}
++a^\dagger e^{i\theta}
+=x\cos\theta+p\sin\theta.}
+\]
+Homodyne detection measures the probability
+distribution of \(X_\theta\). At \(\theta=0\)
+it measures \(x\); at \(\theta=\pi/2\)
+it measures \(p\). Measuring distributions
+over many angles enables optical homodyne
+tomography. The phase-space distribution
+is reconstructed from different projections,
+rather than measured pointwise with
+arbitrarily sharp \(x,p\) simultaneously.
+
+\begin{worked}{Rotate the local oscillator}
+Take \(\alpha=1+i\). Then
+\(\langle x\rangle=\langle p\rangle=2\).
+At \(\theta=\pi/4\),
+\[
+\langle X_{\pi/4}\rangle
+=2\cos(\pi/4)+2\sin(\pi/4)=2\sqrt2.
+\]
+Its variance remains 1, since coherent
+vacuum noise is equally distributed
+in all directions.
+\end{worked}
+
+\subsection{Three complementary quasiprobabilities}
+The Wigner function \(W(x,p)\) represents
+a quantum state in phase space. Its
+marginals give measurable quadrature
+probabilities, but some quantum states
+have negative Wigner regions.
+The Husimi function is
+\[
+Q(\alpha)=\frac1\pi\bra\alpha\rho\ket\alpha,
+\]
+which is always nonnegative and is smoother
+than the Wigner function. The
+Glauber--Sudarshan representation is
+\[
+\rho=\int P(\alpha)\ket\alpha\bra\alpha\,d^2\alpha.
+\]
+Here \(P\) can be singular or nonpositive:
+it is \emph{not always} a classical
+probability distribution.
+All three describe the same \(\rho\), but
+highlight different physical properties.
+
+\subsection{Gaussian states and covariance}
+For \(R=(x,p)^T\), define
+\[
+d_i=\langle R_i\rangle,\qquad
+V_{ij}=\tfrac12\langle\Delta R_i\Delta R_j+
+\Delta R_j\Delta R_i\rangle.
+\]
+A Gaussian state is completely specified
+by \(d,V\). Coherent and squeezed Gaussian
+states have Gaussian Wigner functions.
+A lossless linear transformation \(R'=SR\)
+acts as \(d'=Sd,\ V'=SVS^T\).
+An open-system Gaussian channel generally adds
+noise: \(V'=SVS^T+N\).
+
+\begin{checkpoint}
+Phase space is useful for \emph{states of modes}.
+Quadrature \(x\) is not position of a photon
+and \(p\) is not its momentum. They are
+conjugate field-amplitude variables.
+\end{checkpoint}
