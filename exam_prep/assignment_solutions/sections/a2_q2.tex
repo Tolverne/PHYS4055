@@ -1,0 +1,97 @@
+
+\assignq{2}{2}{Superdense coding and a passive linear-optical Bell measurement}{2--3}
+Start with \(\ket{\Phi^+}_{AB}\) and act on
+\emph{Alice's} qubit only. The problem defines
+\(X\ket0=\ket1,\ X\ket1=\ket0\),
+\(Z\ket0=\ket0,\ Z\ket1=-\ket1\).
+
+\subsection*{(a) Calculate the four encoded Bell states}
+Direct application to each computational term gives
+\[
+\begin{array}{c|c|c}
+\text{message}&\text{gate on }A&\text{output state}\\\hline
+00&I&(\ket{00}+\ket{11})/\sqrt2=\ket{\Phi^+}\\
+01&X&(\ket{10}+\ket{01})/\sqrt2=\ket{\Psi^+}\\
+10&Z&(\ket{00}-\ket{11})/\sqrt2=\ket{\Phi^-}\\
+11&XZ&(\ket{10}-\ket{01})/\sqrt2=-\ket{\Psi^-}
+\end{array}
+\]
+The last global minus phase is unobservable, so
+the four encodings specify four orthogonal Bell states.
+
+\subsection*{(b) Why two bits can be sent}
+Before communication, Alice and Bob share
+one entangled Bell pair. Alice chooses one
+of four unitaries (\(2^2\) alternatives), sends
+her \emph{one} photon, and Bob performs an
+ideal joint Bell-basis measurement.
+Four orthogonal outputs encode two classical bits.
+The shared entanglement and the transmitted
+physical qubit together provide the resource;
+this is not two bits from an arbitrary isolated
+one-photon qubit.
+
+\subsection*{(c) Expand the specified beam-splitter measurement}
+For each polarisation label \(\lambda=H,V\),
+\[
+a_\lambda^\dagger\longrightarrow
+\frac{c_\lambda^\dagger+d_\lambda^\dagger}{\sqrt2},
+\qquad
+b_\lambda^\dagger\longrightarrow
+\frac{c_\lambda^\dagger-d_\lambda^\dagger}{\sqrt2}.
+\]
+For two equal polarisations,
+\(a_\lambda^\dagger b_\lambda^\dagger
+\to[(c_\lambda^\dagger)^2-
+(d_\lambda^\dagger)^2]/2\). Therefore
+\[
+\boxed{\ket{\Phi^\pm}\longrightarrow
+\frac{(c_H^\dagger)^2-(d_H^\dagger)^2
+\pm(c_V^\dagger)^2\mp(d_V^\dagger)^2}
+{2\sqrt2}\ket{\mathrm{vac}}}.
+\]
+For the \(\Psi\) states the mixed-polarisation
+amplitudes interfere:
+\[
+\boxed{\ket{\Psi^+}\longrightarrow
+\frac{c_H^\dagger c_V^\dagger
+-d_H^\dagger d_V^\dagger}{\sqrt2}
+\ket{\mathrm{vac}}},\qquad
+\boxed{\ket{\Psi^-}\longrightarrow
+\frac{c_V^\dagger d_H^\dagger
+-c_H^\dagger d_V^\dagger}{\sqrt2}
+\ket{\mathrm{vac}}}.
+\]
+A polarising beam splitter and number-resolving detectors
+at each output distinguish these patterns:
+\[
+\begin{array}{c|l|c}
+\text{Bell input}&\text{Detection signature}&
+\text{Identification}\\\hline
+\Phi^+&2\text{ photons same port, same pol.}&
+\text{ambiguous}\\
+\Phi^-&2\text{ photons same port, same pol.}&
+\text{ambiguous}\\
+\Psi^+&2\text{ orthogonal pol., same port}&
+\text{unique}\\
+\Psi^-&1\text{ photon each port, orthogonal pol.}&
+\text{unique}
+\end{array}
+\]
+The relative signs between \(\Phi^\pm\) components
+do not change these photon-count patterns.
+
+\subsection*{(d) Decoding efficiency}
+With four equiprobable messages, only
+\(\Psi^+,\Psi^-\) are unambiguous:
+\[
+\boxed{P_{\mathrm{unambiguous}}=\frac24=\frac12}.
+\]
+Thus the standard passive linear-optical analyser
+alone cannot implement a \emph{deterministic}
+four-outcome Bell measurement. Extra
+ancillary resources or different physical
+interactions may improve the measurement.
+\methodnote{Bosonic operators for distinct modes commute.
+Add coherent creation-operator amplitudes before converting
+into Fock-state probabilities.}
