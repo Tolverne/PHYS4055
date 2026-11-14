@@ -1,0 +1,154 @@
+\documentclass[10pt,a4paper]{article}
+\input{../../tex/common.tex}
+\usepackage{titlesec}
+\usepackage{listings}
+\geometry{top=17mm,bottom=17mm,left=17mm,right=17mm,headsep=6mm,footskip=8mm}
+\hypersetup{pdftitle={PHYS4055 - All Four Assignments, Complete Worked Solutions (2026)}}
+\setlength{\parskip}{3pt plus 0.4pt minus 0.2pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.14}
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt plus 3pt}{7pt}
+\newcommand{\assignq}[4]{\section[Assignment #1 Q#2: #3]{Question #2: #3}
+{\footnotesize\color{gray}Source: PHYS4055 2026 Assignment #1,
+Question #2, source question-sheet page(s) #4.}\par\vspace{4pt}}
+\newcommand{\assignmentpart}[2]{\clearpage
+\phantomsection\addcontentsline{toc}{part}{Assignment #1: #2}
+\noindent{\color{accent}\LARGE\bfseries Assignment #1}\par
+\vspace{2pt}{\color{accent}\large #2}\par\vspace{4pt}\hrule\vspace{9pt}}
+\newcommand{\methodnote}[1]{\begin{methodbox}
+\footnotesize\textbf{Exam method / verification.} #1
+\end{methodbox}}
+\begin{document}
+\begin{center}
+\vspace*{7mm}
+{\color{accent}\Huge\bfseries PHYS4055}\\[3mm]
+{\LARGE Atomic Physics and Quantum Optics}\\[7mm]
+{\Large\bfseries Complete Worked Assignment Solutions}\\[3mm]
+{\Large Assignments 1--4}\\[5mm]
+{\normalsize All 12 primary questions, with every subpart}\\[3mm]
+{\normalsize Source-grounded 2026 revision edition}
+\end{center}
+\vspace{8mm}
+\begin{methodbox}
+\textbf{Aim.} A step-by-step companion to the
+15-page course overview and the 20-example revision book.
+Every assignment question is unpacked into its physics model,
+working and final result. Numerical calculations for
+\(^{209}\mathrm{Bi}\) and neutral Na are accompanied by a
+reproducible, separately versioned Python script.
+\end{methodbox}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}p{31mm}p{15mm}X@{}}
+\toprule
+\textbf{Assignment}&\textbf{Questions}&\textbf{Main subjects}\\\midrule
+1: Quantum optics&2&
+Two-mode squeezed vacuum, thermal marginal,
+photon pair correlations, beam splitters,
+coherent-state outputs and photon counting\\
+2: Applications of optics&3&
+Bell states, partial traces, dense coding,
+Bell-state detection and BB84 QKD\\
+3: Atomic physics&4&
+Finite nuclear radius, \(d^2\) terms and NIST
+spectra, Stark polarisability, Land\'e factors\\
+4: Atomic applications&3&
+Hartree--Fock direct/exchange derivation,
+Zeeman slowing, Na numerical radiative lifetimes\\
+\bottomrule
+\end{tabularx}
+\end{center}
+\bigskip
+\begin{cautionbox}
+\textbf{Authority and limitations.}
+The question sheets are included in
+\texttt{source\_material/assignments/questions}.
+Official worked solutions have been released
+for Assignments \textbf{1 and 2}; their methods
+are cross-checked here. Official solutions for
+Assignments \textbf{3 and 4} were not in the uploaded
+material: those answers are independently derived.
+All external atomic constants, data and caveats
+are documented in \texttt{SOURCE\_MAP.md}.
+\end{cautionbox}
+\vfill
+\noindent{\footnotesize First version: 14 November 2026.
+For numerical work run
+\texttt{python scripts/assignment\_numerical\_solutions.py}
+from the repository root.}
+\clearpage
+\tableofcontents
+
+\assignmentpart{1}{Introduction to quantum optics}
+\input{sections/a1_q1}
+\input{sections/a1_q2}
+
+\assignmentpart{2}{Quantum optics applications}
+\input{sections/a2_q1}
+\input{sections/a2_q2}
+\input{sections/a2_q3}
+
+\assignmentpart{3}{Atomic physics}
+\input{sections/a3_q1}
+\input{sections/a3_q2}
+\input{sections/a3_q3}
+\input{sections/a3_q4}
+
+\assignmentpart{4}{Applications of atomic physics}
+\input{sections/a4_q1}
+\input{sections/a4_q2}
+\input{sections/a4_q3}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{part}{Question-type method finder}
+\begin{center}
+{\color{accent}\LARGE\bfseries Question-type method finder}
+\end{center}
+\begin{tabularx}{\linewidth}{@{}p{18mm}X@{}}
+\toprule
+\textbf{Question}&\textbf{First step to remember}\\\midrule
+A1 Q1&Expand \(\ket\Psi\bra\Psi\), trace idler with
+\(\delta_{mn}\), differentiate geometric series\\
+A1 Q2&Write Fock state using creation operators,
+invert the optical mode matrix, apply binomial theorem\\
+A2 Q1&Check Bell overlaps, trace one subsystem, transform
+both photons to diagonal basis\\
+A2 Q2&Apply local Pauli gates, transform \emph{both}
+photonic creation operators and classify detector signatures\\
+A2 Q3&Sift based on random basis match, condition
+intercept--resend error on Alice/Bob matching bases\\
+A3 Q1&Form \(\Delta V=V_{\rm finite}-V_{\rm point}\),
+integrate over nuclear radius and compare Dirac corrections\\
+A3 Q2&Enforce orbital/spin exchange antisymmetry,
+count 45 states; check NIST level order\\
+A3 Q3&Use second-order Stark expression, symmetry and
+closure; convert \(a_0^3\) to polarizability volume\\
+A3 Q4&Project \(L,S\to J\), then \(I,J\to F\);
+split in \(m_F\) in a weak magnetic field\\
+A4 Q1&Separate radial/angular/spin; sum \(m_b,\mu_b\)
+before writing Johnson's 3.64 and 3.66\\
+A4 Q2&Max scattering force sets \(a_{\max}\);
+use \(v\diff v/\diff z\) to test a field profile\\
+A4 Q3&Solve the radial tridiagonal Hamiltonian;
+calculate E1 angular factors and radial dipoles;
+sum rates then invert to lifetime\\\bottomrule
+\end{tabularx}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{part}{Reproducible numerical code}
+\section*{Appendix: reproducible numerical code}
+The following source file is also committed separately
+for execution and modification. It calculates the
+finite-nuclear-size corrections, Dirac comparison,
+and sodium radial energies and lifetimes.
+\lstset{language=Python,basicstyle=\ttfamily\scriptsize,
+breaklines=true,breakatwhitespace=true,
+frame=single,columns=fullflexible,
+showstringspaces=false,tabsize=4,
+keywordstyle=\color{accent},
+commentstyle=\color{gray}}
+\lstinputlisting{../../scripts/assignment_numerical_solutions.py}
+\end{document}
