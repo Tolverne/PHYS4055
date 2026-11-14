@@ -1,0 +1,183 @@
+\unit{Driving, cooling and trapping atoms with lasers}
+\unitref{Week 10; 2025 Q2; Zeeman slower tutorial}
+\subsection{A laser couples two atomic levels}
+Near an isolated optical transition,
+model the atom with \(\ket g,\ket e\).
+A classical electric field
+\(\mathbf E(t)=\mathbf E_0\cos(\omega_Lt)\)
+couples through \(-\mathbf d\cdot\mathbf E(t)\).
+The \emph{Rabi frequency} measures
+interaction strength:
+\[
+\boxed{\Omega=\frac{|\bra e\mathbf d\cdot
+\mathbf E_0\ket g|}{\hbar}}
+\]
+with factors of 2 depending on whether
+\(E_0\) denotes the full real-field
+amplitude or its positive-frequency
+part. State the convention in a
+pulse-timing problem.
+In a rotating frame and under
+the rotating-wave approximation,
+a convenient effective Hamiltonian is
+\[
+H_{\rm rot}=\frac{\hbar}2
+\begin{pmatrix}-\Delta&\Omega\\
+\Omega&\Delta\end{pmatrix},
+\quad
+\Delta=\omega_L-\omega_{eg}.
+\]
+The generalised Rabi frequency is
+\(\Omega_{\rm eff}=\sqrt{\Omega^2+\Delta^2}\).
+
+\subsection{Pulse area, pi and pi-over-two pulses}
+For a resonant pulse with constant
+coupling phase and time-dependent
+amplitude \(\Omega(t)\),
+the pulse area is
+\(\Theta=\int\Omega(t)dt\).
+An atom starting in \(\ket g\) has
+\[
+\boxed{P_e=\sin^2(\Theta/2).}
+\]
+A \(\pi\)-pulse transfers all population
+to the excited state in the ideal
+lossless model; a \(\pi/2\)-pulse
+creates an equal-amplitude superposition.
+Detuning prevents perfect inversion for
+a constant-frequency rectangular pulse,
+because the largest excited probability is
+\(\Omega^2/(\Omega^2+\Delta^2)\).
+
+\subsection{Why light can exert a force}
+A photon carries momentum \(\hbar\mathbf k\).
+Absorption transfers this directed momentum
+to an atom. Spontaneous photons are emitted
+in different directions, so their average
+momentum along a fixed axis may vanish,
+though their variance gives recoil heating.
+For a driven two-level atom with excited-state
+decay rate \(\Gamma\), a common steady-state
+scattering rate is
+\[
+\boxed{R_{\rm sc}=\frac{\Gamma}{2}
+\frac{s}{1+s+(2\Delta/\Gamma)^2}},
+\qquad s=I/I_{\rm sat}.
+\]
+At high saturation on resonance,
+\(R_{\rm sc}\to\Gamma/2\), giving
+\[
+\boxed{F_{\max}=\hbar k\Gamma/2,\qquad
+a_{\max}=F_{\max}/M.}
+\]
+There is a trade-off: fast-scattering
+broad transitions give strong slowing
+forces but generally higher Doppler
+cooling limits than narrow lines.
+
+\subsection{Optical molasses and the Doppler shift}
+An atom moving toward one of two
+counter-propagating red-detuned beams
+sees that beam Doppler-shifted
+closer to resonance. It absorbs
+more photons from the direction
+opposing its motion, creating a
+damping force near rest,
+\(F\simeq-\beta v\).
+In a simple two-level Doppler
+cooling model, the minimum temperature is
+\[
+\boxed{T_D=\frac{\hbar\Gamma}{2k_B}
+=\frac{\hbar}{2k_B\tau}},
+\]
+where \(\tau=1/\Gamma\).
+The temperature comes from balancing
+velocity damping against random
+photon-recoil diffusion; the kinetic
+energy never falls to exactly zero.
+
+\subsection{A Zeeman slower follows changing velocity}
+A fast atomic beam has a large Doppler
+shift, which changes as atoms slow.
+A position-dependent magnetic field
+Zeeman-shifts the atomic transition
+to maintain resonance with the
+counter-propagating laser.
+If the designed deceleration is constant,
+\[
+v(z)=\sqrt{v_0^2-2az},
+\quad L=\frac{v_0^2}{2a},
+\]
+and, for a suitable sign convention,
+the resonance field has the shape
+\[
+\boxed{B(z)=B_{\rm offset}
++B_0\sqrt{1-z/L}.}
+\]
+This is the origin of the characteristic
+square-root slower profile, not merely
+a curve fitted to experimental data.
+An arbitrary field that reaches zero
+need not slow atoms successfully:
+the corresponding resonant velocity
+must be dynamically followable.
+Specifically,
+\[
+\boxed{a_{\rm req}(z)=
+-v_{\rm res}(z)\frac{dv_{\rm res}}{dz}}
+\]
+must stay within the available scattering
+acceleration and capture linewidth.
+
+\begin{worked}{Estimate ytterbium stopping distance}
+For the 2025 exam data,
+\(M=1.73\times10^{-25}\,\mathrm{kg}\),
+\(T=300\,\mathrm{K}\),
+\(\lambda=399\,\mathrm{nm}\),
+\(\tau=5.5\,\mathrm{ns}\),
+choose the 3D rms speed
+\(v_0=\sqrt{3k_BT/M}\approx268\,\mathrm{m/s}\).
+At half the maximum scattering force,
+\[
+a=\frac{h}{4M\lambda\tau}
+\approx4.36\times10^5\,\mathrm{m/s^2}.
+\]
+Hence
+\[
+L=\frac{v_0^2}{2a}\approx8.23\,\mathrm{cm},
+\qquad
+N_\gamma=\frac{Mv_0\lambda}{h}
+\approx2.79\times10^4.
+\]
+The Doppler limit from this linewidth
+is \(T_D\approx0.694\,\mathrm{mK}\).
+The thermal speed convention affects
+the stopping distance; state it explicitly.
+\end{worked}
+
+\subsection{Magneto-optical traps and selection rules}
+A magneto-optical trap (MOT) uses
+opposing red-detuned laser beams
+with suitable circular polarisations
+and a magnetic-field gradient.
+Position-dependent Zeeman shifts
+make one opposing beam more resonant,
+producing a restoring force, while the
+Doppler effect supplies damping.
+Polarisation selection rules connect
+light to atomic magnetic substates:
+\(\pi\)-polarised light has \(\Delta m=0\);
+\(\sigma^\pm\) components have
+\(\Delta m=\pm1\), for a consistent
+quantisation axis and photon helicity.
+Optical pumping can redistribute
+population among those substates.
+
+\begin{checkpoint}
+Rabi oscillations describe coherent drive.
+Spontaneous scattering describes dissipative
+momentum kicks. Doppler molasses damps
+velocity; a MOT also restores position.
+Zeeman slowing maintains resonance
+while the beam loses speed.
+\end{checkpoint}
