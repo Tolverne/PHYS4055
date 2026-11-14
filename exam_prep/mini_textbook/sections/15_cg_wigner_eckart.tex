@@ -1,0 +1,172 @@
+\unit{Adding angular momenta, Clebsch--Gordan and 3-j symbols}
+\unitref{Week 8; 2025 Q1; Atomic Assignment 4 Q1}
+\subsection{What is being added?}
+An electron has orbital angular momentum
+\(\mathbf L\) and spin \(\mathbf S\);
+an atom may have nuclear angular momentum
+\(\mathbf I\). The sum of two angular
+momentum vectors is again an angular
+momentum operator:
+\(\mathbf J=\mathbf J_1+\mathbf J_2\).
+But a simultaneous eigenstate of
+\(J_1^2,J_2^2,J^2,J_z\) is not generally
+a product of separate \(J_{1z}\) and
+\(J_{2z}\) eigenstates.
+
+Angular momentum eigenvalues are
+\[
+J^2\ket{jm}=\hbar^2j(j+1)\ket{jm},
+\qquad J_z\ket{jm}=\hbar m\ket{jm}.
+\]
+For \(j_1,j_2\), the allowed total \(j\) values are
+\[
+\boxed{j=|j_1-j_2|,\ |j_1-j_2|+1,\ldots,j_1+j_2.}
+\]
+The total projection is \(m=m_1+m_2\).
+That is the \emph{angular-momentum addition rule}.
+
+\subsection{What does a Clebsch--Gordan coefficient say?}
+In the product basis,
+\(\ket{j_1m_1}\ket{j_2m_2}\) describes
+known projections of the two components.
+In the coupled basis \(\ket{JM}\),
+the magnitude of the \emph{total}
+angular momentum is known.
+The relation is a change of basis:
+\[
+\boxed{\ket{JM}=
+\sum_{m_1m_2}
+\braket{j_1m_1,j_2m_2}{JM}
+\ket{j_1m_1}\ket{j_2m_2}.}
+\]
+The number in angle brackets is a
+Clebsch--Gordan (CG) coefficient.
+It is a probability \emph{amplitude}
+for a particular uncoupled pair, not
+a physical coupling energy or a probability by itself.
+
+\begin{worked}{Two spin-\(\tfrac12\) particles from scratch}
+Each particle has \(\ket\uparrow\) or
+\(\ket\downarrow\). Addition allows
+\(J=1\) (triplet) and \(J=0\) (singlet).
+The coupled states are
+\[
+\begin{aligned}
+\ket{1,1}&=\ket{\uparrow\uparrow},\\
+\ket{1,0}&=\frac{\ket{\uparrow\downarrow}
++\ket{\downarrow\uparrow}}{\sqrt2},\\
+\ket{1,-1}&=\ket{\downarrow\downarrow},\\
+\ket{0,0}&=\frac{\ket{\uparrow\downarrow}
+-\ket{\downarrow\uparrow}}{\sqrt2}.
+\end{aligned}
+\]
+Thus
+\(\langle\tfrac12,\tfrac12;
+\tfrac12,-\tfrac12|1,0\rangle=1/\sqrt2\).
+The same product basis component
+has overlap \(1/\sqrt2\) with the singlet.
+Triplet and singlet states are
+orthogonal, and the four coupled
+states span the same four-dimensional
+Hilbert space as the four product states.
+\end{worked}
+
+\subsection{Why introduce a 3-j symbol?}
+A Wigner 3-j symbol is a conventional
+normalised version of a CG coefficient:
+\[
+\boxed{
+\begin{pmatrix}j_1&j_2&J\\m_1&m_2&-M\end{pmatrix}
+=\frac{(-1)^{j_1-j_2+M}}
+{\sqrt{2J+1}}
+\langle j_1m_1,j_2m_2|JM\rangle.}
+\]
+It is useful because its symmetry
+properties make selection rules and
+angular integrations compact.
+Before calculating a value, test:
+\[
+|j_1-j_2|\le j_3\le j_1+j_2,\qquad
+m_1+m_2+m_3=0,\qquad |m_i|\le j_i.
+\]
+If a condition fails, the symbol is zero.
+This often answers a whole transition
+question before numerical evaluation.
+
+\begin{worked}{A concrete \(3j\) calculation}
+Adding zero angular momentum to \(j=1\)
+does nothing:
+\[
+\langle 0,0;1,0|1,0\rangle=1.
+\]
+Use the relation above with
+\(j_1=0,j_2=1,J=1,M=0\):
+\[
+\begin{pmatrix}0&1&1\\0&0&0\end{pmatrix}
+=\frac{(-1)^{0-1+0}}{\sqrt3}(1)
+=\boxed{-\frac1{\sqrt3}}.
+\]
+There is no need to memorise the
+full factorial formula for this special case.
+For less obvious values, consult the
+CG/3-j tables provided in the course
+or use a symbolic-algebra program.
+\end{worked}
+
+\subsection{Wigner--Eckart: separate geometry from physics}
+A spherical tensor operator \(T_q^{(k)}\)
+has rank \(k\) and component \(q=-k,\ldots,k\).
+Electric dipole is rank 1; electric
+quadrupole is rank 2.
+For a chosen reduced-element convention,
+\[
+\boxed{
+\mel{j'm'}{T_q^{(k)}}{jm}
+=(-1)^{j'-m'}
+\begin{pmatrix}j'&k&j\\-m'&q&m\end{pmatrix}
+\langle j'\Vert T^{(k)}\Vert j\rangle.}
+\]
+The 3-j symbol gives the allowed
+\emph{geometry}, including the projection
+condition \(m'=m+q\).
+The reduced matrix element contains
+the specific radial/atomic physics but
+is independent of \(m,m',q\).
+Two transitions within the same
+multiplet can therefore have
+different strengths entirely because
+their 3-j coefficients differ.
+
+\subsection{A transition example with \(J=0\to J'=1\)}
+An E1 operator has \(k=1\). Begin
+in \(J=0,m=0\). The triangle rule permits
+\(J'=1\). If the light has tensor
+component \(q=+1\), then \(m'=1\)
+because \(m'=m+q\).
+For \(q=0\), the only final projection is
+\(m'=0\). In both cases the absolute
+angular coefficient is \(1/\sqrt3\)
+in the displayed Wigner--Eckart convention.
+Whether the actual transition occurs
+still depends on the \emph{reduced}
+dipole element and parity.
+
+\subsection{Why parity is an independent test}
+Under spatial inversion,
+\(\mathbf r\mapsto-\mathbf r\).
+A dipole operator \(\mathbf d=-e\mathbf r\)
+changes sign. If the initial and final
+states have identical parity, the
+integrand of \(\langle f|\mathbf d|i\rangle\)
+is odd and the integral vanishes.
+Therefore a nonzero 3-j symbol does
+\emph{not} by itself guarantee E1 emission.
+
+\begin{checkpoint}
+Use the shortest sequence:
+(1) determine total \(J\) and projection
+possibilities; (2) test 3-j triangle and
+magnetic-number rules; (3) check parity;
+(4) only then evaluate a 3-j coefficient
+and reduced atomic matrix element.
+\end{checkpoint}
