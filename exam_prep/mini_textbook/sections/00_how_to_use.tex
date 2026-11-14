@@ -1,0 +1,112 @@
+\section*{How to use this mini-textbook}
+\addcontentsline{toc}{section}{How to use this mini-textbook}
+This is a \emph{teaching document} for the full PHYS4055
+course, not an abbreviated formula sheet.
+Its purpose is to answer three questions:
+what is happening physically, why the formula
+has its particular form, and how that formula
+helps solve an exam problem.
+The 15-page overview is designed for fast lookup;
+this book is intended to be \emph{read and worked through}.
+
+\subsection*{A suggested route through the material}
+The course has four connected parts.
+Quantum optics first describes light as quantised
+field modes. Applications of optics use those
+states, operations and measurements to
+communicate, process information and make
+sensitive measurements. Atomic physics
+introduces electron wavefunctions, angular
+momentum, energy-level splitting and transition
+matrix elements. Applications of atomic physics
+use these ideas in cooling and trapping,
+symmetry tests and clocks.
+
+If quantum notation feels unfamiliar, start
+with Chapters 1--4 before trying the
+applications. If your main difficulty is
+angular-momentum coupling, read Chapters
+14--16 slowly, including their worked
+examples. Later chapters repeatedly
+refer back to these ideas.
+
+\subsection*{Mathematical notation, explained}
+A ket \(\ket\psi\) is a quantum state vector.
+A bra \(\bra\phi\) is its conjugate transpose.
+The inner product \(\braket\phi\psi\)
+is a complex amplitude and
+\(|\braket\phi\psi|^2\) is a probability
+when the states are normalised.
+A matrix element \(\mel fO i\) asks
+how strongly the operator \(O\)
+connects initial \(\ket i\) to final
+\(\ket f\). A commutator is
+\([A,B]=AB-BA\); it measures
+the difference caused by operator order.
+
+A density operator \(\rho\) describes
+both pure states and mixtures.
+An expectation is
+\(\langle O\rangle=\operatorname{Tr}(\rho O)\).
+A partial trace sums over outcomes
+of a subsystem that is not observed.
+A unitary \(U^\dagger U=I\)
+preserves state norms.
+A Hermitian observable \(O=O^\dagger\)
+has real measurement eigenvalues.
+
+\begin{worked}{How to read a transition matrix element}
+The expression
+\(\bra{3s}\mathbf d\ket{3p}\)
+does not directly give a transition
+probability. It gives a \emph{dipole
+amplitude}, including radial overlap
+and angular selection rules.
+Its squared magnitude enters an
+Einstein \(A\) rate, multiplied by
+a factor proportional to
+the cube of transition frequency.
+Only after summing all decay
+channels can we infer a lifetime.
+\end{worked}
+
+\subsection*{Conventions we maintain}
+For the quantum-optics chapters,
+\[
+x=a+a^\dagger,\qquad
+p=i(a^\dagger-a),\qquad
+[x,p]=2i,
+\]
+so vacuum quadrature variance is 1.
+Optical beam-splitter phases are
+defined locally in each example;
+physical probabilities are invariant
+under a consistent convention change.
+
+For atomic physics, lower-case \(l,s\)
+often refer to one electron, capital
+\(L,S\) to the combined electrons,
+\(J\) to electronic total angular
+momentum, \(I\) to nuclear spin and
+\(F\) to their sum. The two symbols
+\(m_J,m_F\) name projections along
+the chosen quantisation axis.
+
+\subsection*{The four checks to do at the end}
+\begin{enumerate}
+\item \textbf{Probability:} do all output
+probabilities sum to 1? Is \(\operatorname{Tr}\rho=1\)?
+\item \textbf{Symmetry:} is the transition
+allowed by triangle, magnetic projection
+and parity conditions?
+\item \textbf{Physical limiting case:}
+what happens if the loss is zero,
+the detuning is zero, or the field is removed?
+\item \textbf{Units:} do the answers have the
+expected dimensions and order of magnitude?
+\end{enumerate}
+Each chapter ends with a short concept
+check. For longer algebraic practice,
+use the companion Worked Examples,
+Assignment Solutions and Past Exam
+Solutions booklets in the repository.
