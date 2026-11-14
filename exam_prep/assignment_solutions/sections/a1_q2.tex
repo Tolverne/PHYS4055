@@ -1,0 +1,78 @@
+
+\assignq{1}{2}{Beam splitter on Fock and coherent inputs}{1}
+The input/output relation is the real rotation
+\[
+\begin{pmatrix}c\\d\end{pmatrix}
+=\begin{pmatrix}\tau&-\varrho\\\varrho&\tau\end{pmatrix}
+\begin{pmatrix}a\\b\end{pmatrix}.
+\]
+Unitarity means \(\tau^2+\varrho^2=1\).
+The coefficients appearing in the \emph{matrix}
+are field-amplitude coefficients: the corresponding
+intensity fractions are \(\tau^2,\varrho^2\).
+
+\subsection*{(a) The binomial transformation}
+The inverse mode relation gives
+\(a^\dagger=\tau c^\dagger+\varrho d^\dagger\).
+Write the number state with creation operators:
+\[
+\ket{n,0}_{ab}=\frac{(a^\dagger)^n}{\sqrt{n!}}\ket0.
+\]
+Expand the commuting creation operators:
+\[
+\frac1{\sqrt{n!}}\sum_{k=0}^n\binom nk
+\tau^k\varrho^{n-k}
+(c^\dagger)^k(d^\dagger)^{n-k}\ket0.
+\]
+Because the normalised number states satisfy
+\((c^\dagger)^k(d^\dagger)^{n-k}\ket0
+=\sqrt{k!(n-k)!}\ket{k,n-k}\), this becomes
+\[
+\boxed{\ket{n,0}_{ab}\longrightarrow
+\sum_{k=0}^n
+\sqrt{\frac{n!}{k!(n-k)!}}\,
+\tau^k\varrho^{n-k}\ket{k,n-k}_{cd}}.
+\]
+Normalisation follows from
+\(\sum_k\binom nk\tau^{2k}\varrho^{2(n-k)}
+=(\tau^2+\varrho^2)^n=1\).
+
+\subsection*{(b) Coherent input plus vacuum}
+For \(c=(a+b)/\sqrt2,\ d=(a-b)/\sqrt2\),
+write the input as
+\[
+\ket{\alpha,0}=e^{-|\alpha|^2/2}
+\exp(\alpha a^\dagger)\ket0.
+\]
+The inverse relation is
+\(a^\dagger=(c^\dagger+d^\dagger)/\sqrt2\).
+The two output creation operators commute, so
+the exponential factors:
+\[
+\begin{aligned}
+\ket{\Psi_{\rm out}}
+&=e^{-|\alpha|^2/2}
+e^{(\alpha/\sqrt2)c^\dagger}
+e^{(\alpha/\sqrt2)d^\dagger}\ket0\\
+&=\boxed{\ket{\alpha/\sqrt2}_c\otimes
+\ket{\alpha/\sqrt2}_d}.
+\end{aligned}
+\]
+Phase conventions can change the sign of one
+amplitude without changing output count statistics.
+
+\subsection*{(c) Photodetection}
+The \(c\)-mode coherent amplitude is
+\(\beta=\alpha/\sqrt2\).
+Thus
+\[
+\boxed{P_c(n)=
+e^{-|\alpha|^2/2}\frac{(|\alpha|^2/2)^n}{n!}},
+\qquad
+\boxed{\langle n_c\rangle=\operatorname{Var}(n_c)
+=\frac{|\alpha|^2}{2}}.
+\]
+The ideal detector observes \emph{Poissonian} counts.
+\methodnote{Normalised Fock coefficients need the
+square roots of factorials; keep amplitude and intensity
+transmission coefficients distinct.}
