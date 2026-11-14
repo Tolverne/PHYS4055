@@ -1,0 +1,151 @@
+\unit{Atomic clocks and precision spectroscopy}
+\unitref{Week 13; 2025 Q1; atomic applications}
+\subsection{What makes an atom a clock?}
+A clock is an oscillator whose phase
+can be compared against a reference.
+An atomic transition provides a frequency
+associated with an exceptionally stable
+energy difference:
+\[
+\boxed{\nu_0=\frac{E_{\rm upper}-E_{\rm lower}}{h}.}
+\]
+A laser or microwave oscillator is steered
+to keep it on resonance with this
+frequency. The atom does not generate
+the counted electrical clock pulses
+by itself: an interrogation sequence
+and feedback system are needed.
+
+\subsection{The caesium definition of the SI second}
+The unperturbed ground-state hyperfine
+transition of \(^{133}\mathrm{Cs}\) defines
+the second, with frequency
+\[
+\boxed{\nu_{\rm Cs}=9\,192\,631\,770\ \mathrm{Hz}.}
+\]
+Caesium's valence ground term is
+\(6s\,{}^2S_{1/2}\), so \(J=1/2\),
+while the nuclear spin is \(I=7/2\).
+Hyperfine coupling gives \(F=3,4\).
+The clock transition is the
+\[
+\boxed{\ket{F=3,m_F=0}
+\longleftrightarrow\ket{F=4,m_F=0}}
+\]
+transition. The choice \(m_F=0\) makes
+the first-order Zeeman shift vanish
+near zero field, reducing a major
+source of frequency error.
+
+\begin{worked}{Compute the caesium hyperfine interval}
+With \(I=7/2,J=1/2\),
+\(I(I+1)=63/4\) and \(J(J+1)=3/4\).
+The magnetic-dipole hyperfine energy is
+\[
+E_F=\frac A2
+[F(F+1)-I(I+1)-J(J+1)].
+\]
+Substitute \(F=3,4\):
+\[
+E_3=\frac A2(12-66/4)
+=-\frac{9A}{4},\qquad
+E_4=\frac A2(20-66/4)
+=\frac{7A}{4}.
+\]
+Therefore \(E_4-E_3=4A\), so
+\[
+\boxed{A/h=\nu_{\rm Cs}/4
+=2.2981579425\ \mathrm{GHz}.}
+\]
+The degeneracy check is
+\(7+9=16=(2I+1)(2J+1)\).
+\end{worked}
+
+\subsection{Ramsey spectroscopy: letting phase accumulate}
+In a Ramsey experiment a first
+\(\pi/2\) pulse prepares an equal
+superposition of clock states.
+The atomic components then acquire
+a relative phase during free evolution
+for time \(T\). A second \(\pi/2\)
+pulse converts that phase into
+population. In the idealised
+two-level model, the excited
+population oscillates with detuning:
+\[
+P_e\sim\tfrac12[1+\cos(\Delta T+\phi_0)].
+\]
+The fringe width scales approximately
+as \(1/T\). Long coherent interrogation
+therefore permits a narrow frequency
+discriminator, provided the atom
+and the oscillator stay coherent.
+
+\subsection{Why optical clocks can do better}
+The quality factor of a spectral
+reference is
+\[
+\boxed{Q=\frac{\nu_0}{\Delta\nu}}.
+\]
+A high carrier frequency and narrow
+linewidth can yield a very high \(Q\).
+For example, strontium optical clocks
+use a transition near \(429\) THz,
+vastly higher than the \(9.19\) GHz
+caesium hyperfine carrier.
+Optical clocks usually use specially
+chosen metastable, narrow transitions
+rather than bright, rapidly
+decaying laser-cooling lines.
+
+\subsection{Trapping without shifting the clock}
+An optical lattice localises atoms,
+reducing motional Doppler effects.
+However, trapping light also shifts
+atomic energy levels through the
+AC Stark effect. At a
+\emph{magic wavelength}, the
+differential light shift of the
+two clock states is approximately
+zero, permitting confinement
+without substantially shifting
+the measured transition frequency.
+
+\subsection{Stability and accuracy are different}
+Stability describes the scatter
+of clock frequency measurements
+over an averaging time; accuracy
+describes how closely the corrected
+frequency matches the unperturbed
+atomic reference. Quantum projection
+noise, technical oscillator noise
+and finite atom number affect
+stability. Zeeman/Stark shifts,
+black-body radiation, collisions
+and gravitational redshift are
+among the corrections important
+for accuracy. A clock can be
+very stable yet systematically wrong.
+
+\subsection{Why clocks are physics experiments}
+Comparing clocks based on different
+species or transitions provides tests
+of relativity and searches for
+changes in fundamental constants.
+Relativistic gravitational redshift
+means clocks at different gravitational
+potentials tick at measurably different
+rates. Precise atomic spectroscopy
+therefore connects quantum
+structure to timekeeping, geodesy
+and fundamental physics.
+
+\begin{checkpoint}
+A clock should have a long-lived,
+narrow transition and be insensitive
+to external perturbations.
+The atomic transition, interrogation
+sequence, local oscillator, feedback
+and systematic corrections all
+determine clock performance.
+\end{checkpoint}
