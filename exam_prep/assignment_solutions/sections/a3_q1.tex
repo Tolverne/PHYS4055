@@ -1,0 +1,108 @@
+\assignq{3}{1}{Finite nuclear size of hydrogen-like \(^{209}\mathrm{Bi}\)}{1}
+Work in atomic units. A point-nucleus Coulomb potential is
+\(V_0=-Z/r\), while the specified uniform sphere has
+\[
+V_R(r)=
+\begin{cases}
+-\frac Z{2R}(3-r^2/R^2)&r<R,\\
+-Z/r&r\ge R.
+\end{cases}
+\]
+Thus the perturbation is
+\[
+\Delta V(r)=Z\left(\frac1r-\frac3{2R}
++\frac{r^2}{2R^3}\right)\quad(r<R),
+\]
+and zero for \(r\ge R\).
+
+\subsection*{(a) Derive the leading \(s\)-state correction}
+First-order perturbation theory yields
+\[
+\Delta E_{ns}^{(1)}
+=\mel{ns}{\Delta V}{ns}
+\simeq4\pi|\psi_{ns}(0)|^2\int_0^R
+r^2\Delta V(r)\diff r .
+\]
+For hydrogenic \(s\)-states,
+\(|\psi_{ns}(0)|^2=Z^3/(\pi n^3)\).
+Perform the radial integral explicitly:
+\[
+\begin{aligned}
+\int_0^R r^2\Delta V(r)\diff r
+&=Z\left[\frac{R^2}{2}
+-\frac{3R^2}{6}+\frac{R^2}{10}\right]\\
+&=\frac{ZR^2}{10}.
+\end{aligned}
+\]
+Hence
+\[
+\boxed{\Delta E_{ns}^{\rm fns}
+=\frac{2Z^4R^2}{5n^3}
+=\frac{2Z^2}{5n^3}(ZR)^2\quad(\text{Hartree})}.
+\]
+It is positive: spreading out the nuclear charge
+weakens the strongly attractive potential near the origin.
+
+\subsection*{(b) Numerical integrals for \(^{209}\mathrm{Bi}^{82+}\)}
+The nuclear charge is \(Z=83\). With
+\(R_{\rm rms}=5.5211\,\mathrm{fm}\), take
+\[
+R=\sqrt{\frac53}R_{\rm rms}=7.1277\,\mathrm{fm}
+=1.34694\times10^{-4}a_0.
+\]
+Use normalised hydrogenic \(R_{nl}(r)\) and integrate
+\[
+\boxed{\Delta E_{nl}=\int_0^R
+|R_{nl}(r)|^2r^2\Delta V(r)\diff r}.
+\]
+The accompanying Python solver performs this
+quadrature rather than assuming that all \(l\) give
+the same \(s\)-state correction:
+\[
+\begin{array}{c|r|r}
+\text{State}&\Delta E_{\rm fns}\ (\mathrm{Ha})&
+\Delta E_{\rm fns}\ (\mathrm{eV})\\\hline
+1s&0.3412153&9.28494\\
+2p&9.54585\times10^{-8}&2.59756\times10^{-6}\\
+3d&8.63359\times10^{-15}&2.34932\times10^{-13}
+\end{array}
+\]
+The leading-order \(1s\) formula gives
+\(0.3444055\,\mathrm{Ha}\), approximately
+\(0.94\%\) higher than numerical first-order
+Schr\"odinger perturbation theory. The higher
+angular momenta are strongly suppressed near
+the nuclear region because \(R_{nl}\sim r^l\).
+
+\subsection*{(c) Relativistic comparison}
+The exact \emph{point-nucleus} Dirac Coulomb
+energy (excluding rest mass) is
+\[
+E_{n\kappa}^{D}=\frac1{\alpha_{\rm fs}^2}
+\left[
+\left(1+\frac{(Z\alpha_{\rm fs})^2}
+{(n-|\kappa|+\sqrt{\kappa^2-(Z\alpha_{\rm fs})^2})^2}
+\right)^{-1/2}-1\right]\ {\rm Ha}.
+\]
+Compare with \(E_n^{NR}=-Z^2/(2n^2)\):
+\[
+\begin{array}{c|r|r}
+\text{Fine-structure level}&
+E^{D}-E^{NR}\ (\mathrm{Ha})&
+\Delta E_{\rm fns}^{NR}\ (\mathrm{Ha})\\\hline
+1s_{1/2}&-391.87&0.3412\\
+2p_{1/2}&-123.80&9.55\times10^{-8}\\
+3d_{3/2}&-12.31&8.63\times10^{-15}
+\end{array}
+\]
+The relativistic shifts are far larger than
+these \emph{nonrelativistic} finite-nucleus
+perturbation results. This is not a precision
+relativistic heavy-ion calculation:
+\(Z\alpha_{\rm fs}\simeq0.606\), so the real
+Dirac radial functions have significantly
+different nuclear-region amplitudes.
+\methodnote{Numerical source:
+\texttt{scripts/assignment\_numerical\_solutions.py}.
+For \(R_{nl}\) use \(r^2\diff r\); for
+\(u=rR_{nl}\) use \(\diff r\).}
