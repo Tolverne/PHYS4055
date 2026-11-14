@@ -1,0 +1,145 @@
+\unit{Hydrogenic atoms and radial wavefunctions}
+\unitref{Week 8; 2023 Q2; Assignment 3 Q1; Assignment 4 Q3}
+\subsection{The one-electron Schr\"odinger equation}
+For an electron of reduced mass \(\mu\)
+around a point nucleus of charge \(+Ze\),
+\[
+\left[-\frac{\hbar^2}{2\mu}\nabla^2
+-\frac{Ze^2}{4\pi\epsilon_0r}\right]
+\psi(\mathbf r)=E\psi(\mathbf r).
+\]
+The Coulomb potential depends only on
+the radius \(r\), so angular momentum is
+conserved. Separate variables into
+\[
+\boxed{\psi_{nlm}(\mathbf r)=R_{nl}(r)
+Y_{lm}(\theta,\phi).}
+\]
+The spherical harmonics are eigenfunctions
+of \(L^2,L_z\) with
+\[
+L^2Y_{lm}=\hbar^2l(l+1)Y_{lm},\qquad
+L_zY_{lm}=\hbar mY_{lm}.
+\]
+The labels have allowed values
+\(n=1,2,\ldots\), \(l=0,\ldots,n-1\),
+\(m=-l,\ldots,l\).
+
+\subsection{The centrifugal barrier}
+Define \(u(r)=rR_{nl}(r)\).
+Then the radial Schr\"odinger equation becomes
+\[
+\boxed{-\frac{\hbar^2}{2\mu}\frac{d^2u}{dr^2}
++\left[V(r)+\frac{\hbar^2l(l+1)}{2\mu r^2}\right]u
+=Eu.}
+\]
+The term proportional to \(1/r^2\)
+is the effective centrifugal barrier.
+For \(l>0\), the radial wavefunction
+is suppressed near the nucleus;
+\(s\)-states with \(l=0\) penetrate it
+much more strongly.
+The normalisation can be written
+\[
+\int_0^\infty|R_{nl}|^2r^2dr
+=\int_0^\infty|u_{nl}|^2dr=1.
+\]
+Switching from \(R\) to \(u\) changes the
+\emph{measure} in every radial matrix element.
+
+\subsection{Why hydrogen energies depend only on \(n\)}
+The nonrelativistic Coulomb levels are
+\[
+\boxed{E_n=-\frac{\mu Z^2e^4}
+{2(4\pi\epsilon_0)^2\hbar^2n^2}
+\approx-13.6\,{\rm eV}\,
+\frac{\mu}{m_e}\frac{Z^2}{n^2}.}
+\]
+The \(n\)-only degeneracy is a special
+symmetry of the pure Coulomb potential.
+Screening in a many-electron atom,
+relativity, magnetic fields and finite
+nuclear size lift different parts
+of this degeneracy.
+
+\begin{worked}{Most probable radius is not mean radius}
+For hydrogen \(1s\),
+\(\psi_{1s}=e^{-r/a_0}/\sqrt{\pi a_0^3}\).
+The probability in a spherical shell
+between \(r\) and \(r+dr\) is
+\[
+P(r)dr=4\pi r^2|\psi|^2dr
+=\frac{4r^2}{a_0^3}e^{-2r/a_0}dr.
+\]
+Differentiate \(\ln P(r)\):
+\(2/r-2/a_0=0\), so
+\(\boxed{r_{\rm most\ probable}=a_0}\).
+But
+\[
+\langle r\rangle=\frac4{a_0^3}
+\int_0^\infty r^3e^{-2r/a_0}dr
+=\boxed{3a_0/2}.
+\]
+The different answers are not contradictory:
+one describes the peak of a distribution;
+the other its average.
+\end{worked}
+
+\subsection{Finite nuclear size is a perturbation}
+A nucleus has a finite radius and a spread-out
+charge distribution. The point Coulomb potential
+\(-Z/r\) is too singular near the origin.
+For a uniform nuclear sphere of radius \(R\)
+in atomic units,
+\[
+V_{\rm finite}(r)=
+-\frac{Z}{2R}\left(3-\frac{r^2}{R^2}\right)
+\quad(r<R).
+\]
+The perturbation is
+\[
+\Delta V=V_{\rm finite}-V_{\rm point}
+=Z\left(\frac1r-\frac{3}{2R}
++\frac{r^2}{2R^3}\right).
+\]
+First-order perturbation theory gives
+\[
+\boxed{\Delta E_{nl}=\int_0^R
+|R_{nl}(r)|^2r^2\Delta V(r)\,dr.}
+\]
+If \(R\) is small and the \(s\)-state
+wavefunction is approximately constant
+inside the nucleus, one obtains
+\[
+\boxed{\Delta E_{ns}\simeq
+\frac{2Z^4R^2}{5n^3}\quad\text{(Hartree)}.}
+\]
+The positive shift makes the state less
+strongly bound. It is particularly
+large for orbitals with nonzero density
+at the origin.
+
+\subsection{How numerical radial solutions work}
+For a screened or model potential \(V(r)\),
+the radial equation is often discretised.
+At grid spacing \(h\),
+\[
+u''(r_i)\approx
+\frac{u(r_{i-1})-2u(r_i)+u(r_{i+1})}{h^2}.
+\]
+The Hamiltonian becomes a sparse
+tridiagonal matrix. Diagonalising it
+yields energies and radial eigenvectors.
+Check normalisation, radial nodes and
+stability as \(h\) decreases and
+the outer boundary moves outward.
+The sodium lifetime assignment uses
+exactly this kind of numerical workflow.
+
+\begin{checkpoint}
+Hydrogenic \(n,l,m\) label wavefunctions,
+not miniature classical orbits.
+For a radial integral, always decide
+whether you are using \(R(r)\) or
+\(u(r)=rR(r)\) before writing the measure.
+\end{checkpoint}
