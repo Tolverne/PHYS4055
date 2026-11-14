@@ -1,0 +1,68 @@
+
+\assignq{1}{1}{Two-mode squeezed vacuum: thermal reductions and heralding}{1}
+The input state is
+\[
+\ket{\Psi}_{si}=\sqrt{1-\lambda^2}\sum_{n=0}^\infty
+\lambda^n\ket n_s\ket n_i,\qquad \lambda=\tanh r.
+\]
+\subsection*{(a) Partial trace and mean occupation}
+Expand the joint density operator:
+\[
+\rho_{si}=(1-\lambda^2)\sum_{m,n}
+\lambda^{m+n}\ket m_s\bra n_s\otimes\ket m_i\bra n_i.
+\]
+The identity \(\operatorname{Tr}_i(\ket m\bra n)=\delta_{mn}\)
+makes all off-diagonal signal terms disappear:
+\[
+\boxed{\rho_s=(1-\lambda^2)\sum_{n=0}^\infty
+\lambda^{2n}\ket n\bra n}.
+\]
+The same holds for the idler.
+Put \(q=\lambda^2\) so \(p_n=(1-q)q^n\).
+From \(\sum q^n=(1-q)^{-1}\), differentiation gives
+\[
+\bar n=(1-q)\sum_{n=0}^\infty nq^n
+=\boxed{\frac{\lambda^2}{1-\lambda^2}=\sinh^2r}.
+\]
+Since \(q=\bar n/(1+\bar n)\),
+\(p_n=\bar n^n/(1+\bar n)^{n+1}\), the single-mode
+thermal photon-number distribution.
+The \emph{joint} state is pure while each subsystem
+is a mixed thermal state.
+
+\subsection*{(b) Cross-correlation}
+Signal and idler have identical photon numbers in
+each Schmidt term, so \(\langle n_sn_i\rangle=\langle n^2\rangle\).
+Use
+\(\sum n^2q^n=q(1+q)/(1-q)^3\):
+\[
+\langle n_sn_i\rangle
+=\frac{q(1+q)}{(1-q)^2}
+=\bar n+2\bar n^2.
+\]
+Therefore
+\[
+\boxed{g^{(2)}_{si}(0)
+=\frac{\langle n_sn_i\rangle}{\bar n^2}
+=2+\frac1{\bar n}}.
+\]
+As \(r\to0^+\), pairs become rare but very highly
+correlated, so the normalised function diverges.
+At exactly \(\bar n=0\), it is undefined (zero denominator).
+
+\subsection*{(c) Herald a single photon}
+At low gain,
+\(\ket{\Psi}\approx\ket{0,0}+\lambda\ket{1,1}
++O(\lambda^2)\).
+An idler outcome \(\bra1_i\) leaves an unnormalised
+signal amplitude proportional to \(\lambda\ket1_s\).
+After normalisation,
+\[
+\boxed{\rho_{s\mid n_i=1}=\ket1\bra1}.
+\]
+A threshold detector is a good herald only when
+multi-pair events are negligible; ideal number
+resolution would isolate the one-pair component exactly.
+\methodnote{Differentiate the geometric series;
+do not confuse a local thermal state with an absence
+of correlations in the joint entangled state.}
