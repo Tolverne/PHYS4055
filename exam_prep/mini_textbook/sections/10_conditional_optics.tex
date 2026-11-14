@@ -1,0 +1,129 @@
+\unit{Conditional optics: how measurement becomes a gate}
+\unitref{W5L3; Week 6 tutorial; Assignment 2}
+\subsection{A surprising capability of linear optics}
+Beam splitters and phase shifters implement
+linear unitary transformations of optical
+modes. They cannot directly create a
+deterministic interaction between two
+photons. But combining these optical
+elements with ancilla photons and
+\emph{postselected} photodetection can
+implement an effective nonlinear operation
+on a conditional subensemble.
+The cost is that some runs must be rejected.
+
+\subsection{One outcome, one Kraus operator}
+If the joint state of signal and ancilla
+is \(U(\ket\psi\otimes\ket{\rm anc})\)
+and the ancilla detector yields \(k\),
+the signal's unnormalised output is
+\[
+\ket{\tilde\psi_k}
+={}_{\rm anc}\bra k U
+(\ket\psi\otimes\ket{\rm anc}),
+\]
+or \(\tilde\rho_k=K_k\rho K_k^\dagger\).
+The probability of this outcome is
+\(p_k=\operatorname{Tr}\tilde\rho_k\);
+\(\rho_k=\tilde\rho_k/p_k\) is the
+normalised state for successful trials.
+Do \emph{not} normalise before calculating
+the success probability.
+
+\subsection{Photon subtraction}
+Consider a signal
+\(\ket\psi=\sum_n c_n\ket n\)
+mixed with vacuum at a weakly reflecting
+beam splitter of transmissivity \(\eta\).
+Conditioning on one photon in the
+reflected output produces
+\[
+\boxed{K_{\rm click}\ket n\propto
+\sqrt n\,\sqrt{1-\eta}\,
+\eta^{(n-1)/2}\ket{n-1}.}
+\]
+The factor \(\sqrt n\) is the
+annihilation-operator matrix element.
+The factor \(\eta^{(n-1)/2}\) accounts for
+the photons retained in the signal.
+For \(\eta\) near 1, the operation
+approximates \(a\ket\psi\), up to
+an overall success amplitude.
+It \emph{does not} remove a photon
+deterministically from every trial.
+
+\begin{worked}{Distinguishing nonorthogonal states probabilistically}
+Take the two input states
+\[
+\ket{\psi_\pm}=\frac{2\ket0\pm\ket1}{\sqrt5},
+\qquad \langle\psi_+|\psi_-\rangle=3/5.
+\]
+They cannot be perfectly distinguished by
+a deterministic measurement. Use a
+successful filter
+\[
+K_s=\tfrac12\ket0\bra0+\ket1\bra1.
+\]
+The unnormalised output is
+\((\ket0\pm\ket1)/\sqrt5\)
+with probability \(p_s=2/5\).
+After normalising,
+\[
+\boxed{\ket{\phi_\pm}=
+\frac{\ket0\pm\ket1}{\sqrt2}}.
+\]
+These are \emph{orthogonal}, so a
+Hadamard-basis measurement now identifies
+the sign, conditional on success.
+The failure probability is \(3/5\);
+the identical failure output contains
+no information about the sign. Probabilistic
+filtering does not violate no-cloning
+or deterministic distinguishability.
+\end{worked}
+
+\subsection{Heralding and gate resources}
+Conditional sign gates can transform selected
+Fock coefficients with relative phases,
+for example \(\alpha\ket0+\beta\ket1+
+\gamma\ket2\) into
+\(\alpha\ket0+\beta\ket1-\gamma\ket2\)
+in a successful ancilla detection branch.
+Such number-dependent relative phases
+are effectively nonlinear operations,
+even though the optical elements
+before measurement were linear.
+This idea is used in measurement-induced
+photonic computation, with ancilla states,
+feed-forward and suitable encoding.
+
+\subsection{Entanglement distillation}
+Two noisy Bell pairs can be processed
+with bilateral gates and local measurements
+to keep one pair only when parity checks
+succeed. For the simple ensemble
+\[
+\rho=p\ket{\Phi^+}\bra{\Phi^+}
++(1-p)\ket{\Psi^+}\bra{\Psi^+},
+\]
+a recurrence protocol keeps matching
+error labels with
+\[
+p_{\rm success}=p^2+(1-p)^2,
+\quad
+\boxed{p'=\frac{p^2}{p^2+(1-p)^2}}.
+\]
+For \(p=0.8\), the retained fidelity
+rises to \(p'\approx0.9412\),
+but the pair is obtained with probability
+\(0.68\) from two initial pairs.
+Entanglement quality improves at the
+expense of throughput.
+
+\begin{checkpoint}
+Always report \emph{both} the conditional
+output state and its success probability.
+Distinguish a trace-preserving quantum
+channel from a selected, trace-decreasing
+instrument outcome.
+\end{checkpoint}
