@@ -1,0 +1,77 @@
+
+\assignq{2}{3}{BB84: preparation, sifting, intercept--resend and key distillation}{3--4}
+\subsection*{(a) Encode bit and basis}
+The agreed logical encoding is
+\[
+\begin{array}{c|cc}
+\text{bit}&Z\ \text{basis}&X\ \text{basis}\\\hline
+0&\ket H&\ket D=(\ket H+\ket V)/\sqrt2\\
+1&\ket V&\ket A=(\ket H-\ket V)/\sqrt2
+\end{array}
+\]
+These two bases are mutually unbiased:
+for example \(|\braket{H}{D}|^2=1/2\).
+
+\subsection*{(b) Sift the key and account for loss}
+Alice and Bob choose each basis with probability \(1/2\).
+The probability of matching choices is
+\[
+P(\text{match})=P(ZZ)+P(XX)=\tfrac14+\tfrac14
+=\boxed{\tfrac12}.
+\]
+A single photon is detected with probability
+\(\eta_{\mathrm{ch}}\eta_d\), assuming no
+dark counts or other imperfections:
+\[
+\boxed{\mathbb{E}[N_{\mathrm{det}}]
+=N\eta_{\mathrm{ch}}\eta_d},\qquad
+\boxed{\mathbb{E}[N_{\mathrm{sift}}]
+=\tfrac12N\eta_{\mathrm{ch}}\eta_d}.
+\]
+The sifted-key expectation refers to detected
+photons for which their announced bases agree.
+
+\subsection*{(c) Derive the error from intercept--resend}
+Compute the quantum bit error rate \emph{conditioned}
+on Alice and Bob having used the same basis.
+Eve chooses that basis with probability \(1/2\);
+she then learns and resends the bit without error.
+With probability \(1/2\), Eve chooses the
+conjugate basis. Her outcome is random relative
+to Alice; when Bob measures in Alice's basis
+he obtains the wrong bit with probability \(1/2\).
+Thus
+\[
+\boxed{Q=\tfrac12(0)+\tfrac12(\tfrac12)
+=\frac14=25\%.}
+\]
+This is an ideal single-photon intercept--resend
+attack, not a universal error rate for every attack.
+
+\subsection*{(d.i) Probability of seeing an error}
+For \(m=20\) independently sampled sifted bits,
+\[
+\boxed{P(\text{at least one error})
+=1-(1-Q)^m=1-\left(\frac34\right)^{20}
+=0.99683\ \text{(about }99.68\%\text{)}.}
+\]
+
+\subsection*{(d.ii) Why discard public test bits?}
+The comparison exposes each tested bit on the
+authenticated public channel. Eve can therefore
+know their values, so the publicly revealed bits
+cannot be part of the secret final key.
+
+\subsection*{(d.iii) The two final processing steps}
+\textbf{Error correction} reconciles any
+differences between Alice's and Bob's sifted
+strings, using public parity/syndrome
+information as necessary. This discussion
+also leaks some information.
+\textbf{Privacy amplification} compresses the
+reconciled string with an appropriate hash
+function to reduce a potential eavesdropper's
+remaining information to a negligible level.
+\methodnote{Do not apply the basis-sifting factor
+twice. For an intercept--resend QBER always
+condition on a basis match between Alice and Bob.}
