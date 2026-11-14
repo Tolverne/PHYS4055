@@ -1,0 +1,151 @@
+\assignq{4}{2}{Zeeman slower: scattering limit, resonance profile and panels (b)--(e)}{1--2}
+Consider a beam propagating along \(+z\), illuminated by
+a counter-propagating laser. Let \(\Gamma=1/\tau\)
+be the excited-state \emph{population decay rate},
+\(s=I/I_{\rm sat}\) the saturation parameter and
+\(\Delta_{\rm eff}\) the laser detuning in the
+atom's rest frame.
+
+\subsection*{(a) Maximum scattering rate and design acceleration}
+The two-level scattering rate is
+\[
+R_{\rm sc}=\frac{\Gamma}{2}
+\frac{s}{1+s+(2\Delta_{\rm eff}/\Gamma)^2}.
+\]
+Near saturation the maximum is
+\(R_{\max}=\Gamma/2\).
+Every photon absorbed from the counter-propagating
+laser changes the atom's directed momentum by
+approximately \(-\hbar k\). Averaging over random
+spontaneous recoil gives
+\[
+\boxed{F_{\max}=\hbar k\Gamma/2,\quad
+a_{\max}=\frac{\hbar k\Gamma}{2M}}.
+\]
+A robust real slower typically designs for
+\(a=\eta a_{\max}\), where \(0<\eta<1\),
+leaving a margin for power fluctuations, finite
+linewidth and deviations from exact resonance.
+Thus, for incident speed \(v_0\), the required
+ideal length is \(L_0=v_0^2/(2a)\).
+
+\subsection*{(b) Why the optimal field is square-root shaped}
+Choose a Zeeman shift
+\(\mu' B(z)/\hbar\), where \(\mu'\) is the
+effective differential magnetic moment,
+such that the changing resonance frequency
+compensates the Doppler shift. With a suitable
+sign convention, the resonance condition is
+\[
+\Delta_L+k v(z)-\frac{\mu' B(z)}{\hbar}=0.
+\]
+Therefore \(B(z)=B_{\rm offset}
++(\hbar k/\mu')v(z)\) for fixed laser detuning.
+At constant deceleration,
+\[
+v(z)^2=v_0^2-2az,\qquad
+\boxed{v(z)=v_0\sqrt{1-z/L_0},\quad
+B(z)=B_{\rm offset}+B_0\sqrt{1-z/L_0}},
+\]
+where \(B_0=\hbar k v_0/\mu'\) with the
+appropriate sign. The square-root profile
+keeps the photon force close to the
+chosen constant \(Ma\) while the atom slows.
+
+\subsection*{(c) What sets the capture velocity?}
+Three main limits matter: the \emph{available
+slower length}, the \emph{maximum sustainable
+scattering force} and the \emph{magnetic-field
+range}/laser detuning needed to bring a fast
+atom into resonance. In the ideal fixed-acceleration
+model,
+\[
+\boxed{v_{\rm capture}\lesssim
+\sqrt{v_f^2+2aL}},
+\]
+subject to the entrance-resonance condition
+\[
+|\Delta_L+kv_0-\mu' B(0)/\hbar|
+\lesssim\text{the power-broadened linewidth}.
+\]
+A longer slower cannot compensate an insufficient
+field range or an atom that never enters the
+laser-coupling resonance window.
+
+\subsection*{(d) Analyse the supplied alternative field plots}
+The original Assignment 4 page 2 draws
+\(B(z)\) for a reference optimal field (a)
+and four alternatives (b)--(e).
+To analyse any alternative, first translate
+\(B(z)\) into the \emph{resonant velocity}
+\(v_{\rm res}(z)\propto B(z)-B_{\rm offset}\).
+Its gradient determines the acceleration
+needed to stay locked:
+\[
+\boxed{a_{\rm req}(z)=
+-v_{\rm res}(z)\frac{\diff v_{\rm res}}{\diff z}.}
+\]
+The atom cannot follow a resonant trajectory
+requiring \(a_{\rm req}>a_{\max}\), and a
+\emph{positive} resonant-velocity slope requires
+the atom to accelerate in the beam direction,
+opposite to the counter-propagating laser force.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{8mm}p{34mm}X@{}}
+\toprule
+Panel&Observed field shape&Outcome and physical reason\\\midrule
+(a)&Reference square root; zero at \(L_0\)&
+Yes in the ideal model: constant allowed
+deceleration \(a\), reaching \(v=0\) at \(L_0\).\\
+(b)&Shallow straight line;
+zero near \(2L_0\)&
+Can slow to \emph{arbitrarily small} velocity
+over a longer length. Taking
+\(v_{\rm res}=v_0(1-z/(2L_0))\) gives
+\(a_{\rm req}=a(1-z/(2L_0))\le a\).
+The mathematical \(v=0\) endpoint is
+approached asymptotically in time.\\
+(c)&Steep straight line;
+zero near \(L_0\)&
+At its entrance the required deceleration is
+\(2a\), twice that of reference (a).
+If (a) was designed at the available force,
+the atoms fall out of resonance and do not
+follow the curve to rest.\\
+(d)&A strong down--up--down excursion&
+The rising-field section corresponds to
+an \emph{increasing} resonant speed and cannot
+be tracked by atoms under a purely opposing
+scattering force. The first steep section can
+also exceed the force budget. Slowing may
+resume if the atom is later recaptured,
+but full stopping is not guaranteed.\\
+(e)&Rapid oscillations before the optimal tail&
+The ideal resonance velocity oscillates rapidly,
+demanding alternating acceleration/deceleration.
+If oscillations exceed the effective linewidth
+or force response, atoms are detuned and
+lost; very small slow ripples may be tolerated.
+Full slowing cannot be assured from the
+nominal endpoint alone.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+A useful additional check for (b): as
+\(v(t)\propto e^{-ct}\), the atom has
+\(v\to0\) only for \(t\to\infty\) within the
+ideal linearly decreasing resonant-velocity
+model. Real atoms undergo stochastic photon
+recoil and exit at a nonzero capture velocity;
+this makes the distinction between a
+\emph{mathematical endpoint} and practical
+capture physically relevant.
+
+\methodnote{Always determine whether a
+field profile lies within the available
+\emph{force and linewidth} constraints.
+A plot that reaches \(B=0\) does not on
+its own guarantee that the atoms follow it
+or end at rest.}
