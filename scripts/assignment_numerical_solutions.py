@@ -98,7 +98,8 @@ def sodium_lifetimes(step=0.012, r_max=120.0):
     print("Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,")
     print("3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).")
     print("Na 3p historical direct measurement: 17.3 +/- 1.0 ns")
-    print("(Johnson et al.?, JOSA 60, 1199 [1970]; check bibliography).")
+    print("(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral")
+    print("and Ionized Sodium and Potassium; experimental Na I 3p result).")
 
 
 if __name__=="__main__":
