@@ -1,0 +1,170 @@
+\unit{Atoms as tests of parity and time-reversal symmetry}
+\unitref{Week 12; atomic parity violation and EDM lectures}
+\subsection{Why symmetry is a practical experimental tool}
+An atomic experiment can be sensitive to
+tiny interactions because ordinary
+electromagnetic theory predicts that
+certain transitions or energy shifts
+should be \emph{zero} by symmetry.
+If a supposedly forbidden signal
+appears in a controlled measurement,
+we investigate whether an interaction
+absent from the simpler Hamiltonian
+has broken that symmetry.
+This motivates atomic tests of the
+weak interaction, parity violation
+and intrinsic electric dipole moments.
+
+\subsection{What parity means}
+A parity transformation inverts the
+spatial coordinates:
+\(\mathbf r\mapsto-\mathbf r\).
+For a central potential, the orbital
+wavefunctions have definite parity:
+\[
+P\ket{nlm}=(-1)^l\ket{nlm}.
+\]
+Thus \(s,d,g\) orbitals are even;
+\(p,f\) orbitals are odd.
+The electric dipole operator
+\(\mathbf d=-e\mathbf r\)
+is itself odd under parity.
+If initial and final states have
+the \emph{same} parity,
+\[
+\bra f\mathbf d\ket i
+=-\bra f\mathbf d\ket i=0
+\]
+in a parity-conserving model.
+This explains the E1 parity selection
+rule without memorising a table.
+
+\subsection{How the weak interaction changes the conclusion}
+The electromagnetic Hamiltonian of
+an atom approximately respects parity,
+but the neutral-current weak
+interaction contains parity-violating
+electron--nucleus terms. Schematically,
+\[
+H=H_{\rm EM}+H_W,
+\quad P H_WP^{-1}\ne H_W.
+\]
+First-order perturbation theory shows
+that an originally definite-parity
+state \(\ket i\) acquires admixtures
+of opposite-parity states:
+\[
+\boxed{\ket{\tilde i}\approx\ket i+
+\sum_{n\ne i}\ket n
+\frac{\bra nH_W\ket i}{E_i-E_n}.}
+\]
+These admixtures can generate an
+otherwise forbidden E1 amplitude
+between same-parity levels.
+
+\begin{worked}{Derive a weakly allowed E1 line}
+Let \(\ket i,\ket f\) have the same
+unperturbed parity and \(\ket n\)
+the opposite parity. If only the
+initial-state admixture matters,
+\[
+\ket{\tilde i}=\ket i+\epsilon\ket n,
+\quad
+\epsilon=\frac{\bra nH_W\ket i}{E_i-E_n}.
+\]
+Then
+\[
+\bra f d\ket{\tilde i}
+=\underbrace{\bra f d\ket i}_{0}
++\epsilon\bra f d\ket n
+=\boxed{\epsilon\bra f d\ket n}.
+\]
+A small mixing coefficient \(10^{-8}\)
+multiplied by an allowed atomic dipole
+of order \(ea_0\) gives a
+\(10^{-8}ea_0\) amplitude.
+In a full calculation, both initial
+and final states can be mixed, and
+one sums over many intermediate states.
+\end{worked}
+
+\subsection{Nuclear weak charge}
+One widely discussed contribution
+to atomic parity violation is
+controlled by a nuclear weak charge,
+with tree-level approximate form
+\[
+\boxed{Q_W\simeq-N+Z(1-4\sin^2\theta_W),}
+\]
+where \(N,Z\) are neutron and proton
+numbers. Electroweak radiative
+corrections and nuclear-structure
+effects matter in precision work.
+The measured parity-violating amplitude
+also depends strongly on the atomic
+electronic wavefunctions, so comparing
+experiment with the Standard Model
+requires accurate atomic many-body
+theory, not just the weak charge.
+
+\subsection{What is an intrinsic electric dipole moment?}
+An electric dipole \(\mathbf d\) changes
+sign under parity, while an axial
+angular momentum \(\mathbf J\) does not.
+A permanent \(\mathbf d\) aligned with
+a particle's spin therefore violates
+parity. Under time reversal,
+spin changes direction but the electric
+dipole does not, so such an intrinsic
+EDM also violates time reversal.
+The interaction energy is
+\[
+\boxed{H_{\rm EDM}=-\mathbf d\cdot
+\boldsymbol{\mathcal E}.}
+\]
+A spin-precession experiment compares
+frequencies for opposite electric-field
+directions. A genuine EDM contribution
+reverses sign with the electric field,
+while carefully chosen combinations
+of measurements reject common magnetic
+and instrumental backgrounds.
+
+\subsection{Schiff screening and experimental enhancement}
+In a simple neutral atom of pointlike,
+nonrelativistic Coulomb-interacting
+constituents, internal fields screen
+a uniformly applied static electric
+field at the nucleus. This is the
+basis of Schiff's theorem.
+Finite nuclear size, relativistic
+electron motion and molecular
+polarisation circumvent its ideal
+assumptions and can make EDM
+measurements extremely sensitive.
+Heavy atoms and polar molecules
+are particularly useful because
+their electronic and nuclear
+structure can amplify some
+symmetry-violating effects.
+
+\subsection{Why this belongs in atomic physics}
+The experimental quantity is a tiny
+frequency shift or transition amplitude.
+To predict it, one still needs the
+atomic orbitals, good angular-momentum
+coupling, selection rules, perturbation
+theory and matrix elements developed
+earlier in this mini-text.
+A precision experiment turns those
+familiar mathematical tools into a
+test of fundamental interactions.
+
+\begin{checkpoint}
+Parity selection rules forbid amplitudes
+\emph{only if} the Hamiltonian respects
+parity and the basis states have definite
+parity. A weak mixing interaction changes
+the state and may open a previously
+vanishing transition.
+\end{checkpoint}
