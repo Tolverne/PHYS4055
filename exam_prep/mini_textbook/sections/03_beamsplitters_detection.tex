@@ -1,0 +1,134 @@
+\unit{Beam splitters, HOM interference and detectors}
+\unitref{Weeks 2--3; optics tutorials; 2024--25 exams}
+\subsection{How an interferometer mixes amplitudes}
+A lossless two-port beam splitter transforms field
+\emph{operators}, not photon probabilities:
+\[
+\boxed{
+\begin{pmatrix}c\\d\end{pmatrix}=
+\begin{pmatrix}t&r\\-r&t\end{pmatrix}
+\begin{pmatrix}a\\b\end{pmatrix},
+\quad t^2+r^2=1.}
+\]
+The numbers \(t,r\) are amplitudes; the
+intensity fractions are \(T=t^2,R=r^2\).
+The unitary matrix preserves both photon number
+and bosonic commutation relations. Reflection
+phases may differ in another convention, with
+identical observable predictions.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,scale=.82]
+\draw[thick,fill=accent!12] (2.5,.8) rectangle (3.3,2.8);
+\draw[->,thick] (.3,2.25)--(2.4,2.25);
+\draw[->,thick] (.3,1.35)--(2.4,1.35);
+\draw[->,thick] (3.4,2.25)--(5.7,2.25);
+\draw[->,thick] (3.4,1.35)--(5.7,1.35);
+\node[left] at (.3,2.25){\(a\)};
+\node[left] at (.3,1.35){\(b\)};
+\node[right] at (5.7,2.25){\(c\)};
+\node[right] at (5.7,1.35){\(d\)};
+\node at (2.9,.3){unitary mixing};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Multiphoton calculations use creation operators}
+When photons are input in known number states,
+write the input with raising operators. For
+the balanced convention
+\[
+a^\dagger=\frac{c^\dagger+d^\dagger}{\sqrt2},
+\qquad
+b^\dagger=\frac{c^\dagger-d^\dagger}{\sqrt2},
+\]
+the transformation of \(\ket{1,1}\) is
+\[
+\begin{aligned}
+a^\dagger b^\dagger\ket0
+&=\tfrac12(c^\dagger+d^\dagger)
+(c^\dagger-d^\dagger)\ket0\\
+&=\tfrac12[(c^\dagger)^2-(d^\dagger)^2]\ket0\\
+&=\boxed{\frac{\ket{2,0}-\ket{0,2}}{\sqrt2}}.
+\end{aligned}
+\]
+The absence of a \(\ket{1,1}\) term means
+zero probability of detecting one photon
+in each output. This is Hong--Ou--Mandel
+(HOM) interference.
+
+\subsection{Where the HOM cancellation comes from}
+Two indistinguishable possibilities lead to
+a coincidence: both photons transmit, or
+both reflect. Their probability \emph{amplitudes}
+have opposite signs and cancel at a balanced splitter.
+If the photons have distinguishable wavepackets,
+those alternatives no longer interfere completely.
+For ideal overlap parameter \(\eta\in[0,1]\),
+defined as the squared temporal/spectral-mode overlap,
+\[
+P(\text{coincidence})=\frac{1-\eta}{2}.
+\]
+At \(\eta=0\), the classical independent-path
+coincidence probability is \(1/2\). At \(\eta=1\),
+HOM bunching gives zero.
+
+\begin{worked}{Two photons enter the same port}
+For \(\ket{2,0}=(a^\dagger)^2\ket0/\sqrt2\),
+\[
+\ket{2,0}\longrightarrow
+\tfrac12\ket{2,0}+\tfrac1{\sqrt2}\ket{1,1}
++\tfrac12\ket{0,2}.
+\]
+The output probabilities are \(1/4,1/2,1/4\).
+For \(\ket{1,1}\) input, by contrast, the
+coincidence probability is \emph{zero}.
+Different input states lead to different
+interference and photon-counting patterns.
+\end{worked}
+
+\subsection{Arbitrary \(n\) photons and coherent input}
+A fixed \(n\)-photon input gives the binomial result
+\[
+\ket{n,0}\mapsto
+\sum_{k=0}^n\sqrt{\binom nk}\,t^kr^{n-k}\ket{k,n-k}.
+\]
+A coherent input \(\ket\alpha_a\ket0_b\)
+instead produces a \emph{product} of coherent
+outputs \(\ket{t\alpha}_c\ket{r\alpha}_d\)
+(up to phases). This follows by substituting
+the creation-operator transformation into
+the exponential Fock expansion.
+
+\subsection{What a detector measures}
+An ideal number-resolving detector distinguishes
+\(n=0,1,2,\ldots\). A threshold detector
+only reports vacuum or at least one photon.
+For \(n\) incident photons and single-photon
+detection efficiency \(\eta_d\), the probability
+of \emph{no click} is
+\[
+P(0\ \text{clicks}\mid n)=(1-\eta_d)^n,
+\]
+neglecting dark counts. Real detection
+requires careful treatment of loss, dark counts
+and finite time resolution.
+
+\subsection{Homodyne detection accesses field quadratures}
+Interfere a weak signal \(a\) with a strong coherent
+local oscillator \(\beta=|\beta|e^{i\theta}\).
+Subtract the output photodetector currents.
+The dominant difference term is proportional to
+\[
+\beta^*a+\beta a^\dagger
+=|\beta|[ae^{-i\theta}+a^\dagger e^{i\theta}].
+\]
+A local-oscillator phase change selects
+a different quadrature rather than a different
+photon-number observable.
+
+\begin{checkpoint}
+For optical circuits: define input modes,
+choose a phase convention, transform operators,
+restore the \(\sqrt{n!}\) factors, add
+amplitudes, and only then square them.
+\end{checkpoint}
