@@ -59,7 +59,7 @@ def hydrogenic_bi_shifts():
 def na_states(step=0.012, r_max=120.0):
     """Radial finite-difference solver with Dirichlet boundaries at r=0, r=rmax.
 
-    u(r)=r R_nl(r), integral |u|² dr=1.
+    u(r)=r R_nl(r), integral |u|^2 dr=1.
     Effective potential V=-Z/r+(Z-xi)(1-exp(-r/b))/r, Z=11, xi=1, b=.4072.
     Retain states labelled by n and l, using the radial node index n-l-1.
     """
