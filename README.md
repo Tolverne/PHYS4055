@@ -1,5 +1,13 @@
 # PHYS4055 — Atomic Physics and Optics | 2026 Open-Book Exam Revision
 
+## New: PHYS4055 four-part mini-textbook
+
+- **[Read the illustrated PHYS4055 mini-textbook (PDF)](exam_prep/mini_textbook/PHYS4055_Mini_Textbook.pdf)** — a readable, approximately 40-page teaching text with conceptual explanations, derivations, TikZ diagrams, worked examples and end-of-chapter checks.
+- [Editable LaTeX chapters and contents](exam_prep/mini_textbook/)
+- [Lecture-to-chapter source map and conventions](exam_prep/mini_textbook/SOURCE_MAP.md)
+- Use this to **learn** the physics, then the existing 15-page overview for rapid exam lookup and the worked booklets for practice.
+
+
 ## New: complete 2026 assignment solutions
 
 - **[Full worked assignment-solutions booklet (PDF)](exam_prep/assignment_solutions/PHYS4055_All_Assignments_Worked_Solutions.pdf)** — all 12 main questions and every subpart, across Assignments 1–4.
