@@ -1,0 +1,128 @@
+\unit{Noise, loss and quantum channels}
+\unitref{W5L1; Week 5 tutorial}
+\subsection{Why a subsystem does not evolve unitarily}
+For an isolated quantum system,
+\(\rho'=U\rho U^\dagger\).
+An optical mode in the laboratory interacts
+with unobserved environmental degrees of
+freedom: lost photons, thermally excited
+modes, unwanted phase fluctuations and detectors.
+If the environment starts in \(\rho_E\),
+\[
+\boxed{\rho'_S=
+\operatorname{Tr}_E[
+U_{SE}(\rho_S\otimes\rho_E)U_{SE}^\dagger].}
+\]
+The joint evolution is unitary but the reduced
+system evolution generally is not. Tracing out
+the environment is an \emph{average over
+unobserved information}, not a measurement
+that selects a particular outcome.
+
+\subsection{Loss as a beam splitter with vacuum}
+Introduce an initially empty environment mode \(e\):
+\[
+a_{\rm out}=\sqrt\eta\,a_{\rm in}
++\sqrt{1-\eta}\,e_{\rm in}.
+\]
+This is the physically correct quantum loss
+model; replacing \(a\) by \(\sqrt\eta a\)
+alone would give
+\([a_{\rm out},a_{\rm out}^\dagger]=\eta\ne1\).
+The environment operator supplies the vacuum
+noise that preserves the commutator.
+For a single photon,
+\[
+\ket{1,0}_{S,E}\longrightarrow
+\sqrt\eta\ket{1,0}
++\sqrt{1-\eta}\ket{0,1}.
+\]
+Tracing over the environment gives
+\[
+\boxed{\rho'_S=\eta\ket1\bra1+
+(1-\eta)\ket0\bra0.}
+\]
+The probability of having a photon is \(\eta\);
+the environment is responsible for the mixture.
+
+\subsection{Kraus operators: a system-only description}
+The same channel can be written
+\[
+\boxed{\mathcal E(\rho)=\sum_kK_k\rho K_k^\dagger,
+\quad\sum_kK_k^\dagger K_k=I.}
+\]
+For a single-rail state supported on
+\(\{\ket0,\ket1\}\), loss has
+\[
+K_0=\begin{pmatrix}1&0\\0&\sqrt\eta\end{pmatrix},
+\qquad
+K_1=\begin{pmatrix}0&\sqrt{1-\eta}\\0&0\end{pmatrix}.
+\]
+The \(K_0\) branch contains no environment
+excitation, while \(K_1\) represents losing
+the photon. These are \emph{not} two
+alternative deterministic maps; they form
+one trace-preserving channel when summed.
+
+\begin{worked}{A superposition passes through loss}
+For \(\ket\psi=\alpha\ket0+\beta\ket1\),
+\[
+\rho'=\sum_kK_k\ket\psi\bra\psi K_k^\dagger
+=\boxed{\begin{pmatrix}
+|\alpha|^2+(1-\eta)|\beta|^2&
+\sqrt\eta\,\alpha\beta^*\\
+\sqrt\eta\,\alpha^*\beta&
+\eta|\beta|^2
+\end{pmatrix}}.
+\]
+Check the trace: it is 1.
+The excited population is suppressed by
+\(\eta\), but vacuum--one-photon
+coherence by \(\sqrt\eta\).
+For \(\eta=1\) the original pure state is
+recovered. For \(\eta=0\) the output is vacuum.
+\end{worked}
+
+\subsection{Phase damping is different from photon loss}
+Phase noise can suppress coherences without
+changing photon-number probabilities.
+For a number basis, a random phase
+\(e^{i\phi\hat n}\) has no effect on
+diagonal populations but averages away
+off-diagonal terms such as \(\ket0\bra1\).
+A simple dephasing channel acts on a qubit as
+\[
+\rho_{01}\mapsto\lambda\rho_{01},\quad
+\rho_{00}\mapsto\rho_{00},\quad
+\rho_{11}\mapsto\rho_{11},
+\qquad0\le\lambda\le1.
+\]
+Hence direct photon counting can miss phase
+noise that is obvious in homodyne detection.
+
+\subsection{When measurement becomes conditioning}
+If an environmental or ancilla outcome \(k\)
+is actually observed and kept, use
+\[
+\tilde\rho_k=K_k\rho K_k^\dagger,\quad
+p_k=\operatorname{Tr}\tilde\rho_k,\quad
+\boxed{\rho_k=\tilde\rho_k/p_k}.
+\]
+This is a trace-decreasing \emph{conditional}
+operation. Summing over all outcomes instead
+recovers the unconditional channel.
+For conditional photon subtraction, a weak
+beam splitter followed by a one-photon
+detector click implements an operator
+approximately proportional to \(a\).
+It weights higher Fock components by \(\sqrt n\),
+not simply removing one photon deterministically.
+
+\begin{checkpoint}
+Ask which information is available.
+If the environment is ignored, trace it
+out or sum Kraus branches. If a detector
+outcome is heralded, \emph{select and
+renormalise} that branch, retaining its
+separate success probability.
+\end{checkpoint}
