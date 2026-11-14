@@ -1,0 +1,196 @@
+\assignq{4}{3}{Neutral sodium: radial eigenstates, E1 rates and lifetimes}{1}
+This is the computational question. Here we solve
+a stated effective radial model numerically and
+show all E1 rate calculations; the corresponding
+reproducible Python script accompanies the booklet
+at \texttt{scripts/assignment\_numerical\_solutions.py}.
+
+\subsection*{Step 1: choose the effective central potential}
+Use the parametric screened potential previously
+considered in the sodium practical:
+\[
+\boxed{V_b(r)=-\frac Zr+
+\frac{Z-\xi}{r}(1-e^{-r/b}),\qquad
+Z=11,\ \xi=1,\ b=0.4072},
+\]
+with \(r,b\) in atomic units. Equivalently
+\(V=-1/r-10e^{-r/b}/r\).
+It approaches \(-11/r\) close to the nucleus
+and \(-1/r\) in the valence region.
+It is a \emph{single-electron effective model},
+not a full electron--electron Hartree--Fock
+calculation.
+
+For \(u_{nl}(r)=rR_{nl}(r)\), solve
+\[
+\boxed{-\frac12u''(r)+
+\left[\frac{l(l+1)}{2r^2}+V_b(r)\right]u(r)
+=E_{nl}u(r)},
+\quad
+u(0)=u(r_{\max})=0,\quad
+\int_0^{r_{\max}}|u|^2\diff r=1.
+\]
+Use a finite-difference grid of spacing
+\(h=0.012\,a_0\) and \(r_{\max}=120\,a_0\).
+The second derivative uses
+\(u''(r_i)\simeq(u_{i-1}-2u_i+u_{i+1})/h^2\).
+The resulting Hamiltonian is tridiagonal:
+\[
+H_{ii}=\frac1{h^2}+\frac{l(l+1)}{2r_i^2}+V(r_i),
+\quad H_{i,i\pm1}=-\frac1{2h^2}.
+\]
+Select the correct \(n,l\) eigenstates by
+radial node index \(n-l-1\): \(3s\) has two
+nodes, \(4s\) three, \(3p\) one, \(3d\) zero.
+
+\subsection*{Step 2: numerical energy levels}
+The calculated energies (relative to
+ionisation, in Hartree) are
+\[
+\begin{array}{c|r|r}
+\text{State}&l&E_{nl}\ (\mathrm{Ha})\\\hline
+3s&0&-0.1831367\\
+3p&1&-0.1102218\\
+4s&0&-0.0705131\\
+3d&2&-0.0556813
+\end{array}
+\]
+The experimentally compiled sodium excitation
+energies for comparison are approximately
+\(16956\ \mathrm{cm}^{-1}\) for \(3p_{1/2}\),
+\(25740\ \mathrm{cm}^{-1}\) for \(4s\), and
+\(29173\ \mathrm{cm}^{-1}\) for \(3d\).
+They are not exactly reproduced because
+a single spin-independent central potential
+cannot capture all fine-structure and
+correlation effects.
+
+\subsection*{Step 3: identify every downward E1 channel}
+For a single electron, the E1 dipole operator
+has odd parity and \(\Delta l=\pm1\).
+With the ordering above, the primary allowed
+decays are
+\[
+\boxed{3p\to3s,\qquad
+4s\to3p,\qquad
+3d\to3p.}
+\]
+The direct \(4s\to3s\) and \(3d\to3s\)
+channels are E1-forbidden (\(\Delta l=0\)
+and \(\Delta l=-2\), respectively).
+The model level sketch is:
+\[
+\begin{tikzpicture}[x=1cm,y=.9cm,>=Latex]
+\draw[->] (0,0)--(0,5.1) node[above]{Energy};
+\draw[accent,very thick](1,0.7)--(3.4,0.7)
+node[right,ink]{\(3s\;{}^2S\)};
+\draw[accent,very thick](1,2.4)--(3.4,2.4)
+node[right,ink]{\(3p\;{}^2P^o\)};
+\draw[accent,very thick](1,3.4)--(3.4,3.4)
+node[right,ink]{\(4s\;{}^2S\)};
+\draw[accent,very thick](1,4.2)--(3.4,4.2)
+node[right,ink]{\(3d\;{}^2D\)};
+\draw[->,thick] (1.5,2.25)--(1.5,.83);
+\draw[->,thick] (2.1,3.25)--(2.1,2.53);
+\draw[->,thick] (2.8,4.05)--(2.8,2.53);
+\end{tikzpicture}
+\]
+
+\subsection*{Step 4: evaluate the radial dipole integrals}
+With \(u=rR\), the radial matrix element is
+\[
+D_{if}=\int_0^\infty u_f(r)\,r\,u_i(r)\diff r.
+\]
+The numerically computed magnitudes and
+transition energies are
+\[
+\begin{array}{c|r|r}
+i\to f&|D_{if}|\ (a_0)&
+\omega_{if}=E_i-E_f\ (\mathrm{Ha})\\\hline
+3p\to3s&4.48268&0.0729149\\
+4s\to3p&4.36430&0.0397087\\
+3d\to3p&5.97665&0.0545405
+\end{array}
+\]
+Angular integration over \(Y_{lm}\) supplies
+the E1 weights. For a nonrelativistic
+spinless orbital with its magnetic substates
+appropriately averaged, the total downward
+rate is
+\[
+\boxed{A_{if}=\frac{4\alpha_{\rm fs}^3}{3t_{\rm au}}\,
+\omega_{if}^3\,\frac{l_>}{2l_i+1}\,
+|D_{if}|^2,}
+\]
+where \(l_>=\max(l_i,l_f)\),
+\(t_{\rm au}=2.4188843266\times10^{-17}\) s.
+The factors \(l_>/(2l_i+1)\) are
+\(1/3\) for \(p\to s\), \(1\) for
+\(s\to p\) and \(2/5\) for \(d\to p\).
+
+\subsection*{Step 5: sum rates and calculate lifetimes}
+The excited-state lifetime is
+\(\tau_i=[\sum_{f<i}A_{if}]^{-1}\).
+With the specified model, each upper state has
+one primary orbital E1 channel:
+\[
+\begin{array}{c|r|r}
+i&\text{Calculated }A_i\ (\mathrm{s}^{-1})
+&\boxed{\tau_i\ (\mathrm{ns})}\\\hline
+3p&5.562\times10^7&17.979\\
+4s&2.545\times10^7&39.147\\
+3d&4.965\times10^7&20.139
+\end{array}
+\]
+These are independently computed predictions,
+not values fitted to the reference lifetimes.
+
+\subsection*{Step 6: compare with published atomic data}
+Published nonrelativistic/relativistic
+atomic-structure calculations for the Na-like
+sequence at \(Z=11\) report approximately
+\(16.48\) ns for \(3p\), \(38.25\) ns for
+\(4s\), and \(19.67\) ns for \(3d\);
+the \(J\)-resolved values vary slightly.
+Our percentage differences from these
+\emph{theoretical reference} results are:
+\[
+\begin{array}{c|r|r|r}
+&\text{this model (ns)}&
+\text{ref. theory (ns)}&
+\text{difference}\\\hline
+3p&17.979&16.48&+9.10\%\\
+4s&39.147&38.25&+2.34\%\\
+3d&20.139&19.67&+2.39\%
+\end{array}
+\]
+A separately published direct measurement
+of Na I \(3p\) reports \(17.3\pm1.0\) ns,
+consistent with our predicted \(17.98\) ns
+at that uncertainty. The \(4s\) and \(3d\)
+benchmark values in the table are
+\emph{calculations}, not claimed direct
+measurements; a precise experimental
+comparison should use a cited measured
+dataset for each fine-structure component.
+
+\subsection*{Step 7: limitations}
+This simple model ignores core polarisation,
+electron correlation beyond the fitted
+potential, spin--orbit fine structure and
+configuration mixing. Its chosen \(b\)
+parameter controls the radial overlaps;
+different fitted potentials change \(\tau\).
+Higher multipoles, collisional quenching,
+cascades and branching into more levels
+may matter outside the minimal model.
+Numerical convergence should be checked by
+decreasing \(h\) and increasing \(r_{\max}\).
+
+\methodnote{Reproduce every number using
+\texttt{python scripts/assignment\_numerical\_solutions.py}.
+References: Froese Fischer \emph{et al.},
+Atomic Data and Nuclear Data Tables \textbf{92}
+(2006), Na-like \(Z=11\) lifetimes;
+NIST Na I energy-level table; 1970 JOSA
+Na I \(3p\) lifetime measurement.}
