@@ -1,0 +1,156 @@
+\unit{Question-type atlas, glossary and further practice}
+\unitref{All tutorials, assignments and 2023--2025 examinations}
+\subsection{Recognise a question before reaching for a formula}
+The same few strategies recur throughout this course.
+Use the table below to find the relevant teaching chapter
+and then consult the longer worked-solutions booklets.
+\begin{tabularx}{\linewidth}{@{}p{40mm}X@{}}
+\toprule
+\textbf{If the question asks about\ldots}&
+\textbf{Start by doing this}\\\midrule
+Coherent / thermal number counts&
+Expand in \(\ket n\), form \(P_n\), evaluate
+mean and factorial moments (Chapters 1--2)\\
+HOM or photonic circuits&
+Transform \emph{creation} operators and
+normalise Fock states (Chapter 3)\\
+Quadratures / squeezing&
+State \([x,p]=2i\); compute means and
+covariance, then apply the noise model (4--5)\\
+Bell protocols and QKD&
+Write the actual input state, gates,
+measurement branches and sifted conditions (6--7)\\
+Optical loss / postselection&
+Include an environmental mode, trace or
+project and normalise correctly (8--10)\\
+Langevin cavity&
+Commute Hamiltonian, Fourier transform and
+apply the input--output boundary relation (9)\\
+Atom--cavity coupling&
+Choose conserved-excitation basis and
+diagonalise a small block (11)\\
+Quantum metrology&
+Identify parameter generator and actual
+measurement probabilities (12)\\
+Hydrogen / nuclear size&
+Separate \(R(r)Y_{lm}\); verify the radial
+measure and use perturbation theory (13)\\
+Configurations / LS terms&
+Enforce antisymmetry; couple \(L,S,J\);
+check the total state count (14)\\
+3-j / transition amplitude&
+Check triangle and \(m\) sums, then
+Wigner--Eckart and parity (15,17)\\
+Fine / hyperfine / Zeeman&
+Choose \(L,S,J,I,F\), identify weak- or
+strong-field basis, compute splitting (16)\\
+Lifetime / multipoles&
+Select allowed tensor rank and parity,
+calculate dipole, sum all downward \(A\)'s (17)\\
+Rabi pulse / laser cooling&
+Distinguish coherent pulse area from
+dissipative scattering force (18)\\
+Atomic PV / EDM&
+Find the symmetry-forbidden leading term,
+then perturbatively mix states (19)\\
+Cesium / optical clock&
+Calculate hyperfine reference,
+identify field-insensitive sublevels
+and systematic shifts (20)\\
+\bottomrule
+\end{tabularx}
+
+\subsection{Frequently confused concepts}
+\textbf{Probability amplitude vs probability:}
+a quantum state uses complex amplitudes;
+only their modulus squared gives a probability.
+
+\textbf{Coherent state vs pure state:}
+a coherent state is one particular
+pure oscillator state; many other
+pure states are nonclassical.
+
+\textbf{Mode overlap vs optical power:}
+photon interference visibility depends
+on mode indistinguishability, not just intensity.
+
+\textbf{Relative phase vs global phase:}
+a global factor \(e^{i\phi}\ket\psi\)
+does not change measurement results,
+but a relative phase between components does.
+
+\textbf{Kraus channel vs conditional outcome:}
+summed branches are trace preserving;
+one selected detector outcome must
+be renormalised and assigned a success probability.
+
+\textbf{Angular momentum \(J\) vs term \(L,S\):}
+total electronic \(J\) is the vector sum
+of already coupled electronic orbital and spin moments.
+Hyperfine \(F\) then adds nuclear \(I\).
+
+\textbf{Allowed angular transition vs nonzero line strength:}
+a 3-j symbol can pass selection rules
+while the reduced atomic matrix element vanishes.
+
+\textbf{Natural linewidth vs laser detuning:}
+linewidth arises from decay/decoherence;
+detuning is the frequency mismatch
+between laser and atomic resonance.
+
+\textbf{Clock accuracy vs stability:}
+accuracy concerns systematic offset;
+stability concerns fluctuations over averaging time.
+
+\subsection{Physical constants and units that recur}
+\[
+\begin{array}{@{}ll@{}}
+\hbar=h/(2\pi)&\text{reduced Planck constant}\\
+a_0=5.29177\times10^{-11}\,\mathrm m&
+\text{Bohr radius}\\
+1E_h=27.2114\,\mathrm{eV}&\text{Hartree energy}\\
+1E_h/(hc)=219474.63\,\mathrm{cm}^{-1}&
+\text{atomic spectroscopy}\\
+t_{\rm au}=2.418884\times10^{-17}\,\mathrm s&
+\text{atomic unit of time}\\
+\mu_B=e\hbar/(2m_e)&\text{Bohr magneton}\\
+\alpha_{\rm fs}\simeq1/137.036&
+\text{fine-structure constant}
+\end{array}
+\]
+When a problem switches between wavelength,
+wavenumber, frequency and angular frequency,
+write each definition explicitly:
+\[
+\tilde\nu=1/\lambda,\quad
+\nu=c/\lambda,\quad
+\omega=2\pi\nu,\quad E=h\nu=\hbar\omega.
+\]
+The factors of \(2\pi\) are particularly
+important in linewidth and Rabi calculations.
+
+\subsection{Where to practise each technique}
+The repository companion booklets are designed
+to work together:
+\begin{enumerate}
+\item The \emph{15-page Course Overview} is the
+fast exam-day map of key physical results.
+\item The \emph{Worked Examples} booklet provides
+twenty carefully selected full calculations.
+\item The \emph{Assignment Solutions} booklet
+develops derivations and numerical methods
+associated with four assignment sheets.
+\item The \emph{2023--2025 Past Exam Solutions}
+booklet covers twelve full exam questions.
+\end{enumerate}
+In revision, read a mini-text chapter
+and try the associated problem \emph{before}
+looking at its worked solution.
+List any remaining conceptual difficulty
+in the repository's mistakes-and-gaps notes.
+\begin{checkpoint}
+An exam solution is strongest when it
+connects a choice of model, a governing
+operator, a calculation, a limiting-case
+check and a physical interpretation.
+\end{checkpoint}
