@@ -1,0 +1,94 @@
+ASSIGNMENT 3 Q1. 209Bi nuclear-size shifts
+Uniform nuclear radius = 0.0001346941876 Bohr = 7.1277095 fm
+State    finite-size (Ha)    finite-size (eV)   Dirac minus Schrodinger (Ha)
+1s       3.4121526085e-01   9.2849402560e+00         -391.869567896
+2p1/2    9.5458485997e-08   2.5975577329e-06         -123.796154193
+3d3/2    8.6335898942e-15   2.3493194930e-13          -12.312873071
+3d5/2    8.6335898942e-15   2.3493194930e-13           -3.981599674
+1s small-R leading shift: 0.3444054943 Hartree
+
+ASSIGNMENT 4 Q3. Na effective-potential E1 lifetimes
+Radius step = 0.012 a0; r_max = 120.0 a0
+3s   E=-0.183136712 Ha
+3p   E=-0.110221816 Ha
+4s   E=-0.070513083 Ha
+3d   E=-0.055681345 Ha
+Transition  radial dipole(a0)  omega(Ha)    A(s^-1)       lifetime(ns)
+3p->3s          4.4826800   0.07291490  5.5619e+07       17.97949
+4s->3p          4.3642979   0.03970873  2.5545e+07       39.14655
+3d->3p          5.9766548   0.05454047  4.9654e+07       20.13944
+Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,
+3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).
+Na 3p historical direct measurement: 17.3 +/- 1.0 ns
+(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral
+and Ionized Sodium and Potassium; experimental Na I 3p result).
+
+Grid-convergence check:
+--- h = 0.024 ---
+
+ASSIGNMENT 4 Q3. Na effective-potential E1 lifetimes
+Radius step = 0.024 a0; r_max = 120.0 a0
+3s   E=-0.182387919 Ha
+3p   E=-0.110290032 Ha
+4s   E=-0.070334917 Ha
+3d   E=-0.055681387 Ha
+Transition  radial dipole(a0)  omega(Ha)    A(s^-1)       lifetime(ns)
+3p->3s          4.5019377   0.07209789  5.4233e+07       18.43890
+4s->3p          4.3354688   0.03995511  2.5681e+07       38.93957
+3d->3p          5.9705284   0.05460864  4.9738e+07       20.10530
+Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,
+3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).
+Na 3p historical direct measurement: 17.3 +/- 1.0 ns
+(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral
+and Ionized Sodium and Potassium; experimental Na I 3p result).
+--- h = 0.016 ---
+
+ASSIGNMENT 4 Q3. Na effective-potential E1 lifetimes
+Radius step = 0.016 a0; r_max = 120.0 a0
+3s   E=-0.182941371 Ha
+3p   E=-0.110239412 Ha
+4s   E=-0.070466650 Ha
+3d   E=-0.055681356 Ha
+Transition  radial dipole(a0)  omega(Ha)    A(s^-1)       lifetime(ns)
+3p->3s          4.4877020   0.07270196  5.5257e+07       18.09736
+4s->3p          4.3568197   0.03977276  2.5581e+07       39.09165
+3d->3p          5.9750741   0.05455806  4.9676e+07       20.13062
+Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,
+3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).
+Na 3p historical direct measurement: 17.3 +/- 1.0 ns
+(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral
+and Ionized Sodium and Potassium; experimental Na I 3p result).
+--- h = 0.012 ---
+
+ASSIGNMENT 4 Q3. Na effective-potential E1 lifetimes
+Radius step = 0.012 a0; r_max = 120.0 a0
+3s   E=-0.183136712 Ha
+3p   E=-0.110221816 Ha
+4s   E=-0.070513083 Ha
+3d   E=-0.055681345 Ha
+Transition  radial dipole(a0)  omega(Ha)    A(s^-1)       lifetime(ns)
+3p->3s          4.4826800   0.07291490  5.5619e+07       17.97949
+4s->3p          4.3642979   0.03970873  2.5545e+07       39.14655
+3d->3p          5.9766548   0.05454047  4.9654e+07       20.13944
+Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,
+3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).
+Na 3p historical direct measurement: 17.3 +/- 1.0 ns
+(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral
+and Ionized Sodium and Potassium; experimental Na I 3p result).
+--- h = 0.01 ---
+
+ASSIGNMENT 4 Q3. Na effective-potential E1 lifetimes
+Radius step = 0.01 a0; r_max = 120.0 a0
+3s   E=-0.183213687 Ha
+3p   E=-0.110214921 Ha
+4s   E=-0.070531372 Ha
+3d   E=-0.055681341 Ha
+Transition  radial dipole(a0)  omega(Ha)    A(s^-1)       lifetime(ns)
+3p->3s          4.4807015   0.07299877  5.5762e+07       17.93342
+4s->3p          4.3672364   0.03968355  2.5531e+07       39.16836
+3d->3p          5.9772743   0.05453358  4.9645e+07       20.14290
+Reference theoretical lifetimes: Na 3p ~=16.48 ns, 4s ~=38.25 ns,
+3d ~=19.7 ns (Froese Fischer et al., ADND Tables 92 [2006], Z=11).
+Na 3p historical direct measurement: 17.3 +/- 1.0 ns
+(JOSA 60, 1199 [1970]: Atomic-Lifetime Measurements for Neutral
+and Ionized Sodium and Potassium; experimental Na I 3p result).
