@@ -1,0 +1,159 @@
+\unit{Damping, Langevin noise and master equations}
+\unitref{W5L2; 2024 Q4; 2025 Q4}
+\subsection{Two ways of describing the same physics}
+The Heisenberg picture evolves operators;
+the Schr\"odinger picture evolves density matrices.
+For a closed system,
+\[
+\dot O=\frac{i}{\hbar}[H,O],\qquad
+\dot\rho=-\frac{i}{\hbar}[H,\rho].
+\]
+An open system also has damping and fluctuations,
+because it couples to many unobserved bath modes.
+The Markov approximation replaces bath memory
+by effectively instantaneous noise; it is
+useful when bath correlations decay quickly
+compared with the system dynamics.
+
+\subsection{Where the quantum Langevin equation comes from}
+A cavity mode \(a\) coupled weakly to
+a continuum of oscillators \(b_\omega\)
+has a Hamiltonian of the schematic form
+\[
+H/\hbar=\omega_ca^\dagger a+
+\int\omega b_\omega^\dagger b_\omega d\omega+
+i\int\kappa(\omega)
+(a^\dagger b_\omega-b_\omega^\dagger a)d\omega.
+\]
+One first solves the bath equation for \(b_\omega(t)\);
+substituting it back into the cavity equation
+produces a \emph{damping} term and an
+\emph{input noise} term. In a frame rotating
+at the cavity resonance,
+\[
+\boxed{\dot a=-\frac\gamma2a+
+\sqrt\gamma\,a_{\rm in}(t)}
+\]
+for an undriven cavity with one damping port.
+The noise operator is not an optional
+classical disturbance: it ensures that
+operator commutators remain physically valid.
+
+\subsection{Fourier solving is usually easiest}
+Define
+\(\tilde a(\omega)=\int_{-\infty}^\infty
+a(t)e^{-i\omega t}\,dt\), so
+\(\widetilde{\dot a}=i\omega\tilde a\)
+when boundary terms vanish.
+Then
+\[
+(i\omega+\gamma/2)\tilde a
+=\sqrt\gamma\,\tilde a_{\rm in},
+\qquad
+\boxed{\tilde a=
+\frac{\sqrt\gamma}{\gamma/2+i\omega}
+\tilde a_{\rm in}}.
+\]
+The denominator is the cavity susceptibility.
+Near zero detuning it has a large response;
+far from resonance the response is smaller.
+A consistent Fourier convention is essential
+because another sign convention replaces
+\(i\omega\) by \(-i\omega\).
+
+\subsection{Input--output theory}
+With one common convention,
+\[
+a_{\rm out}=\sqrt\gamma\,a-a_{\rm in}.
+\]
+Eliminating the intracavity operator gives
+a frequency-dependent relation between
+input and output fields. For a two-port
+cavity with \(\gamma=\gamma_1+\gamma_2\),
+\[
+\dot a=-\frac\gamma2a+
+\sqrt{\gamma_1}a_{{\rm in},1}
++\sqrt{\gamma_2}a_{{\rm in},2},
+\]
+\[
+\boxed{
+\tilde a_{{\rm out},1}
+=\frac{\gamma_1-\gamma/2-i\omega}
+{\gamma/2+i\omega}\tilde a_{{\rm in},1}
++\frac{\sqrt{\gamma_1\gamma_2}}
+{\gamma/2+i\omega}\tilde a_{{\rm in},2}.}
+\]
+At \(\omega=0\) and \(\gamma_1=\gamma_2\)
+the coherent reflection coefficient vanishes.
+But the second input's vacuum fluctuations
+must remain in the \emph{field operator}.
+
+\subsection{The Lindblad master equation}
+After tracing over a Markovian bath, a general
+trace-preserving reduced evolution is
+\[
+\boxed{\dot\rho=-\frac{i}{\hbar}[H,\rho]+
+\sum_j\gamma_j\mathcal D[L_j]\rho},
+\]
+where
+\[
+\mathcal D[L]\rho=L\rho L^\dagger
+-\frac12(L^\dagger L\rho+\rho L^\dagger L).
+\]
+A cavity losing photons into vacuum has
+\(L=a\), while a two-level atom decaying
+spontaneously has \(L=\sigma_-\).
+Pure dephasing can be modelled with a
+Hermitian jump operator related to \(\sigma_z\).
+The jump operator tells you \emph{which
+physical transition the environment causes}.
+
+\begin{worked}{Photon number decays exponentially}
+For zero-temperature cavity loss,
+\(\dot\rho=\gamma\mathcal D[a]\rho\).
+Use \(\frac{d}{dt}\langle n\rangle
+=\operatorname{Tr}(n\dot\rho)\) and
+\([n,a]=-a\). After rearrangement,
+\[
+\frac{d}{dt}\langle n\rangle
+=-\gamma\langle n\rangle.
+\]
+Hence
+\[
+\boxed{\langle n(t)\rangle
+=\langle n(0)\rangle e^{-\gamma t}}.
+\]
+The field amplitude decays at half
+that exponent (\(\gamma/2\)), explaining
+the factor 2 in the Langevin equation.
+\end{worked}
+
+\subsection{Parametric squeezing in a cavity}
+For interaction
+\(H_I=(i\hbar\chi/2)(a^2-a^{\dagger2})\),
+the Heisenberg commutator contributes
+\(-\chi a^\dagger\) to \(\dot a\).
+Define \(X_+=a+a^\dagger\), giving
+\[
+\dot X_+=-(\gamma/2+\chi)X_+
++\sqrt\gamma X_{+,\rm in}.
+\]
+The output noise transfer factor leads to
+\[
+\boxed{V_+(\omega)=
+\frac{(\gamma/2-\chi)^2+\omega^2}
+{(\gamma/2+\chi)^2+\omega^2}}
+\]
+for unit vacuum input spectrum and
+\(0<\chi<\gamma/2\).
+The \emph{variance} comes from
+field-fluctuation correlations, not
+the square of the mean field.
+
+\begin{checkpoint}
+For a Langevin exam question:
+identify the Hamiltonian and port rates,
+calculate the commutator, Fourier transform,
+apply the exact input--output sign
+convention, then evaluate the noise spectrum.
+\end{checkpoint}
