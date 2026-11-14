@@ -1,0 +1,133 @@
+\unit{A practical mathematical toolkit}
+\unitref{Common methods across all four course parts}
+\subsection{Expectation values in an eigenbasis}
+Suppose \(\ket\psi=\sum_nc_n\ket n\),
+where \(\ket n\) are eigenstates of an
+observable \(A\) with eigenvalues \(a_n\).
+Then
+\[
+\langle A\rangle=\sum_n|c_n|^2a_n,\quad
+(\Delta A)^2=\sum_n|c_n|^2a_n^2
+-\left(\sum_n|c_n|^2a_n\right)^2.
+\]
+The \emph{probabilities} are \(|c_n|^2\),
+not \(c_n\). For operators not diagonal
+in this basis, retain cross terms
+\(c_m^*c_n\bra mA\ket n\).
+
+\subsection{Commutators and transformations}
+For Heisenberg evolution
+\(\dot O=(i/\hbar)[H,O]\).
+If \(H\) is a two-level Hamiltonian
+\(H=(\hbar\Omega/2)\sigma_x\),
+\[
+U(t)=e^{-i\Omega t\sigma_x/2}
+=I\cos(\Omega t/2)
+-i\sigma_x\sin(\Omega t/2),
+\]
+because \(\sigma_x^2=I\).
+For field displacement
+\(D=e^{\alpha a^\dagger-\alpha^*a}\),
+the identity \(D^\dagger aD=a+\alpha\)
+follows by truncating the nested
+commutator expansion after one step.
+
+\subsection{Useful sums and integrals}
+The geometric series for \(|q|<1\) is
+\(\sum_{n=0}^\infty q^n=(1-q)^{-1}\).
+Differentiate with respect to \(q\) to obtain
+\[
+\sum_{n=0}^\infty nq^n=\frac{q}{(1-q)^2},\quad
+\sum_{n=0}^\infty n^2q^n
+=\frac{q(1+q)}{(1-q)^3}.
+\]
+For \(\beta>0\) and integer \(m\ge0\),
+\[
+\boxed{\int_0^\infty r^me^{-\beta r}dr
+=\frac{m!}{\beta^{m+1}}.}
+\]
+These formulas appear in thermal
+photon statistics and hydrogen radial
+expectation calculations.
+
+\subsection{Perturbation theory}
+For \(H=H_0+\lambda V\) and a
+nondegenerate unperturbed state \(\ket i\),
+\[
+E_i^{(1)}=\bra iV\ket i,\qquad
+E_i^{(2)}=
+\sum_{n\ne i}\frac{|\bra nV\ket i|^2}
+{E_i^{(0)}-E_n^{(0)}}.
+\]
+A first-order correction to the
+\emph{state} is
+\[
+\ket{i^{(1)}}=
+\sum_{n\ne i}\ket n
+\frac{\bra nV\ket i}{E_i^{(0)}-E_n^{(0)}}.
+\]
+Use the energy formula for a
+finite-nucleus or Stark \emph{shift};
+use the state-mixing formula to
+explain how weak parity violation
+creates a forbidden transition.
+For degenerate levels, first
+diagonalise the perturbation in
+the degenerate subspace.
+
+\subsection{Fourier transforms of differential equations}
+With the convention
+\(\tilde f(\omega)=\int f(t)e^{-i\omega t}dt\),
+\(\widetilde{\dot f}=i\omega\tilde f\).
+Hence
+\[
+\dot a=-\lambda a+f(t)
+\quad\Longrightarrow\quad
+\boxed{\tilde a(\omega)=
+\frac{\tilde f(\omega)}{\lambda+i\omega}}.
+\]
+A cavity susceptibility is an
+instance of this elementary
+linear-response formula.
+The real damping rate appears
+in the denominator together
+with frequency detuning.
+
+\subsection{Normalisation of conditional quantum states}
+A detected branch is generally
+\(\tilde\rho=K\rho K^\dagger\).
+Keep its trace as the success
+probability \(p=\operatorname{Tr}\tilde\rho\)
+and only then write \(\rho_{\rm cond}=\tilde\rho/p\).
+It is mathematically invalid to
+normalise individual terms before
+adding coherent amplitudes or
+to sum conditional probabilities
+without their branch weights.
+
+\begin{worked}{A quick selection-rule test}
+Suppose a putative E2 transition goes
+from \(J=0\) to \(J'=1\).
+E2 has tensor rank \(k=2\).
+The triangle rule requires
+\[
+|0-1|\le2\le0+1,
+\]
+which fails at the right-hand inequality.
+Therefore the rank-2 matrix element
+vanishes before any radial integral
+is evaluated. A parity check is
+still needed for other pairs
+that pass the triangle rule.
+\end{worked}
+
+\begin{checkpoint}
+Often the difficult part is recognising
+the \emph{right representation}.
+Fock expansions for photon counts;
+quadratures for homodyne/squeezing;
+Kraus operators for channels;
+small angular-momentum blocks for
+atomic splittings; reduced matrix
+elements for spectral transitions.
+\end{checkpoint}
