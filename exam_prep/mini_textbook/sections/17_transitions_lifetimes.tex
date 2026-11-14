@@ -1,0 +1,175 @@
+\unit{Atomic spectroscopy, multipoles and radiative lifetimes}
+\unitref{Week 9; Week 10; Assignment 4 Q3}
+\subsection{Absorption and emission connect energy levels}
+An atom absorbs light when an electromagnetic
+mode drives a transition between its
+quantum energy eigenstates. Energy
+conservation fixes
+\[
+\hbar\omega_{if}=E_i-E_f,\quad
+\nu=\frac{E_i-E_f}{h},\quad
+\lambda=\frac{hc}{E_i-E_f}.
+\]
+A positive energy difference alone does
+not guarantee a transition:
+the light--matter interaction operator
+must have a nonzero matrix element
+between the two states.
+
+\subsection{Electric dipole coupling}
+The leading long-wavelength interaction
+is \(H_{\rm int}=-\mathbf d\cdot\mathbf E\),
+where the electron dipole is \(\mathbf d=-e\mathbf r\).
+The transition amplitude contains
+\[
+\mathcal M_{fi}\propto
+\bra f\mathbf d\cdot\boldsymbol\epsilon\ket i.
+\]
+This separates into radial and angular
+factors when orbitals are expressed as
+\(R_{nl}(r)Y_{lm}(\theta,\phi)\).
+For an electric dipole the radial integral is
+\[
+\boxed{\int_0^\infty
+R_f^*(r)R_i(r)\,r^3dr}
+\]
+or, using \(u=rR\),
+\(\int u_f^*(r)\,r\,u_i(r)dr\).
+The power \(r^3\) combines the
+\(r^2dr\) volume measure with
+the additional \(r\) from the dipole.
+
+\subsection{Multipole rank and parity rules}
+An electric multipole \(Ek\)
+is a rank-\(k\) spherical tensor
+of parity \((-1)^k\);
+a magnetic multipole \(Mk\)
+has parity \((-1)^{k+1}\).
+For total angular momenta \(J,J'\),
+the geometric rule is
+\[
+\boxed{|J-J'|\le k\le J+J',\qquad
+m'=m+q,\quad |q|\le k.}
+\]
+For the most common transitions:
+\[
+\begin{array}{l|l|l}
+&\text{Parity}&\text{Common }J\text{ rules}\\\hline
+E1\ (k=1)&\text{changes}&
+\Delta J=0,\pm1,\;0\nleftrightarrow0\\
+M1\ (k=1)&\text{same}&
+\Delta J=0,\pm1,\;0\nleftrightarrow0\\
+E2\ (k=2)&\text{same}&
+|\Delta J|\le2,\ J+J'\ge2
+\end{array}
+\]
+The usual E1 orbital rule for one electron
+is \(\Delta l=\pm1\).
+For E2 the single-electron orbital rules
+are \(\Delta l=0,\pm2\), subject to triangle
+conditions. Thus \(s\leftrightarrow d\)
+can be E2, but \(s\leftrightarrow p\)
+is not E2 because parity changes.
+Additional approximate LS coupling rules,
+such as \(\Delta S=0\) for electric-dipole
+transitions, may be softened by spin--orbit
+mixing. A weak intercombination line can
+therefore exist even if it is forbidden
+in ideal LS coupling.
+
+\begin{worked}{Which sodium transitions can radiate by E1?}
+The valence-orbital transitions
+\(3p\to3s\), \(4s\to3p\)
+and \(3d\to3p\) all have
+\(\Delta l=\pm1\), so their
+orbital E1 matrix elements may
+be nonzero. But \(3d\to3s\)
+has \(\Delta l=-2\) and is E1 forbidden.
+Always check \emph{downward energy ordering}
+for spontaneous emission: an angularly
+allowed upward transition is absorption,
+not spontaneous decay from a lower level.
+\end{worked}
+
+\subsection{Why some states decay quickly}
+An excited atom couples to vacuum
+electromagnetic modes and can
+spontaneously emit a photon. For an
+E1 transition between appropriately
+specified states,
+\[
+\boxed{A_{if}=
+\frac{\omega_{if}^3}{3\pi\epsilon_0\hbar c^3}
+|\bra f\mathbf d\ket i|^2,}
+\]
+where the displayed vector dipole
+strength and sublevel/polarisation
+summations must be handled consistently.
+The strong \(\omega^3\) dependence means
+larger energy gaps generally radiate
+faster for comparable matrix elements.
+A forbidden E1 line may instead decay
+by much weaker M1/E2 channels,
+making it useful for long-lived
+clock or metastable states.
+
+\subsection{Lifetime and branching ratios}
+If an excited state can decay into
+several lower states,
+\[
+\boxed{\Gamma_i=\sum_{f<i}A_{if},\quad
+\tau_i=\Gamma_i^{-1},\quad
+b_{if}=\frac{A_{if}}{\Gamma_i}.}
+\]
+Do \emph{not} use the inverse
+of just one \(A\) if multiple
+important decay channels exist.
+In quantum optics \(\Gamma_i\)
+is a population decay rate with units
+\(\mathrm{s}^{-1}\); a natural
+linewidth in angular-frequency units
+is of order \(\Gamma_i\).
+
+\begin{worked}{A transition-rate calculation with a stated dipole}
+For a \emph{hypothetical} 589 nm line with
+\(|\mathbf d|=2ea_0\) and no other
+downward channels,
+\[
+\omega=\frac{2\pi c}{589\,\mathrm{nm}},
+\quad
+A=\frac{\omega^3(2ea_0)^2}
+{3\pi\epsilon_0\hbar c^3}.
+\]
+This gives a rate of order
+\(4\times10^7\ \mathrm{s}^{-1}\)
+and a lifetime of order
+\(25\) ns. It is an illustration
+of using the formula, \emph{not}
+a claim about a measured Na lifetime.
+For actual sodium, compute the
+wavefunction-derived matrix elements
+and sum all allowed channels.
+\end{worked}
+
+\subsection{Einstein coefficients and induced processes}
+An incident radiation field can
+stimulate both absorption and emission.
+Einstein's \(A\) coefficient describes
+spontaneous decay; the \(B\) coefficients
+describe rates proportional to the
+radiation energy density.
+Their detailed-balance relations explain
+thermal equilibrium radiation and
+underlie laser gain calculations.
+A large population inversion makes
+stimulated emission dominate absorption
+at the selected lasing transition.
+
+\begin{checkpoint}
+A complete transition question requires
+\emph{energy}, \emph{tensor rank},
+\emph{angular-momentum triangle},
+\emph{parity}, and a \emph{reduced
+matrix element}. A lifetime then needs
+all allowed downward branches.
+\end{checkpoint}
