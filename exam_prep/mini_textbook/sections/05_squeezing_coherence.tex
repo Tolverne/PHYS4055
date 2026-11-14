@@ -1,0 +1,128 @@
+\unit{Squeezing, coherence and photon correlations}
+\unitref{W3L2, W3L3; W6L3; Assignment 1}
+\subsection{What is actually being squeezed?}
+Squeezing changes \emph{field quadrature
+uncertainties}. A vacuum state has equal
+variance 1 in \(x,p\) with our convention.
+For real \(r\), a squeezing operator can be defined as
+\[
+S(r)=\exp\left[\frac r2(a^2-a^{\dagger2})\right].
+\]
+Its Bogoliubov action is
+\[
+S^\dagger aS=a\cosh r-a^\dagger\sinh r.
+\]
+Consequently
+\[
+S^\dagger xS=e^{-r}x,\qquad
+S^\dagger pS=e^{r}p,
+\]
+and the squeezed vacuum \(S(r)\ket0\) has
+\[
+\boxed{(\Delta x)^2=e^{-2r},\quad
+(\Delta p)^2=e^{2r},\quad
+\Delta x\,\Delta p=1.}
+\]
+The uncertainty ellipse becomes narrow in
+one direction and wide in the other;
+the product does \emph{not} violate Heisenberg.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,scale=.8]
+\draw[->](-3,0)--(3,0)node[right]{\(x\)};
+\draw[->](0,-2.5)--(0,2.5)node[above]{\(p\)};
+\draw[dashed,gray,thick](0,0)circle(1.05);
+\draw[accent,thick,fill=accent!10](0,0)ellipse(.55 and 1.95);
+\node[below right]at(.5,-1.65){squeezed};
+\node[above left,gray]at(-1,1){vacuum};
+\end{tikzpicture}
+\end{center}
+
+\subsection{How can vacuum contain squeezed photons?}
+The squeezed vacuum has
+\(\langle a\rangle=0\), but its mean
+photon number is
+\[
+\boxed{\langle n\rangle=\sinh^2r.}
+\]
+It contains even-number superposition components
+produced by a parametric process.
+A \emph{displaced squeezed} state has nonzero
+mean field as well as anisotropic noise.
+The order of \(D(\alpha)\) and \(S(r)\)
+matters if a calculation asks for the
+total number population, because
+the two operators do not generally commute.
+
+\subsection{Squeezing helps only the measured direction}
+If a signal shifts the \(x\)-mean by
+\(\delta x\), the noise-limited sensitivity
+scales as \(\delta x/\Delta x\).
+An \(x\)-squeezed probe reduces
+\(\Delta x\) by \(e^{-r}\) and improves this
+signal-to-noise ratio. But if one measures
+the \(p\) quadrature instead, the noise
+is \emph{larger}. The optical phase of
+the local oscillator must therefore
+match the squeezing axis.
+
+\begin{worked}{How loss spoils squeezing}
+Take input \(x\)-quadrature variance
+\(V_{\rm in}=e^{-2r}=1/4\), and a channel
+with power transmission \(\eta=0.8\).
+A vacuum environment enters through the
+unobserved beam-splitter port:
+\[
+V_{\rm out}=\eta V_{\rm in}+(1-\eta)V_{\rm vac}
+=0.8(1/4)+0.2(1)=\boxed{0.40}.
+\]
+The output is still squeezed relative
+to vacuum (\(V_{\rm out}<1\)), but
+not as strongly as the input.
+\end{worked}
+
+\subsection{What does coherence measure?}
+First-order coherence measures field
+correlations across space or time:
+\[
+G^{(1)}(t,t+\tau)
+=\langle a^\dagger(t)a(t+\tau)\rangle.
+\]
+It is related to ordinary interference
+visibility and spectral linewidth.
+Second-order coherence measures correlated
+photon arrivals,
+\[
+G^{(2)}(t,t+\tau)=
+\langle a^\dagger(t)a^\dagger(t+\tau)
+a(t+\tau)a(t)\rangle.
+\]
+Normalised \(g^{(2)}(0)>1\) describes
+bunching; \(g^{(2)}(0)<1\) describes
+antibunching, which is nonclassical
+for a stationary single-mode field
+under conventional assumptions.
+An experiment can reveal coherence
+without being a direct measurement
+of a particular optical phase.
+
+\subsection{Pair production and heralding}
+A two-mode squeezed vacuum
+\(\sum_n\lambda^n\ket{n,n}\)
+contains signal--idler number correlations.
+If the idler is unobserved,
+the signal looks thermal. If a detector
+heralds exactly one idler photon,
+the conditional signal is \(\ket1\).
+This is possible because measurement
+changes the state of the \emph{remaining}
+subsystem, even if the global evolution
+before detection was unitary.
+
+\begin{checkpoint}
+Squeezing concerns quadrature noise.
+Bunching concerns photon arrival statistics.
+First-order coherence concerns field
+correlations. These are related but
+not interchangeable ideas.
+\end{checkpoint}
