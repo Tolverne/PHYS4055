@@ -1,0 +1,75 @@
+\assignq{3}{3}{Hydrogenic static polarisability from perturbation theory}{2}
+\subsection*{(a) Approximate the \(1s\) polarizability}
+For a uniform electric field in the \(z\) direction,
+\(H'=-\mathbf d\cdot\boldsymbol{\mathcal E}
+=e z\mathcal E\). The \(1s\) state has even
+parity, so \(\langle1s|z|1s\rangle=0\):
+its first-order Stark shift vanishes.
+For a nondegenerate level, second-order
+perturbation theory gives
+\[
+\Delta E^{(2)}=\mathcal E^2
+\sum_{m\ne1}\frac{|\langle m|ez|1\rangle|^2}{E_1-E_m}
+=-\tfrac12\alpha\mathcal E^2.
+\]
+In atomic units, therefore,
+\[
+\alpha=2\sum_{m\ne1}
+\frac{|\langle m|z|1s\rangle|^2}{E_m-E_1}.
+\]
+Approximate every denominator by
+\(E_2-E_1=3Z^2/8\) Hartree.
+Closure, \(\sum_m\ket m\bra m=I\), gives
+\[
+\sum_{m\ne1}|\langle m|z|1s\rangle|^2
+=\langle1s|z^2|1s\rangle
+-|\langle1s|z|1s\rangle|^2
+=\langle z^2\rangle.
+\]
+Spherical symmetry implies
+\(\langle z^2\rangle=\langle r^2\rangle/3\).
+For hydrogenic \(1s\),
+\(\langle r^2\rangle=3/Z^2\), hence
+\[
+\boxed{\alpha_{\rm approx}=
+\frac{2(1/Z^2)}{3Z^2/8}
+=\frac{16}{3Z^4}\ a_0^3.}
+\]
+
+\subsection*{(b) Hydrogen: numerical comparison}
+For \(Z=1\), \(\alpha_{\rm approx}=16/3=5.3333\ a_0^3\).
+With \(a_0=5.2917721\times10^{-9}\,\mathrm{cm}\),
+\[
+\boxed{\alpha_{\rm approx}(H)
+=5.3333\,a_0^3
+=7.903\times10^{-25}\,\mathrm{cm}^3}.
+\]
+This is the standard \emph{polarizability-volume}
+convention; the SI dipole polarizability is
+\(4\pi\epsilon_0\) times this volume.
+The exact hydrogen value is \(9a_0^3/2=4.5a_0^3\).
+The approximate denominator overestimates it by
+\[
+\boxed{\frac{5.3333-4.5}{4.5}\times100\%
+=18.52\%.}
+\]
+
+\subsection*{(c) Hydrogen-like rubidium}
+For a nucleus of \(Z=37\) with \emph{one}
+hydrogenic \(1s\) electron:
+\[
+\boxed{\alpha(\mathrm{Rb}^{36+})\approx
+\frac{16}{3(37)^4}\,a_0^3
+=2.846\times10^{-6}\,a_0^3
+=4.217\times10^{-31}\,\mathrm{cm}^3}.
+\]
+Neutral Rb has outer \(5s\) valence electrons
+which are far more weakly bound and more
+spatially extended; its ground-state
+polarisability (\(\sim319\,a_0^3\) as supplied)
+is about \(1.12\times10^8\) times larger.
+\methodnote{Parity makes the first-order
+shift vanish. Closure converts a difficult
+sum to a ground-state expectation value;
+the approximate energy denominator is why
+the result is not exact.}
