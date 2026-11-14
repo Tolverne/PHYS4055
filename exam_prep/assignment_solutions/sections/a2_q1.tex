@@ -1,0 +1,70 @@
+
+\assignq{2}{1}{Bell states: orthonormality, reduced state and correlations}{1}
+We encode \(\ket0=\ket H\), \(\ket1=\ket V\) and define
+\[
+\ket{\Phi^\pm}=\frac{\ket{00}\pm\ket{11}}{\sqrt2},
+\qquad
+\ket{\Psi^\pm}=\frac{\ket{01}\pm\ket{10}}{\sqrt2}.
+\]
+\subsection*{(a) Check every Bell-state overlap}
+Write \(s,t\in\{+1,-1\}\) and
+\(\ket{\Phi_s}=(\ket{00}+s\ket{11})/\sqrt2\).
+Orthonormality of the computational basis gives
+\[
+\braket{\Phi_s}{\Phi_t}
+=\frac12(1+st)
+=\begin{cases}1&s=t\\0&s\ne t.\end{cases}
+\]
+Exactly the same reasoning gives
+\(\braket{\Psi_s}{\Psi_t}=\delta_{st}\).
+The two families use disjoint computational-basis
+states, so \(\braket{\Phi_s}{\Psi_t}=0\).
+Thus \(\boxed{\braket{B_i}{B_j}=\delta_{ij}}\)
+for all four Bell states.
+
+\subsection*{(b) Reduced density matrix of photon \(A\)}
+For \(\ket{\Phi^+}\),
+\[
+\begin{aligned}
+\rho_{AB}=\tfrac12(&\ket{00}\bra{00}
++\ket{00}\bra{11}\\
+&+\ket{11}\bra{00}+\ket{11}\bra{11}).
+\end{aligned}
+\]
+Use
+\(\operatorname{Tr}_B(\ket{i,j}\bra{k,l})
+=\delta_{jl}\ket i\bra k\).
+The cross terms vanish and the diagonal terms survive:
+\[
+\boxed{\rho_A=\frac{\ket0\bra0+\ket1\bra1}{2}
+=\frac12I}.
+\]
+Therefore \(P(H)=P(V)=1/2\) for measurements
+on \(A\) alone. Its purity
+\(\operatorname{Tr}\rho_A^2=1/2<1\) shows a
+mixed local state, though \(\rho_{AB}\) is pure.
+
+\subsection*{(c) Repeat in the diagonal-polarisation basis}
+Define
+\(\ket D=(\ket H+\ket V)/\sqrt2\),
+\(\ket A=(\ket H-\ket V)/\sqrt2\).
+Hence
+\(\ket H=(\ket D+\ket A)/\sqrt2\),
+\(\ket V=(\ket D-\ket A)/\sqrt2\).
+Substitution and cancellation of the two cross terms yields
+\[
+\ket{HH}+\ket{VV}=\ket{DD}+\ket{AA},
+\quad
+\boxed{\ket{\Phi^+}
+=\frac{\ket{DD}+\ket{AA}}{\sqrt2}}.
+\]
+Both observers using \(H/V\) obtain
+\((H,H)\) or \((V,V)\), each with probability \(1/2\).
+Both using \(D/A\) obtain \((D,D)\) or \((A,A)\),
+again each with probability \(1/2\).
+The local outcomes are random but their
+\emph{joint} outcomes are perfectly correlated.
+\methodnote{Distinguish single-photon randomness
+from two-photon correlation. The partial trace
+must eliminate off-diagonal terms with unequal
+\(B\)-indices.}
