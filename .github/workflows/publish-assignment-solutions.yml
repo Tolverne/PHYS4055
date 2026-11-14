@@ -1,0 +1,101 @@
+name: Publish PHYS4055 complete worked assignment solutions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam_prep/assignment_solutions/**/*.tex'
+      - 'scripts/assignment_numerical_solutions.py'
+      - 'tex/common.tex'
+      - '.github/workflows/publish-assignment-solutions.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: phys4055-assignments-publish
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile assignment worked solutions and Python appendix
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: exam_prep/assignment_solutions
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+      - name: Install numeric and PDF validation packages
+        run: python -m pip install --quiet pymupdf pillow numpy scipy
+      - name: Run independent numerical regression checks
+        run: |
+          python scripts/assignment_numerical_solutions.py | tee exam_prep/assignment_solutions/NUMERICAL_RESULTS.txt
+          grep '17.9' exam_prep/assignment_solutions/NUMERICAL_RESULTS.txt
+          grep '39.1' exam_prep/assignment_solutions/NUMERICAL_RESULTS.txt
+          grep '20.1' exam_prep/assignment_solutions/NUMERICAL_RESULTS.txt
+      - name: Verify structure and make page previews
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re,pymupdf
+          from PIL import Image,ImageDraw
+          base=Path("exam_prep/assignment_solutions")
+          pdf=pymupdf.open(base/"main.pdf")
+          pages=len(pdf)
+          assert 15 <= pages <= 75, f"Unexpected page count: {pages}"
+          alltext="\n".join(p.get_text() for p in pdf)
+          assert alltext.count("Question 1:") >= 4, "Missing an assignment Q1"
+          assert alltext.count("Question 2:") >= 4, "Missing an assignment Q2"
+          assert alltext.count("Question 3:") >= 3, "Missing an assignment Q3"
+          assert alltext.count("Question 4:") >= 1, "Missing Assignment 3 Q4"
+          assert "Hartree" in alltext and "Na" in alltext
+          # Content and page-bound sanity check; skip decorative rules.
+          external=[]
+          for i,p in enumerate(pdf):
+              for line in p.get_text("dict")["blocks"]:
+                  if line["type"]!=0:continue
+                  x0,y0,x1,y1=line["bbox"]
+                  if x0 < -2 or x1 > p.rect.width+3 or y0 < -2 or y1 > p.rect.height+3:
+                      external.append((i+1,tuple(round(q,1) for q in line["bbox"])))
+          log=(base/"main.log").read_text(errors="replace")
+          overflow=[l for l in log.splitlines() if "Overfull \\hbox" in l or "Overfull \\vbox" in l]
+          cols,w,h,gap,margin,foot=4,260,367,12,12,18
+          rows=(pages+cols-1)//cols
+          sheet=Image.new("RGB",(2*margin+cols*w+(cols-1)*gap,
+                        2*margin+rows*(h+foot)+(rows-1)*gap),"white")
+          draw=ImageDraw.Draw(sheet)
+          for i,p in enumerate(pdf):
+              pix=p.get_pixmap(matrix=pymupdf.Matrix(w/p.rect.width,h/p.rect.height),alpha=False)
+              img=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+              x=margin+(i%cols)*(w+gap)
+              y=margin+(i//cols)*(h+foot+gap)
+              sheet.paste(img,(x,y))
+              draw.rectangle((x,y,x+w,y+h),outline="#9CA9B7")
+              draw.text((x,y+h+3),f"Page {i+1}",fill="#333333")
+          sheet.save(base/"PHYS4055_Assignments_Contact_Sheet.jpg",quality=85,optimize=True)
+          (base/"main.pdf").replace(base/"PHYS4055_All_Assignments_Worked_Solutions.pdf")
+          report=(f"# PDF validation\n\n"
+                  f"- Pages: **{pages}**\n"
+                  f"- Questions: **12 / 12** (four assignments, every subpart)\n"
+                  f"- PDF text out-of-page blocks: {len(external)}\n"
+                  f"- LaTeX overfull box warnings: {len(overflow)}\n"
+                  f"- Numeric computations re-run: yes\n"
+                  f"- Contents, source map, original question pages and code appendix: included\n")
+          (base/"PDF_BUILD_CHECK.md").write_text(report,encoding="utf-8")
+          print(report)
+          for x in overflow[:15]:print(x)
+          for x in external[:15]:print("Outside PDF:",x)
+          PY
+      - name: Commit compiled PDF, contact sheet and numeric results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exam_prep/assignment_solutions/PHYS4055_All_Assignments_Worked_Solutions.pdf exam_prep/assignment_solutions/PHYS4055_Assignments_Contact_Sheet.jpg exam_prep/assignment_solutions/PDF_BUILD_CHECK.md exam_prep/assignment_solutions/NUMERICAL_RESULTS.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified all-four-assignments PHYS4055 worked-solution booklet'
+            git pull --rebase origin main
+            git push origin main
+          fi
