@@ -1,0 +1,105 @@
+\unit{Why light is a quantum oscillator}
+\unitref{Week 1 lectures; Week 1 tutorial}
+\begin{intuition}
+An optical photon is one excitation of an \emph{electromagnetic mode}.
+The quantum theory does not replace Maxwell's waves with little balls:
+it quantises the energy and fluctuations of each independent wave mode.
+\end{intuition}
+\subsection{From Maxwell's equations to a mode}
+A classical electromagnetic field can be expanded in
+spatial and polarisation modes. A cavity enforces standing-wave
+boundary conditions; free space supports travelling-wave modes.
+After suitable normalisation, the energy in one classical mode
+has the harmonic-oscillator form
+\[
+H=\tfrac12(p^2+\omega^2q^2).
+\]
+Quantisation makes \(q,p\) operators satisfying
+\([\hat q,\hat p]=i\hbar\). Define
+\[
+\hat a=\sqrt{\frac{\omega}{2\hbar}}\,\hat q
++\frac{i\hat p}{\sqrt{2\hbar\omega}},\quad
+\hat a^\dagger=\sqrt{\frac{\omega}{2\hbar}}\,\hat q
+-\frac{i\hat p}{\sqrt{2\hbar\omega}}.
+\]
+Substitution gives the central result
+\[
+\boxed{[\hat a,\hat a^\dagger]=1,\qquad
+H=\hbar\omega\left(\hat a^\dagger\hat a+\tfrac12\right).}
+\]
+The zero-point term \(\hbar\omega/2\) describes the
+energy left when the oscillator cannot have both conjugate
+coordinates exactly zero.
+
+\subsection{What raising and lowering actually do}
+The number operator \(\hat n=\hat a^\dagger\hat a\)
+has eigenstates \(\ket n\) with integer eigenvalues:
+\[
+\hat a\ket n=\sqrt n\ket{n-1},\qquad
+\hat a^\dagger\ket n=\sqrt{n+1}\ket{n+1}.
+\]
+The lowest state is vacuum, \(\hat a\ket0=0\).
+An arbitrary \(n\)-photon state can be built by
+\[
+\boxed{\ket n=\frac{(\hat a^\dagger)^n}{\sqrt{n!}}\ket0.}
+\]
+The factorial is required for normalisation;
+it becomes especially important with two or more photons.
+
+An observable optical electric field contains both
+annihilation and creation parts:
+\[
+\hat E(z,t)=E_0[
+\hat a e^{i(kz-\omega t)}
++\hat a^\dagger e^{-i(kz-\omega t)}].
+\]
+Although \(\ket n\) contains energy \(n\hbar\omega\)
+above vacuum, \(\langle n|\hat a|n\rangle=0\).
+It therefore has zero \emph{mean electric field}.
+A nonzero mean photon number does not imply a
+classically oscillating mean wave.
+
+\subsection{Several modes and distinguishability}
+For two modes \(a,b\), \(\ket{n,m}\)
+means \(n\) photons in \(a\), \(m\) in \(b\).
+Examples are
+\[
+\ket{1,1}=a^\dagger b^\dagger\ket{0,0},
+\qquad
+\ket{2,0}=\frac{(a^\dagger)^2}{\sqrt2}\ket{0,0}.
+\]
+A mode label may describe path, polarisation,
+frequency, temporal envelope or a combination.
+Two photons become distinguishable when a measurement
+could, in principle, identify which came from which
+input (even if nobody actually reads that information).
+Their \emph{mode overlap} therefore controls interference.
+
+\begin{worked}{Why \(\sqrt{2!}\) matters}
+Compute
+\(\|(a^\dagger)^2\ket0\|^2
+=\bra0a^2(a^\dagger)^2\ket0=2\).
+So \((a^\dagger)^2\ket0\) is \emph{not}
+a unit vector; dividing by \(\sqrt2\)
+produces \(\ket2\). This factor later changes
+beam-splitter output amplitudes and probabilities.
+\end{worked}
+\subsection{What a phase shifter does}
+Heisenberg evolution under the free oscillator Hamiltonian is
+\[
+\frac{d\hat a}{dt}=\frac{i}{\hbar}[H,\hat a]
+=-i\omega\hat a,\qquad
+\hat a(t)=e^{-i\omega t}\hat a(0).
+\]
+The photon number does not change: the mode
+simply accumulates phase. In an interferometer,
+\emph{relative} phases become measurable after
+different paths are recombined.
+
+\begin{checkpoint}
+\textbf{Three different objects:} a mode specifies
+which oscillator; a photon is one excitation
+of that oscillator; a quantum state describes
+the probabilities and coherences among its
+possible excitation numbers.
+\end{checkpoint}
