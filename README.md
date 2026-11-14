@@ -1,5 +1,13 @@
 # PHYS4055 — Atomic Physics and Optics | 2026 Open-Book Exam Revision
 
+## New: complete 2026 assignment solutions
+
+- **[Full worked assignment-solutions booklet (PDF)](exam_prep/assignment_solutions/PHYS4055_All_Assignments_Worked_Solutions.pdf)** — all 12 main questions and every subpart, across Assignments 1–4.
+- [Editable question-by-question LaTeX sources](exam_prep/assignment_solutions/sections/) and [source/data audit](exam_prep/assignment_solutions/SOURCE_MAP.md).
+- [Reproducible bismuth nuclear-size and sodium lifetime Python solver](scripts/assignment_numerical_solutions.py).
+- Official assignment solutions are available for Assignments 1 and 2; the Assignment 3 and 4 solutions are independently derived.
+
+
 ## New: complete 2023–2025 past-exam solutions
 
 - **[Open the full worked past-exam PDF](exam_prep/past_exam_solutions/PHYS4055_Exams_2023_2025_Worked_Solutions.pdf)** — all 12 questions, all subparts, original paper references and exam-method checks.
