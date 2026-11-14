@@ -1,0 +1,142 @@
+\unit{Many-electron atoms, configurations and term symbols}
+\unitref{Week 8; Assignment 3 Q2; Assignment 4 Q1}
+\subsection{Why the hydrogen formula stops working}
+Two electrons repel each other. The
+many-electron Hamiltonian has the form
+\[
+\boxed{H=\sum_i\left[\frac{p_i^2}{2m_e}
+-\frac{Ze^2}{4\pi\epsilon_0r_i}\right]
++\sum_{i<j}\frac{e^2}{4\pi\epsilon_0r_{ij}}.}
+\]
+The last term depends on \emph{two}
+electron positions, so we cannot solve
+each electron independently as if the
+other electrons were absent.
+An approximate central potential describes
+the nucleus screened by the electron cloud.
+The one-electron orbitals are labelled
+\(n,l\), but their energies are no longer
+functions of \(n\) alone.
+
+\subsection{Pauli exclusion and antisymmetric states}
+Electrons have spin \(s=1/2\) and
+are identical fermions. Interchanging
+two electron labels must reverse
+the \emph{total} wavefunction:
+\[
+\Psi(1,2)=-\Psi(2,1).
+\]
+A two-electron Slater determinant
+automatically enforces this:
+\[
+\Psi_{ab}(1,2)=\frac1{\sqrt2}
+[a(1)b(2)-b(1)a(2)].
+\]
+If \(a=b\), the determinant vanishes:
+two electrons cannot occupy the
+same spin-orbital.
+
+\subsection{Direct repulsion and exchange}
+Evaluate Coulomb repulsion
+\(v_{12}=e^2/(4\pi\epsilon_0r_{12})\)
+in a Slater determinant. Expanding
+the bra and ket yields
+\[
+\boxed{\langle v_{12}\rangle=J_{ab}-K_{ab}},
+\]
+where
+\[
+J_{ab}=\iint\frac{|a(1)|^2|b(2)|^2}{r_{12}}\,
+d1\,d2,
+\]
+\[
+K_{ab}=\iint\frac{a^*(1)b(1)b^*(2)a(2)}
+{r_{12}}\,d1\,d2
+\]
+in atomic units. The direct term resembles
+ordinary Coulomb repulsion between densities.
+The exchange term arises from the
+antisymmetric \emph{wavefunction}.
+It is not another classical force;
+for orthogonal spin labels it vanishes.
+Hartree--Fock finds orbitals self-consistently
+so that direct and exchange contributions
+enter the mean-field equations.
+
+\subsection{How spectroscopic term notation works}
+For light atoms with reasonably good
+LS (Russell--Saunders) coupling, first
+add the individual orbital momenta to
+\(L\), individual electron spins to
+\(S\), then couple \(L,S\) to total
+electronic \(J\). Write
+\[
+\boxed{{}^{2S+1}L_J},\qquad
+L=0,1,2,3,4\leftrightarrow S,P,D,F,G.
+\]
+For example, \({}^3F_2\) means
+total spin \(S=1\) (triplet),
+total orbital angular momentum \(L=3\)
+and total electronic \(J=2\).
+The allowed \(J\) values are
+\(J=|L-S|,|L-S|+1,\ldots,L+S\).
+
+\subsection{Equivalent electrons require extra care}
+Two \(d\) electrons each have \(l=2\)
+and two spin projections. There are
+ten distinct spin-orbitals, hence
+\[
+\binom{10}{2}=45
+\]
+antisymmetric configurations.
+Without Pauli restrictions, angular-momentum
+addition would suggest \(L=0,1,2,3,4\),
+\(S=0,1\). But the orbital-coupled
+wavefunction has exchange phase
+\((-1)^{2l-L}=(-1)^L\).
+The spin singlet \(S=0\) is antisymmetric,
+while triplet \(S=1\) is symmetric.
+Thus only \emph{even \(L\), \(S=0\)}
+or \emph{odd \(L\), \(S=1\)} survive:
+\[
+\boxed{{}^1S_0,\ {}^1D_2,\ {}^1G_4,\quad
+{}^3P_{0,1,2},\ {}^3F_{2,3,4}.}
+\]
+
+\begin{worked}{Check that every \(d^2\) state is counted}
+A term with total \(J\) has \(2J+1\)
+magnetic substates. Sum:
+\[
+1+5+9+(1+3+5)+(5+7+9)=\boxed{45}.
+\]
+The count agrees with the Pauli
+spin-orbital count \(\binom{10}{2}\).
+Without this check we could easily
+include forbidden LS terms or miss
+part of an allowed multiplet.
+\end{worked}
+
+\subsection{Hund's rules and why they are only trends}
+Within their usual domain, Hund's rules
+favour (1) largest total \(S\), then
+(2) largest \(L\) for that multiplicity,
+then (3) smallest \(J\) in a
+less-than-half-filled subshell.
+For \(d^2\), this predicts
+the ground level \({}^3F_2\).
+However, these rules do \emph{not}
+unambiguously order every excited term
+of a real multi-electron atom.
+Titanium's neutral \(3d^24s^2\)
+configuration demonstrates the broad
+agreement and exceptions when compared
+with NIST experimental level data.
+
+\begin{checkpoint}
+The notation \({}^{2S+1}L_J\) is a
+coupling scheme, not a claim that
+electrons orbit independently.
+First impose antisymmetry, then
+enumerate LS terms, attach \(J\),
+and check the total degeneracy.
+\end{checkpoint}
