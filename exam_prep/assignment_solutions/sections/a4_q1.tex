@@ -1,0 +1,153 @@
+\assignq{4}{1}{Hartree--Fock: direct and exchange Coulomb matrix elements}{1}
+The task refers specifically to Johnson's closed-shell
+results, Eqs.~(3.64) and (3.66). Here we derive both
+from the multipole expansion, including the sum
+over the \emph{occupied} magnetic and spin projections
+of shell \(b=(n_bl_b)\).
+
+\subsection*{1. Radial, orbital and spin separation}
+In atomic units, let a spin-orbital be
+\[
+\psi_a(\mathbf r,\sigma)=\frac{P_a(r)}r
+Y_{l_am_a}(\Omega)\chi_{\mu_a}(\sigma),
+\qquad\int_0^\infty P_a(r)^2\diff r=1.
+\]
+For four spin orbitals define
+\[
+g_{abcd}=\int\!\!\diff x_1\int\!\!\diff x_2\
+\frac{\psi_a^*(x_1)\psi_b^*(x_2)
+\psi_c(x_1)\psi_d(x_2)}{r_{12}}.
+\]
+The Coulomb operator has the spherical expansion
+\[
+\frac1{r_{12}}
+=\sum_{k=0}^\infty\sum_{q=-k}^{k}
+(-1)^q\frac{r_<^k}{r_>^{k+1}}\,
+C^k_{-q}(\Omega_1)C^k_q(\Omega_2),
+\]
+where \(C^k_q=\sqrt{4\pi/(2k+1)}Y_{kq}\).
+Define the \emph{Slater radial integral}
+\[
+\boxed{\begin{aligned}
+R^k(a,b,c,d)
+=\int_0^\infty\!\diff r_1\,P_a(r_1)P_c(r_1)
+\int_0^\infty\!\diff r_2\,P_b(r_2)P_d(r_2)
+\frac{r_<^k}{r_>^{k+1}}.
+\end{aligned}}
+\]
+The \(r^2\) Jacobian is already cancelled
+by the \(1/r\) factors in each radial orbital.
+
+\subsection*{2. General angular matrix element}
+Introduce
+\(A^k_q(a,c)=
+\langle l_am_a|C^k_q|l_cm_c\rangle\).
+Then the multipole expansion separates as
+\[
+g_{abcd}=\delta_{\mu_a\mu_c}
+\delta_{\mu_b\mu_d}
+\sum_{kq}(-1)^q R^k(a,b,c,d)
+A^k_{-q}(a,c)A^k_q(b,d).
+\]
+The Wigner--Eckart theorem gives
+\[
+\langle l_bm_b|C^k_q|l_am_a\rangle
+=(-1)^{l_b-m_b}
+\begin{pmatrix}l_b&k&l_a\\-m_b&q&m_a\end{pmatrix}
+\langle l_b\Vert C^k\Vert l_a\rangle,
+\]
+where
+\[
+\boxed{\langle l_b\Vert C^k\Vert l_a\rangle
+=(-1)^{l_b}\sqrt{(2l_b+1)(2l_a+1)}
+\begin{pmatrix}l_b&k&l_a\\0&0&0\end{pmatrix}.}
+\]
+The rank \(k\) must satisfy
+\(|l_a-l_b|\le k\le l_a+l_b\) and
+\(l_a+l_b+k\) even.
+
+\subsection*{3. The direct integral, \(g_{abab}\)}
+In the direct product, each electron keeps
+its own orbital and spin:
+\[
+g_{abab}=
+\langle a(1)b(2)|r_{12}^{-1}|a(1)b(2)\rangle.
+\]
+Sum over the two spin values and all
+\(2l_b+1\) magnetic projections in the
+\emph{closed} \(b\) subshell. The
+spherical-harmonic addition theorem gives
+\[
+\sum_{m_b=-l_b}^{l_b}
+|Y_{l_bm_b}(\Omega)|^2
+=\frac{2l_b+1}{4\pi}.
+\]
+This summed density is spherically symmetric,
+so all multipoles \(k>0\) vanish. Only
+\(k=0\), for which \(C^0_0=1\), contributes:
+\[
+\boxed{\sum_{m_b,\mu_b}g_{abab}
+=2(2l_b+1)R^0(a,b,a,b).}
+\tag{Johnson 3.64}
+\]
+The factor \(2\) comes from summing the two
+possible spin projections of occupied shell \(b\).
+
+\subsection*{4. The exchange integral, \(g_{abba}\)}
+The exchange matrix element swaps the orbital
+labels on the ket:
+\[
+g_{abba}=
+\langle a(1)b(2)|r_{12}^{-1}|b(1)a(2)\rangle.
+\]
+Its spin factor is
+\(\delta_{\mu_a\mu_b}\delta_{\mu_b\mu_a}\),
+so only \emph{same-spin} electrons contribute.
+The sum over \(\mu_b\) gives \emph{one}, not two.
+The angular structure contains the squared
+transition matrix elements
+\(|\langle l_bm_b|C^k_q|l_am_a\rangle|^2\).
+For fixed \(m_a\), 3-j orthogonality states
+\[
+\sum_{m_b,q}
+\begin{pmatrix}l_b&k&l_a\\-m_b&q&m_a\end{pmatrix}^{\!2}
+=\frac1{2l_a+1}.
+\]
+Consequently,
+\[
+\boxed{\sum_{m_b,\mu_b}g_{abba}
+=\sum_{k}\frac{|\langle l_b\Vert C^k\Vert l_a\rangle|^2}
+{2l_a+1}\,R^k(a,b,b,a).}
+\tag{Johnson 3.66}
+\]
+Only ranks allowed by the triangle and
+parity selection rules contribute.
+
+\subsection*{5. Why these yield the Hartree--Fock equations}
+The Coulomb expectation of an antisymmetrised
+Slater determinant contains the combination
+\[
+\boxed{E_{\rm ee}=\frac12\sum_{a,b\ {\rm occupied}}
+\bigl(g_{abab}-g_{abba}\bigr).}
+\]
+The first term is the direct, local average
+electron--electron repulsion. The second is
+a nonlocal exchange contribution arising
+from the \emph{antisymmetry} of electron
+wavefunctions, not a separate classical force.
+Variational minimisation with orthonormal
+orbitals gives Hartree--Fock equations with
+direct and exchange operators. For a single
+doubly occupied \(1s\) subshell, the direct
+contribution counts both spin occupancies
+but exchange removes the self-interaction
+of the occupied spin-orbital.
+
+\methodnote{The two target expressions are
+\emph{shell-summed} matrix elements.
+Without this sum, neither the factor
+\(2(2l_b+1)\) nor the reduction to the
+single \(k=0\) direct term follows.
+Source: Walter R. Johnson,
+\emph{Atomic Structure Theory}, chapter 3,
+Eqs.~(3.55)--(3.66).}
