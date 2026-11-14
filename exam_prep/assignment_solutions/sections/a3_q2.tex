@@ -1,0 +1,66 @@
+\assignq{3}{2}{Equivalent \(d^2\) electrons and NIST Ti I spectra}{1}
+\subsection*{(a) Enumerate the terms}
+There are \(5(2)=10\) available \(d\)-electron spin-orbitals,
+and \(\binom{10}{2}=45\) antisymmetrised pairs.
+Coupling \(l_1=l_2=2\) permits \(L=0,\ldots,4\);
+two spins allow \(S=0\) (antisymmetric) or \(S=1\)
+(symmetric). Orbital exchange symmetry is
+\((-1)^{2l-L}=(-1)^L\). Consequently even \(L\)
+requires singlet spin and odd \(L\) requires
+triplet spin. Attach \(J=|L-S|,\ldots,L+S\):
+\[
+\boxed{
+{}^1S_0,\ {}^1D_2,\ {}^1G_4,\
+{}^3P_{0,1,2},\ {}^3F_{2,3,4}.}
+\]
+The check
+\(1+5+9+(1+3+5)+(5+7+9)=45\)
+recovers all permitted microstates.
+
+\subsection*{(b) Hund's ordering}
+Maximise \(S\), then \(L\). For a less-than-half
+filled shell, lowest \(J\) lies lowest within
+each term:
+\[
+\boxed{\text{ground }{}^3F_2,\quad
+{}^3F_2<{}^3F_3<{}^3F_4,\quad
+{}^3P_0<{}^3P_1<{}^3P_2.}
+\]
+These rules do not predict an exact ranking
+between \emph{all different excited terms}.
+
+\subsection*{(c) NIST Ti I data}
+Neutral Ti has configuration
+\([\mathrm{Ar}]3d^24s^2\).
+The NIST Ti I levels for this configuration are:
+\[
+\begin{array}{c|r@{\quad}c|r}
+\text{Level}&\mathrm{cm}^{-1}&\text{Level}&\mathrm{cm}^{-1}\\\hline
+{}^3F_2&0.000&{}^3F_3&170.134\\
+{}^3F_4&386.875&{}^1D_2&7255.354\\
+{}^3P_0&8436.617&{}^3P_1&8492.421\\
+{}^3P_2&8602.342&{}^1G_4&12118.394
+\end{array}
+\]
+The ground term and within-multiplet \(J\) orders
+agree with Hund's predictions. The observed
+\({}^1D_2\) singlet, however, lies \emph{below}
+the \({}^3P\) triplet, so the simplistic global
+triplet/singlet ranking fails. The allowed
+\({}^1S_0\) term is not identified in this
+short NIST handbook table, and its energy
+cannot be asserted from these data.
+
+\subsection*{(d) Convert a measured excitation energy}
+Taking the \({}^1D_2\) excitation:
+\[
+\boxed{\Delta E=7255.354\,\mathrm{cm}^{-1}
+=\frac{7255.354}{219474.63137}\,E_h
+=0.0330578\,E_h}.
+\]
+The zero of energy is the atomic ground state,
+not the ionisation limit.
+\methodnote{NIST neutral Ti I levels:
+\texttt{physics.nist.gov/PhysRefData/Handbook/Tables/
+titaniumtable5.htm}. A microstate count is the
+fastest way to detect missing or Pauli-forbidden terms.}
