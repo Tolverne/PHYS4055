@@ -1,0 +1,165 @@
+\unit{Fine structure, hyperfine structure and fields}
+\unitref{Weeks 8--9; Assignment 3 Q4; 2025 Q1}
+\subsection{Why one electronic configuration has many levels}
+The central-field approximation produces
+orbital energies but does not yet include
+all small interactions. Electron spin--orbit
+coupling links the orbital and spin
+magnetic moments; the atomic nucleus has
+its own spin and magnetic moment; external
+electric and magnetic fields shift the levels.
+These effects create fine, hyperfine,
+Zeeman and Stark structures with
+different typical energy scales.
+
+\subsection{Fine structure from \(\mathbf L\cdot\mathbf S\)}
+Suppose \(H_{\rm SO}=A_{\rm SO}\,
+\mathbf L\cdot\mathbf S/\hbar^2\)
+within an LS term. Since
+\[
+\mathbf J^2=(\mathbf L+\mathbf S)^2
+=\mathbf L^2+\mathbf S^2+
+2\mathbf L\cdot\mathbf S,
+\]
+the energy correction is
+\[
+\boxed{E_J^{\rm SO}=\frac{A_{\rm SO}}2
+[J(J+1)-L(L+1)-S(S+1)].}
+\]
+This is more than a formula to remember:
+it is simply the scalar product identity
+for two angular momenta.
+
+\begin{worked}{Split a \({}^3D\) term}
+The term has \(S=1,L=2\), so
+\(J=1,2,3\). With \(L(L+1)=6\) and
+\(S(S+1)=2\),
+\[
+E_1=-3A_{\rm SO},\quad
+E_2=-A_{\rm SO},\quad
+E_3=2A_{\rm SO}.
+\]
+The degeneracies \(3+5+7=15\)
+equal \((2L+1)(2S+1)=5\times3\).
+The level intervals \(2A_{\rm SO}\)
+and \(3A_{\rm SO}\) are not equally spaced.
+\end{worked}
+
+\subsection{Hyperfine structure couples electrons to the nucleus}
+The nuclear spin \(\mathbf I\) combines
+with electronic \(\mathbf J\) to form
+\(\mathbf F=\mathbf I+\mathbf J\).
+For magnetic-dipole hyperfine coupling,
+\[
+H_{\rm hfs}=\frac{A}{\hbar^2}\mathbf I\cdot\mathbf J,
+\]
+giving
+\[
+\boxed{E_F=\frac A2[
+F(F+1)-I(I+1)-J(J+1)]},\quad
+F=|I-J|,\ldots,I+J.
+\]
+The numerical sign of \(A\) matters:
+the labels alone do not establish
+which \(F\) has higher energy.
+Electric quadrupole and higher-rank
+nuclear hyperfine interactions are
+possible only if the nuclear and
+electronic tensor ranks allow them.
+
+\begin{worked}{The 2025 exam hyperfine example}
+Let \(I=5/2,J=1/2\).
+Then \(F=2,3\).
+Since \(I(I+1)=35/4\),
+\(J(J+1)=3/4\),
+\[
+E_2=\frac A2(6-38/4)=
+\boxed{-7A/4},
+\quad
+E_3=\frac A2(12-38/4)=
+\boxed{5A/4}.
+\]
+Their separation is \(3|A|\).
+The magnetic substate count
+\((2F_1+1)+(2F_2+1)=5+7=12\)
+agrees with \((2I+1)(2J+1)=6\times2\).
+\end{worked}
+
+\subsection{The weak magnetic-field regime}
+A magnetic field interacts with atomic
+magnetic moments. When hyperfine coupling
+dominates the Zeeman energy,
+\(F,m_F\) remain useful approximate
+quantum numbers:
+\[
+\boxed{\Delta E_{Fm_F}\simeq
+\mu_Bg_Fm_FB.}
+\]
+Neglecting the much smaller nuclear
+magnetic contribution and for \(F>0\),
+\[
+g_F\simeq g_J
+\frac{F(F+1)+J(J+1)-I(I+1)}
+{2F(F+1)}.
+\]
+The electronic Land\'e factor for
+\(g_L=1,g_S\simeq2\) is
+\[
+\boxed{g_J\simeq1+
+\frac{J(J+1)+S(S+1)-L(L+1)}
+{2J(J+1)}}.
+\]
+These factors arise from \emph{projecting}
+electronic orbital/spin moments first
+onto \(J\), then onto \(F\).
+
+\subsection{The strong-field (Paschen--Back) regime}
+When Zeeman energy exceeds hyperfine
+coupling, nuclear and electronic
+angular momenta approximately decouple.
+The natural basis changes from
+\(\ket{Fm_F}\) to \(\ket{Jm_J,Im_I}\).
+To first order,
+\[
+E\simeq g_J\mu_Bm_JB+Am_Im_J
+\]
+if the nuclear Zeeman contribution is
+neglected. The total state count stays
+constant, but the interpretation
+of the levels changes.
+A fixed-\(F\) weak-field formula
+must \emph{not} be extrapolated
+to arbitrarily large \(B\).
+
+\subsection{Electric fields: the Stark effect}
+A static electric field \(\mathcal E\hat z\)
+couples through \(-\mathbf d\cdot\boldsymbol{\mathcal E}\).
+For a nondegenerate parity eigenstate
+with no permanent electric dipole,
+the first-order shift vanishes.
+Second-order perturbation theory gives
+\[
+\boxed{\Delta E^{(2)}=-\frac12
+\alpha(0)\mathcal E^2,\quad
+\alpha(0)=2\sum_{n\ne i}
+\frac{|\langle n|d_z|i\rangle|^2}{E_n-E_i}}.
+\]
+The polarisability measures how readily
+the atom's electron cloud responds to
+an applied field. For a hydrogenic \(1s\)
+state a closure approximation using
+\(E_n-E_1\approx E_2-E_1\) gives
+\(\alpha_{\rm approx}=16/(3Z^4)\)
+in atomic polarizability-volume units,
+compared with the exact hydrogen value
+\(9/2\) at \(Z=1\).
+
+\begin{checkpoint}
+Identify the relevant coupling hierarchy.
+Fine structure: \(L+S\to J\).
+Hyperfine: \(I+J\to F\).
+Weak magnetic field: \(F,m_F\).
+Strong magnetic field: \(m_I,m_J\).
+Electric field: check parity before
+applying Stark perturbation theory.
+\end{checkpoint}
