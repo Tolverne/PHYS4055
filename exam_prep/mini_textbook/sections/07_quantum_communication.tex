@@ -1,0 +1,124 @@
+\unit{Quantum communication: teleportation, dense coding and QKD}
+\unitref{W4L2--W4L3; Assignment 2; 2025 Q4(e)}
+\subsection{Three communication tasks: do not confuse them}
+Teleportation transfers an \emph{unknown qubit state}
+using a shared entangled pair and two classical bits.
+Dense coding sends \emph{two classical bits} using
+one transmitted qubit and one pre-shared Bell pair.
+Quantum key distribution (QKD) establishes shared
+secret classical bits and tests whether an
+eavesdropper could have learned them.
+The resource accounting is different in each task.
+
+\subsection{Teleportation as a calculation}
+Suppose Alice holds \(\ket\psi=\alpha\ket0+\beta\ket1\).
+Alice and Bob also share
+\(\ket{\Phi^+}_{AB}=(\ket{00}+\ket{11})/\sqrt2\).
+Alice performs CNOT from the unknown qubit
+onto her half of the Bell pair, then a Hadamard
+on the unknown qubit. Rewriting in Alice's
+two-qubit computational basis gives
+\[
+\begin{aligned}
+&\ket\psi\ket{\Phi^+}_{AB}\longrightarrow\\
+&\quad \frac12[
+\ket{00}_A\ket\psi_B+
+\ket{01}_A X\ket\psi_B+
+\ket{10}_A Z\ket\psi_B+
+\ket{11}_A XZ\ket\psi_B],
+\end{aligned}
+\]
+up to a harmless convention-dependent phase
+on the last branch. Alice measures her
+two qubits and sends the result (two bits).
+Bob applies the appropriate Pauli correction:
+\[
+00\to I,\qquad01\to X,\qquad10\to Z,
+\qquad11\to ZX
+\]
+(with the order consistent with the state branch).
+The outcome is always Bob's \(\ket\psi\).
+The original input has been consumed, so
+this does not clone the state. Bob cannot
+recover \(\ket\psi\) before Alice's classical
+message arrives.
+
+\subsection{Dense coding uses four Bell messages}
+Starting from \(\ket{\Phi^+}\), Alice can apply
+\[
+I\to\Phi^+,\quad X\to\Psi^+,\quad
+Z\to\Phi^-,\quad XZ\to\Psi^-
+\]
+(up to global phase).
+Bob would ideally discriminate all four
+orthogonal Bell states after receiving Alice's
+photon. The standard passive beam-splitter
+and number-detection analyser distinguishes
+\(\Psi^\pm\) through their port/polarisation
+patterns, but not \(\Phi^+\) from \(\Phi^-\).
+Thus the ordinary no-ancilla linear-optical
+Bell measurement is not deterministic;
+its unambiguous success probability for
+equiprobable Bell states is \(1/2\).
+
+\subsection{BB84: prepare, measure, sift, test}
+BB84 uses two conjugate bases,
+\[
+Z:\{\ket H,\ket V\},\qquad
+X:\{\ket D,\ket A\},\quad
+\ket{D/A}=\frac{\ket H\pm\ket V}{\sqrt2}.
+\]
+Alice randomly chooses a basis and bit;
+Bob randomly chooses a measurement basis.
+After transmission they announce \emph{bases},
+not retained secret bit values, and keep
+measurements where their bases matched.
+Independent uniform bases match with probability
+\(\boxed{1/2}\).
+With channel and detector efficiencies
+\(\eta_{\rm ch},\eta_d\), the expected sifted
+number out of \(N\) ideal single-photon pulses is
+\[
+\boxed{\mathbb E[N_{\rm sift}]
+=\frac N2\eta_{\rm ch}\eta_d},
+\]
+before testing, reconciliation and privacy
+amplification.
+
+\begin{worked}{Why intercept--resend creates 25\% errors}
+Condition on a sifted event: Bob used Alice's basis.
+An intercept--resend Eve chooses that basis
+with probability \(1/2\), making no error.
+If Eve used the wrong basis (probability \(1/2\)),
+Bob's subsequently recovered bit is wrong with
+probability \(1/2\). Therefore
+\[
+\boxed{\mathrm{QBER}=\tfrac12(0)+
+\tfrac12(\tfrac12)=\tfrac14.}
+\]
+If \(m=20\) independent sifted test bits are
+revealed, the probability of noticing at
+least one error in this simple model is
+\(1-(3/4)^{20}\approx0.9968\).
+These public test bits are discarded.
+\end{worked}
+
+\subsection{What makes a practical key secure?}
+Alice and Bob estimate a quantum bit error rate,
+perform error correction and then privacy
+amplification. Revealed parity information
+and imperfect sources affect the final key rate.
+Security requires an \emph{authenticated}
+classical discussion channel as well as quantum
+transmission. Multi-photon weak-laser pulses
+are not identical to ideal single-photon states;
+decoy-state methods are one way to address
+source imperfections in implementations.
+
+\begin{checkpoint}
+Teleportation is not instantaneous transport
+of an object. Dense coding needs prior
+entanglement. BB84 detects disturbance
+through \emph{incompatible measurements},
+not through a secret choice of quantum bases.
+\end{checkpoint}
